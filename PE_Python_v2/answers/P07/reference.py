@@ -1,0 +1,1 @@
+result = (len(ids), len(set(ids)))

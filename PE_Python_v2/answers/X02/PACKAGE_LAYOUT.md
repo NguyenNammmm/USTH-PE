@@ -1,0 +1,1 @@
+Tách Student vào domains/student.py, Course vào domains/course.py, Registry vào domains/registry.py. __init__.py export ba tên. input.py chứa collect và read_marks gọi class.input; output.py dùng curses.wrapper và menu A03 để render obj.list/ranking/course_marks; main.py giữ menu ứng dụng. Đáp án ghép chạy được được xuất kèm package_pw4 trong bước đóng gói.

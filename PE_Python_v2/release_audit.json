@@ -1,0 +1,35 @@
+{
+  "lessons": 92,
+  "new_lessons": 68,
+  "tracks": {
+    "core": 59,
+    "advanced": 33
+  },
+  "source_units": 237,
+  "mapped_with_assessments": 237,
+  "prerequisite_order": "PASS",
+  "id_links": "PASS",
+  "answer_files": "PASS",
+  "quiz_keys_separated": "PASS",
+  "pdf_pages": 97,
+  "layout_bounds": "PASS",
+  "rendered_pages": 97,
+  "visual_review": "PASS: final 97-page render contact sheets and full-page checks 49,74,93",
+  "legacy": {
+    "seed_cases": {
+      "PASS": 74
+    },
+    "additional_contract_checks": {
+      "PASS": 5
+    },
+    "tk_widget_checks": {
+      "PASS": 2
+    }
+  },
+  "new_qa": {
+    "MANUAL_REQUIRED": 17,
+    "USE_LEGACY_RUNNER": 24,
+    "PASS": 51
+  },
+  "limits": "Native/manual gates remain as documented in QA_Ban_giao.md; coverage counts are authored topic mapping."
+}

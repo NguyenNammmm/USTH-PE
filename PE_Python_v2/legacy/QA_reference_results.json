@@ -1,0 +1,409 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "syntax_checked": 24,
+  "seed_cases": [
+    {
+      "id": "P01-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P01-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P01-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P02-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P02-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P02-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P03-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P03-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P03-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P04-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P04-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P04-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P04-d",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P05-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P05-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P05-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P06-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P06-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P06-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P07-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P07-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P07-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P08-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P08-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P08-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P08-d",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P09-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P09-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P09-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P09-d",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P10-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P10-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P10-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P10-d",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P11-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P11-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P11-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P12-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P12-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P12-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P13-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P13-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P13-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P13-d",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P13-e",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P13-f",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P14-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P14-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P14-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P15-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P15-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P15-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P16-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P16-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P16-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P19-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P19-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P19-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P20-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P20-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P21-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P21-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P21-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P22-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P22-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P23-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P23-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P23-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P23-d",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P24-a",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P24-b",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P24-c",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P24-d",
+      "status": "PASS",
+      "reason": ""
+    },
+    {
+      "id": "P24-e",
+      "status": "PASS",
+      "reason": ""
+    }
+  ],
+  "additional_contract_checks": [
+    {
+      "id": "P10-no-mutation",
+      "status": "PASS"
+    },
+    {
+      "id": "P21-real-worker",
+      "status": "PASS"
+    },
+    {
+      "id": "P24-invalid-actions",
+      "status": "PASS"
+    },
+    {
+      "id": "Equivalent-P01-P04-P05-P06",
+      "status": "PASS"
+    },
+    {
+      "id": "Counterexamples-P03-P04-P05-P08",
+      "status": "PASS"
+    }
+  ],
+  "tk_widget_checks": [
+    {
+      "id": "P17-tk-widget",
+      "status": "PASS"
+    },
+    {
+      "id": "P18-tk-widget",
+      "status": "PASS"
+    }
+  ],
+  "limits": "Trusted reference tests only; not a sandbox, UI usability test, or deployed product QA. Manual integration cases remain for dev."
+}

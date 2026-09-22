@@ -1,0 +1,5 @@
+-r requirements-data.txt
+wxPython==4.3.1
+PyOpenGL==3.1.10
+pyglet==2.1.16
+mysql-connector-python==26.7.0

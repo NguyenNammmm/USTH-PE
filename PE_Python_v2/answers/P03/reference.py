@@ -1,0 +1,1 @@
+result = filename.removesuffix(".txt").split("-")

@@ -1,0 +1,1676 @@
+{
+  "C01": {
+    "solution": "python -m venv .venv\n.venv\\Scripts\\python -m pip install matplotlib\n.venv\\Scripts\\python -m pip freeze > requirements.txt\n.venv\\Scripts\\python -c \"import sys; print(sys.executable)\"\n.venv\\Scripts\\python hello.py\n# hello.py: print(\"Hello PE\")\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: mỗi môi trường giữ bộ package riêng.",
+          "Dự án kia có thể bị đổi dependency.",
+          "Tên file không tách thư viện."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "C02": {
+    "solution": "Cell 1: base = 7\nCell 2: total = base + 5\nCell 3: print(total)\nScript chứa ba câu theo đúng thứ tự.\nSau restart, cell 2 trước cell 1 phát sinh NameError. Kết quả đúng sau Run All là 12.\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Giá trị cũ đã mất.",
+          "Đúng: count chưa tồn tại trong kernel mới.",
+          "Kernel không tự sắp thứ tự cell."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "C03": {
+    "solution": "Fork qua giao diện GitHub; clone URL fork; sửa README; git add README.md; git commit -m \"First student commit\"; git push origin HEAD. Xác nhận origin thuộc tài khoản học viên và hash commit remote bằng local.\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: commit mới còn ở local.",
+          "Commit local chưa gửi tới remote.",
+          "Chỉ cần push khi remote đúng."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P01": {
+    "solution": "print(\"Xin chao, \" + name + \"!\")",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: name được đọc thành giá trị An.",
+          "name ở ngoài dấu nháy nên là tên biến.",
+          "print ở dòng cuối tạo đầu ra."
+        ]
+      },
+      {
+        "answer": 1,
+        "feedback": [
+          "print không quyết định giá trị của name.",
+          "Đúng: hai dòng sau dùng lại giá trị.",
+          "Không cần chép lại dữ liệu vào mọi dòng."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận f-string hoặc phép cộng chuỗi; bỏ qua kiểu dấu nháy, giữ đúng nội dung và một newline."
+  },
+  "P02": {
+    "solution": "result = int(quantity_text) * price",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 2,
+        "feedback": [
+          "Phép nhân không cộng nội dung chuỗi.",
+          "Đây là kết quả nhân hai số, nhưng đầu vào là chuỗi.",
+          "Đúng: nhân chuỗi lặp lại chuỗi."
+        ]
+      },
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: sau chuyển kiểu là phép cộng số.",
+          "Nối chuỗi không xảy ra sau int.",
+          "Chuỗi \"3\" là đầu vào hợp lệ của int."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận tách biến trung gian hoặc chuyển kiểu ngay trong biểu thức; result phải là số nguyên."
+  },
+  "C04": {
+    "solution": "import keyword\ndef valid_name(name):\n    \"\"\"Kiểm tra tên Python hợp lệ và không thuộc từ khóa.\"\"\"\n    return name.isidentifier() and not keyword.iskeyword(name)\ndef type_trace():\n    value = \"8\"\n    before = type(value).__name__\n    value = int(value)\n    return before, type(value).__name__\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 2,
+        "feedback": [
+          "Tên không bắt đầu bằng chữ số.",
+          "class là từ khóa.",
+          "Đúng: snake_case diễn đạt ý nghĩa."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "C05": {
+    "solution": "import math\ndef arithmetic(a,b):\n    return dict(add=a+b, sub=a-b, mul=a*b, div=a/b,\n                quot=a//b, rem=a%b, power=a**b)\ndef floor_tenth(x):\n    return math.floor(x*10)/10\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: thương nguyên và phần dư.",
+          "/ mới cho thương thực.",
+          "17 = 5*3+2."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P03": {
+    "solution": "result = filename.removesuffix(\".txt\").split(\"-\")",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Khi chỉ định -, chuỗi này được chia.",
+          "Đúng: hậu tố đã bỏ và dấu - chia hai phần.",
+          "Đó là stem, trước khi split."
+        ]
+      },
+      {
+        "answer": 2,
+        "feedback": [
+          "Tên có thể có thêm dấu chấm; không giả định chỉ một.",
+          "rstrip xử lý tập ký tự, có thể bỏ nhiều hơn hậu tố.",
+          "Đúng: ý định là bỏ hậu tố nguyên vẹn."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cắt bốn ký tự cuối vì đề bảo đảm hậu tố, hoặc removesuffix; không chấm theo một method duy nhất."
+  },
+  "C06": {
+    "solution": "def labels(text):\n    names=[line.strip().lower().title() for line in text.splitlines() if line.strip()]\n    return [str(i).zfill(3)+\": \"+name for i,name in enumerate(names,1)]\ndef score_label(name,score):\n    return \"{}: {:.1f}\".format(name,score)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "str là immutable.",
+          "Đúng: cần dùng chuỗi được trả về.",
+          "upper không phải title, và vẫn trả chuỗi mới."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P04": {
+    "solution": "if fee >= 100:\n    result = \"Free\"\nelse:\n    result = \"Paid\"",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: >= có bao gồm dấu bằng.",
+          "Bạn đã bỏ qua trường hợp bằng ngưỡng.",
+          "if/else chọn một nhánh ở lần chạy này."
+        ]
+      },
+      {
+        "answer": 1,
+        "feedback": [
+          ">= còn nhận cả số 5.",
+          "Đúng: > loại giá trị bằng 5.",
+          "= dùng cho phép gán, không phải so sánh này."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận if/else hoặc biểu thức điều kiện; cùng ngưỡng và đúng chữ hoa/thường."
+  },
+  "P05": {
+    "solution": "result = scores.copy()\nresult.append(extra)",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 2,
+        "feedback": [
+          "Đó là draft; scores được giữ nguyên.",
+          "append trả None nhưng không gán nó vào scores.",
+          "Đúng: append tác động lên bản sao."
+        ]
+      },
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: hai tên cùng tham chiếu đối tượng.",
+          "append thay đổi list đó.",
+          "Hai tên đang dùng chung một list."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận scores + [extra], slicing hoặc copy; kiểm tra cả result và scores."
+  },
+  "C07": {
+    "solution": "def select_parts(text,items):\n    return text[:3],text[::-1],items[-3:],items[1::2]\ndef replace_middle(items):\n    result=items.copy()\n    result[1:3]=[99]\n    return result\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: các index 1,2,3.",
+          "Index 4 bị loại bởi stop.",
+          "Start là 1, không phải 0."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "C08": {
+    "solution": "def edit(values,extras,target):\n    result=values.copy()\n    result.extend(extras)\n    if target in result:\n        result.remove(target)\n    removed=result.pop() if result else None\n    result.reverse()\n    return result,removed\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "remove chỉ xóa lần xuất hiện đầu.",
+          "Đúng.",
+          "Đây là kết quả pop cuối, không phải remove(2)."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P06": {
+    "solution": "result = marks.get(student_id, None)",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Chưa có điểm không đồng nghĩa điểm 0.",
+          "Đúng: trả mặc định vì khóa không tồn tại.",
+          "Không tự lấy giá trị cuối cùng."
+        ]
+      },
+      {
+        "answer": 2,
+        "feedback": [
+          "get đọc được khóa này.",
+          "Khóa tồn tại nên không dùng mặc định.",
+          "Đúng: 0 là giá trị hợp lệ."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận get hoặc if student_id in marks; không yêu cầu thứ tự khóa."
+  },
+  "C09": {
+    "solution": "def summarize(marks,remove_id):\n    remaining=marks.copy()\n    removed=remaining.pop(remove_id,None)\n    best=min(remaining,key=lambda k:(-remaining[k],k)) if remaining else None\n    worst=min(remaining,key=lambda k:(remaining[k],k)) if remaining else None\n    return dict(remaining=remaining,removed=removed,best=best,worst=worst)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "max chưa nhận key để so theo điểm.",
+          "Đúng: dùng key=marks.get nếu muốn so giá trị.",
+          "Kết quả vẫn là một khóa."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P07": {
+    "solution": "result = (len(ids), len(set(ids)))",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: số lượt trước, số mã khác nhau sau.",
+          "Bạn đã đổi thứ tự hai trường.",
+          "Set loại mã lặp."
+        ]
+      },
+      {
+        "answer": 1,
+        "feedback": [
+          "Không dựa vào thứ tự set cho hợp đồng.",
+          "Đúng: xếp hạng cần thứ tự được quy định.",
+          "Số phần tử không tạo ý nghĩa thứ tự."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận thuật toán tự loại trùng; result phải là tuple hai số nguyên, kiểm tra kiểu riêng."
+  },
+  "C10": {
+    "solution": "def birthday(record):\n    name,age,distance=record\n    return name,age+1,distance\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: tuple cố định tham chiếu phần tử, không làm mọi đối tượng bên trong bất biến.",
+          "Bất biến không tự lan vào list lồng.",
+          "Độ dài tuple không quyết định."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "C17": {
+    "solution": "import re\ndef parse_filename(filename):\n    if not filename.endswith(\".txt\"):\n        raise ValueError(\"extension\")\n    parts=filename.removesuffix(\".txt\").split(\"-\")\n    if len(parts)!=4:\n        raise ValueError(\"fields\")\n    name,age_text,distance,stroke=parts\n    if not name or not stroke or not age_text.isdecimal():\n        raise ValueError(\"metadata\")\n    if not re.fullmatch(r\"[1-9]\\d*m\",distance):\n        raise ValueError(\"distance\")\n    return dict(name=name,age=int(age_text),distance=distance,stroke=stroke)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Bước tính lượt không đọc tuổi.",
+          "Đúng: xác thực từng trường ngay sau tách tên file.",
+          "Biểu đồ không sửa metadata."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P08": {
+    "solution": "result = 0\nfor stock in stocks:\n    if stock >= 10:\n        result += 1",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 2,
+        "feedback": [
+          "Bạn có thể đã quên tính đúng bằng 5.",
+          "3 là số phần tử, không phải số điểm đạt.",
+          "Đúng: 5 và 8 đạt."
+        ]
+      },
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: bộ đếm không còn cộng dồn.",
+          "Vị trí khởi tạo ảnh hưởng kết quả.",
+          "Tốc độ không sửa được lỗi logic."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Cho phép biến nội bộ khác và if tương đương; comprehension/sum đúng kết quả được ghi nhận nhưng chưa đạt mục tiêu dùng for của bài."
+  },
+  "C14": {
+    "solution": "from collections import Counter\ndef report(ids,scores):\n    if len(ids)!=len(scores):\n        raise ValueError(\"length mismatch\")\n    pairs=[(sid,score) for sid,score in zip(ids,scores) if score>=5]\n    return [(i,sid,score) for i,(sid,score) in enumerate(pairs,1)]\ndef top_votes(ids,k):\n    return Counter(ids).most_common(k)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: dừng ở iterable ngắn hơn.",
+          "Không tự thêm phần tử thiếu.",
+          "Muốn bắt mismatch có thể dùng strict, nhưng mặc định không lỗi."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P09": {
+    "solution": "i = 0\nresult = 0\nwhile i < len(values) and values[i] != -1:\n    result += values[i]\n    i += 1",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Bạn đã cộng cả dữ liệu sau dấu kết thúc.",
+          "Đúng: chỉ cộng 6 và 8.",
+          "-1 là dấu kết thúc, không là điểm để cộng."
+        ]
+      },
+      {
+        "answer": 2,
+        "feedback": [
+          "while không tự tăng biến chỉ số.",
+          "Điều kiện không tự đổi sang False.",
+          "Đúng: i không tiến nên vẫn đọc cùng phần tử."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận while với break và kiểm tra biên rõ; không bắt đúng một dạng điều kiện."
+  },
+  "C11": {
+    "solution": "def collect(start,stop,step,blocked):\n    result=[]\n    for n in range(start,stop,step):\n        if n==blocked:\n            break\n        if n%3==0:\n            continue\n        result.append(n)\n    return result\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: bước âm đi về stop nhưng không chứa stop.",
+          "Bước -2 không chạm 0, stop cũng bị loại.",
+          "Start lớn hơn stop phù hợp bước âm."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P10": {
+    "solution": "def mean_score(scores):\n    if not scores:\n        return None\n    return sum(scores) / len(scores)",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: hàm trả số trung bình.",
+          "Hàm chỉ trả None với list rỗng.",
+          "Không có bước chuyển sang chuỗi."
+        ]
+      },
+      {
+        "answer": 1,
+        "feedback": [
+          "In ra không chuyển số thành return.",
+          "Đúng: hàm kết thúc không return giá trị sẽ trả None.",
+          "Tham số không tự được trả về."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận vòng lặp cộng tổng hoặc statistics.mean với guard rỗng; không bắt sum."
+  },
+  "C13": {
+    "solution": "import statistics\ndef mean_or_none(values):\n    return statistics.mean(values) if values else None\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: statistics có mean.",
+          "tkinter tạo giao diện.",
+          "random lấy mẫu ngẫu nhiên."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "C15": {
+    "solution": "import random\ndef sample(deck,seed):\n    if not deck:\n        return None\n    rng=random.Random(seed)\n    return rng.choice(deck),rng.randint(0,10),rng.random()\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: cả hai đầu đều được bao gồm.",
+          "Đừng nhầm với stop của range.",
+          "Seed không quy định biên như vậy."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P11": {
+    "solution": "from grading import weighted_mean\n\ndef report(marks, credits):\n    return weighted_mean(marks, credits)",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 2,
+        "feedback": [
+          "14 là tổng điểm, chưa chia.",
+          "7 là trung bình không trọng số.",
+          "Đúng: môn8 có trọng số3."
+        ]
+      },
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: gọi hàm đã được module cung cấp.",
+          "import không nhận chuỗi tên file như vậy.",
+          "Tên module không có đuôi .py trong cú pháp này."
+        ]
+      }
+    ],
+    "support_files": {
+      "grading.py": "def weighted_mean(marks, credits):\n    if not marks:\n        return None\n    return sum(m*c for m,c in zip(marks,credits)) / sum(credits)\n"
+    },
+    "equivalent": "Chấp nhận import module hoặc from-import; QA kiểm tra thực sự tái sử dụng module vì đó là mục tiêu."
+  },
+  "C19": {
+    "solution": "domains/grades.py: def passed(score): return score >= 5\ndomains/reports/__init__.py: để trống\ndomains/reports/summary.py:\n    from ..grades import passed\n    def count_passed(scores): return sum(passed(s) for s in scores)\ndomains/__init__.py:\n    from .reports.summary import count_passed\nmain.py:\n    import domains as dm\n    if __name__ == \"__main__\": print(dm.count_passed([4,5,8]))\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Đừng nhầm file package với constructor class.",
+          "Đúng: nội dung file chạy khi module được nạp, không phải mỗi lời gọi hàm.",
+          "Alias không làm đổi cơ chế đó."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P12": {
+    "solution": "def load_names(path):\n    names = []\n    with open(path, encoding=\"utf-8\") as f:\n        for line in f:\n            name = line.strip()\n            if name:\n                names.append(name)\n    return names",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Mỗi dòng có tên là một phần tử riêng.",
+          "Đúng: dòng trắng bị bỏ, hai tên giữ riêng.",
+          "Bạn chưa áp dụng strip và kiểm tra rỗng."
+        ]
+      },
+      {
+        "answer": 2,
+        "feedback": [
+          "with không cần đợi đến lúc tắt máy.",
+          "print không quản lý vòng đời file.",
+          "Đúng: context manager quản lý đóng file."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận readlines hoặc comprehension với cùng hành vi; phải đóng file sau khi dùng."
+  },
+  "P13": {
+    "solution": "def parse_score(text):\n    try:\n        score = float(text)\n    except ValueError:\n        return None\n    if 0 <= score <= 10:\n        return score\n    return None",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: ValueError được xử lý.",
+          "except xử lý lỗi chuyển số này.",
+          "Sai nhập không có nghĩa điểm0."
+        ]
+      },
+      {
+        "answer": 1,
+        "feedback": [
+          "11 chuyển sang float được.",
+          "Đúng: lỗi quy tắc khác lỗi chuyển kiểu.",
+          "Đề chỉ nhận từ0 đến10."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận math.isfinite kết hợp kiểm tra khoảng; không bắt buộc đúng mẫu if."
+  },
+  "C12": {
+    "solution": "import math\ndef classify(text):\n    try:\n        score=float(text)\n    except ValueError:\n        return \"Invalid\"\n    if math.isfinite(score) and 0<=score<=10:\n        if score>=8:\n            return \"Gioi\"\n        elif score>=5:\n            return \"Dat\"\n        else:\n            return \"Chua dat\"\n    return \"Invalid\"\ndef main():\n    print(classify(input(\"Diem: \")))\nif __name__==\"__main__\":\n    main()\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Nhánh đầu đã nhận điểm 9.",
+          "Đúng: thứ tự điều kiện làm thay đổi kết quả.",
+          "elif không chạy tiếp sau nhánh đúng."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "C16": {
+    "solution": "from datetime import datetime,timedelta\nimport re\ndef due_date(text,days):\n    return (datetime.strptime(text,\"%Y-%m-%d\")+timedelta(days=days)).strftime(\"%Y-%m-%d\")\ndef extract_id(text):\n    match=re.search(r\"\\bS\\d{3}\\b\",text)\n    return match.group(0) if match else None\ndef clean_spaces(text):\n    return re.sub(r\"\\s+\",\" \",text).strip()\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Regex cấu trúc không xác nhận lịch.",
+          "Đúng: strptime sẽ bác ngày không tồn tại.",
+          "Độ dài không đủ."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P14": {
+    "solution": "import json\n\ndef save_state(path, state):\n    with open(path, \"w\", encoding=\"utf-8\") as f:\n        json.dump(state, f, ensure_ascii=False)\n\ndef load_state(path):\n    try:\n        with open(path, encoding=\"utf-8\") as f:\n            return json.load(f)\n    except FileNotFoundError:\n        return {\"students\": []}",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 2,
+        "feedback": [
+          "Đó là cách đọc text thuần, chưa parse.",
+          "JSON không phải lệnh chạy mã Python.",
+          "Đúng: parse văn bản JSON thành kiểu phù hợp."
+        ]
+      },
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: bài dùng list/dict với kiểu đơn giản.",
+          "Đổi tên không đổi định dạng.",
+          "Đối tượng tự định nghĩa cần chuyển biểu diễn."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận dumps/loads qua đọc ghi text nếu cùng hành vi; không so khoảng trắng/thứ tự khóa JSON."
+  },
+  "C21": {
+    "solution": "def append_line(path,text):\n    with open(path,\"a\",encoding=\"utf8\") as stream:\n        stream.write(text+\"\\n\")\n        stream.flush()\ndef read_status(path):\n    try:\n        with open(path,encoding=\"utf8\") as stream:\n            return \"ok\",stream.read()\n    except FileNotFoundError:\n        return \"missing\",None\n    except PermissionError:\n        return \"denied\",None\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "a mới là nối.",
+          "Đúng: lựa chọn mode là một phần hợp đồng dữ liệu.",
+          "r mới chỉ đọc."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "C22": {
+    "solution": "import os\nfrom pathlib import Path\ndef text_files(root):\n    root=Path(root)\n    result=[]\n    for folder,dirs,files in os.walk(root,followlinks=False):\n        for name in files:\n            if name.endswith(\".txt\"):\n                result.append((Path(folder)/name).relative_to(root).as_posix())\n    return sorted(result)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "File không bị di chuyển.",
+          "Đúng: đường dẫn tương đối sau đó được giải từ nơi mới.",
+          "Module không tự đổi tên."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P15": {
+    "solution": "class Student:\n    def __init__(self, student_id):\n        self.student_id = student_id\n        self.scores = []\n    def add_score(self, score):\n        self.scores.append(score)\n    def average(self):\n        if not self.scores:\n            return None\n        return sum(self.scores) / len(self.scores)",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Một lớp có thể tạo nhiều đối tượng.",
+          "Đúng: mỗi lần __init__ tạo list riêng.",
+          "Chỉ đúng nếu bạn dùng chung list ngoài ý muốn."
+        ]
+      },
+      {
+        "answer": 2,
+        "feedback": [
+          "Điểm là tham số score riêng.",
+          "Tên class và instance khác nhau.",
+          "Đúng: a.add_score dùng a làm self."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận phương thức có tên biến nội bộ khác; bắt buộc giao diện class đã nêu."
+  },
+  "P16": {
+    "solution": "class Course:\n    def passed(self, score):\n        return score >= 5\n\nclass HonorsCourse(Course):\n    def passed(self, score):\n        return score >= 8",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: phương thức lớp con được dùng.",
+          "Phương thức trả bool, không trả điểm.",
+          "Lớp con đã đổi ngưỡng thành8."
+        ]
+      },
+      {
+        "answer": 1,
+        "feedback": [
+          "Sao chép app không phải mục tiêu kế thừa.",
+          "Đúng: override giữ nơi gọi ổn định.",
+          "Không cần nếu giao diện vẫn phù hợp."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận tổ chức thuộc tính threshold thay mã lặp nếu giao diện, quan hệ kế thừa và kết quả đúng."
+  },
+  "C20": {
+    "solution": "import math\nclass Grade:\n    def __init__(self,value):\n        self.value=value\n    @property\n    def value(self):\n        return self._value\n    @value.setter\n    def value(self,value):\n        if type(value) not in (int,float) or not math.isfinite(value) or not 0<=value<=10:\n            raise ValueError(\"score\")\n        self._value=value\n    def __str__(self):\n        return f\"Grade({self.value})\"\n    def __lt__(self,other):\n        if not isinstance(other,Grade):\n            return NotImplemented\n        return self.value<other.value\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Đối số đầu có vai trò khác nhau.",
+          "Đúng: một cái xét instance, một cái xét quan hệ lớp.",
+          "Chúng không nhận tên class dưới dạng chuỗi."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P17": {
+    "solution": "import tkinter as tk\nfrom tkinter import ttk\n\ndef build_form(root):\n    root.title(\"So hoc tap\")\n    ttk.Label(root, text=\"Ma SV\").grid(row=0, column=0)\n    sid_entry = ttk.Entry(root)\n    sid_entry.grid(row=0, column=1)\n    ttk.Label(root, text=\"Diem\").grid(row=1, column=0)\n    score_entry = ttk.Entry(root)\n    score_entry.grid(row=1, column=1)\n    return {\"sid_entry\": sid_entry, \"score_entry\": score_entry}\n\nif __name__ == \"__main__\":\n    root = tk.Tk()\n    build_form(root)\n    root.mainloop()",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 2,
+        "feedback": [
+          "Muốn bên dưới cần đổi row.",
+          "grid dùng row/column để đặt widget.",
+          "Đúng: row bằng nhau, column1 sau column0."
+        ]
+      },
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: hàng đếm từ0.",
+          "row0 là hàng đang có.",
+          "Đây không phải cách chọn hàng tiếp theo."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận Frame trung gian; so quan hệ hàng/cột cùng parent theo hợp đồng, không so ảnh pixel."
+  },
+  "P18": {
+    "solution": "import tkinter as tk\nfrom tkinter import ttk\n\ndef build_form(root):\n    saved = []\n    status = tk.StringVar(master=root, value=\"Chua luu\")\n    entry = ttk.Entry(root)\n    entry.grid(row=0, column=0)\n    def on_save():\n        try:\n            score = float(entry.get())\n        except ValueError:\n            score = None\n        if score is None or not (0 <= score <= 10):\n            status.set(\"Diem khong hop le\")\n            entry.focus_set()\n            return\n        saved.append(score)\n        status.set(\"Da luu\")\n    button = ttk.Button(root, text=\"Luu\", command=on_save)\n    button.grid(row=0, column=1)\n    ttk.Label(root, textvariable=status).grid(row=1, column=0)\n    return dict(entry=entry, button=button, status=status, saved=saved)\n\nif __name__ == \"__main__\":\n    root = tk.Tk()\n    build_form(root)\n    root.mainloop()",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Lỗi này không liên quan số nút.",
+          "Đúng: dấu () thực hiện lời gọi ngay.",
+          "Để truyền callback dùng tên hàm chưa gọi."
+        ]
+      },
+      {
+        "answer": 2,
+        "feedback": [
+          "Xóa dữ liệu làm người học mất ngữ cảnh.",
+          "Không đổi lỗi nhập thành điểm0.",
+          "Đúng: phản hồi giúp sửa và chưa lưu."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận class điều khiển hoặc closure; cùng giao diện trả về và đúng hành vi sự kiện."
+  },
+  "P19": {
+    "solution": "from matplotlib.figure import Figure\n\ndef build_chart(labels, values):\n    fig = Figure()\n    ax = fig.subplots()\n    positions = list(range(len(labels)))\n    ax.bar(positions, values)\n    ax.set_xticks(positions, labels)\n    ax.set_ylabel(\"Diem\")\n    ax.set_ylim(0, 10)\n    return fig",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: dữ liệu của DB là6.",
+          "10 là giới hạn trục, không phải điểm DB.",
+          "8 thuộc PY."
+        ]
+      },
+      {
+        "answer": 1,
+        "feedback": [
+          "Font/backend có thể làm khác pixel dù cùng dữ liệu.",
+          "Đúng: chấm điều có ý nghĩa trong hợp đồng.",
+          "Có hình chưa bảo đảm thể hiện đúng dữ liệu."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận Figure qua API tương đương, cùng dữ liệu và nhãn; không yêu cầu màu mặc định."
+  },
+  "P20": {
+    "solution": "def make_cases():\n    return [(4, False), (5, True), (8, True)]",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 2,
+        "feedback": [
+          "8 True ở cả hai.",
+          "4 vẫn False với cả hai cách.",
+          "Đúng: hai cách khác nhau tại5."
+        ]
+      },
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: test là bằng chứng có phạm vi.",
+          "Cần chọn thêm test khi có rủi ro chưa bao phủ.",
+          "Vẫn có thể có đầu vào khác hoặc vi phạm hợp đồng."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận nhiều bộ giá trị khác nhau đúng yêu cầu; không so list với đúng ba giá trị mẫu."
+  },
+  "P23": {
+    "solution": "def swim_report(line):\n    if not line.strip():\n        return {\"count\": 0, \"mean\": None}\n    values = []\n    for part in line.split(\",\"):\n        minutes, rest = part.strip().split(\":\")\n        seconds, hundredths = rest.split(\".\")\n        values.append(int(minutes)*6000 + int(seconds)*100 + int(hundredths))\n    n = len(values)\n    average = (2*sum(values) + n) // (2*n)\n    minutes, remainder = divmod(average, 6000)\n    seconds, hundredths = divmod(remainder, 100)\n    return {\"count\": n, \"mean\": f\"{minutes}:{seconds:02d}.{hundredths:02d}\"}",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 2,
+        "feedback": [
+          "Phút không bằng100 giây.",
+          "Đơn vị mục tiêu là phần trăm giây.",
+          "Đúng: 6000+200+50."
+        ]
+      },
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: giây và phần trăm có hai chữ số.",
+          "Thiếu số0 theo định dạng đề.",
+          "Cần chuyển đủ60 giây thành1 phút."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận Decimal half-up hoặc số nguyên cùng quy tắc; không dùng round mặc định nếu sai tie-case."
+  },
+  "C18": {
+    "solution": "from pathlib import Path\nfrom statistics import mean\nfrom decimal import Decimal,ROUND_HALF_UP\nfrom metadata import parse_filename\ndef file_report(path):\n    result=parse_filename(Path(path).name)\n    with open(path,encoding=\"utf8\") as stream:\n        lines=stream.readlines()\n    line=lines[0].strip() if lines else \"\"\n    values=[]\n    if line:\n        for token in line.split(\",\"):\n            minute,rest=token.strip().split(\":\")\n            second,hundredth=rest.split(\".\")\n            values.append(int(minute)*6000+int(second)*100+int(hundredth))\n    formatted=None\n    if values:\n        rounded=int(Decimal(str(mean(values))).quantize(Decimal(\"1\"),rounding=ROUND_HALF_UP))\n        minute,rest=divmod(rounded,6000)\n        second,hundredth=divmod(rest,100)\n        formatted=f\"{minute}:{second:02d}.{hundredth:02d}\"\n    return dict(result,count=len(values),mean=formatted)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Trả rỗng sẽ che lỗi đường dẫn.",
+          "Đúng: thiếu file giữ FileNotFoundError; dòng trắng có hợp đồng riêng.",
+          "Bài đọc không được tự ghi file."
+        ]
+      }
+    ],
+    "support_files": {
+      "metadata.py": "@solution:C17"
+    },
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P24": {
+    "solution": "from copy import deepcopy\n\ndef apply_action(state, action):\n    new_state = deepcopy(state)\n    kind = action.get(\"type\")\n    if kind in (\"add_student\", \"add_course\"):\n        key = \"students\" if kind == \"add_student\" else \"courses\"\n        ident, name = action.get(\"id\"), action.get(\"name\")\n        if not isinstance(ident, str) or not ident.strip():\n            raise ValueError(\"invalid id\")\n        if not isinstance(name, str) or not name.strip():\n            raise ValueError(\"invalid name\")\n        if ident in new_state[key]:\n            raise ValueError(\"duplicate id\")\n        new_state[key][ident] = name\n    elif kind == \"set_mark\":\n        sid, cid = action.get(\"student_id\"), action.get(\"course_id\")\n        score = action.get(\"score\")\n        if not isinstance(sid, str) or not isinstance(cid, str):\n            raise ValueError(\"invalid reference\")\n        if sid not in new_state[\"students\"] or cid not in new_state[\"courses\"]:\n            raise ValueError(\"unknown reference\")\n        if type(score) not in (int, float) or not (0 <= score <= 10):\n            raise ValueError(\"invalid score\")\n        new_state[\"marks\"].setdefault(sid, {})[cid] = score\n    else:\n        raise ValueError(\"unknown action\")\n    return new_state",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Đề yêu cầu sinh viên tồn tại trước.",
+          "Đúng: không tạo bản ghi mồ côi.",
+          "Báo lỗi sau khi ghi vẫn làm dữ liệu sai."
+        ]
+      },
+      {
+        "answer": 2,
+        "feedback": [
+          "Không tạo bản ghi trùng cặp.",
+          "Bài có chức năng sửa điểm.",
+          "Đúng: cùng cặp định danh thì cập nhật theo hợp đồng."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận OOP service hoặc pure function bọc cùng API. Chấm kết quả/trạng thái và không sửa đầu vào; không bắt cấu trúc file giống mẫu."
+  },
+  "T01": {
+    "solution": "import tkinter as tk\nfrom tkinter import ttk\ndef build(root):\n    root.title(\"Ho so\"); root.geometry(\"420x240\"); root.resizable(False,False)\n    icon=tk.PhotoImage(master=root,width=16,height=16)\n    icon.put(\"#087e86\",to=(0,0,16,16)); root.iconphoto(True,icon); root._icon=icon\n    entry=ttk.Entry(root); entry.grid(row=0,column=0); entry.focus_set()\n    save=ttk.Button(root,text=\"Luu\")\n    save.configure(command=lambda:save.configure(text=\"Da luu\",state=\"disabled\"))\n    save.grid(row=1,column=0)\n    def help_window():\n        child=tk.Toplevel(root); child.title(\"Huong dan\")\n        ttk.Label(child,text=\"Nhap ten roi bam Luu\").pack(padx=12,pady=12)\n    help_button=ttk.Button(root,text=\"Tro giup\",command=help_window)\n    help_button.grid(row=2,column=0)\n    return dict(entry=entry,save=save,help=help_button)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Text và state độc lập.",
+          "Đúng: cần state disabled.",
+          "Đổi text không xóa widget."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "T02": {
+    "solution": "import tkinter as tk\nfrom tkinter import ttk\nfrom tkinter.scrolledtext import ScrolledText\ndef build(root):\n    for row,title in enumerate([\"Mon\",\"Trinh do\",\"Nhac\",\"Xac nhan\",\"Sinh vien\",\"Ghi chu\",\"So buoi\"]):\n        ttk.Label(root,text=title).grid(row=row,column=0)\n    course=ttk.Combobox(root,values=(\"PY\",\"DB\"),state=\"readonly\"); course.set(\"PY\"); course.grid(row=0,column=1)\n    level=tk.StringVar(root,value=\"basic\"); box=ttk.Frame(root); box.grid(row=1,column=1)\n    for value in (\"basic\",\"advanced\"):\n        ttk.Radiobutton(box,text=value,value=value,variable=level).pack(side=\"left\")\n    reminder=tk.BooleanVar(root,value=False); confirmed=tk.BooleanVar(root,value=True)\n    ttk.Checkbutton(root,variable=reminder).grid(row=2,column=1)\n    ttk.Checkbutton(root,variable=confirmed,state=\"disabled\").grid(row=3,column=1)\n    students=tk.Listbox(root,exportselection=False,height=3); students.insert(\"end\",\"A\",\"B\",\"C\"); students.grid(row=4,column=1)\n    notes=ScrolledText(root,width=24,height=3); notes.grid(row=5,column=1)\n    sessions=ttk.Spinbox(root,from_=1,to=7); sessions.set(\"1\"); sessions.grid(row=6,column=1)\n    def collect():\n        n=int(sessions.get())\n        if not 1<=n<=7: raise ValueError(\"sessions\")\n        selected=students.curselection()\n        return dict(course=course.get(),level=level.get(),reminder=reminder.get(),\n                    student=students.get(selected[0]) if selected else None,\n                    notes=notes.get(\"1.0\",\"end-1c\"),sessions=n)\n    return dict(course=course,level=level,reminder=reminder,confirmed=confirmed,\n                students=students,notes=notes,sessions=sessions,collect=collect)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: mỗi nút có state riêng nên có thể cùng chọn.",
+          "Biến chung là cơ chế của nhóm.",
+          "State disabled là thuộc tính khác."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "T03": {
+    "solution": "import tkinter as tk\nfrom tkinter import ttk\ndef build(root):\n    outer=ttk.Frame(root,padding=12); outer.pack(fill=\"both\",expand=True)\n    outer.columnconfigure(0,weight=1); outer.rowconfigure(0,weight=1)\n    group=ttk.LabelFrame(outer,text=\"Ho so\",padding=12); group.grid(row=0,column=0,sticky=\"nsew\")\n    group.columnconfigure(1,weight=1)\n    ttk.Label(group,text=\"Ten\").grid(row=0,column=0,padx=6,pady=6)\n    entry=ttk.Entry(group); entry.grid(row=0,column=1,sticky=\"ew\",padx=6,pady=6)\n    area=ttk.Frame(outer,height=40); area.grid(row=1,column=0,sticky=\"ew\")\n    badge=ttk.Label(area,text=\"PE\"); badge.place(relx=1,x=-8,y=8,anchor=\"ne\")\n    return dict(outer=outer,group=group,entry=entry,badge=badge)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "sticky chỉ lấp ô đã được cấp.",
+          "Đúng: weight quyết định phân chia phần dư cho cột.",
+          "Parent không đổi."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "T04": {
+    "solution": "import tkinter as tk\nfrom tkinter import ttk\ndef build(root):\n    tabs=ttk.Notebook(root); tabs.pack(fill=\"both\",expand=True)\n    student=ttk.Frame(tabs); report=ttk.Frame(tabs)\n    tabs.add(student,text=\"Sinh vien\"); tabs.add(report,text=\"Bao cao\")\n    entry=ttk.Entry(student); entry.pack()\n    nested=ttk.Notebook(report); nested.pack(fill=\"both\",expand=True)\n    for title in (\"Bang\",\"Bieu do\"):\n        frame=ttk.Frame(nested); nested.add(frame,text=title)\n    menu=tk.Menu(root); root.configure(menu=menu)\n    file_menu=tk.Menu(menu,tearoff=False); menu.add_cascade(label=\"Tep\",menu=file_menu)\n    file_menu.add_command(label=\"Moi\",command=lambda:entry.delete(0,\"end\"))\n    view=tk.Menu(menu,tearoff=False); menu.add_cascade(label=\"Xem\",menu=view)\n    view.add_command(label=\"Bao cao\",command=lambda:tabs.select(report))\n    return dict(tabs=tabs,nested=nested,entry=entry,menu_file=file_menu,menu_view=view,report=report)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Cần truyền hàm.",
+          "Đúng: dùng command=reset_form.",
+          "Tab không quyết định thời điểm gọi."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "T05": {
+    "solution": "from pathlib import Path\nimport shutil\nfrom tkinter import filedialog,messagebox\ndef copy_file(source,destination_dir):\n    target=Path(destination_dir)/Path(source).name\n    shutil.copy2(source,target)\n    return str(target)\ndef choose_and_copy(root):\n    source=filedialog.askopenfilename(parent=root)\n    if not source: return None\n    folder=filedialog.askdirectory(parent=root)\n    if not folder: return None\n    try:\n        result=copy_file(source,folder)\n    except OSError as error:\n        messagebox.showerror(\"Khong sao chep\",str(error),parent=root)\n        return None\n    messagebox.showinfo(\"Da sao chep\",result,parent=root)\n    return result\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Hủy là một hành động bình thường.",
+          "Đúng: không đọc và không ghi gì.",
+          "Không có yêu cầu thoát app."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "T06": {
+    "solution": "import tkinter as tk\nfrom tkinter import ttk\ndef build(root):\n    canvas=tk.Canvas(root,width=240,height=120); canvas.pack()\n    item=canvas.create_rectangle(10,10,50,50,fill=\"teal\")\n    tk.Label(root,text=\"Vi tri\",relief=\"sunken\").pack()\n    tip=None\n    def move():\n        x1,y1,x2,y2=canvas.coords(item)\n        canvas.move(item,min(20,240-x2),0)\n    button=ttk.Button(root,text=\"Phai\",command=move); button.pack()\n    def hide_tip(event=None):\n        nonlocal tip\n        if tip is not None: tip.destroy(); tip=None\n    def show_tip(event=None):\n        nonlocal tip\n        hide_tip(); tip=tk.Toplevel(root); tip.overrideredirect(True)\n        tip.geometry(f\"+{button.winfo_rootx()}+{button.winfo_rooty()+28}\")\n        ttk.Label(tip,text=\"Dich sang phai\",padding=4).pack()\n    for event in (\"<Enter>\",\"<FocusIn>\"): button.bind(event,show_tip)\n    for event in (\"<Leave>\",\"<FocusOut>\"): button.bind(event,hide_tip)\n    return dict(canvas=canvas,item=item,move=move,show_tip=show_tip,hide_tip=hide_tip)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "create tạo item mới.",
+          "Đúng: cần giữ ID và cập nhật item đó.",
+          "Không có tự xóa."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "T07": {
+    "solution": "from tkinter import ttk\nclass ProgressJob:\n    def __init__(self,root):\n        self.root=root; self.pending=None\n        self.bar=ttk.Progressbar(root,maximum=100,mode=\"determinate\"); self.bar.pack()\n    def start(self):\n        self.cancel(); self.bar[\"value\"]=0\n        self.pending=self.root.after(100,self.tick)\n    def tick(self):\n        self.pending=None\n        self.bar[\"value\"]=min(100,self.bar[\"value\"]+10)\n        if self.bar[\"value\"]<100:\n            self.pending=self.root.after(100,self.tick)\n    def cancel(self):\n        if self.pending is not None:\n            self.root.after_cancel(self.pending); self.pending=None\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Cần truyền hàm, không gọi ngay.",
+          "Đúng: dùng tick.",
+          "after với callback không khóa như sleep."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "T08": {
+    "solution": "import tkinter as tk\nfrom tkinter import ttk\ndef normalize_name(text):\n    return text.strip().title()\nclass NameForm(ttk.Frame):\n    def __init__(self,parent):\n        super().__init__(parent,padding=8)\n        self.name=tk.StringVar(self,value=\"\")\n        self.entry=ttk.Entry(self,textvariable=self.name); self.entry.pack()\n        self.label=ttk.Label(self,textvariable=self.name); self.label.pack()\n        self.button=ttk.Button(self,text=\"Chuan hoa\",command=self.normalize); self.button.pack()\n    def normalize(self):\n        self.name.set(normalize_name(self.name.get()))\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: cả hai cùng binding.",
+          "Phải có biến riêng mới độc lập.",
+          "Dùng chung hợp lệ, nhưng có thể sai thiết kế."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "T09": {
+    "solution": "from tkinter import ttk\nfrom matplotlib.figure import Figure\nfrom matplotlib.backends.backend_tkagg import FigureCanvasTkAgg\nclass Chart(ttk.Frame):\n    def __init__(self,parent):\n        super().__init__(parent)\n        self.figure=Figure(figsize=(4,3)); self.axes=self.figure.add_subplot()\n        self.line,=self.axes.plot([],[],label=\"Diem\")\n        self.axes.set(xlabel=\"Luot\",ylabel=\"Diem\"); self.axes.legend()\n        self.canvas=FigureCanvasTkAgg(self.figure,master=self)\n        self.canvas.get_tk_widget().pack(fill=\"both\",expand=True)\n        self.update_values([])\n    def update_values(self,values):\n        self.line.set_data(list(range(1,len(values)+1)),values)\n        self.axes.set_xlim(0,max(1,len(values)+1))\n        self.axes.set_ylim(0,max(1,max(values,default=0)+1))\n        self.canvas.draw_idle()\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Model thay đổi chưa bảo đảm ảnh được vẽ lại.",
+          "Đúng.",
+          "Chỉ cần redraw canvas hiện có."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "T10": {
+    "solution": "import unittest\nimport tkinter as tk\nfrom form_app import passed,build\nclass ThresholdTests(unittest.TestCase):\n    def test_below(self): self.assertFalse(passed(4.9))\n    def test_boundary(self): self.assertTrue(passed(5))\n    def test_above(self): self.assertTrue(passed(8))\nclass FormTests(unittest.TestCase):\n    def setUp(self):\n        self.root=tk.Tk(); self.root.withdraw(); self.widgets=build(self.root)\n    def tearDown(self): self.root.destroy()\n    def test_button(self):\n        self.widgets[\"entry\"].insert(0,\"5\")\n        self.widgets[\"button\"].invoke()\n        self.assertEqual(self.widgets[\"status\"].cget(\"text\"),\"Dat\")\nif __name__==\"__main__\": unittest.main()\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Cả >=5 và >5 đều nhận 8.",
+          "Đúng: test biên phân biệt hai chương trình.",
+          "print không tự tạo assertion."
+        ]
+      }
+    ],
+    "support_files": {
+      "form_app.py": "import tkinter as tk\nfrom tkinter import ttk\ndef passed(score): return score>=5\ndef build(root):\n    entry=ttk.Entry(root); entry.pack()\n    status=ttk.Label(root,text=\"Chua nhap\"); status.pack()\n    button=ttk.Button(root,text=\"Kiem tra\",command=lambda:status.configure(text=\"Dat\" if passed(float(entry.get())) else \"Chua dat\")); button.pack()\n    return dict(entry=entry,status=status,button=button)\n"
+    },
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "T11": {
+    "solution": "def save_message(text,logger):\n    if not text.strip():\n        logger.warning(\"empty\"); return False\n    logger.debug(\"validated\"); logger.info(\"saved\"); return True\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "INFO thấp hơn ngưỡng.",
+          "Đúng: WARNING và mức cao hơn mới qua.",
+          "Ngược cơ chế lọc."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "T12": {
+    "solution": "from datetime import date\nTEXT={\"vi\":{\"title\":\"Sổ học tập\",\"save\":\"Lưu\"},\"en\":{\"title\":\"Study book\",\"save\":\"Save\"}}\ndef tr(lang,key):\n    return TEXT.get(lang,{}).get(key,TEXT[\"en\"].get(key,key))\ndef format_date(iso,lang):\n    value=date.fromisoformat(iso)\n    return value.strftime(\"%d/%m/%Y\" if lang==\"vi\" else \"%m/%d/%Y\")\ndef format_number(value,lang):\n    text=f\"{value:,.2f}\"\n    return text.translate(str.maketrans({\",\":\".\",\".\":\",\"})) if lang==\"vi\" else text\ndef apply_language(root,button,lang):\n    root.title(tr(lang,\"title\")); button.configure(text=tr(lang,\"save\"))\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Đó là dữ liệu người dùng, không phải bản dịch.",
+          "Đúng: chỉ cập nhật nhãn và định dạng trình bày.",
+          "Không phụ thuộc ngôn ngữ đích."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "T13": {
+    "solution": "from tkinter import ttk\nfrom PIL import Image,ImageTk\nclass SlideShow:\n    def __init__(self,root,paths):\n        self.root=root; self.paths=list(paths); self.index=0; self.pending=None; self.photo=None\n        self.label=ttk.Label(root); self.label.pack(); self.show()\n    def show(self):\n        if not self.paths:\n            self.label.configure(text=\"Khong co anh\",image=\"\"); return\n        with Image.open(self.paths[self.index]) as image:\n            image.thumbnail((320,200)); self.photo=ImageTk.PhotoImage(image,master=self.root)\n        self.label.configure(image=self.photo,text=\"\")\n    def next(self):\n        if self.paths: self.index=(self.index+1)%len(self.paths)\n        self.show()\n    def start(self):\n        self.stop(); self.pending=self.root.after(1000,self.tick)\n    def tick(self):\n        self.pending=None; self.next(); self.pending=self.root.after(1000,self.tick)\n    def stop(self):\n        if self.pending is not None: self.root.after_cancel(self.pending); self.pending=None\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Tên file không giữ object PhotoImage.",
+          "Đúng.",
+          "Không có tự đọc lại như vậy."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "T14": {
+    "solution": "import math\ndef score_valid(text):\n    try: value=float(text)\n    except ValueError: return False\n    return math.isfinite(value) and 0<=value<=10\ndef make_validator(kind):\n    if kind==\"name\": return lambda text: bool(text.strip())\n    if kind==\"score\": return score_valid\n    raise ValueError(kind)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Pattern có chi phí và không là mục tiêu tự thân.",
+          "Đúng: lý do sử dụng phải xuất phát từ yêu cầu.",
+          "Vẫn cần kiểm tra hành vi."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "X01": {
+    "solution": "from datetime import date\nimport math\ndef empty(): return dict(students={},courses={},marks={})\ndef add_student(state,sid,name,dob):\n    if not sid.strip() or not name.strip() or sid in state[\"students\"]: raise ValueError(\"student\")\n    date.fromisoformat(dob); state[\"students\"][sid]=dict(name=name,dob=dob)\ndef add_course(state,cid,name):\n    if not cid.strip() or not name.strip() or cid in state[\"courses\"]: raise ValueError(\"course\")\n    state[\"courses\"][cid]=dict(name=name)\ndef set_mark(state,cid,sid,score):\n    if cid not in state[\"courses\"] or sid not in state[\"students\"]: raise ValueError(\"unknown id\")\n    if type(score) not in (int,float) or not math.isfinite(score) or not 0<=score<=10: raise ValueError(\"score\")\n    state[\"marks\"].setdefault(cid,{})[sid]=float(score)\ndef list_students(state): return [(sid,r[\"name\"],r[\"dob\"]) for sid,r in state[\"students\"].items()]\ndef list_courses(state): return [(cid,r[\"name\"]) for cid,r in state[\"courses\"].items()]\ndef course_marks(state,cid):\n    if cid not in state[\"courses\"]: raise ValueError(\"unknown course\")\n    return [(sid,r[\"name\"],state[\"marks\"].get(cid,{}).get(sid)) for sid,r in state[\"students\"].items()]\ndef collect(input_fn=input):\n    state=empty(); count=int(input_fn(\"So sinh vien: \"))\n    if count<0: raise ValueError(\"count\")\n    for _ in range(count): add_student(state,input_fn(\"ID: \"),input_fn(\"Ten: \"),input_fn(\"DoB YYYY-MM-DD: \"))\n    count=int(input_fn(\"So mon: \"))\n    if count<0: raise ValueError(\"count\")\n    for _ in range(count): add_course(state,input_fn(\"Ma mon: \"),input_fn(\"Ten mon: \"))\n    return state\ndef main():\n    state=collect()\n    while True:\n        cmd=input(\"students/courses/marks/input/exit: \")\n        if cmd==\"exit\": return\n        if cmd==\"students\": print(list_students(state))\n        elif cmd==\"courses\": print(list_courses(state))\n        elif cmd==\"marks\": print(course_marks(state,input(\"Ma mon: \")))\n        elif cmd==\"input\":\n            cid=input(\"Ma mon: \")\n            for sid in state[\"students\"]: set_mark(state,cid,sid,float(input(sid+\": \")))\nif __name__==\"__main__\": main()\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Tên không là định danh ổn định.",
+          "Đúng.",
+          "Lấy người đầu có thể gán nhầm điểm."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A01": {
+    "solution": "from abc import ABC,abstractmethod\nclass Exporter(ABC):\n    @abstractmethod\n    def export(self,rows): pass\nclass TextExporter(Exporter):\n    def export(self,rows): return \",\".join(rows)\nclass UpperMixin:\n    def export(self,rows): return super().export(rows).upper()\nclass LoudExporter(UpperMixin,TextExporter): pass\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "ABC theo dõi phương thức trừu tượng chưa cài.",
+          "Đúng.",
+          "Tên class không đáp ứng hợp đồng."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A02": {
+    "solution": "import numpy as np\ndef gpa(marks,credits):\n    m=np.asarray(marks,dtype=float); c=np.asarray(credits,dtype=float)\n    if m.ndim!=1 or c.ndim!=1 or m.shape!=c.shape:\n        raise ValueError(\"shape\")\n    if not (np.isfinite(m).all() and np.isfinite(c).all()) or (m<0).any() or (m>10).any() or (c<=0).any():\n        raise ValueError(\"values\")\n    return float(np.dot(m,c)/c.sum()) if len(m) else None\ndef ranking(records):\n    rows=[(sid,gpa(*pair)) for sid,pair in records.items()]\n    return sorted(rows,key=lambda row:(row[1] is None,-row[1] if row[1] is not None else 0,row[0]))\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Sẽ sai khi tín chỉ khác nhau.",
+          "Đúng.",
+          "Số sinh viên không tham gia công thức GPA."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A03": {
+    "solution": "import curses\ndef main(screen):\n    selected=0; message=\"\"; choices=[\"Students\",\"Courses\",\"Exit\"]\n    while True:\n        screen.erase(); height,width=screen.getmaxyx()\n        for row,text in enumerate(choices+[message]):\n            if row<height-1 and width>1:\n                screen.addnstr(row,0,text,width-1,curses.A_REVERSE if row==selected else curses.A_NORMAL)\n        screen.refresh(); key=screen.getch()\n        if key==ord(\"q\"): break\n        if key==curses.KEY_UP: selected=(selected-1)%3\n        elif key==curses.KEY_DOWN: selected=(selected+1)%3\n        elif key in (10,13,curses.KEY_ENTER):\n            if selected==2: break\n            message=\"An, Binh\" if selected==0 else \"Python\"\nif __name__==\"__main__\": curses.wrapper(main)\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: screen và chế độ terminal phải được chuẩn bị và dọn.",
+          "Không có bảo đảm tốc độ đó.",
+          "Curses chỉ lo UI terminal."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A04": {
+    "solution": "import gzip,bz2,zlib,io,zipfile\nCODECS={\"gzip\":gzip,\"bz2\":bz2,\"zlib\":zlib}\ndef codec(method):\n    if method not in CODECS: raise ValueError(\"method\")\n    return CODECS[method]\ndef compress_bytes(data,method): return codec(method).compress(data)\ndef decompress_bytes(blob,method): return codec(method).decompress(blob)\ndef pack_files(files):\n    buffer=io.BytesIO()\n    with zipfile.ZipFile(buffer,\"w\",compression=zipfile.ZIP_DEFLATED) as archive:\n        for name,data in files.items():\n            if \"/\" in name or \"\\\\\" in name or name in (\".\",\"..\"): raise ValueError(\"basename\")\n            archive.writestr(name,data)\n    return buffer.getvalue()\ndef unpack_files(blob):\n    with zipfile.ZipFile(io.BytesIO(blob)) as archive:\n        return {name:archive.read(name) for name in archive.namelist()}\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Không được kết luận chỉ theo kích thước.",
+          "Đúng: kiểm tra round-trip là tiêu chí chính.",
+          "Cả chuỗi ngắn không rỗng cũng có thể lớn hơn."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A05": {
+    "solution": "import pickle,gzip\ndef dump_state(state):\n    return gzip.compress(pickle.dumps(state,protocol=pickle.HIGHEST_PROTOCOL))\ndef load_state(blob):\n    return pickle.loads(gzip.decompress(blob))\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Pickle không chỉ là parser dữ liệu thuần.",
+          "Đúng: chỉ lab file tự tạo và tin cậy.",
+          "Đuôi file không xác định mức tin cậy."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A14": {
+    "solution": "import numpy as np\ndef load_scores(path):\n    return np.loadtxt(path,delimiter=\",\",skiprows=1,usecols=[1,2],ndmin=2)\ndef load_missing(path):\n    return np.genfromtxt(path,delimiter=\",\",skip_header=1,filling_values=-1,ndmin=2)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Index cột bắt đầu từ0.",
+          "Đúng.",
+          "usecols là cột, không phải dòng."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A15": {
+    "solution": "import pandas as pd\nfrom sqlalchemy import text\ndef read_csv_scores(path): return pd.read_csv(path,na_values=[\"\"])\ndef read_excel_scores(path): return pd.read_excel(path,sheet_name=\"Scores\",usecols=[\"id\",\"score\"])\ndef read_database(engine):\n    with engine.connect() as connection:\n        return pd.read_sql_query(text(\"SELECT id,score FROM scores ORDER BY id\"),connection)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Không dùng kết quả info để thay frame.",
+          "Đúng.",
+          "Đó không phải phép tổng hợp điểm."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A16": {
+    "solution": "import pandas as pd\nimport h5py\nfrom scipy.io import loadmat\ndef read_science(path,kind):\n    if kind==\"stata\": return pd.read_stata(path)\n    if kind in (\"sas7bdat\",\"xport\"): return pd.read_sas(path,format=kind,encoding=\"utf8\")\n    if kind==\"hdf5\":\n        with h5py.File(path,\"r\") as handle: return handle[\"scores\"][()]\n    if kind==\"mat\": return loadmat(path)[\"scores\"]\n    raise ValueError(\"kind\")\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Đổi tên không đổi cấu trúc file.",
+          "Đúng.",
+          "HDF5 có cấu trúc riêng, không là CSV text."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A17": {
+    "solution": "import numpy as np\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\ndef gallery(folder):\n    from pathlib import Path\n    folder=Path(folder); folder.mkdir(parents=True,exist_ok=True)\n    x=np.arange(1,5); y=np.array([2,5,3,6])\n    fig,axes=plt.subplots(2,4,figsize=(12,6)); a=axes.ravel()\n    a[0].plot(x,y,\"o--\",label=\"Diem\",alpha=.7); a[0].legend(); a[0].set_xticks(x)\n    a[1].scatter(x,y); a[2].bar(x,y); a[3].barh(x,y)\n    a[4].axhline(3); a[5].axvline(2); a[6].fill(x,y); a[7].fill_between(x,y)\n    for ax,title in zip(a,[\"line\",\"scatter\",\"bar\",\"barh\",\"axhline\",\"axvline\",\"fill\",\"fill_between\"]): ax.set_title(title)\n    a[0].set(xlim=(0,5),ylim=(0,7),xlabel=\"Luot\",ylabel=\"Diem\"); a[0].annotate(\"Max\",(4,6))\n    fig.tight_layout(); fig.savefig(folder/\"one.png\",transparent=True); plt.close(fig)\n    fig,a=plt.subplots(1,3,figsize=(9,3)); a[0].hist(y,bins=[0,3,5,7]); a[1].boxplot(y); a[2].violinplot(y)\n    for ax,title in zip(a,[\"hist\",\"box\",\"violin\"]): ax.set_title(title)\n    fig.tight_layout(); fig.savefig(folder/\"dist.png\",transparent=True); plt.close(fig)\n    X,Y=np.meshgrid(np.linspace(-2,2,12),np.linspace(-2,2,12)); Z=X**2+Y**2; U=-Y; V=X\n    fig,axes=plt.subplots(2,4,figsize=(12,6)); a=axes.ravel()\n    im=a[0].imshow(Z,cmap=\"viridis\",origin=\"lower\"); fig.colorbar(im,ax=a[0],label=\"Gia tri\")\n    a[1].pcolor(X,Y,Z); a[2].pcolormesh(X,Y,Z,shading=\"auto\")\n    contours=a[3].contour(X,Y,Z); a[3].clabel(contours)\n    a[4].contourf(X,Y,Z); a[5].arrow(0,0,1,1,head_width=.15)\n    a[6].quiver(X,Y,U,V); a[7].streamplot(X,Y,U,V)\n    for ax,title in zip(a,[\"imshow\",\"pcolor\",\"pcolormesh\",\"contour\",\"contourf\",\"arrow\",\"quiver\",\"streamplot\"]):\n        ax.set_title(title); ax.set_aspect(\"equal\")\n    fig.tight_layout(); fig.savefig(folder/\"fields.png\",transparent=True); plt.close(fig)\n    return [str(folder/name) for name in (\"one.png\",\"dist.png\",\"fields.png\")]\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Tên sinh viên không tự có ý nghĩa liên tục.",
+          "Đúng: chọn theo câu hỏi phân phối.",
+          "3D không giải quyết câu hỏi này."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A18": {
+    "solution": "CREATE TABLE students(id VARCHAR(20) PRIMARY KEY,name VARCHAR(100) NOT NULL,dob DATE NOT NULL);\nCREATE TABLE courses(id VARCHAR(20) PRIMARY KEY,name VARCHAR(100) NOT NULL,credits INT NOT NULL CHECK(credits>0));\nCREATE TABLE marks(student_id VARCHAR(20),course_id VARCHAR(20),score DECIMAL(4,1) CHECK(score BETWEEN 0 AND 10),\n  PRIMARY KEY(student_id,course_id),FOREIGN KEY(student_id) REFERENCES students(id),FOREIGN KEY(course_id) REFERENCES courses(id));\n-- Python: dùng mysql.connector.connect với config từ biến môi trường, SELECT 1, đóng cursor và connection trong finally.\n-- Workbench: tạo connection localhost, mở pe_lab, reverse engineer schema để xem hai FK và khóa kép.\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Đó là driver client.",
+          "Đúng: server cần được cài/chạy riêng.",
+          "Vai trò package không đổi theo OS."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A19": {
+    "solution": "class Students:\n    def __init__(self,connection): self.connection=connection\n    def write(self,sql,params):\n        cursor=self.connection.cursor()\n        try:\n            cursor.execute(sql,params); count=cursor.rowcount; self.connection.commit(); return count\n        except Exception:\n            self.connection.rollback(); raise\n        finally: cursor.close()\n    def add(self,sid,name,dob):\n        return self.write(\"INSERT INTO students(id,name,dob) VALUES (%s,%s,%s)\",(sid,name,dob))\n    def rename(self,sid,name):\n        return self.write(\"UPDATE students SET name=%s WHERE id=%s\",(name,sid))\n    def delete(self,sid):\n        return self.write(\"DELETE FROM students WHERE id=%s\",(sid,))\n    def all(self):\n        cursor=self.connection.cursor()\n        try:\n            cursor.execute(\"SELECT id,name,dob FROM students ORDER BY id\"); return cursor.fetchall()\n        finally: cursor.close()\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Không có giới hạn một dòng.",
+          "Đúng: WHERE xác định phạm vi.",
+          "DROP TABLE mới bỏ bảng."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A20": {
+    "solution": "import tkinter as tk\nfrom tkinter import ttk,messagebox\nfrom datetime import date\ndef build(root,repository):\n    entries={}\n    for row,key in enumerate((\"id\",\"name\",\"dob\")):\n        ttk.Label(root,text=key).grid(row=row,column=0)\n        entries[key]=ttk.Entry(root); entries[key].grid(row=row,column=1)\n    records=tk.Listbox(root); records.grid(row=3,column=0,columnspan=2)\n    current_rows=[]\n    status=ttk.Label(root,text=\"San sang\"); status.grid(row=5,column=0,columnspan=2)\n    def refresh():\n        nonlocal current_rows\n        rows=repository.all(); records.delete(0,\"end\")\n        current_rows=rows\n        for sid,name,dob in rows: records.insert(\"end\",f\"{sid} | {name} | {dob}\")\n    def select_record(event):\n        selection=records.curselection()\n        if not selection: return\n        for key,value in zip((\"id\",\"name\",\"dob\"),current_rows[selection[0]]):\n            entries[key].delete(0,\"end\"); entries[key].insert(0,str(value))\n    records.bind(\"<<ListboxSelect>>\",select_record)\n    def act(kind):\n        try:\n            sid=entries[\"id\"].get().strip(); name=entries[\"name\"].get().strip(); dob=entries[\"dob\"].get().strip()\n            if kind!=\"Refresh\" and not sid: raise ValueError(\"ID rong\")\n            if kind in (\"Add\",\"Rename\") and not name: raise ValueError(\"Ten rong\")\n            if kind==\"Add\": date.fromisoformat(dob); repository.add(sid,name,dob)\n            elif kind==\"Rename\": repository.rename(sid,name)\n            elif kind==\"Delete\":\n                if not messagebox.askyesno(\"Xoa\",f\"Xoa {sid}?\",parent=root): return\n                repository.delete(sid)\n            refresh(); status.configure(text=\"Da cap nhat\")\n        except Exception as error: status.configure(text=f\"Loi: {error}\")\n    buttons={}\n    panel=ttk.Frame(root); panel.grid(row=4,column=0,columnspan=2)\n    for kind in (\"Add\",\"Rename\",\"Delete\",\"Refresh\"):\n        buttons[kind]=ttk.Button(panel,text=kind,command=lambda k=kind:act(k)); buttons[kind].pack(side=\"left\")\n    return dict(entries=entries,records=records,status=status,buttons=buttons)\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Commit vẫn có thể thất bại.",
+          "Đúng: phản hồi phải theo kết quả thực.",
+          "Tốc độ không thay đổi tính đúng."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A21": {
+    "solution": "import wx\ndef build_frame():\n    frame=wx.Frame(None,title=\"PE wx\",size=(420,360)); panel=wx.Panel(frame)\n    sizer=wx.BoxSizer(wx.VERTICAL)\n    text=wx.TextCtrl(panel,style=wx.TE_MULTILINE); sizer.Add(text,1,wx.EXPAND|wx.ALL,8)\n    button=wx.Button(panel,label=\"Print\"); sizer.Add(button,0,wx.ALL,8)\n    button.Bind(wx.EVT_BUTTON,lambda event:text.AppendText(\"Clicked\\n\"))\n    check=wx.CheckBox(panel,label=\"Reminder\"); check.SetValue(False); sizer.Add(check,0,wx.ALL,8)\n    radio=wx.RadioBox(panel,label=\"Level\",choices=[\"Basic\",\"Advanced\"]); sizer.Add(radio,0,wx.ALL,8)\n    group=wx.StaticBoxSizer(wx.VERTICAL,panel,\"Info\")\n    group.Add(wx.StaticText(group.GetStaticBox(),label=\"Ready\"),0,wx.ALL,8); sizer.Add(group,0,wx.EXPAND|wx.ALL,8)\n    panel.SetSizer(sizer)\n    bar=wx.MenuBar(); menu=wx.Menu(); item=menu.Append(wx.ID_EXIT,\"Exit\"); bar.Append(menu,\"File\"); frame.SetMenuBar(bar)\n    frame.Bind(wx.EVT_MENU,lambda event:frame.Close(),item)\n    return frame,dict(text=text,button=button,check=check,radio=radio)\nif __name__==\"__main__\":\n    app=wx.App(False); frame,_=build_frame(); frame.Show(); app.MainLoop()\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Hai toolkit có hợp đồng khác.",
+          "Đúng.",
+          "Import không chuyển API."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A23": {
+    "solution": "import wx\nclass TiledPanel(wx.Panel):\n    def __init__(self,parent):\n        super().__init__(parent); self.SetBackgroundStyle(wx.BG_STYLE_PAINT)\n        self.tile=wx.Bitmap(8,8); dc=wx.MemoryDC(self.tile)\n        dc.SetBackground(wx.Brush(\"#eaf3f5\")); dc.Clear()\n        dc.SetPen(wx.TRANSPARENT_PEN); dc.SetBrush(wx.Brush(\"#087e86\")); dc.DrawRectangle(0,0,4,4)\n        dc.SelectObject(wx.NullBitmap)\n        self.Bind(wx.EVT_PAINT,self.paint); self.Bind(wx.EVT_SIZE,self.resize)\n        button=wx.Button(self,label=\"Quit\",pos=(12,12)); button.Bind(wx.EVT_BUTTON,lambda event:parent.Close())\n    def resize(self,event): self.Refresh(); event.Skip()\n    def paint(self,event):\n        dc=wx.AutoBufferedPaintDC(self); width,height=self.GetClientSize()\n        for y in range(0,height,8):\n            for x in range(0,width,8): dc.DrawBitmap(self.tile,x,y)\nif __name__==\"__main__\":\n    app=wx.App(False); frame=wx.Frame(None,title=\"Bitmap\",size=(400,300)); TiledPanel(frame); frame.Show(); app.MainLoop()\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "OS có thể yêu cầu repaint sau đó.",
+          "Đúng.",
+          "Sleep không lưu nội dung vẽ."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A24": {
+    "solution": "import wx\nfrom wx import glcanvas\nfrom OpenGL.GL import *\nfrom OpenGL.GLU import gluPerspective\nV=[(-1,-1,-1),(1,-1,-1),(1,1,-1),(-1,1,-1),(-1,-1,1),(1,-1,1),(1,1,1),(-1,1,1)]\nF=[(0,1,2,3),(4,5,6,7),(0,1,5,4),(2,3,7,6),(1,2,6,5),(0,3,7,4)]\nC=[(1,0,0),(0,1,0),(0,0,1),(1,1,0),(1,0,1),(0,1,1)]\nclass CubeCanvas(glcanvas.GLCanvas):\n    def __init__(self,parent):\n        super().__init__(parent,attribList=[glcanvas.WX_GL_RGBA,glcanvas.WX_GL_DOUBLEBUFFER,glcanvas.WX_GL_DEPTH_SIZE,24,0])\n        self.context=glcanvas.GLContext(self); self.ax=20; self.ay=30; self.last=None\n        self.Bind(wx.EVT_PAINT,self.paint); self.Bind(wx.EVT_SIZE,self.resize)\n        self.Bind(wx.EVT_LEFT_DOWN,self.down); self.Bind(wx.EVT_MOTION,self.motion)\n        self.Bind(wx.EVT_KEY_DOWN,self.key)\n    def resize(self,event): self.Refresh(False); event.Skip()\n    def down(self,event): self.SetFocus(); self.last=event.GetPosition()\n    def key(self,event):\n        if event.GetKeyCode() in (ord(\"R\"),ord(\"r\")):\n            self.ax=0; self.ay=0; self.Refresh(False)\n        else: event.Skip()\n    def motion(self,event):\n        if event.Dragging() and event.LeftIsDown() and self.last is not None:\n            p=event.GetPosition(); self.ay+=p.x-self.last.x; self.ax+=p.y-self.last.y; self.last=p; self.Refresh(False)\n    def paint(self,event):\n        dc=wx.PaintDC(self); self.SetCurrent(self.context)\n        w,h=self.GetClientSize()\n        if w<=0 or h<=0: return\n        glViewport(0,0,w,h); glEnable(GL_DEPTH_TEST); glClearColor(.08,.12,.16,1)\n        glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT)\n        glMatrixMode(GL_PROJECTION); glLoadIdentity(); gluPerspective(45,w/h,.1,100)\n        glMatrixMode(GL_MODELVIEW); glLoadIdentity(); glTranslatef(0,0,-6)\n        glRotatef(self.ax,1,0,0); glRotatef(self.ay,0,1,0)\n        glBegin(GL_QUADS)\n        for face,color in zip(F,C):\n            glColor3f(*color)\n            for i in face: glVertex3f(*V[i])\n        glEnd(); self.SwapBuffers()\nif __name__==\"__main__\":\n    app=wx.App(False); frame=wx.Frame(None,title=\"OpenGL cube\",size=(600,450)); CubeCanvas(frame); frame.Show(); app.MainLoop()\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "GL state gắn với context.",
+          "Đúng: cần context hiện hành trên thread vẽ.",
+          "Import không tạo context."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A25": {
+    "solution": "import math,pyglet\nfrom pyglet.gl import GL_TRIANGLES,GL_DEPTH_TEST,glEnable\nfrom pyglet.graphics.shader import Shader,ShaderProgram\nVS=\"\"\"#version 330 core\nin vec3 position; in vec3 color; out vec3 tint;\nuniform float angle; uniform float aspect;\nvoid main(){\n  float c=cos(angle),s=sin(angle);\n  vec3 p=vec3(c*position.x+s*position.z,position.y,-s*position.x+c*position.z);\n  p=vec3(p.x,0.94*p.y-0.342*p.z,0.342*p.y+0.94*p.z);\n  p.z-=5.0; float f=2.41421356;\n  gl_Position=vec4(f*p.x/aspect,f*p.y,-1.002002*p.z-0.2002002,-p.z);\n  tint=color;\n}\"\"\"\nFS=\"\"\"#version 330 core\nin vec3 tint; out vec4 outputColor;\nvoid main(){outputColor=vec4(tint,1.0);}\n\"\"\"\ndef main():\n    window=pyglet.window.Window(640,480,\"PE shader cube\",resizable=True)\n    program=ShaderProgram(Shader(VS,\"vertex\"),Shader(FS,\"fragment\"))\n    vertices=[(-1,-1,-1),(1,-1,-1),(1,1,-1),(-1,1,-1),(-1,-1,1),(1,-1,1),(1,1,1),(-1,1,1)]\n    faces=[(0,1,2,3),(4,5,6,7),(0,1,5,4),(2,3,7,6),(1,2,6,5),(0,3,7,4)]\n    palette=[(1,0,0),(0,1,0),(0,0,1),(1,1,0),(1,0,1),(0,1,1)]\n    positions=[]; colors=[]\n    for face,color in zip(faces,palette):\n        for j in (0,1,2,0,2,3): positions.extend(vertices[face[j]]); colors.extend(color)\n    mesh=program.vertex_list(36,GL_TRIANGLES,position=(\"f\",positions),color=(\"f\",colors))\n    keys=pyglet.window.key.KeyStateHandler(); window.push_handlers(keys); angle=0.0\n    def update(dt):\n        nonlocal angle\n        direction=int(keys[pyglet.window.key.RIGHT])-int(keys[pyglet.window.key.LEFT])\n        angle=(angle+direction*math.pi/2*dt)%(2*math.pi)\n    @window.event\n    def on_draw():\n        window.clear(); glEnable(GL_DEPTH_TEST); program.use()\n        program[\"angle\"]=angle; program[\"aspect\"]=window.width/max(1,window.height)\n        mesh.draw(GL_TRIANGLES); program.stop()\n    @window.event\n    def on_close():\n        pyglet.clock.unschedule(update); mesh.delete(); program.delete(); window.close()\n    pyglet.clock.schedule_interval(update,1/60); pyglet.app.run()\nif __name__==\"__main__\": main()\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Pyglet đã có Window và app loop.",
+          "Đúng.",
+          "Màu là dữ liệu render, không quyết định toolkit."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A26": {
+    "solution": "def advance(x,v,dt,limit):\n    if limit<=0 or dt<0: raise ValueError(\"bounds\")\n    if v==0: return x,0\n    phase=(x+v*dt)%(2*limit)\n    if phase==0: return 0,abs(v)\n    if phase==limit: return limit,-abs(v)\n    return (phase,v) if phase<limit else (2*limit-phase,-v)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Mỗi giây có số bước khác nhau.",
+          "Đúng: dùng velocity*dt.",
+          "Màu không quyết định vận tốc."
+        ]
+      }
+    ],
+    "support_files": {
+      "motion_app.py": "import pyglet\nfrom reference import advance\nwindow=pyglet.window.Window(400,300,\"Bounce\",resizable=True)\nsquare=pyglet.shapes.Rectangle(20,20,20,20,color=(255,0,0))\nvx,vy=80,60\npaused=False\ndef update(dt):\n    global vx,vy\n    square.x,vx=advance(min(square.x,max(1,window.width-20)),vx,dt,max(1,window.width-20))\n    square.y,vy=advance(min(square.y,max(1,window.height-20)),vy,dt,max(1,window.height-20))\n@window.event\ndef on_draw():\n    window.clear(); square.draw()\n@window.event\ndef on_key_press(symbol,modifiers):\n    global paused\n    if symbol==pyglet.window.key.SPACE:\n        paused=not paused\n        pyglet.clock.unschedule(update)\n        if not paused: pyglet.clock.schedule_interval(update,1/60)\n@window.event\ndef on_close():\n    pyglet.clock.unschedule(update); window.close()\npyglet.clock.schedule_interval(update,1/60)\npyglet.app.run()\n"
+    },
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "P21": {
+    "solution": "from threading import Thread\nfrom queue import Queue\n\ndef run_job(values):\n    q = Queue()\n    def work():\n        q.put([value * value for value in values])\n    thread = Thread(target=work)\n    thread.start()\n    thread.join()\n    return q.get()",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "run trực tiếp chạy như lời gọi thường.",
+          "Đúng: start khởi động luồng.",
+          "get lấy dữ liệu từ queue."
+        ]
+      },
+      {
+        "answer": 2,
+        "feedback": [
+          "Không coi đây là cơ chế an toàn mặc định.",
+          "sleep trong click làm UI bị chặn.",
+          "Đúng: tách kết quả worker và cập nhật UI."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận hàm worker tách module; test không yêu cầu thứ tự print giữa luồng."
+  },
+  "P22": {
+    "solution": "import subprocess\nimport sys\n\ndef launch_report():\n    completed = subprocess.run(\n        [sys.executable, \"report_child.py\"],\n        capture_output=True, text=True, timeout=2,\n        shell=False\n    )\n    return {\"stdout\": completed.stdout.strip(),\n            \"returncode\": completed.returncode}",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: dữ liệu và mã trạng thái khác nhau.",
+          "Bạn đã đổi ý nghĩa hai trường.",
+          "Giá trị chương trình in không thành mã thoát."
+        ]
+      },
+      {
+        "answer": 1,
+        "feedback": [
+          "Timeout giới hạn chờ, không làm thuật toán nhanh hơn.",
+          "Đúng: có giới hạn cho tình huống bị treo.",
+          "Nó không sửa code."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận Popen/communicate có timeout và cleanup đầy đủ; bài không bắt run duy nhất."
+  },
+  "A06": {
+    "solution": "TRANSITIONS={(\"new\",\"admit\"):\"ready\",(\"ready\",\"dispatch\"):\"running\",\n             (\"running\",\"io\"):\"waiting\",(\"waiting\",\"complete\"):\"ready\",\n             (\"running\",\"preempt\"):\"ready\",(\"running\",\"exit\"):\"terminated\"}\ndef next_state(state,event):\n    try: return TRANSITIONS[state,event]\n    except KeyError: raise ValueError(\"invalid transition\") from None\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Ready nghĩa là chỉ còn chờ CPU.",
+          "Đúng: chờ sự kiện I/O.",
+          "Chờ I/O chưa phải kết thúc."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A07": {
+    "solution": "from collections import deque\ndef schedule(jobs,policy,quantum=2):\n    if policy not in (\"fcfs\",\"sjf\",\"priority\",\"rr\") or quantum<=0:\n        raise ValueError(\"policy/quantum\")\n    ordered=list(jobs)\n    if policy==\"sjf\": ordered.sort(key=lambda row:row[1])\n    if policy==\"priority\": ordered.sort(key=lambda row:row[2])\n    queue=deque((sid,burst) for sid,burst,_ in ordered)\n    time=0; trace=[]\n    while queue:\n        sid,remaining=queue.popleft()\n        duration=min(quantum,remaining) if policy==\"rr\" else remaining\n        trace.append((sid,time,time+duration)); time+=duration\n        if remaining>duration: queue.append((sid,remaining-duration))\n    return trace\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: job chưa xong về cuối ready queue.",
+          "Đó là ý tưởng SJF.",
+          "RR dùng hàng đợi."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A08": {
+    "solution": "# unix_spawn.py (POSIX)\nimport os,sys\ndef unix_spawn():\n    pid=os.fork()\n    if pid==0:\n        try: os.execv(sys.executable,[sys.executable,\"-c\",\"print(123)\"])\n        except OSError: os._exit(127)\n    _,status=os.waitpid(pid,0)\n    return os.waitstatus_to_exitcode(status)\n# windows_spawn.py (cũng có thể chạy cross-platform)\nimport subprocess\ndef windows_spawn():\n    process=subprocess.Popen([sys.executable,\"-c\",\"print(123)\"],shell=False)\n    return process.wait(timeout=5)\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Image cũ đã được thay.",
+          "Đúng.",
+          "Nhánh nào gọi exec thành công đều bị thay."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A09": {
+    "solution": "import subprocess\ndef run_child(args,text,timeout):\n    process=subprocess.Popen(args,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,shell=False)\n    timed_out=False\n    try:\n        out,err=process.communicate(text,timeout=timeout)\n    except subprocess.TimeoutExpired:\n        timed_out=True; process.kill(); out,err=process.communicate()\n    return dict(stdout=out,stderr=err,returncode=process.returncode,timed_out=timed_out)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: caller phải xử lý vòng đời.",
+          "Không được giả định vậy.",
+          "Timeout không là thành công."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A10": {
+    "solution": "Tải URL: thread hoặc async để xen kẽ I/O, giới hạn đồng thời. CPU Python trên build có GIL: process có thể dùng nhiều core nhưng phải tính overhead. GUI: main loop giữ widget, worker chỉ gửi dữ liệu qua queue. Apache/Chromium là ví dụ phân chia worker/process trong slide, không chứng minh kiến trúc mọi phiên bản. Scalability phải đo khi tăng worker và tải; responsiveness là khả năng trả lời sự kiện.\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Còn GIL và chi phí điều phối.",
+          "Đúng: phải đo, không suy từ số core.",
+          "Thread vẫn hữu ích khi chờ I/O."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A11": {
+    "solution": "from threading import Thread,Lock\ndef count_parallel(workers,iterations):\n    count=0; lock=Lock()\n    def work():\n        nonlocal count\n        for _ in range(iterations):\n            with lock: count+=1\n    threads=[Thread(target=work) for _ in range(workers)]\n    for thread in threads: thread.start()\n    for thread in threads: thread.join()\n    return count\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Hai worker vẫn có thể đọc cùng giá trị cũ.",
+          "Đúng: bảo vệ toàn bộ thao tác logic.",
+          "GIL không thay thế hợp đồng đồng bộ."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A12": {
+    "solution": "from threading import Thread,Event\nfrom queue import Queue\nclass SquareWorker(Thread):\n    def __init__(self,job_id,value,output,stop_event):\n        super().__init__(); self.job_id=job_id; self.value=value; self.output=output; self.stop_event=stop_event\n    def run(self):\n        if not self.stop_event.is_set(): self.output.put((self.job_id,self.value**2))\ndef run_many(values):\n    output=Queue(); stop=Event()\n    workers=[SquareWorker(i,value,output,stop) for i,value in enumerate(values)]\n    for worker in workers: worker.start()\n    for worker in workers: worker.join()\n    result={}\n    while not output.empty():\n        i,value=output.get(); result[i]=value\n    return [result[i] for i in range(len(values))]\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Controller không đọc được queue riêng.",
+          "Đúng: dependency được truyền tường minh.",
+          "Sleep không là giao thức kết quả."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A13": {
+    "solution": "import socket\nfrom urllib.request import urlopen\ndef tcp_line(host,port,message):\n    with socket.create_connection((host,port),timeout=2) as sock:\n        sock.sendall((message+\"\\n\").encode(\"utf8\"))\n        with sock.makefile(\"rb\") as stream: data=stream.readline(1025)\n    if len(data)>1024 or not data.endswith(b\"\\n\"): raise ValueError(\"framing\")\n    return data[:-1].decode(\"utf8\")\ndef fetch_text(url):\n    with urlopen(url,timeout=2) as response: data=response.read(4097)\n    if len(data)>4096: raise ValueError(\"too large\")\n    return data.decode(\"utf8\")\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Không có ranh giới message ở TCP.",
+          "Đúng: dùng newline, length prefix hoặc protocol khác.",
+          "Loopback vẫn là stream."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "A22": {
+    "solution": "import sys,json,subprocess,threading,queue\nfrom pathlib import Path\ndef main(kind,peer=False):\n    child=None; inbox=queue.Queue()\n    if peer:\n        reader,writer=sys.stdin,sys.stdout\n    else:\n        other=\"wx\" if kind==\"tk\" else \"tk\"\n        child=subprocess.Popen([sys.executable,str(Path(__file__).resolve()),other,\"--peer\"],\n            stdin=subprocess.PIPE,stdout=subprocess.PIPE,text=True,encoding=\"utf8\",bufsize=1)\n        reader,writer=child.stdout,child.stdin\n    def read_messages():\n        for line in reader:\n            try: inbox.put(json.loads(line))\n            except ValueError: inbox.put({\"type\":\"error\",\"value\":\"Invalid JSON\"})\n        inbox.put({\"type\":\"closed\"})\n    threading.Thread(target=read_messages,daemon=True).start()\n    def send(message):\n        try: writer.write(json.dumps(message,ensure_ascii=False)+\"\\n\"); writer.flush()\n        except (BrokenPipeError,OSError): inbox.put({\"type\":\"closed\"})\n    def send_name(value): send({\"type\":\"name\",\"value\":value})\n    if kind==\"tk\":\n        import tkinter as tk\n        from tkinter import ttk\n        root=tk.Tk(); root.title(\"Tk peer\" if peer else \"Tk host\")\n        entry=ttk.Entry(root); entry.pack(); status=ttk.Label(root,text=\"Ready\"); status.pack()\n        ttk.Button(root,text=\"Send\",command=lambda:send_name(entry.get())).pack()\n        closed=False\n        def close():\n            nonlocal closed\n            if not closed: closed=True; send({\"type\":\"quit\"}); root.destroy()\n        def poll():\n            while not inbox.empty():\n                message=inbox.get()\n                if message.get(\"type\")==\"quit\": close(); return\n                status.configure(text=\"Received: \"+str(message.get(\"value\",message.get(\"type\"))))\n            if not closed: root.after(50,poll)\n        root.protocol(\"WM_DELETE_WINDOW\",close); root.after(50,poll); root.mainloop()\n    else:\n        import wx\n        app=wx.App(False); frame=wx.Frame(None,title=\"wx peer\" if peer else \"wx host\",size=(320,180))\n        panel=wx.Panel(frame); box=wx.BoxSizer(wx.VERTICAL)\n        entry=wx.TextCtrl(panel); status=wx.StaticText(panel,label=\"Ready\"); button=wx.Button(panel,label=\"Send\")\n        for widget in (entry,status,button): box.Add(widget,0,wx.EXPAND|wx.ALL,8)\n        panel.SetSizer(box); button.Bind(wx.EVT_BUTTON,lambda event:send_name(entry.GetValue()))\n        timer=wx.Timer(frame)\n        def close(event): timer.Stop(); send({\"type\":\"quit\"}); frame.Destroy()\n        def poll(event):\n            while not inbox.empty():\n                message=inbox.get()\n                if message.get(\"type\")==\"quit\": frame.Close(); return\n                status.SetLabel(\"Received: \"+str(message.get(\"value\",message.get(\"type\"))))\n        frame.Bind(wx.EVT_CLOSE,close); frame.Bind(wx.EVT_TIMER,poll,timer)\n        timer.Start(50); frame.Show(); app.MainLoop()\n    if child is not None:\n        try: child.wait(timeout=1)\n        except subprocess.TimeoutExpired: child.terminate(); child.wait(timeout=3)\n        child.stdin.close(); child.stdout.close()\nif __name__==\"__main__\": main(sys.argv[1],\"--peer\" in sys.argv)\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "GUI toolkit thường yêu cầu main thread.",
+          "Đúng: cần tôn trọng loop/thread của từng toolkit.",
+          "Daemon chỉ ảnh hưởng vòng đời thread."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "X02": {
+    "solution": "from dataclasses import dataclass\nfrom datetime import date\nimport math,numpy as np\n@dataclass(frozen=True)\nclass Student:\n    sid:str; name:str; dob:str\n    def __post_init__(self):\n        if not self.sid.strip() or not self.name.strip(): raise ValueError(\"student\")\n        date.fromisoformat(self.dob)\n    @classmethod\n    def input(cls,ask): return cls(ask(\"ID: \"),ask(\"Ten: \"),ask(\"DoB: \"))\n    def list(self): return (self.sid,self.name,self.dob)\n@dataclass(frozen=True)\nclass Course:\n    cid:str; name:str; credits:int\n    def __post_init__(self):\n        if not self.cid.strip() or not self.name.strip() or type(self.credits) is not int or self.credits<=0: raise ValueError(\"course\")\n    @classmethod\n    def input(cls,ask): return cls(ask(\"Ma: \"),ask(\"Ten: \"),int(ask(\"Tin chi: \")))\n    def list(self): return (self.cid,self.name,self.credits)\nclass Registry:\n    def __init__(self): self.students={}; self.courses={}; self.marks={}\n    def add_student(self,student):\n        if student.sid in self.students: raise ValueError(\"duplicate\")\n        self.students[student.sid]=student\n    def add_course(self,course):\n        if course.cid in self.courses: raise ValueError(\"duplicate\")\n        self.courses[course.cid]=course\n    def set_mark(self,sid,cid,score):\n        if sid not in self.students or cid not in self.courses: raise ValueError(\"id\")\n        if type(score) not in (int,float) or not math.isfinite(score) or not 0<=score<=10: raise ValueError(\"score\")\n        self.marks[sid,cid]=math.floor(score*10)/10\n    def gpa(self,sid):\n        if sid not in self.students: raise ValueError(\"id\")\n        rows=[(score,self.courses[cid].credits) for (student,cid),score in self.marks.items() if student==sid]\n        if not rows: return None\n        a=np.asarray(rows,dtype=float); return float(np.dot(a[:,0],a[:,1])/a[:,1].sum())\n    def ranking(self):\n        rows=[(sid,self.gpa(sid)) for sid in self.students]\n        return sorted(rows,key=lambda r:(r[1] is None,-r[1] if r[1] is not None else 0,r[0]))\n    def course_marks(self,cid):\n        if cid not in self.courses: raise ValueError(\"id\")\n        return [(sid,s.name,self.marks.get((sid,cid))) for sid,s in self.students.items()]\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Sẽ trộn trách nhiệm và khó đổi UI.",
+          "Đúng.",
+          "Curses chỉ hiển thị."
+        ]
+      }
+    ],
+    "support_files": {
+      "PACKAGE_LAYOUT.md": "Tách Student vào domains/student.py, Course vào domains/course.py, Registry vào domains/registry.py. __init__.py export ba tên. input.py chứa collect và read_marks gọi class.input; output.py dùng curses.wrapper và menu A03 để render obj.list/ranking/course_marks; main.py giữ menu ứng dụng. Đáp án ghép chạy được được xuất kèm package_pw4 trong bước đóng gói."
+    },
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "X03": {
+    "solution": "from pathlib import Path\nimport json,zipfile,gzip,pickle\nKEYS=(\"students\",\"courses\",\"marks\")\ndef save_text_bundle(folder,state):\n    folder=Path(folder); folder.mkdir(parents=True,exist_ok=True)\n    for key in KEYS: (folder/(key+\".txt\")).write_text(json.dumps(state[key],ensure_ascii=False),encoding=\"utf8\")\n    with zipfile.ZipFile(folder/\"students.dat\",\"w\",zipfile.ZIP_DEFLATED) as archive:\n        for key in KEYS: archive.write(folder/(key+\".txt\"),arcname=key+\".txt\")\ndef load_text_bundle(folder):\n    path=Path(folder)/\"students.dat\"\n    if not path.exists(): return {key:{} for key in KEYS}\n    with zipfile.ZipFile(path) as archive:\n        return {key:json.loads(archive.read(key+\".txt\").decode(\"utf8\")) for key in KEYS}\ndef save_pickle(path,registry):\n    with gzip.open(path,\"wb\") as stream: pickle.dump(registry,stream,pickle.HIGHEST_PROTOCOL)\ndef load_pickle(path):\n    if not Path(path).exists(): return None\n    with gzip.open(path,\"rb\") as stream: return pickle.load(stream)\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Có thể ghi đè lên dữ liệu cần phục hồi.",
+          "Đúng.",
+          "Nguyên tắc áp dụng cả CLI và GUI."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "X04": {
+    "solution": "import shlex,subprocess,time,contextlib\ndef parse(line):\n    lexer=shlex.shlex(line,posix=True,punctuation_chars=\"|<>\"); lexer.whitespace_split=True; lexer.commenters=\"\"\n    tokens=list(lexer); stages=[[]]; source=target=None; i=0\n    while i<len(tokens):\n        token=tokens[i]\n        if token==\"|\":\n            if not stages[-1] or target is not None: raise ValueError(\"pipe\")\n            stages.append([])\n        elif token in (\"<\",\">\"):\n            if i+1>=len(tokens) or tokens[i+1] in (\"|\",\"<\",\">\"): raise ValueError(\"redirect\")\n            i+=1\n            if token==\"<\":\n                if len(stages)!=1 or source is not None: raise ValueError(\"input\")\n                source=tokens[i]\n            else:\n                if target is not None: raise ValueError(\"output\")\n                target=tokens[i]\n        elif token in (\"<<\",\">>\",\"||\",\"&&\",\"&\",\";\"): raise ValueError(\"unsupported operator\")\n        else: stages[-1].append(token)\n        i+=1\n    if not stages[-1]: raise ValueError(\"empty command\")\n    return stages,source,target\ndef run_line(line,timeout=5):\n    stages,source,target=parse(line); processes=[]; deadline=time.monotonic()+timeout\n    with contextlib.ExitStack() as stack:\n        incoming=stack.enter_context(open(source,\"rb\")) if source else subprocess.DEVNULL\n        outgoing=stack.enter_context(open(target,\"wb\")) if target else subprocess.PIPE\n        try:\n            for i,args in enumerate(stages):\n                last=i==len(stages)-1\n                process=subprocess.Popen(args,stdin=incoming,stdout=outgoing if last else subprocess.PIPE,shell=False)\n                processes.append(process)\n                if i>0: incoming.close()\n                incoming=process.stdout\n            output,_=processes[-1].communicate(timeout=max(.01,deadline-time.monotonic()))\n            for process in processes[:-1]: process.wait(timeout=max(.01,deadline-time.monotonic()))\n            return dict(stdout=(output or b\"\").decode(\"utf8\"),returncodes=[p.returncode for p in processes])\n        finally:\n            for process in processes:\n                if process.poll() is None: process.kill()\n            for process in processes:\n                process.wait()\n                if process.stdout is not None: process.stdout.close()\ndef main():\n    while True:\n        try: line=input(\"pe> \")\n        except EOFError: break\n        if line.strip()==\"exit\": break\n        if not line.strip(): continue\n        try: print(run_line(line)[\"stdout\"],end=\"\")\n        except (ValueError,OSError,subprocess.SubprocessError) as error: print(type(error).__name__,error)\nif __name__==\"__main__\": main()\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 0,
+        "feedback": [
+          "Đúng: mọi đầu ghi phải đóng mới có EOF.",
+          "Giữ handle thừa có thể làm treo.",
+          "Pipe không là thao tác xóa file."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "X05": {
+    "solution": "import copy,gzip,pickle,os,uuid\nfrom pathlib import Path\nfrom threading import Thread\nfrom queue import Queue\ndef start_save(state,path):\n    snapshot=copy.deepcopy(state); path=Path(path); results=Queue()\n    def work():\n        temporary=path.with_name(path.name+\".\"+uuid.uuid4().hex+\".tmp\")\n        try:\n            with gzip.open(temporary,\"wb\") as stream: pickle.dump(snapshot,stream,pickle.HIGHEST_PROTOCOL)\n            os.replace(temporary,path); results.put((\"ok\",str(path)))\n        except Exception as error: results.put((\"error\",str(error)))\n        finally:\n            if temporary.exists(): temporary.unlink()\n    worker=Thread(target=work); worker.start(); return worker,results\n",
+    "answer_kind": "python",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Các phần bên trong vẫn dùng chung tham chiếu.",
+          "Đúng: cần snapshot nhất quán theo mô hình dữ liệu.",
+          "Daemon không bảo vệ dữ liệu."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  },
+  "X06": {
+    "solution": "Domain: dùng Registry/Student/Course ở X02. Persistence: X03 load_pickle + X05 start_save. GUI: notebook bốn tab, Entry/Combobox readonly, callback kiểm tra đầu vào rồi gọi domain; report lấy Registry.ranking. Save chụp Registry, disable nút Save, poll Queue bằng after; ok bỏ dirty, error giữ dirty. Khi đang save khóa các thao tác sửa để trạng thái displayed và snapshot khớp; WM_DELETE_WINDOW lưu hoặc chờ. Startup load lỗi hiển thị thông báo và không cho autosave ghi đè file hỏng. Thư mục capstone_pw9 chứa reference triển khai đủ luồng.\n",
+    "answer_kind": "procedure",
+    "quiz_keys": [
+      {
+        "answer": 1,
+        "feedback": [
+          "Ứng dụng phải giữ dữ liệu qua phiên.",
+          "Đúng: kiểm tra end-to-end gồm khởi động lại.",
+          "Animation không sửa persistence."
+        ]
+      }
+    ],
+    "support_files": {},
+    "equivalent": "Chấp nhận cách giải khác đạt hợp đồng; ràng buộc API chỉ áp dụng khi đề nêu rõ."
+  }
+}

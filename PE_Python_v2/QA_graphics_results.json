@@ -1,0 +1,7 @@
+[
+  {
+    "name": "Pyglet shader native draw",
+    "status": "PASS",
+    "detail": "Shader compiled/linked, attributes/uniforms set and native GL draw captured. Full cube motion/manual protocol separate."
+  }
+]

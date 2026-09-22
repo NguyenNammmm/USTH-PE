@@ -1,0 +1,462 @@
+[
+  {
+    "id": "C01",
+    "page": 6,
+    "title": "C01 - Chọn công cụ và dựng môi trường học"
+  },
+  {
+    "id": "C02",
+    "page": 7,
+    "title": "C02 - REPL, script và notebook: trạng thái đến từ đâu?"
+  },
+  {
+    "id": "C03",
+    "page": 8,
+    "title": "C03 - Git: lưu một thay đổi và gửi vào fork"
+  },
+  {
+    "id": "P01",
+    "page": 9,
+    "title": "P01 - Tên biến và kết quả chương trình"
+  },
+  {
+    "id": "P02",
+    "page": 10,
+    "title": "P02 - Chuỗi nhập vào và phép tính số"
+  },
+  {
+    "id": "C04",
+    "page": 11,
+    "title": "C04 - Tên biến, kiểu động và ghi chú có ích"
+  },
+  {
+    "id": "C05",
+    "page": 12,
+    "title": "C05 - Toán tử, thứ tự tính và làm tròn xuống"
+  },
+  {
+    "id": "P03",
+    "page": 13,
+    "title": "P03 - Tách dữ liệu từ tên tệp"
+  },
+  {
+    "id": "C06",
+    "page": 14,
+    "title": "C06 - Chuỗi: chuẩn hóa, định dạng và không sửa tại chỗ"
+  },
+  {
+    "id": "P04",
+    "page": 15,
+    "title": "P04 - Điều kiện và giá trị ở ranh giới"
+  },
+  {
+    "id": "P05",
+    "page": 16,
+    "title": "P05 - List và việc hai tên dùng chung dữ liệu"
+  },
+  {
+    "id": "C07",
+    "page": 17,
+    "title": "C07 - Index và slice: chọn đúng phần dữ liệu"
+  },
+  {
+    "id": "C08",
+    "page": 18,
+    "title": "C08 - Thêm, xóa và đảo list"
+  },
+  {
+    "id": "P06",
+    "page": 19,
+    "title": "P06 - Dictionary và tra cứu theo khóa"
+  },
+  {
+    "id": "C09",
+    "page": 20,
+    "title": "C09 - Dictionary: duyệt, xóa và tìm cực trị"
+  },
+  {
+    "id": "P07",
+    "page": 21,
+    "title": "P07 - Chọn tuple và set đúng mục đích"
+  },
+  {
+    "id": "C10",
+    "page": 22,
+    "title": "C10 - Tuple, unpacking và lựa chọn collection"
+  },
+  {
+    "id": "C17",
+    "page": 23,
+    "title": "C17 - Tên file thành hồ sơ người bơi"
+  },
+  {
+    "id": "P08",
+    "page": 24,
+    "title": "P08 - Vòng for và biến tích lũy"
+  },
+  {
+    "id": "C14",
+    "page": 25,
+    "title": "C14 - Comprehension, enumerate, zip và Counter"
+  },
+  {
+    "id": "P09",
+    "page": 26,
+    "title": "P09 - While, sentinel và điều kiện dừng"
+  },
+  {
+    "id": "C11",
+    "page": 27,
+    "title": "C11 - range, break và continue"
+  },
+  {
+    "id": "P10",
+    "page": 28,
+    "title": "P10 - Hàm trả về giá trị"
+  },
+  {
+    "id": "C13",
+    "page": 29,
+    "title": "C13 - Khám phá API, traceback và module chuẩn"
+  },
+  {
+    "id": "C15",
+    "page": 30,
+    "title": "C15 - Ngẫu nhiên có thể kiểm thử"
+  },
+  {
+    "id": "P11",
+    "page": 31,
+    "title": "P11 - Module và trung bình có trọng số"
+  },
+  {
+    "id": "C19",
+    "page": 32,
+    "title": "C19 - Module, alias và package lồng nhau"
+  },
+  {
+    "id": "P12",
+    "page": 33,
+    "title": "P12 - Đọc file với with và UTF-8"
+  },
+  {
+    "id": "P13",
+    "page": 34,
+    "title": "P13 - Ngoại lệ và dữ liệu nhập không hợp lệ"
+  },
+  {
+    "id": "C12",
+    "page": 35,
+    "title": "C12 - Nhánh elif và input trong chương trình CLI"
+  },
+  {
+    "id": "C16",
+    "page": 36,
+    "title": "C16 - Ngày giờ và tìm mẫu bằng regex"
+  },
+  {
+    "id": "P14",
+    "page": 37,
+    "title": "P14 - Lưu cấu trúc dữ liệu bằng JSON"
+  },
+  {
+    "id": "C21",
+    "page": 38,
+    "title": "C21 - File modes, buffering và lỗi I/O"
+  },
+  {
+    "id": "C22",
+    "page": 39,
+    "title": "C22 - Duyệt thư mục và thao tác file trong vùng bài tập"
+  },
+  {
+    "id": "P15",
+    "page": 40,
+    "title": "P15 - Class và trạng thái riêng từng đối tượng"
+  },
+  {
+    "id": "P16",
+    "page": 41,
+    "title": "P16 - Kế thừa và ghi đè hành vi"
+  },
+  {
+    "id": "C20",
+    "page": 42,
+    "title": "C20 - So sánh đối tượng, biểu diễn và đóng gói"
+  },
+  {
+    "id": "P17",
+    "page": 43,
+    "title": "P17 - Tkinter: cửa sổ, widget và grid"
+  },
+  {
+    "id": "P18",
+    "page": 44,
+    "title": "P18 - Callback: nối thao tác và trạng thái"
+  },
+  {
+    "id": "P19",
+    "page": 45,
+    "title": "P19 - Biểu đồ phải khớp dữ liệu"
+  },
+  {
+    "id": "P20",
+    "page": 46,
+    "title": "P20 - Test trường hợp thường và trường hợp biên"
+  },
+  {
+    "id": "P23",
+    "page": 47,
+    "title": "P23 - Chuyển giao: báo cáo thời gian bơi"
+  },
+  {
+    "id": "C18",
+    "page": 48,
+    "title": "C18 - Báo cáo bơi từ file đến kết quả"
+  },
+  {
+    "id": "P24",
+    "page": 49,
+    "title": "P24 - Capstone: Sổ học tập USTH"
+  },
+  {
+    "id": "T01",
+    "page": 50,
+    "title": "T01 - Cửa sổ, focus và trạng thái nút"
+  },
+  {
+    "id": "T02",
+    "page": 51,
+    "title": "T02 - Lựa chọn dữ liệu: combo, radio, check và list"
+  },
+  {
+    "id": "T03",
+    "page": 52,
+    "title": "T03 - Bố cục: Frame, padding và co giãn"
+  },
+  {
+    "id": "T04",
+    "page": 53,
+    "title": "T04 - Menu và nhiều Notebook"
+  },
+  {
+    "id": "T05",
+    "page": 54,
+    "title": "T05 - Hộp thoại và lựa chọn file"
+  },
+  {
+    "id": "T06",
+    "page": 55,
+    "title": "T06 - Tooltip, relief và Canvas"
+  },
+  {
+    "id": "T07",
+    "page": 56,
+    "title": "T07 - Event loop, after và thanh tiến độ"
+  },
+  {
+    "id": "T08",
+    "page": 57,
+    "title": "T08 - StringVar, scope và component tái sử dụng"
+  },
+  {
+    "id": "T09",
+    "page": 58,
+    "title": "T09 - Biểu đồ trong Tk và thay đổi thang đo"
+  },
+  {
+    "id": "T10",
+    "page": 59,
+    "title": "T10 - Người học tự viết unit test cho GUI"
+  },
+  {
+    "id": "T11",
+    "page": 60,
+    "title": "T11 - Debug watch và mức log"
+  },
+  {
+    "id": "T12",
+    "page": 61,
+    "title": "T12 - Quốc tế hóa và định dạng theo ngôn ngữ"
+  },
+  {
+    "id": "T13",
+    "page": 62,
+    "title": "T13 - Slideshow GIF/JPEG và vòng đời ảnh"
+  },
+  {
+    "id": "T14",
+    "page": 63,
+    "title": "T14 - Thiết kế lặp và factory cho thành phần GUI"
+  },
+  {
+    "id": "X01",
+    "page": 64,
+    "title": "X01 - PW1: quản lý lớp bằng collection và CLI"
+  },
+  {
+    "id": "A01",
+    "page": 65,
+    "title": "A01 - Đa kế thừa, MRO và lớp trừu tượng"
+  },
+  {
+    "id": "A02",
+    "page": 66,
+    "title": "A02 - NumPy và xếp hạng GPA có trọng số"
+  },
+  {
+    "id": "A03",
+    "page": 67,
+    "title": "A03 - Curses: menu bàn phím cho quản lý điểm"
+  },
+  {
+    "id": "A04",
+    "page": 68,
+    "title": "A04 - Nén bytes và đóng gói nhiều file"
+  },
+  {
+    "id": "A05",
+    "page": 69,
+    "title": "A05 - Pickle, JSON và dữ liệu có kiểu"
+  },
+  {
+    "id": "A14",
+    "page": 70,
+    "title": "A14 - Đọc bảng số bằng NumPy"
+  },
+  {
+    "id": "A15",
+    "page": 71,
+    "title": "A15 - DataFrame từ CSV, Excel và database"
+  },
+  {
+    "id": "A16",
+    "page": 72,
+    "title": "A16 - SAS, Stata, HDF5 và MATLAB"
+  },
+  {
+    "id": "A17",
+    "page": 73,
+    "title": "A17 - Chọn loại biểu đồ và quản lý Figure"
+  },
+  {
+    "id": "A18",
+    "page": 74,
+    "title": "A18 - Dựng MySQL và thiết kế schema bằng Workbench"
+  },
+  {
+    "id": "A19",
+    "page": 75,
+    "title": "A19 - MySQL INSERT, UPDATE, DELETE và transaction"
+  },
+  {
+    "id": "A20",
+    "page": 76,
+    "title": "A20 - Nối CRUD MySQL vào giao diện"
+  },
+  {
+    "id": "A21",
+    "page": 77,
+    "title": "A21 - wxPython: cửa sổ và các nhóm control"
+  },
+  {
+    "id": "A23",
+    "page": 78,
+    "title": "A23 - Bitmap lát nền trong wxPython"
+  },
+  {
+    "id": "A24",
+    "page": 79,
+    "title": "A24 - OpenGL trong wx: cube và phép biến đổi 3D"
+  },
+  {
+    "id": "A25",
+    "page": 80,
+    "title": "A25 - Pyglet, shader và cube nhiều màu"
+  },
+  {
+    "id": "A26",
+    "page": 81,
+    "title": "A26 - Hoạt ảnh OpenGL: chuyển động theo thời gian"
+  },
+  {
+    "id": "P21",
+    "page": 82,
+    "title": "P21 - Thread và queue: nhận kết quả việc nền"
+  },
+  {
+    "id": "P22",
+    "page": 83,
+    "title": "P22 - Tiến trình con và mã kết thúc"
+  },
+  {
+    "id": "A06",
+    "page": 84,
+    "title": "A06 - Tiến trình, trạng thái và PCB"
+  },
+  {
+    "id": "A07",
+    "page": 85,
+    "title": "A07 - Mô phỏng FCFS, SJF, priority và round-robin"
+  },
+  {
+    "id": "A08",
+    "page": 86,
+    "title": "A08 - Tạo tiến trình trên Windows và fork/exec trên UNIX"
+  },
+  {
+    "id": "A09",
+    "page": 87,
+    "title": "A09 - Luồng chuẩn, pipe và vòng đời process"
+  },
+  {
+    "id": "A10",
+    "page": 88,
+    "title": "A10 - Bộ nhớ dùng chung, GIL và chọn concurrency"
+  },
+  {
+    "id": "A11",
+    "page": 89,
+    "title": "A11 - Race condition và Lock"
+  },
+  {
+    "id": "A12",
+    "page": 90,
+    "title": "A12 - Nhiều worker, dừng hợp tác và queue qua module"
+  },
+  {
+    "id": "A13",
+    "page": 91,
+    "title": "A13 - TCP và HTTP qua dịch vụ lab cục bộ"
+  },
+  {
+    "id": "A22",
+    "page": 92,
+    "title": "A22 - Hai toolkit: chẩn đoán mainloop và trao đổi dữ liệu"
+  },
+  {
+    "id": "X02",
+    "page": 93,
+    "title": "X02 - PW2-PW4: domain objects, GPA và chia package"
+  },
+  {
+    "id": "X03",
+    "page": 94,
+    "title": "X03 - PW5-PW6: ba file, archive và pickle có nén"
+  },
+  {
+    "id": "X04",
+    "page": 95,
+    "title": "X04 - PW7: shell có chuyển hướng và pipeline"
+  },
+  {
+    "id": "X05",
+    "page": 96,
+    "title": "X05 - PW8: lưu pickle có nén trong background"
+  },
+  {
+    "id": "X06",
+    "page": 97,
+    "title": "X06 - PW9: ứng dụng quản lý điểm hoàn chỉnh bằng Tkinter"
+  }
+]

@@ -1,0 +1,707 @@
+[
+  {
+    "lesson": "C01",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 3
+  },
+  {
+    "lesson": "C02",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "C03",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "P01",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "P02",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "C04",
+    "status": "PASS",
+    "checks": [
+      "C04-K01",
+      "C04-K02"
+    ],
+    "manual_remaining": [
+      "Giải thích MAX_SCORE vẫn có thể gán lại; comment phải nêu lý do, không chỉ đọc lại câu lệnh."
+    ]
+  },
+  {
+    "lesson": "C05",
+    "status": "PASS",
+    "checks": [
+      "C05-K01",
+      "C05-K02"
+    ],
+    "manual_remaining": []
+  },
+  {
+    "lesson": "P03",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "C06",
+    "status": "PASS",
+    "checks": [
+      "C06-K01",
+      "C06-K02"
+    ],
+    "manual_remaining": [
+      "Học viên tách một chain thành ba biến trung gian và giải thích cùng kết quả; so lower, upper và title trên aN."
+    ]
+  },
+  {
+    "lesson": "P04",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "P05",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "C07",
+    "status": "PASS",
+    "checks": [
+      "C07-K01",
+      "C07-K02"
+    ],
+    "manual_remaining": []
+  },
+  {
+    "lesson": "C08",
+    "status": "PASS",
+    "checks": [
+      "C08-K01",
+      "C08-K02"
+    ],
+    "manual_remaining": [
+      "Trên [10,20,30], học viên thực hiện del items[1] ra [10,30] và phân biệt với remove(1) gây ValueError."
+    ]
+  },
+  {
+    "lesson": "P06",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "C09",
+    "status": "PASS",
+    "checks": [
+      "C09-K01",
+      "C09-K02"
+    ],
+    "manual_remaining": [
+      "Yêu cầu người học tự in keys, values, items trong guided; kiểm tra đầy đủ cặp dù cách trình bày thứ tự khác."
+    ]
+  },
+  {
+    "lesson": "P07",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "C10",
+    "status": "PASS",
+    "checks": [
+      "C10-K01",
+      "C10-K02"
+    ],
+    "manual_remaining": [
+      "Học viên dự đoán rồi xác nhận TypeError cho gán phần tử tuple, ValueError cho unpack sai số lượng; phân loại đúng cả bốn collection."
+    ]
+  },
+  {
+    "lesson": "C17",
+    "status": "PASS",
+    "checks": [
+      "C17-K01",
+      "C17-K02"
+    ],
+    "manual_remaining": [
+      "Sơ đồ có đầu vào/đầu ra từng bước; không lẫn tuổi với dữ liệu lượt bơi."
+    ]
+  },
+  {
+    "lesson": "P08",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "C14",
+    "status": "PASS",
+    "checks": [
+      "C14-K01",
+      "C14-K02",
+      "C14-K03"
+    ],
+    "manual_remaining": []
+  },
+  {
+    "lesson": "P09",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "C11",
+    "status": "PASS",
+    "checks": [
+      "C11-K01",
+      "C11-K02"
+    ],
+    "manual_remaining": []
+  },
+  {
+    "lesson": "P10",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "C13",
+    "status": "PASS",
+    "checks": [
+      "C13-K01"
+    ],
+    "manual_remaining": [
+      "Bản giải thích phải xác định AttributeError, đối tượng str và lời gọi append; có lệnh khám phá thực, không chỉ ảnh code sẵn."
+    ]
+  },
+  {
+    "lesson": "C15",
+    "status": "PASS",
+    "checks": [
+      "C15-K01",
+      "C15-K02"
+    ],
+    "manual_remaining": []
+  },
+  {
+    "lesson": "P11",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "C19",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "P12",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "P13",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "C12",
+    "status": "PASS",
+    "checks": [
+      "C12-K01",
+      "C12-K02"
+    ],
+    "manual_remaining": [
+      "Chạy file qua CLI: nhập 8, stdout gồm prompt Diem: và Gioi; import module không hỏi input."
+    ]
+  },
+  {
+    "lesson": "C16",
+    "status": "PASS",
+    "checks": [
+      "C16-K01",
+      "C16-K02"
+    ],
+    "manual_remaining": []
+  },
+  {
+    "lesson": "P14",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "C21",
+    "status": "PASS",
+    "checks": [
+      "C21-K01",
+      "C21-K02"
+    ],
+    "manual_remaining": [
+      "Trace bắt buộc gồm r/w/a/b/+, read(size), readline, readlines và seek; binary ABC thành AZC; xác nhận folder tạm không tồn tại sau context."
+    ]
+  },
+  {
+    "lesson": "C22",
+    "status": "PASS",
+    "checks": [
+      "C22-K01",
+      "C22-K02"
+    ],
+    "manual_remaining": [
+      "Trace cwd trở lại đường dẫn ban đầu kể cả khi thao tác lỗi; chỉ xóa fixture đã tạo, không dùng đường dẫn home hoặc thư mục nguồn."
+    ]
+  },
+  {
+    "lesson": "P15",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "P16",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "C20",
+    "status": "PASS",
+    "checks": [
+      "C20-K01",
+      "C20-K02"
+    ],
+    "manual_remaining": [
+      "Học viên phải tự viết và giải thích hai phép isinstance/issubclass với subclass; nêu underscore không bảo vệ bí mật."
+    ]
+  },
+  {
+    "lesson": "P17",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "P18",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "P19",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "P20",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "P23",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "C18",
+    "status": "PASS",
+    "checks": [
+      "C18-K01",
+      "C18-K02"
+    ],
+    "manual_remaining": []
+  },
+  {
+    "lesson": "P24",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "T01",
+    "status": "PASS",
+    "checks": [
+      "T01-K01"
+    ],
+    "manual_remaining": [
+      "Hiện cửa sổ: gõ ngay đi vào Entry; icon thấy trên title/taskbar theo hỗ trợ OS; click trợ giúp mở đúng một Toplevel mỗi lần; đóng child không tắt root."
+    ]
+  },
+  {
+    "lesson": "T02",
+    "status": "PASS",
+    "checks": [
+      "T02-K01"
+    ],
+    "manual_remaining": [
+      "Thử đủ mỗi widget bằng bàn phím; radio loại trừ nhau, disabled check không đổi; Spinbox nhập 99 bị từ chối bởi collect; ScrolledText cuộn khi có 20 dòng."
+    ]
+  },
+  {
+    "lesson": "T03",
+    "status": "PASS",
+    "checks": [
+      "T03-K01"
+    ],
+    "manual_remaining": [
+      "Ở 480x240 và 800x400, Entry giãn theo chiều ngang, label vẫn đọc được; badge cách góc phải 8px; không chồng widget."
+    ]
+  },
+  {
+    "lesson": "T04",
+    "status": "PASS",
+    "checks": [
+      "T04-K01"
+    ],
+    "manual_remaining": []
+  },
+  {
+    "lesson": "T05",
+    "status": "PASS",
+    "checks": [
+      "T05-K01",
+      "T05-K02"
+    ],
+    "manual_remaining": [
+      "Lab native: thực hiện ba loại messagebox; independent dialog không để root trắng; copy sang share mạng và đối chiếu byte. Local copy PASS không chứng minh mạng đã được kiểm thử."
+    ]
+  },
+  {
+    "lesson": "T06",
+    "status": "PASS",
+    "checks": [
+      "T06-K01"
+    ],
+    "manual_remaining": [
+      "Tab đến nút cũng mở tooltip; blur đóng; Enter/Leave nhiều lần không tăng số tooltip còn sống."
+    ]
+  },
+  {
+    "lesson": "T07",
+    "status": "PASS",
+    "checks": [
+      "T07-K01"
+    ],
+    "manual_remaining": [
+      "Kiểm tra native đủ 1 giây: bar tiến đều, nút phụ vẫn click được; Cancel dừng mọi cập nhật; đóng cửa sổ không callback vào widget đã hủy."
+    ]
+  },
+  {
+    "lesson": "T08",
+    "status": "PASS",
+    "checks": [
+      "T08-K01"
+    ],
+    "manual_remaining": [
+      "Nộp before/after loại bỏ global và callback trộn I/O; chỉ ra ba trách nhiệm: chuẩn hóa, giữ state form, bố cục client. Không tạo class rỗng chỉ để bọc một hàm."
+    ]
+  },
+  {
+    "lesson": "T09",
+    "status": "PASS",
+    "checks": [
+      "T09-K01"
+    ],
+    "manual_remaining": [
+      "Native resize và thay dữ liệu: legend/nhãn không cắt, thanh trục và line đổi đúng; không tích lũy canvas mới."
+    ]
+  },
+  {
+    "lesson": "T10",
+    "status": "PASS",
+    "checks": [
+      "T10-K01",
+      "T10-K02"
+    ],
+    "manual_remaining": [
+      "Thực hiện mutation >5: suite chuyển FAIL ở boundary và UI; sửa lại suite PASS. IDE runner phát hiện đủ bốn test, mở assertion lỗi tới đúng dòng."
+    ]
+  },
+  {
+    "lesson": "T11",
+    "status": "PASS",
+    "checks": [
+      "T11-K01"
+    ],
+    "manual_remaining": [
+      "Ảnh IDE có giá trị raw, score và biểu thức điều kiện ở dòng breakpoint; minh chứng WARNING lọc INFO nhưng giữ ERROR."
+    ]
+  },
+  {
+    "lesson": "T12",
+    "status": "PASS",
+    "checks": [
+      "T12-K01",
+      "T12-K02"
+    ],
+    "manual_remaining": [
+      "Native: hai lần đổi ngôn ngữ cập nhật mọi nhãn theo catalog và giữ Entry; quy tắc format hai locale trong đề là thiết kế bài, không bao quát toàn bộ locale thế giới."
+    ]
+  },
+  {
+    "lesson": "T13",
+    "status": "PASS",
+    "checks": [
+      "T13-K01"
+    ],
+    "manual_remaining": [
+      "Chạy native qua ít nhất hai chu kỳ timer và Pause; ảnh không trắng; đóng cửa sổ sau stop không có TclError."
+    ]
+  },
+  {
+    "lesson": "T14",
+    "status": "PASS",
+    "checks": [
+      "T14-K01"
+    ],
+    "manual_remaining": [
+      "Rubric: yêu cầu ban đầu rõ; phản hồi có nguồn/tình huống; before/after đáp ứng đúng phản hồi; regression case giữ input sai. Thiếu một trong bốn thì chưa hoàn thành phần thiết kế lặp."
+    ]
+  },
+  {
+    "lesson": "X01",
+    "status": "PASS",
+    "checks": [
+      "X01-K01",
+      "X01-K02"
+    ],
+    "manual_remaining": [
+      "Đối chiếu từng chức năng PW1, chạy menu và bài input2sinh viên/1môn; push commit có file đúng tên lên fork. Lỗi nhập có thể nộp lại ở phiên luyện, không đánh dấu hoàn thành nếu app crash giữa luồng demo."
+    ]
+  },
+  {
+    "lesson": "A01",
+    "status": "PASS",
+    "checks": [
+      "A01-K01",
+      "A01-K02"
+    ],
+    "manual_remaining": []
+  },
+  {
+    "lesson": "A02",
+    "status": "PASS",
+    "checks": [
+      "A02-K01",
+      "A02-K02"
+    ],
+    "manual_remaining": []
+  },
+  {
+    "lesson": "A03",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "A04",
+    "status": "PASS",
+    "checks": [
+      "A04-K01",
+      "A04-K02"
+    ],
+    "manual_remaining": [
+      "Thêm lab tarfile: tạo tar.gz từ ba fixture bằng add(...,arcname=basename), đọc getnames/extractfile và so bytes; không extractall dữ liệu không tin cậy."
+    ]
+  },
+  {
+    "lesson": "A05",
+    "status": "PASS",
+    "checks": [
+      "A05-K01",
+      "A05-K02"
+    ],
+    "manual_remaining": [
+      "Bảng so phải nêu tuple->list của JSON, set không JSON mặc định, pickle chỉ dữ liệu tin cậy và class cần import đúng module."
+    ]
+  },
+  {
+    "lesson": "A14",
+    "status": "PASS",
+    "checks": [
+      "A14-K01"
+    ],
+    "manual_remaining": [
+      "Học viên đọc thêm fixture mixed bằng names=True,dtype=None, nêu tên field, shape và kiểu của từng field."
+    ]
+  },
+  {
+    "lesson": "A15",
+    "status": "PASS",
+    "checks": [
+      "A15-K01",
+      "A15-K02"
+    ],
+    "manual_remaining": [
+      "Chia hai phiên30phút: CSV/Excel rồi DB. Người học phải nộp output khám phá kiểu/index, không chỉ DataFrame cuối."
+    ]
+  },
+  {
+    "lesson": "A16",
+    "status": "PASS",
+    "checks": [
+      "A16-K01"
+    ],
+    "manual_remaining": [
+      "SAS7BDAT gate: dev cấp fixture thực cùng schema math/python và expected [[8,6],[5,9]] hoặc dùng fixture công khai đã kiểm chứng + expected tương ứng. Không đánh dấu format này PASS từ test XPORT."
+    ]
+  },
+  {
+    "lesson": "A17",
+    "status": "PASS",
+    "checks": [
+      "A17-K01"
+    ],
+    "manual_remaining": [
+      "Chia ba phiên30phút. Xem cả ba ảnh, không cắt title/legend; đối chiếu bar heights [2,5,3,6], histogram counts [1,1,2]; có bài thử cla/clf/close phân biệt xóa axes/figure và đóng window; interactive show chạy riêng backend native, không coi Agg là test show."
+    ]
+  },
+  {
+    "lesson": "A18",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "A19",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "A20",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "A21",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "A23",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "A24",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "A25",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "A26",
+    "status": "PASS",
+    "checks": [
+      "A26-K01",
+      "A26-K02"
+    ],
+    "manual_remaining": [
+      "Native integration cần square đỏ bounce cảx/y, dt đo từ clock, Pause giữ trạng thái và Resume tiếp; answer pure function PASS chưa là chứng cứ hoạt ảnh GPU PASS."
+    ]
+  },
+  {
+    "lesson": "P21",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "P22",
+    "status": "USE_LEGACY_RUNNER"
+  },
+  {
+    "lesson": "A06",
+    "status": "PASS",
+    "checks": [
+      "A06-K01",
+      "A06-K02"
+    ],
+    "manual_remaining": [
+      "Rubric PCB: lưu PC/register khi rời CPU, khôi phục đúng khi chạy lại; cây có bốn process và vùng memory tách biệt."
+    ]
+  },
+  {
+    "lesson": "A07",
+    "status": "PASS",
+    "checks": [
+      "A07-K01",
+      "A07-K02"
+    ],
+    "manual_remaining": [
+      "Tính waiting: FCFS P1=0,P2=5; SJF P2=0,P1=2; RR P1=2,P2=2. Giải thích quantum nhỏ tăng số lần chuyển và priority có thể gây starvation."
+    ]
+  },
+  {
+    "lesson": "A08",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "A09",
+    "status": "PASS",
+    "checks": [
+      "A09-K01",
+      "A09-K02"
+    ],
+    "manual_remaining": []
+  },
+  {
+    "lesson": "A10",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "A11",
+    "status": "PASS",
+    "checks": [
+      "A11-K01"
+    ],
+    "manual_remaining": [
+      "Không chấm hiểu race chỉ từ stress test PASS: trace phải có hai read0 trước hai write1 và giải thích phạm vi Lock."
+    ]
+  },
+  {
+    "lesson": "A12",
+    "status": "PASS",
+    "checks": [
+      "A12-K01",
+      "A12-K02"
+    ],
+    "manual_remaining": [
+      "Nộp workers.py/controller.py không circular import; đúng một Queue được tạo ở controller và truyền vào mọi worker. Thêm job vòng lặp10bước: set Event sau bước2, worker xác nhận dừng trước bước10, không dùng terminate giả."
+    ]
+  },
+  {
+    "lesson": "A13",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "A22",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 2
+  },
+  {
+    "lesson": "X02",
+    "status": "PASS",
+    "checks": [
+      "X02-K01",
+      "X02-K02"
+    ],
+    "manual_remaining": [
+      "Ba checkpoint40phút: domain; math/ranking; package+curses. Nghiệm thu không chỉ chạy domain tests: main nhập đủ số lượng, output curses chọn môn/xem điểm, cây file đúng và import không mở UI."
+    ]
+  },
+  {
+    "lesson": "X03",
+    "status": "PASS",
+    "checks": [
+      "X03-K01",
+      "X03-K02"
+    ],
+    "manual_remaining": [
+      "Nạp object Registry thật từ process mới với domains import được; DoB/credits/marks và kiểu Student/Course giữ nguyên. Bản PW5 phải thấy ba file cập nhật ngay sau từng nhóm input, không chỉ lúc thoát."
+    ]
+  },
+  {
+    "lesson": "X04",
+    "status": "PASS",
+    "checks": [
+      "X04-K01",
+      "X04-K02"
+    ],
+    "manual_remaining": [
+      "POSIX gate: ls -la; output redirect; bc input (cài bc trong lab); ps aux | grep term. Cú pháp giới hạn đã công bố; không gọi bài này là shell đầy đủ của OS. Chạy lệnh child ngủ với timeout, kiểm tra không còn process con."
+    ]
+  },
+  {
+    "lesson": "X05",
+    "status": "PASS",
+    "checks": [
+      "X05-K01",
+      "X05-K02"
+    ],
+    "manual_remaining": [
+      "Native UI vẫn đếm nút phụ trong khi job lớn; một path chỉ có một worker; WM_DELETE_WINDOW hỏi chờ, poll tới xong rồi destroy. Kiểm thử injection lỗi trước replace xác nhận file cũ nguyên vẹn."
+    ]
+  },
+  {
+    "lesson": "X06",
+    "status": "MANUAL_REQUIRED",
+    "protocols": 3
+  }
+]

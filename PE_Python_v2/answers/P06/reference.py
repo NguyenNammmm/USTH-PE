@@ -1,0 +1,1 @@
+result = marks.get(student_id, None)
