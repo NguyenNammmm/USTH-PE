@@ -1,0 +1,943 @@
+{
+  "version": "3.0-roadmap",
+  "status": "COURSE_BLUEPRINT_NOT_FULL_LESSON_BANK",
+  "date": "2026-09-30",
+  "denominator": "40 nhiệm vụ code bắt buộc; không tính quiz, xem ví dụ, onboarding, đề tổng duyệt hoặc tự chọn.",
+  "allocation": {
+    "basic": 20,
+    "intermediate": 12,
+    "advanced": 8
+  },
+  "outcome": "Tự giải đủ 5 dạng trong final-2026.docx trên dữ liệu mới; chuẩn qua môn chính thức chờ xác nhận cách tính điểm và toàn bộ phạm vi thi.",
+  "sources": [
+    "final-2026.docx Ex1-Ex5",
+    "Hai ảnh phản hồi về độ phức tạp A03/A04",
+    "Bộ v2 92 bài làm kho tham khảo"
+  ],
+  "modules": [
+    {
+      "id": "M1",
+      "level": "basic",
+      "range": "B01-B05",
+      "title": "Dữ liệu và điều kiện",
+      "v2": "P01-P04,C04-C07",
+      "exit": "Đọc được biểu thức và tự viết nhánh đơn."
+    },
+    {
+      "id": "M2",
+      "level": "basic",
+      "range": "B06-B10",
+      "title": "Vòng lặp và hàm",
+      "v2": "P05,P08-P10,C08,C11",
+      "exit": "Tự viết một hàm, rồi nối hai hàm."
+    },
+    {
+      "id": "M3",
+      "level": "basic",
+      "range": "B11-B15",
+      "title": "Đọc và ghi file",
+      "v2": "P12,C21",
+      "exit": "Đọc từng dòng, ghi kết quả, biết giá trị trả về."
+    },
+    {
+      "id": "M4",
+      "level": "basic",
+      "range": "B16-B20",
+      "title": "Ghép bài palindrome",
+      "v2": "P10,P12,C07,C21; final Ex1",
+      "exit": "Tự giải Ex1 với dữ liệu mới, không xem đáp án."
+    },
+    {
+      "id": "M5",
+      "level": "intermediate",
+      "range": "I01-I04",
+      "title": "Class đầu tiên",
+      "v2": "P15,C08,C20",
+      "exit": "Tạo object, thêm dữ liệu, biểu diễn bằng __str__."
+    },
+    {
+      "id": "M6",
+      "level": "intermediate",
+      "range": "I05-I08",
+      "title": "Trạng thái và lớp cha",
+      "v2": "P15-P16; final Ex2",
+      "exit": "Tự viết ProgrammingLanguage; tách state hai object."
+    },
+    {
+      "id": "M7",
+      "level": "intermediate",
+      "range": "I09-I12",
+      "title": "Kế thừa và override",
+      "v2": "P16,C20; final Ex3",
+      "exit": "Tự viết C kế thừa, khởi tạo và override đúng."
+    },
+    {
+      "id": "M8",
+      "level": "advanced",
+      "range": "N01-N04",
+      "title": "Thread và chờ kết thúc",
+      "v2": "P21,A10,A12; final Ex4",
+      "exit": "Tạo n thread, start tất cả rồi join tất cả."
+    },
+    {
+      "id": "M9",
+      "level": "advanced",
+      "range": "N05-N08",
+      "title": "Process và đo thời gian",
+      "v2": "A06,A08,A10; final Ex5",
+      "exit": "Tạo m child, mỗi child n thread; parent chờ đủ rồi đo."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "B01",
+      "order": 1,
+      "module": "M1",
+      "level": "basic",
+      "title": "Biến và kết quả",
+      "prerequisites": [],
+      "contract": "Gán name=\"Python\", year=1991; in hai biến trên hai dòng.",
+      "acceptance": "2 dòng đúng thứ tự; sửa year thành 2026 phải phản ánh giá trị mới.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P01-P04,C04-C07",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B02",
+      "order": 2,
+      "module": "M1",
+      "level": "basic",
+      "title": "Ghép chuỗi",
+      "prerequisites": [
+        "B01"
+      ],
+      "contract": "Cho name=\"Python\"; tạo message=\"Language: Python\" bằng phép nối rồi in.",
+      "acceptance": "Đổi name=\"C\" được Language: C; không hard-code cả câu.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P01-P04,C04-C07",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B03",
+      "order": 3,
+      "module": "M1",
+      "level": "basic",
+      "title": "Đảo chuỗi",
+      "prerequisites": [
+        "B02"
+      ],
+      "contract": "Cho text; tạo reversed_text bằng slicing, in kết quả.",
+      "acceptance": "level -> level; python -> nohtyp; a -> a.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P01-P04,C04-C07",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B04",
+      "order": 4,
+      "module": "M1",
+      "level": "basic",
+      "title": "So sánh palindrome",
+      "prerequisites": [
+        "B03"
+      ],
+      "contract": "Cho text không rỗng; tạo biến result so sánh text với chuỗi đảo.",
+      "acceptance": "level=True, abc=False, Level=False; giữ nguyên hoa/thường.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P01-P04,C04-C07",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B05",
+      "order": 5,
+      "module": "M1",
+      "level": "basic",
+      "title": "if và else",
+      "prerequisites": [
+        "B04"
+      ],
+      "contract": "Từ biến result ở bài trước, in PALINDROME hoặc NOT PALINDROME bằng if/else.",
+      "acceptance": "Mỗi lần đúng một dòng; hai nhánh đều được kiểm.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P01-P04,C04-C07",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B06",
+      "order": 6,
+      "module": "M2",
+      "level": "basic",
+      "title": "Duyệt danh sách",
+      "prerequisites": [
+        "B05"
+      ],
+      "contract": "Duyệt words=[\"level\",\"python\",\"radar\"]; in từng phần tử bằng for.",
+      "acceptance": "3 dòng theo thứ tự, không in cả list; list rỗng không in.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P05,P08-P10,C08,C11",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B07",
+      "order": 7,
+      "module": "M2",
+      "level": "basic",
+      "title": "Lọc bằng vòng lặp",
+      "prerequisites": [
+        "B06"
+      ],
+      "contract": "Tạo list kết quả; for/if/append để giữ các từ đối xứng không rỗng.",
+      "acceptance": "Giữ level,radar; giữ thứ tự và phần tử trùng; không sửa list đầu vào.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P05,P08-P10,C08,C11",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B08",
+      "order": 8,
+      "module": "M2",
+      "level": "basic",
+      "title": "Tự viết một hàm",
+      "prerequisites": [
+        "B07"
+      ],
+      "contract": "Viết is_empty(text) trả True nếu text rỗng, ngược lại False; tự gọi thử hàm.",
+      "acceptance": "\"\"=True; \" \"=False; \"a\"=False; hàm không print.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P05,P08-P10,C08,C11",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B09",
+      "order": 9,
+      "module": "M2",
+      "level": "basic",
+      "title": "Hàm kiểm tra chuỗi",
+      "prerequisites": [
+        "B08"
+      ],
+      "contract": "Viết is_palindrome(text): chuỗi rỗng trả False; còn lại so với chuỗi đảo.",
+      "acceptance": "\"level\"=True; \"ab\"=False; \"Level\"=False; không tự strip.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P05,P08-P10,C08,C11",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B10",
+      "order": 10,
+      "module": "M2",
+      "level": "basic",
+      "title": "Nối hai hàm",
+      "prerequisites": [
+        "B09"
+      ],
+      "contract": "Tự viết filter_palindromes(words), gọi is_palindrome đã viết; dùng vòng lặp rõ ràng.",
+      "acceptance": "[\"level\",\"ab\",\"radar\",\"\"] -> [\"level\",\"radar\"]; [] -> [].",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P05,P08-P10,C08,C11",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B11",
+      "order": 11,
+      "module": "M3",
+      "level": "basic",
+      "title": "Đọc file đầu tiên",
+      "prerequisites": [
+        "B10"
+      ],
+      "contract": "Dùng with/open UTF-8 để đọc toàn bộ data.txt vào text; in text.",
+      "acceptance": "Nội dung đúng cả dấu tiếng Việt; chưa xử lý thiếu file ở bài này.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P12,C21",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B12",
+      "order": 12,
+      "module": "M3",
+      "level": "basic",
+      "title": "Đọc từng dòng",
+      "prerequisites": [
+        "B11"
+      ],
+      "contract": "Duyệt file; dùng rstrip(\"\\r\\n\") bỏ xuống dòng và thêm vào list.",
+      "acceptance": "Giữ khoảng trắng hai đầu; không bỏ ký tự thường; giữ dòng cuối không newline.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P12,C21",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B13",
+      "order": 13,
+      "module": "M3",
+      "level": "basic",
+      "title": "Ghi một kết quả",
+      "prerequisites": [
+        "B12"
+      ],
+      "contract": "Ghi mỗi từ của list được cấp vào palindromes.txt bằng mode w, mỗi từ một dòng.",
+      "acceptance": "Ghi đè file cũ; list rỗng tạo file rỗng; đầu vào không bị sửa.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P12,C21",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B14",
+      "order": 14,
+      "module": "M3",
+      "level": "basic",
+      "title": "Đưa phần đọc vào hàm",
+      "prerequisites": [
+        "B13"
+      ],
+      "contract": "Viết read_lines(path) trả list chuỗi đã bỏ ký tự xuống dòng; không print.",
+      "acceptance": "File rỗng trả []; UTF-8 đúng; thiếu file giữ FileNotFoundError.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P12,C21",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B15",
+      "order": 15,
+      "module": "M3",
+      "level": "basic",
+      "title": "Đưa phần ghi vào hàm",
+      "prerequisites": [
+        "B14"
+      ],
+      "contract": "Viết write_lines(path, lines) dùng with và mode w; thêm newline sau từng chuỗi.",
+      "acceptance": "Mỗi phần tử một dòng; không append vào lần chạy trước; trả None.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P12,C21",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B16",
+      "order": 16,
+      "module": "M4",
+      "level": "basic",
+      "title": "Sửa lỗi print và return",
+      "prerequisites": [
+        "B15"
+      ],
+      "contract": "Sửa filter_palindromes đang chỉ print để nơi gọi nhận list; sửa lỗi return đặt trong for.",
+      "acceptance": "Xét đủ mọi từ; stdout rỗng; list rỗng trả [].",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P10,P12,C07,C21; final Ex1",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B17",
+      "order": 17,
+      "module": "M4",
+      "level": "basic",
+      "title": "Nối đọc với lọc",
+      "prerequisites": [
+        "B16"
+      ],
+      "contract": "Dùng read_lines đã cấp và is_palindrome đã học; tự viết phần lọc kết quả từ file.",
+      "acceptance": "Dữ liệu level/python/radar -> level/radar; chưa ghi file.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P10,P12,C07,C21; final Ex1",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B18",
+      "order": 18,
+      "module": "M4",
+      "level": "basic",
+      "title": "Nối lọc với ghi",
+      "prerequisites": [
+        "B17"
+      ],
+      "contract": "Cho sẵn list chuỗi; dùng filter_palindromes và write_lines để xuất kết quả.",
+      "acceptance": "File chỉ có chuỗi đối xứng; giữ thứ tự và trùng lặp.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P10,P12,C07,C21; final Ex1",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B19",
+      "order": 19,
+      "module": "M4",
+      "level": "basic",
+      "title": "Ex1 có hỗ trợ",
+      "prerequisites": [
+        "B18"
+      ],
+      "contract": "Hoàn thành khung gồm read_lines, is_palindrome, write_lines và phần điều phối for/if.",
+      "acceptance": "Fixture có chuỗi đúng/sai/rỗng/Unicode; output đúng; file nguồn không đổi.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P10,P12,C07,C21; final Ex1",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "B20",
+      "order": 20,
+      "module": "M4",
+      "level": "basic",
+      "title": "Ex1 tự làm",
+      "prerequisites": [
+        "B19"
+      ],
+      "contract": "Tự viết chương trình đọc data.txt và ghi palindromes.txt từ fixture mới, tối đa 3 hàm tự viết.",
+      "acceptance": "Không cấp lời giải; kiểm dòng cuối không newline, file rỗng, thứ tự, chữ hoa/thường; giải thích luồng dữ liệu.",
+      "target_new_code_lines": [
+        5,
+        15
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P10,P12,C07,C21; final Ex1",
+      "runtime": "PYTHON_3",
+      "mode": "independent",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "I01",
+      "order": 21,
+      "module": "M5",
+      "level": "intermediate",
+      "title": "Đọc thuộc tính object",
+      "prerequisites": [
+        "B20"
+      ],
+      "contract": "Cho sẵn ProgrammingLanguage; tạo object Python/1991/[\"procedural\"], in các thuộc tính.",
+      "acceptance": "Đúng 3 trường; thay object bằng C/1972 dùng cùng mã truy cập.",
+      "target_new_code_lines": [
+        10,
+        25
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P15,C08,C20",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "I02",
+      "order": 22,
+      "module": "M5",
+      "level": "intermediate",
+      "title": "Viết constructor",
+      "prerequisites": [
+        "I01"
+      ],
+      "contract": "Tự viết __init__(name,year_created,paradigms) lưu ba thuộc tính; copy list đầu vào.",
+      "acceptance": "Thuộc tính đúng; sửa list bên ngoài không đổi object.",
+      "target_new_code_lines": [
+        10,
+        25
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P15,C08,C20",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "I03",
+      "order": 23,
+      "module": "M5",
+      "level": "intermediate",
+      "title": "Thêm một paradigm",
+      "prerequisites": [
+        "I02"
+      ],
+      "contract": "Trong class đã cấp, viết add_paradigms(self,paradigm) bằng append.",
+      "acceptance": "Thêm vào cuối; giữ trùng nếu nhập trùng; trả None. Đây là quy ước v3.",
+      "target_new_code_lines": [
+        10,
+        25
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P15,C08,C20",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "I04",
+      "order": 24,
+      "module": "M5",
+      "level": "intermediate",
+      "title": "Viết __str__",
+      "prerequisites": [
+        "I03"
+      ],
+      "contract": "Trong class đã cấp, viết __str__ trả Language[name], Year created[year], Paradigms[list].",
+      "acceptance": "Trả str, không print; định dạng dùng repr của list như trong đáp án mẫu.",
+      "target_new_code_lines": [
+        10,
+        25
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P15,C08,C20",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "I05",
+      "order": 25,
+      "module": "M6",
+      "level": "intermediate",
+      "title": "Hai object độc lập",
+      "prerequisites": [
+        "I04"
+      ],
+      "contract": "Sửa class có list dùng chung để thêm paradigm vào object A không đổi object B.",
+      "acceptance": "Tạo hai object từ cùng list nguồn; thay A không đổi B hay list nguồn.",
+      "target_new_code_lines": [
+        10,
+        25
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P15-P16; final Ex2",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "I06",
+      "order": 26,
+      "module": "M6",
+      "level": "intermediate",
+      "title": "Phân biệt print và str",
+      "prerequisites": [
+        "I05"
+      ],
+      "contract": "Sửa __str__ đang print; viết đoạn gọi print(obj) và lưu text=str(obj).",
+      "acceptance": "text là str đúng; gọi str(obj) không tự in; print(obj) in một dòng.",
+      "target_new_code_lines": [
+        10,
+        25
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P15-P16; final Ex2",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "I07",
+      "order": 27,
+      "module": "M6",
+      "level": "intermediate",
+      "title": "Ex2 tự làm",
+      "prerequisites": [
+        "I06"
+      ],
+      "contract": "Tự viết ProgrammingLanguage với __init__, add_paradigms, __str__; không nhìn lời giải.",
+      "acceptance": "Kiểm đủ 3 phương thức, list riêng, trường dữ liệu và format đã công bố.",
+      "target_new_code_lines": [
+        10,
+        25
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P15-P16; final Ex2",
+      "runtime": "PYTHON_3",
+      "mode": "independent",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "I08",
+      "order": 28,
+      "module": "M6",
+      "level": "intermediate",
+      "title": "Lớp con đầu tiên",
+      "prerequisites": [
+        "I07"
+      ],
+      "contract": "Cho class cha; khai báo class C(ProgrammingLanguage), chưa thêm thuộc tính; tạo một object C.",
+      "acceptance": "isinstance với class cha=True; dùng được phương thức cha; giải thích kế thừa.",
+      "target_new_code_lines": [
+        10,
+        25
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P15-P16; final Ex2",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "I09",
+      "order": 29,
+      "module": "M7",
+      "level": "intermediate",
+      "title": "super và thuộc tính mới",
+      "prerequisites": [
+        "I08"
+      ],
+      "contract": "Cho class cha; viết C.__init__(name,year_created,paradigms,std_version) dùng super().",
+      "acceptance": "4 thuộc tính đúng; std_version khác nhau không ảnh hưởng nhau.",
+      "target_new_code_lines": [
+        10,
+        25
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P16,C20; final Ex3",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "I10",
+      "order": 30,
+      "module": "M7",
+      "level": "intermediate",
+      "title": "Override __str__",
+      "prerequisites": [
+        "I09"
+      ],
+      "contract": "Cho C có constructor; override __str__ bằng super().__str__ và phần Standard version[...].",
+      "acceptance": "Giữ đủ trường cha; thêm đúng trường std_version; không gọi đệ quy str(self).",
+      "target_new_code_lines": [
+        10,
+        25
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P16,C20; final Ex3",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "I11",
+      "order": 31,
+      "module": "M7",
+      "level": "intermediate",
+      "title": "Viết compile",
+      "prerequisites": [
+        "I10"
+      ],
+      "contract": "Thêm compile(self) in Compiling C code using standard version [giá trị phiên bản].",
+      "acceptance": "Một dòng đúng phiên bản; gọi lại dùng trạng thái hiện tại; không biên dịch C thật.",
+      "target_new_code_lines": [
+        10,
+        25
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P16,C20; final Ex3",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "I12",
+      "order": 32,
+      "module": "M7",
+      "level": "intermediate",
+      "title": "Ex3 tự làm",
+      "prerequisites": [
+        "I11"
+      ],
+      "contract": "Cho class cha đã kiểm; tự viết class C với constructor, __str__ và compile.",
+      "acceptance": "Đạt cả khởi tạo, kế thừa, override và thông báo; khoảng 15-25 dòng mới.",
+      "target_new_code_lines": [
+        10,
+        25
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P16,C20; final Ex3",
+      "runtime": "PYTHON_3",
+      "mode": "independent",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "N01",
+      "order": 33,
+      "module": "M8",
+      "level": "advanced",
+      "title": "Một thread",
+      "prerequisites": [
+        "I12"
+      ],
+      "contract": "Cho compile() đã có; tạo một Thread(target=obj.compile), start rồi join.",
+      "acceptance": "Target là callable, không gọi sẵn; công việc chạy trong thread con.",
+      "target_new_code_lines": [
+        15,
+        40
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P21,A10,A12; final Ex4",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "N02",
+      "order": 34,
+      "module": "M8",
+      "level": "advanced",
+      "title": "Nhiều thread",
+      "prerequisites": [
+        "N01"
+      ],
+      "contract": "Tạo n thread trong list; vòng lặp thứ nhất start, vòng lặp thứ hai join.",
+      "acceptance": "n=1,3 chạy đúng n lần; không start/join từng thread nối đuôi.",
+      "target_new_code_lines": [
+        15,
+        40
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P21,A10,A12; final Ex4",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "N03",
+      "order": 35,
+      "module": "M8",
+      "level": "advanced",
+      "title": "Ex4 có hỗ trợ",
+      "prerequisites": [
+        "N02"
+      ],
+      "contract": "Trong C đã cấp, viết parallel_compile(n); mỗi thread gọi helper in thông báo có n và std_version.",
+      "acceptance": "Đúng n công việc; start toàn bộ trước join; hàm chỉ trả khi tất cả xong; không chấm thứ tự output.",
+      "target_new_code_lines": [
+        15,
+        40
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P21,A10,A12; final Ex4",
+      "runtime": "PYTHON_3",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "N04",
+      "order": 36,
+      "module": "M8",
+      "level": "advanced",
+      "title": "Ex4 tự làm và sửa lỗi",
+      "prerequisites": [
+        "N03"
+      ],
+      "contract": "Viết lại parallel_compile(n) từ khung rỗng; thêm kiểm tra n là int dương, không bool.",
+      "acceptance": "n=0,-1,True -> ValueError theo v3; kiểm worker chạy thật và toàn bộ được join.",
+      "target_new_code_lines": [
+        15,
+        40
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "P21,A10,A12; final Ex4",
+      "runtime": "PYTHON_3",
+      "mode": "independent",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "N05",
+      "order": 37,
+      "module": "M9",
+      "level": "advanced",
+      "title": "Một process con",
+      "prerequisites": [
+        "N04"
+      ],
+      "contract": "Trong script POSIX cấp sẵn, dùng fork; child in thông báo rồi _exit(0); parent waitpid.",
+      "acceptance": "Phân biệt pid==0; parent chỉ tiếp tục sau child; chạy trong Linux/WSL.",
+      "target_new_code_lines": [
+        15,
+        40
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "A06,A08,A10; final Ex5",
+      "runtime": "POSIX_LINUX_WSL",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "N06",
+      "order": 38,
+      "module": "M9",
+      "level": "advanced",
+      "title": "Tạo m process",
+      "prerequisites": [
+        "N05"
+      ],
+      "contract": "Chỉ parent tiếp tục vòng lặp tạo m child; lưu pid và waitpid từng child sau khi tạo đủ.",
+      "acceptance": "m=1,2 có đúng m child; child thoát, không nhân đôi cây process; kiểm exit status.",
+      "target_new_code_lines": [
+        15,
+        40
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "A06,A08,A10; final Ex5",
+      "runtime": "POSIX_LINUX_WSL",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "N07",
+      "order": 39,
+      "module": "M9",
+      "level": "advanced",
+      "title": "Mỗi process chạy n thread",
+      "prerequisites": [
+        "N06"
+      ],
+      "contract": "Cho C và parallel_compile; mỗi child gọi parallel_compile(n), rồi thoát; parent chờ đủ m child.",
+      "acceptance": "m=2,n=3 có 2 child và 6 worker; fork từ parent đơn luồng; không suy số thread chỉ từ số dòng in.",
+      "target_new_code_lines": [
+        15,
+        40
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "A06,A08,A10; final Ex5",
+      "runtime": "POSIX_LINUX_WSL",
+      "mode": "practice",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    },
+    {
+      "id": "N08",
+      "order": 40,
+      "module": "M9",
+      "level": "advanced",
+      "title": "Ex5 tự làm",
+      "prerequisites": [
+        "N07"
+      ],
+      "contract": "Viết benchmark(self,m,n) dùng time.time và os.fork theo đề; bắt đầu đo trước tạo child, kết thúc sau wait đủ.",
+      "acceptance": "m,n int dương không bool; trả thời gian; child có n thread; lỗi child được báo; không bắt nhiều worker phải nhanh hơn.",
+      "target_new_code_lines": [
+        15,
+        40
+      ],
+      "max_new_main_concepts": 1,
+      "reference_v2": "A06,A08,A10; final Ex5",
+      "runtime": "POSIX_LINUX_WSL",
+      "mode": "independent",
+      "scaffolding": "Cấp các phần đã học và không chấm lại trong nhiệm vụ hiện tại; bài độc lập chỉ cấp đầu vào/hợp đồng. Với N08 cấp lớp C đã hoàn thành, người học tự viết benchmark."
+    }
+  ],
+  "electives": [
+    "Tkinter/curses khi được xác nhận thuộc đánh giá môn",
+    "Nén gzip/ZIP và pickle",
+    "wxPython và OpenGL",
+    "MySQL, dữ liệu khoa học, networking và dự án mở rộng"
+  ],
+  "unresolved": [
+    "Điểm đạt môn, trọng số quá trình/cuối kỳ và điểm sàn",
+    "Thời gian thi, công cụ/tài liệu được dùng",
+    "Phạm vi đề thật có ngoài Ex1-Ex5 không",
+    "Định dạng __str__, quy tắc palindrome và paradigm trùng do giảng viên xác nhận"
+  ]
+}

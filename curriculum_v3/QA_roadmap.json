@@ -1,0 +1,13 @@
+{
+  "status": "BLUEPRINT_AND_EXAMPLES_VERIFIED",
+  "coding_tasks": 40,
+  "allocation": {
+    "basic": 20,
+    "intermediate": 12,
+    "advanced": 8
+  },
+  "example_checks": "PASS",
+  "visualization": "736px and 360px inspected; module selection checked; no JS errors",
+  "scope": "Roadmap, 40 task contracts, format specification, three level examples and A04 sample; not a complete replacement lesson bank",
+  "open_issue": "Official pass threshold and full exam scope not provided"
+}

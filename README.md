@@ -2,6 +2,18 @@
 
 Bản bàn giao nội dung v2 cho đội phát triển: **92 bài học** gồm 59 bài lộ trình chính và 33 bài nâng cao; bổ sung 68 bài sau kiểm toán bản đầu.
 
+## Roadmap v3 theo phản hồi về độ khó
+
+Bản v3 thiết kế đường học hướng tới năm dạng bài trong `final-2026.docx`: **40 nhiệm vụ viết code bắt buộc**, gồm 20 cơ bản (50%), 12 trung cấp (30%) và 8 nâng cao (20%). Mỗi nhiệm vụ có yêu cầu và tiêu chí chấm; các ví dụ được tách nhỏ và giải thích theo bước.
+
+- [Xem roadmap tương tác](curriculum_v3/roadmap_visualization.html)
+- [Đọc roadmap và quy cách bài học](curriculum_v3/ROADMAP_VA_FORMAT_V3.md)
+- [JSON 40 nhiệm vụ](curriculum_v3/roadmap_50_30_20.json) và [schema bài học](curriculum_v3/lesson_format_v3.json)
+- [Mẫu bài cơ bản, trung cấp, nâng cao và A04](curriculum_v3/examples/README.md)
+- [Tải gói v3](downloads/PE_Python_v3_Roadmap_50_30_20.zip)
+
+V3 là **roadmap, hợp đồng bài tập và mẫu định dạng**, chưa phải ngân hàng bài hoàn chỉnh thay thế v2. Chuẩn điểm qua môn và phạm vi đề thi chính thức cần đối chiếu với giảng viên; báo cáo kiểm tra nằm trong [QA roadmap](curriculum_v3/QA_roadmap.json).
+
 ## Bắt đầu
 
 - [Hướng dẫn đội dev](PE_Python_v2/README_DEV.md)

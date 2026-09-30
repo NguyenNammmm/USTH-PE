@@ -1,0 +1,18 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "lesson_format_v3.json": "70b0337d2d839a0f88129af8b04ed5d8869f2df7ecd74367a70248eadbc5cb8c",
+    "QA_examples.json": "b96f2c8638467791c5de97109fb084c8f007a8fa78a88d7a9c0a56d95c29d0c7",
+    "QA_roadmap.json": "6fbca3991e564ee77c449a0869aa3670b533fb6bc3cca0d2d5d863a97bbca437",
+    "roadmap_50_30_20.json": "5c44cc7458b42c623e092df636dfe5024940b45e670648b6bdb5fc39e8404028",
+    "ROADMAP_VA_FORMAT_V3.md": "1b1f29cab3f367f46a28f13d71f0645b126a18587ab930109bc264f086ceedaa",
+    "roadmap_visualization.html": "b7202c641aa8db0006bc13225f3abc7113b0ad199f9beb09b7a06b533b830449",
+    "verify_examples.py": "3b17d6d1cef2dfe3daa9668ce63cf346b05fa94930cf32e14ea2963ce06cd531",
+    "examples/compression_beginner.py": "418dd6fe4c862a30750ef7e9f6916bc35a4e25a80213110f49a49b24b6f913db",
+    "examples/inheritance_intermediate.py": "6c8799989ed7ac068ed3a8699160e0a6da954db9e8d1373e4a195d81f212c72a",
+    "examples/language_base.py": "96def5c6fc5aab147049e68bae545cc003c022b33f0f18c164938034eff33fd8",
+    "examples/palindrome_basic.py": "78a193d9b5d3693cbbe2bf7507a60877258a15e17a4076cac94020609ebd7a34",
+    "examples/README.md": "83312bbbebafe8d159236efd62460e7694f2a5a6402e592f9ad1b0407151d22a",
+    "examples/threads_advanced.py": "7e48c5963fbfce448060787de997c09f532c9ded9ab0973f852d189283aefba1"
+  }
+}

@@ -1,3 +1,4 @@
 # Preserve release artifact bytes so manifest SHA-256 checks work on every OS.
 PE_Python_v2/** -text
+curriculum_v3/** -text
 downloads/** -text

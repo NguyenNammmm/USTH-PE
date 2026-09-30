@@ -1,0 +1,9 @@
+{
+  "results": [
+    "B09: palindrome boundaries and return without print PASS",
+    "I12: inheritance, state, string and compile PASS",
+    "A04 sample: exact byte round-trip PASS",
+    "N03: real worker overlap, start-before-join, complete-on-return, output and invalid n PASS"
+  ],
+  "limits": "Only delivered examples tested; 40-task blueprint is not a complete implemented bank. POSIX N05-N08 not implemented/tested here."
+}

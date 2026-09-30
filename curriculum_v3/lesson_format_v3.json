@@ -1,0 +1,37 @@
+{
+  "schema_version": "3.0-template",
+  "required_fields": {
+    "id": "Mã ổn định; B/I/N là độ khó của nhiệm vụ, không phải loại công nghệ.",
+    "level": "basic | intermediate | advanced",
+    "prerequisites": "Các kỹ năng phải đạt, kiểm bằng bài trước; không chỉ đã xem.",
+    "outcome": "Một hành vi có thể kiểm tra; một khái niệm mới chính.",
+    "problem": "2-4 câu, rõ input/output và quy tắc biên; ghi giả định bổ sung.",
+    "example": "Một fixture nhỏ + output + giải thích cơ chế.",
+    "worked_steps": "Mỗi bước 3-8 dòng mẫu; giải thích đầu vào, biến đổi, kết quả; có dự đoán trước chạy.",
+    "function_cards": "Mỗi hàm mới: nhiệm vụ, tham số, kiểu/kết quả trả về, tác dụng phụ, ví dụ gọi.",
+    "starter_code": "Chỉ phần cấp sẵn; đánh dấu vùng người học viết; không nhét giải pháp vào comment.",
+    "practice": "Một lần tự sửa/viết mã có hỗ trợ, không chỉ kéo-thả.",
+    "transfer": "Một dữ liệu/tình huống mới, không lộ lời giải trước khi nộp.",
+    "tests_public": "Ca thường + một ca biên, có expected cụ thể.",
+    "tests_private": "Biến thể chưa thấy; không chỉ lặp ca mẫu.",
+    "solution_teaching": "Mã rõ ràng, từng thao tác một dòng, không semicolon/one-liner function.",
+    "explanation_rubric": "0 sai/chép output; 1 đúng thao tác thiếu liên hệ; 2 nối input->xử lý->output và ca biên.",
+    "completion": "Các tiêu chí bắt buộc đạt và giải thích 2/2; lần dùng hint ghi assisted.",
+    "runtime": "Lỗi môi trường tách lỗi kiến thức; fork phải nghiệm thu POSIX.",
+    "source_mapping": "Nguồn gốc + kỹ năng + bài v2 tham khảo; không tăng % phủ nguồn vì tách thêm bài."
+  },
+  "code_policy": {
+    "basic": "5-15 dòng mới thường gặp; khởi đầu 1 hàm, sau đó 2 hàm; B19-B20 tối đa 3 hàm và có thể 25-30 dòng tổng.",
+    "intermediate": "10-25 dòng mới; một class với 2-3 phương thức ở bài tổng hợp; cấp class cha khi học lớp con.",
+    "advanced": "15-40 dòng mới; cấp lớp đã học; chỉ thêm thread/process/đo thời gian ở từng nhiệm vụ.",
+    "not_a_grading_rule": "Số dòng là ngân sách thiết kế, không là lý do đánh trượt lời giải đúng. Không nén code để đạt số dòng.",
+    "ban_in_first_exposure": [
+      "Nhiều lệnh trên một dòng",
+      "def một dòng",
+      "Helper dispatch trước khi hiểu if/elif",
+      "Comprehension trước khi hiểu for/append",
+      "Nhiều tầng hàm hoặc context manager chưa được dạy"
+    ],
+    "late_refactoring": "CODECS, BytesIO, helper tổng quát và code ngắn chỉ dùng trong bài tối ưu sau khi giải được bản rõ ràng."
+  }
+}
