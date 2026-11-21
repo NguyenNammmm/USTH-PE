@@ -1,0 +1,264 @@
+{
+  "course_id": "db_design",
+  "version": 1,
+  "params": {
+    "items_per_module": 3,
+    "mastery_threshold": 0.67,
+    "self_assess_weight": 0.2,
+    "skip_policy": "wrong",
+    "max_duration_min": 6
+  },
+  "self_assess": [
+    {
+      "id": "sa-db-mod1",
+      "module_code": "Mod1",
+      "question": "Bạn đã vẽ sơ đồ ER (entity, attribute, relationship) tới mức nào?",
+      "options": [
+        {
+          "text": "Chưa nghe tới",
+          "value": 0
+        },
+        {
+          "text": "Đã đọc qua",
+          "value": 0.33
+        },
+        {
+          "text": "Đã dùng vài lần",
+          "value": 0.67
+        },
+        {
+          "text": "Dùng thường xuyên",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "sa-db-mod2",
+      "module_code": "Mod2",
+      "question": "Bạn đã áp dụng chuẩn hóa bảng (1NF, 2NF, 3NF, BCNF) tới mức nào?",
+      "options": [
+        {
+          "text": "Chưa nghe tới",
+          "value": 0
+        },
+        {
+          "text": "Đã đọc qua",
+          "value": 0.33
+        },
+        {
+          "text": "Đã dùng vài lần",
+          "value": 0.67
+        },
+        {
+          "text": "Dùng thường xuyên",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "sa-db-mod3",
+      "module_code": "Mod3",
+      "question": "Bạn đã làm việc với JSON trong DB, ORM hoặc REST API tới mức nào?",
+      "options": [
+        {
+          "text": "Chưa nghe tới",
+          "value": 0
+        },
+        {
+          "text": "Đã đọc qua",
+          "value": 0.33
+        },
+        {
+          "text": "Đã dùng vài lần",
+          "value": 0.67
+        },
+        {
+          "text": "Dùng thường xuyên",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "q-db-mod1-1",
+      "module_code": "Mod1",
+      "level": "basic",
+      "question": "Bảng Games có hai bản \"Elden Ring\" (bản thường 60$ và bản Deluxe 80$). Cột nào dùng làm Primary Key phù hợp nhất?",
+      "code": null,
+      "options": [
+        {
+          "text": "game_id — một mã số định danh duy nhất do hệ thống cấp"
+        },
+        {
+          "text": "game_name — tên game là duy nhất trong cửa hàng"
+        },
+        {
+          "text": "price — giá tiền khác nhau nên dùng để phân biệt bản ghi"
+        }
+      ],
+      "correct": 0,
+      "explanation": "Tên game có thể trùng (khác phiên bản/năm). Giá tiền có thể đổi. ID định danh duy nhất và bất biến là tiêu chuẩn của Primary Key."
+    },
+    {
+      "id": "q-db-mod1-2",
+      "module_code": "Mod1",
+      "level": "intermediate",
+      "question": "Một khách hàng có thể mua nhiều game, và một game được nhiều khách hàng sở hữu (quan hệ M:N). Thiết kế bảng quan hệ chuẩn là gì?",
+      "code": null,
+      "options": [
+        {
+          "text": "Thêm trực tiếp cột customer_id vào bảng Games"
+        },
+        {
+          "text": "Tạo bảng trung gian Purchases(customer_id, game_id) với khóa chính tổng hợp"
+        },
+        {
+          "text": "Thêm một cột dạng văn bản game_list vào bảng Customers để lưu danh sách game"
+        }
+      ],
+      "correct": 1,
+      "explanation": "Quan hệ M:N bắt buộc phải tách thành hai quan hệ 1:N thông qua bảng trung gian (junction table) có composite PK."
+    },
+    {
+      "id": "q-db-mod1-3",
+      "module_code": "Mod1",
+      "level": "advanced",
+      "question": "Thực thể yếu (Weak Entity) trong mô hình ER có đặc điểm cốt lõi nào sau đây?",
+      "code": null,
+      "options": [
+        {
+          "text": "Là thực thể không có bất kỳ thuộc tính nào đi kèm"
+        },
+        {
+          "text": "Không thể ánh xạ thành bảng trong cơ sở dữ liệu quan hệ"
+        },
+        {
+          "text": "Không có khóa chính độc lập — phải ghép khóa riêng phần với khóa của thực thể chủ"
+        }
+      ],
+      "correct": 2,
+      "explanation": "Weak entity dùng partial key kết hợp PK của owner entity qua identifying relationship để tạo composite primary key."
+    },
+    {
+      "id": "q-db-mod2-1",
+      "module_code": "Mod2",
+      "level": "basic",
+      "question": "Trong lý thuyết cơ sở dữ liệu, phụ thuộc hàm X → Y (X xác định hàm Y) có ý nghĩa là gì?",
+      "code": null,
+      "options": [
+        {
+          "text": "Hai dòng bất kỳ có cùng giá trị X thì bắt buộc phải có cùng giá trị Y"
+        },
+        {
+          "text": "Hai dòng bất kỳ có cùng giá trị X thì luôn luôn có giá trị Y khác nhau"
+        },
+        {
+          "text": "X bắt buộc phải là Primary Key của bảng"
+        }
+      ],
+      "correct": 0,
+      "explanation": "FD X -> Y phát biểu: giá trị của X xác định duy nhất giá trị của Y. X không bắt buộc phải là khóa chính."
+    },
+    {
+      "id": "q-db-mod2-2",
+      "module_code": "Mod2",
+      "level": "intermediate",
+      "question": "Bảng ĐăngKý(student_id, course_id, instructor_name) có PK là (student_id, course_id). Giả sử instructor_name chỉ phụ thuộc vào course_id. Bảng này vi phạm dạng chuẩn nào?",
+      "code": null,
+      "options": [
+        {
+          "text": "1NF — vì dữ liệu chưa được nguyên tử hóa"
+        },
+        {
+          "text": "2NF — vì instructor_name phụ thuộc bộ phận vào một phần của khóa chính tổng hợp"
+        },
+        {
+          "text": "3NF — vì có phụ thuộc bắc cầu giữa các thuộc tính không khóa"
+        }
+      ],
+      "correct": 1,
+      "explanation": "2NF yêu cầu mọi thuộc tính không khóa phải phụ thuộc hàm đầy đủ vào toàn bộ khóa chính tổng hợp. Phụ thuộc bộ phận vi phạm 2NF."
+    },
+    {
+      "id": "q-db-mod2-3",
+      "module_code": "Mod2",
+      "level": "advanced",
+      "question": "Cho quan hệ R(A, B, C) với các phụ thuộc hàm A → B và B → C. Biết A là khóa chính duy nhất. Quan hệ này vi phạm dạng chuẩn nào?",
+      "code": null,
+      "options": [
+        {
+          "text": "2NF — vì vi phạm phụ thuộc hàm đầy đủ"
+        },
+        {
+          "text": "Không vi phạm — bảng đã đạt dạng chuẩn cao nhất"
+        },
+        {
+          "text": "3NF — vì tồn tại phụ thuộc bắc cầu A → B → C giữa thuộc tính không khóa với khóa"
+        }
+      ],
+      "correct": 2,
+      "explanation": "Khóa đơn (A) nên đã thỏa 2NF. Tuy nhiên A -> B và B -> C tạo thành phụ thuộc bắc cầu (transitive dependency) sang C, vi phạm 3NF."
+    },
+    {
+      "id": "q-db-mod3-1",
+      "module_code": "Mod3",
+      "level": "basic",
+      "question": "Trong PostgreSQL khi thao tác cột JSONB, toán tử ->> khác toán tử -> ở điểm nào?",
+      "code": null,
+      "options": [
+        {
+          "text": "->> trả về kiểu TEXT, trong khi -> trả về kiểu JSON (object hoặc array)"
+        },
+        {
+          "text": "Cả hai toán tử hoàn toàn đồng nhất về kiểu trả về"
+        },
+        {
+          "text": "->> chỉ áp dụng riêng cho mảng JSON, còn -> áp dụng cho đối tượng"
+        }
+      ],
+      "correct": 0,
+      "explanation": "Toán tử -> trả về giá trị dạng JSON để có thể tiếp tục chuỗi truy vấn (chain). Toán tử ->> giải nén ra text để lọc hoặc hiển thị."
+    },
+    {
+      "id": "q-db-mod3-2",
+      "module_code": "Mod3",
+      "level": "intermediate",
+      "question": "Lỗ hổng SQL Injection phát sinh chủ yếu do nguyên nhân lập trình nào dưới đây?",
+      "code": "query = f\"SELECT * FROM users WHERE name = '{user_input}'\"",
+      "options": [
+        {
+          "text": "Sử dụng thư viện ORM để tương tác với cơ sở dữ liệu"
+        },
+        {
+          "text": "Nối chuỗi trực tiếp input chưa kiểm soát vào câu lệnh SQL thay vì dùng parameterized query"
+        },
+        {
+          "text": "Bảng cơ sở dữ liệu không thiết lập khóa chính Primary Key"
+        }
+      ],
+      "correct": 1,
+      "explanation": "Nối chuỗi cho phép kẻ tấn công đưa ký tự thoát và mệnh đề SQL (như ' OR '1'='1) làm thay đổi logic thực thi của truy vấn."
+    },
+    {
+      "id": "q-db-mod3-3",
+      "module_code": "Mod3",
+      "level": "advanced",
+      "question": "Tại sao không được phép lưu trữ mật khẩu người dùng dưới dạng mã băm md5(password)?",
+      "code": null,
+      "options": [
+        {
+          "text": "md5 không phải là một hàm băm mật mã học (cryptographic hash)"
+        },
+        {
+          "text": "md5 chỉ xử lý được chuỗi ký tự ASCII dưới 16 byte"
+        },
+        {
+          "text": "md5 tính toán quá nhanh và không có salt nên cực kỳ dễ bị tấn công qua rainbow table"
+        }
+      ],
+      "correct": 2,
+      "explanation": "md5 có tốc độ tính toán hàng tỷ hash/giây và không kèm salt ngẫu nhiên, cho phép kẻ tấn công dò tìm cực nhanh bằng rainbow table. Cần dùng bcrypt/argon2."
+    }
+  ]
+}
