@@ -22,30 +22,21 @@ Quy ước:
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
 GOI = Path(__file__).resolve().parent.parent  # thư mục PE_Python_DA/
 
+# Ánh xạ nằm ở MỘT tệp dữ liệu, không ở đây: pe-usth (scripts/giao-trinh.mjs) đọc đúng tệp
+# này tại SHA đã ghim, nên khai thêm một tệp ở đây mà quên bên kia là chuyện không thể xảy ra.
+_ANH_XA = json.loads((GOI / 'tools' / 'anh-xa.json').read_text(encoding='utf-8'))
 # (đường dẫn trong gói, đường dẫn trong nền tảng pe_usth)
-TEP: list[tuple[str, str]] = [
-    ('source/course.json', 'scripts/pe-da/source/course.json'),
-    ('source/practice.json', 'scripts/pe-da/source/practice.json'),
-    ('thuatngu.json', 'scripts/pe-da/thuatngu.json'),
-    ('boi-canh.json', 'scripts/pe-da/boi-canh.json'),
-    ('mcq-bo-code.json', 'scripts/pe-da/mcq-bo-code.json'),
-    ('van-phong-moc.json', 'scripts/pe-da/van-phong-moc.json'),
-    ('SCHEMA.md', 'scripts/pe-da/SCHEMA.md'),
-    ('LUOC-DO.md', 'scripts/pe-da/LUOC-DO.md'),
-    ('CAU-CHUYEN.md', 'scripts/pe-da/CAU-CHUYEN.md'),
-    ('VAN-PHONG.md', 'scripts/pe-da/VAN-PHONG.md'),
-]
+TEP: list[tuple[str, str]] = [tuple(x) for x in _ANH_XA['tep']]  # type: ignore[misc]
 # (thư mục trong gói, thư mục trong nền tảng) — so theo hợp của hai bên, đệ quy
-THU_MUC: list[tuple[str, str]] = [
-    ('figures', 'frontend/public/static/da'),
-    ('data', 'frontend/public/static/da-dulieu'),
-]
-VAN_BAN = {'.json', '.md', '.csv'}
+THU_MUC: list[tuple[str, str]] = [tuple(x) for x in _ANH_XA['thuMuc']]  # type: ignore[misc]
+VAN_BAN = set(_ANH_XA['vanBan'])
+BO_QUA = set(_ANH_XA['boQua'])
 
 
 def chuan(b: bytes, p: Path) -> bytes:
@@ -63,7 +54,8 @@ def cac_cap(nen: Path) -> list[tuple[Path, Path, str]]:
         ten: set[str] = set()
         for goc in (GOI / tg, nen / tn):
             if goc.is_dir():
-                ten |= {p.relative_to(goc).as_posix() for p in goc.rglob('*') if p.is_file()}
+                ten |= {p.relative_to(goc).as_posix() for p in goc.rglob('*')
+                        if p.is_file() and not (set(p.relative_to(goc).parts) & BO_QUA)}
         cap += [(GOI / tg / t, nen / tn / t, f'{tg}/{t}') for t in sorted(ten)]
     return cap
 

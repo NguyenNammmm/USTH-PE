@@ -1,0 +1,61 @@
+name: Kiểm nội dung giáo trình
+
+# Cổng kiểm của PE_Python_DA ngay tại nơi soạn nội dung. Chỉ những kiểm tra chạy được TỪ NỘI DUNG
+# THUẦN: không cần bản dựng (lessons.json), không cần Pyodide, không cần nền tảng. Phần còn lại
+# (dựng gói, chạy code trong Pyodide, chấm bài tập, nạp DB) ở repo nền tảng pe-usth, nơi
+# `node scripts/giao-trinh.mjs` kiểm bản chép của nó đúng với SHA đã ghim ở đây.
+on:
+  push:
+    branches: [main, Python, Advanced_DB]
+    paths: ['PE_Python_DA/**', '.github/workflows/noi-dung.yml']
+  pull_request:
+    paths: ['PE_Python_DA/**', '.github/workflows/noi-dung.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pe-python-da:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Mọi JSON phải đọc được, và mọi tệp mà ánh xạ nhắc tới phải có thật: một mục ánh xạ trỏ
+      # vào hư không làm pe-usth báo "thiếu ở GÓI" mà không ai biết lỗi nằm ở đây.
+      - name: JSON hợp lệ, ánh xạ không trỏ vào hư không
+        run: |
+          python -I - <<'PY'
+          import json, pathlib, sys
+          goc = pathlib.Path('PE_Python_DA')
+          for p in goc.rglob('*.json'):
+              json.loads(p.read_text(encoding='utf-8'))
+          xa = json.loads((goc / 'tools' / 'anh-xa.json').read_text(encoding='utf-8'))
+          thieu = [a for a, _ in xa['tep'] if not (goc / a).is_file()]
+          thieu += [a for a, _ in xa['thuMuc'] if not (goc / a).is_dir()]
+          if thieu:
+              print('::error::anh-xa.json nhắc tới tệp không có trong gói:', thieu)
+              sys.exit(1)
+          print('JSON hợp lệ;', len(xa['tep']), 'tệp và', len(xa['thuMuc']), 'thư mục trong ánh xạ đều có thật')
+          PY
+
+      # VĂN PHONG — chế độ RATCHET, không phải bản tuyệt đối: corpus còn lỗi văn phong tồn đọng,
+      # nên bước này chỉ đỏ khi một luật TĂNG so với van-phong-moc.json. Lỗi chuyển thành cảnh
+      # báo thì được, miễn tổng không phình.
+      - name: Văn phong không luật nào được tăng
+        run: python -I PE_Python_DA/check_vanphong.py --doi-chieu
+
+      # Bộ sinh dữ liệu có seed cố định: chạy lại phải ra ĐÚNG từng byte thứ đã commit. Lệch nghĩa
+      # là ai đó sửa dữ liệu bằng tay, hoặc sửa bộ sinh mà không sinh lại.
+      - name: Dữ liệu bài học sinh lại phải khớp bản đã commit
+        run: |
+          python -I PE_Python_DA/gen_dulieu.py
+          khac=$(git status --porcelain -- PE_Python_DA/dulieu PE_Python_DA/data)
+          if [ -n "$khac" ]; then
+            echo "$khac"
+            echo "::error::gen_dulieu.py sinh ra khác bản đã commit — chạy lại rồi commit dulieu/ và data/."
+            exit 1
+          fi

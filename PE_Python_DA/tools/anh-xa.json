@@ -1,0 +1,24 @@
+{
+  "ghiChu": "Ánh xạ giữa gói PE_Python_DA và cây của repo nền tảng pe-usth. MỘT nguồn duy nhất: tools/dong_bo.py (ở đây) và scripts/giao-trinh.mjs (ở pe-usth, đọc tệp này tại SHA đã ghim) cùng đọc nó. Thêm tệp vào giao trình thì thêm ở ĐÂY, đừng khai riêng ở một bên.",
+  "tep": [
+    ["source/course.json", "scripts/pe-da/source/course.json"],
+    ["source/practice.json", "scripts/pe-da/source/practice.json"],
+    ["thuatngu.json", "scripts/pe-da/thuatngu.json"],
+    ["boi-canh.json", "scripts/pe-da/boi-canh.json"],
+    ["mcq-bo-code.json", "scripts/pe-da/mcq-bo-code.json"],
+    ["van-phong-moc.json", "scripts/pe-da/van-phong-moc.json"],
+    ["SCHEMA.md", "scripts/pe-da/SCHEMA.md"],
+    ["LUOC-DO.md", "scripts/pe-da/LUOC-DO.md"],
+    ["CAU-CHUYEN.md", "scripts/pe-da/CAU-CHUYEN.md"],
+    ["VAN-PHONG.md", "scripts/pe-da/VAN-PHONG.md"],
+    ["check_vanphong.py", "scripts/pe-da/check_vanphong.py"],
+    ["gen_dulieu.py", "scripts/pe-da/gen_dulieu.py"]
+  ],
+  "thuMuc": [
+    ["figures", "frontend/public/static/da"],
+    ["data", "frontend/public/static/da-dulieu"],
+    ["dulieu", "scripts/pe-da/dulieu"]
+  ],
+  "vanBan": [".json", ".md", ".csv", ".py"],
+  "boQua": ["__pycache__"]
+}
