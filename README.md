@@ -4,18 +4,27 @@ Repo này là nơi **soạn, sửa và tổng hợp nội dung giáo trình** c�
 
 ## Quy ước làm việc (từ 23/11/2026)
 
-Mọi việc soạn, sửa và tổng hợp nội dung giáo trình làm ở repo này. Repo nền tảng chỉ nhận nội dung đã chép sang, rồi dựng, kiểm và nạp.
+Mọi việc soạn, sửa và tổng hợp nội dung giáo trình làm ở repo này. Các cổng kiểm chạy được từ nội dung thuần (văn phong, dữ liệu, JSON) nằm cạnh nội dung và chạy trong CI của repo này (`.github/workflows/noi-dung.yml`). Repo nền tảng chỉ lấy nội dung ở một commit đã ghim, rồi dựng, kiểm bằng Pyodide và nạp vào cơ sở dữ liệu; cổng của nó đỏ nếu ai sửa bản chép ở đó thay vì sửa ở đây. Các bước và công cụ: [PE_Python_DA/README.md](PE_Python_DA/README.md).
 
-Chưa tự động hết. Bộ dựng và các cổng kiểm của giáo trình đang chạy vẫn nằm ở pe-usth và đọc nội dung từ cây của pe-usth, nên giữa hai repo có một bước chép (công cụ và các bước ở [PE_Python_DA/README.md](PE_Python_DA/README.md)). Chuyển bộ dựng và các cổng về đây là việc kế tiếp, chưa làm.
+Ở lại repo nền tảng có chủ đích: bộ dựng gói theo định dạng của nền tảng, kiểm chạy code trong Pyodide, chấm bài tập, sinh vết từng bước và nạp DB. Chúng cần runtime của nền tảng, nội dung thì không phụ thuộc vào chúng.
 
 ## Các gói trong repo
 
 | Thư mục | Là gì | Trạng thái |
 |---|---|---|
 | [PE_Python_DA](PE_Python_DA/README.md) | **Python cho Data Analyst**: 179 bài, 11 module, kèm lớp luyện tập, dữ liệu và hình | Giáo trình đang chạy trên programmingedu.io.vn. Nguồn chính |
+| [PE_Database_Advanced](https://github.com/ProgrammingEdu-USTH/Giao_Trinh_PE/tree/Advanced_DB/PE_Database_Advanced) | **Database Advanced**: 85 bài AD01–AD85, 24 bài trọng tâm, 11 phần bổ sung USTH | **Chỉ có ở nhánh `Advanced_DB`**, chưa vào `main`. Chưa có runner; mọi bài còn `authored-pending-review` |
 | [PE_Python_v2](PE_Python_v2/README_DEV.md) | Bản bàn giao nội dung v2 cho đội dev (22/09/2026): 92 bài | Không phải giáo trình đang chạy; giữ để tham chiếu |
 | [curriculum_v3](curriculum_v3/ROADMAP_VA_FORMAT_V3.md) | Roadmap v3 theo tỷ lệ 50/30/20 (30/09/2026): 40 nhiệm vụ | Đề xuất, chưa phải ngân hàng bài hoàn chỉnh |
 | [downloads](downloads) | Gói ZIP của v2 và v3 | Bản đóng gói của hai thư mục trên |
+
+## Nhánh
+
+- `main`: giáo trình Python đang chạy (`PE_Python_DA`), hai gói tháng 9 và README này.
+- `Python`: nhánh của giáo trình Python. Hiện trùng `main`.
+- `Advanced_DB`: nhánh của Database Advanced. Là `main` cộng thêm `PE_Database_Advanced/`.
+
+Hai khoá nằm ở hai nhánh khác nhau nên sửa khoá này không kéo theo khoá kia; khi một khoá sẵn sàng vào `main` thì merge nhánh của nó.
 
 ## Lưu ý về repo công khai
 
