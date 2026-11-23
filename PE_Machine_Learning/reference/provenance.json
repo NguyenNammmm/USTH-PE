@@ -1,0 +1,6 @@
+{
+  "source": "/home/acm/pe-usth/scripts/pe-ml-codex",
+  "bundleSha256": "6448f5b248903ef0d8ff3e61bc2e589a5940083d62b90d6084d6463742fb9784",
+  "reference": "ProgrammingEdu-USTH/Giao_Trinh_PE: PE_Python_DA/source/course.json + practice.json",
+  "scope": "Cách tổ chức nguồn; chưa nghiệm thu bằng pipeline build của repository giáo trình."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ml",
+  "title": "Machine Learning PE",
+  "subtitle": "28 bài · 6 module · NumPy và pandas",
+  "description": "Khóa Machine Learning thực hành của PE-USTH. Người học hiện thực các thuật toán cốt lõi bằng Python, NumPy và pandas mà không dùng thư viện máy học dựng sẵn.",
+  "level": "intermediate",
+  "color": "#312e81",
+  "accent": "#22c55e",
+  "mark": "ML",
+  "lessonUrl": "/lesson/ml",
+  "requirements": [
+    "Đã học Python, hàm, vòng lặp, NumPy và thao tác bảng dữ liệu bằng pandas",
+    "Thực hành bằng Python 3.12 với NumPy và pandas",
+    "Không dùng scikit-learn, TensorFlow hoặc PyTorch để hiện thực thuật toán cốt lõi"
+  ],
+  "skills": [
+    "Biểu diễn, tiền xử lý và kiểm tra dữ liệu cho bài toán học máy",
+    "Hiện thực hồi quy, phân loại và tối ưu hóa bằng NumPy",
+    "Đánh giá mô hình, nhận diện overfitting và áp dụng điều chuẩn",
+    "Hiện thực mạng nơ-ron cơ bản và lan truyền ngược",
+    "Hiện thực phân cụm, PCA, cây quyết định và học kết hợp",
+    "Hoàn thành capstone dự đoán giá nhà và phân loại khu vực Hà Nội"
+  ]
+}

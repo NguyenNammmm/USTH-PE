@@ -1,0 +1,18 @@
+{
+  "ghiChu": "Ánh xạ giữa gói PE_Machine_Learning và cây của repo nền tảng pe-usth. MỘT nguồn duy nhất: tools/dong_bo.py (ở đây) và các script nền tảng cùng đọc nó. Thêm tệp vào giáo trình thì thêm ở ĐÂY, đừng khai riêng ở một bên.",
+  "tep": [
+    ["source/course.json", "scripts/pe-ml/source/course.json"],
+    ["source/practice.json", "scripts/pe-ml/source/practice.json"],
+    ["source/questions.json", "scripts/pe-ml/source/questions.json"],
+    ["reference/studio-lessons.json", "scripts/pe-ml/reference/studio-lessons.json"],
+    ["reference/provenance.json", "scripts/pe-ml/reference/provenance.json"],
+    ["reference/course-catalog.json", "scripts/pe-ml/reference/course-catalog.json"],
+    ["SCHEMA.md", "scripts/pe-ml/SCHEMA.md"],
+    ["README.md", "scripts/pe-ml/README.md"]
+  ],
+  "thuMuc": [
+    ["docs", "scripts/pe-ml/docs"]
+  ],
+  "vanBan": [".json", ".md", ".py"],
+  "boQua": ["__pycache__"]
+}
