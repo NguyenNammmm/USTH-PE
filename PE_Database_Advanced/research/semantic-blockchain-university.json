@@ -1,0 +1,2257 @@
+{
+  "date": "2026-11-05",
+  "scope": "All23 chapter26 own-bodies and three AppendixA own-bodies only.",
+  "counts": {
+    "assigned": 26,
+    "complete": 26
+  },
+  "units": [
+    {
+      "section": "26.1",
+      "title": "Overview",
+      "owners": [
+        "AD81"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          51,
+          153
+        ],
+        "ownBodySha256": "8ab3645f38c0bd1843cd669052ec3f94b813953706f049864197ad24e523433a"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Ledger/cryptocurrency/double-spend motivation; conditional trust, public versus permissioned membership and distinct read/submit/validate rights, pseudonymity rather than unconditional anonymity.",
+      "evidence": [
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "teaching",
+          "paragraph": 5,
+          "exactOpening": "Một ledger ngân hàng do một tổ chức ghi cần người dùng tin tổ chức ấy không tự thêm lệnh rút hoặc xóa lệnh nộp. Distributed ledger cho nhiều bên giữ bản sao và kiểm các cập nhật có chữ ký. “Trustless” trong phần tổng quan của sách nghĩa là giảm việc phải tin hoàn toàn một bên giữ sổ; vẫn còn giả định về khóa, luật đồng thuận, membership và dữ liệu "
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "worked-example-or-proof",
+          "paragraph": 3,
+          "exactOpening": "Hai người cùng đưa một giấy chuyển quyền có chữ ký hợp lệ. Liệu hệ thống phải nhận cả hai? Câu trả lời phụ thuộc quyền đó còn tồn tại tại thời điểm xét từng giấy. Bài này tách ba việc thường bị gộp: kiểm nội dung có bị sửa, kiểm người có quyền đã ký, và kiểm phép chuyển có hợp lệ đối với một trạng thái cụ thể. Đồng thuận chọn lịch sử nào được mọi n"
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "activity",
+          "paragraph": 30,
+          "exactOpening": "1. Tự tạo proof cho t1 trong cây bốn lá. Ghi thứ tự sibling, hướng ghép, x sau mỗi vòng. Giải thích vì sao proof đó không trả lời “t1 đã chi tiêu chưa”.\n2. Debug `Apply`: một bản bỏ kiểm input trùng. Cho U chỉ có `(g,0)→(A,7)`, lập giao dịch hai input cùng outpoint làm tổng đếm sai. Chỉ rõ bước cần sửa.\n3. Tình huống mới: U có `u→(A,9)`, `v→(B,4)`."
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "answer",
+          "paragraph": 35,
+          "exactOpening": "1. Bắt đầu L1, ghép L0 bên trái thành P01, ghép P23 bên phải thành R. Proof cam kết byte của t1 có trong tập lá được root cam kết; muốn biết chưa chi tiêu phải kiểm trạng thái hoặc các lần chi tiêu sau đó, và root còn cần xác thực.\n2. Input `[g:0,g:0]` khiến bản sai cộng 14, có thể chấp nhận output 14 và fee 0 nhưng chỉ xóa một output giá trị 7. Tậ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.2",
+      "title": "Blockchain Properties",
+      "owners": [
+        "AD81"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          154,
+          343
+        ],
+        "ownBodySha256": "2dd48348631a917e274d0960095e0ceaaeb64f17cb9787e4e35a900dd7ade69a"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Hash-linked blocks/genesis and need authenticated history; Sybil/fault/consensus families, full/light modes, accidental forks versus soft/hard validation-rule changes, source three historical examples, signatures and conditional claimed properties.",
+      "evidence": [
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "teaching",
+          "paragraph": 11,
+          "exactOpening": "Genesis là block đầu được quy tắc hệ thống xác định; mỗi block sau cam kết block trước. Height chỉ là vị trí: hai block khác nhau cùng nối một parent có thể có cùng height. Fork tạm do hai đề xuất gần nhau khác với thay đổi quy tắc có thể làm các client tách lịch sử. Một transaction thuộc nhánh bị bỏ cần được xét lại theo state và luật của nhánh đư"
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "worked-example-or-proof",
+          "paragraph": 10,
+          "exactOpening": "Trong **ca 1**, người sửa đổi một giao dịch của B1 nhưng giữ B2. Tính lại `id(B1')` sẽ không khớp trường trong B2, trừ khi tìm được va chạm phù hợp. Nếu người đó cũng sửa B2 và tính mọi hash phía sau, một chuỗi tự nhất quán mới vẫn tạo được. Người đọc cần một mốc gốc đã xác thực, hoặc một quy tắc xác định lịch sử được chấp nhận. Vì thế hash link ch"
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "activity",
+          "paragraph": 30,
+          "exactOpening": "1. Tự tạo proof cho t1 trong cây bốn lá. Ghi thứ tự sibling, hướng ghép, x sau mỗi vòng. Giải thích vì sao proof đó không trả lời “t1 đã chi tiêu chưa”.\n2. Debug `Apply`: một bản bỏ kiểm input trùng. Cho U chỉ có `(g,0)→(A,7)`, lập giao dịch hai input cùng outpoint làm tổng đếm sai. Chỉ rõ bước cần sửa.\n3. Tình huống mới: U có `u→(A,9)`, `v→(B,4)`."
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "answer",
+          "paragraph": 35,
+          "exactOpening": "1. Bắt đầu L1, ghép L0 bên trái thành P01, ghép P23 bên phải thành R. Proof cam kết byte của t1 có trong tập lá được root cam kết; muốn biết chưa chi tiêu phải kiểm trạng thái hoặc các lần chi tiêu sau đó, và root còn cần xác thực.\n2. Input `[g:0,g:0]` khiến bản sai cộng 14, có thể chấp nhận output 14 và fee 0 nhưng chỉ xóa một output giá trị 7. Tậ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.3",
+      "title": "Achieving Blockchain Properties via Cryptographic Hash Functions",
+      "owners": [
+        "AD81"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          344,
+          352
+        ],
+        "ownBodySha256": "306a5da1f99f9bf098fe330f492fe2a3f23c4cd21f010435ef789839befa2d60"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Cryptographic hash goals separated from database hashing; hash/signature/transaction state correctness not conflated.",
+      "evidence": [
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "teaching",
+          "paragraph": 14,
+          "exactOpening": "Một hash mật mã trả chuỗi bit dài cố định. **Preimage resistance** làm khó việc tìm một đầu vào từ hash cho trước; **second-preimage resistance** làm khó việc thay một thông điệp đã cho bằng thông điệp khác cùng hash; **collision resistance** làm khó việc tìm bất kỳ hai đầu vào khác nhau cùng hash. Không có hàm hữu hạn nào tránh mọi va chạm khi miề"
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "worked-example-or-proof",
+          "paragraph": 15,
+          "exactOpening": "Một ví dụ băm `x mod 10` làm lộ lý do hash của bảng băm không thay thế được hash mật mã: 7 và 17 va chạm ngay. Hash không mã hóa nội dung; biết thông điệp thuộc một tập nhỏ còn cho phép thử từng ứng viên. Đưa mã sinh viên đã hash lên một ledger công khai vì vậy không tự tạo ẩn danh. Các phát biểu bảo mật ở đây có điều kiện: thuật toán thích hợp, th"
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "activity",
+          "paragraph": 30,
+          "exactOpening": "1. Tự tạo proof cho t1 trong cây bốn lá. Ghi thứ tự sibling, hướng ghép, x sau mỗi vòng. Giải thích vì sao proof đó không trả lời “t1 đã chi tiêu chưa”.\n2. Debug `Apply`: một bản bỏ kiểm input trùng. Cho U chỉ có `(g,0)→(A,7)`, lập giao dịch hai input cùng outpoint làm tổng đếm sai. Chỉ rõ bước cần sửa.\n3. Tình huống mới: U có `u→(A,9)`, `v→(B,4)`."
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "answer",
+          "paragraph": 35,
+          "exactOpening": "1. Bắt đầu L1, ghép L0 bên trái thành P01, ghép P23 bên phải thành R. Proof cam kết byte của t1 có trong tập lá được root cam kết; muốn biết chưa chi tiêu phải kiểm trạng thái hoặc các lần chi tiêu sau đó, và root còn cần xác thực.\n2. Input `[g:0,g:0]` khiến bản sai cộng 14, có thể chấp nhận output 14 và fee 0 nhưng chỉ xóa một output giá trị 7. Tậ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.3.1",
+      "title": "Properties of Cryptographic Hash Functions",
+      "owners": [
+        "AD81"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          353,
+          387
+        ],
+        "ownBodySha256": "6f019550390709726797cbc4566fcd28f04a5d3d21dfeb85c3f0caa5eb6870d3"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Preimage/second-preimage/collision resistance, fixed output and unavoidable collisions, ideal work factors, small-domain guessing and canonical encoding; no false mathematical security proof for SHA.",
+      "evidence": [
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "teaching",
+          "paragraph": 14,
+          "exactOpening": "Một hash mật mã trả chuỗi bit dài cố định. **Preimage resistance** làm khó việc tìm một đầu vào từ hash cho trước; **second-preimage resistance** làm khó việc thay một thông điệp đã cho bằng thông điệp khác cùng hash; **collision resistance** làm khó việc tìm bất kỳ hai đầu vào khác nhau cùng hash. Không có hàm hữu hạn nào tránh mọi va chạm khi miề"
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "worked-example-or-proof",
+          "paragraph": 15,
+          "exactOpening": "Một ví dụ băm `x mod 10` làm lộ lý do hash của bảng băm không thay thế được hash mật mã: 7 và 17 va chạm ngay. Hash không mã hóa nội dung; biết thông điệp thuộc một tập nhỏ còn cho phép thử từng ứng viên. Đưa mã sinh viên đã hash lên một ledger công khai vì vậy không tự tạo ẩn danh. Các phát biểu bảo mật ở đây có điều kiện: thuật toán thích hợp, th"
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "activity",
+          "paragraph": 30,
+          "exactOpening": "1. Tự tạo proof cho t1 trong cây bốn lá. Ghi thứ tự sibling, hướng ghép, x sau mỗi vòng. Giải thích vì sao proof đó không trả lời “t1 đã chi tiêu chưa”.\n2. Debug `Apply`: một bản bỏ kiểm input trùng. Cho U chỉ có `(g,0)→(A,7)`, lập giao dịch hai input cùng outpoint làm tổng đếm sai. Chỉ rõ bước cần sửa.\n3. Tình huống mới: U có `u→(A,9)`, `v→(B,4)`."
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "answer",
+          "paragraph": 35,
+          "exactOpening": "1. Bắt đầu L1, ghép L0 bên trái thành P01, ghép P23 bên phải thành R. Proof cam kết byte của t1 có trong tập lá được root cam kết; muốn biết chưa chi tiêu phải kiểm trạng thái hoặc các lần chi tiêu sau đó, và root còn cần xác thực.\n2. Input `[g:0,g:0]` khiến bản sai cộng 14, có thể chấp nhận output 14 và fee 0 nhưng chỉ xóa một output giá trị 7. Tậ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.3.2",
+      "title": "Public-Key Encryption, Digital Signatures, and Irrefutability",
+      "owners": [
+        "AD81"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          388,
+          424
+        ],
+        "ownBodySha256": "2d4c44d7f7b4ef8ab58f3724509dea1f5b65db47cefbfd703f869d7649966efa"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Public/private key and signature verification purpose, all relevant message fields/domain signed, binding key to person and compromise conditions; source generic private-key-encryption description corrected to Sign/Verify API.",
+      "evidence": [
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "teaching",
+          "paragraph": 23,
+          "exactOpening": "Dùng giao diện `Sign(sk,m)` và `Verify(pk,m,sig)`, không định nghĩa mọi chữ ký là “mã hóa bằng private key”. Chữ ký hiện đại có thuật toán riêng. m phải bao gồm domain/chain của mô hình, mọi input, mọi output và quy tắc phiên bản. Nếu người ký chỉ ký số lượng mà không ký người nhận, chữ ký có thể bị chuyển sang giấy khác. Chữ ký bảo vệ tính toàn vẹ"
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "worked-example-or-proof",
+          "paragraph": 27,
+          "exactOpening": "Trong **ca 3**, U có `(g,0)→(A,7)` và `(g,1)→(A,5)`. T1 dùng cả hai, trả B 10, trả A 1, fee 1. Chữ ký A đúng, tổng 12=10+1+1 nên U' còn `(T1,0)→(B,10)`, `(T1,1)→(A,1)`. T2 vẫn dùng `(g,0)` trả C 6, fee 1: chữ ký có thể đúng nhưng input không còn, nên T2 bị từ chối. Nếu T2 đứng trước, T1 mới là phép không còn đủ input. Hai giao dịch có thể riêng rẽ "
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "activity",
+          "paragraph": 30,
+          "exactOpening": "1. Tự tạo proof cho t1 trong cây bốn lá. Ghi thứ tự sibling, hướng ghép, x sau mỗi vòng. Giải thích vì sao proof đó không trả lời “t1 đã chi tiêu chưa”.\n2. Debug `Apply`: một bản bỏ kiểm input trùng. Cho U chỉ có `(g,0)→(A,7)`, lập giao dịch hai input cùng outpoint làm tổng đếm sai. Chỉ rõ bước cần sửa.\n3. Tình huống mới: U có `u→(A,9)`, `v→(B,4)`."
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "answer",
+          "paragraph": 35,
+          "exactOpening": "1. Bắt đầu L1, ghép L0 bên trái thành P01, ghép P23 bên phải thành R. Proof cam kết byte của t1 có trong tập lá được root cam kết; muốn biết chưa chi tiêu phải kiểm trạng thái hoặc các lần chi tiêu sau đó, và root còn cần xác thực.\n2. Input `[g:0,g:0]` khiến bản sai cộng 14, có thể chấp nhận output 14 và fee 0 nhưng chỉ xóa một output giá trị 7. Tậ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.3.3",
+      "title": "Simple Blockchain Transactions",
+      "owners": [
+        "AD81"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          425,
+          502
+        ],
+        "ownBodySha256": "c66af2a6902672f151ee1251ad0af6579adc036f5f3bceb20d6b56fd2992cbb4"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Input outpoint ownership/unspent/unique checks, outputs/change/fee and signature, local creation versus accepted-history ordering, explicit dependencies and implicit ordering control; full Apply pseudocode, conservation induction and complexity, conditional block rejection semantics.",
+      "evidence": [
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "teaching",
+          "paragraph": 24,
+          "exactOpening": "Ta dùng UTXO đơn giản: U là ánh xạ từ **outpoint** `(txid,index)` tới `(owner,value)`. Value là số nguyên không âm, có giới hạn và phép cộng kiểm tràn. Mỗi output chỉ thuộc một public key; không mô phỏng ngôn ngữ script thật. Không tạo tiền mới, không coinbase. Một giao dịch có input khác nhau, output đánh số, fee không âm và chữ ký của mọi chủ inp"
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "worked-example-or-proof",
+          "paragraph": 27,
+          "exactOpening": "Trong **ca 3**, U có `(g,0)→(A,7)` và `(g,1)→(A,5)`. T1 dùng cả hai, trả B 10, trả A 1, fee 1. Chữ ký A đúng, tổng 12=10+1+1 nên U' còn `(T1,0)→(B,10)`, `(T1,1)→(A,1)`. T2 vẫn dùng `(g,0)` trả C 6, fee 1: chữ ký có thể đúng nhưng input không còn, nên T2 bị từ chối. Nếu T2 đứng trước, T1 mới là phép không còn đủ input. Hai giao dịch có thể riêng rẽ "
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "activity",
+          "paragraph": 30,
+          "exactOpening": "1. Tự tạo proof cho t1 trong cây bốn lá. Ghi thứ tự sibling, hướng ghép, x sau mỗi vòng. Giải thích vì sao proof đó không trả lời “t1 đã chi tiêu chưa”.\n2. Debug `Apply`: một bản bỏ kiểm input trùng. Cho U chỉ có `(g,0)→(A,7)`, lập giao dịch hai input cùng outpoint làm tổng đếm sai. Chỉ rõ bước cần sửa.\n3. Tình huống mới: U có `u→(A,9)`, `v→(B,4)`."
+        },
+        {
+          "path": "lessons/AD81.md",
+          "lessonSha256": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+          "kind": "answer",
+          "paragraph": 35,
+          "exactOpening": "1. Bắt đầu L1, ghép L0 bên trái thành P01, ghép P23 bên phải thành R. Proof cam kết byte của t1 có trong tập lá được root cam kết; muốn biết chưa chi tiêu phải kiểm trạng thái hoặc các lần chi tiêu sau đó, và root còn cần xác thực.\n2. Input `[g:0,g:0]` khiến bản sai cộng 14, có thể chấp nhận output 14 và fee 0 nhưng chỉ xóa một output giá trị 7. Tậ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.4",
+      "title": "Consensus",
+      "owners": [
+        "AD54"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          503,
+          556
+        ],
+        "ownBodySha256": "21c878abe525b70c5fa39fa9b6d5850598ad9009c76bc2e907a4bf4782eef973"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Proposer/fork-choice protocol families, independent full validation, mining incentive subsidy/fee/pool, validity versus consensus and crash versus Byzantine membership assumptions.",
+      "evidence": [
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "teaching",
+          "paragraph": 4,
+          "exactOpening": "§26.4 phân biệt cách chọn proposer qua trao đổi message với cách chấp nhận fork tạm rồi dùng fork choice. Hai nhánh đều có block vượt kiểm cú pháp/chữ ký vẫn cần một lịch sử chung. Mỗi full verifier kiểm lại format, chữ ký, input chưa tiêu và chuyển state của block nhận được; không tin vô điều kiện miner đã kiểm. Block cũng không bắt buộc chứa mọi "
+        },
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "worked-example-or-proof",
+          "paragraph": 24,
+          "exactOpening": "Ví dụ 3: hai transaction cùng tiêu một output. Cả hai có chữ ký đúng nhưng khi áp theo thứ tự, chỉ một được tiêu output chưa dùng. Nếu chỉ verify chữ ký rồi cộng transfer, hệ có thể nhân quyền chi tiêu. Chữ ký chứng minh quyền ký message theo assumptions; nó không thay việc kiểm state hiện tại."
+        },
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "activity",
+          "paragraph": 30,
+          "exactOpening": "1. Toy hash đều 0..255,target0..3. Tính xác suất thành công một lần và số lần thử kỳ vọng. Vì sao không bảo đảm lần64 thành công?\n2. N=7,f=2,quorum5. Tính cận phần giao và số honest ít nhất trong phần giao. Nêu điều kiện protocol bổ sung để chống hai decision trái nhau.\n3. Thiết kế ca hai transaction cùng tiêu output, đều có chữ ký đúng. Ghi thứ tự"
+        },
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "answer",
+          "paragraph": 35,
+          "exactOpening": "1. Xác suất 1/64, kỳ vọng64 lần thử theo giả định đều/độc lập. Số lần thử là biến ngẫu nhiên và lần64 vẫn có thể thất bại.\n2. Phần giao ít nhất5+5−7=3, có ít nhất3−2=1 honest. Cần honest voting/locking rule qua round và leader change, cùng certificate identity/membership/hash đúng; quorum count riêng chưa đủ.\n3. Ban đầu u chưa tiêu; txA dùng u, txB"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.4.1",
+      "title": "Proof of Work",
+      "owners": [
+        "AD54"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          557,
+          615
+        ],
+        "ownBodySha256": "db981246dff7cddc05e19c85a7f51ff36a1c368547a9ab8cf0c77f8cda38dd68"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Nonce challenge, strict/inclusive target probability and expected trials, puzzle friendliness versus collision resistance, finite nonce-space limit, difficulty/propagation/fork/energy/pool tradeoffs; accumulated-work qualified fork choice.",
+      "evidence": [
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "teaching",
+          "paragraph": 9,
+          "exactOpening": "Với điều kiện `hash < T` trên output n bit đều, có T kết quả hợp lệ nên p=T/2^n, `E[trials]=1/p`. Nếu dùng `hash <= T` thì tử số là T+1; đề phải nói rõ dấu so sánh. Puzzle-friendliness yêu cầu không có lối tắt đáng kể để tìm lời giải cho challenge của mô hình; chống va chạm riêng không tự chứng minh thuộc tính ấy. Nonce là một trường để thay ứng vi"
+        },
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "worked-example-or-proof",
+          "paragraph": 8,
+          "exactOpening": "Ví dụ1 dùng toy hash có16 giá trị0..15, target cho phép0,1. Xác suất một lần là2/16=1/8 nếu các thử độc lập/đều; kỳ vọng tám lần, nhưng lần thành công cụ thể có thể là1 hoặc50. Không dùng toy hash8bit hoặc con số kỳ vọng ấy làm tham số an toàn thật. Một thuật toán hash mật mã cần các thuộc tính AD81, không chỉ phân bố số nhìn đều trong vài mẫu."
+        },
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "activity",
+          "paragraph": 30,
+          "exactOpening": "1. Toy hash đều 0..255,target0..3. Tính xác suất thành công một lần và số lần thử kỳ vọng. Vì sao không bảo đảm lần64 thành công?\n2. N=7,f=2,quorum5. Tính cận phần giao và số honest ít nhất trong phần giao. Nêu điều kiện protocol bổ sung để chống hai decision trái nhau.\n3. Thiết kế ca hai transaction cùng tiêu output, đều có chữ ký đúng. Ghi thứ tự"
+        },
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "answer",
+          "paragraph": 35,
+          "exactOpening": "1. Xác suất 1/64, kỳ vọng64 lần thử theo giả định đều/độc lập. Số lần thử là biến ngẫu nhiên và lần64 vẫn có thể thất bại.\n2. Phần giao ít nhất5+5−7=3, có ít nhất3−2=1 honest. Cần honest voting/locking rule qua round và leader change, cùng certificate identity/membership/hash đúng; quorum count riêng chưa đủ.\n3. Ban đầu u chưa tiêu; txA dùng u, txB"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.4.2",
+      "title": "Proof of Stake",
+      "owners": [
+        "AD54"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          616,
+          630
+        ],
+        "ownBodySha256": "a430a45d9801a4fbd319cc85712432973e1ca4d4d957ed2619c3b139807c9da3"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Stake/holding/locking and hybrid variations, proposal weight not richest-always or mandatory PoW, nothing-at-stake/old keys/checkpoint assumptions; source Ethereum transition forecast explicitly historical.",
+      "evidence": [
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "teaching",
+          "paragraph": 16,
+          "exactOpening": "§26.4.2 mô tả các thiết kế thời đó có thể trộn stake với work, xét thời gian giữ stake hoặc khóa stake trong một giai đoạn. Đó là các biến thể, không phải định nghĩa mọi PoS đều đào nonce PoW hay người giàu nhất luôn được đề xuất. Chi phí thấp khi ký nhiều fork là một vấn đề protocol phải xử lý. Ethereum đã chuyển sang PoS năm2022; mô tả miner và k"
+        },
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "worked-example-or-proof",
+          "paragraph": 15,
+          "exactOpening": "Validator có thể ký nhiều nhánh nếu protocol không ngăn hoặc phạt. Lịch sử validator và key cũ liên quan long-range attack; cách chọn checkpoint tin cậy và đổi membership cần được quy định. Bảng balances riêng chưa giải toàn bộ identity và consensus. Lab dùng identity/weight giả lập và failure model công bố."
+        },
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "activity",
+          "paragraph": 30,
+          "exactOpening": "1. Toy hash đều 0..255,target0..3. Tính xác suất thành công một lần và số lần thử kỳ vọng. Vì sao không bảo đảm lần64 thành công?\n2. N=7,f=2,quorum5. Tính cận phần giao và số honest ít nhất trong phần giao. Nêu điều kiện protocol bổ sung để chống hai decision trái nhau.\n3. Thiết kế ca hai transaction cùng tiêu output, đều có chữ ký đúng. Ghi thứ tự"
+        },
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "answer",
+          "paragraph": 35,
+          "exactOpening": "1. Xác suất 1/64, kỳ vọng64 lần thử theo giả định đều/độc lập. Số lần thử là biến ngẫu nhiên và lần64 vẫn có thể thất bại.\n2. Phần giao ít nhất5+5−7=3, có ít nhất3−2=1 honest. Cần honest voting/locking rule qua round và leader change, cùng certificate identity/membership/hash đúng; quorum count riêng chưa đủ.\n3. Ban đầu u chưa tiêu; txA dùng u, txB"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.4.3",
+      "title": "Byzantine Consensus",
+      "owners": [
+        "AD54"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          631,
+          682
+        ],
+        "ownBodySha256": "915260d2e28ed0f05039c641ab15bdf2bae1fff49ceebaac50e12c6b4847f8d6"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Arbitrary malicious/equivocating behavior versus crash, permissioning limitations, signature does not stop owner equivocation, PBFT fault bound and honest-quorum intersection proof, locking/view-change and synchrony/liveness caveats.",
+      "evidence": [
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "teaching",
+          "paragraph": 20,
+          "exactOpening": "Byzantine node có thể equivocate: báo COMMIT cho B nhưng ABORT cho C, giữ message hoặc phối hợp với node khác. Chữ ký giúp phát hiện giả mạo nguồn và lưu bằng chứng equivocation, nhưng một node Byzantine vẫn ký được hai message bằng khóa của chính nó. Trong mô hình PBFT mà sách nêu, giới hạn là `f <= floor((N-1)/3)` với các giả định của protocol; k"
+        },
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "worked-example-or-proof",
+          "paragraph": 21,
+          "exactOpening": "Ví dụ 2: N=4,f=1. Quorum {A,B,C} và {B,C,D} giao tại B,C, có ít nhất một honest. Nếu C Byzantine thì B honest phải ngăn việc phê chuẩn hai quyết định trái nhau theo protocol. Ba chữ ký chỉ là certificate hợp lệ khi message type, round, transaction/block identity và quyền validator đều đúng."
+        },
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "activity",
+          "paragraph": 30,
+          "exactOpening": "1. Toy hash đều 0..255,target0..3. Tính xác suất thành công một lần và số lần thử kỳ vọng. Vì sao không bảo đảm lần64 thành công?\n2. N=7,f=2,quorum5. Tính cận phần giao và số honest ít nhất trong phần giao. Nêu điều kiện protocol bổ sung để chống hai decision trái nhau.\n3. Thiết kế ca hai transaction cùng tiêu output, đều có chữ ký đúng. Ghi thứ tự"
+        },
+        {
+          "path": "lessons/AD54.md",
+          "lessonSha256": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+          "kind": "answer",
+          "paragraph": 35,
+          "exactOpening": "1. Xác suất 1/64, kỳ vọng64 lần thử theo giả định đều/độc lập. Số lần thử là biến ngẫu nhiên và lần64 vẫn có thể thất bại.\n2. Phần giao ít nhất5+5−7=3, có ít nhất3−2=1 honest. Cần honest voting/locking rule qua round và leader change, cùng certificate identity/membership/hash đúng; quorum count riêng chưa đủ.\n3. Ban đầu u chưa tiêu; txA dùng u, txB"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.5",
+      "title": "Data Management in a Blockchain",
+      "owners": [
+        "AD82"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          683,
+          701
+        ],
+        "ownBodySha256": "add9f57daaee1699f6e1a8f1e1e1a6823ce7ee8047e0f76bebfe932eec780754"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "History versus materialized current state/index and deterministic replay; authenticated state representation and search tradeoff, not merely copying every state to every block.",
+      "evidence": [
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "teaching",
+          "paragraph": 5,
+          "exactOpening": "Gọi S0 là trạng thái khởi đầu và T1,…,Tn là dãy giao dịch đã chọn. Trạng thái Sn có thể tái dựng bằng `fold(Apply,S0,[T1,…,Tn])`. Lưu mỗi giao dịch trong log giữ lịch sử; giữ thêm một bản state giúp tra cứu trực tiếp. Root của cây xác thực có thể cam kết state tại một block. Khi chỉ một key thay đổi, cấu trúc persistent tạo lá và đường cha mới, dùn"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "worked-example-or-proof",
+          "paragraph": 7,
+          "exactOpening": "Trong **ca 1**, S gồm số dư điểm nội bộ `balance(A)=12,balance(B)=3`, nonce tiếp theo của A là 0. Một yêu cầu `transfer(A,B,5,nonce=0)` có chữ ký đúng tạo A7,B8 và nextNonce(A)=1. Phát lại cùng yêu cầu bị từ chối vì nonce không còn đúng. Yêu cầu 9 điểm ở nonce1 bị từ chối vì A chỉ còn7. Nếu chỉ cộng lịch sử tiền vào của A, ta có thể nhầm A vẫn có12"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "activity",
+          "paragraph": 38,
+          "exactOpening": "1. Tự trace `Replay` với A8,B2,C0, nonce tất cả0: A→B5/n0; B→C6/n0; A→C4/n1; phát lại giao dịch đầu. Nêu status từng dòng và chứng minh tổng được giữ.\n2. Debug báo cáo Q1/Q2: mô tả một query trả sai khi không lọc status và một query bỏ sót dữ liệu khi read model ở height2. Thiết kế metadata đủ để người đọc nhận ra lỗi thứ hai.\n3. Tình huống mới: th"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "answer",
+          "paragraph": 43,
+          "exactOpening": "1. ACCEPT, ACCEPT, REJECT vì A3<4, REJECT vì nonce cũ. Cuối A3,B1,C6, nextNonce A1,B1,C0. Bước bị từ chối không tăng nonce theo mô hình. Tổng10 ở mọi bước; lập luận trừ/cộng bằng nhau và quy nạp là bằng chứng tổng quát cho quy tắc này.\n2. Chọn dòng mới nhất bất kể status nhận Q2→C sai. Read model height2 trả Q1→A đã cũ, dù từng dòng là dữ liệu thật"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.5.1",
+      "title": "Efficient Lookup in a Blockchain",
+      "owners": [
+        "AD82"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          702,
+          735
+        ],
+        "ownBodySha256": "695d5ab2178aa79d52b971e5df8655ce67738d5e70fe06f226da16af3a2e8795"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "UTXO lookup/index by output not whole transaction, verification fields, Merkle/light-client proof and authenticated-root/pruning/history boundaries, membership does not prove currently unspent.",
+      "evidence": [
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "teaching",
+          "paragraph": 6,
+          "exactOpening": "§26.5.1 cần lookup mỗi input khi kiểm block. Duyệt ngược toàn chain cho từng input quá tốn; một index UTXO tra theo `(txid,outputIndex)` giữ output còn tiêu được và thông tin cần xác thực nó. Một transaction có nhiều output có thể đã tiêu một phần: index theo toàn txid rồi gắn một cờ spent chung sẽ sai. Merkle tree cam kết tập giao dịch và cho ligh"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "worked-example-or-proof",
+          "paragraph": 7,
+          "exactOpening": "Trong **ca 1**, S gồm số dư điểm nội bộ `balance(A)=12,balance(B)=3`, nonce tiếp theo của A là 0. Một yêu cầu `transfer(A,B,5,nonce=0)` có chữ ký đúng tạo A7,B8 và nextNonce(A)=1. Phát lại cùng yêu cầu bị từ chối vì nonce không còn đúng. Yêu cầu 9 điểm ở nonce1 bị từ chối vì A chỉ còn7. Nếu chỉ cộng lịch sử tiền vào của A, ta có thể nhầm A vẫn có12"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "activity",
+          "paragraph": 38,
+          "exactOpening": "1. Tự trace `Replay` với A8,B2,C0, nonce tất cả0: A→B5/n0; B→C6/n0; A→C4/n1; phát lại giao dịch đầu. Nêu status từng dòng và chứng minh tổng được giữ.\n2. Debug báo cáo Q1/Q2: mô tả một query trả sai khi không lọc status và một query bỏ sót dữ liệu khi read model ở height2. Thiết kế metadata đủ để người đọc nhận ra lỗi thứ hai.\n3. Tình huống mới: th"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "answer",
+          "paragraph": 43,
+          "exactOpening": "1. ACCEPT, ACCEPT, REJECT vì A3<4, REJECT vì nonce cũ. Cuối A3,B1,C6, nextNonce A1,B1,C0. Bước bị từ chối không tăng nonce theo mô hình. Tổng10 ở mọi bước; lập luận trừ/cộng bằng nhau và quy nạp là bằng chứng tổng quát cho quy tắc này.\n2. Chọn dòng mới nhất bất kể status nhận Q2→C sai. Read model height2 trả Q1→A đã cũ, dù từng dòng là dữ liệu thật"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.5.2",
+      "title": "Maintaining Blockchain State",
+      "owners": [
+        "AD82"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          736,
+          765
+        ],
+        "ownBodySha256": "4adced5cb83dd115ad798f91a8257fb209b8634b935ff842ee6f659734d724c8"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Account state/balance/nonce, persistent path-copy reuse of immutable subtrees and roots, MPT abstraction separated from exact protocol encoding; database-backed state query choices distinguished from commitments.",
+      "evidence": [
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "teaching",
+          "paragraph": 5,
+          "exactOpening": "Gọi S0 là trạng thái khởi đầu và T1,…,Tn là dãy giao dịch đã chọn. Trạng thái Sn có thể tái dựng bằng `fold(Apply,S0,[T1,…,Tn])`. Lưu mỗi giao dịch trong log giữ lịch sử; giữ thêm một bản state giúp tra cứu trực tiếp. Root của cây xác thực có thể cam kết state tại một block. Khi chỉ một key thay đổi, cấu trúc persistent tạo lá và đường cha mới, dùn"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "worked-example-or-proof",
+          "paragraph": 10,
+          "exactOpening": "Trace ca 1 là `(12,3,0)→(7,8,1)→(7,8,1)→(7,8,1)`. Bất biến sau mỗi bước: số dư không âm, tổng15, nonce chỉ tăng một cho giao dịch được nhận của chính tài khoản đó. Bước nhận trừ/cộng cùng lượng và kiểm đủ số dư; bước từ chối giữ nguyên. Quy nạp theo độ dài prefix chứng minh bất biến cho cả dãy, không chỉ ba lần thử. Mỗi `Step` hữu hạn truy cập, `Re"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "activity",
+          "paragraph": 38,
+          "exactOpening": "1. Tự trace `Replay` với A8,B2,C0, nonce tất cả0: A→B5/n0; B→C6/n0; A→C4/n1; phát lại giao dịch đầu. Nêu status từng dòng và chứng minh tổng được giữ.\n2. Debug báo cáo Q1/Q2: mô tả một query trả sai khi không lọc status và một query bỏ sót dữ liệu khi read model ở height2. Thiết kế metadata đủ để người đọc nhận ra lỗi thứ hai.\n3. Tình huống mới: th"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "answer",
+          "paragraph": 43,
+          "exactOpening": "1. ACCEPT, ACCEPT, REJECT vì A3<4, REJECT vì nonce cũ. Cuối A3,B1,C6, nextNonce A1,B1,C0. Bước bị từ chối không tăng nonce theo mô hình. Tổng10 ở mọi bước; lập luận trừ/cộng bằng nhau và quy nạp là bằng chứng tổng quát cho quy tắc này.\n2. Chọn dòng mới nhất bất kể status nhận Q2→C sai. Read model height2 trả Q1→A đã cũ, dù từng dòng là dữ liệu thật"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.6",
+      "title": "Smart Contracts",
+      "owners": [
+        "AD82"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          766,
+          772
+        ],
+        "ownBodySha256": "15ab49d9d5e0a4fb2093f2f849282db16448fcb1636942c14ecaeb2ae265a0c2"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Executable stateful rules, language expressivity/resource/determinism and activation conditions, application correctness distinct from agreement.",
+      "evidence": [
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "teaching",
+          "paragraph": 12,
+          "exactOpening": "Smart contract có thể giữ quyền sở hữu, hạn mức, số dư và trạng thái quy trình; người dùng hoặc contract khác gọi entrypoint. Các hệ hỗ trợ ngôn ngữ khác nhau. Ngôn ngữ hạn chế có thể làm một số tính chất dễ kiểm hơn; ngôn ngữ Turing complete diễn đạt rộng hơn nhưng không có thuật toán quyết định việc dừng cho mọi chương trình. Một ngân sách thực t"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "worked-example-or-proof",
+          "paragraph": 13,
+          "exactOpening": "Ví dụ multisig2-of-3 cho escrow dùng buyer B, seller S và trọng tài A. B,S cùng chấp thuận thì chi trả theo thỏa thuận; khi tranh chấp, A cùng một bên có thể đạt hai chữ ký theo quyền đã thiết kế. Một mình A chưa đủ. Đây là chính sách quyền ký, không chứng minh hàng đã giao đúng; thời hạn và cách trả lại tiền còn cần luật cụ thể. Ngôn ngữ script hạ"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "activity",
+          "paragraph": 38,
+          "exactOpening": "1. Tự trace `Replay` với A8,B2,C0, nonce tất cả0: A→B5/n0; B→C6/n0; A→C4/n1; phát lại giao dịch đầu. Nêu status từng dòng và chứng minh tổng được giữ.\n2. Debug báo cáo Q1/Q2: mô tả một query trả sai khi không lọc status và một query bỏ sót dữ liệu khi read model ở height2. Thiết kế metadata đủ để người đọc nhận ra lỗi thứ hai.\n3. Tình huống mới: th"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "answer",
+          "paragraph": 43,
+          "exactOpening": "1. ACCEPT, ACCEPT, REJECT vì A3<4, REJECT vì nonce cũ. Cuối A3,B1,C6, nextNonce A1,B1,C0. Bước bị từ chối không tăng nonce theo mô hình. Tổng10 ở mọi bước; lập luận trừ/cộng bằng nhau và quy nạp là bằng chứng tổng quát cho quy tắc này.\n2. Chọn dòng mới nhất bất kể status nhận Q2→C sai. Read model height2 trả Q1→A đã cũ, dù từng dòng là dữ liệu thật"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.6.1",
+      "title": "Languages and Transactions",
+      "owners": [
+        "AD82"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          773,
+          840
+        ],
+        "ownBodySha256": "8066992a92eff8fe8ca7645c980f6029aecd1cdb6a1069a6e7482eec0f1c6c4c"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Limited script/escrow m-of-n versus Turing-complete language/halting, gas price/transaction/block budgets and abort caveats, toy budget proof, nonce/cross-account ordering and execution sandbox boundaries.",
+      "evidence": [
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "teaching",
+          "paragraph": 15,
+          "exactOpening": "Ba đại lượng trong §26.6.1 cần tách: gas price là cách biểu diễn mức trả cho đơn vị thực thi trong mô hình giá của sách; transaction gas limit chặn ngân sách một giao dịch; block gas limit chặn tài nguyên một block theo luật hệ đó. Ví dụ toy VM có load=1,add=2,store=3; một vòng ba lệnh tốn6, budget17 chỉ đủ hai vòng trọn và5 đơn vị. Bước không đủ g"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "worked-example-or-proof",
+          "paragraph": 13,
+          "exactOpening": "Ví dụ multisig2-of-3 cho escrow dùng buyer B, seller S và trọng tài A. B,S cùng chấp thuận thì chi trả theo thỏa thuận; khi tranh chấp, A cùng một bên có thể đạt hai chữ ký theo quyền đã thiết kế. Một mình A chưa đủ. Đây là chính sách quyền ký, không chứng minh hàng đã giao đúng; thời hạn và cách trả lại tiền còn cần luật cụ thể. Ngôn ngữ script hạ"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "activity",
+          "paragraph": 38,
+          "exactOpening": "1. Tự trace `Replay` với A8,B2,C0, nonce tất cả0: A→B5/n0; B→C6/n0; A→C4/n1; phát lại giao dịch đầu. Nêu status từng dòng và chứng minh tổng được giữ.\n2. Debug báo cáo Q1/Q2: mô tả một query trả sai khi không lọc status và một query bỏ sót dữ liệu khi read model ở height2. Thiết kế metadata đủ để người đọc nhận ra lỗi thứ hai.\n3. Tình huống mới: th"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "answer",
+          "paragraph": 43,
+          "exactOpening": "1. ACCEPT, ACCEPT, REJECT vì A3<4, REJECT vì nonce cũ. Cuối A3,B1,C6, nextNonce A1,B1,C0. Bước bị từ chối không tăng nonce theo mô hình. Tổng10 ở mọi bước; lập luận trừ/cộng bằng nhau và quy nạp là bằng chứng tổng quát cho quy tắc này.\n2. Chọn dòng mới nhất bất kể status nhận Q2→C sai. Read model height2 trả Q1→A đã cũ, dù từng dòng là dữ liệu thật"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.6.2",
+      "title": "External Input",
+      "owners": [
+        "AD82"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          841,
+          869
+        ],
+        "ownBodySha256": "eb039ed11794a28b53cf95acf39d7c8f329978bde9cc8b2ccbdf1e3b55965033"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Oracle trust/identity/freshness/version, corrupt-but-valid signature, periodic recertification and dispute branches; logged external events need deduplication/finality and cannot rollback arbitrary physical effects.",
+      "evidence": [
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "teaching",
+          "paragraph": 20,
+          "exactOpening": "Đặc tả tốt phải chỉ nguồn O được phép, chu kỳ/độ mới, lô nào, cách xử lý thiếu dữ liệu và cửa sổ khiếu nại. Nhiều nguồn chỉ hữu ích khi có giả định độc lập và quy tắc gộp rõ: ba nguồn cùng lấy từ một API không tạo ba bằng chứng độc lập. [Ethereum: oracles](https://ethereum.org/developers/docs/oracles/) giải thích vì sao dữ liệu ngoài chuỗi cần cơ c"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "worked-example-or-proof",
+          "paragraph": 19,
+          "exactOpening": "Một thiết bị phải giữ nhiệt độ dưới8°C. Contract cho nhận lô hàng khi oracle O ký `(lot=L7,maxTemp=6,measurementVersion=3)`. Contract kiểm chữ ký O, đúng lô và version chưa dùng, rồi chuyển `Pending→Accepted`. Nếu cảm biến thực tế đo11 nhưng O ký6, mọi nút vẫn có thể chạy giống nhau và chấp nhận thông điệp sai thực tế. Consensus bảo đảm thống nhất "
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "activity",
+          "paragraph": 38,
+          "exactOpening": "1. Tự trace `Replay` với A8,B2,C0, nonce tất cả0: A→B5/n0; B→C6/n0; A→C4/n1; phát lại giao dịch đầu. Nêu status từng dòng và chứng minh tổng được giữ.\n2. Debug báo cáo Q1/Q2: mô tả một query trả sai khi không lọc status và một query bỏ sót dữ liệu khi read model ở height2. Thiết kế metadata đủ để người đọc nhận ra lỗi thứ hai.\n3. Tình huống mới: th"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "answer",
+          "paragraph": 43,
+          "exactOpening": "1. ACCEPT, ACCEPT, REJECT vì A3<4, REJECT vì nonce cũ. Cuối A3,B1,C6, nextNonce A1,B1,C0. Bước bị từ chối không tăng nonce theo mô hình. Tổng10 ở mọi bước; lập luận trừ/cộng bằng nhau và quy nạp là bằng chứng tổng quát cho quy tắc này.\n2. Chọn dòng mới nhất bất kể status nhận Q2→C sai. Read model height2 trả Q1→A đã cũ, dù từng dòng là dữ liệu thật"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.6.3",
+      "title": "Autonomous Smart Contracts",
+      "owners": [
+        "AD82"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          870,
+          912
+        ],
+        "ownBodySha256": "389eac701d50a60e9cc71968b08bcc4260732f1a023fa2bae4d7ab132ef18e87"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Contract account/balance/storage, user/contract activation and DAO governance, token-on-existing-chain with ERC20/721 distinction, historical other proposals/ICO reference, predesigned upgrades/control versus immutable code and no unsolicited execution.",
+      "evidence": [
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "teaching",
+          "paragraph": 17,
+          "exactOpening": "Contract có account, balance và storage riêng có thể nhận lời gọi từ người dùng/contract khác. DAO trong nguồn là cách tổ chức quyền theo code và quyết định quản trị; không phải mọi contract có state đều là DAO. Token là tài sản do contract quản lý trên nền chain đã có, không nhất thiết tạo một chain riêng. [ERC-20](https://eips.ethereum.org/EIPS/e"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "worked-example-or-proof",
+          "paragraph": 16,
+          "exactOpening": "Một contract được gọi là autonomous có thể tự quyết định theo code và state đã lưu, nhưng không tự thức dậy vào thứ Hai khi chẳng có giao dịch kích hoạt. Thiết kế cần caller hoặc dịch vụ gửi giao dịch, điều kiện thời gian kiểm được, và chính sách khi dịch vụ đó ngừng hoạt động. Contract bất biến cũng không có nghĩa hệ thống không thể thiết kế quyền"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "activity",
+          "paragraph": 38,
+          "exactOpening": "1. Tự trace `Replay` với A8,B2,C0, nonce tất cả0: A→B5/n0; B→C6/n0; A→C4/n1; phát lại giao dịch đầu. Nêu status từng dòng và chứng minh tổng được giữ.\n2. Debug báo cáo Q1/Q2: mô tả một query trả sai khi không lọc status và một query bỏ sót dữ liệu khi read model ở height2. Thiết kế metadata đủ để người đọc nhận ra lỗi thứ hai.\n3. Tình huống mới: th"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "answer",
+          "paragraph": 43,
+          "exactOpening": "1. ACCEPT, ACCEPT, REJECT vì A3<4, REJECT vì nonce cũ. Cuối A3,B1,C6, nextNonce A1,B1,C0. Bước bị từ chối không tăng nonce theo mô hình. Tổng10 ở mọi bước; lập luận trừ/cộng bằng nhau và quy nạp là bằng chứng tổng quát cho quy tắc này.\n2. Chọn dòng mới nhất bất kể status nhận Q2→C sai. Read model height2 trả Q1→A đã cũ, dù từng dòng là dữ liệu thật"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.6.4",
+      "title": "Cross-Chain Transactions",
+      "owners": [
+        "AD82"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          913,
+          945
+        ],
+        "ownBodySha256": "772497c553f350be5bd25a2e51992965e6b044d56c56c71edd711090bcb95097"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Independent-chain atomicity versus local commits, trusted intermediary/relay versus hash-time-lock and proof/header validation, finality/orphan risk and timing assumptions; no unsupported universal atomic-swap guarantee.",
+      "evidence": [
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "teaching",
+          "paragraph": 22,
+          "exactOpening": "Cross-chain thêm một ranh giới: ghi nhận “đã khóa trên chain X” và “đã phát quyền trên chain Y” không phải một transaction SQL chung. Nếu Y chỉ tin lời một relay, relay là điểm tin cậy. Hash/time-lock có thể ràng buộc các hành động với cùng secret, kèm cửa sổ timeout phù hợp; vẫn cần giả định về độ trễ, khả năng gửi giao dịch, finality và cách xác "
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "worked-example-or-proof",
+          "paragraph": 22,
+          "exactOpening": "Cross-chain thêm một ranh giới: ghi nhận “đã khóa trên chain X” và “đã phát quyền trên chain Y” không phải một transaction SQL chung. Nếu Y chỉ tin lời một relay, relay là điểm tin cậy. Hash/time-lock có thể ràng buộc các hành động với cùng secret, kèm cửa sổ timeout phù hợp; vẫn cần giả định về độ trễ, khả năng gửi giao dịch, finality và cách xác "
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "activity",
+          "paragraph": 38,
+          "exactOpening": "1. Tự trace `Replay` với A8,B2,C0, nonce tất cả0: A→B5/n0; B→C6/n0; A→C4/n1; phát lại giao dịch đầu. Nêu status từng dòng và chứng minh tổng được giữ.\n2. Debug báo cáo Q1/Q2: mô tả một query trả sai khi không lọc status và một query bỏ sót dữ liệu khi read model ở height2. Thiết kế metadata đủ để người đọc nhận ra lỗi thứ hai.\n3. Tình huống mới: th"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "answer",
+          "paragraph": 43,
+          "exactOpening": "1. ACCEPT, ACCEPT, REJECT vì A3<4, REJECT vì nonce cũ. Cuối A3,B1,C6, nextNonce A1,B1,C0. Bước bị từ chối không tăng nonce theo mô hình. Tổng10 ở mọi bước; lập luận trừ/cộng bằng nhau và quy nạp là bằng chứng tổng quát cho quy tắc này.\n2. Chọn dòng mới nhất bất kể status nhận Q2→C sai. Read model height2 trả Q1→A đã cũ, dù từng dòng là dữ liệu thật"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.7",
+      "title": "Performance Enhancement",
+      "owners": [
+        "AD82"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          946,
+          983
+        ],
+        "ownBodySha256": "79bd4f2a7c345a3ef2c47c11feed6720e901ea935be4642320ba033198e6bff1"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Consensus/state-access/execution components; distinct throughput/confirmation/query latency and serial cost example, source historical benchmark rates not current measurements.",
+      "evidence": [
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "teaching",
+          "paragraph": 29,
+          "exactOpening": "Sách tách consensus management, state access và thực thi contract. Trong mô hình chi phí tuần tự, một yêu cầu cần8 đơn vị đồng thuận,3 đơn vị truy cập và1 đơn vị thực thi: tổng12. Index giảm truy cập còn1 cho tổng10, không thành4. Đây là phép tính mô hình, không phải số đo. Pipeline và song song có thể đổi nút thắt; throughput, latency xác nhận và "
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "worked-example-or-proof",
+          "paragraph": 29,
+          "exactOpening": "Sách tách consensus management, state access và thực thi contract. Trong mô hình chi phí tuần tự, một yêu cầu cần8 đơn vị đồng thuận,3 đơn vị truy cập và1 đơn vị thực thi: tổng12. Index giảm truy cập còn1 cho tổng10, không thành4. Đây là phép tính mô hình, không phải số đo. Pipeline và song song có thể đổi nút thắt; throughput, latency xác nhận và "
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "activity",
+          "paragraph": 38,
+          "exactOpening": "1. Tự trace `Replay` với A8,B2,C0, nonce tất cả0: A→B5/n0; B→C6/n0; A→C4/n1; phát lại giao dịch đầu. Nêu status từng dòng và chứng minh tổng được giữ.\n2. Debug báo cáo Q1/Q2: mô tả một query trả sai khi không lọc status và một query bỏ sót dữ liệu khi read model ở height2. Thiết kế metadata đủ để người đọc nhận ra lỗi thứ hai.\n3. Tình huống mới: th"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "answer",
+          "paragraph": 43,
+          "exactOpening": "1. ACCEPT, ACCEPT, REJECT vì A3<4, REJECT vì nonce cũ. Cuối A3,B1,C6, nextNonce A1,B1,C0. Bước bị từ chối không tăng nonce theo mô hình. Tổng10 ở mọi bước; lập luận trừ/cộng bằng nhau và quy nạp là bằng chứng tổng quát cho quy tắc này.\n2. Chọn dòng mới nhất bất kể status nhận Q2→C sai. Read model height2 trả Q1→A đã cũ, dù từng dòng là dữ liệu thật"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.7.1",
+      "title": "Enhancing Consensus Performance",
+      "owners": [
+        "AD82"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          984,
+          1010
+        ],
+        "ownBodySha256": "847827506789840dc30b9ab355e08c83246c3035607c82e805af150ad348625c"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Shards/cross-shard coordination and smaller-validation-group attack risks; offchain batching/data availability/dispute/trust and periodicity versus settlement/finality tradeoffs.",
+      "evidence": [
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "teaching",
+          "paragraph": 30,
+          "exactOpening": "Sharding chia dữ liệu và công việc nhưng giao dịch qua shard cần phối hợp, và chia nhóm xác thực có thể thay đổi khả năng chống tấn công. Off-chain gom nhiều sự kiện trước khi ghi cam kết lên chain giảm số cập nhật chain; cần nói rõ ai giữ dữ liệu, ai có thể tranh chấp, bằng chứng nào được công bố và người dùng làm gì khi bên kia không hợp tác. Chỉ"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "worked-example-or-proof",
+          "paragraph": 32,
+          "exactOpening": "Ví dụ workload2PC chỉ chạm năm data partitions: thêm50 partition không tự làm transaction ấy cần YES của cả55 bên. Trong một nhóm BFT cố định tăng từ4 lên7 validators, certificate/quorum và lượng trao đổi thay đổi theo protocol. So sánh phải giữ rõ “data participant” với “replica/validator”; không xem node ở hai kiến trúc như cùng một đơn vị scaleu"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "activity",
+          "paragraph": 38,
+          "exactOpening": "1. Tự trace `Replay` với A8,B2,C0, nonce tất cả0: A→B5/n0; B→C6/n0; A→C4/n1; phát lại giao dịch đầu. Nêu status từng dòng và chứng minh tổng được giữ.\n2. Debug báo cáo Q1/Q2: mô tả một query trả sai khi không lọc status và một query bỏ sót dữ liệu khi read model ở height2. Thiết kế metadata đủ để người đọc nhận ra lỗi thứ hai.\n3. Tình huống mới: th"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "answer",
+          "paragraph": 43,
+          "exactOpening": "1. ACCEPT, ACCEPT, REJECT vì A3<4, REJECT vì nonce cũ. Cuối A3,B1,C6, nextNonce A1,B1,C0. Bước bị từ chối không tăng nonce theo mô hình. Tổng10 ở mọi bước; lập luận trừ/cộng bằng nhau và quy nạp là bằng chứng tổng quát cho quy tắc này.\n2. Chọn dòng mới nhất bất kể status nhận Q2→C sai. Read model height2 trả Q1→A đã cũ, dù từng dòng là dữ liệu thật"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.7.2",
+      "title": "Enhancing Query Performance",
+      "owners": [
+        "AD82"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          1011,
+          1030
+        ],
+        "ownBodySha256": "8b420a2061cc8324ea723ec1027c11d5bed056b48017742e75c9b53108bae698"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Query optimizer visibility/trie access-path limits, external SQL/read-model indexing versus authenticated/versioned completeness, accepted latest-state query and stale-cache counterexample.",
+      "evidence": [
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "teaching",
+          "paragraph": 31,
+          "exactOpening": "Tách state-access engine khỏi contract VM có thể khiến optimizer không nhìn thấy toàn query; cấu trúc trie cũng không tự hỗ trợ mọi access path/join algorithm của hệ quan hệ. Database/read model bên ngoài cho index, join và aggregate thuận tiện hơn, nhưng cần đối chiếu version và commitment với ledger. Nhanh hơn ở read model không phải tự có bằng c"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "worked-example-or-proof",
+          "paragraph": 27,
+          "exactOpening": "Một index `(asset,height)` giúp tìm lịch sử một thiết bị. Read model `current_owner(asset PRIMARY KEY,owner,source_height,source_block_hash)` giúp thống kê theo owner. Nó vẫn có thể chậm một block hoặc thuộc nhánh vừa bị thay. Mỗi kết quả cần mốc phiên bản. Proof membership của Q1 chứng minh mục trả về thuộc state cam kết; nó không chứng minh truy "
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "activity",
+          "paragraph": 38,
+          "exactOpening": "1. Tự trace `Replay` với A8,B2,C0, nonce tất cả0: A→B5/n0; B→C6/n0; A→C4/n1; phát lại giao dịch đầu. Nêu status từng dòng và chứng minh tổng được giữ.\n2. Debug báo cáo Q1/Q2: mô tả một query trả sai khi không lọc status và một query bỏ sót dữ liệu khi read model ở height2. Thiết kế metadata đủ để người đọc nhận ra lỗi thứ hai.\n3. Tình huống mới: th"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "answer",
+          "paragraph": 43,
+          "exactOpening": "1. ACCEPT, ACCEPT, REJECT vì A3<4, REJECT vì nonce cũ. Cuối A3,B1,C6, nextNonce A1,B1,C0. Bước bị từ chối không tăng nonce theo mô hình. Tổng10 ở mọi bước; lập luận trừ/cộng bằng nhau và quy nạp là bằng chứng tổng quát cho quy tắc này.\n2. Chọn dòng mới nhất bất kể status nhận Q2→C sai. Read model height2 trả Q1→A đã cũ, dù từng dòng là dữ liệu thật"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.7.3",
+      "title": "Fault-Tolerance and Scalability",
+      "owners": [
+        "AD82"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          1031,
+          1052
+        ],
+        "ownBodySha256": "4baf14cbe98023bc2391e06bfae3f22e86b7f9c5a4e4b17e2ef7e238a37388fb"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Measure latency/throughput/progress under fault/attack, fixed data-participant scope versus replica/validator quorum growth, workload-preserving scaleup rather than nodes-always-faster.",
+      "evidence": [
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "teaching",
+          "paragraph": 32,
+          "exactOpening": "Ví dụ workload2PC chỉ chạm năm data partitions: thêm50 partition không tự làm transaction ấy cần YES của cả55 bên. Trong một nhóm BFT cố định tăng từ4 lên7 validators, certificate/quorum và lượng trao đổi thay đổi theo protocol. So sánh phải giữ rõ “data participant” với “replica/validator”; không xem node ở hai kiến trúc như cùng một đơn vị scaleu"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "worked-example-or-proof",
+          "paragraph": 30,
+          "exactOpening": "Sharding chia dữ liệu và công việc nhưng giao dịch qua shard cần phối hợp, và chia nhóm xác thực có thể thay đổi khả năng chống tấn công. Off-chain gom nhiều sự kiện trước khi ghi cam kết lên chain giảm số cập nhật chain; cần nói rõ ai giữ dữ liệu, ai có thể tranh chấp, bằng chứng nào được công bố và người dùng làm gì khi bên kia không hợp tác. Chỉ"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "activity",
+          "paragraph": 38,
+          "exactOpening": "1. Tự trace `Replay` với A8,B2,C0, nonce tất cả0: A→B5/n0; B→C6/n0; A→C4/n1; phát lại giao dịch đầu. Nêu status từng dòng và chứng minh tổng được giữ.\n2. Debug báo cáo Q1/Q2: mô tả một query trả sai khi không lọc status và một query bỏ sót dữ liệu khi read model ở height2. Thiết kế metadata đủ để người đọc nhận ra lỗi thứ hai.\n3. Tình huống mới: th"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "answer",
+          "paragraph": 43,
+          "exactOpening": "1. ACCEPT, ACCEPT, REJECT vì A3<4, REJECT vì nonce cũ. Cuối A3,B1,C6, nextNonce A1,B1,C0. Bước bị từ chối không tăng nonce theo mô hình. Tổng10 ở mọi bước; lập luận trừ/cộng bằng nhau và quy nạp là bằng chứng tổng quát cho quy tắc này.\n2. Chọn dòng mới nhất bất kể status nhận Q2→C sai. Read model height2 trả Q1→A đã cũ, dù từng dòng là dữ liệu thật"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "26.8",
+      "title": "Emerging Applications",
+      "owners": [
+        "AD82"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-26.txt",
+        "sha256": "1991d82fa23888824f85ea8fc0c1538cbc7553e5ea20ace15feb0f067705eb66",
+        "ownBodyLines": [
+          1053,
+          1169
+        ],
+        "ownBodySha256": "aa159bddaa176f7e3132ff3eee644e2749fc49ccfb3265db951f0662ad68bf86"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            181
+          ],
+          [
+            182,
+            344
+          ],
+          [
+            345,
+            503
+          ],
+          [
+            504,
+            683
+          ],
+          [
+            684,
+            840
+          ],
+          [
+            841,
+            1010
+          ],
+          [
+            1011,
+            1169
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1284
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "All12 source application classes with exact trust/input/privacy/query questions; historical deployment claims not presented as current fact; designs assessed against simpler signed/audited DB alternatives.",
+      "evidence": [
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "teaching",
+          "paragraph": 34,
+          "exactOpening": "§26.8 là các hướng ứng dụng ở thời điểm xuất bản, không phải xác nhận nhà cung cấp đang triển khai chúng năm 2026. Có thể đánh giá từng hướng bằng “ai được ghi, ai không tin ai, ai xác thực dữ kiện ngoài chuỗi?”:"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "worked-example-or-proof",
+          "paragraph": 35,
+          "exactOpening": "| Nhóm ứng dụng trong nguồn | Dữ kiện cần giữ và câu hỏi thiết kế |\n|---|---|\n| Bằng cấp, bảng điểm | Chữ ký trường chứng minh đơn vị cấp; dữ liệu cá nhân nên được kiểm soát ngoài chuỗi, có chính sách thu hồi/đính chính. |\n| Kế toán và kiểm toán | Bút toán có chữ ký, audit liên tục; phải kiểm cả sự kiện bị bỏ không ghi, không chỉ chống sửa sự kiện "
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "activity",
+          "paragraph": 38,
+          "exactOpening": "1. Tự trace `Replay` với A8,B2,C0, nonce tất cả0: A→B5/n0; B→C6/n0; A→C4/n1; phát lại giao dịch đầu. Nêu status từng dòng và chứng minh tổng được giữ.\n2. Debug báo cáo Q1/Q2: mô tả một query trả sai khi không lọc status và một query bỏ sót dữ liệu khi read model ở height2. Thiết kế metadata đủ để người đọc nhận ra lỗi thứ hai.\n3. Tình huống mới: th"
+        },
+        {
+          "path": "lessons/AD82.md",
+          "lessonSha256": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167",
+          "kind": "answer",
+          "paragraph": 43,
+          "exactOpening": "1. ACCEPT, ACCEPT, REJECT vì A3<4, REJECT vì nonce cũ. Cuối A3,B1,C6, nextNonce A1,B1,C0. Bước bị từ chối không tăng nonce theo mô hình. Tổng10 ở mọi bước; lập luận trừ/cộng bằng nhau và quy nạp là bằng chứng tổng quát cho quy tắc này.\n2. Chọn dòng mới nhất bất kể status nhận Q2→C sai. Read model height2 trả Q1→A đã cũ, dù từng dòng là dữ liệu thật"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "A.1",
+      "title": "Full Schema",
+      "owners": [
+        "AD59"
+      ],
+      "source": {
+        "path": "tmp/database-source/appendix-a.txt",
+        "sha256": "829dd128bd466fbc0b8e8bd5a6d76d8e31e2f274b3b2a8e36f033470f94c8b9b",
+        "ownBodyLines": [
+          12,
+          135
+        ],
+        "ownBodySha256": "d335816b876a1d6e2413572409c3712661ba33802d539126cdb357fccde4c874"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            140
+          ],
+          [
+            136,
+            357
+          ],
+          [
+            358,
+            800
+          ],
+          [
+            801,
+            1196
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1317,
+          1320,
+          1326,
+          1327
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "All11 relation grains/keys/attributes/FK structure, weak section identity and no single-key TimeSlot FK, adaptation explicit12 physical tables not source dump.",
+      "evidence": [
+        {
+          "path": "lessons/AD59.md",
+          "lessonSha256": "8b02003b53f7312db50270b6a699ea35759113c90ed40a9da515ce499e8b8d3e",
+          "kind": "teaching",
+          "paragraph": 5,
+          "exactOpening": "Appendix A.1 có 11 quan hệ logic. Classroom có grain một phòng theo(building,room_number), không phải một building. Department có key dept_name. Course là môn học, còn Section là một lần mở môn với key(course_id,sec_id,semester,year). Instructor và Student là hai entity có ID; Teaches và Takes nối người với một Section đầy đủ. Advisor gắn một sinh "
+        },
+        {
+          "path": "lessons/AD59.md",
+          "lessonSha256": "8b02003b53f7312db50270b6a699ea35759113c90ed40a9da515ce499e8b8d3e",
+          "kind": "worked-example-or-proof",
+          "paragraph": 7,
+          "exactOpening": "Time_slot_id trong mô hình nguồn không là key đơn của relation Time_slot, vì một slot có nhiều ngày/giờ. Do đó không tạo một FK SQL tới riêng cột ấy khi nó không UNIQUE. Bản PE dưới thêm SlotGroup(time_slot_id) để làm chủ thể được tham chiếu, còn TimeSlot giữ các meeting. Đây là adaptation có chủ đích:12 bảng vật lý cho 11 miền quan hệ của nguồn, k"
+        },
+        {
+          "path": "lessons/AD59.md",
+          "lessonSha256": "8b02003b53f7312db50270b6a699ea35759113c90ed40a9da515ce499e8b8d3e",
+          "kind": "activity",
+          "paragraph": 42,
+          "exactOpening": "1. Viết query phát hiện over-capacity trên fixture, ghi key Section và expected. Vì sao GROUP BY sec_id riêng là sai?\n2. Viết query/cách suy luận phát hiện xung đột lịch S1 trong fixture theo ngày/học kỳ/năm và khoảng nửa mở. Thêm một lớp10:00–11:00 so với lớp09:00–10:00 để kiểm biên.\n3. Tự làm: thêm course NET tiên quyết OS, giữ OS tiên quyết DB; "
+        },
+        {
+          "path": "lessons/AD59.md",
+          "lessonSha256": "8b02003b53f7312db50270b6a699ea35759113c90ed40a9da515ce499e8b8d3e",
+          "kind": "answer",
+          "paragraph": 47,
+          "exactOpening": "1. Nhóm theo course_id,sec_id,semester,year, COUNT đăng ký; nối Section/Classroom theo đủ key và lọc count>capacity. Expected DB,'1',Fall,2026,3,2. GROUP BY sec_id trộn DB,OS,AI và các kỳ; một lớp số 1 không là identity toàn cục.\n2. Ghép hai Takes của cùng sinh viên, cùng kỳ/năm, hai Section khác nhau; nối TimeSlot cùng day, dùng start1<end2 và sta"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "A.2",
+      "title": "DDL",
+      "owners": [
+        "AD59"
+      ],
+      "source": {
+        "path": "tmp/database-source/appendix-a.txt",
+        "sha256": "829dd128bd466fbc0b8e8bd5a6d76d8e31e2f274b3b2a8e36f033470f94c8b9b",
+        "ownBodyLines": [
+          136,
+          357
+        ],
+        "ownBodySha256": "fa5e0240a511283de819538faf86ce6418705cf971d20a63ddb645a729ee7c8e"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            140
+          ],
+          [
+            136,
+            357
+          ],
+          [
+            358,
+            800
+          ],
+          [
+            801,
+            1196
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1317,
+          1320,
+          1326,
+          1327
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Full PE DDL mirrors all source relation domains/delete policies, precise type/length/NULL differences and extra checks disclosed; two time representations, component ranges and source wrong-variable erratum, historical portability separated from current runner.",
+      "evidence": [
+        {
+          "path": "lessons/AD59.md",
+          "lessonSha256": "8b02003b53f7312db50270b6a699ea35759113c90ed40a9da515ce499e8b8d3e",
+          "kind": "teaching",
+          "paragraph": 8,
+          "exactOpening": "Delete actions trong A.2 diễn đạt sự phụ thuộc tồn tại, không chỉ giúp DDL chạy. Xóa Course làm Section, Teaches/Takes của Section và các cạnh Prereq đi ra bị cascade; nhưng một Course còn là prereq_id của môn khác bị FK không có delete action chặn. Xóa Student làm Takes và Advisor của sinh viên đó bị xóa. Xóa Instructor làm Teaches bị xóa nhưng Ad"
+        },
+        {
+          "path": "lessons/AD59.md",
+          "lessonSha256": "8b02003b53f7312db50270b6a699ea35759113c90ed40a9da515ce499e8b8d3e",
+          "kind": "worked-example-or-proof",
+          "paragraph": 12,
+          "exactOpening": "Ví dụ `09:30` đổi thành `(9,30)` hoặc570 phút; `10:00` thành `(10,0)` hoặc600. So theo số phút hoặc tuple số cho cùng thứ tự; chuỗi không chuẩn hóa `9:30` với `10:00` có thể cho thứ tự từ điển sai. Meeting qua nửa đêm cần thêm quy tắc ngày/offset, chưa được fixture này mô hình hóa."
+        },
+        {
+          "path": "lessons/AD59.md",
+          "lessonSha256": "8b02003b53f7312db50270b6a699ea35759113c90ed40a9da515ce499e8b8d3e",
+          "kind": "activity",
+          "paragraph": 42,
+          "exactOpening": "1. Viết query phát hiện over-capacity trên fixture, ghi key Section và expected. Vì sao GROUP BY sec_id riêng là sai?\n2. Viết query/cách suy luận phát hiện xung đột lịch S1 trong fixture theo ngày/học kỳ/năm và khoảng nửa mở. Thêm một lớp10:00–11:00 so với lớp09:00–10:00 để kiểm biên.\n3. Tự làm: thêm course NET tiên quyết OS, giữ OS tiên quyết DB; "
+        },
+        {
+          "path": "lessons/AD59.md",
+          "lessonSha256": "8b02003b53f7312db50270b6a699ea35759113c90ed40a9da515ce499e8b8d3e",
+          "kind": "answer",
+          "paragraph": 47,
+          "exactOpening": "1. Nhóm theo course_id,sec_id,semester,year, COUNT đăng ký; nối Section/Classroom theo đủ key và lọc count>capacity. Expected DB,'1',Fall,2026,3,2. GROUP BY sec_id trộn DB,OS,AI và các kỳ; một lớp số 1 không là identity toàn cục.\n2. Ghép hai Takes của cùng sinh viên, cùng kỳ/năm, hai Section khác nhau; nối TimeSlot cùng day, dùng start1<end2 và sta"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "A.3",
+      "title": "Sample Data",
+      "owners": [
+        "AD59"
+      ],
+      "source": {
+        "path": "tmp/database-source/appendix-a.txt",
+        "sha256": "829dd128bd466fbc0b8e8bd5a6d76d8e31e2f274b3b2a8e36f033470f94c8b9b",
+        "ownBodyLines": [
+          358,
+          1196
+        ],
+        "ownBodySha256": "281b825688b28380908dc3bca82f46603acab28e14193fc108974fc767990d72"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "baselineCredit": false,
+        "readBatches": [
+          [
+            1,
+            140
+          ],
+          [
+            136,
+            357
+          ],
+          [
+            358,
+            800
+          ],
+          [
+            801,
+            1196
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1317,
+          1320,
+          1326,
+          1327
+        ],
+        "scope": "Direct full own-body/current lesson comparison, source diagrams inspected; AppendixA.3 ends before Index at line1196."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "All printed source tables read and structurally parsed, cardinalities/zero-child/missing-advisor/repeated-course/NULL grade/time alternatives understood; original synthetic full-domain fixture and independent expected outputs provided, no raw source dataset redistributed.",
+      "evidence": [
+        {
+          "path": "lessons/AD59.md",
+          "lessonSha256": "8b02003b53f7312db50270b6a699ea35759113c90ed40a9da515ce499e8b8d3e",
+          "kind": "teaching",
+          "paragraph": 14,
+          "exactOpening": "A.3 cho 5 Classroom,7 Department,13 Course,12 Instructor,15 Section,15 Teaches,13 Student,22 Takes,9 Advisor,20 meeting Time_slot và7 Prereq. Đây là số liệu của bộ mẫu được in, không là định nghĩa cardinality của schema. Figure A.13 biểu diễn lại20 meeting dưới dạng giờ/phút, không phải20 meeting mới."
+        },
+        {
+          "path": "lessons/AD59.md",
+          "lessonSha256": "8b02003b53f7312db50270b6a699ea35759113c90ed40a9da515ce499e8b8d3e",
+          "kind": "worked-example-or-proof",
+          "paragraph": 15,
+          "exactOpening": "Những ca cần giữ khi tự tạo fixture: có Student chưa có Takes; có Student không có Advisor; một sinh viên có thể học lại cùng Course ở kỳ khác; một Course có nhiều Section và một slot có nhiều ngày. Dữ liệu in còn có grade NULL của một lần đăng ký, nên “đếm lần đăng ký” và “đếm điểm đã có” cho kết quả khác nhau. Tot_cred có thể gồm lịch sử không nằ"
+        },
+        {
+          "path": "lessons/AD59.md",
+          "lessonSha256": "8b02003b53f7312db50270b6a699ea35759113c90ed40a9da515ce499e8b8d3e",
+          "kind": "activity",
+          "paragraph": 42,
+          "exactOpening": "1. Viết query phát hiện over-capacity trên fixture, ghi key Section và expected. Vì sao GROUP BY sec_id riêng là sai?\n2. Viết query/cách suy luận phát hiện xung đột lịch S1 trong fixture theo ngày/học kỳ/năm và khoảng nửa mở. Thêm một lớp10:00–11:00 so với lớp09:00–10:00 để kiểm biên.\n3. Tự làm: thêm course NET tiên quyết OS, giữ OS tiên quyết DB; "
+        },
+        {
+          "path": "lessons/AD59.md",
+          "lessonSha256": "8b02003b53f7312db50270b6a699ea35759113c90ed40a9da515ce499e8b8d3e",
+          "kind": "answer",
+          "paragraph": 47,
+          "exactOpening": "1. Nhóm theo course_id,sec_id,semester,year, COUNT đăng ký; nối Section/Classroom theo đủ key và lọc count>capacity. Expected DB,'1',Fall,2026,3,2. GROUP BY sec_id trộn DB,OS,AI và các kỳ; một lớp số 1 không là identity toàn cục.\n2. Ghép hai Takes của cùng sinh viên, cùng kỳ/năm, hai Section khác nhau; nối TimeSlot cùng day, dùng start1<end2 và sta"
+        }
+      ],
+      "gaps": []
+    }
+  ],
+  "checks": [
+    "qa/blockchain-full-checks.json:16named checks,648UTXO fixtures,14858BFT quorum pairs,actualSHA256/Ed25519 and selectedSQLite queries;nochain/VM execution.",
+    "qa/university-full-checks.json:17named checks,allsourceA.3tablesparsed,20time-rowequivalence,selectedactualSQLite DDL/FK/query cases;noMySQLtwo-session certification."
+  ],
+  "sourceInterpretation": [
+    "Hash links do not independently choose common history; trust/majority claims qualified by fault model.",
+    "Soft/hard fork defined by validation-rule compatibility, not merely historical block readability.",
+    "Digital signatures are not universally private-key encryption; identity/private-key compromise and signed-field coverage explicit.",
+    "Source generic PoS/work, Ethereum miner rates, portability and self-destruct descriptions are historical; no current protocol parameter claims borrowed from2019.",
+    "Source time component CHECK contains start_hr/end_hr error, repaired explicitly.",
+    "AppendixA.3 inventory scope corrected to exclude trailing book Index; source raw file unchanged."
+  ]
+}

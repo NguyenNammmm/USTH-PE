@@ -1,0 +1,1158 @@
+{
+  "date": "2026-11-05",
+  "scope": "Fourteen own-body units19.7–19.10; twelveAD44 and twoAD45.",
+  "counts": {
+    "assigned": 14,
+    "complete": 14
+  },
+  "units": [
+    {
+      "section": "19.7",
+      "title": "High Availability Using Remote Backup Systems",
+      "owners": [
+        "AD45"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-19.txt",
+        "sha256": "7dd42a39080aa021d190395e4af2e3d5feef56e834c5106cf74c3c1c41090134",
+        "ownBodyLines": [
+          983,
+          1123
+        ],
+        "ownBodySha256": "04667ee01ca8691ddb121614296aa0f799485078572156e24b19bcdcaa17c036"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            983,
+            1124
+          ],
+          [
+            1125,
+            1300
+          ],
+          [
+            1301,
+            1436
+          ],
+          [
+            1437,
+            1557
+          ],
+          [
+            1558,
+            1721
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          961
+        ],
+        "baselineCredit": false,
+        "scope": "Actual full source bodies and full current AD44/45; exact witnesses locate manually reviewed content."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Remote separation/failure detection, safe transfer and reconnect/proxy/old-primarycatchup, hot-spare redo/undo, all3durability modes with degraded failure caveat, read-only replicas, NAS/SAN WAL ordering and application-tier availability.",
+      "evidence": [
+        {
+          "path": "lessons/AD45.md",
+          "lessonSha256": "f12a83d12886295e0c03e5ee79ea7ff80a9e90f5a1a5b51bae69a4f6ffeb5e02",
+          "kind": "teaching",
+          "paragraph": 5,
+          "exactOpening": "Primary nhận transaction, remote backup nhận log theo thứ tự và có thể replay. Cần phân biệt bốn mốc: log được tạo; gửi qua mạng; nhận vào RAM bên xa; ghi bền bên xa. Một ACK mạng không mặc nhiên xác nhận fsync hoặc apply xong. Contract commit phải nói ACK nào được yêu cầu trước khi trả thành công cho client."
+        },
+        {
+          "path": "lessons/AD45.md",
+          "lessonSha256": "f12a83d12886295e0c03e5ee79ea7ff80a9e90f5a1a5b51bae69a4f6ffeb5e02",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 9,
+          "exactOpening": "Ví dụ 1: log primary bền tới120, remote chỉ bền100, client đã nhận ACK cho transaction tại120. Nếu ACK dựa primary, hỏng primary và mất storage làm remote không thể dựng lại101..120. Nếu primary chỉ tạm mất kết nối nhưng storage còn và có thể phục hồi, kết quả RPO còn phụ thuộc quy trình failover; không đánh đồng hai failure."
+        },
+        {
+          "path": "lessons/AD45.md",
+          "lessonSha256": "f12a83d12886295e0c03e5ee79ea7ff80a9e90f5a1a5b51bae69a4f6ffeb5e02",
+          "kind": "activity",
+          "paragraph": 33,
+          "exactOpening": "1. Primary durableLSN200, remote nhận tới200 vàoRAM nhưng bền150. ACK dựa vào “đã nhận remote”. Sau khi cả hai mất RAM và primary storage hỏng, phần nào còn được chứng minh phục hồi? Tìm lỗi contract.\n2. Thiết kế failover có epoch để node cũ không ghi sau partition. Nêu nơi kiểm token, cách xử lý request đang bay và cách node cũ tái gia nhập.\n3. Mộ"
+        },
+        {
+          "path": "lessons/AD45.md",
+          "lessonSha256": "f12a83d12886295e0c03e5ee79ea7ff80a9e90f5a1a5b51bae69a4f6ffeb5e02",
+          "kind": "answer",
+          "paragraph": 38,
+          "exactOpening": "1. Chỉ prefix bền tới150 ở remote còn được chứng minh từ dữ kiện.151..200 chỉ ởRAM remote đã mất; primary storage cũng mất. ACK đã nhầm mốc nhận với bền nếu sản phẩm hứa chịu được failure này. Không kết luận còn đủ200 vì một log line “received200”.\n2. Tăng epoch theo một authority/giao thức an toàn, storage hoặc dịch vụ nhận write kiểm token hiện h"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "19.8",
+      "title": "Early Lock Release and Logical Undo Operations",
+      "owners": [
+        "AD44"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-19.txt",
+        "sha256": "7dd42a39080aa021d190395e4af2e3d5feef56e834c5106cf74c3c1c41090134",
+        "ownBodyLines": [
+          1124,
+          1137
+        ],
+        "ownBodySha256": "04773f94147b31d82394d661dd1b698c6a9cefee7b45ad61d38052cdac7f584a"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            983,
+            1124
+          ],
+          [
+            1125,
+            1300
+          ],
+          [
+            1301,
+            1436
+          ],
+          [
+            1437,
+            1557
+          ],
+          [
+            1558,
+            1721
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          967,
+          969,
+          972,
+          975
+        ],
+        "baselineCredit": false,
+        "scope": "Actual full source bodies and full current AD44/45; exact witnesses locate manually reviewed content."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Early lower-level release invalidates restoring old page images after another operation changes it; logical compensation preserves other committed effects.",
+      "evidence": [
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "teaching",
+          "paragraph": 35,
+          "exactOpening": "Một index có thể split page sau một thao tác insert; undo bằng cách “xóa slot7 trên pageP cũ” có thể đụng dữ liệu không còn thuộc thao tác ấy. Logical undo tìm đối tượng theo khóa/định danh và điều kiện phù hợp, rồi ghi lại các thay đổi vật lý cần redo. Nó cần khóa hoặc cơ chế đảm bảo không xóa hiệu ứng của một transaction khác đã hợp lệ hóa sau đó"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 42,
+          "exactOpening": "Trace: O1 trừ100 khỏi C=700, ghi physical700→600 rồi operation-end; sau khi lower-level lock được nhả theo protocol, T2 cộng50 và commit, C=650. Khi T1 abort, logical inverse của O1 cộng100 cho750, giữ đóng góp50 của T2. Khôi phục physical old value700 sẽ làm mất50 hợp lệ. Nếu T1 crash trước operation-end, chưa có quyền coi O1 là hoàn tất để nhả bả"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "activity",
+          "paragraph": 52,
+          "exactOpening": "1. DPT[P]=40, record P ở LSN30 và chưa fetch page. Có cần fetch page hoặc redo record30 không? Đổi record thành50, fetch thấy pageLSN60 rồi xét lại. Giả sử DPT/log/storage đều thỏa protocol; không tự thêm một pageLSN thấp mâu thuẫn với cận recLSN đã biết.\n2. Với trace của bài, giả sử CLR70 trỏ undoNextLSN=60 thay vì40. Lỗi nào xuất hiện? Có thể nhậ"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "answer",
+          "paragraph": 57,
+          "exactOpening": "1. Bỏ30 vì30<recLSN40, chưa cần fetch page để kiểm pageLSN. Ca50 qua bộ lọc recLSN nhưng bỏ sau khi fetch vì pageLSN60≥50. Các điều kiện là bằng chứng bỏ qua theo DPT/page assumptions, không tùy ý skip log. Nếu đề cho record30 là update P đã hoàn tất trước lần dirty hiện tại nhưng bản storage vẫn pageLSN0, cần báo dữ kiện/protocol không nhất quán t"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "19.8.1",
+      "title": "Logical Operations",
+      "owners": [
+        "AD44"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-19.txt",
+        "sha256": "7dd42a39080aa021d190395e4af2e3d5feef56e834c5106cf74c3c1c41090134",
+        "ownBodyLines": [
+          1138,
+          1172
+        ],
+        "ownBodySha256": "68b655088aa0f2536b5c361ce3739b8f7bcb1934598f77423b42a950084e185b"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            983,
+            1124
+          ],
+          [
+            1125,
+            1300
+          ],
+          [
+            1301,
+            1436
+          ],
+          [
+            1437,
+            1557
+          ],
+          [
+            1558,
+            1721
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          967,
+          969,
+          972,
+          975
+        ],
+        "baselineCredit": false,
+        "scope": "Actual full source bodies and full current AD44/45; exact witnesses locate manually reviewed content."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Operation-level conflicts/higher-key2PL versus short page locks, free-space/block structures and correct logical compensation conditions.",
+      "evidence": [
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "teaching",
+          "paragraph": 38,
+          "exactOpening": "Ví dụ lower-level latch page có thể nhả khi insert hoàn tất, còn higher-level protection trên logical key vẫn phải theo protocol hai pha để chặn read/insert/delete xung đột trên cùng key. Hai insert key khác nhau có thể sửa cùng page mà không xung đột ở mức operation; cùng key thì không được coi tương thích. Cách phân tầng này còn áp dụng cho cấu t"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 42,
+          "exactOpening": "Trace: O1 trừ100 khỏi C=700, ghi physical700→600 rồi operation-end; sau khi lower-level lock được nhả theo protocol, T2 cộng50 và commit, C=650. Khi T1 abort, logical inverse của O1 cộng100 cho750, giữ đóng góp50 của T2. Khôi phục physical old value700 sẽ làm mất50 hợp lệ. Nếu T1 crash trước operation-end, chưa có quyền coi O1 là hoàn tất để nhả bả"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "activity",
+          "paragraph": 52,
+          "exactOpening": "1. DPT[P]=40, record P ở LSN30 và chưa fetch page. Có cần fetch page hoặc redo record30 không? Đổi record thành50, fetch thấy pageLSN60 rồi xét lại. Giả sử DPT/log/storage đều thỏa protocol; không tự thêm một pageLSN thấp mâu thuẫn với cận recLSN đã biết.\n2. Với trace của bài, giả sử CLR70 trỏ undoNextLSN=60 thay vì40. Lỗi nào xuất hiện? Có thể nhậ"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "answer",
+          "paragraph": 57,
+          "exactOpening": "1. Bỏ30 vì30<recLSN40, chưa cần fetch page để kiểm pageLSN. Ca50 qua bộ lọc recLSN nhưng bỏ sau khi fetch vì pageLSN60≥50. Các điều kiện là bằng chứng bỏ qua theo DPT/page assumptions, không tùy ý skip log. Nếu đề cho record30 là update P đã hoàn tất trước lần dirty hiện tại nhưng bản storage vẫn pageLSN0, cần báo dữ kiện/protocol không nhất quán t"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "19.8.2",
+      "title": "Logical Undo Log Records",
+      "owners": [
+        "AD44"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-19.txt",
+        "sha256": "7dd42a39080aa021d190395e4af2e3d5feef56e834c5106cf74c3c1c41090134",
+        "ownBodyLines": [
+          1173,
+          1209
+        ],
+        "ownBodySha256": "a119b0ceb739a9347ad38438fd767087dcd29257db3d52dd925de1777f71684c"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            983,
+            1124
+          ],
+          [
+            1125,
+            1300
+          ],
+          [
+            1301,
+            1436
+          ],
+          [
+            1437,
+            1557
+          ],
+          [
+            1558,
+            1721
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          967,
+          969,
+          972,
+          975
+        ],
+        "baselineCredit": false,
+        "scope": "Actual full source bodies and full current AD44/45; exact witnesses locate manually reviewed content."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Operation uniqueID/begin, physical intermediate old/new, operation-end logical inverse; operation consistency and physical-only redo; nonidempotent logical operation distinction.",
+      "evidence": [
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "teaching",
+          "paragraph": 37,
+          "exactOpening": "Cần phân biệt sơ đồ logical undo ở §19.8 với CLR/undoNextLSN của ARIES vừa học. Trong sơ đồ §19.8, mỗi operation instance có ID riêng O. Trước khi sửa cấu trúc, ghi operation-begin; các update nội bộ có physical before/after records; khi operation hoàn tất, ghi operation-end kèm logical inverse đủ định danh đối tượng. Nếu chưa có operation-end, cấu"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 39,
+          "exactOpening": "Trong sơ đồ §19.8, **redo dùng physical records**. Sau crash, một số page của operation đã ghi ra, số khác chưa ghi; cây có thể chưa operation-consistent. Physical redo và undo phần operation chưa hoàn tất phải đưa cấu trúc về ranh giới nhất quán trước khi gọi logical inverse. Chạy lại logical insert trực tiếp trên cấu trúc đang sửa dở có thể thêm "
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "activity",
+          "paragraph": 52,
+          "exactOpening": "1. DPT[P]=40, record P ở LSN30 và chưa fetch page. Có cần fetch page hoặc redo record30 không? Đổi record thành50, fetch thấy pageLSN60 rồi xét lại. Giả sử DPT/log/storage đều thỏa protocol; không tự thêm một pageLSN thấp mâu thuẫn với cận recLSN đã biết.\n2. Với trace của bài, giả sử CLR70 trỏ undoNextLSN=60 thay vì40. Lỗi nào xuất hiện? Có thể nhậ"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "answer",
+          "paragraph": 57,
+          "exactOpening": "1. Bỏ30 vì30<recLSN40, chưa cần fetch page để kiểm pageLSN. Ca50 qua bộ lọc recLSN nhưng bỏ sau khi fetch vì pageLSN60≥50. Các điều kiện là bằng chứng bỏ qua theo DPT/page assumptions, không tùy ý skip log. Nếu đề cho record30 là update P đã hoàn tất trước lần dirty hiện tại nhưng bản storage vẫn pageLSN0, cần báo dữ kiện/protocol không nhất quán t"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "19.8.3",
+      "title": "Transaction Rollback with Logical Undo",
+      "owners": [
+        "AD44"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-19.txt",
+        "sha256": "7dd42a39080aa021d190395e4af2e3d5feef56e834c5106cf74c3c1c41090134",
+        "ownBodyLines": [
+          1210,
+          1376
+        ],
+        "ownBodySha256": "f67533f3c17b2cf24308d4a0032f8c141fa60a67316617fce697bb73b0a94fe1"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            983,
+            1124
+          ],
+          [
+            1125,
+            1300
+          ],
+          [
+            1301,
+            1436
+          ],
+          [
+            1437,
+            1557
+          ],
+          [
+            1558,
+            1721
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          967,
+          969,
+          972,
+          975
+        ],
+        "baselineCredit": false,
+        "scope": "Actual full source bodies and full current AD44/45; exact witnesses locate manually reviewed content."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Allnormal/incomplete/completed/operation-abort/start paths; per-transaction skip not othertransactions; partial inverse physical undo before retry, full logical inverse skip and termination.",
+      "evidence": [
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "teaching",
+          "paragraph": 40,
+          "exactOpening": "```text\nrollback scan ngược theo transaction:\n    gặp physical update chưa thuộc operation được skip:\n        undo vật lý theo giao thức, log hành động cần recovery\n    gặp operation-end(O, inverse):\n        chạy logical inverse(O), log physical updates của inverse\n        khi inverse hoàn tất: ghi operation-abort(O)\n        skip các records của tr"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 41,
+          "exactOpening": "Các update phát sinh trong logical inverse ở sơ đồ này vẫn có physical undo information, không được đổi tất cả thành redo-only CLR một cách máy móc. Nếu crash giữa logical inverse, recovery có thể cần undo phần inverse còn dở về trạng thái operation-consistent rồi thực hiện lại logical inverse. Nếu operation-abort đã ghi nhận inverse hoàn tất, đườn"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "activity",
+          "paragraph": 52,
+          "exactOpening": "1. DPT[P]=40, record P ở LSN30 và chưa fetch page. Có cần fetch page hoặc redo record30 không? Đổi record thành50, fetch thấy pageLSN60 rồi xét lại. Giả sử DPT/log/storage đều thỏa protocol; không tự thêm một pageLSN thấp mâu thuẫn với cận recLSN đã biết.\n2. Với trace của bài, giả sử CLR70 trỏ undoNextLSN=60 thay vì40. Lỗi nào xuất hiện? Có thể nhậ"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "answer",
+          "paragraph": 57,
+          "exactOpening": "1. Bỏ30 vì30<recLSN40, chưa cần fetch page để kiểm pageLSN. Ca50 qua bộ lọc recLSN nhưng bỏ sau khi fetch vì pageLSN60≥50. Các điều kiện là bằng chứng bỏ qua theo DPT/page assumptions, không tùy ý skip log. Nếu đề cho record30 là update P đã hoàn tất trước lần dirty hiện tại nhưng bản storage vẫn pageLSN0, cần báo dữ kiện/protocol không nhất quán t"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "19.8.4",
+      "title": "Concurrency Issues in Logical Undo",
+      "owners": [
+        "AD44"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-19.txt",
+        "sha256": "7dd42a39080aa021d190395e4af2e3d5feef56e834c5106cf74c3c1c41090134",
+        "ownBodyLines": [
+          1377,
+          1400
+        ],
+        "ownBodySha256": "0d562b71620cd90cf5a8358713ccc1dbf13e85303417cd028b1fb2f5b005cd1a"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            983,
+            1124
+          ],
+          [
+            1125,
+            1300
+          ],
+          [
+            1301,
+            1436
+          ],
+          [
+            1437,
+            1557
+          ],
+          [
+            1558,
+            1721
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          967,
+          969,
+          972,
+          975
+        ],
+        "baselineCredit": false,
+        "scope": "Actual full source bodies and full current AD44/45; exact witnesses locate manually reviewed content."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Original lower-level lock coverage must include later inverse conflicts; incompleteO2 physicalundo can overwrite logicalinverseO1; single-page physiological case versus multi-page analysis.",
+      "evidence": [
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "teaching",
+          "paragraph": 44,
+          "exactOpening": "Điều kiện concurrency của §19.8.4 mạnh hơn câu “mỗi operation tự giữ vài latch”. Lower-level protection của operation gốc phải đủ bao các xung đột mà logical inverse của nó có thể tạo. Nếu O1 hoàn tất nhưng O2 còn dở, physical records của O2 có thể nằm cả trước và sau operation-end O1; khi recovery bù O1 logic rồi undo O2 vật lý, old image của O2 c"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 44,
+          "exactOpening": "Điều kiện concurrency của §19.8.4 mạnh hơn câu “mỗi operation tự giữ vài latch”. Lower-level protection của operation gốc phải đủ bao các xung đột mà logical inverse của nó có thể tạo. Nếu O1 hoàn tất nhưng O2 còn dở, physical records của O2 có thể nằm cả trước và sau operation-end O1; khi recovery bù O1 logic rồi undo O2 vật lý, old image của O2 c"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "activity",
+          "paragraph": 52,
+          "exactOpening": "1. DPT[P]=40, record P ở LSN30 và chưa fetch page. Có cần fetch page hoặc redo record30 không? Đổi record thành50, fetch thấy pageLSN60 rồi xét lại. Giả sử DPT/log/storage đều thỏa protocol; không tự thêm một pageLSN thấp mâu thuẫn với cận recLSN đã biết.\n2. Với trace của bài, giả sử CLR70 trỏ undoNextLSN=60 thay vì40. Lỗi nào xuất hiện? Có thể nhậ"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "answer",
+          "paragraph": 57,
+          "exactOpening": "1. Bỏ30 vì30<recLSN40, chưa cần fetch page để kiểm pageLSN. Ca50 qua bộ lọc recLSN nhưng bỏ sau khi fetch vì pageLSN60≥50. Các điều kiện là bằng chứng bỏ qua theo DPT/page assumptions, không tùy ý skip log. Nếu đề cho record30 là update P đã hoàn tất trước lần dirty hiện tại nhưng bản storage vẫn pageLSN0, cần báo dữ kiện/protocol không nhất quán t"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "19.9",
+      "title": "ARIES",
+      "owners": [
+        "AD44"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-19.txt",
+        "sha256": "7dd42a39080aa021d190395e4af2e3d5feef56e834c5106cf74c3c1c41090134",
+        "ownBodyLines": [
+          1401,
+          1433
+        ],
+        "ownBodySha256": "efd66651a41849d0f8dcd9489c48acbbde7c2cee60dfcc54a3d209bde65df0dc"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            983,
+            1124
+          ],
+          [
+            1125,
+            1300
+          ],
+          [
+            1301,
+            1436
+          ],
+          [
+            1437,
+            1557
+          ],
+          [
+            1558,
+            1721
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          967,
+          969,
+          972,
+          975
+        ],
+        "baselineCredit": false,
+        "scope": "Actual full source bodies and full current AD44/45; exact witnesses locate manually reviewed content."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Four ARIES differences:LSN/PageLSN,physiologicalredo,conservativeDPT and no-force fuzzy checkpoint; explicit complexity and separate simplified textbook record schemes.",
+      "evidence": [
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "teaching",
+          "paragraph": 10,
+          "exactOpening": "ARIES có thể log một operation xác định **page vật lý**, nhưng mô tả thay đổi logic bên trong page. Chẳng hạn xóa record ở slotted page có thể kéo theo dồn nhiều record; physiological record mô tả thao tác trên page đó thay vì lưu mọi byte dịch chuyển. Nó giảm lượng log nhưng thao tác “xóa slot” không tự idempotent: áp hai lần có thể xóa hai record"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 29,
+          "exactOpening": "Undo T2 bắt đầu60, ghi CLR70 bù C về0, với undoNextLSN=40. Giả sử CLR70 đã bền nhưng page chứa C=0 chưa flush; máy crash tiếp. Storage P vẫn có pageLSN60 và C=30. Lần restart mới redo CLR70, đưa C về0 và pageLSN70. Undo gặp CLR70, nhảy tới40; không lấy inverse của CLR để làm C=30 trở lại. Bù40 bằng CLR80, B về0, rồi kết thúc T2. Kết quả A=10,B=0,C="
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "activity",
+          "paragraph": 52,
+          "exactOpening": "1. DPT[P]=40, record P ở LSN30 và chưa fetch page. Có cần fetch page hoặc redo record30 không? Đổi record thành50, fetch thấy pageLSN60 rồi xét lại. Giả sử DPT/log/storage đều thỏa protocol; không tự thêm một pageLSN thấp mâu thuẫn với cận recLSN đã biết.\n2. Với trace của bài, giả sử CLR70 trỏ undoNextLSN=60 thay vì40. Lỗi nào xuất hiện? Có thể nhậ"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "answer",
+          "paragraph": 57,
+          "exactOpening": "1. Bỏ30 vì30<recLSN40, chưa cần fetch page để kiểm pageLSN. Ca50 qua bộ lọc recLSN nhưng bỏ sau khi fetch vì pageLSN60≥50. Các điều kiện là bằng chứng bỏ qua theo DPT/page assumptions, không tùy ý skip log. Nếu đề cho record30 là update P đã hoàn tất trước lần dirty hiện tại nhưng bản storage vẫn pageLSN0, cần báo dữ kiện/protocol không nhất quán t"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "19.9.1",
+      "title": "Data Structures",
+      "owners": [
+        "AD44"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-19.txt",
+        "sha256": "7dd42a39080aa021d190395e4af2e3d5feef56e834c5106cf74c3c1c41090134",
+        "ownBodyLines": [
+          1434,
+          1528
+        ],
+        "ownBodySha256": "ca7aee3505f6130fa98d64fdaedea7059647108a734f45175613ef4b6c0467a2"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            983,
+            1124
+          ],
+          [
+            1125,
+            1300
+          ],
+          [
+            1301,
+            1436
+          ],
+          [
+            1437,
+            1557
+          ],
+          [
+            1558,
+            1721
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          967,
+          969,
+          972,
+          975
+        ],
+        "baselineCredit": false,
+        "scope": "Actual full source bodies and full current AD44/45; exact witnesses locate manually reviewed content."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "File-offset LSN,PageLSN,PrevLSN,CLR/UndoNext,LastLSN,dirty/flush/redirtyRecLSN and complete checkpoint pointer; page latch and physiological idempotence. Exercise first uses no-fetch filter without inventing an inconsistent low storagePageLSN.",
+      "evidence": [
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "teaching",
+          "paragraph": 8,
+          "exactOpening": "LSN có thể được triển khai bằng cặp log-file number và offset để vừa so thứ tự vừa tìm record; không cần luôn là một số liên tiếp. Khi file log đầy thì chuyển sang file số lớn hơn. PrevLSN giúp đi theo riêng chuỗi transaction thay vì đọc ngược mọi record của mọi transaction. LastLSN trong checkpoint/TT là điểm bắt đầu chuỗi đó, còn UndoNextLSN của "
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 12,
+          "exactOpening": "Trong vận hành bình thường, page mới dirty được thêm DPT với recLSN đầu cần phục hồi; các update tiếp theo không đẩy recLSN lên rồi bỏ quên update cũ chưa flush. Sau flush đầy đủ theo protocol, có thể bỏ entry; nếu page dirty trở lại, nó nhận một recLSN mới. Checkpoint ARIES ghi DPT và transaction metadata với LastLSN, không bắt buộc flush mọi dirt"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "activity",
+          "paragraph": 52,
+          "exactOpening": "1. DPT[P]=40, record P ở LSN30 và chưa fetch page. Có cần fetch page hoặc redo record30 không? Đổi record thành50, fetch thấy pageLSN60 rồi xét lại. Giả sử DPT/log/storage đều thỏa protocol; không tự thêm một pageLSN thấp mâu thuẫn với cận recLSN đã biết.\n2. Với trace của bài, giả sử CLR70 trỏ undoNextLSN=60 thay vì40. Lỗi nào xuất hiện? Có thể nhậ"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "answer",
+          "paragraph": 57,
+          "exactOpening": "1. Bỏ30 vì30<recLSN40, chưa cần fetch page để kiểm pageLSN. Ca50 qua bộ lọc recLSN nhưng bỏ sau khi fetch vì pageLSN60≥50. Các điều kiện là bằng chứng bỏ qua theo DPT/page assumptions, không tùy ý skip log. Nếu đề cho record30 là update P đã hoàn tất trước lần dirty hiện tại nhưng bản storage vẫn pageLSN0, cần báo dữ kiện/protocol không nhất quán t"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "19.9.2",
+      "title": "Recovery Algorithm",
+      "owners": [
+        "AD44"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-19.txt",
+        "sha256": "7dd42a39080aa021d190395e4af2e3d5feef56e834c5106cf74c3c1c41090134",
+        "ownBodyLines": [
+          1529,
+          1537
+        ],
+        "ownBodySha256": "39a588b4be17ce78ef09bbde306a3f4908c5a9a2a80a97b8f59a85a4e1ab6ab8"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            983,
+            1124
+          ],
+          [
+            1125,
+            1300
+          ],
+          [
+            1301,
+            1436
+          ],
+          [
+            1437,
+            1557
+          ],
+          [
+            1558,
+            1721
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          967,
+          969,
+          972,
+          975
+        ],
+        "baselineCredit": false,
+        "scope": "Actual full source bodies and full current AD44/45; exact witnesses locate manually reviewed content."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Analysis/redo/undo roles and their input/output tables; worked complete crash/restart trace.",
+      "evidence": [
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "teaching",
+          "paragraph": 14,
+          "exactOpening": "Khởi tạo từ checkpoint metadata phù hợp, rồi scan log theo giao thức để dựng TT và DPT. Khi thấy một page update chưa có trong DPT, thêm recLSN bằng LSN update đầu cần theo dõi. Cập nhật lastLSN và trạng thái transaction; end record loại transaction đã kết thúc. Khi merge checkpoint, không làm một transaction đã end bị “sống lại” do metadata cũ hơn"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 28,
+          "exactOpening": "Storage lúc crash có P.pageLSN=20, Q.pageLSN=0. Analysis nhận T1 là winner, T2 là loser, và DPT bảo thủ P:20,Q:40. Redo bỏ record20 vì page P đã có20, áp40 lên Q và60 lên P. Khi ấy A=10,B=20,C=30. Để định nghĩa ca crash tiếp theo, cho flush page P ở pageLSN60 lúc log tới60 đã bền, nên WAL được giữ; Q có thể vẫn chưa flush."
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "activity",
+          "paragraph": 52,
+          "exactOpening": "1. DPT[P]=40, record P ở LSN30 và chưa fetch page. Có cần fetch page hoặc redo record30 không? Đổi record thành50, fetch thấy pageLSN60 rồi xét lại. Giả sử DPT/log/storage đều thỏa protocol; không tự thêm một pageLSN thấp mâu thuẫn với cận recLSN đã biết.\n2. Với trace của bài, giả sử CLR70 trỏ undoNextLSN=60 thay vì40. Lỗi nào xuất hiện? Có thể nhậ"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "answer",
+          "paragraph": 57,
+          "exactOpening": "1. Bỏ30 vì30<recLSN40, chưa cần fetch page để kiểm pageLSN. Ca50 qua bộ lọc recLSN nhưng bỏ sau khi fetch vì pageLSN60≥50. Các điều kiện là bằng chứng bỏ qua theo DPT/page assumptions, không tùy ý skip log. Nếu đề cho record30 là update P đã hoàn tất trước lần dirty hiện tại nhưng bản storage vẫn pageLSN0, cần báo dữ kiện/protocol không nhất quán t"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "19.9.2.1",
+      "title": "Analysis Pass",
+      "owners": [
+        "AD44"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-19.txt",
+        "sha256": "7dd42a39080aa021d190395e4af2e3d5feef56e834c5106cf74c3c1c41090134",
+        "ownBodyLines": [
+          1538,
+          1556
+        ],
+        "ownBodySha256": "3c48ca941b9c37ce02aecea99f19208cff933c17a849573af225490ee9bf5294"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            983,
+            1124
+          ],
+          [
+            1125,
+            1300
+          ],
+          [
+            1301,
+            1436
+          ],
+          [
+            1437,
+            1557
+          ],
+          [
+            1558,
+            1721
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          967,
+          969,
+          972,
+          975
+        ],
+        "baselineCredit": false,
+        "scope": "Actual full source bodies and full current AD44/45; exact witnesses locate manually reviewed content."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Load completed checkpoint; track outcomes/lastLSNs conservatively,add later dirtypages; initiallyemptyDPT not a stoppingrule; committednot-end distinct from loser.",
+      "evidence": [
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "teaching",
+          "paragraph": 16,
+          "exactOpening": "Nếu DPT ở checkpoint rỗng, vẫn scan analysis sau checkpoint: một update mới có thể thêm page dirty. Không dừng analysis chỉ vì snapshot DPT ban đầu rỗng. Sau analysis, chọn redo start an toàn từ DPT cuối hoặc mốc được giao thức quy định khi không còn page cần redo. Transaction có commit và transaction có end phải được xử lý theo state machine đã cô"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 28,
+          "exactOpening": "Storage lúc crash có P.pageLSN=20, Q.pageLSN=0. Analysis nhận T1 là winner, T2 là loser, và DPT bảo thủ P:20,Q:40. Redo bỏ record20 vì page P đã có20, áp40 lên Q và60 lên P. Khi ấy A=10,B=20,C=30. Để định nghĩa ca crash tiếp theo, cho flush page P ở pageLSN60 lúc log tới60 đã bền, nên WAL được giữ; Q có thể vẫn chưa flush."
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "activity",
+          "paragraph": 52,
+          "exactOpening": "1. DPT[P]=40, record P ở LSN30 và chưa fetch page. Có cần fetch page hoặc redo record30 không? Đổi record thành50, fetch thấy pageLSN60 rồi xét lại. Giả sử DPT/log/storage đều thỏa protocol; không tự thêm một pageLSN thấp mâu thuẫn với cận recLSN đã biết.\n2. Với trace của bài, giả sử CLR70 trỏ undoNextLSN=60 thay vì40. Lỗi nào xuất hiện? Có thể nhậ"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "answer",
+          "paragraph": 57,
+          "exactOpening": "1. Bỏ30 vì30<recLSN40, chưa cần fetch page để kiểm pageLSN. Ca50 qua bộ lọc recLSN nhưng bỏ sau khi fetch vì pageLSN60≥50. Các điều kiện là bằng chứng bỏ qua theo DPT/page assumptions, không tùy ý skip log. Nếu đề cho record30 là update P đã hoàn tất trước lần dirty hiện tại nhưng bản storage vẫn pageLSN0, cần báo dữ kiện/protocol không nhất quán t"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "19.9.2.2",
+      "title": "Redo Pass",
+      "owners": [
+        "AD44"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-19.txt",
+        "sha256": "7dd42a39080aa021d190395e4af2e3d5feef56e834c5106cf74c3c1c41090134",
+        "ownBodyLines": [
+          1557,
+          1572
+        ],
+        "ownBodySha256": "94fb71ed980d824d4fe62a405a684faf619f5b52114cba20f942fecc9592322e"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            983,
+            1124
+          ],
+          [
+            1125,
+            1300
+          ],
+          [
+            1301,
+            1436
+          ],
+          [
+            1437,
+            1557
+          ],
+          [
+            1558,
+            1721
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          967,
+          969,
+          972,
+          975
+        ],
+        "baselineCredit": false,
+        "scope": "Actual full source bodies and full current AD44/45; exact witnesses locate manually reviewed content."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Exact3redo filters including no-read DPT/recLSN filters and on-pageLSN; redohistoryincludingCLR and conditionalidempotence.",
+      "evidence": [
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "teaching",
+          "paragraph": 18,
+          "exactOpening": "Redo bắt đầu từ recLSN nhỏ nhất trong DPT khi DPT không rỗng. Với một record update hoặc CLR trên page P, có thể bỏ qua nếu P không nằm trong DPT, recordLSN nhỏ hơn recLSN(P), hoặc pageLSN(P) đã lớn hơn hay bằng recordLSN. Nếu chưa được loại, áp redo action và đặt pageLSN bằng recordLSN."
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 19,
+          "exactOpening": "```text\nfor record theo thứ tự từ min(recLSN):\n    nếu không phải record redo được: xử lý control record rồi tiếp tục vòng\n    nếu page không có trong DPT: bỏ qua\n    nếu record.LSN < DPT[page].recLSN: bỏ qua\n    đọc page\n    nếu page.pageLSN >= record.LSN: bỏ qua\n    áp redo action của update hoặc CLR\n    page.pageLSN = record.LSN\n```"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "activity",
+          "paragraph": 52,
+          "exactOpening": "1. DPT[P]=40, record P ở LSN30 và chưa fetch page. Có cần fetch page hoặc redo record30 không? Đổi record thành50, fetch thấy pageLSN60 rồi xét lại. Giả sử DPT/log/storage đều thỏa protocol; không tự thêm một pageLSN thấp mâu thuẫn với cận recLSN đã biết.\n2. Với trace của bài, giả sử CLR70 trỏ undoNextLSN=60 thay vì40. Lỗi nào xuất hiện? Có thể nhậ"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "answer",
+          "paragraph": 57,
+          "exactOpening": "1. Bỏ30 vì30<recLSN40, chưa cần fetch page để kiểm pageLSN. Ca50 qua bộ lọc recLSN nhưng bỏ sau khi fetch vì pageLSN60≥50. Các điều kiện là bằng chứng bỏ qua theo DPT/page assumptions, không tùy ý skip log. Nếu đề cho record30 là update P đã hoàn tất trước lần dirty hiện tại nhưng bản storage vẫn pageLSN0, cần báo dữ kiện/protocol không nhất quán t"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "19.9.2.3",
+      "title": "Undo Pass and Transaction Rollback",
+      "owners": [
+        "AD44"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-19.txt",
+        "sha256": "7dd42a39080aa021d190395e4af2e3d5feef56e834c5106cf74c3c1c41090134",
+        "ownBodyLines": [
+          1573,
+          1638
+        ],
+        "ownBodySha256": "573db8eeed1ef66a38be13eac43973436a4a4fce02ddaa446c17e63d7a2ffdf7"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            983,
+            1124
+          ],
+          [
+            1125,
+            1300
+          ],
+          [
+            1301,
+            1436
+          ],
+          [
+            1437,
+            1557
+          ],
+          [
+            1558,
+            1721
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          967,
+          969,
+          972,
+          975
+        ],
+        "baselineCredit": false,
+        "scope": "Actual full source bodies and full current AD44/45; exact witnesses locate manually reviewed content."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "MaxpendingLSN acrosslosers;normal inverse CLR/prev,existingCLRundoNext,control/endpaths,WALforcompensation and repeated-crash safety/conditionaltermination proof.",
+      "evidence": [
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "teaching",
+          "paragraph": 22,
+          "exactOpening": "Đưa lastLSN của các losers vào tập công việc ưu tiên LSN lớn nhất. Nếu record là update cần undo, áp inverse theo loại thao tác và ghi một CLR. CLR mới có undoNextLSN bằng prevLSN của update vừa bù. Nếu gặp CLR có sẵn, không bù CLR; đi thẳng tới undoNextLSN. Control record dùng đường prevLSN theo giao thức. Khi hết chuỗi của một loser, ghi end."
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 29,
+          "exactOpening": "Undo T2 bắt đầu60, ghi CLR70 bù C về0, với undoNextLSN=40. Giả sử CLR70 đã bền nhưng page chứa C=0 chưa flush; máy crash tiếp. Storage P vẫn có pageLSN60 và C=30. Lần restart mới redo CLR70, đưa C về0 và pageLSN70. Undo gặp CLR70, nhảy tới40; không lấy inverse của CLR để làm C=30 trở lại. Bù40 bằng CLR80, B về0, rồi kết thúc T2. Kết quả A=10,B=0,C="
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "activity",
+          "paragraph": 52,
+          "exactOpening": "1. DPT[P]=40, record P ở LSN30 và chưa fetch page. Có cần fetch page hoặc redo record30 không? Đổi record thành50, fetch thấy pageLSN60 rồi xét lại. Giả sử DPT/log/storage đều thỏa protocol; không tự thêm một pageLSN thấp mâu thuẫn với cận recLSN đã biết.\n2. Với trace của bài, giả sử CLR70 trỏ undoNextLSN=60 thay vì40. Lỗi nào xuất hiện? Có thể nhậ"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "answer",
+          "paragraph": 57,
+          "exactOpening": "1. Bỏ30 vì30<recLSN40, chưa cần fetch page để kiểm pageLSN. Ca50 qua bộ lọc recLSN nhưng bỏ sau khi fetch vì pageLSN60≥50. Các điều kiện là bằng chứng bỏ qua theo DPT/page assumptions, không tùy ý skip log. Nếu đề cho record30 là update P đã hoàn tất trước lần dirty hiện tại nhưng bản storage vẫn pageLSN0, cần báo dữ kiện/protocol không nhất quán t"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "19.9.3",
+      "title": "Other Features",
+      "owners": [
+        "AD44"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-19.txt",
+        "sha256": "7dd42a39080aa021d190395e4af2e3d5feef56e834c5106cf74c3c1c41090134",
+        "ownBodyLines": [
+          1639,
+          1673
+        ],
+        "ownBodySha256": "eea95104aeef0d826100838c054f42a97fd7148e6af68396813fc0674afb25e7"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            983,
+            1124
+          ],
+          [
+            1125,
+            1300
+          ],
+          [
+            1301,
+            1436
+          ],
+          [
+            1437,
+            1557
+          ],
+          [
+            1558,
+            1721
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          967,
+          969,
+          972,
+          975
+        ],
+        "baselineCredit": false,
+        "scope": "Actual full source bodies and full current AD44/45; exact witnesses locate manually reviewed content."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Nestedtopaction dummyCLRskip, recoveryindependence,savepoints,fineindexlocking,prefetch/outoforderwithpage/dependencyorderretained.",
+      "evidence": [
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "teaching",
+          "paragraph": 47,
+          "exactOpening": "Các khả năng khác ở §19.9.3 cũng có điều kiện: recovery independence cho phép phục hồi một số page và phục vụ phần an toàn khi phần khác đang recovery; savepoint cho phép rollback một phần theo protocol; fine-grained index locking tăng concurrency. DPT giúp prefetch page trước lúc cần redo. Có thể hoãn redo page đang fetch và xử lý page khác, nhưng"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 46,
+          "exactOpening": "Một dummy CLR có thể biểu diễn action cấu trúc không cần undo bằng cách trỏ UndoNextLSN qua các record của nó. Ví dụ trước page allocation là LSN20, các record allocation là30,40 và dummy CLR50 trỏ20; user update60 có prev50. Undo60 rồi gặp50 thì đi20, giữ allocation; không undo nhầm cả page mà transaction khác đã dùng. Bỏ qua structural action khô"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "activity",
+          "paragraph": 52,
+          "exactOpening": "1. DPT[P]=40, record P ở LSN30 và chưa fetch page. Có cần fetch page hoặc redo record30 không? Đổi record thành50, fetch thấy pageLSN60 rồi xét lại. Giả sử DPT/log/storage đều thỏa protocol; không tự thêm một pageLSN thấp mâu thuẫn với cận recLSN đã biết.\n2. Với trace của bài, giả sử CLR70 trỏ undoNextLSN=60 thay vì40. Lỗi nào xuất hiện? Có thể nhậ"
+        },
+        {
+          "path": "lessons/AD44.md",
+          "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+          "kind": "answer",
+          "paragraph": 57,
+          "exactOpening": "1. Bỏ30 vì30<recLSN40, chưa cần fetch page để kiểm pageLSN. Ca50 qua bộ lọc recLSN nhưng bỏ sau khi fetch vì pageLSN60≥50. Các điều kiện là bằng chứng bỏ qua theo DPT/page assumptions, không tùy ý skip log. Nếu đề cho record30 là update P đã hoàn tất trước lần dirty hiện tại nhưng bản storage vẫn pageLSN0, cần báo dữ kiện/protocol không nhất quán t"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "19.10",
+      "title": "Recovery in Main-Memory Databases",
+      "owners": [
+        "AD45"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-19.txt",
+        "sha256": "7dd42a39080aa021d190395e4af2e3d5feef56e834c5106cf74c3c1c41090134",
+        "ownBodyLines": [
+          1674,
+          1721
+        ],
+        "ownBodySha256": "f9807e6570bf463b3680015c191de2c5d4c7a5dbe6052d99a95c568db5130abb"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            983,
+            1124
+          ],
+          [
+            1125,
+            1300
+          ],
+          [
+            1301,
+            1436
+          ],
+          [
+            1437,
+            1557
+          ],
+          [
+            1558,
+            1721
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          961
+        ],
+        "baselineCredit": false,
+        "scope": "Actual full source bodies and full current AD44/45; exact witnesses locate manually reviewed content."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "RAMpersistentbaseline/logreload,indexredo omission withliveundo,redo-only committed/version snapshotconditions,parallelpartition dependencies;Note19.2NVRAMpersistenceversusatomicityandconditionalundo/redoavoidance.",
+      "evidence": [
+        {
+          "path": "lessons/AD45.md",
+          "lessonSha256": "f12a83d12886295e0c03e5ee79ea7ff80a9e90f5a1a5b51bae69a4f6ffeb5e02",
+          "kind": "teaching",
+          "paragraph": 25,
+          "exactOpening": "Nếu index hoàn toàn dựng lại được từ relation đã recovery, có thể bỏ **redo log của index update** trong thiết kế đó. Undo cho transaction abort khi hệ đang chạy vẫn cần, nhưng undo index có thể ở RAM vì sau crash sẽ dựng lại toàn index. Điều này không cho phép bỏ log của dữ liệu nền đã cam kết. Chỉ số phục vụ constraint hay metadata không tái dựng"
+        },
+        {
+          "path": "lessons/AD45.md",
+          "lessonSha256": "f12a83d12886295e0c03e5ee79ea7ff80a9e90f5a1a5b51bae69a4f6ffeb5e02",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 26,
+          "exactOpening": "Một thiết kế redo-only tránh đặt uncommitted data vào checkpoint bền, hoặc dùng multiversion để phân biệt version chưa commit. Restart nạp checkpoint rồi replay các hiệu ứng commit phù hợp; version chưa commit phải được loại/thu hồi theo protocol. Nếu copy bừa RAM đang có uncommitted writes vào snapshot rồi chỉ redo winners, loser có sẵn trong snap"
+        },
+        {
+          "path": "lessons/AD45.md",
+          "lessonSha256": "f12a83d12886295e0c03e5ee79ea7ff80a9e90f5a1a5b51bae69a4f6ffeb5e02",
+          "kind": "activity",
+          "paragraph": 33,
+          "exactOpening": "1. Primary durableLSN200, remote nhận tới200 vàoRAM nhưng bền150. ACK dựa vào “đã nhận remote”. Sau khi cả hai mất RAM và primary storage hỏng, phần nào còn được chứng minh phục hồi? Tìm lỗi contract.\n2. Thiết kế failover có epoch để node cũ không ghi sau partition. Nêu nơi kiểm token, cách xử lý request đang bay và cách node cũ tái gia nhập.\n3. Mộ"
+        },
+        {
+          "path": "lessons/AD45.md",
+          "lessonSha256": "f12a83d12886295e0c03e5ee79ea7ff80a9e90f5a1a5b51bae69a4f6ffeb5e02",
+          "kind": "answer",
+          "paragraph": 38,
+          "exactOpening": "1. Chỉ prefix bền tới150 ở remote còn được chứng minh từ dữ kiện.151..200 chỉ ởRAM remote đã mất; primary storage cũng mất. ACK đã nhầm mốc nhận với bền nếu sản phẩm hứa chịu được failure này. Không kết luận còn đủ200 vì một log line “received200”.\n2. Tăng epoch theo một authority/giao thức an toàn, storage hoặc dịch vụ nhận write kiểm token hiện h"
+        }
+      ],
+      "gaps": []
+    }
+  ],
+  "checks": "qa/aries-backup-full-checks.json:16finitechecks including12CLRcrashvariants; no nativeengine/failover/restore/SCMexecution.",
+  "sourceInterpretation": [
+    "19.7two-safe single-site fallback doesnotpromise survival of anotherstoragefailure before resync.",
+    "19.8figure/prose has inconsistent sign forT1delta; authored arithmetic uses700-100+50+100=750 preserving othertransactiondelta.",
+    "Source analysis description abbreviates end/outcome handling; current model explicitly retains durable committed winners, no blanketundo of committed-not-end."
+  ]
+}

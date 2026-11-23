@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-05",
+  "status": "passed",
+  "count": 20,
+  "checks": [
+    {
+      "name": "View example preserves initial reader and final writer",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Same example has a conflict cycle",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Basic TO accepted-operation graph: all90 program-order shuffles",
+      "passed": true,
+      "scope": "Accepted operation prefixes only; recovery/commit dependency is a separate requirement."
+    },
+    {
+      "name": "Thomas separates ignored request from executed writer",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Thomas must test reader conflict before ignoring stale write",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "OCC disjoint writes do not force abort merely for overlap",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "OCC detects late published write to read set",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "OCC can ignore writes already present before start",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "MVTO reader20 and late writer15",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "MVTO valid intervals have half-open boundaries",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "MV2PL GC preserves all modeled active/future reader choices",
+      "passed": true,
+      "scope": "85 timestamp choices; no retention, uncommitted version or crash recovery modeled."
+    },
+    {
+      "name": "MV2PL prefix publication: old and new reader",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "FCW detects concurrent same-item committed writer",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "FCW permits already-visible or disjoint writer",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "FUW outcome distinguishes holder abort and commit",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Write-skew counterexample disagrees with both serial orders",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Two-edge rw chain is not itself a cycle",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Doctor rw dependencies form a two-way cycle",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Degree-two moved-key scan examples",
+      "passed": true,
+      "scope": "Specific possible observation schedules, not a claim about all RC SQL engines."
+    },
+    {
+      "name": "Actual SQLite conditional version update: stale attempt affects0 rows",
+      "passed": true,
+      "scope": "SQLite3.53.1; sequential stale-version scenario only; not MySQL/concurrent runner execution."
+    }
+  ],
+  "lessons": {
+    "AD41": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+    "AD42": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180"
+  },
+  "limits": "Finite reference models and one actual SQLite version-update scenario; no new MySQL/PostgreSQL, SSI engine, production runner or browser execution."
+}

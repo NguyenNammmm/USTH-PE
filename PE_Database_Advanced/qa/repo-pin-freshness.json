@@ -1,0 +1,171 @@
+{
+  "scope": "Read-only provenance freshness of four pinned clones/selected files. Does not rerun repository or course tests.",
+  "passed": 21,
+  "total": 21,
+  "checks": [
+    {
+      "repository": "ept/hermitage",
+      "kind": "pinnedHEAD",
+      "actual": "f029bec8e32af6a9506508638fdf74ef61286225",
+      "expected": "f029bec8e32af6a9506508638fdf74ef61286225",
+      "passed": true
+    },
+    {
+      "repository": "ept/hermitage",
+      "kind": "selectedSourceFile",
+      "path": "README.md",
+      "actual": "cbcb93364c3f84c5aae1584fdfb61def7b802826a673f63344ffcfc2f1692811",
+      "expected": "cbcb93364c3f84c5aae1584fdfb61def7b802826a673f63344ffcfc2f1692811",
+      "passed": true
+    },
+    {
+      "repository": "ept/hermitage",
+      "kind": "selectedSourceFile",
+      "path": "mysql.md",
+      "actual": "fa13900a453469630a5375419f672eed6976f3e98d27024845268632b9a7c285",
+      "expected": "fa13900a453469630a5375419f672eed6976f3e98d27024845268632b9a7c285",
+      "passed": true
+    },
+    {
+      "repository": "ept/hermitage",
+      "kind": "selectedSourceFile",
+      "path": "mysql.md",
+      "actual": "fa13900a453469630a5375419f672eed6976f3e98d27024845268632b9a7c285",
+      "expected": "fa13900a453469630a5375419f672eed6976f3e98d27024845268632b9a7c285",
+      "passed": true
+    },
+    {
+      "repository": "ept/hermitage",
+      "kind": "selectedSourceFile",
+      "path": "mysql.md",
+      "actual": "fa13900a453469630a5375419f672eed6976f3e98d27024845268632b9a7c285",
+      "expected": "fa13900a453469630a5375419f672eed6976f3e98d27024845268632b9a7c285",
+      "passed": true
+    },
+    {
+      "repository": "jsengun/ecommerce-query-optimizer-demo",
+      "kind": "pinnedHEAD",
+      "actual": "c594df3824a82db731946a3fa106ccd679eb1848",
+      "expected": "c594df3824a82db731946a3fa106ccd679eb1848",
+      "passed": true
+    },
+    {
+      "repository": "jsengun/ecommerce-query-optimizer-demo",
+      "kind": "selectedSourceFile",
+      "path": "LICENSE",
+      "actual": "ef382f677f6ee98edaef6cafb21d6f4328eb2f52528d6b218300cd04512d1f3e",
+      "expected": "ef382f677f6ee98edaef6cafb21d6f4328eb2f52528d6b218300cd04512d1f3e",
+      "passed": true
+    },
+    {
+      "repository": "jsengun/ecommerce-query-optimizer-demo",
+      "kind": "selectedSourceFile",
+      "path": "src/queries.py",
+      "actual": "735aa8a5df95441bc935ce2388d9ff116c3089614a9408bfdc96d5ed19b4e1d9",
+      "expected": "735aa8a5df95441bc935ce2388d9ff116c3089614a9408bfdc96d5ed19b4e1d9",
+      "passed": true
+    },
+    {
+      "repository": "jsengun/ecommerce-query-optimizer-demo",
+      "kind": "selectedSourceFile",
+      "path": "src/seed.py",
+      "actual": "c2de0cf9eb129146a6add9e7e0b03d9ad33b4b2949844230267de232889fa195",
+      "expected": "c2de0cf9eb129146a6add9e7e0b03d9ad33b4b2949844230267de232889fa195",
+      "passed": true
+    },
+    {
+      "repository": "jsengun/ecommerce-query-optimizer-demo",
+      "kind": "selectedSourceFile",
+      "path": "sql/indexes.sql",
+      "actual": "cfaf2afc2cf2f0806b6b25aaadf02d6a5500d413a6f69c4a43267fe7c9afd7a4",
+      "expected": "cfaf2afc2cf2f0806b6b25aaadf02d6a5500d413a6f69c4a43267fe7c9afd7a4",
+      "passed": true
+    },
+    {
+      "repository": "jsengun/ecommerce-query-optimizer-demo",
+      "kind": "selectedSourceFile",
+      "path": "tests/test_queries.py",
+      "actual": "145c69427696b4e839353208414010d8ee754206c7131940dec794ded1f54bf6",
+      "expected": "145c69427696b4e839353208414010d8ee754206c7131940dec794ded1f54bf6",
+      "passed": true
+    },
+    {
+      "repository": "lerocha/chinook-database",
+      "kind": "pinnedHEAD",
+      "actual": "7f67772503d71ba90f19283c38e93923addb43fa",
+      "expected": "7f67772503d71ba90f19283c38e93923addb43fa",
+      "passed": true
+    },
+    {
+      "repository": "lerocha/chinook-database",
+      "kind": "selectedSourceFile",
+      "path": "LICENSE.md",
+      "actual": "f8b5eaca4626d4c50e574ffe2c41040db4c2a5e826a1d4b32f20213e73217517",
+      "expected": "f8b5eaca4626d4c50e574ffe2c41040db4c2a5e826a1d4b32f20213e73217517",
+      "passed": true
+    },
+    {
+      "repository": "lerocha/chinook-database",
+      "kind": "selectedSourceFile",
+      "path": "README.md",
+      "actual": "9484df30288c8f281fc0dcf27f41058b49aabd95b90e3cf466dc40a4a06708b0",
+      "expected": "9484df30288c8f281fc0dcf27f41058b49aabd95b90e3cf466dc40a4a06708b0",
+      "passed": true
+    },
+    {
+      "repository": "lerocha/chinook-database",
+      "kind": "selectedSourceFile",
+      "path": "ChinookDatabase/DataSources/Chinook_MySql.sql",
+      "actual": "02a1835417c3ea19bff64e1d1f22be738ce51b3f88b0473c24eebff9a3ccde4b",
+      "expected": "02a1835417c3ea19bff64e1d1f22be738ce51b3f88b0473c24eebff9a3ccde4b",
+      "passed": true
+    },
+    {
+      "repository": "cmu-db/bustub",
+      "kind": "pinnedHEAD",
+      "actual": "e42a66f171093c138464b8302f5c3677a08e2ce4",
+      "expected": "e42a66f171093c138464b8302f5c3677a08e2ce4",
+      "passed": true
+    },
+    {
+      "repository": "cmu-db/bustub",
+      "kind": "selectedSourceFile",
+      "path": "LICENSE",
+      "actual": "e1532f31b1f64d75b501725bdfa330ad3fe4109efd603983f657287a1709067d",
+      "expected": "e1532f31b1f64d75b501725bdfa330ad3fe4109efd603983f657287a1709067d",
+      "passed": true
+    },
+    {
+      "repository": "cmu-db/bustub",
+      "kind": "selectedSourceFile",
+      "path": "README.md",
+      "actual": "41f9b0124c386b0f4032dd1880bab9a1db6a8261133325a97f513be978021c9b",
+      "expected": "41f9b0124c386b0f4032dd1880bab9a1db6a8261133325a97f513be978021c9b",
+      "passed": true
+    },
+    {
+      "repository": "cmu-db/bustub",
+      "kind": "selectedSourceFile",
+      "path": "README.md",
+      "actual": "41f9b0124c386b0f4032dd1880bab9a1db6a8261133325a97f513be978021c9b",
+      "expected": "41f9b0124c386b0f4032dd1880bab9a1db6a8261133325a97f513be978021c9b",
+      "passed": true
+    },
+    {
+      "repository": "cmu-db/bustub",
+      "kind": "selectedSourceFile",
+      "path": "src/storage/index/b_plus_tree.cpp",
+      "actual": "7480a55327ad30482019deb2b7ac2f9b64d34c4de074112ce913d44aca4a00f5",
+      "expected": "7480a55327ad30482019deb2b7ac2f9b64d34c4de074112ce913d44aca4a00f5",
+      "passed": true
+    },
+    {
+      "repository": "cmu-db/bustub",
+      "kind": "selectedSourceFile",
+      "path": "test/storage/b_plus_tree_insert_test.cpp",
+      "actual": "eb0646599bca84ffec41bd8208ab03605fb677e0ead8b5790ae0666fd44a58e2",
+      "expected": "eb0646599bca84ffec41bd8208ab03605fb677e0ead8b5790ae0666fd44a58e2",
+      "passed": true
+    }
+  ]
+}

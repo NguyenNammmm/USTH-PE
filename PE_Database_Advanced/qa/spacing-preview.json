@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "AD40",
+    "changedOccurrences": 10,
+    "tokens": [
+      {
+        "before": "nhận1213",
+        "after": "nhận 12 13",
+        "count": 2
+      },
+      {
+        "before": "ngoàiDB",
+        "after": "ngoài DB",
+        "count": 2
+      },
+      {
+        "before": "lỗi1213",
+        "after": "lỗi 12 13",
+        "count": 1
+      },
+      {
+        "before": "bị1205",
+        "after": "bị 12 05",
+        "count": 1
+      },
+      {
+        "before": "chờT3",
+        "after": "chờ T3",
+        "count": 1
+      },
+      {
+        "before": "chờT1",
+        "after": "chờ T1",
+        "count": 1
+      },
+      {
+        "before": "chờT2",
+        "after": "chờ T2",
+        "count": 1
+      },
+      {
+        "before": "hủyT3",
+        "after": "hủy T3",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD41",
+    "changedOccurrences": 39,
+    "tokens": [
+      {
+        "before": "bỏwrite",
+        "after": "bỏ write",
+        "count": 2
+      },
+      {
+        "before": "chứngminh",
+        "after": "chứng minh",
+        "count": 2
+      },
+      {
+        "before": "cóTS15",
+        "after": "có TS 15",
+        "count": 1
+      },
+      {
+        "before": "cóTS10",
+        "after": "có TS 10",
+        "count": 1
+      },
+      {
+        "before": "đảmACID",
+        "after": "đảm ACID",
+        "count": 1
+      },
+      {
+        "before": "trướcTi",
+        "after": "trước Ti",
+        "count": 1
+      },
+      {
+        "before": "củaTi",
+        "after": "của Ti",
+        "count": 1
+      },
+      {
+        "before": "lúcT1",
+        "after": "lúc T1",
+        "count": 1
+      },
+      {
+        "before": "ĐổiT2",
+        "after": "Đổi T2",
+        "count": 1
+      },
+      {
+        "before": "trướcT2",
+        "after": "trước T2",
+        "count": 1
+      },
+      {
+        "before": "nàoT1",
+        "after": "nào T1",
+        "count": 1
+      },
+      {
+        "before": "khoảngT1",
+        "after": "khoảng T1",
+        "count": 1
+      },
+      {
+        "before": "củaT2",
+        "after": "của T2",
+        "count": 1
+      },
+      {
+        "before": "vẫnmax",
+        "after": "vẫn max",
+        "count": 1
+      },
+      {
+        "before": "bịabort",
+        "after": "bị abort",
+        "count": 1
+      },
+      {
+        "before": "thành35",
+        "after": "thành 35",
+        "count": 1
+      },
+      {
+        "before": "cảhaiabort",
+        "after": "cả hai abort",
+        "count": 1
+      },
+      {
+        "before": "cảpredicate",
+        "after": "cả predicate",
+        "count": 1
+      },
+      {
+        "before": "nhữngrow",
+        "after": "những row",
+        "count": 1
+      },
+      {
+        "before": "miềnread",
+        "after": "miền read",
+        "count": 1
+      },
+      {
+        "before": "cáchatomicpublication",
+        "after": "cách atomic publication",
+        "count": 1
+      },
+      {
+        "before": "tênOCC",
+        "after": "tên OCC",
+        "count": 1
+      },
+      {
+        "before": "côngbốwrite",
+        "after": "công bố write",
+        "count": 1
+      },
+      {
+        "before": "trướcvalidate",
+        "after": "trước validate",
+        "count": 1
+      },
+      {
+        "before": "phảnví",
+        "after": "phản ví",
+        "count": 1
+      },
+      {
+        "before": "kiệnreadcommitted",
+        "after": "kiện read committed",
+        "count": 1
+      },
+      {
+        "before": "vàread",
+        "after": "và read",
+        "count": 1
+      },
+      {
+        "before": "quyếtđịnh",
+        "after": "quyết định",
+        "count": 1
+      },
+      {
+        "before": "từngbước",
+        "after": "từng bước",
+        "count": 1
+      },
+      {
+        "before": "BiếnthểOCC",
+        "after": "Biến thể OCC",
+        "count": 1
+      },
+      {
+        "before": "giảtạo",
+        "after": "giả tạo",
+        "count": 1
+      },
+      {
+        "before": "mộtSQLenginecótimestampAPI",
+        "after": "một SQL engine có timestamp API",
+        "count": 1
+      },
+      {
+        "before": "labenginekhác",
+        "after": "lab engine khác",
+        "count": 1
+      },
+      {
+        "before": "cócapabilityriêng",
+        "after": "có capability riêng",
+        "count": 1
+      },
+      {
+        "before": "sátthật",
+        "after": "sát thật",
+        "count": 1
+      },
+      {
+        "before": "họcviên",
+        "after": "học viên",
+        "count": 1
+      },
+      {
+        "before": "trìnhDBMS",
+        "after": "trình DBMS",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD42",
+    "changedOccurrences": 79,
+    "tokens": [
+      {
+        "before": "thấy120",
+        "after": "thấy 120",
+        "count": 3
+      },
+      {
+        "before": "thứhai",
+        "after": "thứ hai",
+        "count": 2
+      },
+      {
+        "before": "vàstock",
+        "after": "và stock",
+        "count": 2
+      },
+      {
+        "before": "kiểmversion",
+        "after": "kiểm version",
+        "count": 2
+      },
+      {
+        "before": "đãkiểm",
+        "after": "đã kiểm",
+        "count": 2
+      },
+      {
+        "before": "chínhTi",
+        "after": "chính Ti",
+        "count": 1
+      },
+      {
+        "before": "đọc10",
+        "after": "đọc 10",
+        "count": 1
+      },
+      {
+        "before": "đọc30",
+        "after": "đọc 30",
+        "count": 1
+      },
+      {
+        "before": "nhất15",
+        "after": "nhất 15",
+        "count": 1
+      },
+      {
+        "before": "tắtrow1",
+        "after": "tắt row1",
+        "count": 1
+      },
+      {
+        "before": "tắtrow2",
+        "after": "tắt ro w2",
+        "count": 1
+      },
+      {
+        "before": "chạyT1",
+        "after": "chạy T1",
+        "count": 1
+      },
+      {
+        "before": "rồiT2",
+        "after": "rồi T2",
+        "count": 1
+      },
+      {
+        "before": "NếuT2",
+        "after": "Nếu T2",
+        "count": 1
+      },
+      {
+        "before": "rồiT1",
+        "after": "rồi T1",
+        "count": 1
+      },
+      {
+        "before": "mộtCHECK",
+        "after": "một CHECK",
+        "count": 1
+      },
+      {
+        "before": "thành120",
+        "after": "thành 120",
+        "count": 1
+      },
+      {
+        "before": "vàcommit",
+        "after": "và commit",
+        "count": 1
+      },
+      {
+        "before": "thấy100",
+        "after": "thấy 100",
+        "count": 1
+      },
+      {
+        "before": "thànhREAD",
+        "after": "thành READ",
+        "count": 1
+      },
+      {
+        "before": "đọc100",
+        "after": "đọc 100",
+        "count": 1
+      },
+      {
+        "before": "quả120",
+        "after": "quả 120",
+        "count": 1
+      },
+      {
+        "before": "địnhSI",
+        "after": "định SI",
+        "count": 1
+      },
+      {
+        "before": "cảhai",
+        "after": "cả hai",
+        "count": 1
+      },
+      {
+        "before": "cộtversion",
+        "after": "cột version",
+        "count": 1
+      },
+      {
+        "before": "củaorder",
+        "after": "của order",
+        "count": 1
+      },
+      {
+        "before": "trênweb",
+        "after": "trên web",
+        "count": 1
+      },
+      {
+        "before": "lên20",
+        "after": "lên 20",
+        "count": 1
+      },
+      {
+        "before": "xétreader20",
+        "after": "xét reader 20",
+        "count": 1
+      },
+      {
+        "before": "từversion12",
+        "after": "từ version 12",
+        "count": 1
+      },
+      {
+        "before": "bịabort",
+        "after": "bị abort",
+        "count": 1
+      },
+      {
+        "before": "tựtimestamp",
+        "after": "tự timestamp",
+        "count": 1
+      },
+      {
+        "before": "mỗitransaction",
+        "after": "mỗi transaction",
+        "count": 1
+      },
+      {
+        "before": "khácrow",
+        "after": "khác row",
+        "count": 1
+      },
+      {
+        "before": "cùngcommit",
+        "after": "cùng commit",
+        "count": 1
+      },
+      {
+        "before": "chươngtrình",
+        "after": "chương trình",
+        "count": 1
+      },
+      {
+        "before": "kiểmđiềukiện",
+        "after": "kiểm điều kiện",
+        "count": 1
+      },
+      {
+        "before": "đểtạo",
+        "after": "để tạo",
+        "count": 1
+      },
+      {
+        "before": "còn100",
+        "after": "còn 100",
+        "count": 1
+      },
+      {
+        "before": "dữliệu",
+        "after": "dữ liệu",
+        "count": 1
+      },
+      {
+        "before": "vàsnapshot",
+        "after": "và snapshot",
+        "count": 1
+      },
+      {
+        "before": "đổiRC",
+        "after": "đổi RC",
+        "count": 1
+      },
+      {
+        "before": "lầnso",
+        "after": "lần so",
+        "count": 1
+      },
+      {
+        "before": "nếustock",
+        "after": "nếu stock",
+        "count": 1
+      },
+      {
+        "before": "cóthểđổiđộc",
+        "after": "có thể đổi độc",
+        "count": 1
+      },
+      {
+        "before": "Cóthểkhóa",
+        "after": "Có thể khóa",
+        "count": 1
+      },
+      {
+        "before": "cảorder",
+        "after": "cả order",
+        "count": 1
+      },
+      {
+        "before": "trongmộttransaction",
+        "after": "trong một transaction",
+        "count": 1
+      },
+      {
+        "before": "giảmstock",
+        "after": "giảm stock",
+        "count": 1
+      },
+      {
+        "before": "cậpnhậtorder",
+        "after": "cập nhật order",
+        "count": 1
+      },
+      {
+        "before": "vớiidempotency",
+        "after": "với idempotency",
+        "count": 1
+      },
+      {
+        "before": "mộtngười",
+        "after": "một người",
+        "count": 1
+      },
+      {
+        "before": "khácgiảmstock",
+        "after": "khác giảm stock",
+        "count": 1
+      },
+      {
+        "before": "sauresponsemất",
+        "after": "sau response mất",
+        "count": 1
+      },
+      {
+        "before": "Chấmtínhatomic",
+        "after": "Chấm tính atomic",
+        "count": 1
+      },
+      {
+        "before": "invariantvàkhônglặp",
+        "after": "invariant và không lặp",
+        "count": 1
+      },
+      {
+        "before": "nghiệpvụ",
+        "after": "nghiệp vụ",
+        "count": 1
+      },
+      {
+        "before": "khôngchỉHTTP200",
+        "after": "không chỉ HTTP 200",
+        "count": 1
+      },
+      {
+        "before": "vàwrite",
+        "after": "và write",
+        "count": 1
+      },
+      {
+        "before": "chấmđúngmọi",
+        "after": "chấm đúng mọi",
+        "count": 1
+      },
+      {
+        "before": "vàerrorclass",
+        "after": "và error class",
+        "count": 1
+      },
+      {
+        "before": "kếtquảđúngmộtlịch",
+        "after": "kết quả đúng một lịch",
+        "count": 1
+      },
+      {
+        "before": "khôngchứngminhmọi",
+        "after": "không chứng minh mọi",
+        "count": 1
+      },
+      {
+        "before": "vàbảngsnapshot",
+        "after": "và bảng snapshot",
+        "count": 1
+      },
+      {
+        "before": "cạnhđề",
+        "after": "cạnh đề",
+        "count": 1
+      },
+      {
+        "before": "giữconnection",
+        "after": "giữ connection",
+        "count": 1
+      },
+      {
+        "before": "resetkếtthúc",
+        "after": "reset kết thúc",
+        "count": 1
+      },
+      {
+        "before": "mộtactivityriêng",
+        "after": "một ac ti vi ty riêng",
+        "count": 1
+      },
+      {
+        "before": "chỉmở",
+        "after": "chỉ mở",
+        "count": 1
+      },
+      {
+        "before": "versionvàoracle",
+        "after": "version và oracle",
+        "count": 1
+      },
+      {
+        "before": "chỉvìcótab",
+        "after": "chỉ vì có tab",
+        "count": 1
+      },
+      {
+        "before": "tênPostgreSQL",
+        "after": "tên PostgreSQL",
+        "count": 1
+      },
+      {
+        "before": "sátMySQL",
+        "after": "sát MySQL",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD47",
+    "changedOccurrences": 110,
+    "tokens": [
+      {
+        "before": "vàchi",
+        "after": "và chi",
+        "count": 2
+      },
+      {
+        "before": "khôngđược",
+        "after": "không được",
+        "count": 2
+      },
+      {
+        "before": "giữ25",
+        "after": "giữ 25",
+        "count": 1
+      },
+      {
+        "before": "khóa10",
+        "after": "khóa 10",
+        "count": 1
+      },
+      {
+        "before": "thứhai",
+        "after": "thứ hai",
+        "count": 1
+      },
+      {
+        "before": "thứba",
+        "after": "thứ ba",
+        "count": 1
+      },
+      {
+        "before": "và100",
+        "after": "và 100",
+        "count": 1
+      },
+      {
+        "before": "Nếu70",
+        "after": "Nếu 70",
+        "count": 1
+      },
+      {
+        "before": "có400",
+        "after": "có4 00",
+        "count": 1
+      },
+      {
+        "before": "chứaA",
+        "after": "chứ aA",
+        "count": 1
+      },
+      {
+        "before": "phải250",
+        "after": "phải2 50",
+        "count": 1
+      },
+      {
+        "before": "vànode",
+        "after": "và node",
+        "count": 1
+      },
+      {
+        "before": "hoặchotkey",
+        "after": "hoặc hot key",
+        "count": 1
+      },
+      {
+        "before": "vàcapacity",
+        "after": "và capacity",
+        "count": 1
+      },
+      {
+        "before": "lúccopy",
+        "after": "lúc copy",
+        "count": 1
+      },
+      {
+        "before": "cảhai",
+        "after": "cả hai",
+        "count": 1
+      },
+      {
+        "before": "têncopy",
+        "after": "tên copy",
+        "count": 1
+      },
+      {
+        "before": "ởLSN11",
+        "after": "ở LSN 11",
+        "count": 1
+      },
+      {
+        "before": "nhậnwrite",
+        "after": "nhận write",
+        "count": 1
+      },
+      {
+        "before": "quả120",
+        "after": "quả 120",
+        "count": 1
+      },
+      {
+        "before": "vì110",
+        "after": "vì 110",
+        "count": 1
+      },
+      {
+        "before": "cảrack",
+        "after": "cả rack",
+        "count": 1
+      },
+      {
+        "before": "củaprimary",
+        "after": "của primary",
+        "count": 1
+      },
+      {
+        "before": "đầyđĩa",
+        "after": "đầy đĩa",
+        "count": 1
+      },
+      {
+        "before": "cóthể",
+        "after": "có thể",
+        "count": 1
+      },
+      {
+        "before": "mộtprefix",
+        "after": "một prefix",
+        "count": 1
+      },
+      {
+        "before": "đãlag",
+        "after": "đã lag",
+        "count": 1
+      },
+      {
+        "before": "Dùngrange",
+        "after": "Dùng range",
+        "count": 1
+      },
+      {
+        "before": "mốc10",
+        "after": "mốc 10",
+        "count": 1
+      },
+      {
+        "before": "Mộtquery",
+        "after": "Một query",
+        "count": 1
+      },
+      {
+        "before": "Có800",
+        "after": "Có 800",
+        "count": 1
+      },
+      {
+        "before": "và200",
+        "after": "và 200",
+        "count": 1
+      },
+      {
+        "before": "bốnnode",
+        "after": "bốn node",
+        "count": 1
+      },
+      {
+        "before": "sốrow",
+        "after": "số row",
+        "count": 1
+      },
+      {
+        "before": "ởnode",
+        "after": "ở node",
+        "count": 1
+      },
+      {
+        "before": "đềxuất",
+        "after": "đề xuất",
+        "count": 1
+      },
+      {
+        "before": "bổsung",
+        "after": "bổ sung",
+        "count": 1
+      },
+      {
+        "before": "vàhaiupdate",
+        "after": "và hai update",
+        "count": 1
+      },
+      {
+        "before": "Chỉramộtthứtựsaivàstatecontract",
+        "after": "Chỉ ra một thứ tự sai và state contract",
+        "count": 1
+      },
+      {
+        "before": "khôngmất",
+        "after": "không mất",
+        "count": 1
+      },
+      {
+        "before": "lặpupdate",
+        "after": "lặp update",
+        "count": 1
+      },
+      {
+        "before": "kểcảretry",
+        "after": "kể cả retry",
+        "count": 1
+      },
+      {
+        "before": "dữliệu",
+        "after": "dữ liệu",
+        "count": 1
+      },
+      {
+        "before": "vàgiữreadlatency",
+        "after": "và giữ read latency",
+        "count": 1
+      },
+      {
+        "before": "vềACK",
+        "after": "về ACK",
+        "count": 1
+      },
+      {
+        "before": "quyềnwrite",
+        "after": "quyền write",
+        "count": 1
+      },
+      {
+        "before": "vàđiều",
+        "after": "và điều",
+        "count": 1
+      },
+      {
+        "before": "kếtluận",
+        "after": "kết luận",
+        "count": 1
+      },
+      {
+        "before": "chỉtừcóba",
+        "after": "chỉ từ có ba",
+        "count": 1
+      },
+      {
+        "before": "ranhgiới",
+        "after": "ranh giới",
+        "count": 1
+      },
+      {
+        "before": "thốngnhất",
+        "after": "thống nhất",
+        "count": 1
+      },
+      {
+        "before": "khôngbịchia",
+        "after": "không bị chia",
+        "count": 1
+      },
+      {
+        "before": "thêmvirtualnode",
+        "after": "thêm virtual node",
+        "count": 1
+      },
+      {
+        "before": "vẫnđịnh",
+        "after": "vẫn định",
+        "count": 1
+      },
+      {
+        "before": "đúngmộtkey",
+        "after": "đúng một key",
+        "count": 1
+      },
+      {
+        "before": "mốcownership",
+        "after": "mốc ownership",
+        "count": 1
+      },
+      {
+        "before": "vàcách",
+        "after": "và cách",
+        "count": 1
+      },
+      {
+        "before": "chỉvìcopyworker",
+        "after": "chỉ vì copy worker",
+        "count": 1
+      },
+      {
+        "before": "19ởvùnggiữa",
+        "after": "19 ở vùng giữa",
+        "count": 1
+      },
+      {
+        "before": "20ởvùngcuối",
+        "after": "20 ở vùng cuối",
+        "count": 1
+      },
+      {
+        "before": "chỉvùnggiữa",
+        "after": "chỉ vùng giữa",
+        "count": 1
+      },
+      {
+        "before": "cóthểcần",
+        "after": "có thể cần",
+        "count": 1
+      },
+      {
+        "before": "thêmvùngcuối",
+        "after": "thêm vùng cuối",
+        "count": 1
+      },
+      {
+        "before": "đểlấykey20",
+        "after": "để lấy key 20",
+        "count": 1
+      },
+      {
+        "before": "cònđúngversion",
+        "after": "còn đúng version",
+        "count": 1
+      },
+      {
+        "before": "nhất800row",
+        "after": "nhất 800 row",
+        "count": 1
+      },
+      {
+        "before": "phíađốijoin",
+        "after": "phía đối join",
+        "count": 1
+      },
+      {
+        "before": "partitionphùhợp",
+        "after": "partition phù hợp",
+        "count": 1
+      },
+      {
+        "before": "rangeboundarykhôngtựchiađượccáckeybằngnhau",
+        "after": "range boundary không tự chia được các key bằng nhau",
+        "count": 1
+      },
+      {
+        "before": "khôngchỉrowcountđẹp",
+        "after": "không chỉ row count đẹp",
+        "count": 1
+      },
+      {
+        "before": "Chấpnhậnca",
+        "after": "Chấp nhận ca",
+        "count": 1
+      },
+      {
+        "before": "20rồi",
+        "after": "20 rồi",
+        "count": 1
+      },
+      {
+        "before": "Thứtựsai",
+        "after": "Thứ tự sai",
+        "count": 1
+      },
+      {
+        "before": "nêuởbài",
+        "after": "nêu ở bài",
+        "count": 1
+      },
+      {
+        "before": "Thiếtkếđúngcầnidentity",
+        "after": "Thiết kế đúng cần identity",
+        "count": 1
+      },
+      {
+        "before": "streamhoặcprotocoltươngđương",
+        "after": "stream hoặc protocol tương đương",
+        "count": 1
+      },
+      {
+        "before": "bảođảmrequestđangbay",
+        "after": "bảo đảm request đang bay",
+        "count": 1
+      },
+      {
+        "before": "Đápán",
+        "after": "Đáp án",
+        "count": 1
+      },
+      {
+        "before": "copylạithêmlầnnữa",
+        "after": "copy lại thêm lần nữa",
+        "count": 1
+      },
+      {
+        "before": "chưađủnếuwritevẫntiếptục",
+        "after": "chưa đủ nếu write vẫn tiếp tục",
+        "count": 1
+      },
+      {
+        "before": "táchmiềnlỗi",
+        "after": "tách miền lỗi",
+        "count": 1
+      },
+      {
+        "before": "nhưngACK",
+        "after": "nhưng ACK",
+        "count": 1
+      },
+      {
+        "before": "vàfencingquyếtđịnh",
+        "after": "và fencing quyết định",
+        "count": 1
+      },
+      {
+        "before": "dữliệunàobềnvàaiđượcghi",
+        "after": "dữ liệu nào bền và ai được ghi",
+        "count": 1
+      },
+      {
+        "before": "Đọctại",
+        "after": "Đọc tại",
+        "count": 1
+      },
+      {
+        "before": "chỗcóthểlag",
+        "after": "chỗ có thể lag",
+        "count": 1
+      },
+      {
+        "before": "hoặcphảitrảgiálatency",
+        "after": "hoặc phải trả giá latency",
+        "count": 1
+      },
+      {
+        "before": "đểđạtconsistencyđãchọn",
+        "after": "để đạt consistency đã chọn",
+        "count": 1
+      },
+      {
+        "before": "Nêurõfailuremodelvàquyềncủatừngnode",
+        "after": "Nêu rõ failure model và quyền của từng node",
+        "count": 1
+      },
+      {
+        "before": "khôngchấmchỉtheohìnhbaô",
+        "after": "không chấm chỉ theo hình ba ô",
+        "count": 1
+      },
+      {
+        "before": "vàfailure",
+        "after": "và failure",
+        "count": 1
+      },
+      {
+        "before": "tậpkeykhôngmất",
+        "after": "tập key không mất",
+        "count": 1
+      },
+      {
+        "before": "trùngownership",
+        "after": "trùng ownership",
+        "count": 1
+      },
+      {
+        "before": "ranhgiớikhônghởvàmọijoinmatchđượctạođủ",
+        "after": "ranh giới không hở và mọi join match được tạo đủ",
+        "count": 1
+      },
+      {
+        "before": "Migrationmodeldùng",
+        "after": "Migration model dùng",
+        "count": 1
+      },
+      {
+        "before": "đểbắtduplicate",
+        "after": "để bắt duplicate",
+        "count": 1
+      },
+      {
+        "before": "seedkhôngđượcchỉđổi",
+        "after": "seed không được chỉ đổi",
+        "count": 1
+      },
+      {
+        "before": "tênnode",
+        "after": "tên node",
+        "count": 1
+      },
+      {
+        "before": "màbỏcaxấu",
+        "after": "mà bỏ ca xấu",
+        "count": 1
+      },
+      {
+        "before": "Ngườihọc",
+        "after": "Người học",
+        "count": 1
+      },
+      {
+        "before": "chọnboundary",
+        "after": "chọn boundary",
+        "count": 1
+      },
+      {
+        "before": "hoặcđíchrouting",
+        "after": "hoặc đích routing",
+        "count": 1
+      },
+      {
+        "before": "cấpcụmbackend",
+        "after": "cấp cụm backend",
+        "count": 1
+      },
+      {
+        "before": "streamhiệncạnhđề",
+        "after": "stream hiện cạnh đề",
+        "count": 1
+      },
+      {
+        "before": "vàkey",
+        "after": "và key",
+        "count": 1
+      },
+      {
+        "before": "xửlýjoin",
+        "after": "xử lý join",
+        "count": 1
+      },
+      {
+        "before": "dữliệuđãpartition",
+        "after": "dữ liệu đã partition",
+        "count": 1
+      },
+      {
+        "before": "xửlýreplicaconsistency",
+        "after": "xử lý replica consistency",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD49",
+    "changedOccurrences": 201,
+    "tokens": [
+      {
+        "before": "cóthể",
+        "after": "có thể",
+        "count": 6
+      },
+      {
+        "before": "dữliệu",
+        "after": "dữ liệu",
+        "count": 4
+      },
+      {
+        "before": "sốrowS",
+        "after": "số rowS",
+        "count": 2
+      },
+      {
+        "before": "làmatch",
+        "after": "là match",
+        "count": 2
+      },
+      {
+        "before": "quyếtđịnh",
+        "after": "quyết định",
+        "count": 2
+      },
+      {
+        "before": "cònphải",
+        "after": "còn phải",
+        "count": 2
+      },
+      {
+        "before": "khôngtự",
+        "after": "không tự",
+        "count": 2
+      },
+      {
+        "before": "ởsiteA",
+        "after": "ở siteA",
+        "count": 1
+      },
+      {
+        "before": "dùngdistinctkeys",
+        "after": "dùng distinct keys",
+        "count": 1
+      },
+      {
+        "before": "mộtcặp",
+        "after": "một cặp",
+        "count": 1
+      },
+      {
+        "before": "vàpredicate",
+        "after": "và predicate",
+        "count": 1
+      },
+      {
+        "before": "giữs1",
+        "after": "giữ s1",
+        "count": 1
+      },
+      {
+        "before": "cóbốn",
+        "after": "có bốn",
+        "count": 1
+      },
+      {
+        "before": "mộtrowS",
+        "after": "một rowS",
+        "count": 1
+      },
+      {
+        "before": "chỉcònhaicặp",
+        "after": "chỉ còn hai cặp",
+        "count": 1
+      },
+      {
+        "before": "vàsai",
+        "after": "và sai",
+        "count": 1
+      },
+      {
+        "before": "đểlọc",
+        "after": "để lọc",
+        "count": 1
+      },
+      {
+        "before": "kếtquả",
+        "after": "kết quả",
+        "count": 1
+      },
+      {
+        "before": "độrộngrow",
+        "after": "độ rộng row",
+        "count": 1
+      },
+      {
+        "before": "vàlatencyroundtrip",
+        "after": "và latency round trip",
+        "count": 1
+      },
+      {
+        "before": "cólợi",
+        "after": "có lợi",
+        "count": 1
+      },
+      {
+        "before": "chỉthêm",
+        "after": "chỉ thêm",
+        "count": 1
+      },
+      {
+        "before": "côngviệc",
+        "after": "công việc",
+        "count": 1
+      },
+      {
+        "before": "Nếuquery",
+        "after": "Nếu query",
+        "count": 1
+      },
+      {
+        "before": "cóthểgiảmbytes",
+        "after": "có thể giảm bytes",
+        "count": 1
+      },
+      {
+        "before": "mộtmẹođổiCPU",
+        "after": "một mẹo đổi CPU",
+        "count": 1
+      },
+      {
+        "before": "có100keydistinct",
+        "after": "có100 key distinct",
+        "count": 1
+      },
+      {
+        "before": "mỗikey8byte",
+        "after": "mỗi key8 byte",
+        "count": 1
+      },
+      {
+        "before": "mỗirow100byte",
+        "after": "mỗi row 100 byte",
+        "count": 1
+      },
+      {
+        "before": "tốn800byte",
+        "after": "tốn 800 byte",
+        "count": 1
+      },
+      {
+        "before": "khoảng100",
+        "after": "khoảng 100",
+        "count": 1
+      },
+      {
+        "before": "chưatínhprotocol",
+        "after": "chưa tính protocol",
+        "count": 1
+      },
+      {
+        "before": "000rowđều",
+        "after": "000 row đều",
+        "count": 1
+      },
+      {
+        "before": "khônggiảm",
+        "after": "không giảm",
+        "count": 1
+      },
+      {
+        "before": "vàthêmkeyroundtrip",
+        "after": "và thêm key round trip",
+        "count": 1
+      },
+      {
+        "before": "làcostmodel",
+        "after": "là cost model",
+        "count": 1
+      },
+      {
+        "before": "khônglatencyđãđo",
+        "after": "không latency đã đo",
+        "count": 1
+      },
+      {
+        "before": "chọnđịađiểm",
+        "after": "chọn địa điểm",
+        "count": 1
+      },
+      {
+        "before": "đãcache",
+        "after": "đã cache",
+        "count": 1
+      },
+      {
+        "before": "vànguồn",
+        "after": "và nguồn",
+        "count": 1
+      },
+      {
+        "before": "hỗtrợfilter",
+        "after": "hỗ trợ filter",
+        "count": 1
+      },
+      {
+        "before": "nhưngcollationkhác",
+        "after": "nhưng collation khác",
+        "count": 1
+      },
+      {
+        "before": "khôngcho",
+        "after": "không cho",
+        "count": 1
+      },
+      {
+        "before": "cùngngữ",
+        "after": "cùng ngữ",
+        "count": 1
+      },
+      {
+        "before": "chỉpush",
+        "after": "chỉ push",
+        "count": 1
+      },
+      {
+        "before": "contractđảm",
+        "after": "contract đảm",
+        "count": 1
+      },
+      {
+        "before": "rộnghơn",
+        "after": "rộng hơn",
+        "count": 1
+      },
+      {
+        "before": "ởqueryenginechính",
+        "after": "ở query engine chính",
+        "count": 1
+      },
+      {
+        "before": "giữđúng",
+        "after": "giữ đúng",
+        "count": 1
+      },
+      {
+        "before": "khácđơnvị",
+        "after": "khác đơn vị",
+        "count": 1
+      },
+      {
+        "before": "vàgrain",
+        "after": "và grain",
+        "count": 1
+      },
+      {
+        "before": "ởnguồnA",
+        "after": "ở nguồnA",
+        "count": 1
+      },
+      {
+        "before": "làgiáđơnvị",
+        "after": "là giá đơn vị",
+        "count": 1
+      },
+      {
+        "before": "cònởB",
+        "after": "còn ởB",
+        "count": 1
+      },
+      {
+        "before": "làtổngđơn",
+        "after": "là tổng đơn",
+        "count": 1
+      },
+      {
+        "before": "cùngtên",
+        "after": "cùng tên",
+        "count": 1
+      },
+      {
+        "before": "khôngtạo",
+        "after": "không tạo",
+        "count": 1
+      },
+      {
+        "before": "nhấtquán",
+        "after": "nhất quán",
+        "count": 1
+      },
+      {
+        "before": "mappingchuyểnđổi",
+        "after": "mapping chuyển đổi",
+        "count": 1
+      },
+      {
+        "before": "vàquy",
+        "after": "và quy",
+        "count": 1
+      },
+      {
+        "before": "dùngcustomerID",
+        "after": "dùng customer ID",
+        "count": 1
+      },
+      {
+        "before": "làngười",
+        "after": "là người",
+        "count": 1
+      },
+      {
+        "before": "thẳngID",
+        "after": "thẳng ID",
+        "count": 1
+      },
+      {
+        "before": "mộtmatchgiả",
+        "after": "một match giả",
+        "count": 1
+      },
+      {
+        "before": "SQLchạyđược",
+        "after": "SQL chạy được",
+        "count": 1
+      },
+      {
+        "before": "Mộtmappingtable",
+        "after": "Một mapping table",
+        "count": 1
+      },
+      {
+        "before": "đượcquảnlýtheonguồn",
+        "after": "được quản lý theo nguồn",
+        "count": 1
+      },
+      {
+        "before": "hoặcglobalID",
+        "after": "hoặc global ID",
+        "count": 1
+      },
+      {
+        "before": "làđiềukiện",
+        "after": "là điều kiện",
+        "count": 1
+      },
+      {
+        "before": "trướcquery",
+        "after": "trước query",
+        "count": 1
+      },
+      {
+        "before": "dữliệukhôngchắcchắn",
+        "after": "dữ liệu không chắc chắn",
+        "count": 1
+      },
+      {
+        "before": "resultnên",
+        "after": "result nên",
+        "count": 1
+      },
+      {
+        "before": "giữmứctin",
+        "after": "giữ mức tin",
+        "count": 1
+      },
+      {
+        "before": "khôngbịa",
+        "after": "không bịa",
+        "count": 1
+      },
+      {
+        "before": "mộtglobalkey",
+        "after": "một global key",
+        "count": 1
+      },
+      {
+        "before": "hoặcforeign",
+        "after": "hoặc foreign",
+        "count": 1
+      },
+      {
+        "before": "xửlýcredential",
+        "after": "xử lý credential",
+        "count": 1
+      },
+      {
+        "before": "vàdịchloại",
+        "after": "và dịch loại",
+        "count": 1
+      },
+      {
+        "before": "cósnapshotnhấtquánchung",
+        "after": "có snapshot nhất quán chung",
+        "count": 1
+      },
+      {
+        "before": "NếuAđượcđọclúc10",
+        "after": "NếuA được đọc lúc 10",
+        "count": 1
+      },
+      {
+        "before": "phảixét",
+        "after": "phải xét",
+        "count": 1
+      },
+      {
+        "before": "cóthểđổitrongkhoảngấy",
+        "after": "có thể đổi trong khoảng ấy",
+        "count": 1
+      },
+      {
+        "before": "khônggọi",
+        "after": "không gọi",
+        "count": 1
+      },
+      {
+        "before": "làtransactionserializable",
+        "after": "là transaction serializable",
+        "count": 1
+      },
+      {
+        "before": "chỉvì",
+        "after": "chỉ vì",
+        "count": 1
+      },
+      {
+        "before": "mộtSQLstatement",
+        "after": "một SQL statement",
+        "count": 1
+      },
+      {
+        "before": "cóthểphân",
+        "after": "có thể phân",
+        "count": 1
+      },
+      {
+        "before": "cầnmọi",
+        "after": "cần mọi",
+        "count": 1
+      },
+      {
+        "before": "eventliênquan",
+        "after": "event liên quan",
+        "count": 1
+      },
+      {
+        "before": "đếncùngstatehoặcprotocol",
+        "after": "đến cùng state hoặc protocol",
+        "count": 1
+      },
+      {
+        "before": "hợpđúng",
+        "after": "hợp đúng",
+        "count": 1
+      },
+      {
+        "before": "cóthểdùngpartialaggregation",
+        "after": "có thể dùng partial aggregation",
+        "count": 1
+      },
+      {
+        "before": "cáchmerge",
+        "after": "cách merge",
+        "count": 1
+      },
+      {
+        "before": "phụthuộcloạiaggregate",
+        "after": "phụ thuộc loại aggregate",
+        "count": 1
+      },
+      {
+        "before": "vàlatepolicy",
+        "after": "và late policy",
+        "count": 1
+      },
+      {
+        "before": "từAD21",
+        "after": "từ AD 21",
+        "count": 1
+      },
+      {
+        "before": "vẫnáp",
+        "after": "vẫn áp",
+        "count": 1
+      },
+      {
+        "before": "dụngởmỗiworker",
+        "after": "dụng ở mỗi worker",
+        "count": 1
+      },
+      {
+        "before": "statecùngvịtrí",
+        "after": "state cùng vị trí",
+        "count": 1
+      },
+      {
+        "before": "sourceoffset100đãghi",
+        "after": "source offset 100 đã ghi",
+        "count": 1
+      },
+      {
+        "before": "nhưngstatechỉáp",
+        "after": "nhưng state chỉ áp",
+        "count": 1
+      },
+      {
+        "before": "đến90",
+        "after": "đến 90",
+        "count": 1
+      },
+      {
+        "before": "restarttừ101sẽ",
+        "after": "restart từ 101 sẽ",
+        "count": 1
+      },
+      {
+        "before": "Nếustateđến100nhưngoffset90",
+        "after": "Nếu state đến 100 nhưng offset 90",
+        "count": 1
+      },
+      {
+        "before": "cóthểnhâncount",
+        "after": "có thể nhân count",
+        "count": 1
+      },
+      {
+        "before": "dùngrecordidentity",
+        "after": "dùng record identity",
+        "count": 1
+      },
+      {
+        "before": "phùhợp",
+        "after": "phù hợp",
+        "count": 1
+      },
+      {
+        "before": "ranhgiới",
+        "after": "ranh giới",
+        "count": 1
+      },
+      {
+        "before": "mộtACKtupleriêngkhônggiải",
+        "after": "một ACK tuple riêng không giải",
+        "count": 1
+      },
+      {
+        "before": "sinkgửiemail",
+        "after": "sink gửi email",
+        "count": 1
+      },
+      {
+        "before": "tầngnào",
+        "after": "tầng nào",
+        "count": 1
+      },
+      {
+        "before": "hiệuứngngoài",
+        "after": "hiệu ứng ngoài",
+        "count": 1
+      },
+      {
+        "before": "choeventtrùng",
+        "after": "cho event trùng",
+        "count": 1
+      },
+      {
+        "before": "vàcrashgiữa",
+        "after": "và crash giữa",
+        "count": 1
+      },
+      {
+        "before": "ACKđể",
+        "after": "ACK để",
+        "count": 1
+      },
+      {
+        "before": "xétđược",
+        "after": "xét được",
+        "count": 1
+      },
+      {
+        "before": "thayvìgắnnhãn",
+        "after": "thay vì gắn nhãn",
+        "count": 1
+      },
+      {
+        "before": "exactlyoncechomọi",
+        "after": "exactly once cho mọi",
+        "count": 1
+      },
+      {
+        "before": "cầnmetadata",
+        "after": "cần metadata",
+        "count": 1
+      },
+      {
+        "before": "vềschema",
+        "after": "về schema",
+        "count": 1
+      },
+      {
+        "before": "vàđịađiểm",
+        "after": "và địa điểm",
+        "count": 1
+      },
+      {
+        "before": "cóthểđượcreplicate",
+        "after": "có thể được replicate",
+        "count": 1
+      },
+      {
+        "before": "nênversion",
+        "after": "nên version",
+        "count": 1
+      },
+      {
+        "before": "nàophải",
+        "after": "nào phải",
+        "count": 1
+      },
+      {
+        "before": "Mộtentrymới",
+        "after": "Một entry mới",
+        "count": 1
+      },
+      {
+        "before": "cóthểtrỏđíchkhôngcònowner",
+        "after": "có thể trỏ đích không còn owner",
+        "count": 1
+      },
+      {
+        "before": "capabilityerrorcầnđượcxửlý",
+        "after": "capability error cần được xử lý",
+        "count": 1
+      },
+      {
+        "before": "nhưtrạngtháithực",
+        "after": "như trạng thái thực",
+        "count": 1
+      },
+      {
+        "before": "khôngtựretryvôhạn",
+        "after": "không tự retry vô hạn",
+        "count": 1
+      },
+      {
+        "before": "sâuLDAP",
+        "after": "sâu LDAP",
+        "count": 1
+      },
+      {
+        "before": "rolecủadirectorylàđầuvào",
+        "after": "role của directory là đầu vào",
+        "count": 1
+      },
+      {
+        "before": "chọnvịtríquery",
+        "after": "chọn vị trí query",
+        "count": 1
+      },
+      {
+        "before": "vàphânquyềnnguồn",
+        "after": "và phân quyền nguồn",
+        "count": 1
+      },
+      {
+        "before": "khôngthaydistributedcommit",
+        "after": "không thay distributed commit",
+        "count": 1
+      },
+      {
+        "before": "hoặcentitymapping",
+        "after": "hoặc entity mapping",
+        "count": 1
+      },
+      {
+        "before": "cóhairowkey4",
+        "after": "có hai row key4",
+        "count": 1
+      },
+      {
+        "before": "cóbarowkey4vàhairowkey8",
+        "after": "có ba row key4 và hai row key8",
+        "count": 1
+      },
+      {
+        "before": "Tínhoutputjoin",
+        "after": "Tính output join",
+        "count": 1
+      },
+      {
+        "before": "trongchiếnlược",
+        "after": "trong chiến lược",
+        "count": 1
+      },
+      {
+        "before": "vídụcostđểsemijoin",
+        "after": "ví dụ cost để semijoin",
+        "count": 1
+      },
+      {
+        "before": "tệhơn",
+        "after": "tệ hơn",
+        "count": 1
+      },
+      {
+        "before": "kíchthước",
+        "after": "kích thước",
+        "count": 1
+      },
+      {
+        "before": "khôngchỉ",
+        "after": "không chỉ",
+        "count": 1
+      },
+      {
+        "before": "datasetnhỏ",
+        "after": "dataset nhỏ",
+        "count": 1
+      },
+      {
+        "before": "Mộtconnectorpush",
+        "after": "Một connector push",
+        "count": 1
+      },
+      {
+        "before": "sangnguồncollationcase",
+        "after": "sang nguồn collation case",
+        "count": 1
+      },
+      {
+        "before": "trongkhicontractchínhcase",
+        "after": "trong khi contract chính case",
+        "count": 1
+      },
+      {
+        "before": "Dựngphảnvídụ",
+        "after": "Dựng phản ví dụ",
+        "count": 1
+      },
+      {
+        "before": "vàcáchgiữđúng",
+        "after": "và cách giữ đúng",
+        "count": 1
+      },
+      {
+        "before": "Thiếtkếstreamingreport",
+        "after": "Thiết kế streaming report",
+        "count": 1
+      },
+      {
+        "before": "customertrênaibên",
+        "after": "customer trên ai bên",
+        "count": 1
+      },
+      {
+        "before": "Nêugrain",
+        "after": "Nêu grain",
+        "count": 1
+      },
+      {
+        "before": "vàcáchkiểm",
+        "after": "và cách kiểm",
+        "count": 1
+      },
+      {
+        "before": "Chỉrađiềuchưathểhứa",
+        "after": "Chỉ ra điều chưa thể hứa",
+        "count": 1
+      },
+      {
+        "before": "nếuexternal",
+        "after": "nếu external",
+        "count": 1
+      },
+      {
+        "before": "sinkkhôngidempotent",
+        "after": "sink không idempotent",
+        "count": 1
+      },
+      {
+        "before": "fulljoinnhânmọicặpmatch",
+        "after": "full join nhân mọi cặp match",
+        "count": 1
+      },
+      {
+        "before": "Costphải",
+        "after": "Cost phải",
+        "count": 1
+      },
+      {
+        "before": "tínhcảkeysetđiquavàsubsetquayvề",
+        "after": "tính cả key set đi qua và subset quay về",
+        "count": 1
+      },
+      {
+        "before": "cóthểmatchtheocontractchínhnhưngkhôngmatchfilternguồn",
+        "after": "có thể match theo contract chính nhưng không match filter nguồn",
+        "count": 1
+      },
+      {
+        "before": "đổithêmbytes",
+        "after": "đổi thêm bytes",
+        "count": 1
+      },
+      {
+        "before": "giữba",
+        "after": "giữ ba",
+        "count": 1
+      },
+      {
+        "before": "chỉgiữmộtrowcho",
+        "after": "chỉ giữ một row cho",
+        "count": 1
+      },
+      {
+        "before": "dụS10row",
+        "after": "dụ S10 row",
+        "count": 1
+      },
+      {
+        "before": "Cóthểlọckeys",
+        "after": "Có thể lọc keys",
+        "count": 1
+      },
+      {
+        "before": "phảinêugiảđịnh",
+        "after": "phải nêu giả định",
+        "count": 1
+      },
+      {
+        "before": "Nguồnchứarow",
+        "after": "Nguồn chứa row",
+        "count": 1
+      },
+      {
+        "before": "contractchínhxem",
+        "after": "contract chính xem",
+        "count": 1
+      },
+      {
+        "before": "filternguồnlạiloại",
+        "after": "filter nguồn lại loại",
+        "count": 1
+      },
+      {
+        "before": "trùmrồicheckexactởchính",
+        "after": "trùm rồi check exact ở chính",
+        "count": 1
+      },
+      {
+        "before": "Rubriccầnmọieventtớistateđúngkey",
+        "after": "Rubric cần mọi event tới state đúng key",
+        "count": 1
+      },
+      {
+        "before": "globalidentitykhôngcollision",
+        "after": "global identity không collision",
+        "count": 1
+      },
+      {
+        "before": "duplicatequyrõ",
+        "after": "duplicate quy rõ",
+        "count": 1
+      },
+      {
+        "before": "crashđốichiếuvớioracle",
+        "after": "crash đối chiếu với oracle",
+        "count": 1
+      },
+      {
+        "before": "Sinkkhôngidempotentvàkhôngatomicvớioffsetkhôngtựđượcđảmbảoexactlyonce",
+        "after": "Sink không idempotent và không atomic với offset không tự được đảm bảo exactly once",
+        "count": 1
+      },
+      {
+        "before": "Khôngchấmchỉtheotênframework",
+        "after": "Không chấm chỉ theo tên framework",
+        "count": 1
+      },
+      {
+        "before": "Bộsinhcóduplicatekey",
+        "after": "Bộ sinh có duplicate key",
+        "count": 1
+      },
+      {
+        "before": "sourcecapabilitykhácvàeventtrùng",
+        "after": "source capability khác và event trùng",
+        "count": 1
+      },
+      {
+        "before": "Oraclefulljoinnhỏđộc",
+        "after": "Oracle full join nhỏ độc",
+        "count": 1
+      },
+      {
+        "before": "lậpkiểmbagresultsaulọc",
+        "after": "lập kiểm bag result sau lọc",
+        "count": 1
+      },
+      {
+        "before": "Modelstreamgiữthứtựevent",
+        "after": "Model stream giữ thứ tự event",
+        "count": 1
+      },
+      {
+        "before": "offsetvàstateởcáctầngbềnriêng",
+        "after": "offset và state ở các tầng bền riêng",
+        "count": 1
+      },
+      {
+        "before": "khôngtínhmọiACKlàcommitstate",
+        "after": "không tính mọi ACK là commit state",
+        "count": 1
+      },
+      {
+        "before": "NgườihọcđặtoperatorởsiteA",
+        "after": "Người học đặt operator ở siteA",
+        "count": 1
+      },
+      {
+        "before": "bytesdichuyểnvàresult",
+        "after": "bytes di chuyển và result",
+        "count": 1
+      },
+      {
+        "before": "Đềcóschema",
+        "after": "Đề có schema",
+        "count": 1
+      },
+      {
+        "before": "modelkhônggiảlàm",
+        "after": "model không giả làm",
+        "count": 1
+      },
+      {
+        "before": "mộtqueryđãchạytrênnhiềudatabase",
+        "after": "một query đã chạy trên nhiều database",
+        "count": 1
+      }
+    ]
+  }
+]

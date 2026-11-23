@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-05",
+  "passed": 16,
+  "checks": [
+    {
+      "name": "hash-link-tamper",
+      "passed": true,
+      "detail": "Real SHA256 detects middle block edit against unchanged successor."
+    },
+    {
+      "name": "recomputed-chain-needs-anchor",
+      "passed": true,
+      "detail": "Recomputed internally consistent history changes the authenticated tip; hashes alone do not select authority."
+    },
+    {
+      "name": "merkle-membership",
+      "passed": true,
+      "detail": "24 actual SHA256 positive/altered-message/short-proof checks for authored eight-leaf tree; not Bitcoin wire format."
+    },
+    {
+      "name": "signature-covers-recipient",
+      "passed": true,
+      "detail": "Actual Ed25519 sign/verify for canonical entire toy message; changed recipient rejected. Not a blockchain signature implementation or a proof of real-world identity."
+    },
+    {
+      "name": "utxo-sequential-double-spend",
+      "passed": true,
+      "detail": "12 input, 11 remaining value plus fee1; second valid-signature transaction cannot spend deleted input."
+    },
+    {
+      "name": "duplicate-input-mutant-killed",
+      "passed": true,
+      "detail": "Duplicate outpoint must be rejected before summing; otherwise one value can be counted twice."
+    },
+    {
+      "name": "partial-output-spend",
+      "passed": true,
+      "detail": "Index by outpoint preserves unspent second output of same transaction."
+    },
+    {
+      "name": "utxo-conservation-grid",
+      "passed": true,
+      "detail": "648 finite value/output/fee comparisons; format, identity and signature preconditions assumed separately, not a crypto proof."
+    },
+    {
+      "name": "byzantine-quorum-bound",
+      "passed": true,
+      "detail": "14858 quorum pairs for f0..3. Guarantees an honest intersection only with <=f Byzantine and correct locking rules; not a complete BFT protocol."
+    },
+    {
+      "name": "pow-threshold-count",
+      "passed": true,
+      "detail": "Actual enumeration of toy eight-bit outputs; expected trials64 versus51.2 under independent uniform trials."
+    },
+    {
+      "name": "fork-validity-set",
+      "passed": true,
+      "detail": "Toy max-transactions rules illustrate narrowing versus expanding validation set; activation/convergence not modeled."
+    },
+    {
+      "name": "escrow-multisig",
+      "passed": true,
+      "detail": "Two distinct authorized signer identities, not number of signature strings; no delivery truth inferred."
+    },
+    {
+      "name": "account-nonce-and-replay",
+      "passed": true,
+      "detail": "Actual authored state-transition trace, not Ethereum failure/fee semantics."
+    },
+    {
+      "name": "actual-sql-read-model",
+      "passed": true,
+      "detail": "Executed SQLite3.53.1 window query on authored data. No SQL-to-blockchain or native-chain integration."
+    },
+    {
+      "name": "rejected-event-query-mutant-killed",
+      "passed": true,
+      "detail": "Dropping acceptance filter changes actual query result."
+    },
+    {
+      "name": "gas-budget-atomicity",
+      "passed": true,
+      "detail": "Finite toy VM budget and rollback of staged business writes, not EVM fee schedule."
+    }
+  ],
+  "scope": "Authored finite models, actual SHA256/Ed25519 computations and two SQLite query executions. No public/devnet blockchain, EVM, token, wallet, Byzantine network or oracle service was executed. No collision-resistance proof from these samples.",
+  "lessons": {
+    "AD54": "5c9ebf2667bec31c66892f6b3b569d5fcc9a41d0910c37bbf65764f50c44f518",
+    "AD81": "3df57fee2c9d14ba04b8852b79d1113c285f288e5c6cc81e49283eadc908a2c0",
+    "AD82": "59afd5e2c5303f52986f84594ee0f2dfb847bcbdfa5abb5c977a7e31d819c167"
+  }
+}

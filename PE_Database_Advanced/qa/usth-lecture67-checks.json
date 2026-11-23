@@ -1,0 +1,687 @@
+{
+  "date": "2026-11-06",
+  "scope": "USTH06/07 independent finite examples and selected actual SQLite queries; native MySQL checks explicitly named when --mysql is supplied; no SQL Server engine, production backend, or all-workload guarantee.",
+  "lessonSha256": {
+    "USTH06": "a25bb2ee0ac429f30e8ede0334ee7d349210f03c8ae7bb1fb29323c0884df18f",
+    "USTH07": "8a856e5bd4c54cef005b3f10990f9026aebcdb6876dbb751571bb471a3afa2d4"
+  },
+  "engine": "8.4.13",
+  "schemaCreatedFresh": "pe_usth67_af07e3e10c57",
+  "cleanup": "Fresh task-local schema retained; no DROP. Task server shutdown handled separately.",
+  "sqliteVersion": "3.53.1",
+  "finiteTernaryRelations": 256,
+  "subtypeCases": 27,
+  "checks": [
+    {
+      "name": "USTH06-Luyện tập",
+      "passed": true,
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail": ""
+    },
+    {
+      "name": "USTH06-Đáp án và lập luận",
+      "passed": true,
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail": ""
+    },
+    {
+      "name": "USTH06-fences",
+      "passed": true,
+      "actual": 0,
+      "expected": 0,
+      "detail": ""
+    },
+    {
+      "name": "USTH07-Luyện tập",
+      "passed": true,
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail": ""
+    },
+    {
+      "name": "USTH07-Đáp án và lập luận",
+      "passed": true,
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "detail": ""
+    },
+    {
+      "name": "USTH07-fences",
+      "passed": true,
+      "actual": 0,
+      "expected": 0,
+      "detail": ""
+    },
+    {
+      "name": "ternary-original-counterexample",
+      "passed": true,
+      "actual": [
+        [
+          "Lan",
+          "A",
+          "C1"
+        ]
+      ],
+      "expected": [
+        [
+          "Lan",
+          "A",
+          "C1"
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "ternary-projection-finite-oracle",
+      "passed": true,
+      "actual": true,
+      "expected": true,
+      "detail": "All 256 relations over a 2x2x2 universe; this finite check is not a general proof."
+    },
+    {
+      "name": "maker-exactly-one-device-at-most-one",
+      "passed": true,
+      "actual": 6,
+      "expected": 6,
+      "detail": "Two mandatory Makers inject into three optional Devices; one Device may remain unfeatured."
+    },
+    {
+      "name": "roles-not-symmetry",
+      "passed": true,
+      "actual": false,
+      "expected": false,
+      "detail": ""
+    },
+    {
+      "name": "canonical-friendship",
+      "passed": true,
+      "actual": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "A",
+          "C"
+        ]
+      ],
+      "expected": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "A",
+          "C"
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "three-subtype-mappings-with-unknown-resolution",
+      "passed": true,
+      "actual": 27,
+      "expected": 27,
+      "detail": "Disjoint partial specialization, stable identity; NULL alone cannot encode subtype membership."
+    },
+    {
+      "name": "actual-SQLite-weak-key-owner-qualified",
+      "passed": true,
+      "actual": 2,
+      "expected": 2,
+      "detail": ""
+    },
+    {
+      "name": "actual-SQLite-weak-duplicate-key-rejected",
+      "passed": true,
+      "actual": true,
+      "expected": true,
+      "detail": ""
+    },
+    {
+      "name": "actual-SQLite-weak-missing-owner-rejected",
+      "passed": true,
+      "actual": true,
+      "expected": true,
+      "detail": ""
+    },
+    {
+      "name": "actual-SQLite-FK-does-not-force-parent-participation",
+      "passed": true,
+      "actual": [
+        [
+          "Empty"
+        ]
+      ],
+      "expected": [
+        [
+          "Empty"
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "actual-SQLite-one-favorite-per-member",
+      "passed": true,
+      "actual": true,
+      "expected": true,
+      "detail": ""
+    },
+    {
+      "name": "actual-SQLite-root-subclass-identity",
+      "passed": true,
+      "actual": [
+        [
+          "C1",
+          24
+        ]
+      ],
+      "expected": [
+        [
+          "C1",
+          24
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "actual-SQLite-three-view-queries",
+      "passed": true,
+      "actual": [
+        [
+          [
+            501,
+            70
+          ],
+          [
+            502,
+            10
+          ]
+        ],
+        [
+          [
+            501,
+            70
+          ]
+        ],
+        [
+          [
+            2,
+            20
+          ]
+        ]
+      ],
+      "expected": [
+        [
+          [
+            501,
+            70
+          ],
+          [
+            502,
+            10
+          ]
+        ],
+        [
+          [
+            501,
+            70
+          ]
+        ],
+        [
+          [
+            2,
+            20
+          ]
+        ]
+      ],
+      "detail": "Exact fixture/read-only view SQL; no MySQL updatability or trigger inference."
+    },
+    {
+      "name": "actual-SQLite-view-reads-new-base-data",
+      "passed": true,
+      "actual": 50,
+      "expected": 50,
+      "detail": ""
+    },
+    {
+      "name": "binary-search-22-depths",
+      "passed": true,
+      "actual": {
+        "4": 8,
+        "3": 4,
+        "5": 7,
+        "2": 2,
+        "1": 1
+      },
+      "expected": {
+        "1": 1,
+        "2": 2,
+        "3": 4,
+        "4": 8,
+        "5": 7
+      },
+      "detail": ""
+    },
+    {
+      "name": "binary-search-22-total-and-maximum",
+      "passed": true,
+      "actual": [
+        84,
+        5
+      ],
+      "expected": [
+        84,
+        5
+      ],
+      "detail": ""
+    },
+    {
+      "name": "uniform-linear-search-22",
+      "passed": true,
+      "actual": [
+        11.5,
+        22
+      ],
+      "expected": [
+        11.5,
+        22
+      ],
+      "detail": ""
+    },
+    {
+      "name": "nullable-price-audit-truth-table",
+      "passed": true,
+      "actual": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "expected": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "detail": "Finite value-level oracle; SQL NULL-safe predicate checked separately in native mode."
+    },
+    {
+      "name": "grouped-stock-versus-first-row-mutant",
+      "passed": true,
+      "actual": [
+        3,
+        7
+      ],
+      "expected": [
+        3,
+        7
+      ],
+      "detail": ""
+    },
+    {
+      "name": "statement-row-limit-model",
+      "passed": true,
+      "actual": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "expected": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "detail": "No SQL Server process was run."
+    },
+    {
+      "name": "MySQL-index-exists",
+      "passed": true,
+      "actual": 1,
+      "expected": 1,
+      "detail": ""
+    },
+    {
+      "name": "MySQL-exact-three-views",
+      "passed": true,
+      "actual": [
+        [
+          [
+            501,
+            "70.00"
+          ],
+          [
+            502,
+            "10.00"
+          ]
+        ],
+        [
+          [
+            501,
+            "70.00"
+          ]
+        ],
+        [
+          [
+            2,
+            "20.00"
+          ]
+        ]
+      ],
+      "expected": [
+        [
+          [
+            501,
+            "70.00"
+          ],
+          [
+            502,
+            "10.00"
+          ]
+        ],
+        [
+          [
+            501,
+            "70.00"
+          ]
+        ],
+        [
+          [
+            2,
+            "20.00"
+          ]
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "MySQL-procedure-IN-OUT-Hue",
+      "passed": true,
+      "actual": [
+        [
+          2
+        ]
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "MySQL-procedure-IN-OUT-empty",
+      "passed": true,
+      "actual": [
+        [
+          0
+        ]
+      ],
+      "expected": [
+        [
+          0
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "MySQL-check-option-insert-hidden-rejected",
+      "passed": true,
+      "actual": true,
+      "expected": true,
+      "detail": ""
+    },
+    {
+      "name": "MySQL-check-option-update-hidden-rejected",
+      "passed": true,
+      "actual": true,
+      "expected": true,
+      "detail": ""
+    },
+    {
+      "name": "MySQL-base-write-not-filtered-by-view",
+      "passed": true,
+      "actual": [
+        [
+          [
+            "Danang"
+          ]
+        ],
+        []
+      ],
+      "expected": [
+        [
+          [
+            "Danang"
+          ]
+        ],
+        []
+      ],
+      "detail": ""
+    },
+    {
+      "name": "MySQL-multirow-same-product-stock",
+      "passed": true,
+      "actual": [
+        [
+          3
+        ]
+      ],
+      "expected": [
+        [
+          3
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "MySQL-insufficient-stock-statement-fails",
+      "passed": true,
+      "actual": true,
+      "expected": true,
+      "detail": ""
+    },
+    {
+      "name": "MySQL-failed-multirow-line-and-stock-rollback",
+      "passed": true,
+      "actual": [
+        [
+          [
+            0
+          ]
+        ],
+        [
+          [
+            3
+          ]
+        ]
+      ],
+      "expected": [
+        [
+          [
+            0
+          ]
+        ],
+        [
+          [
+            3
+          ]
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "MySQL-audit-multirow-including-NULL",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          "10.00",
+          "12.00"
+        ],
+        [
+          3,
+          null,
+          "12.00"
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          "10.00",
+          "12.00"
+        ],
+        [
+          3,
+          null,
+          "12.00"
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "MySQL-no-audit-for-unchanged-price",
+      "passed": true,
+      "actual": [
+        [
+          2
+        ]
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "MySQL-audit-new-NULL",
+      "passed": true,
+      "actual": [
+        [
+          1
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "MySQL-trigger-DDL-outside-statement-count-branch",
+      "passed": true,
+      "actual": 2,
+      "expected": 2,
+      "detail": "MySQL row triggers only. SQL Server trigger code remains engine acceptance work."
+    },
+    {
+      "name": "MySQL-fixture-InnoDB",
+      "passed": true,
+      "actual": [
+        "InnoDB"
+      ],
+      "expected": [
+        "InnoDB"
+      ],
+      "detail": ""
+    }
+  ],
+  "passed": 41,
+  "total": 41
+}

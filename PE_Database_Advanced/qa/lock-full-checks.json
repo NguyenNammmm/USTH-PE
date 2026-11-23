@@ -1,0 +1,134 @@
+{
+  "scope": "Finite FIFO/tree/example and structure checks. No SQL, no general proof certification.",
+  "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+  "checks": [
+    {
+      "name": "FIFO reader cannot bypass queued writer",
+      "actual": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "name": "writer granted after holder release",
+      "actual": [
+        "T2"
+      ],
+      "expected": [
+        "T2"
+      ],
+      "passed": true
+    },
+    {
+      "name": "compatible reader prefix batched",
+      "actual": [
+        "T3",
+        "T4"
+      ],
+      "expected": [
+        "T3",
+        "T4"
+      ],
+      "passed": true
+    },
+    {
+      "name": "cancel waiting writer rescans nextreader",
+      "actual": [
+        "T3"
+      ],
+      "expected": [
+        "T3"
+      ],
+      "passed": true
+    },
+    {
+      "name": "premature unlock transfer breaks observedtotal",
+      "actual": 180,
+      "expected": 180,
+      "passed": true
+    },
+    {
+      "name": "commitdependency transitiveabortexcludesunrelated",
+      "actual": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "expected": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "passed": true
+    },
+    {
+      "name": "tree allows early ancestorrelease withchildheld",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "tree rejects relock",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "2PL siblinglocks not treelegal whenstartingatsibling",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "Luyện tập questionsequence",
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "passed": true
+    },
+    {
+      "name": "Đáp án và lập luận questionsequence",
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "passed": true
+    },
+    {
+      "name": "fencesbalanced",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    }
+  ],
+  "passed": 12,
+  "total": 12
+}

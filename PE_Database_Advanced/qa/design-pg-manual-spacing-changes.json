@@ -1,0 +1,1772 @@
+{
+  "scope": [
+    "AD02",
+    "AD03",
+    "AD04",
+    "AD05",
+    "AD06",
+    "AD07",
+    "AD08",
+    "AD09",
+    "AD55",
+    "AD56",
+    "AD57",
+    "AD58",
+    "AD59",
+    "AD83",
+    "AD84"
+  ],
+  "method": "Individually reviewed literal prose fragments; fenced code unchanged. This is a bounded readability pass, not an exhaustive Vietnamese tokenizer.",
+  "changes": [
+    {
+      "id": "AD02",
+      "lineBeforeEdit": 112,
+      "from": "miền{",
+      "to": "miền {",
+      "occurrences": 1
+    },
+    {
+      "id": "AD02",
+      "lineBeforeEdit": 112,
+      "from": "chứa3",
+      "to": "chứa 3",
+      "occurrences": 2
+    },
+    {
+      "id": "AD02",
+      "lineBeforeEdit": 112,
+      "from": "thêm4",
+      "to": "thêm 4",
+      "occurrences": 1
+    },
+    {
+      "id": "AD02",
+      "lineBeforeEdit": 112,
+      "from": "có3.",
+      "to": "có 3.",
+      "occurrences": 1
+    },
+    {
+      "id": "AD02",
+      "lineBeforeEdit": 113,
+      "from": "sinh viên6",
+      "to": "sinh viên 6",
+      "occurrences": 1
+    },
+    {
+      "id": "AD02",
+      "lineBeforeEdit": 134,
+      "from": "sinh viên0/1/nhiều",
+      "to": "sinh viên 0/1/nhiều",
+      "occurrences": 1
+    },
+    {
+      "id": "AD03",
+      "lineBeforeEdit": 49,
+      "from": "giá trị0",
+      "to": "giá trị 0",
+      "occurrences": 1
+    },
+    {
+      "id": "AD03",
+      "lineBeforeEdit": 53,
+      "from": "ví dụ1",
+      "to": "ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD03",
+      "lineBeforeEdit": 61,
+      "from": "về0",
+      "to": "về 0",
+      "occurrences": 1
+    },
+    {
+      "id": "AD03",
+      "lineBeforeEdit": 86,
+      "from": "câu2",
+      "to": "câu 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD04",
+      "lineBeforeEdit": 15,
+      "from": "Ví dụ1",
+      "to": "Ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD04",
+      "lineBeforeEdit": 50,
+      "from": "Ví dụ2",
+      "to": "Ví dụ 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD04",
+      "lineBeforeEdit": 52,
+      "from": "là2^n",
+      "to": "là 2^n",
+      "occurrences": 1
+    },
+    {
+      "id": "AD04",
+      "lineBeforeEdit": 58,
+      "from": "Ví dụ3",
+      "to": "Ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD04",
+      "lineBeforeEdit": 62,
+      "from": "unionFi",
+      "to": "union Fi",
+      "occurrences": 2
+    },
+    {
+      "id": "AD04",
+      "lineBeforeEdit": 89,
+      "from": "Mức1",
+      "to": "Mức 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD04",
+      "lineBeforeEdit": 91,
+      "from": "Mức2",
+      "to": "Mức 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD04",
+      "lineBeforeEdit": 91,
+      "from": "câu2",
+      "to": "câu 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD04",
+      "lineBeforeEdit": 98,
+      "from": "ví dụ3",
+      "to": "ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 7,
+      "from": "như3NF",
+      "to": "như 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 7,
+      "from": "hơn3NF",
+      "to": "hơn 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 19,
+      "from": "Ví dụ1",
+      "to": "Ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 52,
+      "from": "Ví dụ2",
+      "to": "Ví dụ 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 60,
+      "from": "Ví dụ3",
+      "to": "Ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 64,
+      "from": "của3NF",
+      "to": "của 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 64,
+      "from": "chọn3NF",
+      "to": "chọn 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 64,
+      "from": "kế3NF",
+      "to": "kế 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 64,
+      "from": "ở3NF",
+      "to": "ở 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 87,
+      "from": "Mức1",
+      "to": "Mức 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 89,
+      "from": "Mức2",
+      "to": "Mức 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 89,
+      "from": "câu3",
+      "to": "câu 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 89,
+      "from": "câu4",
+      "to": "câu 4",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 96,
+      "from": "ví dụ3",
+      "to": "ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 96,
+      "from": "kế3NF",
+      "to": "kế 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD05",
+      "lineBeforeEdit": 100,
+      "from": "hơn2NF",
+      "to": "hơn 2NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 5,
+      "from": "mọi3NF",
+      "to": "mọi 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 7,
+      "from": "ở3NF",
+      "to": "ở 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 29,
+      "from": "Ví dụ1",
+      "to": "Ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 33,
+      "from": "Ví dụ2",
+      "to": "Ví dụ 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 33,
+      "from": "ở3NF",
+      "to": "ở 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 33,
+      "from": "relation3NF",
+      "to": "relation 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 33,
+      "from": "ởBCNF",
+      "to": "ở BCNF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 35,
+      "from": "Ví dụ3",
+      "to": "Ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 43,
+      "from": "quả3NF",
+      "to": "quả 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 49,
+      "from": "kiện3NF",
+      "to": "kiện 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 51,
+      "from": "ở3NF",
+      "to": "ở 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 51,
+      "from": "ởBCNF",
+      "to": "ở BCNF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 67,
+      "from": "có3NF",
+      "to": "có 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 77,
+      "from": ":3NF",
+      "to": ": 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 90,
+      "from": "Mức1",
+      "to": "Mức 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 92,
+      "from": "Mức2",
+      "to": "Mức 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 92,
+      "from": "câu1",
+      "to": "câu 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 92,
+      "from": "sinhDE",
+      "to": "sinh DE",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 96,
+      "from": "là3NF",
+      "to": "là 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 98,
+      "from": "ví dụ3",
+      "to": "ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 98,
+      "from": "nhờCD",
+      "to": "nhờ CD",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 98,
+      "from": "trongAB",
+      "to": "trong AB",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 98,
+      "from": "relationBC",
+      "to": "relation BC",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 99,
+      "from": "không3NF",
+      "to": "không 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 111,
+      "from": "về3NF",
+      "to": "về 3NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 13,
+      "from": "Ví dụ1",
+      "to": "Ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 15,
+      "from": "Ví dụ2",
+      "to": "Ví dụ 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 17,
+      "from": "Ví dụ3",
+      "to": "Ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 46,
+      "from": "ở4NF",
+      "to": "ở 4NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 46,
+      "from": "phạm4NF",
+      "to": "phạm 4NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 48,
+      "from": "phạmBCNF",
+      "to": "phạm BCNF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 48,
+      "from": "phạm4NF",
+      "to": "phạm 4NF",
+      "occurrences": 2
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 63,
+      "from": "quả4NF",
+      "to": "quả 4NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 65,
+      "from": "ví dụ1",
+      "to": "ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 71,
+      "from": "ở4NF",
+      "to": "ở 4NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 71,
+      "from": "nhãn4NF",
+      "to": "nhãn 4NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 77,
+      "from": "rã4NF",
+      "to": "rã 4NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 78,
+      "from": "không4NF",
+      "to": "không 4NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 82,
+      "from": "Mức1",
+      "to": "Mức 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 84,
+      "from": "Mức2",
+      "to": "Mức 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 84,
+      "from": "câu2",
+      "to": "câu 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 84,
+      "from": "là2×3=6",
+      "to": "là 2×3=6",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 90,
+      "from": "có2",
+      "to": "có 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 90,
+      "from": "và3",
+      "to": "và 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 91,
+      "from": "không4NF",
+      "to": "không 4NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 17,
+      "from": "Ví dụ1",
+      "to": "Ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 17,
+      "from": "có2",
+      "to": "có 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 17,
+      "from": "và3",
+      "to": "và 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 17,
+      "from": "có6",
+      "to": "có 6",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 21,
+      "from": "Ví dụ2",
+      "to": "Ví dụ 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 37,
+      "from": "gọi5NF",
+      "to": "gọi 5NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 39,
+      "from": "ví dụ2",
+      "to": "ví dụ 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 39,
+      "from": "đạt5NF",
+      "to": "đạt 5NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 39,
+      "from": "ởPJNF",
+      "to": "ở PJNF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 41,
+      "from": "đến5NF",
+      "to": "đến 5NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 61,
+      "from": "ởDKNF",
+      "to": "ở DKNF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 63,
+      "from": "Ví dụ3",
+      "to": "Ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 63,
+      "from": "ởDKNF",
+      "to": "ở DKNF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 65,
+      "from": "đãDKNF",
+      "to": "đã DKNF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 78,
+      "from": "Mức1",
+      "to": "Mức 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 80,
+      "from": "Mức2",
+      "to": "Mức 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 80,
+      "from": "câu1",
+      "to": "câu 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 91,
+      "from": "có0/1/nhiều",
+      "to": "có 0/1/nhiều",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 5,
+      "from": "số1",
+      "to": "số 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 17,
+      "from": "của1NF",
+      "to": "của 1NF",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 21,
+      "from": "hạn1:1",
+      "to": "hạn 1:1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 25,
+      "from": "Với1:1",
+      "to": "Với 1:1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 27,
+      "from": "Ví dụ1",
+      "to": "Ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 65,
+      "from": "có1,2",
+      "to": "có 1,2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 71,
+      "from": "hệ1:N",
+      "to": "hệ 1:N",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 75,
+      "from": "Ví dụ2",
+      "to": "Ví dụ 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 89,
+      "from": "ca0",
+      "to": "ca 0",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 91,
+      "from": "Ví dụ3",
+      "to": "Ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 95,
+      "from": "là3500",
+      "to": "là 3500",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 95,
+      "from": "là3600",
+      "to": "là 3600",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 106,
+      "from": "dòng3500",
+      "to": "dòng 3500",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 112,
+      "from": "ca0",
+      "to": "ca 0",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 125,
+      "from": "Mức1",
+      "to": "Mức 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 127,
+      "from": "Mức2",
+      "to": "Mức 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 127,
+      "from": "câu1",
+      "to": "câu 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 132,
+      "from": "ví dụ2",
+      "to": "ví dụ 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 133,
+      "from": "cho0/1/2",
+      "to": "cho 0/1/2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 133,
+      "from": "vừaStudent",
+      "to": "vừa Student",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 134,
+      "from": "và3",
+      "to": "và 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 134,
+      "from": "quả3500",
+      "to": "quả 3500",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 134,
+      "from": "mức3700",
+      "to": "mức 3700",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 134,
+      "from": "tạiFeb15",
+      "to": "tại Feb15",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 134,
+      "from": "dòng3600",
+      "to": "dòng 3600",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 134,
+      "from": "dòng3700",
+      "to": "dòng 3700",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 134,
+      "from": "dòng3500",
+      "to": "dòng 3500",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 3,
+      "from": "PostgreSQL18",
+      "to": "PostgreSQL 18",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 13,
+      "from": "PostgreSQL18",
+      "to": "PostgreSQL 18",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 25,
+      "from": "Ví dụ1",
+      "to": "Ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 45,
+      "from": "từ1%",
+      "to": "từ 1%",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 45,
+      "from": "lên90%",
+      "to": "lên 90%",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 49,
+      "from": "bằng0",
+      "to": "bằng 0",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 51,
+      "from": "Ví dụ2",
+      "to": "Ví dụ 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 51,
+      "from": "PageP",
+      "to": "Page P",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 51,
+      "from": "pageQ",
+      "to": "page Q",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 59,
+      "from": "Ví dụ3",
+      "to": "Ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 92,
+      "from": "bản18",
+      "to": "bản 18",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 108,
+      "from": "ví dụ1",
+      "to": "ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 108,
+      "from": "trả1,2",
+      "to": "trả 1,2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 110,
+      "from": "thành20.000",
+      "to": "thành 20.000",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 110,
+      "from": "cohortA",
+      "to": "cohort A",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 110,
+      "from": "cohortB",
+      "to": "cohort B",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 111,
+      "from": "ví dụ3",
+      "to": "ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 115,
+      "from": "Mức1",
+      "to": "Mức 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 117,
+      "from": "Mức2",
+      "to": "Mức 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 117,
+      "from": "câu1",
+      "to": "câu 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 117,
+      "from": "partitionFeb",
+      "to": "partition Feb",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 124,
+      "from": "ngàyMar1",
+      "to": "ngày Mar1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 9,
+      "from": "khác0",
+      "to": "khác 0",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 25,
+      "from": "salary100",
+      "to": "salary 100",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 25,
+      "from": "salary120",
+      "to": "salary 120",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 25,
+      "from": "creatorT1",
+      "to": "creator T1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 25,
+      "from": "bởiT2",
+      "to": "bởi T2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 27,
+      "from": "Ví dụ1",
+      "to": "Ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 48,
+      "from": "expected100",
+      "to": "expected 100",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 52,
+      "from": "Ví dụ2",
+      "to": "Ví dụ 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 54,
+      "from": "thấy2",
+      "to": "thấy 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 54,
+      "from": "row1",
+      "to": "row 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 54,
+      "from": "row2",
+      "to": "row 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 54,
+      "from": "còn0",
+      "to": "còn 0",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 56,
+      "from": "như2PL",
+      "to": "như 2PL",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 66,
+      "from": "strict2PL",
+      "to": "strict 2PL",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 68,
+      "from": "Ví dụ3",
+      "to": "Ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 70,
+      "from": "salary100",
+      "to": "salary 100",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 70,
+      "from": "thành120",
+      "to": "thành 120",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 85,
+      "from": "ví dụ1",
+      "to": "ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 91,
+      "from": "Mức1",
+      "to": "Mức 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 93,
+      "from": "Mức2",
+      "to": "Mức 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 93,
+      "from": "câu3",
+      "to": "câu 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 97,
+      "from": "khác0",
+      "to": "khác 0",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 98,
+      "from": "expected100",
+      "to": "expected 100",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 98,
+      "from": "và100→100",
+      "to": "và 100→100",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 136,
+      "from": "PostgreSQL18",
+      "to": "PostgreSQL 18",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 13,
+      "from": "Ví dụ1",
+      "to": "Ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 40,
+      "from": "Ví dụ2",
+      "to": "Ví dụ 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 62,
+      "from": "đó3≈23",
+      "to": "đó 3≈23",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 62,
+      "from": "và23",
+      "to": "và 23",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 68,
+      "from": "Ví dụ3",
+      "to": "Ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 81,
+      "from": "Hanoi2,Hue1",
+      "to": "Hanoi 2, Hue 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 85,
+      "from": "hứa2PC",
+      "to": "hứa 2PC",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 97,
+      "from": "ca0",
+      "to": "ca 0",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 102,
+      "from": "Mức1",
+      "to": "Mức 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 104,
+      "from": "Mức2",
+      "to": "Mức 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 104,
+      "from": "câu2",
+      "to": "câu 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 109,
+      "from": "giá100",
+      "to": "giá 100",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 109,
+      "from": "update120",
+      "to": "update 120",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 110,
+      "from": "Ví dụ1",
+      "to": "Ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 3,
+      "from": "PostgreSQL18",
+      "to": "PostgreSQL 18",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 5,
+      "from": "với2+3",
+      "to": "với 2+3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 11,
+      "from": "số0",
+      "to": "số 0",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 29,
+      "from": "Ví dụ1",
+      "to": "Ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 82,
+      "from": "Ví dụ2",
+      "to": "Ví dụ 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 111,
+      "from": "Ví dụ3",
+      "to": "Ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 113,
+      "from": "row1",
+      "to": "row 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 113,
+      "from": "trả1.",
+      "to": "trả 1.",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 113,
+      "from": "trả2.",
+      "to": "trả 2.",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 113,
+      "from": "lần1",
+      "to": "lần 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 113,
+      "from": "Lần2",
+      "to": "Lần 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 113,
+      "from": "Lần3",
+      "to": "Lần 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 113,
+      "from": "row3",
+      "to": "row 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 136,
+      "from": "trả42",
+      "to": "trả 42",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 136,
+      "from": "tổng42",
+      "to": "tổng 42",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 151,
+      "from": "Mức1",
+      "to": "Mức 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 153,
+      "from": "Mức2",
+      "to": "Mức 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 153,
+      "from": "câu1",
+      "to": "câu 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 153,
+      "from": "thử2147483647",
+      "to": "thử 2147483647",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 158,
+      "from": "là0.",
+      "to": "là 0.",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 172,
+      "from": "PostgreSQL18",
+      "to": "PostgreSQL 18",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 3,
+      "from": "AppendixA",
+      "to": "Appendix A",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 9,
+      "from": "có11",
+      "to": "có 11",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 9,
+      "from": "AppendixA",
+      "to": "Appendix A",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 13,
+      "from": "cho11",
+      "to": "cho 11",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 114,
+      "from": "có3 đăng ký",
+      "to": "có 3 đăng ký",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 114,
+      "from": "AppendixA",
+      "to": "Appendix A",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 116,
+      "from": "Ví dụ1",
+      "to": "Ví dụ 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 129,
+      "from": "Ví dụ2",
+      "to": "Ví dụ 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 159,
+      "from": "Ví dụ3",
+      "to": "Ví dụ 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 161,
+      "from": "có3>2",
+      "to": "có 3>2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 161,
+      "from": "DB09:00",
+      "to": "DB 09:00",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 161,
+      "from": "OS09:30",
+      "to": "OS 09:30",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 169,
+      "from": "đủ11",
+      "to": "đủ 11",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 194,
+      "from": "Mức1",
+      "to": "Mức 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 196,
+      "from": "Mức2",
+      "to": "Mức 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 196,
+      "from": "câu1",
+      "to": "câu 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 200,
+      "from": "số1",
+      "to": "số 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 274,
+      "from": "AppendixA",
+      "to": "Appendix A",
+      "occurrences": 1
+    },
+    {
+      "id": "AD03",
+      "lineBeforeEdit": 86,
+      "from": "Câu4",
+      "to": "Câu 4",
+      "occurrences": 1
+    },
+    {
+      "id": "AD04",
+      "lineBeforeEdit": 91,
+      "from": "Câu3",
+      "to": "Câu 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD04",
+      "lineBeforeEdit": 91,
+      "from": "Câu4",
+      "to": "Câu 4",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 92,
+      "from": "Câu2",
+      "to": "Câu 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD06",
+      "lineBeforeEdit": 92,
+      "from": "Câu4",
+      "to": "Câu 4",
+      "occurrences": 1
+    },
+    {
+      "id": "AD07",
+      "lineBeforeEdit": 84,
+      "from": "Câu3",
+      "to": "Câu 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 80,
+      "from": "Câu3",
+      "to": "Câu 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD08",
+      "lineBeforeEdit": 80,
+      "from": "Câu4",
+      "to": "Câu 4",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 131,
+      "from": "Câu3",
+      "to": "Câu 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD09",
+      "lineBeforeEdit": 131,
+      "from": "Câu4",
+      "to": "Câu 4",
+      "occurrences": 1
+    },
+    {
+      "id": "AD55",
+      "lineBeforeEdit": 117,
+      "from": "Câu4",
+      "to": "Câu 4",
+      "occurrences": 1
+    },
+    {
+      "id": "AD56",
+      "lineBeforeEdit": 93,
+      "from": "Câu4",
+      "to": "Câu 4",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 52,
+      "from": "trong[0,1]",
+      "to": "trong [0,1]",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 85,
+      "from": "này,3",
+      "to": "này, 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 120,
+      "from": "tới2",
+      "to": "tới 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 120,
+      "from": "ngoài[0,1]",
+      "to": "ngoài [0,1]",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 127,
+      "from": "Câu3",
+      "to": "Câu 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 127,
+      "from": "Câu4",
+      "to": "Câu 4",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 132,
+      "from": "customer1",
+      "to": "customer 1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 133,
+      "from": "hoặc1.1",
+      "to": "hoặc 1.1",
+      "occurrences": 1
+    },
+    {
+      "id": "AD57",
+      "lineBeforeEdit": 133,
+      "from": "chuỗi'5.00'",
+      "to": "chuỗi '5.00'",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 153,
+      "from": "Câu2",
+      "to": "Câu 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD58",
+      "lineBeforeEdit": 153,
+      "from": "Câu3",
+      "to": "Câu 3",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 196,
+      "from": "Câu2",
+      "to": "Câu 2",
+      "occurrences": 1
+    },
+    {
+      "id": "AD59",
+      "lineBeforeEdit": 196,
+      "from": "Câu4",
+      "to": "Câu 4",
+      "occurrences": 1
+    }
+  ]
+}

@@ -1,0 +1,579 @@
+{
+  "date": "2026-11-05",
+  "status": "pass",
+  "engine": [
+    [
+      "8.4.13",
+      "ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION",
+      "REPEATABLE-READ",
+      0
+    ]
+  ],
+  "fixtureSha256": "4f08eea21f03626c4ae7453ec88669cf677f460efb18c2d6a2e65966084fcf73",
+  "checks": [
+    {
+      "name": "fixture reset twice",
+      "passed": true,
+      "actual": [
+        [
+          4
+        ]
+      ],
+      "expected": [
+        [
+          4
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "fanout exposes wrong report",
+      "passed": true,
+      "actual": [
+        [
+          "250.00",
+          "250.00"
+        ]
+      ],
+      "expected": [
+        [
+          "250",
+          "250"
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "aggregate each grain before join",
+      "passed": true,
+      "actual": [
+        [
+          "150.00",
+          "150.00"
+        ]
+      ],
+      "expected": [
+        [
+          "150",
+          "150"
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "bag projection keeps duplicates",
+      "passed": true,
+      "actual": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "ROWS with explicit tie breaker",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          "10"
+        ],
+        [
+          2,
+          "30"
+        ],
+        [
+          3,
+          "35"
+        ],
+        [
+          4,
+          "42"
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          30
+        ],
+        [
+          3,
+          35
+        ],
+        [
+          4,
+          42
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "RANGE includes peer group",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          "30"
+        ],
+        [
+          2,
+          "30"
+        ],
+        [
+          3,
+          "35"
+        ],
+        [
+          4,
+          "42"
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          30
+        ],
+        [
+          2,
+          30
+        ],
+        [
+          3,
+          35
+        ],
+        [
+          4,
+          42
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "window population before output filtering",
+      "passed": true,
+      "actual": [
+        [
+          2,
+          20
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "expected": [
+        [
+          2,
+          20
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "REPEATABLE READ first snapshot",
+      "passed": true,
+      "actual": [
+        [
+          100
+        ]
+      ],
+      "expected": [
+        [
+          100
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "REPEATABLE READ second plain read",
+      "passed": true,
+      "actual": [
+        [
+          100
+        ]
+      ],
+      "expected": [
+        [
+          100
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "REPEATABLE READ locking current read",
+      "passed": true,
+      "actual": [
+        [
+          120
+        ]
+      ],
+      "expected": [
+        [
+          120
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "READ COMMITTED first snapshot",
+      "passed": true,
+      "actual": [
+        [
+          100
+        ]
+      ],
+      "expected": [
+        [
+          100
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "READ COMMITTED second plain read",
+      "passed": true,
+      "actual": [
+        [
+          120
+        ]
+      ],
+      "expected": [
+        [
+          120
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "READ COMMITTED locking current read",
+      "passed": true,
+      "actual": [
+        [
+          120
+        ]
+      ],
+      "expected": [
+        [
+          120
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "stale absolute writes lose update under this schedule",
+      "passed": true,
+      "actual": [
+        [
+          120
+        ]
+      ],
+      "expected": [
+        [
+          120
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "atomic relative writes preserve both additions",
+      "passed": true,
+      "actual": [
+        [
+          130
+        ]
+      ],
+      "expected": [
+        [
+          130
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "A reads on-call invariant",
+      "passed": true,
+      "actual": [
+        [
+          "2"
+        ]
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "B reads same on-call snapshot",
+      "passed": true,
+      "actual": [
+        [
+          "2"
+        ]
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "write skew violates cross-row invariant",
+      "passed": true,
+      "actual": [
+        [
+          "0"
+        ]
+      ],
+      "expected": [
+        [
+          0
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "A leases first job",
+      "passed": true,
+      "actual": [
+        [
+          1
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "SELECT id FROM jobs WHERE id=1 FOR UPDATE NOWAIT error",
+      "passed": true,
+      "actual": 3572,
+      "expected": 3572,
+      "detail": ""
+    },
+    {
+      "name": "SKIP LOCKED selects different available job",
+      "passed": true,
+      "actual": [
+        [
+          2
+        ]
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "engine confirms A waiting for B",
+      "passed": true,
+      "actual": true,
+      "expected": true,
+      "detail": ""
+    },
+    {
+      "name": "deadlock chooses exactly one victim",
+      "passed": true,
+      "actual": 1,
+      "expected": 1,
+      "detail": "Victim identity deliberately not pinned; whole transaction rolled back by engine."
+    },
+    {
+      "name": "UPDATE accounts SET balance=balance+2 WHERE id=1 error",
+      "passed": true,
+      "actual": 1205,
+      "expected": 1205,
+      "detail": ""
+    },
+    {
+      "name": "earlier B statement survives default lock timeout",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          102
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          102
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "DDL implicit commit persists previous DML",
+      "passed": true,
+      "actual": [
+        [
+          101
+        ]
+      ],
+      "expected": [
+        [
+          101
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "DDL object persists rollback",
+      "passed": true,
+      "actual": [
+        [
+          1
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "plan fixture population",
+      "passed": true,
+      "actual": [
+        [
+          20000
+        ]
+      ],
+      "expected": [
+        [
+          20000
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "index does not change result",
+      "passed": true,
+      "actual": [
+        [
+          20
+        ]
+      ],
+      "expected": [
+        [
+          20
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "selectivity chosen yields twenty qualifying rows",
+      "passed": true,
+      "actual": [
+        [
+          20
+        ]
+      ],
+      "expected": [
+        [
+          20
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "before plan actually executed",
+      "passed": true,
+      "actual": true,
+      "expected": true,
+      "detail": ""
+    },
+    {
+      "name": "after plan actually executed",
+      "passed": true,
+      "actual": true,
+      "expected": true,
+      "detail": ""
+    }
+  ],
+  "observations": {
+    "engine": [
+      [
+        "8.4.13",
+        "ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION",
+        "REPEATABLE-READ",
+        0
+      ]
+    ],
+    "deadlockOutcomes": [
+      [
+        "B",
+        1213
+      ],
+      "A-statement-ok"
+    ],
+    "plan": {
+      "rows": 20000,
+      "before": [
+        "-> Aggregate: count(0)  (cost=2020 rows=1) (actual time=11.5..11.5 rows=1 loops=1)\n    -> Filter: ((plan_orders.`status` = 'paid') and (plan_orders.customer_id = 777))  (cost=2000 rows=200) (actual time=0.76..11.5 rows=20 loops=1)\n        -> Table scan on plan_orders  (cost=2000 rows=20000) (actual time=0.449..7.18 rows=20000 loops=1)\n"
+      ],
+      "after": [
+        "-> Aggregate: count(0)  (cost=5.1 rows=1) (actual time=0.0733..0.0734 rows=1 loops=1)\n    -> Covering index lookup on plan_orders using ix_customer_status (customer_id=777, status='paid')  (cost=3.1 rows=20) (actual time=0.0341..0.0406 rows=20 loops=1)\n"
+      ],
+      "result": [
+        [
+          20
+        ]
+      ],
+      "scope": "One authored workload, observed plans. Timings are not promised speedups or universal index selection."
+    }
+  },
+  "scope": "Authored advanced lab subsets, real MySQL8.4.13; not allcourseSQL or webbackend. No Pgengine claimed.",
+  "limitations": [
+    "Real concurrency test validates these controlled schedules only.",
+    "No crash injected into native engine. Recovery activities need separately labeled model or disposableserver.",
+    "This verifier is instructor tooling, not an untrusted-code sandbox or learner install requirement."
+  ]
+}

@@ -1,0 +1,2345 @@
+{
+  "date": "2026-11-05",
+  "scope": "TenAD50 and fourteenAD65 own-body units23.1–23.3/23.5 only.",
+  "counts": {
+    "assigned": 24,
+    "complete": 24
+  },
+  "units": [
+    {
+      "section": "23.1",
+      "title": "Distributed Transactions",
+      "owners": [
+        "AD50"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          45,
+          60
+        ],
+        "ownBodySha256": "6382952f32650329ff3b18f5fe78c905d7ff1a822e3a6a695494071ee0c64d8d"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1128,
+          1131,
+          1138
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Local/global transaction ACID and independent node failures; local correctness not global atomicity.",
+      "evidence": [
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "teaching",
+          "paragraph": 4,
+          "exactOpening": "Transaction chỉ truy cập một local database là local transaction; transaction đi qua nhiều database là global transaction. Mỗi node có transaction manager giữ local log, concurrency và recovery cho cả việc local lẫn phần việc global. Transaction coordinator tại node khởi tạo chia công việc thành subtransactions, gửi tới các node rồi điều phối outco"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 3,
+          "exactOpening": "Đơn hàng nằm ở siteA, tồn kho ở siteB. Nếu chỉ gửi COMMIT lần lượt, siteA có thể commit rồi siteB gặp lỗi và abort. Hai transaction local đã atomic riêng nhưng toàn nghiệp vụ bị chia đôi. Atomic commit cần một quyết định chung và quy tắc phục hồi khi message hoặc node biến mất."
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "activity",
+          "paragraph": 48,
+          "exactOpening": "1. Một participant gửiYES rồi mới flushPREPARED. Dựng failure làm lộ lỗi; chỉ ra điều kiện safety bị mất.\n2. P1 đã prepared, không nhận decision trong30s. Cho hai execution mà P1 quan sát giống nhau nhưng quyết định toàn cục khác; giải thích vì sao timeout không cho tựabort.\n3. Thiết kế message/result contract khi client retry do mất response sauCO"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "answer",
+          "paragraph": 53,
+          "exactOpening": "1. Sau YES, coordinator có thể commit; participant crash mất prepared state/log rồi restart không làm được phần đã hứa. Flush trước YES là điều kiện protocol.\n2. Hai trường hợp cùng tạo quan sát “tôi đã YES, chưa thấy decision”. Trong B, tự abort trái COMMIT và participant đã commit. Trong A, tương lai có thể chọn ABORT. Đồng hồ không bổ sung thông"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.1.1",
+      "title": "System Structure",
+      "owners": [
+        "AD50"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          61,
+          112
+        ],
+        "ownBodySha256": "a650bc803030512ee5cea79864296d5bf7a9d860fe0d0ad89471e86fa19bc613"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1128,
+          1131,
+          1138
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Per-node local TM log/concurrency/recovery and initiating TC start/subtransactions/global outcome; shared-memory common-failure/log exception.",
+      "evidence": [
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "teaching",
+          "paragraph": 4,
+          "exactOpening": "Transaction chỉ truy cập một local database là local transaction; transaction đi qua nhiều database là global transaction. Mỗi node có transaction manager giữ local log, concurrency và recovery cho cả việc local lẫn phần việc global. Transaction coordinator tại node khởi tạo chia công việc thành subtransactions, gửi tới các node rồi điều phối outco"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 5,
+          "exactOpening": "Mô hình chương23 là các node có thể hỏng độc lập, kể cả nhiều máy trong một data center. Shared-memory system mà toàn bộ máy cùng lên/xuống và dùng một log chung thường dùng protocol tập trung phù hợp hơn. Network xa có latency/bandwidth khác mạng trong data center, nhưng mất message/link, node failure và partition vẫn phải được xử lý đúng ở cả hai"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "activity",
+          "paragraph": 48,
+          "exactOpening": "1. Một participant gửiYES rồi mới flushPREPARED. Dựng failure làm lộ lỗi; chỉ ra điều kiện safety bị mất.\n2. P1 đã prepared, không nhận decision trong30s. Cho hai execution mà P1 quan sát giống nhau nhưng quyết định toàn cục khác; giải thích vì sao timeout không cho tựabort.\n3. Thiết kế message/result contract khi client retry do mất response sauCO"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "answer",
+          "paragraph": 53,
+          "exactOpening": "1. Sau YES, coordinator có thể commit; participant crash mất prepared state/log rồi restart không làm được phần đã hứa. Flush trước YES là điều kiện protocol.\n2. Hai trường hợp cùng tạo quan sát “tôi đã YES, chưa thấy decision”. Trong B, tự abort trái COMMIT và participant đã commit. Trong A, tương lai có thể chọn ABORT. Đồng hồ không bổ sung thông"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.1.2",
+      "title": "System Failure Modes",
+      "owners": [
+        "AD50"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          113,
+          132
+        ],
+        "ownBodySha256": "895ff3c16c89493f7bf9cf0509b8ae763810dcd52b5ba371671842c92cb2ead2"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1128,
+          1131,
+          1138
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Node/message/link/partition failures and TCP versus transaction outcome; crash-recovery rather than Byzantine assumptions.",
+      "evidence": [
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "teaching",
+          "paragraph": 7,
+          "exactOpening": "Xét coordinator C và participants P1,P2. Message có thể trễ, mất hoặc lặp; node có thể crash rồi restart từ log bền. Chưa xét node Byzantine cố tình nói dối hoặc phá log. Local transaction có cơ chế khóa và recovery đúng. Muốn cam kết toàn cục, mỗi participant phải giữ được một lời hứa sau restart; một biến RAM tên `ready=true` không đủ."
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 20,
+          "exactOpening": "Ví dụ thứ ba: coordinator đã ghiCOMMIT bền, P1 đã commit, thông báo tớiP2 thất lạc rồi coordinator crash. Khi restart, coordinator đọc log và gửi lại COMMIT. P2 prepared có thể hoàn tất đúng. Nếu client đã mất response và retry request, global ID/idempotency phải ngăn tạo một nghiệp vụ thứ hai. “Gửi lại message” và “gửi lại giao dịch mới” có semant"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "activity",
+          "paragraph": 48,
+          "exactOpening": "1. Một participant gửiYES rồi mới flushPREPARED. Dựng failure làm lộ lỗi; chỉ ra điều kiện safety bị mất.\n2. P1 đã prepared, không nhận decision trong30s. Cho hai execution mà P1 quan sát giống nhau nhưng quyết định toàn cục khác; giải thích vì sao timeout không cho tựabort.\n3. Thiết kế message/result contract khi client retry do mất response sauCO"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "answer",
+          "paragraph": 53,
+          "exactOpening": "1. Sau YES, coordinator có thể commit; participant crash mất prepared state/log rồi restart không làm được phần đã hứa. Flush trước YES là điều kiện protocol.\n2. Hai trường hợp cùng tạo quan sát “tôi đã YES, chưa thấy decision”. Trong B, tự abort trái COMMIT và participant đã commit. Trong A, tương lai có thể chọn ABORT. Đồng hồ không bổ sung thông"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.2",
+      "title": "Commit Protocols",
+      "owners": [
+        "AD50"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          133,
+          141
+        ],
+        "ownBodySha256": "5810ed17fcc0adc153c6b0db7e6956e1be60a5980346853236a03bf858ef76cc"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1128,
+          1131,
+          1138
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "All-node atomic outcome and validity/safety versus conditional termination; commit protocol role.",
+      "evidence": [
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "teaching",
+          "paragraph": 8,
+          "exactOpening": "Atomicity yêu cầu không có hai participant kết thúc cùng một transaction với quyết định khác nhau. Validity yêu cầu chỉ commit khi mọi participant đã đồng ý và có thể thực hiện phần của mình. Termination là mong muốn cuối cùng có quyết định; trong các failure model nhất định,2PC có thể block. Không được dùng bằng chứng safety để kết luận liveness l"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 3,
+          "exactOpening": "Đơn hàng nằm ở siteA, tồn kho ở siteB. Nếu chỉ gửi COMMIT lần lượt, siteA có thể commit rồi siteB gặp lỗi và abort. Hai transaction local đã atomic riêng nhưng toàn nghiệp vụ bị chia đôi. Atomic commit cần một quyết định chung và quy tắc phục hồi khi message hoặc node biến mất."
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "activity",
+          "paragraph": 48,
+          "exactOpening": "1. Một participant gửiYES rồi mới flushPREPARED. Dựng failure làm lộ lỗi; chỉ ra điều kiện safety bị mất.\n2. P1 đã prepared, không nhận decision trong30s. Cho hai execution mà P1 quan sát giống nhau nhưng quyết định toàn cục khác; giải thích vì sao timeout không cho tựabort.\n3. Thiết kế message/result contract khi client retry do mất response sauCO"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "answer",
+          "paragraph": 53,
+          "exactOpening": "1. Sau YES, coordinator có thể commit; participant crash mất prepared state/log rồi restart không làm được phần đã hứa. Flush trước YES là điều kiện protocol.\n2. Hai trường hợp cùng tạo quan sát “tôi đã YES, chưa thấy decision”. Trong B, tự abort trái COMMIT và participant đã commit. Trong A, tương lai có thể chọn ABORT. Đồng hồ không bổ sung thông"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.2.1",
+      "title": "Two-Phase Commit",
+      "owners": [
+        "AD50"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          142,
+          147
+        ],
+        "ownBodySha256": "385f383d6a76799251068fe823f323bd483d19c9519a18adb600da83d09f6339"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1128,
+          1131,
+          1138
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Two phases, durable promise/outcome, unanimous readiness, safety invariant under durable identity/authority.",
+      "evidence": [
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "teaching",
+          "paragraph": 16,
+          "exactOpening": "Bất biến safety: một COMMIT được quyết chỉ sau mọiYES; mỗiYES bền giữ participant có thể tuân COMMIT. Coordinator chỉ có một quyết định bền có thẩm quyền. Participant không đổi outcome đã kết thúc và không đoán ABORT khi đang in-doubt. Nếu một participant đã commit thì mọi outcome khác chỉ có thể dựa vào cùng decisionCOMMIT. Lập luận cần transactio"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 18,
+          "exactOpening": "Ví dụ thứ nhất: P1 prepared, P2 voteNO. Coordinator chọn ABORT; P1 phải undo dù nó đã sẵn sàng commit. Prepared không đồng nghĩa committed. Dữ liệu local có thể tồn tại trên storage nhưng recovery loại hiệu ứng khi abort."
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "activity",
+          "paragraph": 48,
+          "exactOpening": "1. Một participant gửiYES rồi mới flushPREPARED. Dựng failure làm lộ lỗi; chỉ ra điều kiện safety bị mất.\n2. P1 đã prepared, không nhận decision trong30s. Cho hai execution mà P1 quan sát giống nhau nhưng quyết định toàn cục khác; giải thích vì sao timeout không cho tựabort.\n3. Thiết kế message/result contract khi client retry do mất response sauCO"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "answer",
+          "paragraph": 53,
+          "exactOpening": "1. Sau YES, coordinator có thể commit; participant crash mất prepared state/log rồi restart không làm được phần đã hứa. Flush trước YES là điều kiện protocol.\n2. Hai trường hợp cùng tạo quan sát “tôi đã YES, chưa thấy decision”. Trong B, tự abort trái COMMIT và participant đã commit. Trong A, tương lai có thể chọn ABORT. Đồng hồ không bổ sung thông"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.2.1.1",
+      "title": "The Commit Protocol",
+      "owners": [
+        "AD50"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          148,
+          228
+        ],
+        "ownBodySha256": "c6509aa6cd78f779a6f725df2288d07bdee0a23a86eda79da6dbd78b24ede89c"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1128,
+          1131,
+          1138
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Force coordinatorprepare, force ready with local log beforeYES, durable commit/abort beforedecisionmessages; timeoutauthority, ACK/complete and forgetting.",
+      "evidence": [
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "teaching",
+          "paragraph": 11,
+          "exactOpening": "Trong phiên bản sách, coordinator ghi và force record prepare trước khi gửi PREPARE; participant muốn YES force cả ready record và những log record cần để thực hiện lời hứa. Participant chưa ready có thể chọn abort. Một timeout ở coordinator khi chưa nhận đủ YES có thể dẫn tới ABORT theo protocol; timeout của participant đã prepared lại không cho n"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 15,
+          "exactOpening": "```text\ncoordinator:\n    force durable PREPARE record\n    gửi PREPARE tới toàn bộ participants\n    nếu mọi participant vote YES:\n        force durable COMMIT decision\n    ngược lại:\n        force durable ABORT decision theo protocol\n    gửi cùng decision, retry bằng cùng transaction ID\nparticipant:\n    nếu vote YES: force PREPARED trước khi gửi YES"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "activity",
+          "paragraph": 48,
+          "exactOpening": "1. Một participant gửiYES rồi mới flushPREPARED. Dựng failure làm lộ lỗi; chỉ ra điều kiện safety bị mất.\n2. P1 đã prepared, không nhận decision trong30s. Cho hai execution mà P1 quan sát giống nhau nhưng quyết định toàn cục khác; giải thích vì sao timeout không cho tựabort.\n3. Thiết kế message/result contract khi client retry do mất response sauCO"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "answer",
+          "paragraph": 53,
+          "exactOpening": "1. Sau YES, coordinator có thể commit; participant crash mất prepared state/log rồi restart không làm được phần đã hứa. Flush trước YES là điều kiện protocol.\n2. Hai trường hợp cùng tạo quan sát “tôi đã YES, chưa thấy decision”. Trong B, tự abort trái COMMIT và participant đã commit. Trong A, tương lai có thể chọn ABORT. Đồng hồ không bổ sung thông"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.2.1.2",
+      "title": "Handling of Failures",
+      "owners": [
+        "AD50"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          229,
+          305
+        ],
+        "ownBodySha256": "7cc407979a4467308ad87f1ee8e8f1f8aef2226775d904233c6ea4423b35de4b"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1128,
+          1131,
+          1138
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Participant and coordinator failure cases, outcome/no-ready/in-doubt evidence and query-status, partition blocking and indistinguishable local observations.",
+      "evidence": [
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "teaching",
+          "paragraph": 23,
+          "exactOpening": "Các nhánh recovery cần được kiểm riêng:"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 19,
+          "exactOpening": "Ví dụ thứ hai: mọi participant đãYES, coordinator crash trước khi ghi decision. P1 chỉ biết chính nóYES, không biết bên kia đãNO hay coordinator đã kịp commit. Nếu không có nơi khác mang bằng chứng quyết định đủ mạnh, P1 phải giữ in-doubt và chờ hoặc theo termination protocol hợp lệ. Timeout không tạo ra thông tin còn thiếu. Tự abort có thể trái mộ"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "activity",
+          "paragraph": 48,
+          "exactOpening": "1. Một participant gửiYES rồi mới flushPREPARED. Dựng failure làm lộ lỗi; chỉ ra điều kiện safety bị mất.\n2. P1 đã prepared, không nhận decision trong30s. Cho hai execution mà P1 quan sát giống nhau nhưng quyết định toàn cục khác; giải thích vì sao timeout không cho tựabort.\n3. Thiết kế message/result contract khi client retry do mất response sauCO"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "answer",
+          "paragraph": 53,
+          "exactOpening": "1. Sau YES, coordinator có thể commit; participant crash mất prepared state/log rồi restart không làm được phần đã hứa. Flush trước YES là điều kiện protocol.\n2. Hai trường hợp cùng tạo quan sát “tôi đã YES, chưa thấy decision”. Trong B, tự abort trái COMMIT và participant đã commit. Trong A, tương lai có thể chọn ABORT. Đồng hồ không bổ sung thông"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.2.1.3",
+      "title": "Recovery and Concurrency Control",
+      "owners": [
+        "AD50"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          306,
+          336
+        ],
+        "ownBodySha256": "64e233cce105c72d833ab8e98606ff7880956842f9f8f057aba3250c5067a20a"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1128,
+          1131,
+          1138
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Ready includeswrite-locklist; localrecovery then reacquireprotection beforeadmission; nonconflictingtransactionscontinue whileindoubt/conflictingonesstillblock.",
+      "evidence": [
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "teaching",
+          "paragraph": 28,
+          "exactOpening": "Nếu restart phải chờ tìm outcome cho mọi prepared transaction rồi mới mở database, một coordinator mất lâu có thể làm cả node không dùng được. Sách đề xuất ghi ready kèm danh sách write locks. Sau local recovery, dựng lại protection của mọi transaction in-doubt **trước khi** nhận công việc mới, rồi cho transaction không xung đột chạy trong khi tiếp"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 29,
+          "exactOpening": "Ví dụ U prepared giữ X(account7), còn V chỉ sửa account9. Node restart từ log có `ready(U,{account7})`; phải dựng lại X(account7), giữ trạng thái U theo protocol và cho V chạy nếu không có conflict khác. Transaction muốn sửa account7 vẫn phải đợi U. Cách này tránh chặn toàn node vì chờ hỏi outcome, không làm U hết block hoặc tạo quyền mở mọi lock c"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "activity",
+          "paragraph": 48,
+          "exactOpening": "1. Một participant gửiYES rồi mới flushPREPARED. Dựng failure làm lộ lỗi; chỉ ra điều kiện safety bị mất.\n2. P1 đã prepared, không nhận decision trong30s. Cho hai execution mà P1 quan sát giống nhau nhưng quyết định toàn cục khác; giải thích vì sao timeout không cho tựabort.\n3. Thiết kế message/result contract khi client retry do mất response sauCO"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "answer",
+          "paragraph": 53,
+          "exactOpening": "1. Sau YES, coordinator có thể commit; participant crash mất prepared state/log rồi restart không làm được phần đã hứa. Flush trước YES là điều kiện protocol.\n2. Hai trường hợp cùng tạo quan sát “tôi đã YES, chưa thấy decision”. Trong B, tự abort trái COMMIT và participant đã commit. Trong A, tương lai có thể chọn ABORT. Đồng hồ không bổ sung thông"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.2.2",
+      "title": "A voiding Blocking During Commit",
+      "owners": [
+        "AD50"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          337,
+          419
+        ],
+        "ownBodySha256": "befa3840fd8ffe335026ba8e34f4bf9312a3401aebc6e2cb7d72639e3b28def3"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1128,
+          1131,
+          1138
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Consensusdecisiongroup distinct from2PCparticipants; recover chosenoutcome,otherwisecollectvotes/repropose,onechosenoutcomedespiteoldrequests; majoritylivenessconditions/minorityblocking;3PCassumptions.",
+      "evidence": [
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "teaching",
+          "paragraph": 33,
+          "exactOpening": "Nhóm lưu decision bằng consensus và tập 2PC participants là hai tập có vai trò khác nhau. Ví dụ D1,D2,D3 giữ replicated decision, còn A,B là các participant sửa dữ liệu. Sau khi coordinator cũ mất, coordinator mới phải hỏi/khôi phục decision qua consensus protocol của D, không chỉ đọc tùy ý một replica rồi thấy “chưa có COMMIT”. Nếu đã chọn COMMIT "
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 34,
+          "exactOpening": "Một majority D còn liên lạc có thể phục hồi authority/decision dưới điều kiện tiến triển của consensus; một participant ở minority vẫn có thể chưa học được outcome và phải chờ. Nếu B hỏng trước khi gửi YES, hệ có thể chọn ABORT thay vì chờ B để commit. Nếu B đã prepared, bản sao đủ thông tin của B hoặc chính B còn phải phục hồi phần dữ liệu ấy. Con"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "activity",
+          "paragraph": 48,
+          "exactOpening": "1. Một participant gửiYES rồi mới flushPREPARED. Dựng failure làm lộ lỗi; chỉ ra điều kiện safety bị mất.\n2. P1 đã prepared, không nhận decision trong30s. Cho hai execution mà P1 quan sát giống nhau nhưng quyết định toàn cục khác; giải thích vì sao timeout không cho tựabort.\n3. Thiết kế message/result contract khi client retry do mất response sauCO"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "answer",
+          "paragraph": 53,
+          "exactOpening": "1. Sau YES, coordinator có thể commit; participant crash mất prepared state/log rồi restart không làm được phần đã hứa. Flush trước YES là điều kiện protocol.\n2. Hai trường hợp cùng tạo quan sát “tôi đã YES, chưa thấy decision”. Trong B, tự abort trái COMMIT và participant đã commit. Trong A, tương lai có thể chọn ABORT. Đồng hồ không bổ sung thông"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.2.3",
+      "title": "Alternative Models of Transaction Processing",
+      "owners": [
+        "AD50"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          420,
+          556
+        ],
+        "ownBodySha256": "f6efca03e5a699320669dfc9b428e5ce284a78dbd9c170394b614e9c9163ebde"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1128,
+          1131,
+          1138
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Cross-org autonomy, four-part durableoutbox/inbox protocol,receivercommitbeforeACK,atomicbusiness+processed,dedupretention/cutofftradeoff,workflowexceptions/compensation and logicaleffectonce scope.",
+      "evidence": [
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "teaching",
+          "paragraph": 38,
+          "exactOpening": "Protocol trong §23.2.3 có bốn phần:"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 41,
+          "exactOpening": "Ví dụ outbox42 đã commit; receiver lưu inbox42 rồi crash trước ACK. Sender gửi lại42; receiver thấy ID cũ và ACK lại, không tạo credit thứ hai. Nếu worker crash trước commit credit+processed, cả hai rollback và lần sau làm lại. Nếu commit cả hai rồi response mất, worker sau thấy processed=true và không credit lại. Ngược lại, ACK trước inbox commit "
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "activity",
+          "paragraph": 48,
+          "exactOpening": "1. Một participant gửiYES rồi mới flushPREPARED. Dựng failure làm lộ lỗi; chỉ ra điều kiện safety bị mất.\n2. P1 đã prepared, không nhận decision trong30s. Cho hai execution mà P1 quan sát giống nhau nhưng quyết định toàn cục khác; giải thích vì sao timeout không cho tựabort.\n3. Thiết kế message/result contract khi client retry do mất response sauCO"
+        },
+        {
+          "path": "lessons/AD50.md",
+          "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+          "kind": "answer",
+          "paragraph": 53,
+          "exactOpening": "1. Sau YES, coordinator có thể commit; participant crash mất prepared state/log rồi restart không làm được phần đã hứa. Flush trước YES là điều kiện protocol.\n2. Hai trường hợp cùng tạo quan sát “tôi đã YES, chưa thấy decision”. Trong B, tự abort trái COMMIT và participant đã commit. Trong A, tương lai có thể chọn ABORT. Đồng hồ không bổ sung thông"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.3",
+      "title": "Concurrency Control in Distributed Databases",
+      "owners": [
+        "AD65"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          557,
+          564
+        ],
+        "ownBodySha256": "d4deb4db983f4cd1af0848db9f26c72a8f5e668d5ac058e4c4d689db77fc1f9f"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1142,
+          1144,
+          1146
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Distributed extension assumesatomiccommit; separates unreplicated/singleversion base fromreplica/MVextensions.",
+      "evidence": [
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "teaching",
+          "paragraph": 6,
+          "exactOpening": "Trong mô hình message đơn giản, xin lock từ xa cần một request và một grant response; unlock cần một message, chưa tính retry, logging hay replication. Single manager làm deadlock graph dễ tập hợp nhưng mọi request đi qua cùng một nơi, nên có bottleneck và cần phục hồi authority khi nó hỏng. Distributed manager đặt quyền mỗi item tại node quản lý n"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 8,
+          "exactOpening": "Ví dụ 1: T1 giữ X(A.x) rồi chờ X(B.y); T2 giữ X(B.y) rồi chờ X(A.x). Local graph ở A chỉ thấy T2→T1; ở B chỉ thấy T1→T2. Không local graph nào có cycle nhưng union có cycle. Detector cần đủ cạnh hoặc thuật toán phân tán với message model đúng."
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "activity",
+          "paragraph": 47,
+          "exactOpening": "1. Vẽ local và global wait-for graphs của ví dụ1. Thêm message delay để tạo cycle ảo và nêu cách xác nhận trước quyết định.\n2. Dùng logical counter/siteID tạo tags cho ba local events và một receive; chứng minh causal order được giữ, không phải giờ thực tuyệt đối.\n3. Với clock interval[200,206], chọn tc và xét các lần kiểm[204,210],[207,213]. Reade"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "answer",
+          "paragraph": 52,
+          "exactOpening": "1. A:T2→T1; B:T1→T2; union có cycle. Nếu A đã nhả nhưng message cạnh tới muộn, cần version/confirmation hoặc policy abort bảo thủ được nêu. Không coi ảnh stale là trace exact.\n2. Send mang counter; receive=max(local,received)+1. Tag tăng trên mỗi bước causal, nên tăng trên mọi chuỗi causal. Tags của hai event không có quan hệ causal vẫn có thể so đ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.3.1",
+      "title": "Locking Protocols",
+      "owners": [
+        "AD65"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          565,
+          567
+        ],
+        "ownBodySha256": "1e46e4bebf8e0d5576576b6034a7dae64d5fd6bb292b87f0f9774df47edeb8eb"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1142,
+          1144,
+          1146
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Lock authority distribution and global2PLboundary; managersnotmerelyindependentlocalprotocols.",
+      "evidence": [
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "teaching",
+          "paragraph": 5,
+          "exactOpening": "Centralized lock manager quyết định quyền trên dữ liệu nhiều site, thống nhất grant/wait nhưng tạo nơi điều phối, traffic và failure cần xử lý. Primary-copy locking đặt quyền của mỗi item/partition ở primary tương ứng; các replica phải theo protocol để không có quyền X độc lập. Distributed locking chia manager theo dữ liệu, nên transaction có thể g"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 8,
+          "exactOpening": "Ví dụ 1: T1 giữ X(A.x) rồi chờ X(B.y); T2 giữ X(B.y) rồi chờ X(A.x). Local graph ở A chỉ thấy T2→T1; ở B chỉ thấy T1→T2. Không local graph nào có cycle nhưng union có cycle. Detector cần đủ cạnh hoặc thuật toán phân tán với message model đúng."
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "activity",
+          "paragraph": 47,
+          "exactOpening": "1. Vẽ local và global wait-for graphs của ví dụ1. Thêm message delay để tạo cycle ảo và nêu cách xác nhận trước quyết định.\n2. Dùng logical counter/siteID tạo tags cho ba local events và một receive; chứng minh causal order được giữ, không phải giờ thực tuyệt đối.\n3. Với clock interval[200,206], chọn tc và xét các lần kiểm[204,210],[207,213]. Reade"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "answer",
+          "paragraph": 52,
+          "exactOpening": "1. A:T2→T1; B:T1→T2; union có cycle. Nếu A đã nhả nhưng message cạnh tới muộn, cần version/confirmation hoặc policy abort bảo thủ được nêu. Không coi ảnh stale là trace exact.\n2. Send mang counter; receive=max(local,received)+1. Tag tăng trên mỗi bước causal, nên tăng trên mọi chuỗi causal. Tags của hai event không có quan hệ causal vẫn có thể so đ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.3.1.1",
+      "title": "Single Lock-Manager Approach",
+      "owners": [
+        "AD65"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          568,
+          591
+        ],
+        "ownBodySha256": "d18cd03853cbeb308f119322e65600a16b302a8dd44a483e8bd7d646dc505619"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1142,
+          1144,
+          1146
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Singlemanagerrequest/grant/unlockmessaging,simpledeadlockgraph,bottleneck/failure/recoveryauthoritytradeoff.",
+      "evidence": [
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "teaching",
+          "paragraph": 6,
+          "exactOpening": "Trong mô hình message đơn giản, xin lock từ xa cần một request và một grant response; unlock cần một message, chưa tính retry, logging hay replication. Single manager làm deadlock graph dễ tập hợp nhưng mọi request đi qua cùng một nơi, nên có bottleneck và cần phục hồi authority khi nó hỏng. Distributed manager đặt quyền mỗi item tại node quản lý n"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 5,
+          "exactOpening": "Centralized lock manager quyết định quyền trên dữ liệu nhiều site, thống nhất grant/wait nhưng tạo nơi điều phối, traffic và failure cần xử lý. Primary-copy locking đặt quyền của mỗi item/partition ở primary tương ứng; các replica phải theo protocol để không có quyền X độc lập. Distributed locking chia manager theo dữ liệu, nên transaction có thể g"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "activity",
+          "paragraph": 47,
+          "exactOpening": "1. Vẽ local và global wait-for graphs của ví dụ1. Thêm message delay để tạo cycle ảo và nêu cách xác nhận trước quyết định.\n2. Dùng logical counter/siteID tạo tags cho ba local events và một receive; chứng minh causal order được giữ, không phải giờ thực tuyệt đối.\n3. Với clock interval[200,206], chọn tc và xét các lần kiểm[204,210],[207,213]. Reade"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "answer",
+          "paragraph": 52,
+          "exactOpening": "1. A:T2→T1; B:T1→T2; union có cycle. Nếu A đã nhả nhưng message cạnh tới muộn, cần version/confirmation hoặc policy abort bảo thủ được nêu. Không coi ảnh stale là trace exact.\n2. Send mang counter; receive=max(local,received)+1. Tag tăng trên mỗi bước causal, nên tăng trên mọi chuỗi causal. Tags của hai event không có quan hệ causal vẫn có thể so đ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.3.1.2",
+      "title": "Distributed Lock Manager",
+      "owners": [
+        "AD65"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          592,
+          610
+        ],
+        "ownBodySha256": "a6d25d45929d05e4a94c6f9ea582977618df00c203119842d729a34111324ca9"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1142,
+          1144,
+          1146
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Per-itemlocalmanager,similarremotemessagecost,distributedloadwithglobaldeadlockdespiteacycliclocalgraphs.",
+      "evidence": [
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "teaching",
+          "paragraph": 6,
+          "exactOpening": "Trong mô hình message đơn giản, xin lock từ xa cần một request và một grant response; unlock cần một message, chưa tính retry, logging hay replication. Single manager làm deadlock graph dễ tập hợp nhưng mọi request đi qua cùng một nơi, nên có bottleneck và cần phục hồi authority khi nó hỏng. Distributed manager đặt quyền mỗi item tại node quản lý n"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 8,
+          "exactOpening": "Ví dụ 1: T1 giữ X(A.x) rồi chờ X(B.y); T2 giữ X(B.y) rồi chờ X(A.x). Local graph ở A chỉ thấy T2→T1; ở B chỉ thấy T1→T2. Không local graph nào có cycle nhưng union có cycle. Detector cần đủ cạnh hoặc thuật toán phân tán với message model đúng."
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "activity",
+          "paragraph": 47,
+          "exactOpening": "1. Vẽ local và global wait-for graphs của ví dụ1. Thêm message delay để tạo cycle ảo và nêu cách xác nhận trước quyết định.\n2. Dùng logical counter/siteID tạo tags cho ba local events và một receive; chứng minh causal order được giữ, không phải giờ thực tuyệt đối.\n3. Với clock interval[200,206], chọn tc và xét các lần kiểm[204,210],[207,213]. Reade"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "answer",
+          "paragraph": 52,
+          "exactOpening": "1. A:T2→T1; B:T1→T2; union có cycle. Nếu A đã nhả nhưng message cạnh tới muộn, cần version/confirmation hoặc policy abort bảo thủ được nêu. Không coi ảnh stale là trace exact.\n2. Send mang counter; receive=max(local,received)+1. Tag tăng trên mỗi bước causal, nên tăng trên mọi chuỗi causal. Tags của hai event không có quan hệ causal vẫn có thể so đ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.3.2",
+      "title": "Deadlock Handling",
+      "owners": [
+        "AD65"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          611,
+          717
+        ],
+        "ownBodySha256": "17cccc299ac3761454936a003df06a2a432d2a365d46738d01106d294963e4c4"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1142,
+          1144,
+          1146
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Lockorder/waitdie/timeout extensions,localgraphunion/globaldetector,realversusconstructedgraph,stale-falsecycleglobal2PLcaveat,distributedabortandunnecessaryconcurrentvictims.",
+      "evidence": [
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "teaching",
+          "paragraph": 11,
+          "exactOpening": "Collector có thể nhận cập nhật mỗi khi edge đổi, nhận theo batch định kỳ hoặc hỏi các site lúc muốn kiểm. Phải cân đối chi phí message và độ trễ, giữ cùng global transaction identity cho các branch. Chọn victim cần gửi quyết định hủy đến mọi site của nó và cập nhật graph sau recovery/queue grant. Distributed detection không có collector đơn là một "
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 10,
+          "exactOpening": "Ví dụ cụ thể ngoài bảo đảm global 2PL: collector đã có T1→T2 và T3→T1. T2 nhả resource mà T1 cần, cạnh T1→T2 mất; sau đó T2 xin resource của T3, thêm T2→T3. Message thêm tới collector trước message xóa làm nó thấy cycle ảo T1→T2→T3→T1. Sách lưu ý kiểu nhả rồi xin mới ấy không xảy ra khi cùng transaction tuân global 2PL; không dùng ví dụ này để bác "
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "activity",
+          "paragraph": 47,
+          "exactOpening": "1. Vẽ local và global wait-for graphs của ví dụ1. Thêm message delay để tạo cycle ảo và nêu cách xác nhận trước quyết định.\n2. Dùng logical counter/siteID tạo tags cho ba local events và một receive; chứng minh causal order được giữ, không phải giờ thực tuyệt đối.\n3. Với clock interval[200,206], chọn tc và xét các lần kiểm[204,210],[207,213]. Reade"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "answer",
+          "paragraph": 52,
+          "exactOpening": "1. A:T2→T1; B:T1→T2; union có cycle. Nếu A đã nhả nhưng message cạnh tới muộn, cần version/confirmation hoặc policy abort bảo thủ được nêu. Không coi ảnh stale là trace exact.\n2. Send mang counter; receive=max(local,received)+1. Tag tăng trên mỗi bước causal, nên tăng trên mọi chuỗi causal. Tags của hai event không có quan hệ causal vẫn có thể so đ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.3.3",
+      "title": "Leases",
+      "owners": [
+        "AD65"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          718,
+          773
+        ],
+        "ownBodySha256": "c9bf3448090640cf65ff882959b25c35ff5c9d5d9bfcc90e5bb1084df00ea14a"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1142,
+          1144,
+          1146
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Expiry/renewACK/faulttolerantauthority,clockuncertainty/action+deliverybounds/late-rejection/fencing;preparedwriteprotectionnotrevocablebytimer.",
+      "evidence": [
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "teaching",
+          "paragraph": 16,
+          "exactOpening": "Lease chỉ áp khi quyền có thể thu hồi theo semantics của protocol. Write protection của một transaction đã prepared không được tự nhả chỉ vì lease hết hạn: nó đã hứa tuân outcome 2PC và còn cần recovery ở AD50. Fencing/expiry cho vai trò coordinator cũng phải phối hợp với log/epoch để coordinator mới không đổi decision đã được chọn."
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 15,
+          "exactOpening": "Trong cách dùng clock của sách, authority chừa khoảng bù sai số trước khi cấp lại quyền; holder chỉ khởi tạo operation khi thời gian còn lại đủ bao cả lúc thực thi và delivery được chấp nhận. Ví dụ mô hình cho biết thời gian thật hiện nằm trong[95,97], lease hết ở100 và operation+delivery mất tối đa2 cùng đơn vị: kết thúc muộn nhất99 còn trong hạn."
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "activity",
+          "paragraph": 47,
+          "exactOpening": "1. Vẽ local và global wait-for graphs của ví dụ1. Thêm message delay để tạo cycle ảo và nêu cách xác nhận trước quyết định.\n2. Dùng logical counter/siteID tạo tags cho ba local events và một receive; chứng minh causal order được giữ, không phải giờ thực tuyệt đối.\n3. Với clock interval[200,206], chọn tc và xét các lần kiểm[204,210],[207,213]. Reade"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "answer",
+          "paragraph": 52,
+          "exactOpening": "1. A:T2→T1; B:T1→T2; union có cycle. Nếu A đã nhả nhưng message cạnh tới muộn, cần version/confirmation hoặc policy abort bảo thủ được nêu. Không coi ảnh stale là trace exact.\n2. Send mang counter; receive=max(local,received)+1. Tag tăng trên mỗi bước causal, nên tăng trên mọi chuỗi causal. Tags của hai event không có quan hệ causal vẫn có thể so đ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.3.4",
+      "title": "Distributed Timestamp-Based Protocols",
+      "owners": [
+        "AD65"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          774,
+          789
+        ],
+        "ownBodySha256": "0420b1ecef0921d84d3bd27317c6636f88383701464002b08dde72b497607874"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1142,
+          1144,
+          1146
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Globallyuniquetimestamp specifies sharedserializationorder; no localclock reinterpretation.",
+      "evidence": [
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "teaching",
+          "paragraph": 21,
+          "exactOpening": "Distributed TO dùng cùng timestamp của transaction tại mọi site, kiểm read/write version và phối hợp outcome. Distributed validation phải thu đủ conflicts và công bố commit theo thứ tự phù hợp. Validate chỉ row local rồi trả YES có thể bỏ cycle toàn cục."
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 24,
+          "exactOpening": "Ca numeric: site A đã bắt đầu validate T20; message validate T10 tới sau. Không được validate10 như chưa có20, vì20 đã bỏ qua một predecessor chưa biết. Rule bảo thủ abort10 tại site này; atomic commit bảo đảm các branch khác không vẫn commit10 riêng. Nếu T10 tới trước20 và conflicts không có, thứ tự ấy có thể qua; cùng workload nhưng message order"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "activity",
+          "paragraph": 47,
+          "exactOpening": "1. Vẽ local và global wait-for graphs của ví dụ1. Thêm message delay để tạo cycle ảo và nêu cách xác nhận trước quyết định.\n2. Dùng logical counter/siteID tạo tags cho ba local events và một receive; chứng minh causal order được giữ, không phải giờ thực tuyệt đối.\n3. Với clock interval[200,206], chọn tc và xét các lần kiểm[204,210],[207,213]. Reade"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "answer",
+          "paragraph": 52,
+          "exactOpening": "1. A:T2→T1; B:T1→T2; union có cycle. Nếu A đã nhả nhưng message cạnh tới muộn, cần version/confirmation hoặc policy abort bảo thủ được nêu. Không coi ảnh stale là trace exact.\n2. Send mang counter; receive=max(local,received)+1. Tag tăng trên mỗi bước causal, nên tăng trên mọi chuỗi causal. Tags của hai event không có quan hệ causal vẫn có thể so đ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.3.5",
+      "title": "Generation of Timestamps",
+      "owners": [
+        "AD65"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          790,
+          830
+        ],
+        "ownBodySha256": "14b68b3be5e51c126948ef582f183886bbf6266dbb877764010506adea273ad6"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1142,
+          1144,
+          1146
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Centralcounterversusdistributedcounter,node/threadties leastsignificant,successiveuniqueness,physicalsyncversusLamportadvance,slow-clockrestartstarvation.",
+      "evidence": [
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "teaching",
+          "paragraph": 19,
+          "exactOpening": "Một timestamp server tập trung cấp counter/clock dễ tổ chức nhưng có thể chặn việc cấp timestamp nếu server mất mà chưa có failover đúng. Cách phân tán dùng tuple như `(counter,node_id,thread_id)` theo thứ tự từ trái sang phải, có node/thread identity duy nhất và counter không lặp trong miền sống của identity đó. Node ID ở vị trí phụ để phá hòa; đặ"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 20,
+          "exactOpening": "Clock gần đồng bộ còn ảnh hưởng số lần abort chứ không chỉ tính duy nhất. Site chậm cấp T ở counter10 trong khi item đã được writer timestamp100 cập nhật: restart tại site ấy với counter11 vẫn thất bại. Khi nhận tag100, cập nhật logical clock vượt100 giúp request sau không tiếp tục quá cũ. Đồng bộ giờ vật lý là một hướng khác của sách; nó không biế"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "activity",
+          "paragraph": 47,
+          "exactOpening": "1. Vẽ local và global wait-for graphs của ví dụ1. Thêm message delay để tạo cycle ảo và nêu cách xác nhận trước quyết định.\n2. Dùng logical counter/siteID tạo tags cho ba local events và một receive; chứng minh causal order được giữ, không phải giờ thực tuyệt đối.\n3. Với clock interval[200,206], chọn tc và xét các lần kiểm[204,210],[207,213]. Reade"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "answer",
+          "paragraph": 52,
+          "exactOpening": "1. A:T2→T1; B:T1→T2; union có cycle. Nếu A đã nhả nhưng message cạnh tới muộn, cần version/confirmation hoặc policy abort bảo thủ được nêu. Không coi ảnh stale là trace exact.\n2. Send mang counter; receive=max(local,received)+1. Tag tăng trên mỗi bước causal, nên tăng trên mọi chuỗi causal. Tags của hai event không có quan hệ causal vẫn có thể so đ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.3.6",
+      "title": "Distributed Timestamp Ordering",
+      "owners": [
+        "AD65"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          831,
+          858
+        ],
+        "ownBodySha256": "129e97e8237beb82ecc66e14c0afab91e3d2769a60c8025e2bfc7676c6568530"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1142,
+          1144,
+          1146
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "LocalRWtimestampchecks withsameglobalTS,slowcounterretrycost,dirtyreadcommitdependency/readwaitincludingprepared2PCandMVTOextension.",
+      "evidence": [
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "teaching",
+          "paragraph": 22,
+          "exactOpening": "Mỗi site có thể làm read/write timestamp test của AD41 trên item mình quản lý mà không hỏi site khác cho từng phép kiểm. Nhưng outcome vẫn là global: một branch abort phải được xử lý theo atomic transaction protocol. Nếu T2 đọc giá trị T1 chưa commit, phải trì hoãn read hoặc giữ commit dependency phù hợp; prepared T1 chưa phải committed writer. Thờ"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 20,
+          "exactOpening": "Clock gần đồng bộ còn ảnh hưởng số lần abort chứ không chỉ tính duy nhất. Site chậm cấp T ở counter10 trong khi item đã được writer timestamp100 cập nhật: restart tại site ấy với counter11 vẫn thất bại. Khi nhận tag100, cập nhật logical clock vượt100 giúp request sau không tiếp tục quá cũ. Đồng bộ giờ vật lý là một hướng khác của sách; nó không biế"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "activity",
+          "paragraph": 47,
+          "exactOpening": "1. Vẽ local và global wait-for graphs của ví dụ1. Thêm message delay để tạo cycle ảo và nêu cách xác nhận trước quyết định.\n2. Dùng logical counter/siteID tạo tags cho ba local events và một receive; chứng minh causal order được giữ, không phải giờ thực tuyệt đối.\n3. Với clock interval[200,206], chọn tc và xét các lần kiểm[204,210],[207,213]. Reade"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "answer",
+          "paragraph": 52,
+          "exactOpening": "1. A:T2→T1; B:T1→T2; union có cycle. Nếu A đã nhả nhưng message cạnh tới muộn, cần version/confirmation hoặc policy abort bảo thủ được nêu. Không coi ảnh stale là trace exact.\n2. Send mang counter; receive=max(local,received)+1. Tag tăng trên mỗi bước causal, nên tăng trên mọi chuỗi causal. Tags của hai event không có quan hệ causal vẫn có thể so đ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.3.7",
+      "title": "Distributed Validation",
+      "owners": [
+        "AD65"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          859,
+          936
+        ],
+        "ownBodySha256": "927ee927aa2c5fc3272d406c810dba70b23d9975a304cbd636f6ffad87dca61f"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1142,
+          1144,
+          1146
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Full5distributedvalidationrules:globalvalidationTS,abortlatepredecessor,locallycomparablestart/finish,validatebeforeprepare,commitonlyglobaloutcome;oldreadpreparedconflict and weakeratomicversionguard.",
+      "evidence": [
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "teaching",
+          "paragraph": 23,
+          "exactOpening": "§23.3.7 còn có một điều kiện quan trọng cho distributed validation: cùng TS(T) được dùng ở mọi site, nhưng message tới trễ có thể làm transaction timestamp nhỏ bắt đầu validate sau timestamp lớn. Tại mỗi site, nếu một transaction bước vào validation mà đã có transaction TS lớn hơn bắt đầu validation tại đó, mô hình sách rollback transaction tới muộ"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 24,
+          "exactOpening": "Ca numeric: site A đã bắt đầu validate T20; message validate T10 tới sau. Không được validate10 như chưa có20, vì20 đã bỏ qua một predecessor chưa biết. Rule bảo thủ abort10 tại site này; atomic commit bảo đảm các branch khác không vẫn commit10 riêng. Nếu T10 tới trước20 và conflicts không có, thứ tự ấy có thể qua; cùng workload nhưng message order"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "activity",
+          "paragraph": 47,
+          "exactOpening": "1. Vẽ local và global wait-for graphs của ví dụ1. Thêm message delay để tạo cycle ảo và nêu cách xác nhận trước quyết định.\n2. Dùng logical counter/siteID tạo tags cho ba local events và một receive; chứng minh causal order được giữ, không phải giờ thực tuyệt đối.\n3. Với clock interval[200,206], chọn tc và xét các lần kiểm[204,210],[207,213]. Reade"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "answer",
+          "paragraph": 52,
+          "exactOpening": "1. A:T2→T1; B:T1→T2; union có cycle. Nếu A đã nhả nhưng message cạnh tới muộn, cần version/confirmation hoặc policy abort bảo thủ được nêu. Không coi ảnh stale là trace exact.\n2. Send mang counter; receive=max(local,received)+1. Tag tăng trên mỗi bước causal, nên tăng trên mọi chuỗi causal. Tags của hai event không có quan hệ causal vẫn có thể so đ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.5",
+      "title": "Extended Concurrency Control Protocols",
+      "owners": [
+        "AD65"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          1260,
+          1266
+        ],
+        "ownBodySha256": "9e4a081079dd29eb0f66f41b0ffead7292ea19f08b7055f8a41cd5ac42d2f9a0"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1142,
+          1144,
+          1146
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "MV2PL/globallyconsistenttime,distributedSI andfederation are separateextensionswithdifferentguarantees.",
+      "evidence": [
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "teaching",
+          "paragraph": 29,
+          "exactOpening": "Multiversion 2PL có thể dùng timestamp snapshot cho read-only transactions và rigorous locking cho update transactions. Một cách đơn giản là central coordinator cấp start/commit timestamps và chỉ cho một transaction commit processing tại một thời điểm; nó giữ visibility nhất quán nhưng có bottleneck điều phối. Nhiều version riêng không tự sửa read "
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 28,
+          "exactOpening": "Ban đầu x ở A=100,y ở B=100. Transaction T chuyển10 từ x sang y, commit như một đơn vị. Q đọc x trước transfer và y sau transfer được100+110=210; đọc x sau và y trước được90+100=190. Hai row đều committed tại mốc local nhưng không thuộc cùng snapshot nghiệp vụ. Snapshot trước T là(100,100); sau T là(90,110)."
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "activity",
+          "paragraph": 47,
+          "exactOpening": "1. Vẽ local và global wait-for graphs của ví dụ1. Thêm message delay để tạo cycle ảo và nêu cách xác nhận trước quyết định.\n2. Dùng logical counter/siteID tạo tags cho ba local events và một receive; chứng minh causal order được giữ, không phải giờ thực tuyệt đối.\n3. Với clock interval[200,206], chọn tc và xét các lần kiểm[204,210],[207,213]. Reade"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "answer",
+          "paragraph": 52,
+          "exactOpening": "1. A:T2→T1; B:T1→T2; union có cycle. Nếu A đã nhả nhưng message cạnh tới muộn, cần version/confirmation hoặc policy abort bảo thủ được nêu. Không coi ảnh stale là trace exact.\n2. Send mang counter; receive=max(local,received)+1. Tag tăng trên mỗi bước causal, nên tăng trên mọi chuỗi causal. Tags của hai event không có quan hệ causal vẫn có thể so đ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.5.1",
+      "title": "Multiversion 2PL and Globally Consistent Timestamps",
+      "owners": [
+        "AD65"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          1267,
+          1367
+        ],
+        "ownBodySha256": "095ee9f42a528526aedadc23950f2280bb03806f7a45bf5fa7bf3949f7553248"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1142,
+          1144,
+          1146
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Centralcommitcounterbottleneck,perfectclockidealizationversusuncertainty/commitwait,lockintervalserializationargument,externalorder,safetime/pendingcommitreads andearliersnapshotfreshnesstradeoff.",
+      "evidence": [
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "teaching",
+          "paragraph": 31,
+          "exactOpening": "§23.5.1 còn xét một thiết kế dùng khoảng thời gian. API thời gian trả [earliest,latest] chứa true time theo giả định đã công bố. Đây là cận được bảo đảm bởi hệ thời gian, không phải sai số đoán từ đồng hồ browser. Sau khi lấy đủ write locks, chọn commit timestamp tc bằng upper bound hiện tại. Giữ locks trong commit processing và đợi tới khi lower b"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 34,
+          "exactOpening": "Ví dụ 3: lúc chọn timestamp, khoảng là[98,102]ms, nên tc=102ms. Ở lần kiểm tiếp khoảng[101,105], chưa được qua guard. Khi khoảng[103,107], true time chắc đã lớn hơn102. Với độ bất định cố định ε=2ms và clock model lý tưởng của sách, chờ cỡ2ε=4ms là cận minh họa; hệ thực kiểm interval, không lấy một sleep4ms trên máy bất kỳ làm bằng chứng."
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "activity",
+          "paragraph": 47,
+          "exactOpening": "1. Vẽ local và global wait-for graphs của ví dụ1. Thêm message delay để tạo cycle ảo và nêu cách xác nhận trước quyết định.\n2. Dùng logical counter/siteID tạo tags cho ba local events và một receive; chứng minh causal order được giữ, không phải giờ thực tuyệt đối.\n3. Với clock interval[200,206], chọn tc và xét các lần kiểm[204,210],[207,213]. Reade"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "answer",
+          "paragraph": 52,
+          "exactOpening": "1. A:T2→T1; B:T1→T2; union có cycle. Nếu A đã nhả nhưng message cạnh tới muộn, cần version/confirmation hoặc policy abort bảo thủ được nêu. Không coi ảnh stale là trace exact.\n2. Send mang counter; receive=max(local,received)+1. Tag tăng trên mỗi bước causal, nên tăng trên mọi chuỗi causal. Tags của hai event không có quan hệ causal vẫn có thể so đ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.5.2",
+      "title": "Distributed Snapshot Isolation",
+      "owners": [
+        "AD65"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          1368,
+          1394
+        ],
+        "ownBodySha256": "65f20562aef90473fea28ce0cfd689003557cdf003d36a673ba9263684f42bb0"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1142,
+          1144,
+          1146
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Independentlocalsnapshotscanreadpartialglobaltransaction;coordinatedvisibility/WWvalidationneeded;SIstillnotserializable,sourceomitsfullimplementationandlessonkeepsscope.",
+      "evidence": [
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "teaching",
+          "paragraph": 36,
+          "exactOpening": "Distributed snapshot isolation vẫn cần global visibility và write-conflict validation trên các site chứa write set. Nó có thể còn write skew nếu chỉ chặn same-item writes như AD42. Tách “snapshot”, “serializable” và “strict serializable” bằng định nghĩa cùng protocol của nền tảng."
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 37,
+          "exactOpening": "Ví dụ T ghi cả x ở A và y ở B. Q bắt đầu snapshot A trước T commit, nhưng chỉ tạo snapshot B sau T commit: Q có thể thấy x cũ và y mới dù mỗi local snapshot hợp lệ. SI tập trung không cho Q thấy một nửa cùng transaction như vậy. Distributed SI cần phối hợp snapshot/visibility và write-conflict check; source chỉ phác các hướng, không cung cấp một im"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "activity",
+          "paragraph": 47,
+          "exactOpening": "1. Vẽ local và global wait-for graphs của ví dụ1. Thêm message delay để tạo cycle ảo và nêu cách xác nhận trước quyết định.\n2. Dùng logical counter/siteID tạo tags cho ba local events và một receive; chứng minh causal order được giữ, không phải giờ thực tuyệt đối.\n3. Với clock interval[200,206], chọn tc và xét các lần kiểm[204,210],[207,213]. Reade"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "answer",
+          "paragraph": 52,
+          "exactOpening": "1. A:T2→T1; B:T1→T2; union có cycle. Nếu A đã nhả nhưng message cạnh tới muộn, cần version/confirmation hoặc policy abort bảo thủ được nêu. Không coi ảnh stale là trace exact.\n2. Send mang counter; receive=max(local,received)+1. Tag tăng trên mỗi bước causal, nên tăng trên mọi chuỗi causal. Tags của hai event không có quan hệ causal vẫn có thể so đ"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.5.3",
+      "title": "Concurrency Control in Federated Database Systems",
+      "owners": [
+        "AD65"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          1395,
+          1453
+        ],
+        "ownBodySha256": "46772a9c5e781812caf3c7b7af9323755915919893b420f96f8eb34b2e206c01"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            145
+          ],
+          [
+            146,
+            306
+          ],
+          [
+            307,
+            444
+          ],
+          [
+            445,
+            556
+          ],
+          [
+            557,
+            718
+          ],
+          [
+            719,
+            859
+          ],
+          [
+            860,
+            936
+          ],
+          [
+            1260,
+            1395
+          ],
+          [
+            1396,
+            1453
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1142,
+          1144,
+          1146
+        ],
+        "baselineCredit": false,
+        "scope": "Direct source own bodies and full currentAD50/65; no credit for otherchapter23sources."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Autonomouslocal/globaltransactions,localserializableinsufficiencyevensequentialglobalworkoriginal3txcycle,ticketdirectconflict/orderwithtransactioncontrol andcapabilitylimits.",
+      "evidence": [
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "teaching",
+          "paragraph": 40,
+          "exactOpening": "Một kỹ thuật trong §23.5.3 dùng ticket item tại mỗi site: mỗi global transaction phải ghi ticket ở mọi site nó ghé. Các global transactions vì thế xung đột trực tiếp tại site chung, cho global manager một điểm kiểm soát thứ tự local. Ticket phải nằm trong transaction và được phối hợp đúng giữa các site; thêm một cột tên ticket rồi ghi ngoài transac"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 41,
+          "exactOpening": "Ngay cả global requests không overlap vẫn chưa đủ nếu chỉ giả định **local serializability**. Xét local L ở A, global G1/G2 cùng ghé A,B; ban đầu A.x=A.y=B.z=0. L đọc x0; G1 ghi A.x=1 và B.z=1 rồi kết thúc; sau đó G2 đọc A.y=0 và B.z=1 rồi kết thúc; cuối cùng L ghi A.y=1 rồi kết thúc. Local graph A có G2→L→G1, vẫn acyclic; B có G1→G2, cũng acyclic."
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "activity",
+          "paragraph": 47,
+          "exactOpening": "1. Vẽ local và global wait-for graphs của ví dụ1. Thêm message delay để tạo cycle ảo và nêu cách xác nhận trước quyết định.\n2. Dùng logical counter/siteID tạo tags cho ba local events và một receive; chứng minh causal order được giữ, không phải giờ thực tuyệt đối.\n3. Với clock interval[200,206], chọn tc và xét các lần kiểm[204,210],[207,213]. Reade"
+        },
+        {
+          "path": "lessons/AD65.md",
+          "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+          "kind": "answer",
+          "paragraph": 52,
+          "exactOpening": "1. A:T2→T1; B:T1→T2; union có cycle. Nếu A đã nhả nhưng message cạnh tới muộn, cần version/confirmation hoặc policy abort bảo thủ được nêu. Không coi ảnh stale là trace exact.\n2. Send mang counter; receive=max(local,received)+1. Tag tăng trên mỗi bước causal, nên tăng trên mọi chuỗi causal. Tags của hai event không có quan hệ causal vẫn có thể so đ"
+        }
+      ],
+      "gaps": []
+    }
+  ],
+  "checks": "qa/distributed-commit-lock-full-checks.json:18checks,2448finite2PCstates and actual sequentialSQLiteinbox/outboxfixture; noXA/clock/distributedengineexecution.",
+  "sourceInterpretation": [
+    "Persistentmessagingdeliversrepeatednetworkmessages butonecommittedlocaleffectunderatomicdedup;externalAPIsnotautomaticallycovered.",
+    "Cutoffdedupretentionwithrejectingoldmessages changesdeliveryacceptance; cannotbothforgetIDsandacceptarbitrarilylateduplicateswithoutotherevidence.",
+    "Falsecycle release-then-acquireexample is qualified outsideglobal2PL; local serializability federationexample is not claimed strict2PL/nativeexecution.",
+    "Consensusreplicatingdecisiondoesnotremoveunanimousparticipantreadinessorunconditionallivenessunderasynchrony."
+  ]
+}

@@ -1,0 +1,2822 @@
+[
+  {
+    "lesson": "AD26",
+    "old": "thứhai",
+    "new": "thứ hai"
+  },
+  {
+    "lesson": "AD26",
+    "old": "đềuNULL",
+    "new": "đều NULL"
+  },
+  {
+    "lesson": "AD26",
+    "old": "đềuNULL",
+    "new": "đều NULL"
+  },
+  {
+    "lesson": "AD26",
+    "old": "cùngrow",
+    "new": "cùng row"
+  },
+  {
+    "lesson": "AD26",
+    "old": "đềuNULL",
+    "new": "đều NULL"
+  },
+  {
+    "lesson": "AD26",
+    "old": "hợpNULL",
+    "new": "hợp NULL"
+  },
+  {
+    "lesson": "AD27",
+    "old": "thứtự",
+    "new": "thứ tự"
+  },
+  {
+    "lesson": "AD27",
+    "old": "làleaf",
+    "new": "là leaf"
+  },
+  {
+    "lesson": "AD27",
+    "old": "cùngđộsâu",
+    "new": "cùng độ sâu"
+  },
+  {
+    "lesson": "AD27",
+    "old": "thứtự",
+    "new": "thứ tự"
+  },
+  {
+    "lesson": "AD27",
+    "old": "địnhtuyến",
+    "new": "định tuyến"
+  },
+  {
+    "lesson": "AD27",
+    "old": "thứtự",
+    "new": "thứ tự"
+  },
+  {
+    "lesson": "AD27",
+    "old": "đườngroot",
+    "new": "đường root"
+  },
+  {
+    "lesson": "AD27",
+    "old": "gồmroot",
+    "new": "gồm root"
+  },
+  {
+    "lesson": "AD27",
+    "old": "giữRID",
+    "new": "giữ RID"
+  },
+  {
+    "lesson": "AD27",
+    "old": "thứtự",
+    "new": "thứ tự"
+  },
+  {
+    "lesson": "AD27",
+    "old": "địnhtuyến",
+    "new": "định tuyến"
+  },
+  {
+    "lesson": "AD27",
+    "old": "leafphải",
+    "new": "leaf phải"
+  },
+  {
+    "lesson": "AD27",
+    "old": "thứtự",
+    "new": "thứ tự"
+  },
+  {
+    "lesson": "AD27",
+    "old": "leafphải",
+    "new": "leaf phải"
+  },
+  {
+    "lesson": "AD27",
+    "old": "địnhtuyến",
+    "new": "định tuyến"
+  },
+  {
+    "lesson": "AD27",
+    "old": "leaftrái",
+    "new": "leaf trái"
+  },
+  {
+    "lesson": "AD27",
+    "old": "leaftrái",
+    "new": "leaf trái"
+  },
+  {
+    "lesson": "AD27",
+    "old": "thứnăm",
+    "new": "thứ năm"
+  },
+  {
+    "lesson": "AD27",
+    "old": "đúngmột",
+    "new": "đúng một"
+  },
+  {
+    "lesson": "AD27",
+    "old": "câyhợp",
+    "new": "cây hợp"
+  },
+  {
+    "lesson": "AD27",
+    "old": "thứtự",
+    "new": "thứ tự"
+  },
+  {
+    "lesson": "AD27",
+    "old": "thứtự",
+    "new": "thứ tự"
+  },
+  {
+    "lesson": "AD27",
+    "old": "thứtự",
+    "new": "thứ tự"
+  },
+  {
+    "lesson": "AD27",
+    "old": "thứtự",
+    "new": "thứ tự"
+  },
+  {
+    "lesson": "AD27",
+    "old": "làleaf",
+    "new": "là leaf"
+  },
+  {
+    "lesson": "AD27",
+    "old": "cóseparator",
+    "new": "có separator"
+  },
+  {
+    "lesson": "AD27",
+    "old": "làentryleaf",
+    "new": "là entry leaf"
+  },
+  {
+    "lesson": "AD27",
+    "old": "vượtmax",
+    "new": "vượt max"
+  },
+  {
+    "lesson": "AD27",
+    "old": "bằngseparator",
+    "new": "bằng separator"
+  },
+  {
+    "lesson": "AD27",
+    "old": "đếmseparator",
+    "new": "đếm separator"
+  },
+  {
+    "lesson": "AD27",
+    "old": "nhưrow",
+    "new": "như row"
+  },
+  {
+    "lesson": "AD27",
+    "old": "câyroot",
+    "new": "cây root"
+  },
+  {
+    "lesson": "AD27",
+    "old": "thứnăm",
+    "new": "thứ năm"
+  },
+  {
+    "lesson": "AD27",
+    "old": "tậpentry",
+    "new": "tập entry"
+  },
+  {
+    "lesson": "AD27",
+    "old": "bằngseparator",
+    "new": "bằng separator"
+  },
+  {
+    "lesson": "AD27",
+    "old": "tậpentry",
+    "new": "tập entry"
+  },
+  {
+    "lesson": "AD27",
+    "old": "đườngđi",
+    "new": "đường đi"
+  },
+  {
+    "lesson": "AD27",
+    "old": "leaftrái",
+    "new": "leaf trái"
+  },
+  {
+    "lesson": "AD27",
+    "old": "thấyseparator",
+    "new": "thấy separator"
+  },
+  {
+    "lesson": "AD27",
+    "old": "leafphải",
+    "new": "leaf phải"
+  },
+  {
+    "lesson": "AD27",
+    "old": "mộtrow",
+    "new": "một row"
+  },
+  {
+    "lesson": "AD27",
+    "old": "leafphải",
+    "new": "leaf phải"
+  },
+  {
+    "lesson": "AD27",
+    "old": "leaftrái",
+    "new": "leaf trái"
+  },
+  {
+    "lesson": "AD27",
+    "old": "lầnnext",
+    "new": "lần next"
+  },
+  {
+    "lesson": "AD27",
+    "old": "linkđúng",
+    "new": "link đúng"
+  },
+  {
+    "lesson": "AD27",
+    "old": "mộtrange",
+    "new": "một range"
+  },
+  {
+    "lesson": "AD27",
+    "old": "chelỗi",
+    "new": "che lỗi"
+  },
+  {
+    "lesson": "AD27",
+    "old": "câyhợp",
+    "new": "cây hợp"
+  },
+  {
+    "lesson": "AD27",
+    "old": "đúngmộtentry",
+    "new": "đúng một entry"
+  },
+  {
+    "lesson": "AD27",
+    "old": "tấtcảleaf",
+    "new": "tất cả leaf"
+  },
+  {
+    "lesson": "AD27",
+    "old": "cùngđộsâu",
+    "new": "cùng độ sâu"
+  },
+  {
+    "lesson": "AD27",
+    "old": "địnhtuyến",
+    "new": "định tuyến"
+  },
+  {
+    "lesson": "AD27",
+    "old": "nextđủ",
+    "new": "next đủ"
+  },
+  {
+    "lesson": "AD27",
+    "old": "tắcsplit",
+    "new": "tắc split"
+  },
+  {
+    "lesson": "AD27",
+    "old": "chứngminhinvariant",
+    "new": "chứng minh invariant"
+  },
+  {
+    "lesson": "AD27",
+    "old": "nhấtquán",
+    "new": "nhất quán"
+  },
+  {
+    "lesson": "AD27",
+    "old": "tắcbài",
+    "new": "tắc bài"
+  },
+  {
+    "lesson": "AD27",
+    "old": "cặpkey",
+    "new": "cặp key"
+  },
+  {
+    "lesson": "AD27",
+    "old": "câybấtkỳ",
+    "new": "cây bất kỳ"
+  },
+  {
+    "lesson": "AD27",
+    "old": "trênhai",
+    "new": "trên hai"
+  },
+  {
+    "lesson": "AD27",
+    "old": "chochèn",
+    "new": "cho chèn"
+  },
+  {
+    "lesson": "AD27",
+    "old": "đườngđi",
+    "new": "đường đi"
+  },
+  {
+    "lesson": "AD27",
+    "old": "trạngtháisplit",
+    "new": "trạng thái split"
+  },
+  {
+    "lesson": "AD27",
+    "old": "tươngđương",
+    "new": "tương đương"
+  },
+  {
+    "lesson": "AD27",
+    "old": "kéoentry",
+    "new": "kéo entry"
+  },
+  {
+    "lesson": "AD27",
+    "old": "bảngtext",
+    "new": "bảng text"
+  },
+  {
+    "lesson": "AD27",
+    "old": "nộptrênweb",
+    "new": "nộp trên web"
+  },
+  {
+    "lesson": "AD27",
+    "old": "họcviên",
+    "new": "học viên"
+  },
+  {
+    "lesson": "AD27",
+    "old": "quyướccapacity",
+    "new": "quy ước capacity"
+  },
+  {
+    "lesson": "AD27",
+    "old": "thuậttoán",
+    "new": "thuật toán"
+  },
+  {
+    "lesson": "AD27",
+    "old": "đượcbiênsoạnmới",
+    "new": "được biên soạn mới"
+  },
+  {
+    "lesson": "AD28",
+    "old": "thứhai",
+    "new": "thứ hai"
+  },
+  {
+    "lesson": "AD29",
+    "old": "thứhai",
+    "new": "thứ hai"
+  },
+  {
+    "lesson": "AD30",
+    "old": "nhómcustomer",
+    "new": "nhóm customer"
+  },
+  {
+    "lesson": "AD30",
+    "old": "gồmNULL",
+    "new": "gồm NULL"
+  },
+  {
+    "lesson": "AD31",
+    "old": "vàput",
+    "new": "và put"
+  },
+  {
+    "lesson": "AD31",
+    "old": "vàdelete",
+    "new": "và delete"
+  },
+  {
+    "lesson": "AD31",
+    "old": "chứaput",
+    "new": "chứa put"
+  },
+  {
+    "lesson": "AD32",
+    "old": "làceil",
+    "new": "là ceil"
+  },
+  {
+    "lesson": "AD33",
+    "old": "nhómtrùng",
+    "new": "nhóm trùng"
+  },
+  {
+    "lesson": "AD33",
+    "old": "nhómtrùng",
+    "new": "nhóm trùng"
+  },
+  {
+    "lesson": "AD33",
+    "old": "cùnghash",
+    "new": "cùng hash"
+  },
+  {
+    "lesson": "AD33",
+    "old": "vừaRAM",
+    "new": "vừa RAM"
+  },
+  {
+    "lesson": "AD33",
+    "old": "vừaRAM",
+    "new": "vừa RAM"
+  },
+  {
+    "lesson": "AD33",
+    "old": "vừaRAM",
+    "new": "vừa RAM"
+  },
+  {
+    "lesson": "AD33",
+    "old": "vừaRAM",
+    "new": "vừa RAM"
+  },
+  {
+    "lesson": "AD33",
+    "old": "giảđịnh",
+    "new": "giả định"
+  },
+  {
+    "lesson": "AD33",
+    "old": "bằnghash",
+    "new": "bằng hash"
+  },
+  {
+    "lesson": "AD33",
+    "old": "giữmin",
+    "new": "giữ min"
+  },
+  {
+    "lesson": "AD33",
+    "old": "vượtRAM",
+    "new": "vượt RAM"
+  },
+  {
+    "lesson": "AD33",
+    "old": "cùnghash",
+    "new": "cùng hash"
+  },
+  {
+    "lesson": "AD33",
+    "old": "giảđịnh",
+    "new": "giả định"
+  },
+  {
+    "lesson": "AD33",
+    "old": "nhómtrùng",
+    "new": "nhóm trùng"
+  },
+  {
+    "lesson": "AD33",
+    "old": "cặpRID",
+    "new": "cặp RID"
+  },
+  {
+    "lesson": "AD33",
+    "old": "cùngbucket",
+    "new": "cùng bucket"
+  },
+  {
+    "lesson": "AD33",
+    "old": "làactivity",
+    "new": "là ac ti vi ty"
+  },
+  {
+    "lesson": "AD33",
+    "old": "trênmáy",
+    "new": "trên máy"
+  },
+  {
+    "lesson": "AD33",
+    "old": "vàspatial",
+    "new": "và spatial"
+  },
+  {
+    "lesson": "AD33",
+    "old": "vàcostPE",
+    "new": "và cost PE"
+  },
+  {
+    "lesson": "AD33",
+    "old": "biênsoạn",
+    "new": "biên soạn"
+  },
+  {
+    "lesson": "AD33",
+    "old": "giảđịnh",
+    "new": "giả định"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trênweb",
+    "new": "trên web"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trạngthái",
+    "new": "trạng thái"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trạngthái",
+    "new": "trạng thái"
+  },
+  {
+    "lesson": "AD34",
+    "old": "mộtlần",
+    "new": "một lần"
+  },
+  {
+    "lesson": "AD34",
+    "old": "đọcEOS",
+    "new": "đọc EOS"
+  },
+  {
+    "lesson": "AD34",
+    "old": "lầnđầu",
+    "new": "lần đầu"
+  },
+  {
+    "lesson": "AD34",
+    "old": "lầnthứhai",
+    "new": "lần thứ hai"
+  },
+  {
+    "lesson": "AD34",
+    "old": "bỏNULL",
+    "new": "bỏ NULL"
+  },
+  {
+    "lesson": "AD34",
+    "old": "lầnthứbaEOS",
+    "new": "lần thứ ba EOS"
+  },
+  {
+    "lesson": "AD34",
+    "old": "mộtlần",
+    "new": "một lần"
+  },
+  {
+    "lesson": "AD34",
+    "old": "thànhDISTINCT",
+    "new": "thành DISTINCT"
+  },
+  {
+    "lesson": "AD34",
+    "old": "kếtquả",
+    "new": "kết quả"
+  },
+  {
+    "lesson": "AD34",
+    "old": "kếtquả",
+    "new": "kết quả"
+  },
+  {
+    "lesson": "AD34",
+    "old": "thuậttoán",
+    "new": "thuật toán"
+  },
+  {
+    "lesson": "AD34",
+    "old": "thôngtin",
+    "new": "thông tin"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trạngthái",
+    "new": "trạng thái"
+  },
+  {
+    "lesson": "AD34",
+    "old": "kếtquả",
+    "new": "kết quả"
+  },
+  {
+    "lesson": "AD34",
+    "old": "hiệnlại",
+    "new": "hiện lại"
+  },
+  {
+    "lesson": "AD34",
+    "old": "mộtphysicalproperty",
+    "new": "một physical property"
+  },
+  {
+    "lesson": "AD34",
+    "old": "bảođảm",
+    "new": "bảo đảm"
+  },
+  {
+    "lesson": "AD34",
+    "old": "mongđợi",
+    "new": "mong đợi"
+  },
+  {
+    "lesson": "AD34",
+    "old": "vôhạn",
+    "new": "vô hạn"
+  },
+  {
+    "lesson": "AD34",
+    "old": "hếtRAM",
+    "new": "hết RAM"
+  },
+  {
+    "lesson": "AD34",
+    "old": "bộEOS",
+    "new": "bộ EOS"
+  },
+  {
+    "lesson": "AD34",
+    "old": "mỗiNULL",
+    "new": "mỗi NULL"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trướcDISTINCT",
+    "new": "trước DISTINCT"
+  },
+  {
+    "lesson": "AD34",
+    "old": "cácrow",
+    "new": "các row"
+  },
+  {
+    "lesson": "AD34",
+    "old": "khácid",
+    "new": "khác id"
+  },
+  {
+    "lesson": "AD34",
+    "old": "thànhtrùng",
+    "new": "thành trùng"
+  },
+  {
+    "lesson": "AD34",
+    "old": "cùngtuple",
+    "new": "cùng tuple"
+  },
+  {
+    "lesson": "AD34",
+    "old": "biếnthểDISTINCT",
+    "new": "biến thể DISTINCT"
+  },
+  {
+    "lesson": "AD34",
+    "old": "chỉgiữ",
+    "new": "chỉ giữ"
+  },
+  {
+    "lesson": "AD34",
+    "old": "thayvì",
+    "new": "thay vì"
+  },
+  {
+    "lesson": "AD34",
+    "old": "nhữngrow",
+    "new": "những row"
+  },
+  {
+    "lesson": "AD34",
+    "old": "sựkhác",
+    "new": "sự khác"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trạngthái",
+    "new": "trạng thái"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trungbình",
+    "new": "trung bình"
+  },
+  {
+    "lesson": "AD34",
+    "old": "cácAVG",
+    "new": "các AVG"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trọngsố",
+    "new": "trọng số"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trạngtháiempty",
+    "new": "trạng thái empty"
+  },
+  {
+    "lesson": "AD34",
+    "old": "giátrịmặcđịnh",
+    "new": "giá trị mặc định"
+  },
+  {
+    "lesson": "AD34",
+    "old": "đúngpartition",
+    "new": "đúng partition"
+  },
+  {
+    "lesson": "AD34",
+    "old": "gồmhashentry",
+    "new": "gồm hash entry"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trạngthái",
+    "new": "trạng thái"
+  },
+  {
+    "lesson": "AD34",
+    "old": "lệnhSUM",
+    "new": "lệnh SUM"
+  },
+  {
+    "lesson": "AD34",
+    "old": "bảođảm",
+    "new": "bảo đảm"
+  },
+  {
+    "lesson": "AD34",
+    "old": "khôngmatch",
+    "new": "không match"
+  },
+  {
+    "lesson": "AD34",
+    "old": "đúngmộtNULL",
+    "new": "đúng một NULL"
+  },
+  {
+    "lesson": "AD34",
+    "old": "cómatch",
+    "new": "có match"
+  },
+  {
+    "lesson": "AD34",
+    "old": "thêmrowNULL",
+    "new": "thêm row NULL"
+  },
+  {
+    "lesson": "AD34",
+    "old": "gắnđúngrow",
+    "new": "gắn đúng row"
+  },
+  {
+    "lesson": "AD34",
+    "old": "thuậttoán",
+    "new": "thuật toán"
+  },
+  {
+    "lesson": "AD34",
+    "old": "chưamatch",
+    "new": "chưa match"
+  },
+  {
+    "lesson": "AD34",
+    "old": "làrow",
+    "new": "là row"
+  },
+  {
+    "lesson": "AD34",
+    "old": "vôhạn",
+    "new": "vô hạn"
+  },
+  {
+    "lesson": "AD34",
+    "old": "kếtthúc",
+    "new": "kết thúc"
+  },
+  {
+    "lesson": "AD34",
+    "old": "kếtthúc",
+    "new": "kết thúc"
+  },
+  {
+    "lesson": "AD34",
+    "old": "thôngtin",
+    "new": "thông tin"
+  },
+  {
+    "lesson": "AD34",
+    "old": "tiếnđộ",
+    "new": "tiến độ"
+  },
+  {
+    "lesson": "AD34",
+    "old": "môhìnhhệ",
+    "new": "mô hình hệ"
+  },
+  {
+    "lesson": "AD34",
+    "old": "bảođảmkhông",
+    "new": "bảo đảm không"
+  },
+  {
+    "lesson": "AD34",
+    "old": "cólateevent",
+    "new": "có late event"
+  },
+  {
+    "lesson": "AD34",
+    "old": "bêpipelinebatch",
+    "new": "bê pipeline batch"
+  },
+  {
+    "lesson": "AD34",
+    "old": "bảnghữu",
+    "new": "bảng hữu"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trạngthái",
+    "new": "trạng thái"
+  },
+  {
+    "lesson": "AD34",
+    "old": "overheadgọihàm",
+    "new": "overhead gọi hàm"
+  },
+  {
+    "lesson": "AD34",
+    "old": "giảmoverhead",
+    "new": "giảm overhead"
+  },
+  {
+    "lesson": "AD34",
+    "old": "đổiorder",
+    "new": "đổi order"
+  },
+  {
+    "lesson": "AD34",
+    "old": "Bỏmaterialization",
+    "new": "Bỏ materialization"
+  },
+  {
+    "lesson": "AD34",
+    "old": "giữresource",
+    "new": "giữ resource"
+  },
+  {
+    "lesson": "AD34",
+    "old": "ảnhhưởng",
+    "new": "ảnh hưởng"
+  },
+  {
+    "lesson": "AD34",
+    "old": "táisửdụng",
+    "new": "tái sử dụng"
+  },
+  {
+    "lesson": "AD34",
+    "old": "kếtquả",
+    "new": "kết quả"
+  },
+  {
+    "lesson": "AD34",
+    "old": "cảcácđánhđổi",
+    "new": "cả các đánh đổi"
+  },
+  {
+    "lesson": "AD34",
+    "old": "lầnnext",
+    "new": "lần next"
+  },
+  {
+    "lesson": "AD34",
+    "old": "đếnEOS",
+    "new": "đến EOS"
+  },
+  {
+    "lesson": "AD34",
+    "old": "saurowđầu",
+    "new": "sau row đầu"
+  },
+  {
+    "lesson": "AD34",
+    "old": "thìclose",
+    "new": "thì close"
+  },
+  {
+    "lesson": "AD34",
+    "old": "phảnvídụ",
+    "new": "phản ví dụ"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trêninputkhôngđượcsắp",
+    "new": "trên input không được sắp"
+  },
+  {
+    "lesson": "AD34",
+    "old": "mộtphysicalproperty",
+    "new": "một physical property"
+  },
+  {
+    "lesson": "AD34",
+    "old": "thuậttoánkhác",
+    "new": "thuật toán khác"
+  },
+  {
+    "lesson": "AD34",
+    "old": "balần",
+    "new": "ba lần"
+  },
+  {
+    "lesson": "AD34",
+    "old": "hailần",
+    "new": "hai lần"
+  },
+  {
+    "lesson": "AD34",
+    "old": "TínhUNIONALL",
+    "new": "Tính UNION ALL"
+  },
+  {
+    "lesson": "AD34",
+    "old": "vàEXCEPTDISTINCT",
+    "new": "và EXCEPT DISTINCT"
+  },
+  {
+    "lesson": "AD34",
+    "old": "Sauđó",
+    "new": "Sau đó"
+  },
+  {
+    "lesson": "AD34",
+    "old": "nhưSUM",
+    "new": "như SUM"
+  },
+  {
+    "lesson": "AD34",
+    "old": "kếpipeline",
+    "new": "kế pipeline"
+  },
+  {
+    "lesson": "AD34",
+    "old": "dữliệumới",
+    "new": "dữ liệu mới"
+  },
+  {
+    "lesson": "AD34",
+    "old": "outputđúng",
+    "new": "output đúng"
+  },
+  {
+    "lesson": "AD34",
+    "old": "lầnnhận",
+    "new": "lần nhận"
+  },
+  {
+    "lesson": "AD34",
+    "old": "Chốtgroup",
+    "new": "Chốt group"
+  },
+  {
+    "lesson": "AD34",
+    "old": "cònrowcủanhómđó",
+    "new": "còn row của nhóm đó"
+  },
+  {
+    "lesson": "AD34",
+    "old": "Phépbag",
+    "new": "Phép bag"
+  },
+  {
+    "lesson": "AD34",
+    "old": "thayvì",
+    "new": "thay vì"
+  },
+  {
+    "lesson": "AD34",
+    "old": "chỉxéttồn",
+    "new": "chỉ xét tồn"
+  },
+  {
+    "lesson": "AD34",
+    "old": "vớiclose",
+    "new": "với close"
+  },
+  {
+    "lesson": "AD34",
+    "old": "hoànchỉnh",
+    "new": "hoàn chỉnh"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trìnhbày",
+    "new": "trình bày"
+  },
+  {
+    "lesson": "AD34",
+    "old": "nhưfullaggregate",
+    "new": "như full aggregate"
+  },
+  {
+    "lesson": "AD34",
+    "old": "mộtEOS",
+    "new": "một EOS"
+  },
+  {
+    "lesson": "AD34",
+    "old": "Dừngsớm",
+    "new": "Dừng sớm"
+  },
+  {
+    "lesson": "AD34",
+    "old": "vàgiảiphóngbuffer",
+    "new": "và giải phóng buffer"
+  },
+  {
+    "lesson": "AD34",
+    "old": "đểresourcechờEOS",
+    "new": "để resource chờ EOS"
+  },
+  {
+    "lesson": "AD34",
+    "old": "màcallerkhôngđọc",
+    "new": "mà caller không đọc"
+  },
+  {
+    "lesson": "AD34",
+    "old": "Cóthểsortbygroupkey",
+    "new": "Có thể sort by group key"
+  },
+  {
+    "lesson": "AD34",
+    "old": "rồistream",
+    "new": "rồi stream"
+  },
+  {
+    "lesson": "AD34",
+    "old": "hoặchashaggregate",
+    "new": "hoặc hash aggregate"
+  },
+  {
+    "lesson": "AD34",
+    "old": "vàkết",
+    "new": "và kết"
+  },
+  {
+    "lesson": "AD34",
+    "old": "inputhoàn",
+    "new": "input hoàn"
+  },
+  {
+    "lesson": "AD34",
+    "old": "khôngvừaRAM",
+    "new": "không vừa RAM"
+  },
+  {
+    "lesson": "AD34",
+    "old": "dùngspillđúnggroup",
+    "new": "dùng spill đúng group"
+  },
+  {
+    "lesson": "AD34",
+    "old": "cầnsum",
+    "new": "cần sum"
+  },
+  {
+    "lesson": "AD34",
+    "old": "cộngAVG",
+    "new": "cộng AVG"
+  },
+  {
+    "lesson": "AD34",
+    "old": "giữtrọngsố",
+    "new": "giữ trọng số"
+  },
+  {
+    "lesson": "AD34",
+    "old": "partitionkhác",
+    "new": "partition khác"
+  },
+  {
+    "lesson": "AD34",
+    "old": "sốrow",
+    "new": "số row"
+  },
+  {
+    "lesson": "AD34",
+    "old": "cầnđúngsemantics",
+    "new": "cần đúng semantics"
+  },
+  {
+    "lesson": "AD34",
+    "old": "costcógiảđịnh",
+    "new": "cost có giả định"
+  },
+  {
+    "lesson": "AD34",
+    "old": "nêurõsortblocking",
+    "new": "nêu rõ sort blocking"
+  },
+  {
+    "lesson": "AD34",
+    "old": "vàaggregatechốt",
+    "new": "và aggregate chốt"
+  },
+  {
+    "lesson": "AD34",
+    "old": "cóempty",
+    "new": "có empty"
+  },
+  {
+    "lesson": "AD34",
+    "old": "Khôngchấmtừviệcvẽcácmũitênstream",
+    "new": "Không chấm từ việc vẽ các mũi tên stream"
+  },
+  {
+    "lesson": "AD34",
+    "old": "đánhgiáquan",
+    "new": "đánh giá quan"
+  },
+  {
+    "lesson": "AD34",
+    "old": "hệnhỏđộc",
+    "new": "hệ nhỏ độc"
+  },
+  {
+    "lesson": "AD34",
+    "old": "kiểmkhôngrowbịlặp",
+    "new": "kiểm không row bị lặp"
+  },
+  {
+    "lesson": "AD34",
+    "old": "hồiAVGchotừphânvùngkhácsốrow",
+    "new": "hồi AVG cho từ phân vùng khác số row"
+  },
+  {
+    "lesson": "AD34",
+    "old": "kếpipeline",
+    "new": "kế pipeline"
+  },
+  {
+    "lesson": "AD34",
+    "old": "cầnrubric",
+    "new": "cần rubric"
+  },
+  {
+    "lesson": "AD34",
+    "old": "nhữngcheckhữuhạn",
+    "new": "những check hữu hạn"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trênweb",
+    "new": "trên web"
+  },
+  {
+    "lesson": "AD34",
+    "old": "bấmnext",
+    "new": "bấm next"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trạngthái",
+    "new": "trạng thái"
+  },
+  {
+    "lesson": "AD34",
+    "old": "đanggiữ",
+    "new": "đang giữ"
+  },
+  {
+    "lesson": "AD34",
+    "old": "chuyểnmaterialized",
+    "new": "chuyển materialized"
+  },
+  {
+    "lesson": "AD34",
+    "old": "giảđịnhcôngkhai",
+    "new": "giả định công khai"
+  },
+  {
+    "lesson": "AD34",
+    "old": "trênweb",
+    "new": "trên web"
+  },
+  {
+    "lesson": "AD34",
+    "old": "thậtchỉhiện",
+    "new": "thật chỉ hiện"
+  },
+  {
+    "lesson": "AD34",
+    "old": "đãchạyvàghi",
+    "new": "đã chạy và ghi"
+  },
+  {
+    "lesson": "AD34",
+    "old": "vàsemantics",
+    "new": "và semantics"
+  },
+  {
+    "lesson": "AD34",
+    "old": "cácphép",
+    "new": "các phép"
+  },
+  {
+    "lesson": "AD34",
+    "old": "đềbàiPEđượcviếtmới",
+    "new": "đề bài PE được viết mới"
+  },
+  {
+    "lesson": "AD35",
+    "old": "sốrow",
+    "new": "số row"
+  },
+  {
+    "lesson": "AD35",
+    "old": "bằngước",
+    "new": "bằng ước"
+  },
+  {
+    "lesson": "AD35",
+    "old": "côngviệc",
+    "new": "công việc"
+  },
+  {
+    "lesson": "AD35",
+    "old": "trướckhi",
+    "new": "trước khi"
+  },
+  {
+    "lesson": "AD35",
+    "old": "sốnhỏ",
+    "new": "số nhỏ"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cóthể",
+    "new": "có thể"
+  },
+  {
+    "lesson": "AD35",
+    "old": "lênqua",
+    "new": "lên qua"
+  },
+  {
+    "lesson": "AD35",
+    "old": "làmchọn",
+    "new": "làm chọn"
+  },
+  {
+    "lesson": "AD35",
+    "old": "hoặcnestedloop",
+    "new": "hoặc nestedloop"
+  },
+  {
+    "lesson": "AD35",
+    "old": "quáđắt",
+    "new": "quá đắt"
+  },
+  {
+    "lesson": "AD35",
+    "old": "đánhgiáestimate",
+    "new": "đánh giá estimate"
+  },
+  {
+    "lesson": "AD35",
+    "old": "giảđịnhnào",
+    "new": "giả định nào"
+  },
+  {
+    "lesson": "AD35",
+    "old": "thayvì",
+    "new": "thay vì"
+  },
+  {
+    "lesson": "AD35",
+    "old": "đãchọn",
+    "new": "đã chọn"
+  },
+  {
+    "lesson": "AD35",
+    "old": "đúngindex",
+    "new": "đúng index"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Kýhiệu",
+    "new": "Ký hiệu"
+  },
+  {
+    "lesson": "AD35",
+    "old": "làsốtuple",
+    "new": "là số tuple"
+  },
+  {
+    "lesson": "AD35",
+    "old": "làsốpage",
+    "new": "là số page"
+  },
+  {
+    "lesson": "AD35",
+    "old": "làsốgiátrịdistinct",
+    "new": "là số giá trị distinct"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Cóthểcómin",
+    "new": "Có thể có min"
+  },
+  {
+    "lesson": "AD35",
+    "old": "tầnsuấtgiátrịphổbiến",
+    "new": "tần suất giá trị phổ biến"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vàthôngtinindex",
+    "new": "và thông tin index"
+  },
+  {
+    "lesson": "AD35",
+    "old": "nhưunique",
+    "new": "như unique"
+  },
+  {
+    "lesson": "AD35",
+    "old": "khácstatistics",
+    "new": "khác statistics"
+  },
+  {
+    "lesson": "AD35",
+    "old": "làcamkếtngữnghĩa",
+    "new": "là cam kết ngữ nghĩa"
+  },
+  {
+    "lesson": "AD35",
+    "old": "làthôngtinướclượngtheothờiđiểm",
+    "new": "là thông tin ước lượng theo thời điểm"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vàcáchlấymẫu",
+    "new": "và cách lấy mẫu"
+  },
+  {
+    "lesson": "AD35",
+    "old": "côngthứcđơngiản",
+    "new": "công thức đơn giản"
+  },
+  {
+    "lesson": "AD35",
+    "old": "giảđịnhphânbốđều",
+    "new": "giả định phân bố đều"
+  },
+  {
+    "lesson": "AD35",
+    "old": "nằmtrongmiềnđangxét",
+    "new": "nằm trong miền đang xét"
+  },
+  {
+    "lesson": "AD35",
+    "old": "indexvẫn",
+    "new": "index vẫn"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cóthểgiúptruycập",
+    "new": "có thể giúp truy cập"
+  },
+  {
+    "lesson": "AD35",
+    "old": "nhưngước",
+    "new": "nhưng ước"
+  },
+  {
+    "lesson": "AD35",
+    "old": "lượngđều",
+    "new": "lượng đều"
+  },
+  {
+    "lesson": "AD35",
+    "old": "đãsaingaytừselectivity",
+    "new": "đã sai ngay từ selectivity"
+  },
+  {
+    "lesson": "AD35",
+    "old": "thêmRAMkhôngsửalạigiảđịnhtheophânphối",
+    "new": "thêm RAM không sửa lại giả định theo phân phối"
+  },
+  {
+    "lesson": "AD35",
+    "old": "thườngdùngmin",
+    "new": "thường dùng min"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vàgiảđịnhphânbốtrongkhoảng",
+    "new": "và giả định phân bố trong khoảng"
+  },
+  {
+    "lesson": "AD35",
+    "old": "dữliệungày",
+    "new": "dữ liệu ngày"
+  },
+  {
+    "lesson": "AD35",
+    "old": "dồnvào",
+    "new": "dồn vào"
+  },
+  {
+    "lesson": "AD35",
+    "old": "ngàycuối",
+    "new": "ngày cuối"
+  },
+  {
+    "lesson": "AD35",
+    "old": "trênkeyunique",
+    "new": "trên key unique"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cócận",
+    "new": "có cận"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cóthểgiớihạnjoin",
+    "new": "có thể giới hạn join"
+  },
+  {
+    "lesson": "AD35",
+    "old": "kiệnNULL",
+    "new": "kiện NULL"
+  },
+  {
+    "lesson": "AD35",
+    "old": "khôngmatch",
+    "new": "không match"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vẫnphảixét",
+    "new": "vẫn phải xét"
+  },
+  {
+    "lesson": "AD35",
+    "old": "rangegiátrịthànhcáckhoảngđộrộnggầnnhau",
+    "new": "range giá trị thành các khoảng độ rộng gần nhau"
+  },
+  {
+    "lesson": "AD35",
+    "old": "countmỗibucket",
+    "new": "count mỗi bucket"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cóthểrấtkhác",
+    "new": "có thể rất khác"
+  },
+  {
+    "lesson": "AD35",
+    "old": "chiađểsốrowmỗibucketgầnnhau",
+    "new": "chia để số row mỗi bucket gần nhau"
+  },
+  {
+    "lesson": "AD35",
+    "old": "nhưngđộrộngrange",
+    "new": "nhưng độ rộng range"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Tầnsuấtgiátrịphổbiến",
+    "new": "Tần suất giá trị phổ biến"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cóthểđượcgiữriêng",
+    "new": "có thể được giữ riêng"
+  },
+  {
+    "lesson": "AD35",
+    "old": "mộthotkey",
+    "new": "một hot key"
+  },
+  {
+    "lesson": "AD35",
+    "old": "khôngnênbịhòa",
+    "new": "không nên bị hòa"
+  },
+  {
+    "lesson": "AD35",
+    "old": "giảđịnhđều",
+    "new": "giả định đều"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Giảsửbucket",
+    "new": "Giả sử bucket"
+  },
+  {
+    "lesson": "AD35",
+    "old": "nửabucket",
+    "new": "nửa bucket"
+  },
+  {
+    "lesson": "AD35",
+    "old": "thìướclượngấy",
+    "new": "thì ước lượng ấy"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Histogramlàtómtắt",
+    "new": "Histogram là tóm tắt"
+  },
+  {
+    "lesson": "AD35",
+    "old": "khôngdanh",
+    "new": "không danh"
+  },
+  {
+    "lesson": "AD35",
+    "old": "sáchmọirow",
+    "new": "sách mọi row"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cầnnêucáchxửlýbiênvàintrabucket",
+    "new": "cần nêu cách xử lý biên và int ra bucket"
+  },
+  {
+    "lesson": "AD35",
+    "old": "StatisticslấymẫucóthểdaođộnggiữahailầnANALYZE",
+    "new": "Statistics lấy mẫu có thể dao động giữa hai lần ANALYZE"
+  },
+  {
+    "lesson": "AD35",
+    "old": "dùtablekhôngđổi",
+    "new": "dù table không đổi"
+  },
+  {
+    "lesson": "AD35",
+    "old": "nênkhôngđòichuỗiplan",
+    "new": "nên không đòi chuỗi plan"
+  },
+  {
+    "lesson": "AD35",
+    "old": "costtuyệtđốigiốnghệthamkhảo",
+    "new": "cost tuyệt đối giống hệ tham khảo"
+  },
+  {
+    "lesson": "AD35",
+    "old": "xấpxỉtích",
+    "new": "xấp xỉ tích"
+  },
+  {
+    "lesson": "AD35",
+    "old": "kiệnmiềnTRUE",
+    "new": "kiện miền TRUE"
+  },
+  {
+    "lesson": "AD35",
+    "old": "NULLđãxửlý",
+    "new": "NULL đã xử lý"
+  },
+  {
+    "lesson": "AD35",
+    "old": "làgiảđịnhmôhình",
+    "new": "là giả định mô hình"
+  },
+  {
+    "lesson": "AD35",
+    "old": "khôngluậtprobabilitychohailuậnbấtkỳ",
+    "new": "không luật probability cho hai luận bất kỳ"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Từngpredicate",
+    "new": "Từng predicate"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Nhânđộc",
+    "new": "Nhân độc"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vìhaiđiềukiệntrùngnhau",
+    "new": "vì hai điều kiện trùng nhau"
+  },
+  {
+    "lesson": "AD35",
+    "old": "dữliệu",
+    "new": "dữ liệu"
+  },
+  {
+    "lesson": "AD35",
+    "old": "datasetkhác",
+    "new": "dataset khác"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cóthểchoassociationkhác",
+    "new": "có thể cho association khác"
+  },
+  {
+    "lesson": "AD35",
+    "old": "hoặcFD",
+    "new": "hoặc FD"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cóthểgiúp",
+    "new": "có thể giúp"
+  },
+  {
+    "lesson": "AD35",
+    "old": "nhưngphảixemenginehỗtrợgì",
+    "new": "nhưng phải xem engine hỗ trợ gì"
+  },
+  {
+    "lesson": "AD35",
+    "old": "khôngkhẳngđịnhmọiMySQLhistogram",
+    "new": "không khẳng định mọi MySQL histogram"
+  },
+  {
+    "lesson": "AD35",
+    "old": "tựbiết",
+    "new": "tự biết"
+  },
+  {
+    "lesson": "AD35",
+    "old": "tươngquan",
+    "new": "tương quan"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vàBđúngtáchrờinhau",
+    "new": "vàB đúng tách rời nhau"
+  },
+  {
+    "lesson": "AD35",
+    "old": "sẽtrừmộtgiaogiả",
+    "new": "sẽ trừ một giao giả"
+  },
+  {
+    "lesson": "AD35",
+    "old": "NếuNULL",
+    "new": "Nếu NULL"
+  },
+  {
+    "lesson": "AD35",
+    "old": "khôngđượcápNOT",
+    "new": "không được áp NOT"
+  },
+  {
+    "lesson": "AD35",
+    "old": "tựcoiUNKNOWNthànhTRUEtrongWHERE",
+    "new": "tự coi UNKNOWN thành TRUE trong WHERE"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Môhìnhướclượng",
+    "new": "Mô hình ước lượng"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vàlogicđúngtrướcướclượngchínhxác",
+    "new": "và logic đúng trước ước lượng chính xác"
+  },
+  {
+    "lesson": "AD35",
+    "old": "côngthứcphổbiến",
+    "new": "công thức phổ biến"
+  },
+  {
+    "lesson": "AD35",
+    "old": "dùnggiảđịnhphânbốđều",
+    "new": "dùng giả định phân bố đều"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vàmiềngiátrị",
+    "new": "và miền giá trị"
+  },
+  {
+    "lesson": "AD35",
+    "old": "hơnđượcchephủtrongmiềnlớnhơn",
+    "new": "hơn được che phủ trong miền lớn hơn"
+  },
+  {
+    "lesson": "AD35",
+    "old": "nếuhaimiềnkeykhônggiaonhau",
+    "new": "nếu hai miền key không giao nhau"
+  },
+  {
+    "lesson": "AD35",
+    "old": "dùcácsốthốngkêtổngkhôngđổi",
+    "new": "dù các số thống kê tổng không đổi"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Côngthứckhôngtựkiểmcontainment",
+    "new": "Công thức không tự kiểm containment"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cáchđếmcụthểđúng",
+    "new": "cách đếm cụ thể đúng"
+  },
+  {
+    "lesson": "AD35",
+    "old": "dữliệu",
+    "new": "dữ liệu"
+  },
+  {
+    "lesson": "AD35",
+    "old": "bỏNULLchoequalitythôngthường",
+    "new": "bỏ NULL cho equality thông thường"
+  },
+  {
+    "lesson": "AD35",
+    "old": "lẫnmemorypartition",
+    "new": "lẫn memory partition"
+  },
+  {
+    "lesson": "AD35",
+    "old": "luậnđúng",
+    "new": "luận đúng"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cặpjoinđượcphânhoạchtáchrời",
+    "new": "cặp join được phân hoạch tách rời"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cótíchtầnsuấtcặp",
+    "new": "có tích tần suất cặp"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Cộngcácnhómkhônglặp",
+    "new": "Cộng các nhóm không lặp"
+  },
+  {
+    "lesson": "AD35",
+    "old": "thiếucặp",
+    "new": "thiếu cặp"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Thuậttoándừngtheosốkeyhữuhạn",
+    "new": "Thuật toán dừng theo số key hữu hạn"
+  },
+  {
+    "lesson": "AD35",
+    "old": "kỳvọngvớihash",
+    "new": "kỳ vọng với hash"
+  },
+  {
+    "lesson": "AD35",
+    "old": "nhưngđây",
+    "new": "nhưng đây"
+  },
+  {
+    "lesson": "AD35",
+    "old": "làoracledata",
+    "new": "là oracle data"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Selectionkhôngtăngrow",
+    "new": "Selection không tăng row"
+  },
+  {
+    "lesson": "AD35",
+    "old": "giữrowcount",
+    "new": "giữ row count"
+  },
+  {
+    "lesson": "AD35",
+    "old": "nhưngdistinct",
+    "new": "nhưng distinct"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cóthểgiảm",
+    "new": "có thể giảm"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Groupbymộtcộtước",
+    "new": "Group by một cột ước"
+  },
+  {
+    "lesson": "AD35",
+    "old": "sốgroup",
+    "new": "số group"
+  },
+  {
+    "lesson": "AD35",
+    "old": "từdistinct",
+    "new": "từ distinct"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cócậnkhôngvượtrowcount",
+    "new": "có cận không vượt row count"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vàthườngkhôngbằngtíchdistinctnếucótươngquan",
+    "new": "và thường không bằng tích distinct nếu có tương quan"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cầncộngrowkhôngmatch",
+    "new": "cần cộng row không match"
+  },
+  {
+    "lesson": "AD35",
+    "old": "nênkhôngchỉápinnerformula",
+    "new": "nên không chỉ áp inner formula"
+  },
+  {
+    "lesson": "AD35",
+    "old": "ảnhhưởngcáclầnướclượngkếtiếp",
+    "new": "ảnh hưởng các lần ước lượng kế tiếp"
+  },
+  {
+    "lesson": "AD35",
+    "old": "khôngchỉsốrowcuối",
+    "new": "không chỉ số row cuối"
+  },
+  {
+    "lesson": "AD35",
+    "old": "logicphảihợp",
+    "new": "logic phải hợp"
+  },
+  {
+    "lesson": "AD35",
+    "old": "lệtrướckhitínhcost",
+    "new": "lệ trước khi tính cost"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cầnpredicatechỉdùngcộtbênđượcđẩy",
+    "new": "cần predicate chỉ dùng cột bên được đẩy"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cóđiềukiệnriêng",
+    "new": "có điều kiện riêng"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Mộtplanước",
+    "new": "Một plan ước"
+  },
+  {
+    "lesson": "AD35",
+    "old": "lượngrấtthấp",
+    "new": "lượng rất thấp"
+  },
+  {
+    "lesson": "AD35",
+    "old": "nhưngđổiresultkhôngphảitốiưu",
+    "new": "nhưng đổi result không phải tối ưu"
+  },
+  {
+    "lesson": "AD35",
+    "old": "theophânbốđều",
+    "new": "theo phân bố đều"
+  },
+  {
+    "lesson": "AD35",
+    "old": "làmestimateđólệchít",
+    "new": "làm estimate đó lệch ít"
+  },
+  {
+    "lesson": "AD35",
+    "old": "citycủaví",
+    "new": "city của ví"
+  },
+  {
+    "lesson": "AD35",
+    "old": "tínhestimateđộc",
+    "new": "tính estimate độc"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vàgiátrịthậtchoAND",
+    "new": "và giá trị thật cho AND"
+  },
+  {
+    "lesson": "AD35",
+    "old": "nêuthôngtinđa",
+    "new": "nêu thông tin đa"
+  },
+  {
+    "lesson": "AD35",
+    "old": "cóthểgiúp",
+    "new": "có thể giúp"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Tínhexactequalityjoincount",
+    "new": "Tính exact equality join count"
+  },
+  {
+    "lesson": "AD35",
+    "old": "bằngfrequency",
+    "new": "bằng frequency"
+  },
+  {
+    "lesson": "AD35",
+    "old": "thôngthường",
+    "new": "thông thường"
+  },
+  {
+    "lesson": "AD35",
+    "old": "nhưngjoinoutputkhácnhau",
+    "new": "nhưng join output khác nhau"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Nộpestimate",
+    "new": "Nộp estimate"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vàkếhoạchkiểmplan",
+    "new": "và kế hoạch kiểm plan"
+  },
+  {
+    "lesson": "AD35",
+    "old": "trênweb",
+    "new": "trên web"
+  },
+  {
+    "lesson": "AD35",
+    "old": "ghiđâu",
+    "new": "ghi đâu"
+  },
+  {
+    "lesson": "AD35",
+    "old": "làgiảđịnh",
+    "new": "là giả định"
+  },
+  {
+    "lesson": "AD35",
+    "old": "làquan",
+    "new": "là quan"
+  },
+  {
+    "lesson": "AD35",
+    "old": "thốngkêtổngkhônggiữmọithôngtinphânbố",
+    "new": "thống kê tổng không giữ mọi thông tin phân bố"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Đếmjoin",
+    "new": "Đếm join"
+  },
+  {
+    "lesson": "AD35",
+    "old": "từngkeykhôngtheotổngdistinct",
+    "new": "từng key không theo tổng distinct"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Mộtproofrewritekhácmộtestimatecost",
+    "new": "Một proof rewrite khác một estimate cost"
+  },
+  {
+    "lesson": "AD35",
+    "old": "miềnkeygiaonhau",
+    "new": "miền key giao nhau"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vàtáchrời",
+    "new": "và tách rời"
+  },
+  {
+    "lesson": "AD35",
+    "old": "phânbiệtđượcquan",
+    "new": "phân biệt được quan"
+  },
+  {
+    "lesson": "AD35",
+    "old": "hệhaiđiềukiện",
+    "new": "hệ hai điều kiện"
+  },
+  {
+    "lesson": "AD35",
+    "old": "mộtuniquekeykhôngliênquan",
+    "new": "một unique key không liên quan"
+  },
+  {
+    "lesson": "AD35",
+    "old": "khôngtựsửađược",
+    "new": "không tự sửa được"
+  },
+  {
+    "lesson": "AD35",
+    "old": "NULLkhôngđạtTRUEtrong",
+    "new": "NULL không đạt TRUE trong"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Nếuquerydùngnull",
+    "new": "Nếu query dùng null"
+  },
+  {
+    "lesson": "AD35",
+    "old": "safeequalitythìcontractkhácvàphảitínhriêng",
+    "new": "safe equality thì contract khác và phải tính riêng"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Rubricđòicùngcácstatsđãkhai",
+    "new": "Rubric đòi cùng cá cs ta ts đã khai"
+  },
+  {
+    "lesson": "AD35",
+    "old": "bằngchứngoutput",
+    "new": "bằng chứng output"
+  },
+  {
+    "lesson": "AD35",
+    "old": "estimatevớigiảđịnhvàkhônggiảplanđãchạy",
+    "new": "estimate với giả định và không giả plan đã chạy"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Webđổiskew",
+    "new": "Web đổi skew"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vàbucket",
+    "new": "và bucket"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Soestimatevới",
+    "new": "So estimate với"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vàgiảithíchsaisố",
+    "new": "và giải thích sai số"
+  },
+  {
+    "lesson": "AD35",
+    "old": "khôngchấmtừviệcestimatephảibằngmọidataset",
+    "new": "không chấm từ việc estimate phải bằng mọi dataset"
+  },
+  {
+    "lesson": "AD35",
+    "old": "VớiMySQLlab",
+    "new": "Với MySQL lab"
+  },
+  {
+    "lesson": "AD35",
+    "old": "lưuquery",
+    "new": "lưu query"
+  },
+  {
+    "lesson": "AD35",
+    "old": "córunnerthìchỉnhậnmodel",
+    "new": "có runner thì chỉ nhận model"
+  },
+  {
+    "lesson": "AD35",
+    "old": "trênweb",
+    "new": "trên web"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Ngườihọcđiềuchỉnhfrequency",
+    "new": "Người học điều chỉnh frequency"
+  },
+  {
+    "lesson": "AD35",
+    "old": "xemcặpjoinđượcđếm",
+    "new": "xem cặp join được đếm"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vànhậpgiảđịnhchoformula",
+    "new": "và nhập giả định cho formula"
+  },
+  {
+    "lesson": "AD35",
+    "old": "vàactualriêng",
+    "new": "và actual riêng"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Bàitựlậpdatasetnộptrongweb",
+    "new": "Bài tự lập dataset nộp trong web"
+  },
+  {
+    "lesson": "AD35",
+    "old": "khôngcầntảifilevềmáycánhân",
+    "new": "không cần tải file về máy cá nhân"
+  },
+  {
+    "lesson": "AD35",
+    "old": "tươngđương",
+    "new": "tương đương"
+  },
+  {
+    "lesson": "AD35",
+    "old": "Labenginekhôngđượcnhậnđãchỉvìmôhìnhtínhđúng",
+    "new": "Lab engine không được nhận đã chỉ vì mô hình tính đúng"
+  },
+  {
+    "lesson": "AD37",
+    "old": "trạngthái",
+    "new": "trạng thái"
+  },
+  {
+    "lesson": "AD37",
+    "old": "giữsum",
+    "new": "giữ sum"
+  },
+  {
+    "lesson": "AD37",
+    "old": "giátrị",
+    "new": "giá trị"
+  },
+  {
+    "lesson": "AD37",
+    "old": "giátrị",
+    "new": "giá trị"
+  },
+  {
+    "lesson": "AD37",
+    "old": "sốmin",
+    "new": "số min"
+  },
+  {
+    "lesson": "AD37",
+    "old": "giátrị",
+    "new": "giá trị"
+  },
+  {
+    "lesson": "AD37",
+    "old": "mộtgiátrị",
+    "new": "một giá trị"
+  },
+  {
+    "lesson": "AD37",
+    "old": "cùngkey",
+    "new": "cùng key"
+  },
+  {
+    "lesson": "AD37",
+    "old": "thứba",
+    "new": "thứ ba"
+  },
+  {
+    "lesson": "AD37",
+    "old": "chuyểnUNIONALLthànhUNIONDISTINCT",
+    "new": "chuyển UNION ALL thành UNION DISTINCT"
+  },
+  {
+    "lesson": "AD37",
+    "old": "bằngSUM",
+    "new": "bằng SUM"
+  },
+  {
+    "lesson": "AD37",
+    "old": "AVGcầnsum",
+    "new": "AVG cần sum"
+  },
+  {
+    "lesson": "AD37",
+    "old": "điểmcao",
+    "new": "điểm cao"
+  },
+  {
+    "lesson": "AD37",
+    "old": "giảmdần",
+    "new": "giảm dần"
+  },
+  {
+    "lesson": "AD37",
+    "old": "giátrị",
+    "new": "giá trị"
+  },
+  {
+    "lesson": "AD37",
+    "old": "lớnnhất",
+    "new": "lớn nhất"
+  },
+  {
+    "lesson": "AD37",
+    "old": "toànprefix",
+    "new": "toàn prefix"
+  },
+  {
+    "lesson": "AD37",
+    "old": "nếuít",
+    "new": "nếu ít"
+  },
+  {
+    "lesson": "AD37",
+    "old": "Giátrị",
+    "new": "Giá trị"
+  },
+  {
+    "lesson": "AD37",
+    "old": "hơnminheap",
+    "new": "hơn min heap"
+  },
+  {
+    "lesson": "AD37",
+    "old": "hiệntại",
+    "new": "hiện tại"
+  },
+  {
+    "lesson": "AD37",
+    "old": "lớnnhất",
+    "new": "lớn nhất"
+  },
+  {
+    "lesson": "AD37",
+    "old": "Sauinputhữu",
+    "new": "Sau input hữu"
+  },
+  {
+    "lesson": "AD37",
+    "old": "kếtluậncho",
+    "new": "kết luận cho"
+  },
+  {
+    "lesson": "AD37",
+    "old": "toànbộ",
+    "new": "toàn bộ"
+  },
+  {
+    "lesson": "AD37",
+    "old": "bỏchi",
+    "new": "bỏ chi"
+  },
+  {
+    "lesson": "AD37",
+    "old": "cóorder",
+    "new": "có order"
+  },
+  {
+    "lesson": "AD37",
+    "old": "cùngđiểm",
+    "new": "cùng điểm"
+  },
+  {
+    "lesson": "AD37",
+    "old": "sốrow",
+    "new": "số row"
+  },
+  {
+    "lesson": "AD37",
+    "old": "thứtựphụ",
+    "new": "thứ tự phụ"
+  },
+  {
+    "lesson": "AD37",
+    "old": "đểchọnổnđịnh",
+    "new": "để chọn ổn định"
+  },
+  {
+    "lesson": "AD37",
+    "old": "cóthểgiúpdừngsớm",
+    "new": "có thể giúp dừng sớm"
+  },
+  {
+    "lesson": "AD37",
+    "old": "toànpredicate",
+    "new": "toàn predicate"
+  },
+  {
+    "lesson": "AD37",
+    "old": "cóthểbuộcđọc",
+    "new": "có thể buộc đọc"
+  },
+  {
+    "lesson": "AD37",
+    "old": "thêmnhiềuentry",
+    "new": "thêm nhiều entry"
+  },
+  {
+    "lesson": "AD37",
+    "old": "ràngbuộc",
+    "new": "ràng buộc"
+  },
+  {
+    "lesson": "AD37",
+    "old": "cộtcần",
+    "new": "cột cần"
+  },
+  {
+    "lesson": "AD37",
+    "old": "bỏjoin",
+    "new": "bỏ join"
+  },
+  {
+    "lesson": "AD37",
+    "old": "dimensionkeytrùngcóthểđổikếtquả",
+    "new": "dimension key trùng có thể đổi kết quả"
+  },
+  {
+    "lesson": "AD37",
+    "old": "mọijoin",
+    "new": "mọi join"
+  },
+  {
+    "lesson": "AD37",
+    "old": "vìquery",
+    "new": "vì query"
+  },
+  {
+    "lesson": "AD37",
+    "old": "khôngselectcộtbênđó",
+    "new": "không select cột bên đó"
+  },
+  {
+    "lesson": "AD37",
+    "old": "xảyra",
+    "new": "xảy ra"
+  },
+  {
+    "lesson": "AD37",
+    "old": "theoindexđangbịthayđổi",
+    "new": "theo index đang bị thay đổi"
+  },
+  {
+    "lesson": "AD37",
+    "old": "vàmộtrow",
+    "new": "và một row"
+  },
+  {
+    "lesson": "AD37",
+    "old": "cóthểđượcgặplại",
+    "new": "có thể được gặp lại"
+  },
+  {
+    "lesson": "AD37",
+    "old": "mộtscanindexngây",
+    "new": "một scan in de xn gây"
+  },
+  {
+    "lesson": "AD37",
+    "old": "cóthểgặprowvừađổivàcộngtiếp",
+    "new": "có thể gặp row vừa đổi và cộng tiếp"
+  },
+  {
+    "lesson": "AD37",
+    "old": "cơchếengine",
+    "new": "cơ chế engine"
+  },
+  {
+    "lesson": "AD37",
+    "old": "tươngứng",
+    "new": "tương ứng"
+  },
+  {
+    "lesson": "AD37",
+    "old": "giữmỗirowmục",
+    "new": "giữ mỗi row mục"
+  },
+  {
+    "lesson": "AD37",
+    "old": "xửlýđúngcontract",
+    "new": "xử lý đúng contract"
+  },
+  {
+    "lesson": "AD37",
+    "old": "KhôngthêmSLEEPhoặcđổithứtựsourceđểcoiđãgiải",
+    "new": "Không thêm SLEEP hoặc đổi thứ tự source để coi đã giải"
+  },
+  {
+    "lesson": "AD37",
+    "old": "vấnđề",
+    "new": "vấn đề"
+  },
+  {
+    "lesson": "AD37",
+    "old": "cóthểchia",
+    "new": "có thể chia"
+  },
+  {
+    "lesson": "AD37",
+    "old": "sẻscan",
+    "new": "sẻ scan"
+  },
+  {
+    "lesson": "AD37",
+    "old": "nhưngcần",
+    "new": "nhưng cần"
+  },
+  {
+    "lesson": "AD37",
+    "old": "táchsnapshot",
+    "new": "tách snapshot"
+  },
+  {
+    "lesson": "AD37",
+    "old": "vàvòngđời",
+    "new": "và vòng đời"
+  },
+  {
+    "lesson": "AD37",
+    "old": "từngquery",
+    "new": "từng query"
+  },
+  {
+    "lesson": "AD37",
+    "old": "giữplanphùhợpcácmiềnparameter",
+    "new": "giữ plan phù hợp các miền parameter"
+  },
+  {
+    "lesson": "AD37",
+    "old": "thayvìcoiplan",
+    "new": "thay vì coi plan"
+  },
+  {
+    "lesson": "AD37",
+    "old": "tốtcho",
+    "new": "tốt cho"
+  },
+  {
+    "lesson": "AD37",
+    "old": "mộtgiátrị",
+    "new": "một giá trị"
+  },
+  {
+    "lesson": "AD37",
+    "old": "làtốtcho",
+    "new": "là tốt cho"
+  },
+  {
+    "lesson": "AD37",
+    "old": "giátrị",
+    "new": "giá trị"
+  },
+  {
+    "lesson": "AD37",
+    "old": "dùngquan",
+    "new": "dùng quan"
+  },
+  {
+    "lesson": "AD37",
+    "old": "sátthựctế",
+    "new": "sát thực tế"
+  },
+  {
+    "lesson": "AD37",
+    "old": "đểđổichiếnlược",
+    "new": "để đổi chiến lược"
+  },
+  {
+    "lesson": "AD37",
+    "old": "chuyểnstate",
+    "new": "chuyển state"
+  },
+  {
+    "lesson": "AD37",
+    "old": "outputchínhxác",
+    "new": "output chính xác"
+  },
+  {
+    "lesson": "AD37",
+    "old": "khôngphátrowđãphátra",
+    "new": "không phát row đã phát ra"
+  },
+  {
+    "lesson": "AD37",
+    "old": "khiđổijoinmethod",
+    "new": "khi đổi join method"
+  },
+  {
+    "lesson": "AD37",
+    "old": "Côngviệcđãlàm",
+    "new": "Công việc đã làm"
+  },
+  {
+    "lesson": "AD37",
+    "old": "vàchi",
+    "new": "và chi"
+  },
+  {
+    "lesson": "AD37",
+    "old": "phíthayplan",
+    "new": "phí thay plan"
+  },
+  {
+    "lesson": "AD37",
+    "old": "cũngphảitính",
+    "new": "cũng phải tính"
+  },
+  {
+    "lesson": "AD37",
+    "old": "Tínhsummaryvàcho",
+    "new": "Tính summary và cho"
+  },
+  {
+    "lesson": "AD37",
+    "old": "làmovercount",
+    "new": "làm over count"
+  },
+  {
+    "lesson": "AD37",
+    "old": "NêumộttrạngtháicầnthêmđểmaintainAVG",
+    "new": "Nêu một trạng thái cần thêm để main ta in AVG"
+  },
+  {
+    "lesson": "AD37",
+    "old": "Đếmjoincũ",
+    "new": "Đếm join cũ"
+  },
+  {
+    "lesson": "AD37",
+    "old": "sốhạngdelta",
+    "new": "số hạng delta"
+  },
+  {
+    "lesson": "AD37",
+    "old": "bỏsốhạngchéothìthiếumấycặp",
+    "new": "bỏ số hạng chéo thì thiếu mấy cặp"
+  },
+  {
+    "lesson": "AD37",
+    "old": "ChạytopK",
+    "new": "Chạy to pK"
+  },
+  {
+    "lesson": "AD37",
+    "old": "Trảhairowtheoquyướctiebreak",
+    "new": "Trả hai row theo quy ước tie break"
+  },
+  {
+    "lesson": "AD37",
+    "old": "bằngvị",
+    "new": "bằng vị"
+  },
+  {
+    "lesson": "AD37",
+    "old": "trígốc",
+    "new": "trí gốc"
+  },
+  {
+    "lesson": "AD37",
+    "old": "nhỏhơn",
+    "new": "nhỏ hơn"
+  },
+  {
+    "lesson": "AD37",
+    "old": "sauđóđổiyêucầuthànhWITH",
+    "new": "sau đó đổi yêu cầu thành WITH"
+  },
+  {
+    "lesson": "AD37",
+    "old": "TIESởđiểmbiên",
+    "new": "TIE Sở điểm biên"
+  },
+  {
+    "lesson": "AD37",
+    "old": "vàgiảithíchsốrow",
+    "new": "và giải thích số row"
+  },
+  {
+    "lesson": "AD37",
+    "old": "Tựthiếtkếsummaryhoặcplanadaptivechoinputmới",
+    "new": "Tự thiết kế summary hoặc plan adaptive cho input mới"
+  },
+  {
+    "lesson": "AD37",
+    "old": "trạngthái",
+    "new": "trạng thái"
+  },
+  {
+    "lesson": "AD37",
+    "old": "vàmộtcaNULL",
+    "new": "và một ca NULL"
+  },
+  {
+    "lesson": "AD37",
+    "old": "làmgiải",
+    "new": "làm giải"
+  },
+  {
+    "lesson": "AD37",
+    "old": "Nộpmodel",
+    "new": "Nộp model"
+  },
+  {
+    "lesson": "AD37",
+    "old": "SQLđúnghệvàkếhoạchkiểmchuyểngiao",
+    "new": "SQL đúng hệ và kế hoạch kiểm chuyển giao"
+  },
+  {
+    "lesson": "AD37",
+    "old": "phânloạicặp",
+    "new": "phân loại cặp"
+  },
+  {
+    "lesson": "AD37",
+    "old": "rowcũ",
+    "new": "row cũ"
+  },
+  {
+    "lesson": "AD37",
+    "old": "dùngthứtựđầyđủnếucần",
+    "new": "dùng thứ tự đầy đủ nếu cần"
+  },
+  {
+    "lesson": "AD37",
+    "old": "chọnrowổnđịnh",
+    "new": "chọn row ổn định"
+  },
+  {
+    "lesson": "AD37",
+    "old": "đừngxóabảntrùng",
+    "new": "đừng xóa bản trùng"
+  },
+  {
+    "lesson": "AD37",
+    "old": "chỉvìđiểmbằngnhau",
+    "new": "chỉ vì điểm bằng nhau"
+  },
+  {
+    "lesson": "AD37",
+    "old": "điểmcao",
+    "new": "điểm cao"
+  },
+  {
+    "lesson": "AD37",
+    "old": "Bàiadaptivephảixétrowđãxuấttrướckhiđổiplan",
+    "new": "Bài adaptive phải xét row đã xuất trước khi đổi plan"
+  },
+  {
+    "lesson": "AD37",
+    "old": "Maintenanceinsertchạyhailần",
+    "new": "Maintenance insert chạy hai lần"
+  },
+  {
+    "lesson": "AD37",
+    "old": "AVGcầnsum",
+    "new": "AVG cần sum"
+  },
+  {
+    "lesson": "AD37",
+    "old": "vàquyướcnhómrỗng",
+    "new": "và quy ước nhóm rỗng"
+  },
+  {
+    "lesson": "AD37",
+    "old": "khôngchỉgiữAVG",
+    "new": "không chỉ giữ AVG"
+  },
+  {
+    "lesson": "AD37",
+    "old": "NếuORDERBYgồmpositionthìđịnhnghĩatieđãkhác",
+    "new": "Nếu ORDER BY gồm position thì định nghĩa tie đã khác"
+  },
+  {
+    "lesson": "AD37",
+    "old": "cầnđềrõ",
+    "new": "cần đề rõ"
+  },
+  {
+    "lesson": "AD37",
+    "old": "đúngmeasure",
+    "new": "đúng measure"
+  },
+  {
+    "lesson": "AD37",
+    "old": "vòngđời",
+    "new": "vòng đời"
+  },
+  {
+    "lesson": "AD37",
+    "old": "transitionkhônglặpmấtrow",
+    "new": "tran si ti on không lặp mất row"
+  },
+  {
+    "lesson": "AD37",
+    "old": "vàcađộc",
+    "new": "và ca độc"
+  },
+  {
+    "lesson": "AD37",
+    "old": "làđãđoengineadaptive",
+    "new": "là đã đo engine adaptive"
+  },
+  {
+    "lesson": "AD37",
+    "old": "deletehaiđầu",
+    "new": "delete hai đầu"
+  },
+  {
+    "lesson": "AD37",
+    "old": "vàskew",
+    "new": "và skew"
+  },
+  {
+    "lesson": "AD37",
+    "old": "sofullrecomputeđộc",
+    "new": "so full recompute độc"
+  },
+  {
+    "lesson": "AD37",
+    "old": "lậpvớideltamaintenance",
+    "new": "lập với delta maintenance"
+  },
+  {
+    "lesson": "AD37",
+    "old": "TopKsofullsortvớicùngcomparator",
+    "new": "To pK so full sort với cùng comparator"
+  },
+  {
+    "lesson": "AD37",
+    "old": "khônggửicúpháphệkhácvàchấmsai",
+    "new": "không gửi cú pháp hệ khác và chấm sai"
+  },
+  {
+    "lesson": "AD37",
+    "old": "Ngườihọcchọnbatchupdate",
+    "new": "Người học chọn batch update"
+  },
+  {
+    "lesson": "AD37",
+    "old": "chiếufullrecompute",
+    "new": "chiếu full recompute"
+  },
+  {
+    "lesson": "AD37",
+    "old": "bướctopK",
+    "new": "bước to pK"
+  },
+  {
+    "lesson": "AD37",
+    "old": "Phầnbảo",
+    "new": "Phần bảo"
+  },
+  {
+    "lesson": "AD37",
+    "old": "vệthiếtkế",
+    "new": "vệ thiết kế"
+  },
+  {
+    "lesson": "AD37",
+    "old": "nộptrênweb",
+    "new": "nộp trên web"
+  },
+  {
+    "lesson": "AD37",
+    "old": "backendchịutráchnhiệmhệđượcchọn",
+    "new": "backend chịu trách nhiệm hệ được chọn"
+  },
+  {
+    "lesson": "AD37",
+    "old": "Khôngyêucầulearnerchạydịchvụrefreshriêng",
+    "new": "Không yêu cầu learner chạy dịch vụ refresh riêng"
+  },
+  {
+    "lesson": "AD37",
+    "old": "Decorrelationcóthuậttoán",
+    "new": "Decorrelation có thuật toán"
+  },
+  {
+    "lesson": "AD37",
+    "old": "vàboundaryoftopK",
+    "new": "và boundary of to pK"
+  }
+]

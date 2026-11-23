@@ -1,0 +1,6 @@
+{
+  "scope": "DOM logic, all85 selections and reminder/persistence; no browser layout verification",
+  "passed": true,
+  "sourceBytes": 58026,
+  "runtimeErrors": []
+}

@@ -1,0 +1,2853 @@
+{
+  "date": "2026-11-06",
+  "scope": "Four final-source supplements; exact authored Company/Practice2/Practice3 and Lecture9 report SQL on fresh MySQL schemas when --mysql supplied, finite ER examples on SQLite and arithmetic models. No production web backend, no all-dataset SQL-equivalence guarantee.",
+  "lessons": {
+    "USTH08": "c684cd84272c6920a9c9a31f8431b954c408c2db5bfed4c24cd4ba5b76f8898a",
+    "USTH09": "ee5a20daeb718db72681e8039b380f84f7a34b903e358a464dfe92bcbd734da9",
+    "USTH10": "0107468fa4ded377f6ffc97c16f73a61dc0fd57efe82deca8d162497f7114d0a",
+    "USTH11": "76c9098ce3fb29a162b45d55e85bb0773433f67a1a55c8164abd09b6d3094eec"
+  },
+  "engine": "8.4.13",
+  "sqliteVersion": "3.53.1",
+  "freshSchemas": [
+    "pe_final_company_816bfb6ae7",
+    "pe_final_northwind_ed80399fbe",
+    "pe_final_reports_7fb61dc53d"
+  ],
+  "cleanup": "Only exact six Company tables in its newly created schema were dropped as P1.06 exercise. All task schemas retained; task server shutdown recorded separately.",
+  "checks": [
+    {
+      "name": "USTH08-Luyện tập",
+      "passed": true,
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "name": "USTH08-Đáp án và lập luận",
+      "passed": true,
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "name": "USTH08-fences",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "USTH08-no-unexpanded-include",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "USTH09-Luyện tập",
+      "passed": true,
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "name": "USTH09-Đáp án và lập luận",
+      "passed": true,
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "name": "USTH09-fences",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "USTH09-no-unexpanded-include",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "USTH10-Luyện tập",
+      "passed": true,
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "name": "USTH10-Đáp án và lập luận",
+      "passed": true,
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "name": "USTH10-fences",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "USTH10-no-unexpanded-include",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "USTH11-Luyện tập",
+      "passed": true,
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "name": "USTH11-Đáp án và lập luận",
+      "passed": true,
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "name": "USTH11-fences",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "USTH11-no-unexpanded-include",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "SQLite-two-owner-local-album-track-IDs",
+      "passed": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "name": "SQLite-full-owner-FK",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "SQLite-play-count-max-and-zero",
+      "passed": true,
+      "actual": [
+        [
+          "A",
+          1,
+          1,
+          2,
+          "2026-01-01 10:03:00"
+        ],
+        [
+          "A",
+          1,
+          2,
+          0,
+          null
+        ],
+        [
+          "B",
+          1,
+          1,
+          0,
+          null
+        ]
+      ],
+      "expected": [
+        [
+          "A",
+          1,
+          1,
+          2,
+          "2026-01-01 10:03:00"
+        ],
+        [
+          "A",
+          1,
+          2,
+          0,
+          null
+        ],
+        [
+          "B",
+          1,
+          1,
+          0,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "SQLite-same-second-event-key-collision",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "SQLite-retake-distinct-term-preserved",
+      "passed": true,
+      "actual": [
+        [
+          2026,
+          0
+        ],
+        [
+          2027,
+          null
+        ]
+      ],
+      "expected": [
+        [
+          2026,
+          0
+        ],
+        [
+          2027,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "SQLite-composite-FK-program-policy",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "SQLite-attempt-same-term-duplicate",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "capacity-count-then-write-race-model",
+      "passed": true,
+      "actual": [
+        10,
+        10,
+        11
+      ],
+      "expected": [
+        10,
+        10,
+        11
+      ]
+    },
+    {
+      "name": "annualization-75-over10",
+      "passed": true,
+      "actual": 90.0,
+      "expected": 90
+    },
+    {
+      "name": "P2.10-standard-deviation-prose",
+      "passed": true,
+      "actual": 65.3795824085652,
+      "expected": 65.379582,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "L9-B-category-STD-prose",
+      "passed": true,
+      "actual": 18.856180831641268,
+      "expected": 18.856181,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-Company-eight-source-FKs",
+      "passed": true,
+      "actual": [
+        [
+          8
+        ]
+      ],
+      "expected": [
+        [
+          8
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-Company-Minit-leading-zero-roundtrip",
+      "passed": true,
+      "actual": [
+        [
+          "000000001",
+          "T"
+        ],
+        [
+          "000000002",
+          null
+        ],
+        [
+          "000000003",
+          null
+        ]
+      ],
+      "expected": [
+        [
+          "000000001",
+          "T"
+        ],
+        [
+          "000000002",
+          null
+        ],
+        [
+          "000000003",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-Company-source-table-count",
+      "passed": true,
+      "actual": [
+        [
+          6
+        ]
+      ],
+      "expected": [
+        [
+          6
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-Company-missing-parent-rejected",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MySQL-Company-P1.06-owned-tables-deleted",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "MySQL-P2.01",
+      "passed": true,
+      "actual": [
+        [
+          3,
+          "Old Notebook"
+        ]
+      ],
+      "expected": [
+        [
+          3,
+          "Old Notebook"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P2.02",
+      "passed": true,
+      "actual": [
+        [
+          5,
+          "Pen",
+          "5.00"
+        ],
+        [
+          7,
+          "Ruler",
+          "5.00"
+        ],
+        [
+          3,
+          "Old Notebook",
+          "15.00"
+        ],
+        [
+          4,
+          "Milk",
+          "15.00"
+        ]
+      ],
+      "expected": [
+        [
+          5,
+          "Pen",
+          "5"
+        ],
+        [
+          7,
+          "Ruler",
+          "5"
+        ],
+        [
+          3,
+          "Old Notebook",
+          "15"
+        ],
+        [
+          4,
+          "Milk",
+          "15"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P2.03",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          "Tea",
+          "20.00"
+        ],
+        [
+          2,
+          "Coffee",
+          "25.00"
+        ],
+        [
+          3,
+          "Old Notebook",
+          "15.00"
+        ],
+        [
+          4,
+          "Milk",
+          "15.00"
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          "Tea",
+          "20"
+        ],
+        [
+          2,
+          "Coffee",
+          "25"
+        ],
+        [
+          3,
+          "Old Notebook",
+          "15"
+        ],
+        [
+          4,
+          "Milk",
+          "15"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P2.04",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          "Anh Nguyen"
+        ],
+        [
+          2,
+          "Minh Tran"
+        ],
+        [
+          3,
+          "An Le"
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          "Anh Nguyen"
+        ],
+        [
+          2,
+          "Minh Tran"
+        ],
+        [
+          3,
+          "An Le"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P2.05",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          "Anh",
+          "Nguyen"
+        ],
+        [
+          3,
+          "An",
+          "Le"
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          "Anh",
+          "Nguyen"
+        ],
+        [
+          3,
+          "An",
+          "Le"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P2.06",
+      "passed": true,
+      "actual": [
+        [
+          2
+        ]
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P2.07",
+      "passed": true,
+      "actual": [
+        [
+          "Hanoi Lab"
+        ],
+        [
+          "Hue Studio"
+        ],
+        [
+          "PE School"
+        ]
+      ],
+      "expected": [
+        [
+          "Hanoi Lab"
+        ],
+        [
+          "Hue Studio"
+        ],
+        [
+          "PE School"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P2.08",
+      "passed": true,
+      "actual": [
+        [
+          "5.00",
+          "200.00"
+        ]
+      ],
+      "expected": [
+        [
+          "5",
+          "200"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P2.09",
+      "passed": true,
+      "actual": [
+        [
+          6
+        ]
+      ],
+      "expected": [
+        [
+          6
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P2.10-mean",
+      "passed": true,
+      "actual": "40.714286",
+      "expected": "40.71428571428571428571428571",
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-P2.10-STD",
+      "passed": true,
+      "actual": 65.37958240856518,
+      "expected": 65.3795824085652,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-P2.11",
+      "passed": true,
+      "actual": [
+        [
+          "Machine",
+          "200.00"
+        ]
+      ],
+      "expected": [
+        [
+          "Machine",
+          "200"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P2.12-14-correct-parent-and-cost",
+      "passed": true,
+      "actual": [
+        [
+          "Habeco",
+          "TBTruc Bach",
+          "22.00",
+          "18.00"
+        ]
+      ],
+      "expected": [
+        [
+          "Habeco",
+          "TBTruc Bach",
+          "22",
+          "18"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P2.15-expected-FK-error",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MySQL-P2.15-rollback-state",
+      "passed": true,
+      "actual": [
+        [
+          0
+        ]
+      ],
+      "expected": [
+        [
+          0
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P3.01-IDs",
+      "passed": true,
+      "actual": [
+        31,
+        32,
+        34
+      ],
+      "expected": [
+        31,
+        32,
+        34
+      ]
+    },
+    {
+      "name": "MySQL-P3.02-line-values",
+      "passed": true,
+      "actual": [
+        "540.0000",
+        "500.0000"
+      ],
+      "expected": [
+        "540",
+        "500"
+      ]
+    },
+    {
+      "name": "MySQL-P3.03-grain",
+      "passed": true,
+      "actual": [
+        31,
+        31,
+        32
+      ],
+      "expected": [
+        31,
+        31,
+        32
+      ]
+    },
+    {
+      "name": "MySQL-P3.04-subtotals",
+      "passed": true,
+      "actual": [
+        [
+          31,
+          "1040.0000"
+        ],
+        [
+          32,
+          "1200.0000"
+        ],
+        [
+          34,
+          "0.0000"
+        ]
+      ],
+      "expected": [
+        [
+          31,
+          "1040"
+        ],
+        [
+          32,
+          "1200"
+        ],
+        [
+          34,
+          "0"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P3.05-filter",
+      "passed": true,
+      "actual": [
+        31,
+        32
+      ],
+      "expected": [
+        31,
+        32
+      ]
+    },
+    {
+      "name": "MySQL-P3.06-sales",
+      "passed": true,
+      "actual": [
+        [
+          2,
+          "1200.0000"
+        ],
+        [
+          1,
+          "1055.0000"
+        ]
+      ],
+      "expected": [
+        [
+          2,
+          "1200"
+        ],
+        [
+          1,
+          "1055"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P3.07-categories",
+      "passed": true,
+      "actual": [
+        [
+          "Beverages"
+        ],
+        [
+          "Equipment"
+        ],
+        [
+          "Stationery"
+        ]
+      ],
+      "expected": [
+        [
+          "Beverages"
+        ],
+        [
+          "Equipment"
+        ],
+        [
+          "Stationery"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P3.08-cost-min-max-mean",
+      "passed": true,
+      "actual": [
+        "2.00",
+        "140.00",
+        "27.500000"
+      ],
+      "expected": [
+        "2",
+        "140",
+        "27.5"
+      ]
+    },
+    {
+      "name": "MySQL-P3.08-cost-variance",
+      "passed": true,
+      "actual": 2135.4999999999995,
+      "expected": 2135.5,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-P3.09-categories",
+      "passed": true,
+      "actual": [
+        "Beverages",
+        "Equipment",
+        "Stationery"
+      ],
+      "expected": [
+        "Beverages",
+        "Equipment",
+        "Stationery"
+      ]
+    },
+    {
+      "name": "MySQL-P3.09-Beverages",
+      "passed": true,
+      "actual": "20.000000",
+      "expected": 20,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-P3.09-Equipment",
+      "passed": true,
+      "actual": "200.000000",
+      "expected": 200,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-P3.09-Stationery",
+      "passed": true,
+      "actual": "8.333333",
+      "expected": 8.333333333333334,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-P3.10-fees",
+      "passed": true,
+      "actual": [
+        [
+          "Hanoi",
+          "10.00",
+          "10.000000"
+        ],
+        [
+          "Hue",
+          "20.00",
+          "20.000000"
+        ]
+      ],
+      "expected": [
+        [
+          "Hanoi",
+          "10",
+          "10"
+        ],
+        [
+          "Hue",
+          "20",
+          "20"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P3.11-top-n",
+      "passed": true,
+      "actual": [
+        [
+          "Equipment",
+          "200.000000"
+        ],
+        [
+          "Beverages",
+          "20.000000"
+        ]
+      ],
+      "expected": [
+        [
+          "Equipment",
+          "200"
+        ],
+        [
+          "Beverages",
+          "20"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P3.11-invalid-NULL",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MySQL-P3.11-invalid-0",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MySQL-P3.11-invalid--1",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MySQL-P3.12-minimum-average",
+      "passed": true,
+      "actual": "8.333333",
+      "expected": 8.333333333333334,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-P3.13-approver-NULL",
+      "passed": true,
+      "actual": [
+        [
+          80,
+          "Anh Nguyen",
+          "Minh Tran"
+        ],
+        [
+          81,
+          "An Le",
+          null
+        ]
+      ],
+      "expected": [
+        [
+          80,
+          "Anh Nguyen",
+          "Minh Tran"
+        ],
+        [
+          81,
+          "An Le",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-P3.14-partner-roles",
+      "passed": true,
+      "actual": {
+        "C": 3,
+        "S": 3
+      },
+      "expected": {
+        "C": 3,
+        "S": 3
+      }
+    },
+    {
+      "name": "MySQL-P3.15-purchased-never-sold",
+      "passed": true,
+      "actual": [
+        [
+          3,
+          "Old Notebook"
+        ],
+        [
+          7,
+          "Ruler"
+        ]
+      ],
+      "expected": [
+        [
+          3,
+          "Old Notebook"
+        ],
+        [
+          7,
+          "Ruler"
+        ]
+      ]
+    },
+    {
+      "name": "USTH11-embedded-fixture-identical",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MySQL-L9.R01-gap",
+      "passed": true,
+      "actual": [
+        5
+      ],
+      "expected": [
+        5
+      ]
+    },
+    {
+      "name": "MySQL-L9.R02-units",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          "Tea",
+          "110"
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          "Tea",
+          "110"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R03-average",
+      "passed": true,
+      "actual": "36.666667",
+      "expected": 36.666666666666664,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-L9.R04-A-mean",
+      "passed": true,
+      "actual": "25.000000",
+      "expected": 25,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-L9.R04-A-std",
+      "passed": true,
+      "actual": 5.0,
+      "expected": 5,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-L9.R04-B-mean",
+      "passed": true,
+      "actual": "23.333333",
+      "expected": 23.333333333333332,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-L9.R04-B-std",
+      "passed": true,
+      "actual": 18.856180831641264,
+      "expected": 18.856180831641268,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-L9.R04-C-mean",
+      "passed": true,
+      "actual": "100.000000",
+      "expected": 100,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-L9.R04-C-std",
+      "passed": true,
+      "actual": 0.0,
+      "expected": 0,
+      "numericTolerance": 1e-06
+    },
+    {
+      "name": "MySQL-L9.R05-cities",
+      "passed": true,
+      "actual": [
+        [
+          null,
+          1
+        ],
+        [
+          "Hanoi",
+          2
+        ],
+        [
+          "Hue",
+          1
+        ]
+      ],
+      "expected": [
+        [
+          null,
+          1
+        ],
+        [
+          "Hanoi",
+          2
+        ],
+        [
+          "Hue",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R06-products",
+      "passed": true,
+      "actual": [
+        [
+          "A",
+          2
+        ],
+        [
+          "B",
+          3
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected": [
+        [
+          "A",
+          2
+        ],
+        [
+          "B",
+          3
+        ],
+        [
+          "C",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R07-sort",
+      "passed": true,
+      "actual": [
+        "B",
+        "A",
+        "C"
+      ],
+      "expected": [
+        "B",
+        "A",
+        "C"
+      ]
+    },
+    {
+      "name": "MySQL-L9.R08-never-sold",
+      "passed": true,
+      "actual": [
+        [
+          6,
+          "Ruler"
+        ]
+      ],
+      "expected": [
+        [
+          6,
+          "Ruler"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R09-customer-order-count",
+      "passed": true,
+      "actual": [
+        [
+          21,
+          3
+        ],
+        [
+          22,
+          2
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "expected": [
+        [
+          21,
+          3
+        ],
+        [
+          22,
+          2
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          24,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R10-highest-count",
+      "passed": true,
+      "actual": [
+        [
+          2,
+          4
+        ]
+      ],
+      "expected": [
+        [
+          2,
+          4
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R11-last-name",
+      "passed": true,
+      "actual": [
+        [
+          2,
+          "Le"
+        ]
+      ],
+      "expected": [
+        [
+          2,
+          "Le"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R12-subtotals",
+      "passed": true,
+      "actual": [
+        [
+          31,
+          "254.000000"
+        ],
+        [
+          32,
+          "2000.000000"
+        ],
+        [
+          33,
+          "1850.000000"
+        ],
+        [
+          34,
+          "80.000000"
+        ],
+        [
+          35,
+          "225.000000"
+        ],
+        [
+          36,
+          "0.000000"
+        ]
+      ],
+      "expected": [
+        [
+          31,
+          "254"
+        ],
+        [
+          32,
+          "2000"
+        ],
+        [
+          33,
+          "1850"
+        ],
+        [
+          34,
+          "80"
+        ],
+        [
+          35,
+          "225"
+        ],
+        [
+          36,
+          "0"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R13-having-equivalent",
+      "passed": true,
+      "actual": [
+        [
+          32,
+          "2000.000000"
+        ],
+        [
+          33,
+          "1850.000000"
+        ]
+      ],
+      "expected": [
+        [
+          32,
+          "2000"
+        ],
+        [
+          33,
+          "1850"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R14-zero-employees",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R15-product-sales",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          "2000.000000"
+        ],
+        [
+          2,
+          "134.000000"
+        ],
+        [
+          3,
+          "50.000000"
+        ],
+        [
+          4,
+          "225.000000"
+        ],
+        [
+          5,
+          "2000.000000"
+        ],
+        [
+          6,
+          "0.000000"
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          "2000"
+        ],
+        [
+          2,
+          "134"
+        ],
+        [
+          3,
+          "50"
+        ],
+        [
+          4,
+          "225"
+        ],
+        [
+          5,
+          "2000"
+        ],
+        [
+          6,
+          "0"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R16-global-average",
+      "passed": true,
+      "actual": [
+        4,
+        5
+      ],
+      "expected": [
+        4,
+        5
+      ]
+    },
+    {
+      "name": "MySQL-L9.R17-closed-fees",
+      "passed": true,
+      "actual": [
+        [
+          "Hanoi",
+          "100.000000"
+        ],
+        [
+          "Hue",
+          "100.000000"
+        ],
+        [
+          "Paris",
+          "125.000000"
+        ]
+      ],
+      "expected": [
+        [
+          "Hanoi",
+          "100"
+        ],
+        [
+          "Hue",
+          "100"
+        ],
+        [
+          "Paris",
+          "125"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R18-own-category",
+      "passed": true,
+      "actual": [
+        "Coffee",
+        "Notebook"
+      ],
+      "expected": [
+        "Coffee",
+        "Notebook"
+      ]
+    },
+    {
+      "name": "MySQL-L9.R19-processing-days",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          "3.5000"
+        ],
+        [
+          2,
+          "2.0000"
+        ],
+        [
+          3,
+          null
+        ],
+        [
+          4,
+          null
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          "3.5"
+        ],
+        [
+          2,
+          "2"
+        ],
+        [
+          3,
+          null
+        ],
+        [
+          4,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R20-exact-four-columns",
+      "passed": true,
+      "actual": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "expected": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "name": "MySQL-L9.R20-joins-statuses",
+      "passed": true,
+      "actual": [
+        [
+          "Blue Lab",
+          "Nguyen",
+          "Closed"
+        ],
+        [
+          "Green Lab",
+          "Nguyen",
+          "Closed"
+        ],
+        [
+          "Blue Lab",
+          "Le",
+          "Open"
+        ],
+        [
+          "Quiet Lab",
+          "Le",
+          "Closed"
+        ],
+        [
+          "Green Lab",
+          "Le",
+          "Closed"
+        ],
+        [
+          "Blue Lab",
+          "Le",
+          "Open"
+        ]
+      ],
+      "expected": [
+        [
+          "Blue Lab",
+          "Nguyen",
+          "Closed"
+        ],
+        [
+          "Green Lab",
+          "Nguyen",
+          "Closed"
+        ],
+        [
+          "Blue Lab",
+          "Le",
+          "Open"
+        ],
+        [
+          "Quiet Lab",
+          "Le",
+          "Closed"
+        ],
+        [
+          "Green Lab",
+          "Le",
+          "Closed"
+        ],
+        [
+          "Blue Lab",
+          "Le",
+          "Open"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R22-employee-sales",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          "2254.000000"
+        ],
+        [
+          2,
+          "2155.000000"
+        ],
+        [
+          3,
+          "0.000000"
+        ],
+        [
+          4,
+          "0.000000"
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          "2254"
+        ],
+        [
+          2,
+          "2155"
+        ],
+        [
+          3,
+          "0"
+        ],
+        [
+          4,
+          "0"
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R23a-customer-regions",
+      "passed": true,
+      "actual": [
+        [
+          "Asia",
+          2
+        ],
+        [
+          "Europe",
+          1
+        ],
+        [
+          "North America",
+          1
+        ]
+      ],
+      "expected": [
+        [
+          "Asia",
+          2
+        ],
+        [
+          "Europe",
+          1
+        ],
+        [
+          "North America",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R23b-customer-countries",
+      "passed": true,
+      "actual": [
+        [
+          "France",
+          1
+        ],
+        [
+          "USA",
+          1
+        ],
+        [
+          "Vietnam",
+          2
+        ]
+      ],
+      "expected": [
+        [
+          "France",
+          1
+        ],
+        [
+          "USA",
+          1
+        ],
+        [
+          "Vietnam",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R24a-order-regions",
+      "passed": true,
+      "actual": [
+        [
+          "Asia",
+          4
+        ],
+        [
+          "Europe",
+          2
+        ],
+        [
+          "North America",
+          0
+        ]
+      ],
+      "expected": [
+        [
+          "Asia",
+          4
+        ],
+        [
+          "Europe",
+          2
+        ],
+        [
+          "North America",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R24b-order-countries",
+      "passed": true,
+      "actual": [
+        [
+          "France",
+          2
+        ],
+        [
+          "USA",
+          0
+        ],
+        [
+          "Vietnam",
+          4
+        ]
+      ],
+      "expected": [
+        [
+          "France",
+          2
+        ],
+        [
+          "USA",
+          0
+        ],
+        [
+          "Vietnam",
+          4
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9.R01-tie-retained",
+      "passed": true,
+      "actual": [
+        5,
+        7
+      ],
+      "expected": [
+        5,
+        7
+      ]
+    },
+    {
+      "name": "MySQL-L9.R10-tied-employee-counts",
+      "passed": true,
+      "actual": [
+        2,
+        3
+      ],
+      "expected": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "MySQL-L9.R13-strict-1500-boundary",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "MySQL-L9-business-PO-ordinal-scoped",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          2
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "MySQL-L9-PO-duplicate-in-same-supplier-rejected",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    }
+  ],
+  "passed": 106,
+  "total": 106,
+  "queryResults": {
+    "P2.01": [
+      [
+        3,
+        "Old Notebook"
+      ]
+    ],
+    "P2.02": [
+      [
+        5,
+        "Pen",
+        "5.00"
+      ],
+      [
+        7,
+        "Ruler",
+        "5.00"
+      ],
+      [
+        3,
+        "Old Notebook",
+        "15.00"
+      ],
+      [
+        4,
+        "Milk",
+        "15.00"
+      ]
+    ],
+    "P2.03": [
+      [
+        1,
+        "Tea",
+        "20.00"
+      ],
+      [
+        2,
+        "Coffee",
+        "25.00"
+      ],
+      [
+        3,
+        "Old Notebook",
+        "15.00"
+      ],
+      [
+        4,
+        "Milk",
+        "15.00"
+      ]
+    ],
+    "P2.04": [
+      [
+        1,
+        "Anh Nguyen"
+      ],
+      [
+        2,
+        "Minh Tran"
+      ],
+      [
+        3,
+        "An Le"
+      ]
+    ],
+    "P2.05": [
+      [
+        1,
+        "Anh",
+        "Nguyen"
+      ],
+      [
+        3,
+        "An",
+        "Le"
+      ]
+    ],
+    "P2.06": [
+      [
+        2
+      ]
+    ],
+    "P2.07": [
+      [
+        "Hanoi Lab"
+      ],
+      [
+        "Hue Studio"
+      ],
+      [
+        "PE School"
+      ]
+    ],
+    "P2.08": [
+      [
+        "5.00",
+        "200.00"
+      ]
+    ],
+    "P2.09": [
+      [
+        6
+      ]
+    ],
+    "P2.10": [
+      [
+        "40.714286",
+        65.37958240856518
+      ]
+    ],
+    "P2.11": [
+      [
+        "Machine",
+        "200.00"
+      ]
+    ],
+    "P3.01": [
+      [
+        31,
+        "2006-03-25",
+        21,
+        1,
+        "PE School",
+        "Hanoi",
+        "10.00"
+      ],
+      [
+        32,
+        "2006-03-26",
+        22,
+        2,
+        "Hanoi Lab",
+        "Hue",
+        "20.00"
+      ],
+      [
+        34,
+        "2006-03-28",
+        21,
+        1,
+        "PE School",
+        "Hanoi",
+        null
+      ]
+    ],
+    "P3.02": [
+      [
+        "TEA",
+        "20.00",
+        30,
+        "540.0000"
+      ],
+      [
+        "COF",
+        "25.00",
+        20,
+        "500.0000"
+      ]
+    ],
+    "P3.03": [
+      [
+        31,
+        "2006-03-25",
+        "PE School",
+        "540.0000"
+      ],
+      [
+        31,
+        "2006-03-25",
+        "PE School",
+        "500.0000"
+      ],
+      [
+        32,
+        "2006-03-26",
+        "Hanoi Lab",
+        "1200.0000"
+      ]
+    ],
+    "P3.04": [
+      [
+        31,
+        "2006-03-25",
+        "PE School",
+        "1040.0000"
+      ],
+      [
+        32,
+        "2006-03-26",
+        "Hanoi Lab",
+        "1200.0000"
+      ],
+      [
+        34,
+        "2006-03-28",
+        "PE School",
+        "0.0000"
+      ]
+    ],
+    "P3.05": [
+      [
+        31,
+        "2006-03-25",
+        "PE School",
+        "1040.0000"
+      ],
+      [
+        32,
+        "2006-03-26",
+        "Hanoi Lab",
+        "1200.0000"
+      ]
+    ],
+    "P3.06": [
+      [
+        2,
+        "Minh Tran",
+        "1200.0000"
+      ],
+      [
+        1,
+        "Anh Nguyen",
+        "1055.0000"
+      ]
+    ],
+    "P3.07": [
+      [
+        "Beverages"
+      ],
+      [
+        "Equipment"
+      ],
+      [
+        "Stationery"
+      ]
+    ],
+    "P3.08": [
+      [
+        "2.00",
+        "140.00",
+        "27.500000",
+        46.21147043754396,
+        2135.4999999999995
+      ]
+    ],
+    "P3.09": [
+      [
+        "Beverages",
+        "20.000000"
+      ],
+      [
+        "Equipment",
+        "200.000000"
+      ],
+      [
+        "Stationery",
+        "8.333333"
+      ]
+    ],
+    "P3.10": [
+      [
+        "Hanoi",
+        "10.00",
+        "10.000000"
+      ],
+      [
+        "Hue",
+        "20.00",
+        "20.000000"
+      ]
+    ],
+    "P3.11": [
+      [
+        "Equipment",
+        "200.000000"
+      ],
+      [
+        "Beverages",
+        "20.000000"
+      ]
+    ],
+    "P3.12": [
+      [
+        "8.333333"
+      ]
+    ],
+    "P3.13": [
+      [
+        80,
+        "Anh Nguyen",
+        "Minh Tran"
+      ],
+      [
+        81,
+        "An Le",
+        null
+      ]
+    ],
+    "P3.14": [
+      [
+        "Hanoi Lab",
+        "Mai Vo",
+        "mai@pe.example",
+        "C"
+      ],
+      [
+        "Hue Studio",
+        "An Do",
+        null,
+        "C"
+      ],
+      [
+        "PE School",
+        "Lan Pham",
+        "lan@pe.example",
+        "C"
+      ],
+      [
+        "PaperTown",
+        "Binh Le",
+        "binh@pe.example",
+        "S"
+      ],
+      [
+        "TeaHouse",
+        "Chi Tran",
+        null,
+        "S"
+      ],
+      [
+        "VietBrew",
+        "Ha Nguyen",
+        "ha@pe.example",
+        "S"
+      ]
+    ],
+    "P3.15": [
+      [
+        3,
+        "Old Notebook"
+      ],
+      [
+        7,
+        "Ruler"
+      ]
+    ],
+    "L9.R01": [
+      [
+        5,
+        "MAC",
+        "Machine",
+        "C",
+        "100.00",
+        "20.00",
+        0
+      ]
+    ],
+    "L9.R02": [
+      [
+        1,
+        "Tea",
+        "110"
+      ]
+    ],
+    "L9.R03": [
+      [
+        "36.666667"
+      ]
+    ],
+    "L9.R04": [
+      [
+        "A",
+        "25.000000",
+        5.0
+      ],
+      [
+        "B",
+        "23.333333",
+        18.856180831641264
+      ],
+      [
+        "C",
+        "100.000000",
+        0.0
+      ]
+    ],
+    "L9.R05": [
+      [
+        null,
+        1
+      ],
+      [
+        "Hanoi",
+        2
+      ],
+      [
+        "Hue",
+        1
+      ]
+    ],
+    "L9.R06": [
+      [
+        "A",
+        2
+      ],
+      [
+        "B",
+        3
+      ],
+      [
+        "C",
+        1
+      ]
+    ],
+    "L9.R07": [
+      [
+        "B",
+        "23.333333"
+      ],
+      [
+        "A",
+        "25.000000"
+      ],
+      [
+        "C",
+        "100.000000"
+      ]
+    ],
+    "L9.R08": [
+      [
+        6,
+        "Ruler"
+      ]
+    ],
+    "L9.R09": [
+      [
+        21,
+        3
+      ],
+      [
+        22,
+        2
+      ],
+      [
+        23,
+        1
+      ],
+      [
+        24,
+        0
+      ]
+    ],
+    "L9.R10": [
+      [
+        2,
+        4
+      ]
+    ],
+    "L9.R11": [
+      [
+        2,
+        "Le"
+      ]
+    ],
+    "L9.R12": [
+      [
+        31,
+        "254.000000"
+      ],
+      [
+        32,
+        "2000.000000"
+      ],
+      [
+        33,
+        "1850.000000"
+      ],
+      [
+        34,
+        "80.000000"
+      ],
+      [
+        35,
+        "225.000000"
+      ],
+      [
+        36,
+        "0.000000"
+      ]
+    ],
+    "L9.R13": [
+      [
+        32,
+        "2000.000000"
+      ],
+      [
+        33,
+        "1850.000000"
+      ]
+    ],
+    "L9.R14": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ]
+    ],
+    "L9.R15": [
+      [
+        1,
+        "Tea",
+        "2000.000000"
+      ],
+      [
+        2,
+        "Coffee",
+        "134.000000"
+      ],
+      [
+        3,
+        "Pen",
+        "50.000000"
+      ],
+      [
+        4,
+        "Notebook",
+        "225.000000"
+      ],
+      [
+        5,
+        "Machine",
+        "2000.000000"
+      ],
+      [
+        6,
+        "Ruler",
+        "0.000000"
+      ]
+    ],
+    "L9.R16": [
+      [
+        4,
+        "Notebook",
+        "50.00"
+      ],
+      [
+        5,
+        "Machine",
+        "100.00"
+      ]
+    ],
+    "L9.R17": [
+      [
+        "Hanoi",
+        "100.000000"
+      ],
+      [
+        "Hue",
+        "100.000000"
+      ],
+      [
+        "Paris",
+        "125.000000"
+      ]
+    ],
+    "L9.R18": [
+      [
+        "Coffee",
+        "30.00",
+        "A",
+        "25.000000"
+      ],
+      [
+        "Notebook",
+        "50.00",
+        "B",
+        "23.333333"
+      ]
+    ],
+    "L9.R19": [
+      [
+        1,
+        "3.5000"
+      ],
+      [
+        2,
+        "2.0000"
+      ],
+      [
+        3,
+        null
+      ],
+      [
+        4,
+        null
+      ]
+    ],
+    "L9.R20": [
+      [
+        "Blue Lab",
+        "Nguyen",
+        "2026-01-10",
+        "Closed"
+      ],
+      [
+        "Green Lab",
+        "Nguyen",
+        "2026-01-11",
+        "Closed"
+      ],
+      [
+        "Blue Lab",
+        "Le",
+        "2026-01-12",
+        "Open"
+      ],
+      [
+        "Quiet Lab",
+        "Le",
+        "2026-01-13",
+        "Closed"
+      ],
+      [
+        "Green Lab",
+        "Le",
+        "2026-01-14",
+        "Closed"
+      ],
+      [
+        "Blue Lab",
+        "Le",
+        "2026-01-15",
+        "Open"
+      ]
+    ],
+    "L9.R22": [
+      [
+        1,
+        "Nguyen",
+        "2254.000000"
+      ],
+      [
+        2,
+        "Le",
+        "2155.000000"
+      ],
+      [
+        3,
+        "Tran",
+        "0.000000"
+      ],
+      [
+        4,
+        "Vu",
+        "0.000000"
+      ]
+    ],
+    "L9.R23a": [
+      [
+        "Asia",
+        2
+      ],
+      [
+        "Europe",
+        1
+      ],
+      [
+        "North America",
+        1
+      ]
+    ],
+    "L9.R23b": [
+      [
+        "France",
+        1
+      ],
+      [
+        "USA",
+        1
+      ],
+      [
+        "Vietnam",
+        2
+      ]
+    ],
+    "L9.R24a": [
+      [
+        "Asia",
+        4
+      ],
+      [
+        "Europe",
+        2
+      ],
+      [
+        "North America",
+        0
+      ]
+    ],
+    "L9.R24b": [
+      [
+        "France",
+        2
+      ],
+      [
+        "USA",
+        0
+      ],
+      [
+        "Vietnam",
+        4
+      ]
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-05",
+  "status": "passed",
+  "count": 16,
+  "checks": [
+    {
+      "name": "CLR redo/undoNext across12 supported page/crash variants",
+      "passed": true,
+      "scope": "Durable CLR assumed before second crash; strict item protection and before/after images; no native crash."
+    },
+    {
+      "name": "Two losers use maximum pending LSN order",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Redo filter can skip without page fetch by recLSN",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "PageLSN suppresses a nonidempotent physiological deletion",
+      "passed": true,
+      "scope": "Deleting first slot twice differs; pageLSN50 prevents duplicate application of record50."
+    },
+    {
+      "name": "Dummy CLR skips structural records but not user update",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Dirty-again page can begin new recLSN interval",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Analysis of initially empty DPT must add later updates",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Logical compensation preserves concurrent committed contribution",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Partial logical inverse can be physically restored before retry",
+      "passed": true,
+      "scope": "Illustrative partial inverse prefix, with undo metadata and operation-consistent restart; no multilevel implementation."
+    },
+    {
+      "name": "Completed operation-abort must skip duplicate logical compensation",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Remote receive ACK is weaker than remote durable prefix",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Two-safe degraded commit has a double-failure loss witness",
+      "passed": true,
+      "scope": "Primary-only suffix201..220 lost if primary storage then fails before resync."
+    },
+    {
+      "name": "Block replication must preserve WAL force order",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Redo-only snapshot must exclude or identify loser versions",
+      "passed": true,
+      "scope": "Redo committedY alone cannot remove loserX already present in snapshot."
+    },
+    {
+      "name": "Cross-partition transfer requires shared outcome/publication",
+      "passed": true,
+      "scope": "Finite reference model only"
+    },
+    {
+      "name": "Persistent individual words do not imply atomic multiword transaction",
+      "passed": true,
+      "scope": "Finite reference model only"
+    }
+  ],
+  "lessonSha256": {
+    "AD44": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+    "AD45": "f12a83d12886295e0c03e5ee79ea7ff80a9e90f5a1a5b51bae69a4f6ffeb5e02"
+  },
+  "limits": "Finite mathematical witnesses only; no native ARIES, remote durability, failover, restore drill or NVRAM execution."
+}

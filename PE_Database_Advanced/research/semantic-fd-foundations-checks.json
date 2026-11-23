@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-05",
+  "kind": "finite-mathematical-example-checks",
+  "scope": [
+    "AD03",
+    "AD04"
+  ],
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "empty-F",
+      "result": "pass",
+      "fdCount": 9
+    },
+    {
+      "name": "AD03-full-Fplus-answer",
+      "result": "pass",
+      "fdCount": 11
+    },
+    {
+      "name": "AD03-transitivity",
+      "result": "pass",
+      "fdCount": 43
+    },
+    {
+      "name": "empty-left",
+      "result": "pass",
+      "fdCount": 12
+    },
+    {
+      "name": "AD04-cycle",
+      "result": "pass",
+      "fdCount": 57
+    },
+    {
+      "name": "AD04-two-canonical-covers-and-stale-removal",
+      "result": "pass"
+    },
+    {
+      "name": "AD04-practice-cover-and-all-keys",
+      "result": "pass"
+    },
+    {
+      "name": "AB-BC-preserves",
+      "result": "pass"
+    },
+    {
+      "name": "AB-AC-loses-B-to-C",
+      "result": "pass"
+    },
+    {
+      "name": "sufficient-shortcut-inconclusive",
+      "result": "pass"
+    },
+    {
+      "name": "multiple-passes",
+      "result": "pass"
+    },
+    {
+      "name": "AD03-published-reference-code-edge-cases",
+      "result": "pass"
+    }
+  ],
+  "limitations": "Finite example checks support authored answers; they do not replace the universal proofs in the lessons. No MySQL runtime was used.",
+  "lessonSha256": {
+    "AD03": "1da2beb97aced993745b0642709b74d0128880ce020060e8ba77161943f679b1",
+    "AD04": "f7970485c3889544e1bb71ef634e6801f0e910eeee30a9356ca9e355bd6e83bd"
+  }
+}

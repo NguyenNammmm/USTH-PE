@@ -1,0 +1,4450 @@
+{
+  "auditType": "Full assigned-source semantic coverage gate, incremental",
+  "scopeLessonIds": [
+    "AD23",
+    "AD24",
+    "AD25",
+    "AD26",
+    "AD27",
+    "AD28",
+    "AD29",
+    "AD30",
+    "AD31",
+    "AD32",
+    "AD33",
+    "AD34",
+    "AD35",
+    "AD36",
+    "AD37",
+    "AD74",
+    "AD75",
+    "AD76",
+    "AD77",
+    "AD78",
+    "AD79",
+    "AD80"
+  ],
+  "totalAssignedUnits": 191,
+  "ownBodyWords": 113610,
+  "policy": "Each own body ends immediately before next numbered inventory heading. Parent introductions read once. Status is never inferred from lexical matching or baseline claims. Covered requires actual current lesson prose/example/proof/activity/answer witnesses. Pending units remain unread.",
+  "statusDefinitions": {
+    "unread": "Source own body not yet read in this full pass",
+    "read-missing": "Own body read, material teaching coverage missing",
+    "read-partial": "Own body read, some mechanism or activity/answer witness missing",
+    "covered": "Own body read; actual current lesson witnesses support teaching at source-skill depth; no outstanding material gap identified",
+    "covered-after-fix": "Same as covered, after recorded lesson repair"
+  },
+  "units": [
+    {
+      "section": "12.1",
+      "title": "Overview of Physical Storage Media",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-12.txt",
+      "sourcehash": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c",
+      "inventoryBodyWordCount": 1309,
+      "inventoryScopeWordCount": 1309,
+      "ownBodyRange": [
+        17,
+        130
+      ],
+      "readrange": null,
+      "sourcePdfPage": 588,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "12.2",
+      "title": "Storage Interfaces",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-12.txt",
+      "sourcehash": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c",
+      "inventoryBodyWordCount": 450,
+      "inventoryScopeWordCount": 450,
+      "ownBodyRange": [
+        131,
+        161
+      ],
+      "readrange": null,
+      "sourcePdfPage": 591,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "12.3",
+      "title": "Magnetic Disks",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-12.txt",
+      "sourcehash": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c",
+      "inventoryBodyWordCount": 193,
+      "inventoryScopeWordCount": 2127,
+      "ownBodyRange": [
+        162,
+        177
+      ],
+      "readrange": null,
+      "sourcePdfPage": 592,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "12.3.1",
+      "title": "Physical Characteristics of Disks",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-12.txt",
+      "sourcehash": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c",
+      "inventoryBodyWordCount": 787,
+      "inventoryScopeWordCount": 787,
+      "ownBodyRange": [
+        178,
+        248
+      ],
+      "readrange": null,
+      "sourcePdfPage": 592,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "12.3.2",
+      "title": "Performance Measures of Disks",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-12.txt",
+      "sourcehash": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c",
+      "inventoryBodyWordCount": 1147,
+      "inventoryScopeWordCount": 1147,
+      "ownBodyRange": [
+        249,
+        325
+      ],
+      "readrange": null,
+      "sourcePdfPage": 594,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "12.4",
+      "title": "Flash Memory",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-12.txt",
+      "sourcehash": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c",
+      "inventoryBodyWordCount": 1211,
+      "inventoryScopeWordCount": 1211,
+      "ownBodyRange": [
+        326,
+        422
+      ],
+      "readrange": null,
+      "sourcePdfPage": 596,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "12.5",
+      "title": "RAID",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-12.txt",
+      "sourcehash": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c",
+      "inventoryBodyWordCount": 245,
+      "inventoryScopeWordCount": 4244,
+      "ownBodyRange": [
+        423,
+        444
+      ],
+      "readrange": null,
+      "sourcePdfPage": 599,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "12.5.1",
+      "title": "Improvement of Reliability via Redundancy",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-12.txt",
+      "sourcehash": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c",
+      "inventoryBodyWordCount": 655,
+      "inventoryScopeWordCount": 655,
+      "ownBodyRange": [
+        445,
+        488
+      ],
+      "readrange": null,
+      "sourcePdfPage": 599,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "12.5.2",
+      "title": "Improvement in Performance via Parallelism",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-12.txt",
+      "sourcehash": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c",
+      "inventoryBodyWordCount": 441,
+      "inventoryScopeWordCount": 441,
+      "ownBodyRange": [
+        489,
+        520
+      ],
+      "readrange": null,
+      "sourcePdfPage": 600,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "12.5.3",
+      "title": "RAID Levels",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-12.txt",
+      "sourcehash": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c",
+      "inventoryBodyWordCount": 1200,
+      "inventoryScopeWordCount": 1200,
+      "ownBodyRange": [
+        521,
+        636
+      ],
+      "readrange": null,
+      "sourcePdfPage": 601,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "12.5.4",
+      "title": "Hardware Issues",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-12.txt",
+      "sourcehash": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c",
+      "inventoryBodyWordCount": 792,
+      "inventoryScopeWordCount": 792,
+      "ownBodyRange": [
+        637,
+        697
+      ],
+      "readrange": null,
+      "sourcePdfPage": 603,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "12.5.5",
+      "title": "Choice of RAID Level",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-12.txt",
+      "sourcehash": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c",
+      "inventoryBodyWordCount": 766,
+      "inventoryScopeWordCount": 766,
+      "ownBodyRange": [
+        698,
+        755
+      ],
+      "readrange": null,
+      "sourcePdfPage": 605,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "12.5.6",
+      "title": "Other RAID Applications",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-12.txt",
+      "sourcehash": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c",
+      "inventoryBodyWordCount": 145,
+      "inventoryScopeWordCount": 145,
+      "ownBodyRange": [
+        756,
+        765
+      ],
+      "readrange": null,
+      "sourcePdfPage": 606,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "12.6",
+      "title": "Disk-Block Access",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-12.txt",
+      "sourcehash": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c",
+      "inventoryBodyWordCount": 1275,
+      "inventoryScopeWordCount": 1275,
+      "ownBodyRange": [
+        766,
+        870
+      ],
+      "readrange": null,
+      "sourcePdfPage": 606,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.1",
+      "title": "Database Storage Architecture",
+      "owners": [
+        "AD24"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 511,
+      "inventoryScopeWordCount": 511,
+      "ownBodyRange": [
+        9,
+        49
+      ],
+      "readrange": null,
+      "sourcePdfPage": 616,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.2",
+      "title": "File Organization",
+      "owners": [
+        "AD24"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 429,
+      "inventoryScopeWordCount": 2914,
+      "ownBodyRange": [
+        50,
+        83
+      ],
+      "readrange": null,
+      "sourcePdfPage": 617,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.2.1",
+      "title": "Fixed-Length Records",
+      "owners": [
+        "AD24"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 1071,
+      "inventoryScopeWordCount": 1071,
+      "ownBodyRange": [
+        84,
+        295
+      ],
+      "readrange": null,
+      "sourcePdfPage": 618,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.2.2",
+      "title": "Variable-Length Records",
+      "owners": [
+        "AD24"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 902,
+      "inventoryScopeWordCount": 902,
+      "ownBodyRange": [
+        296,
+        373
+      ],
+      "readrange": null,
+      "sourcePdfPage": 621,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.2.3",
+      "title": "Storing Large Objects",
+      "owners": [
+        "AD24"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 512,
+      "inventoryScopeWordCount": 512,
+      "ownBodyRange": [
+        374,
+        412
+      ],
+      "readrange": null,
+      "sourcePdfPage": 623,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.3",
+      "title": "Organization of Records in Files",
+      "owners": [
+        "AD24"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 368,
+      "inventoryScopeWordCount": 2897,
+      "ownBodyRange": [
+        413,
+        443
+      ],
+      "readrange": null,
+      "sourcePdfPage": 624,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.3.1",
+      "title": "Heap File Organization",
+      "owners": [
+        "AD24"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 838,
+      "inventoryScopeWordCount": 838,
+      "ownBodyRange": [
+        444,
+        517
+      ],
+      "readrange": null,
+      "sourcePdfPage": 625,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.3.2",
+      "title": "Sequential File Organization",
+      "owners": [
+        "AD24"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 556,
+      "inventoryScopeWordCount": 556,
+      "ownBodyRange": [
+        518,
+        596
+      ],
+      "readrange": null,
+      "sourcePdfPage": 626,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.3.3",
+      "title": "Multitable Clustering File Organization",
+      "owners": [
+        "AD24"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 884,
+      "inventoryScopeWordCount": 884,
+      "ownBodyRange": [
+        597,
+        772
+      ],
+      "readrange": null,
+      "sourcePdfPage": 627,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.3.4",
+      "title": "Partitioning",
+      "owners": [
+        "AD24"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 251,
+      "inventoryScopeWordCount": 251,
+      "ownBodyRange": [
+        773,
+        801
+      ],
+      "readrange": null,
+      "sourcePdfPage": 630,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.4",
+      "title": "Data-Dictionary Storage",
+      "owners": [
+        "AD24"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 701,
+      "inventoryScopeWordCount": 701,
+      "ownBodyRange": [
+        802,
+        893
+      ],
+      "readrange": null,
+      "sourcePdfPage": 631,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.5",
+      "title": "Database Buffer",
+      "owners": [
+        "AD25"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 271,
+      "inventoryScopeWordCount": 3315,
+      "ownBodyRange": [
+        894,
+        913
+      ],
+      "readrange": null,
+      "sourcePdfPage": 633,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.5.1",
+      "title": "Buffer Manager",
+      "owners": [
+        "AD25"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 238,
+      "inventoryScopeWordCount": 1388,
+      "ownBodyRange": [
+        914,
+        933
+      ],
+      "readrange": null,
+      "sourcePdfPage": 633,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.5.1.1",
+      "title": "Buffer replacement strategy",
+      "owners": [
+        "AD25"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 83,
+      "inventoryScopeWordCount": 83,
+      "ownBodyRange": [
+        934,
+        939
+      ],
+      "readrange": null,
+      "sourcePdfPage": 634,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.5.1.2",
+      "title": "Pinned blocks",
+      "owners": [
+        "AD25"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 291,
+      "inventoryScopeWordCount": 291,
+      "ownBodyRange": [
+        940,
+        960
+      ],
+      "readrange": null,
+      "sourcePdfPage": 634,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.5.1.3",
+      "title": "Shared and Exclusive Locks on Buffer",
+      "owners": [
+        "AD25"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 484,
+      "inventoryScopeWordCount": 484,
+      "ownBodyRange": [
+        961,
+        995
+      ],
+      "readrange": null,
+      "sourcePdfPage": 634,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.5.1.4",
+      "title": "Output of blocks",
+      "owners": [
+        "AD25"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 170,
+      "inventoryScopeWordCount": 170,
+      "ownBodyRange": [
+        996,
+        1010
+      ],
+      "readrange": null,
+      "sourcePdfPage": 635,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.5.1.5",
+      "title": "Forced output of blocks",
+      "owners": [
+        "AD25"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 122,
+      "inventoryScopeWordCount": 122,
+      "ownBodyRange": [
+        1011,
+        1019
+      ],
+      "readrange": null,
+      "sourcePdfPage": 636,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.5.2",
+      "title": "Buffer-Replacement Strategies",
+      "owners": [
+        "AD25"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 1002,
+      "inventoryScopeWordCount": 1002,
+      "ownBodyRange": [
+        1020,
+        1118
+      ],
+      "readrange": null,
+      "sourcePdfPage": 636,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.5.3",
+      "title": "Reordering of Writes and Recovery",
+      "owners": [
+        "AD25"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 654,
+      "inventoryScopeWordCount": 654,
+      "ownBodyRange": [
+        1119,
+        1168
+      ],
+      "readrange": null,
+      "sourcePdfPage": 638,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.6",
+      "title": "Column-Oriented Storage",
+      "owners": [
+        "AD26"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 1961,
+      "inventoryScopeWordCount": 1961,
+      "ownBodyRange": [
+        1169,
+        1396
+      ],
+      "readrange": null,
+      "sourcePdfPage": 640,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "13.7",
+      "title": "Storage Organization in Main-Memory Databases",
+      "owners": [
+        "AD26"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-13.txt",
+      "sourcehash": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5",
+      "inventoryBodyWordCount": 753,
+      "inventoryScopeWordCount": 753,
+      "ownBodyRange": [
+        1397,
+        1470
+      ],
+      "readrange": null,
+      "sourcePdfPage": 644,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.1",
+      "title": "Basic Concepts",
+      "owners": [
+        "AD74"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 793,
+      "inventoryScopeWordCount": 793,
+      "ownBodyRange": [
+        14,
+        110
+      ],
+      "readrange": null,
+      "sourcePdfPage": 652,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.2",
+      "title": "Ordered Indices",
+      "owners": [
+        "AD74"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 336,
+      "inventoryScopeWordCount": 4020,
+      "ownBodyRange": [
+        111,
+        137
+      ],
+      "readrange": null,
+      "sourcePdfPage": 654,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.2.1",
+      "title": "Dense and Sparse Indices",
+      "owners": [
+        "AD74"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 1042,
+      "inventoryScopeWordCount": 1042,
+      "ownBodyRange": [
+        138,
+        337
+      ],
+      "readrange": null,
+      "sourcePdfPage": 655,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.2.2",
+      "title": "Multilevel Indices",
+      "owners": [
+        "AD74"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 832,
+      "inventoryScopeWordCount": 832,
+      "ownBodyRange": [
+        338,
+        408
+      ],
+      "readrange": null,
+      "sourcePdfPage": 657,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.2.3",
+      "title": "Index Update",
+      "owners": [
+        "AD74"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 142,
+      "inventoryScopeWordCount": 819,
+      "ownBodyRange": [
+        409,
+        420
+      ],
+      "readrange": null,
+      "sourcePdfPage": 659,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.2.3.1",
+      "title": "Insertion",
+      "owners": [
+        "AD74"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 287,
+      "inventoryScopeWordCount": 287,
+      "ownBodyRange": [
+        421,
+        444
+      ],
+      "readrange": null,
+      "sourcePdfPage": 659,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.2.3.2",
+      "title": "Deletion",
+      "owners": [
+        "AD74"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 390,
+      "inventoryScopeWordCount": 390,
+      "ownBodyRange": [
+        445,
+        477
+      ],
+      "readrange": null,
+      "sourcePdfPage": 660,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.2.4",
+      "title": "Secondary Indices",
+      "owners": [
+        "AD74"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 732,
+      "inventoryScopeWordCount": 732,
+      "ownBodyRange": [
+        478,
+        550
+      ],
+      "readrange": null,
+      "sourcePdfPage": 661,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.2.5",
+      "title": "Indices on Multiple Keys",
+      "owners": [
+        "AD74"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 259,
+      "inventoryScopeWordCount": 259,
+      "ownBodyRange": [
+        551,
+        568
+      ],
+      "readrange": null,
+      "sourcePdfPage": 662,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.3",
+      "title": "B+-Tree Index Files",
+      "owners": [
+        "AD28"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 206,
+      "inventoryScopeWordCount": 7707,
+      "ownBodyRange": [
+        569,
+        585
+      ],
+      "readrange": null,
+      "sourcePdfPage": 663,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.3.1",
+      "title": "Structure of a B +-Tree",
+      "owners": [
+        "AD28"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 1263,
+      "inventoryScopeWordCount": 1263,
+      "ownBodyRange": [
+        586,
+        730
+      ],
+      "readrange": null,
+      "sourcePdfPage": 663,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.3.2",
+      "title": "Queries on B +-Trees",
+      "owners": [
+        "AD28"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 1830,
+      "inventoryScopeWordCount": 1830,
+      "ownBodyRange": [
+        731,
+        875
+      ],
+      "readrange": null,
+      "sourcePdfPage": 666,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.3.3",
+      "title": "Updates on B +-Trees",
+      "owners": [
+        "AD28"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 371,
+      "inventoryScopeWordCount": 3017,
+      "ownBodyRange": [
+        876,
+        900
+      ],
+      "readrange": null,
+      "sourcePdfPage": 670,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.3.3.1",
+      "title": "Insertion",
+      "owners": [
+        "AD28"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 1450,
+      "inventoryScopeWordCount": 1450,
+      "ownBodyRange": [
+        901,
+        1054
+      ],
+      "readrange": null,
+      "sourcePdfPage": 670,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.3.3.2",
+      "title": "Deletion",
+      "owners": [
+        "AD28"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 1196,
+      "inventoryScopeWordCount": 1196,
+      "ownBodyRange": [
+        1055,
+        1150
+      ],
+      "readrange": null,
+      "sourcePdfPage": 674,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.3.4",
+      "title": "Complexity of B +-Tree Updates",
+      "owners": [
+        "AD28"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 786,
+      "inventoryScopeWordCount": 786,
+      "ownBodyRange": [
+        1151,
+        1229
+      ],
+      "readrange": null,
+      "sourcePdfPage": 676,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.3.5",
+      "title": "Nonunique Search Keys",
+      "owners": [
+        "AD28"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 605,
+      "inventoryScopeWordCount": 605,
+      "ownBodyRange": [
+        1230,
+        1277
+      ],
+      "readrange": null,
+      "sourcePdfPage": 678,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.4",
+      "title": "B+-Tree Extensions",
+      "owners": [
+        "AD28"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 18,
+      "inventoryScopeWordCount": 4328,
+      "ownBodyRange": [
+        1278,
+        1280
+      ],
+      "readrange": null,
+      "sourcePdfPage": 679,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.4.1",
+      "title": "B +- T r e eF i l eO r g a n i z a t i o n",
+      "owners": [
+        "AD27"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 983,
+      "inventoryScopeWordCount": 983,
+      "ownBodyRange": [
+        1281,
+        1354
+      ],
+      "readrange": null,
+      "sourcePdfPage": 679,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.4.2",
+      "title": "Secondary Indices and Record Relocation",
+      "owners": [
+        "AD27"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 294,
+      "inventoryScopeWordCount": 294,
+      "ownBodyRange": [
+        1355,
+        1379
+      ],
+      "readrange": null,
+      "sourcePdfPage": 681,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.4.3",
+      "title": "Indexing Strings",
+      "owners": [
+        "AD28"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 233,
+      "inventoryScopeWordCount": 233,
+      "ownBodyRange": [
+        1380,
+        1395
+      ],
+      "readrange": null,
+      "sourcePdfPage": 682,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.4.4",
+      "title": "Bulk Loading of B +-Tree Indices",
+      "owners": [
+        "AD28"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 938,
+      "inventoryScopeWordCount": 938,
+      "ownBodyRange": [
+        1396,
+        1472
+      ],
+      "readrange": null,
+      "sourcePdfPage": 682,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.4.5",
+      "title": "B-Tree Index Files",
+      "owners": [
+        "AD28"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 788,
+      "inventoryScopeWordCount": 788,
+      "ownBodyRange": [
+        1473,
+        1530
+      ],
+      "readrange": null,
+      "sourcePdfPage": 684,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.4.6",
+      "title": "Indexing on Flash Storage",
+      "owners": [
+        "AD28"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 586,
+      "inventoryScopeWordCount": 586,
+      "ownBodyRange": [
+        1531,
+        1576
+      ],
+      "readrange": null,
+      "sourcePdfPage": 685,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.4.7",
+      "title": "Indexing in Main Memory",
+      "owners": [
+        "AD28"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 488,
+      "inventoryScopeWordCount": 488,
+      "ownBodyRange": [
+        1577,
+        1614
+      ],
+      "readrange": null,
+      "sourcePdfPage": 686,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.5",
+      "title": "Hash Indices",
+      "owners": [
+        "AD29"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 1218,
+      "inventoryScopeWordCount": 1218,
+      "ownBodyRange": [
+        1615,
+        1714
+      ],
+      "readrange": null,
+      "sourcePdfPage": 687,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.6",
+      "title": "Multiple-Key Access",
+      "owners": [
+        "AD30"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 52,
+      "inventoryScopeWordCount": 1006,
+      "ownBodyRange": [
+        1715,
+        1719
+      ],
+      "readrange": null,
+      "sourcePdfPage": 690,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.6.1",
+      "title": "Using Multiple Single-Key Indices",
+      "owners": [
+        "AD30"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 319,
+      "inventoryScopeWordCount": 319,
+      "ownBodyRange": [
+        1720,
+        1754
+      ],
+      "readrange": null,
+      "sourcePdfPage": 690,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.6.2",
+      "title": "Indices on Multiple Keys",
+      "owners": [
+        "AD30"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 442,
+      "inventoryScopeWordCount": 442,
+      "ownBodyRange": [
+        1755,
+        1810
+      ],
+      "readrange": null,
+      "sourcePdfPage": 691,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.6.3",
+      "title": "Covering Indices",
+      "owners": [
+        "AD30"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 193,
+      "inventoryScopeWordCount": 193,
+      "ownBodyRange": [
+        1811,
+        1824
+      ],
+      "readrange": null,
+      "sourcePdfPage": 692,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.7",
+      "title": "Creation of Indices",
+      "owners": [
+        "AD30"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 863,
+      "inventoryScopeWordCount": 863,
+      "ownBodyRange": [
+        1825,
+        1897
+      ],
+      "readrange": null,
+      "sourcePdfPage": 693,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.8",
+      "title": "Write-Optimized Index Structures",
+      "owners": [
+        "AD31"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 377,
+      "inventoryScopeWordCount": 2410,
+      "ownBodyRange": [
+        1898,
+        1921
+      ],
+      "readrange": null,
+      "sourcePdfPage": 694,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.8.1",
+      "title": "LSM Trees",
+      "owners": [
+        "AD31"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 1257,
+      "inventoryScopeWordCount": 1257,
+      "ownBodyRange": [
+        1922,
+        2019
+      ],
+      "readrange": null,
+      "sourcePdfPage": 695,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.8.2",
+      "title": "Buffer Tree",
+      "owners": [
+        "AD31"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 776,
+      "inventoryScopeWordCount": 776,
+      "ownBodyRange": [
+        2020,
+        2082
+      ],
+      "readrange": null,
+      "sourcePdfPage": 697,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.9",
+      "title": "Bitmap Indices",
+      "owners": [
+        "AD30"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 920,
+      "inventoryScopeWordCount": 920,
+      "ownBodyRange": [
+        2083,
+        2196
+      ],
+      "readrange": null,
+      "sourcePdfPage": 699,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.10",
+      "title": "Indexing of Spatial and Temporal Data",
+      "owners": [
+        "AD30"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 61,
+      "inventoryScopeWordCount": 2393,
+      "ownBodyRange": [
+        2197,
+        2202
+      ],
+      "readrange": null,
+      "sourcePdfPage": 701,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.10.1",
+      "title": "Indexing of Spatial Data",
+      "owners": [
+        "AD30"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 1481,
+      "inventoryScopeWordCount": 1481,
+      "ownBodyRange": [
+        2203,
+        2327
+      ],
+      "readrange": null,
+      "sourcePdfPage": 701,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "14.10.2",
+      "title": "Indexing Temporal Data",
+      "owners": [
+        "AD30"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-14.txt",
+      "sourcehash": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba",
+      "inventoryBodyWordCount": 851,
+      "inventoryScopeWordCount": 851,
+      "ownBodyRange": [
+        2328,
+        2388
+      ],
+      "readrange": null,
+      "sourcePdfPage": 704,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.1",
+      "title": "Overview",
+      "owners": [
+        "AD76"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 967,
+      "inventoryScopeWordCount": 967,
+      "ownBodyRange": [
+        9,
+        105
+      ],
+      "readrange": null,
+      "sourcePdfPage": 718,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.2",
+      "title": "Measures of Query Cost",
+      "owners": [
+        "AD76"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 1774,
+      "inventoryScopeWordCount": 1774,
+      "ownBodyRange": [
+        106,
+        237
+      ],
+      "readrange": null,
+      "sourcePdfPage": 721,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.3",
+      "title": "Selection Operation",
+      "owners": [
+        "AD76"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 57,
+      "inventoryScopeWordCount": 2844,
+      "ownBodyRange": [
+        238,
+        242
+      ],
+      "readrange": null,
+      "sourcePdfPage": 724,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.3.1",
+      "title": "Selections Using File Scans and Indices",
+      "owners": [
+        "AD76"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 1302,
+      "inventoryScopeWordCount": 1302,
+      "ownBodyRange": [
+        243,
+        398
+      ],
+      "readrange": null,
+      "sourcePdfPage": 724,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.3.2",
+      "title": "Selections Involving Comparisons",
+      "owners": [
+        "AD76"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 805,
+      "inventoryScopeWordCount": 805,
+      "ownBodyRange": [
+        399,
+        456
+      ],
+      "readrange": null,
+      "sourcePdfPage": 727,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.3.3",
+      "title": "Implementation of Complex Selections",
+      "owners": [
+        "AD76"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 680,
+      "inventoryScopeWordCount": 680,
+      "ownBodyRange": [
+        457,
+        520
+      ],
+      "readrange": null,
+      "sourcePdfPage": 728,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.4",
+      "title": "Sorting",
+      "owners": [
+        "AD32"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 204,
+      "inventoryScopeWordCount": 1424,
+      "ownBodyRange": [
+        521,
+        537
+      ],
+      "readrange": null,
+      "sourcePdfPage": 730,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.4.1",
+      "title": "External Sort-Merge Algorithm",
+      "owners": [
+        "AD32"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 590,
+      "inventoryScopeWordCount": 590,
+      "ownBodyRange": [
+        538,
+        586
+      ],
+      "readrange": null,
+      "sourcePdfPage": 730,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.4.2",
+      "title": "Cost Analysis of External Sort-Merge",
+      "owners": [
+        "AD32"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 630,
+      "inventoryScopeWordCount": 630,
+      "ownBodyRange": [
+        587,
+        685
+      ],
+      "readrange": null,
+      "sourcePdfPage": 731,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5",
+      "title": "Join Operation",
+      "owners": [
+        "AD33"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 125,
+      "inventoryScopeWordCount": 7194,
+      "ownBodyRange": [
+        686,
+        698
+      ],
+      "readrange": null,
+      "sourcePdfPage": 733,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.1",
+      "title": "Nested-Loop Join",
+      "owners": [
+        "AD77"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 724,
+      "inventoryScopeWordCount": 724,
+      "ownBodyRange": [
+        699,
+        753
+      ],
+      "readrange": null,
+      "sourcePdfPage": 733,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.2",
+      "title": "Block Nested-Loop Join",
+      "owners": [
+        "AD77"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 709,
+      "inventoryScopeWordCount": 709,
+      "ownBodyRange": [
+        754,
+        814
+      ],
+      "readrange": null,
+      "sourcePdfPage": 734,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.3",
+      "title": "Indexed Nested-Loop Join",
+      "owners": [
+        "AD77"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 559,
+      "inventoryScopeWordCount": 559,
+      "ownBodyRange": [
+        815,
+        852
+      ],
+      "readrange": null,
+      "sourcePdfPage": 736,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.4",
+      "title": "Merge Join",
+      "owners": [
+        "AD33"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 72,
+      "inventoryScopeWordCount": 1754,
+      "ownBodyRange": [
+        853,
+        858
+      ],
+      "readrange": null,
+      "sourcePdfPage": 737,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.4.1",
+      "title": "Merge-Join Algorithm",
+      "owners": [
+        "AD33"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 555,
+      "inventoryScopeWordCount": 555,
+      "ownBodyRange": [
+        859,
+        940
+      ],
+      "readrange": null,
+      "sourcePdfPage": 737,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.4.2",
+      "title": "Cost Analysis",
+      "owners": [
+        "AD33"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 914,
+      "inventoryScopeWordCount": 914,
+      "ownBodyRange": [
+        941,
+        1008
+      ],
+      "readrange": null,
+      "sourcePdfPage": 739,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.4.3",
+      "title": "Hybrid Merge Join",
+      "owners": [
+        "AD33"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 213,
+      "inventoryScopeWordCount": 213,
+      "ownBodyRange": [
+        1009,
+        1023
+      ],
+      "readrange": null,
+      "sourcePdfPage": 741,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.5",
+      "title": "Hash Join",
+      "owners": [
+        "AD33"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 178,
+      "inventoryScopeWordCount": 2773,
+      "ownBodyRange": [
+        1024,
+        1040
+      ],
+      "readrange": null,
+      "sourcePdfPage": 741,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.5.1",
+      "title": "Basics",
+      "owners": [
+        "AD33"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 740,
+      "inventoryScopeWordCount": 740,
+      "ownBodyRange": [
+        1041,
+        1133
+      ],
+      "readrange": null,
+      "sourcePdfPage": 741,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.5.2",
+      "title": "Recursive Partitioning",
+      "owners": [
+        "AD33"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 230,
+      "inventoryScopeWordCount": 230,
+      "ownBodyRange": [
+        1134,
+        1156
+      ],
+      "readrange": null,
+      "sourcePdfPage": 743,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.5.3",
+      "title": "Handling of Overflows",
+      "owners": [
+        "AD33"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 387,
+      "inventoryScopeWordCount": 387,
+      "ownBodyRange": [
+        1157,
+        1184
+      ],
+      "readrange": null,
+      "sourcePdfPage": 744,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.5.4",
+      "title": "Cost of Hash Join",
+      "owners": [
+        "AD33"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 741,
+      "inventoryScopeWordCount": 741,
+      "ownBodyRange": [
+        1185,
+        1247
+      ],
+      "readrange": null,
+      "sourcePdfPage": 744,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.5.5",
+      "title": "Hybrid Hash Join",
+      "owners": [
+        "AD33"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 497,
+      "inventoryScopeWordCount": 497,
+      "ownBodyRange": [
+        1248,
+        1280
+      ],
+      "readrange": null,
+      "sourcePdfPage": 746,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.6",
+      "title": "Complex Joins",
+      "owners": [
+        "AD33"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 272,
+      "inventoryScopeWordCount": 272,
+      "ownBodyRange": [
+        1281,
+        1315
+      ],
+      "readrange": null,
+      "sourcePdfPage": 747,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.5.7",
+      "title": "Joins over Spatial Data",
+      "owners": [
+        "AD33"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 278,
+      "inventoryScopeWordCount": 278,
+      "ownBodyRange": [
+        1316,
+        1338
+      ],
+      "readrange": null,
+      "sourcePdfPage": 748,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.6",
+      "title": "Other Operations",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 31,
+      "inventoryScopeWordCount": 2186,
+      "ownBodyRange": [
+        1339,
+        1342
+      ],
+      "readrange": null,
+      "sourcePdfPage": 748,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.6.1",
+      "title": "Duplicate Elimination",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 238,
+      "inventoryScopeWordCount": 238,
+      "ownBodyRange": [
+        1343,
+        1362
+      ],
+      "readrange": null,
+      "sourcePdfPage": 748,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.6.2",
+      "title": "Projection",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 74,
+      "inventoryScopeWordCount": 74,
+      "ownBodyRange": [
+        1363,
+        1369
+      ],
+      "readrange": null,
+      "sourcePdfPage": 749,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.6.3",
+      "title": "Set Operations",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 867,
+      "inventoryScopeWordCount": 867,
+      "ownBodyRange": [
+        1370,
+        1441
+      ],
+      "readrange": null,
+      "sourcePdfPage": 749,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.6.4",
+      "title": "Outer Join",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 604,
+      "inventoryScopeWordCount": 604,
+      "ownBodyRange": [
+        1442,
+        1485
+      ],
+      "readrange": null,
+      "sourcePdfPage": 751,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.6.5",
+      "title": "Aggregation",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 372,
+      "inventoryScopeWordCount": 372,
+      "ownBodyRange": [
+        1486,
+        1520
+      ],
+      "readrange": null,
+      "sourcePdfPage": 752,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.7",
+      "title": "Evaluation of Expressions",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 157,
+      "inventoryScopeWordCount": 3670,
+      "ownBodyRange": [
+        1521,
+        1533
+      ],
+      "readrange": null,
+      "sourcePdfPage": 753,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.7.1",
+      "title": "Materialization",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 526,
+      "inventoryScopeWordCount": 526,
+      "ownBodyRange": [
+        1534,
+        1581
+      ],
+      "readrange": null,
+      "sourcePdfPage": 753,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.7.2",
+      "title": "Pipelining",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 294,
+      "inventoryScopeWordCount": 2710,
+      "ownBodyRange": [
+        1582,
+        1607
+      ],
+      "readrange": null,
+      "sourcePdfPage": 754,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.7.2.1",
+      "title": "Implementation of Pipelining",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 960,
+      "inventoryScopeWordCount": 960,
+      "ownBodyRange": [
+        1608,
+        1684
+      ],
+      "readrange": null,
+      "sourcePdfPage": 755,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.7.2.2",
+      "title": "Evaluation Algorithms for Pipelining",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 1456,
+      "inventoryScopeWordCount": 1456,
+      "ownBodyRange": [
+        1685,
+        1818
+      ],
+      "readrange": null,
+      "sourcePdfPage": 757,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.7.3",
+      "title": "Pipelines for Continuous-Stream Data",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 277,
+      "inventoryScopeWordCount": 277,
+      "ownBodyRange": [
+        1819,
+        1841
+      ],
+      "readrange": null,
+      "sourcePdfPage": 760,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.8",
+      "title": "Query Processing in Memory",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 100,
+      "inventoryScopeWordCount": 1302,
+      "ownBodyRange": [
+        1842,
+        1851
+      ],
+      "readrange": null,
+      "sourcePdfPage": 760,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.8.1",
+      "title": "Cache-Conscious Algorithms",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 845,
+      "inventoryScopeWordCount": 845,
+      "ownBodyRange": [
+        1852,
+        1911
+      ],
+      "readrange": null,
+      "sourcePdfPage": 761,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.8.2",
+      "title": "Query Compilation",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 193,
+      "inventoryScopeWordCount": 193,
+      "ownBodyRange": [
+        1912,
+        1929
+      ],
+      "readrange": null,
+      "sourcePdfPage": 762,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "15.8.3",
+      "title": "Column-Oriented Storage",
+      "owners": [
+        "AD34"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-15.txt",
+      "sourcehash": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072",
+      "inventoryBodyWordCount": 164,
+      "inventoryScopeWordCount": 164,
+      "ownBodyRange": [
+        1930,
+        1943
+      ],
+      "readrange": null,
+      "sourcePdfPage": 763,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.1",
+      "title": "Overview",
+      "owners": [
+        "AD35"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 1314,
+      "inventoryScopeWordCount": 1314,
+      "ownBodyRange": [
+        20,
+        164
+      ],
+      "readrange": null,
+      "sourcePdfPage": 772,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.2",
+      "title": "Transformation of Relational Expressions",
+      "owners": [
+        "AD35"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 210,
+      "inventoryScopeWordCount": 3717,
+      "ownBodyRange": [
+        165,
+        181
+      ],
+      "readrange": null,
+      "sourcePdfPage": 776,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.2.1",
+      "title": "Equivalence Rules",
+      "owners": [
+        "AD35"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 1661,
+      "inventoryScopeWordCount": 1661,
+      "ownBodyRange": [
+        182,
+        396
+      ],
+      "readrange": null,
+      "sourcePdfPage": 776,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.2.2",
+      "title": "Examples of Transformations",
+      "owners": [
+        "AD35"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 707,
+      "inventoryScopeWordCount": 707,
+      "ownBodyRange": [
+        397,
+        508
+      ],
+      "readrange": null,
+      "sourcePdfPage": 781,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.2.3",
+      "title": "Join Ordering",
+      "owners": [
+        "AD35"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 431,
+      "inventoryScopeWordCount": 431,
+      "ownBodyRange": [
+        509,
+        560
+      ],
+      "readrange": null,
+      "sourcePdfPage": 783,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.2.4",
+      "title": "Enumeration of Equivalent Expressions",
+      "owners": [
+        "AD35"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 708,
+      "inventoryScopeWordCount": 708,
+      "ownBodyRange": [
+        561,
+        621
+      ],
+      "readrange": null,
+      "sourcePdfPage": 784,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.3",
+      "title": "Estimating Statistics of Expression Results",
+      "owners": [
+        "AD35"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 301,
+      "inventoryScopeWordCount": 4175,
+      "ownBodyRange": [
+        622,
+        643
+      ],
+      "readrange": null,
+      "sourcePdfPage": 786,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.3.1",
+      "title": "Catalog Information",
+      "owners": [
+        "AD35"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 853,
+      "inventoryScopeWordCount": 853,
+      "ownBodyRange": [
+        644,
+        723
+      ],
+      "readrange": null,
+      "sourcePdfPage": 787,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.3.2",
+      "title": "Selection Size Estimation",
+      "owners": [
+        "AD35"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 1208,
+      "inventoryScopeWordCount": 1208,
+      "ownBodyRange": [
+        724,
+        844
+      ],
+      "readrange": null,
+      "sourcePdfPage": 789,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.3.3",
+      "title": "Join Size Estimation",
+      "owners": [
+        "AD35"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 941,
+      "inventoryScopeWordCount": 941,
+      "ownBodyRange": [
+        845,
+        914
+      ],
+      "readrange": null,
+      "sourcePdfPage": 791,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.3.4",
+      "title": "Size Estimation for Other Operations",
+      "owners": [
+        "AD35"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 335,
+      "inventoryScopeWordCount": 335,
+      "ownBodyRange": [
+        915,
+        941
+      ],
+      "readrange": null,
+      "sourcePdfPage": 793,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.3.5",
+      "title": "Estimation of Number of Distinct Values",
+      "owners": [
+        "AD35"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 537,
+      "inventoryScopeWordCount": 537,
+      "ownBodyRange": [
+        942,
+        980
+      ],
+      "readrange": null,
+      "sourcePdfPage": 794,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.4",
+      "title": "Choice of Evaluation Plans",
+      "owners": [
+        "AD36"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 227,
+      "inventoryScopeWordCount": 5625,
+      "ownBodyRange": [
+        981,
+        1002
+      ],
+      "readrange": null,
+      "sourcePdfPage": 795,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.4.1",
+      "title": "Cost-Based Join-Order Selection",
+      "owners": [
+        "AD36"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 2059,
+      "inventoryScopeWordCount": 2059,
+      "ownBodyRange": [
+        1003,
+        1168
+      ],
+      "readrange": null,
+      "sourcePdfPage": 796,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.4.2",
+      "title": "Cost-Based Optimization with Equivalence Rules",
+      "owners": [
+        "AD36"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 479,
+      "inventoryScopeWordCount": 479,
+      "ownBodyRange": [
+        1169,
+        1204
+      ],
+      "readrange": null,
+      "sourcePdfPage": 800,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.4.3",
+      "title": "Heuristics in Optimization",
+      "owners": [
+        "AD36"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 1375,
+      "inventoryScopeWordCount": 1375,
+      "ownBodyRange": [
+        1205,
+        1321
+      ],
+      "readrange": null,
+      "sourcePdfPage": 800,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.4.4",
+      "title": "Optimizing Nested Subqueries",
+      "owners": [
+        "AD78"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 1485,
+      "inventoryScopeWordCount": 1485,
+      "ownBodyRange": [
+        1322,
+        1477
+      ],
+      "readrange": null,
+      "sourcePdfPage": 803,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.5",
+      "title": "Materialized Views",
+      "owners": [
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 237,
+      "inventoryScopeWordCount": 2703,
+      "ownBodyRange": [
+        1478,
+        1505
+      ],
+      "readrange": null,
+      "sourcePdfPage": 807,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.5.1",
+      "title": "View Maintenance",
+      "owners": [
+        "AD18",
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 369,
+      "inventoryScopeWordCount": 369,
+      "ownBodyRange": [
+        1506,
+        1537
+      ],
+      "readrange": null,
+      "sourcePdfPage": 808,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.5.2",
+      "title": "Incremental View Maintenance",
+      "owners": [
+        "AD18",
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 131,
+      "inventoryScopeWordCount": 1597,
+      "ownBodyRange": [
+        1538,
+        1549
+      ],
+      "readrange": null,
+      "sourcePdfPage": 808,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.5.2.1",
+      "title": "Join Operation",
+      "owners": [
+        "AD18",
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 216,
+      "inventoryScopeWordCount": 216,
+      "ownBodyRange": [
+        1550,
+        1563
+      ],
+      "readrange": null,
+      "sourcePdfPage": 809,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.5.2.2",
+      "title": "Selection and Projection Operations",
+      "owners": [
+        "AD18",
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 359,
+      "inventoryScopeWordCount": 359,
+      "ownBodyRange": [
+        1564,
+        1589
+      ],
+      "readrange": null,
+      "sourcePdfPage": 809,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.5.2.3",
+      "title": "Aggregation Operations",
+      "owners": [
+        "AD18",
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 613,
+      "inventoryScopeWordCount": 613,
+      "ownBodyRange": [
+        1590,
+        1634
+      ],
+      "readrange": null,
+      "sourcePdfPage": 810,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.5.2.4",
+      "title": "Other Operations",
+      "owners": [
+        "AD18",
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 154,
+      "inventoryScopeWordCount": 154,
+      "ownBodyRange": [
+        1635,
+        1644
+      ],
+      "readrange": null,
+      "sourcePdfPage": 811,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.5.2.5",
+      "title": "Handling Expressions",
+      "owners": [
+        "AD18",
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 124,
+      "inventoryScopeWordCount": 124,
+      "ownBodyRange": [
+        1645,
+        1654
+      ],
+      "readrange": null,
+      "sourcePdfPage": 811,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.5.3",
+      "title": "Query Optimization and Materialized Views",
+      "owners": [
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 258,
+      "inventoryScopeWordCount": 258,
+      "ownBodyRange": [
+        1655,
+        1674
+      ],
+      "readrange": null,
+      "sourcePdfPage": 811,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.5.4",
+      "title": "Materialized View and Index Selection",
+      "owners": [
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 242,
+      "inventoryScopeWordCount": 242,
+      "ownBodyRange": [
+        1675,
+        1693
+      ],
+      "readrange": null,
+      "sourcePdfPage": 812,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.6",
+      "title": "Advanced Topics in Query Optimization",
+      "owners": [
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 39,
+      "inventoryScopeWordCount": 1692,
+      "ownBodyRange": [
+        1694,
+        1698
+      ],
+      "readrange": null,
+      "sourcePdfPage": 812,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.6.1",
+      "title": "Top- K Optimization",
+      "owners": [
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 237,
+      "inventoryScopeWordCount": 237,
+      "ownBodyRange": [
+        1699,
+        1716
+      ],
+      "readrange": null,
+      "sourcePdfPage": 813,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.6.2",
+      "title": "Join Minimization",
+      "owners": [
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 150,
+      "inventoryScopeWordCount": 150,
+      "ownBodyRange": [
+        1717,
+        1730
+      ],
+      "readrange": null,
+      "sourcePdfPage": 813,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.6.3",
+      "title": "Optimization of Updates",
+      "owners": [
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 389,
+      "inventoryScopeWordCount": 389,
+      "ownBodyRange": [
+        1731,
+        1760
+      ],
+      "readrange": null,
+      "sourcePdfPage": 813,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.6.4",
+      "title": "Multiquery Optimization and Shared Scans",
+      "owners": [
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 286,
+      "inventoryScopeWordCount": 286,
+      "ownBodyRange": [
+        1761,
+        1785
+      ],
+      "readrange": null,
+      "sourcePdfPage": 814,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.6.5",
+      "title": "Parametric Query Optimization",
+      "owners": [
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 276,
+      "inventoryScopeWordCount": 276,
+      "ownBodyRange": [
+        1786,
+        1807
+      ],
+      "readrange": null,
+      "sourcePdfPage": 815,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "16.6.6",
+      "title": "Adaptive Query Processing",
+      "owners": [
+        "AD37"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-16.txt",
+      "sourcehash": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+      "inventoryBodyWordCount": 315,
+      "inventoryScopeWordCount": 315,
+      "ownBodyRange": [
+        1808,
+        1829
+      ],
+      "readrange": null,
+      "sourcePdfPage": 815,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "17.3",
+      "title": "Storage Structure",
+      "owners": [
+        "AD23"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-17.txt",
+      "sourcehash": "ebf47801df6aa64559c0339a5804f6bd723a07dbafec51f10e2a29861c46b811",
+      "inventoryBodyWordCount": 485,
+      "inventoryScopeWordCount": 485,
+      "ownBodyRange": [
+        207,
+        250
+      ],
+      "readrange": null,
+      "sourcePdfPage": 833,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "20.5",
+      "title": "Distributed Systems",
+      "owners": [
+        "AD79"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-20.txt",
+      "sourcehash": "0b0e109743ee922106ea3f12bda108e2e61b4811727c7f14cf22872ad18a5085",
+      "inventoryBodyWordCount": 1116,
+      "inventoryScopeWordCount": 1116,
+      "ownBodyRange": [
+        1054,
+        1157
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1015,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "20.6",
+      "title": "Transaction Processing in Parallel and Distributed Systems",
+      "owners": [
+        "AD79"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-20.txt",
+      "sourcehash": "0b0e109743ee922106ea3f12bda108e2e61b4811727c7f14cf22872ad18a5085",
+      "inventoryBodyWordCount": 505,
+      "inventoryScopeWordCount": 505,
+      "ownBodyRange": [
+        1158,
+        1199
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1018,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "20.7",
+      "title": "Cloud-Based Services",
+      "owners": [
+        "AD79"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-20.txt",
+      "sourcehash": "0b0e109743ee922106ea3f12bda108e2e61b4811727c7f14cf22872ad18a5085",
+      "inventoryBodyWordCount": 253,
+      "inventoryScopeWordCount": 2210,
+      "ownBodyRange": [
+        1200,
+        1234
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1019,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "20.7.1",
+      "title": "Cloud Service Models",
+      "owners": [
+        "AD79"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-20.txt",
+      "sourcehash": "0b0e109743ee922106ea3f12bda108e2e61b4811727c7f14cf22872ad18a5085",
+      "inventoryBodyWordCount": 1660,
+      "inventoryScopeWordCount": 1660,
+      "ownBodyRange": [
+        1235,
+        1395
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1020,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "20.7.2",
+      "title": "Benefits and Limitations of Cloud Services",
+      "owners": [
+        "AD79"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-20.txt",
+      "sourcehash": "0b0e109743ee922106ea3f12bda108e2e61b4811727c7f14cf22872ad18a5085",
+      "inventoryBodyWordCount": 297,
+      "inventoryScopeWordCount": 297,
+      "ownBodyRange": [
+        1396,
+        1418
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1024,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "22.5",
+      "title": "Parallel Evaluation of Query Plans",
+      "owners": [
+        "AD80"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-22.txt",
+      "sourcehash": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698",
+      "inventoryBodyWordCount": 120,
+      "inventoryScopeWordCount": 4125,
+      "ownBodyRange": [
+        606,
+        614
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1081,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "22.5.1",
+      "title": "Interoperation Parallelism",
+      "owners": [
+        "AD80"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-22.txt",
+      "sourcehash": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698",
+      "inventoryBodyWordCount": 79,
+      "inventoryScopeWordCount": 905,
+      "ownBodyRange": [
+        615,
+        623
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1081,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "22.5.1.1",
+      "title": "Pipelined Parallelism",
+      "owners": [
+        "AD80"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-22.txt",
+      "sourcehash": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698",
+      "inventoryBodyWordCount": 656,
+      "inventoryScopeWordCount": 656,
+      "ownBodyRange": [
+        624,
+        685
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1082,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "22.5.1.2",
+      "title": "Independent Parallelism",
+      "owners": [
+        "AD80"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-22.txt",
+      "sourcehash": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698",
+      "inventoryBodyWordCount": 170,
+      "inventoryScopeWordCount": 170,
+      "ownBodyRange": [
+        686,
+        702
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1083,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "22.5.2",
+      "title": "The Exchange Operator Model",
+      "owners": [
+        "AD80"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-22.txt",
+      "sourcehash": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698",
+      "inventoryBodyWordCount": 1023,
+      "inventoryScopeWordCount": 1023,
+      "ownBodyRange": [
+        703,
+        809
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1084,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "22.5.3",
+      "title": "Putting It All Together",
+      "owners": [
+        "AD80"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-22.txt",
+      "sourcehash": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698",
+      "inventoryBodyWordCount": 956,
+      "inventoryScopeWordCount": 956,
+      "ownBodyRange": [
+        810,
+        919
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1086,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "22.5.4",
+      "title": "Fault Tolerance in Query Plans",
+      "owners": [
+        "AD80"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-22.txt",
+      "sourcehash": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698",
+      "inventoryBodyWordCount": 1121,
+      "inventoryScopeWordCount": 1121,
+      "ownBodyRange": [
+        920,
+        999
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1088,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "22.6",
+      "title": "Query Processing on Shared-Memory Architectures",
+      "owners": [
+        "AD80"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-22.txt",
+      "sourcehash": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698",
+      "inventoryBodyWordCount": 1344,
+      "inventoryScopeWordCount": 1344,
+      "ownBodyRange": [
+        1000,
+        1114
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1090,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "22.7",
+      "title": "Query Optimization for Parallel Execution",
+      "owners": [
+        "AD80"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-22.txt",
+      "sourcehash": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698",
+      "inventoryBodyWordCount": 111,
+      "inventoryScopeWordCount": 3231,
+      "ownBodyRange": [
+        1115,
+        1124
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1093,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "22.7.1",
+      "title": "Parallel Query Plan Space",
+      "owners": [
+        "AD80"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-22.txt",
+      "sourcehash": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698",
+      "inventoryBodyWordCount": 472,
+      "inventoryScopeWordCount": 472,
+      "ownBodyRange": [
+        1125,
+        1158
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1093,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "22.7.2",
+      "title": "Cost of Parallel Query Evaluation",
+      "owners": [
+        "AD80"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-22.txt",
+      "sourcehash": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698",
+      "inventoryBodyWordCount": 603,
+      "inventoryScopeWordCount": 603,
+      "ownBodyRange": [
+        1159,
+        1207
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1094,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "22.7.3",
+      "title": "Choosing a Parallel Query Plan",
+      "owners": [
+        "AD80"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-22.txt",
+      "sourcehash": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698",
+      "inventoryBodyWordCount": 568,
+      "inventoryScopeWordCount": 568,
+      "ownBodyRange": [
+        1208,
+        1256
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1095,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "22.7.4",
+      "title": "Colocation of Data",
+      "owners": [
+        "AD80"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-22.txt",
+      "sourcehash": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698",
+      "inventoryBodyWordCount": 559,
+      "inventoryScopeWordCount": 559,
+      "ownBodyRange": [
+        1257,
+        1302
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1097,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "22.7.5",
+      "title": "Parallel Maintenance of Materialized Views",
+      "owners": [
+        "AD80"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-22.txt",
+      "sourcehash": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698",
+      "inventoryBodyWordCount": 918,
+      "inventoryScopeWordCount": 918,
+      "ownBodyRange": [
+        1303,
+        1374
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1098,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.1",
+      "title": "Bloom Filter",
+      "owners": [
+        "AD75"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 394,
+      "inventoryScopeWordCount": 394,
+      "ownBodyRange": [
+        13,
+        39
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1204,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.2",
+      "title": "Log-Structured Merge Tree and Variants",
+      "owners": [
+        "AD31"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 277,
+      "inventoryScopeWordCount": 3135,
+      "ownBodyRange": [
+        40,
+        67
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1205,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.2.1",
+      "title": "Insertion into LSM Trees",
+      "owners": [
+        "AD31"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 867,
+      "inventoryScopeWordCount": 867,
+      "ownBodyRange": [
+        68,
+        129
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1206,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.2.2",
+      "title": "Rolling Merges",
+      "owners": [
+        "AD31"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 201,
+      "inventoryScopeWordCount": 201,
+      "ownBodyRange": [
+        130,
+        143
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1207,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.2.3",
+      "title": "Handling Deletes and Updates",
+      "owners": [
+        "AD31"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 290,
+      "inventoryScopeWordCount": 290,
+      "ownBodyRange": [
+        144,
+        180
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1207,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.2.4",
+      "title": "The Stepped-Merge Index",
+      "owners": [
+        "AD31"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 107,
+      "inventoryScopeWordCount": 1328,
+      "ownBodyRange": [
+        181,
+        190
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1208,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.2.4.1",
+      "title": "Insertion Algorithm",
+      "owners": [
+        "AD31"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 784,
+      "inventoryScopeWordCount": 784,
+      "ownBodyRange": [
+        191,
+        247
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1209,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.2.4.2",
+      "title": "Lookup Operations Using Bloom Filters",
+      "owners": [
+        "AD31"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 437,
+      "inventoryScopeWordCount": 437,
+      "ownBodyRange": [
+        248,
+        279
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1210,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.2.5",
+      "title": "LSM Trees For Flash Storage",
+      "owners": [
+        "AD31"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 172,
+      "inventoryScopeWordCount": 172,
+      "ownBodyRange": [
+        280,
+        290
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1211,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.3",
+      "title": "Bitmap Indices",
+      "owners": [
+        "AD30"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 223,
+      "inventoryScopeWordCount": 1978,
+      "ownBodyRange": [
+        291,
+        308
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1211,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.3.1",
+      "title": "Bitmap Index Structure",
+      "owners": [
+        "AD30"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 897,
+      "inventoryScopeWordCount": 897,
+      "ownBodyRange": [
+        309,
+        420
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1211,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.3.2",
+      "title": "Efficient Implementation of Bitmap Operations",
+      "owners": [
+        "AD30"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 569,
+      "inventoryScopeWordCount": 569,
+      "ownBodyRange": [
+        421,
+        465
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1213,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.3.3",
+      "title": "Bitmaps and B +-Trees",
+      "owners": [
+        "AD30"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 289,
+      "inventoryScopeWordCount": 289,
+      "ownBodyRange": [
+        466,
+        488
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1214,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.5",
+      "title": "Hash Indices",
+      "owners": [
+        "AD29"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 22,
+      "inventoryScopeWordCount": 5174,
+      "ownBodyRange": [
+        641,
+        643
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1219,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.5.1",
+      "title": "Static Hashing",
+      "owners": [
+        "AD29"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 742,
+      "inventoryScopeWordCount": 2228,
+      "ownBodyRange": [
+        644,
+        745
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1219,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.5.1.1",
+      "title": "Hash Functions",
+      "owners": [
+        "AD29"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 902,
+      "inventoryScopeWordCount": 902,
+      "ownBodyRange": [
+        746,
+        851
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1221,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.5.1.2",
+      "title": "Handling of Bucket Overflows",
+      "owners": [
+        "AD29"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 584,
+      "inventoryScopeWordCount": 584,
+      "ownBodyRange": [
+        852,
+        898
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1223,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.5.2",
+      "title": "Dynamic Hashing",
+      "owners": [
+        "AD29"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 246,
+      "inventoryScopeWordCount": 2641,
+      "ownBodyRange": [
+        899,
+        917
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1224,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.5.2.1",
+      "title": "Data Structure",
+      "owners": [
+        "AD29"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 363,
+      "inventoryScopeWordCount": 363,
+      "ownBodyRange": [
+        918,
+        960
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1224,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.5.2.2",
+      "title": "Queries and Updates",
+      "owners": [
+        "AD29"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 1810,
+      "inventoryScopeWordCount": 1810,
+      "ownBodyRange": [
+        961,
+        1239
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1226,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.5.2.3",
+      "title": "Static Hashing versus Dynamic Hashing",
+      "owners": [
+        "AD29"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 222,
+      "inventoryScopeWordCount": 222,
+      "ownBodyRange": [
+        1240,
+        1259
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1231,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    },
+    {
+      "section": "24.5.3",
+      "title": "Comparison of Ordered Indexing and Hashing",
+      "owners": [
+        "AD29"
+      ],
+      "sourcepath": "tmp\\database-source\\chapter-24.txt",
+      "sourcehash": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+      "inventoryBodyWordCount": 283,
+      "inventoryScopeWordCount": 283,
+      "ownBodyRange": [
+        1260,
+        1282
+      ],
+      "readrange": null,
+      "sourcePdfPage": 1232,
+      "status": "unread",
+      "lessonwitness": [],
+      "baselineCredit": null,
+      "gaps": [],
+      "figuresReviewed": [],
+      "finalhash": {}
+    }
+  ],
+  "counts": {
+    "unread": 191,
+    "covered": 0,
+    "covered-after-fix": 0,
+    "read-partial": 0,
+    "read-missing": 0
+  },
+  "limitations": [
+    "Incremental ledger; not a completed coverage gate.",
+    "No baseline credit until original baseline Markdown is actually read."
+  ]
+}

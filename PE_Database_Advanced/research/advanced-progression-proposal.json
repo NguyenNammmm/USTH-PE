@@ -1,0 +1,1599 @@
+{
+  "date": "2026-11-05",
+  "scope": "Editorial advanced continuation proposal after85 existing lessons. Root may merge/split IDs before authoring.",
+  "lessonCount": 61,
+  "keyCount": 18,
+  "lessons": [
+    {
+      "id": "AD01",
+      "title": "Hợp đồng kết quả và tính đúng ngữ nghĩa SQL",
+      "module": "Lập luận truy vấn",
+      "before": [
+        "C02",
+        "S05",
+        "S07",
+        "S09",
+        "S11"
+      ],
+      "bookPrefixes": [
+        "2",
+        "3",
+        "4"
+      ],
+      "requiredDeepening": [
+        "Tạo phản ví dụ cho NULL/bag/ties và outer-join rewrite",
+        "Chứng minh điều kiện đủ của một rewrite; tách quy tắc logic và plan vật lý"
+      ],
+      "activityFormats": [
+        "counterexample",
+        "debug",
+        "sql"
+      ],
+      "webEnvironment": "mysql",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD02",
+      "title": "Tuple/domain calculus: diễn đạt, safety và tương đương",
+      "module": "Lập luận truy vấn",
+      "before": [
+        "C03",
+        "C04",
+        "M02"
+      ],
+      "bookPrefixes": [
+        "27.1",
+        "27.2",
+        "27.3"
+      ],
+      "requiredDeepening": [
+        "Dịch công thức có lượng từ và domain independence",
+        "Chỉ ra truy vấn không safe và sửa miền giá trị"
+      ],
+      "activityFormats": [
+        "proof",
+        "translation",
+        "counterexample"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD03",
+      "title": "Armstrong, closure và chứng minh thuật toán",
+      "module": "Thiết kế và chứng minh",
+      "before": [
+        "D04",
+        "M04"
+      ],
+      "bookPrefixes": [
+        "7.4.1",
+        "7.4.2"
+      ],
+      "requiredDeepening": [
+        "Chứng minh soundness từng quy tắc; phân biệt completeness của hệ quy tắc",
+        "Pseudocode closure, bất biến, dừng và chứng minh sound/complete cho closure"
+      ],
+      "activityFormats": [
+        "trace",
+        "proof",
+        "debug"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD04",
+      "title": "Canonical cover, khóa ứng viên và dependency preservation",
+      "module": "Thiết kế và chứng minh",
+      "before": [
+        "AD03"
+      ],
+      "bookPrefixes": [
+        "7.4.3",
+        "7.4.4"
+      ],
+      "requiredDeepening": [
+        "Tìm thuộc tính thừa ở hai vế đúng phép thử; giữ equivalence",
+        "Tìm mọi minimal key và thuật toán kiểm bảo toàn phụ thuộc"
+      ],
+      "activityFormats": [
+        "proof",
+        "algorithm",
+        "counterexample"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD05",
+      "title": "BCNF decomposition: lossless và điều kiện dừng",
+      "module": "Thiết kế và chứng minh",
+      "before": [
+        "AD04",
+        "D06"
+      ],
+      "bookPrefixes": [
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.5.1"
+      ],
+      "requiredDeepening": [
+        "Thuật toán BCNF có FD chiếu; termination và lossless invariant",
+        "Phân biệt lossless với preservation bằng instance/FD counterexample"
+      ],
+      "activityFormats": [
+        "trace",
+        "proof",
+        "design"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD06",
+      "title": "3NF synthesis và chứng minh tính đúng",
+      "module": "Thiết kế và chứng minh",
+      "before": [
+        "AD04",
+        "AD05"
+      ],
+      "bookPrefixes": [
+        "7.5.2",
+        "7.5.3"
+      ],
+      "requiredDeepening": [
+        "Synthesis từ canonical cover và bước thêm candidate-key relation",
+        "Chứng minh 3NF, dependency preservation và lossless theo giả định nguồn"
+      ],
+      "activityFormats": [
+        "proof",
+        "algorithm",
+        "design"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD07",
+      "title": "MVD, suy diễn và thuật toán 4NF",
+      "module": "Thiết kế và chứng minh",
+      "before": [
+        "AD05"
+      ],
+      "bookPrefixes": [
+        "7.6",
+        "28.1"
+      ],
+      "requiredDeepening": [
+        "Định nghĩa bằng tuple-swapping và suy diễn soundness",
+        "4NF decomposition, điều kiện lossless và preservation giới hạn"
+      ],
+      "activityFormats": [
+        "counterexample",
+        "proof",
+        "trace"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD08",
+      "title": "Join dependency, PJNF và DKNF",
+      "module": "Thiết kế và chứng minh",
+      "before": [
+        "AD07"
+      ],
+      "bookPrefixes": [
+        "7.7",
+        "28.2",
+        "28.3"
+      ],
+      "requiredDeepening": [
+        "JD nhiều bảng không rút về mọi MVD nhị phân",
+        "Lập witness cho spurious tuple; giới hạn thiết kế theo domain/key"
+      ],
+      "activityFormats": [
+        "proof",
+        "design",
+        "counterexample"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD09",
+      "title": "ER, temporal data và kiểm chứng mapping",
+      "module": "Thiết kế và chứng minh",
+      "before": [
+        "D03",
+        "D08",
+        "D09"
+      ],
+      "bookPrefixes": [
+        "6",
+        "7.8",
+        "7.9",
+        "7.10"
+      ],
+      "requiredDeepening": [
+        "Ternary/specialization/aggregation không bảo toàn nghĩa khi ánh xạ tùy ý",
+        "Valid-time/transaction-time, intervals, constraint và quy trình xác minh yêu cầu"
+      ],
+      "activityFormats": [
+        "design",
+        "counterexample",
+        "sql"
+      ],
+      "webEnvironment": "mysql",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD10",
+      "title": "SQL nhiều tầng: recursive CTE, window và aggregate",
+      "module": "Lập luận truy vấn",
+      "before": [
+        "S16",
+        "S17",
+        "AD01"
+      ],
+      "bookPrefixes": [
+        "3.7",
+        "3.8",
+        "5.4",
+        "5.5"
+      ],
+      "requiredDeepening": [
+        "Fixpoint/termination của recursion và chu trình",
+        "Frame/peer/ties và thứ tự logic; regression trên bag/null"
+      ],
+      "activityFormats": [
+        "trace",
+        "debug",
+        "sql"
+      ],
+      "webEnvironment": "mysql",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD11",
+      "title": "SQL từ ứng dụng: transaction boundary và retry",
+      "module": "Ứng dụng và dữ liệu mở rộng",
+      "before": [
+        "S18",
+        "A04",
+        "AD01"
+      ],
+      "bookPrefixes": [
+        "5.1",
+        "9.1",
+        "9.2",
+        "9.3",
+        "9.4",
+        "9.5",
+        "9.6",
+        "9.7"
+      ],
+      "requiredDeepening": [
+        "Prepared parameters không thay identifier; JDBC/embedded SQL so sánh",
+        "Connection pooling, error/retry/idempotence và data-access-layer contracts"
+      ],
+      "activityFormats": [
+        "debug",
+        "api-lab",
+        "design"
+      ],
+      "webEnvironment": "mysql",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD12",
+      "title": "Routine, trigger, authorization và security",
+      "module": "Ứng dụng và dữ liệu mở rộng",
+      "before": [
+        "S13",
+        "S14",
+        "S15",
+        "A05"
+      ],
+      "bookPrefixes": [
+        "4.4",
+        "4.5",
+        "4.7",
+        "5.2",
+        "5.3",
+        "9.8",
+        "9.9"
+      ],
+      "requiredDeepening": [
+        "Trigger/routine transaction semantics và privilege boundaries",
+        "Chứng minh policy qua ca allow/deny, injection, authentication/encryption giả định"
+      ],
+      "activityFormats": [
+        "sql",
+        "debug",
+        "threat-model"
+      ],
+      "webEnvironment": "mysql",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD13",
+      "title": "JSON, RDF và truy vấn bán cấu trúc",
+      "module": "Ứng dụng và dữ liệu mở rộng",
+      "before": [
+        "A01"
+      ],
+      "bookPrefixes": [
+        "8.1"
+      ],
+      "requiredDeepening": [
+        "Model/typing, path query và join của dữ liệu lồng",
+        "RDF graph, SPARQL và khác biệt bag/null với missing"
+      ],
+      "activityFormats": [
+        "translation",
+        "sql",
+        "graph-model"
+      ],
+      "webEnvironment": "mysql/optional-rdf",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD14",
+      "title": "Object-relational và object persistence",
+      "module": "Ứng dụng và dữ liệu mở rộng",
+      "before": [
+        "A02",
+        "O04"
+      ],
+      "bookPrefixes": [
+        "8.2",
+        "8.3",
+        "29"
+      ],
+      "requiredDeepening": [
+        "Identity/reference, nested collections, inheritance và mapping",
+        "Persistent object/transaction semantics; không gán syntax hệ khác cho MySQL"
+      ],
+      "activityFormats": [
+        "design",
+        "translation",
+        "model"
+      ],
+      "webEnvironment": "model/optional-postgres",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD15",
+      "title": "Spatial data: phép toán và index đúng hình học",
+      "module": "Ứng dụng và dữ liệu mở rộng",
+      "before": [
+        "A03",
+        "I05"
+      ],
+      "bookPrefixes": [
+        "8.4",
+        "14.10",
+        "24.4"
+      ],
+      "requiredDeepening": [
+        "Coordinate/reference system và exact predicate sau bounding filter",
+        "R-tree/quad/kd-style search theo nguồn; false positive và boundary"
+      ],
+      "activityFormats": [
+        "sql",
+        "trace",
+        "counterexample"
+      ],
+      "webEnvironment": "mysql",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD16",
+      "title": "XML, XPath, XQuery và schema",
+      "module": "Ứng dụng và dữ liệu mở rộng",
+      "before": [
+        "O05"
+      ],
+      "bookPrefixes": [
+        "30"
+      ],
+      "requiredDeepening": [
+        "Tree/path/FLWOR và quantifier semantics",
+        "Schema, joins/indices/relational representation; native environment rõ"
+      ],
+      "activityFormats": [
+        "translation",
+        "tree-trace",
+        "query-lab"
+      ],
+      "webEnvironment": "model/optional-xml-engine",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD17",
+      "title": "Information retrieval: inverted index và ranking",
+      "module": "Ứng dụng và dữ liệu mở rộng",
+      "before": [
+        "O06",
+        "M06"
+      ],
+      "bookPrefixes": [
+        "31"
+      ],
+      "requiredDeepening": [
+        "TF/IDF/vector relevance, link ranking và interpretation",
+        "Inverted index/build/query/merge postings và top-k; đánh giá ranking"
+      ],
+      "activityFormats": [
+        "algorithm",
+        "trace",
+        "experiment"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD18",
+      "title": "Warehouse, OLAP và bảo trì summary",
+      "module": "Phân tích và xử lý dữ liệu",
+      "before": [
+        "B03",
+        "AD01"
+      ],
+      "bookPrefixes": [
+        "11.1",
+        "11.2",
+        "11.3",
+        "16.5"
+      ],
+      "requiredDeepening": [
+        "Grain/dimensions/cubes và summarizability",
+        "Delta rules cho join/bag aggregates, freshness và transaction"
+      ],
+      "activityFormats": [
+        "sql",
+        "counterexample",
+        "design"
+      ],
+      "webEnvironment": "mysql",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD19",
+      "title": "Data mining: thuật toán và kiểm định mô hình",
+      "module": "Phân tích và xử lý dữ liệu",
+      "before": [
+        "B04",
+        "M06"
+      ],
+      "bookPrefixes": [
+        "11.4"
+      ],
+      "requiredDeepening": [
+        "Classification, regression, association và clustering theo nguồn",
+        "Tính ví dụ nhỏ, data leakage/metrics, lựa chọn feature và holdout"
+      ],
+      "activityFormats": [
+        "algorithm",
+        "data-decision",
+        "experiment"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD20",
+      "title": "Big-data storage, MapReduce và dataflow",
+      "module": "Phân tích và xử lý dữ liệu",
+      "before": [
+        "B01",
+        "P01"
+      ],
+      "bookPrefixes": [
+        "10.1",
+        "10.2",
+        "10.3",
+        "10.4"
+      ],
+      "requiredDeepening": [
+        "Map/shuffle/reduce và combiner có điều kiện",
+        "Fault/retry và partition invariants, physical plan cho DAG"
+      ],
+      "activityFormats": [
+        "trace",
+        "algorithm",
+        "counterexample"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD21",
+      "title": "Streaming: window, watermark và state",
+      "module": "Phân tích và xử lý dữ liệu",
+      "before": [
+        "B02",
+        "AD20"
+      ],
+      "bookPrefixes": [
+        "10.5",
+        "22.8"
+      ],
+      "requiredDeepening": [
+        "Event/processing time, out-of-order/late data và window policy",
+        "State/checkpoint/replay và giới hạn exactly-once end-to-end"
+      ],
+      "activityFormats": [
+        "timeline",
+        "experiment",
+        "design"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD22",
+      "title": "Graph databases và xử lý đồ thị",
+      "module": "Phân tích và xử lý dữ liệu",
+      "before": [
+        "B02",
+        "AD20",
+        "M05"
+      ],
+      "bookPrefixes": [
+        "10.6",
+        "22.8"
+      ],
+      "requiredDeepening": [
+        "Traversal/fixpoint/frontier algorithm và partition message",
+        "Graph model so với relational/RDF, tính ví dụ và điều kiện dừng"
+      ],
+      "activityFormats": [
+        "graph-trace",
+        "algorithm",
+        "design"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD23",
+      "title": "Storage, RAID và mô hình lỗi",
+      "module": "Storage và indexes",
+      "before": [
+        "I01",
+        "M06"
+      ],
+      "bookPrefixes": [
+        "12",
+        "17.3"
+      ],
+      "requiredDeepening": [
+        "Chi phí block/latency/throughput và failure assumptions",
+        "RAID/reliability, flash characteristics và persistence model"
+      ],
+      "activityFormats": [
+        "cost",
+        "failure-model",
+        "experiment"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD24",
+      "title": "Records, heap files và catalog",
+      "module": "Storage và indexes",
+      "before": [
+        "I02",
+        "AD23"
+      ],
+      "bookPrefixes": [
+        "13.1",
+        "13.2",
+        "13.3",
+        "13.4"
+      ],
+      "requiredDeepening": [
+        "Fixed/variable records, slotted page, free space và stable IDs",
+        "Catalog statistics, allocation invariants và crash-sensitive metadata"
+      ],
+      "activityFormats": [
+        "page-trace",
+        "algorithm",
+        "design"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD25",
+      "title": "Buffer pool: pin, latch và replacement",
+      "module": "Storage và indexes",
+      "before": [
+        "I02",
+        "AD24"
+      ],
+      "bookPrefixes": [
+        "13.5"
+      ],
+      "requiredDeepening": [
+        "CLOCK/LRU state transitions, dirty eviction và pin invariant",
+        "Phân biệt page latch/transaction lock; test lỗi hết frame"
+      ],
+      "activityFormats": [
+        "trace",
+        "debug",
+        "algorithm"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD26",
+      "title": "Column store, compression và main-memory layout",
+      "module": "Storage và indexes",
+      "before": [
+        "I03",
+        "AD24"
+      ],
+      "bookPrefixes": [
+        "13.6",
+        "13.7",
+        "15.8"
+      ],
+      "requiredDeepening": [
+        "Dictionary/run-length/bitmap representation và scan cost",
+        "Cache locality/vectorization, row reconstruction và update tradeoffs"
+      ],
+      "activityFormats": [
+        "cost",
+        "algorithm",
+        "experiment"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD27",
+      "title": "B+ tree: search, insert và split invariant",
+      "module": "Storage và indexes",
+      "before": [
+        "I04",
+        "AD24"
+      ],
+      "bookPrefixes": [
+        "14.1",
+        "14.2",
+        "14.3",
+        "14.4.1",
+        "14.4.2"
+      ],
+      "requiredDeepening": [
+        "Ordered/sparse/multilevel indices và occupancy definition",
+        "Search/insert/split propagation, root special case, height/cost"
+      ],
+      "activityFormats": [
+        "tree-trace",
+        "algorithm",
+        "proof"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD28",
+      "title": "B+ tree: delete, merge và concurrent access",
+      "module": "Storage và indexes",
+      "before": [
+        "AD27"
+      ],
+      "bookPrefixes": [
+        "14.3",
+        "14.4",
+        "18.11"
+      ],
+      "requiredDeepening": [
+        "Borrow/merge/root contraction và separator updates",
+        "Structural latch coupling/concurrency, strings/bulk-load/index build cases"
+      ],
+      "activityFormats": [
+        "tree-trace",
+        "debug",
+        "proof"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD29",
+      "title": "Static, extendible và linear hashing",
+      "module": "Storage và indexes",
+      "before": [
+        "I05",
+        "AD24"
+      ],
+      "bookPrefixes": [
+        "14.5",
+        "14.7",
+        "24.3"
+      ],
+      "requiredDeepening": [
+        "Bucket/directory split and merge, depth invariant",
+        "Linear split pointer and overflow chains; equality vs range cost"
+      ],
+      "activityFormats": [
+        "trace",
+        "algorithm",
+        "cost"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD30",
+      "title": "Composite, bitmap và special-purpose indexes",
+      "module": "Storage và indexes",
+      "before": [
+        "I05",
+        "AD27"
+      ],
+      "bookPrefixes": [
+        "14.6",
+        "14.8",
+        "14.9",
+        "14.10",
+        "24.4"
+      ],
+      "requiredDeepening": [
+        "Multikey ordering/prefixes/covering and limitations",
+        "Bitmap operations, write cost and spatial/temporal candidate filtering"
+      ],
+      "activityFormats": [
+        "sql",
+        "trace",
+        "cost"
+      ],
+      "webEnvironment": "mysql/model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD31",
+      "title": "Bloom filter và LSM-tree",
+      "module": "Storage và indexes",
+      "before": [
+        "I06",
+        "AD29"
+      ],
+      "bookPrefixes": [
+        "24.1",
+        "24.2",
+        "24.5"
+      ],
+      "requiredDeepening": [
+        "Bloom build/test probability with stated hash assumptions",
+        "LSM memtable/flush/compaction/tombstone; amplification tradeoffs"
+      ],
+      "activityFormats": [
+        "trace",
+        "algorithm",
+        "cost"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD32",
+      "title": "External sort và mô hình I/O",
+      "module": "Query execution và optimization",
+      "before": [
+        "Q01",
+        "M06"
+      ],
+      "bookPrefixes": [
+        "15.1",
+        "15.2",
+        "15.3",
+        "15.4"
+      ],
+      "requiredDeepening": [
+        "Selection costs and external merge passes with buffer budget",
+        "Boundary cases and difference between model counts and measured I/O"
+      ],
+      "activityFormats": [
+        "cost",
+        "trace",
+        "algorithm"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD33",
+      "title": "Join algorithms và quản lý bộ nhớ",
+      "module": "Query execution và optimization",
+      "before": [
+        "Q02",
+        "AD32"
+      ],
+      "bookPrefixes": [
+        "15.5"
+      ],
+      "requiredDeepening": [
+        "Tuple/block/index nested loop, merge join and hash join",
+        "Grace/recursive hybrid hash, skew/spill, equality assumptions"
+      ],
+      "activityFormats": [
+        "cost",
+        "algorithm",
+        "trace"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD34",
+      "title": "Iterator, pipelining và materialization",
+      "module": "Query execution và optimization",
+      "before": [
+        "Q02",
+        "AD33"
+      ],
+      "bookPrefixes": [
+        "15.6",
+        "15.7",
+        "15.8"
+      ],
+      "requiredDeepening": [
+        "Open/next/close, blocking operators and pipeline boundary",
+        "Dedup/aggregate/set operations under memory budget"
+      ],
+      "activityFormats": [
+        "trace",
+        "algorithm",
+        "debug"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD35",
+      "title": "Cardinality estimation và histogram",
+      "module": "Query execution và optimization",
+      "before": [
+        "Q03",
+        "M06"
+      ],
+      "bookPrefixes": [
+        "16.1",
+        "16.2",
+        "16.3"
+      ],
+      "requiredDeepening": [
+        "Equivalence preconditions and selectivity/cardinality estimates",
+        "Uniformity/independence assumptions, distinct counts, histograms and skew"
+      ],
+      "activityFormats": [
+        "cost",
+        "counterexample",
+        "experiment"
+      ],
+      "webEnvironment": "mysql/model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD36",
+      "title": "Dynamic-programming optimizer và interesting orders",
+      "module": "Query execution và optimization",
+      "before": [
+        "AD33",
+        "AD34",
+        "AD35"
+      ],
+      "bookPrefixes": [
+        "16.4"
+      ],
+      "requiredDeepening": [
+        "Enumerate subset plans with physical property state",
+        "Optimal-substructure proof under model and counterexample to greedy"
+      ],
+      "activityFormats": [
+        "algorithm",
+        "proof",
+        "cost"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD37",
+      "title": "Decorrelation, materialized view và adaptive plan",
+      "module": "Query execution và optimization",
+      "before": [
+        "Q04",
+        "AD36",
+        "AD18"
+      ],
+      "bookPrefixes": [
+        "16.5",
+        "16.6"
+      ],
+      "requiredDeepening": [
+        "Correct semijoin/antijoin rewrites with null/duplicate constraints",
+        "View selection/delta maintenance, top-k/Halloween/multiquery/adaptive boundaries"
+      ],
+      "activityFormats": [
+        "sql",
+        "counterexample",
+        "experiment"
+      ],
+      "webEnvironment": "mysql/model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD38",
+      "title": "Serializability: graph, theorem và recoverability",
+      "module": "Transactions và recovery",
+      "before": [
+        "T01",
+        "T02",
+        "M05"
+      ],
+      "bookPrefixes": [
+        "17"
+      ],
+      "requiredDeepening": [
+        "Conflict graph construction and acyclic iff conflict-serializable proof",
+        "View vs conflict equivalence; recoverable/cascadeless/strict schedule examples"
+      ],
+      "activityFormats": [
+        "proof",
+        "graph-trace",
+        "counterexample"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD39",
+      "title": "2PL, tree protocol và multiple granularity",
+      "module": "Transactions và recovery",
+      "before": [
+        "T03",
+        "AD38"
+      ],
+      "bookPrefixes": [
+        "18.1",
+        "18.3"
+      ],
+      "requiredDeepening": [
+        "Lock compatibility/conversion and 2PL serializability proof",
+        "Tree protocol and intention-lock constraints; phantom/predicate difference"
+      ],
+      "activityFormats": [
+        "timeline",
+        "proof",
+        "debug"
+      ],
+      "webEnvironment": "mysql/model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD40",
+      "title": "Deadlock: detect, prevent và retry",
+      "module": "Transactions và recovery",
+      "before": [
+        "T04",
+        "AD39"
+      ],
+      "bookPrefixes": [
+        "18.2",
+        "18.4"
+      ],
+      "requiredDeepening": [
+        "Wait-for cycle and detection graph semantics",
+        "Wait-die/wound-wait, timeout limits and lock-order strategy"
+      ],
+      "activityFormats": [
+        "timeline",
+        "graph-trace",
+        "sql"
+      ],
+      "webEnvironment": "mysql",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD41",
+      "title": "Timestamp ordering và optimistic validation",
+      "module": "Transactions và recovery",
+      "before": [
+        "T04",
+        "AD38"
+      ],
+      "bookPrefixes": [
+        "18.5",
+        "18.6",
+        "18.10"
+      ],
+      "requiredDeepening": [
+        "Read/write timestamp rules, validation intervals and overlap cases",
+        "Thomas write rule/recoverability caveats; operation-level special cases"
+      ],
+      "activityFormats": [
+        "timeline",
+        "proof",
+        "trace"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD42",
+      "title": "MVCC, snapshot isolation và write skew",
+      "module": "Transactions và recovery",
+      "before": [
+        "T05",
+        "AD38"
+      ],
+      "bookPrefixes": [
+        "18.7",
+        "18.8",
+        "18.9"
+      ],
+      "requiredDeepening": [
+        "Version visibility rules and commit conflict conditions",
+        "Construct write skew; distinguish SSI/serializable and real MySQL/Postgres behavior"
+      ],
+      "activityFormats": [
+        "timeline",
+        "sql",
+        "counterexample"
+      ],
+      "webEnvironment": "mysql/optional-postgres",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD43",
+      "title": "WAL, checkpoint và recovery algorithm",
+      "module": "Transactions và recovery",
+      "before": [
+        "T06",
+        "AD25"
+      ],
+      "bookPrefixes": [
+        "19.1",
+        "19.2",
+        "19.3",
+        "19.4",
+        "19.5",
+        "19.6"
+      ],
+      "requiredDeepening": [
+        "Buffer flush/log durability conditions and basic recovery pseudocode",
+        "Rollback/restart correctness and repeated-crash invariant"
+      ],
+      "activityFormats": [
+        "log-trace",
+        "algorithm",
+        "proof"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD44",
+      "title": "ARIES, logical undo và compensation records",
+      "module": "Transactions và recovery",
+      "before": [
+        "T07",
+        "AD43"
+      ],
+      "bookPrefixes": [
+        "19.8",
+        "19.9"
+      ],
+      "requiredDeepening": [
+        "Analysis/DPT/TT/recLSN then redo predicates and loser max-LSN undo",
+        "CLR/undoNextLSN across repeated crash; logical-operation boundaries"
+      ],
+      "activityFormats": [
+        "log-trace",
+        "algorithm",
+        "debug"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD45",
+      "title": "Backup, replication durability và RAM recovery",
+      "module": "Transactions và recovery",
+      "before": [
+        "T07",
+        "AD43"
+      ],
+      "bookPrefixes": [
+        "19.7",
+        "19.10"
+      ],
+      "requiredDeepening": [
+        "ACK/failover/fencing and durable remote log model",
+        "Snapshot plus replay/command logging; restore and RPO/RTO experiment contract"
+      ],
+      "activityFormats": [
+        "timeline",
+        "failure-model",
+        "design"
+      ],
+      "webEnvironment": "mysql/model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD46",
+      "title": "Parallel, distributed và cloud architecture",
+      "module": "Hệ phân tán",
+      "before": [
+        "P01",
+        "AD23"
+      ],
+      "bookPrefixes": [
+        "20"
+      ],
+      "requiredDeepening": [
+        "Shared memory/disk/nothing, interconnect and workload bottlenecks",
+        "Cloud service model, multi-tenant resource and storage/compute separation"
+      ],
+      "activityFormats": [
+        "cost",
+        "design",
+        "failure-model"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD47",
+      "title": "Partitioning, skew và data placement",
+      "module": "Hệ phân tán",
+      "before": [
+        "P02",
+        "AD46"
+      ],
+      "bookPrefixes": [
+        "21"
+      ],
+      "requiredDeepening": [
+        "Range/hash placement, rebalancing and skew-aware distribution",
+        "Distributed files/index/key-value stores and replica metadata"
+      ],
+      "activityFormats": [
+        "cost",
+        "algorithm",
+        "design"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD48",
+      "title": "Parallel sort/join và plan scheduling",
+      "module": "Hệ phân tán",
+      "before": [
+        "P04",
+        "AD33",
+        "AD47"
+      ],
+      "bookPrefixes": [
+        "22.1",
+        "22.2",
+        "22.3",
+        "22.4",
+        "22.5",
+        "22.6",
+        "22.7"
+      ],
+      "requiredDeepening": [
+        "Exchange/repartition/broadcast and parallel aggregate/sort/join",
+        "Intra/interquery scheduling, speedup/skew/bottleneck model"
+      ],
+      "activityFormats": [
+        "trace",
+        "cost",
+        "algorithm"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD49",
+      "title": "Distributed queries, streams và semijoin shipping",
+      "module": "Hệ phân tán",
+      "before": [
+        "P05",
+        "AD48",
+        "AD21"
+      ],
+      "bookPrefixes": [
+        "22.8",
+        "22.9"
+      ],
+      "requiredDeepening": [
+        "Remote data movement cost and semijoin strategy proof",
+        "Heterogeneous-source capabilities, pushdown and streaming snapshots"
+      ],
+      "activityFormats": [
+        "cost",
+        "proof",
+        "design"
+      ],
+      "webEnvironment": "model/optional-postgres",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD50",
+      "title": "2PC và distributed concurrency control",
+      "module": "Hệ phân tán",
+      "before": [
+        "P06",
+        "AD39"
+      ],
+      "bookPrefixes": [
+        "23.1",
+        "23.2",
+        "23.3"
+      ],
+      "requiredDeepening": [
+        "Coordinator/participant durable state transitions and recovery",
+        "Blocking histories, all-participant requirement and uncertainty"
+      ],
+      "activityFormats": [
+        "timeline",
+        "proof",
+        "failure-model"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD51",
+      "title": "Replication, consistency và quorum",
+      "module": "Hệ phân tán",
+      "before": [
+        "P07",
+        "AD42"
+      ],
+      "bookPrefixes": [
+        "23.4",
+        "23.5",
+        "23.6"
+      ],
+      "requiredDeepening": [
+        "Replica read/write ordering, version/conflict resolution assumptions",
+        "Quorum intersection proof vs atomic/linearizable-register protocol"
+      ],
+      "activityFormats": [
+        "timeline",
+        "proof",
+        "counterexample"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD52",
+      "title": "Leader election, Paxos và Raft",
+      "module": "Hệ phân tán",
+      "before": [
+        "P07",
+        "AD51"
+      ],
+      "bookPrefixes": [
+        "23.7",
+        "23.8"
+      ],
+      "requiredDeepening": [
+        "Failure detectors and fencing; Paxos accept-value preservation argument",
+        "Raft term/log/commit rules; safety vs liveness under explicit failure model"
+      ],
+      "activityFormats": [
+        "trace",
+        "proof",
+        "failure-model"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD53",
+      "title": "Tuning, benchmark và tiêu chuẩn database",
+      "module": "Vận hành và tích hợp",
+      "before": [
+        "P08",
+        "AD36",
+        "AD45"
+      ],
+      "bookPrefixes": [
+        "25"
+      ],
+      "requiredDeepening": [
+        "Workload/metric/confounder plan, cache and write cost",
+        "Standards/directories/legacy interoperability and reproducible benchmark report"
+      ],
+      "activityFormats": [
+        "experiment",
+        "critique",
+        "design"
+      ],
+      "webEnvironment": "mysql",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD54",
+      "title": "Blockchain database: validation và giới hạn",
+      "module": "Vận hành và tích hợp",
+      "before": [
+        "P09",
+        "AD51"
+      ],
+      "bookPrefixes": [
+        "26"
+      ],
+      "requiredDeepening": [
+        "Hash/signature/address and transaction validation model",
+        "PoW/PoS/Byzantine consensus/smart contract tradeoffs and ledger queries"
+      ],
+      "activityFormats": [
+        "trace",
+        "failure-model",
+        "critique"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD55",
+      "title": "PostgreSQL: storage, planner và executor",
+      "module": "PostgreSQL chuyên sâu",
+      "before": [
+        "O07",
+        "AD36",
+        "AD25"
+      ],
+      "bookPrefixes": [
+        "32.1",
+        "32.2",
+        "32.3",
+        "32.4"
+      ],
+      "requiredDeepening": [
+        "Heap/index-only/partition and actual plan interpretation",
+        "Rewrite/planner/executor/parallel/JIT boundaries; contrast MySQL accurately"
+      ],
+      "activityFormats": [
+        "sql",
+        "plan-critique",
+        "experiment"
+      ],
+      "webEnvironment": "postgres",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD56",
+      "title": "PostgreSQL: MVCC, locks và recovery",
+      "module": "PostgreSQL chuyên sâu",
+      "before": [
+        "AD55",
+        "AD42",
+        "AD44"
+      ],
+      "bookPrefixes": [
+        "32.5"
+      ],
+      "requiredDeepening": [
+        "Tuple visibility, VACUUM/horizon, lock conflicts and SSI",
+        "Recovery/replication configuration and observation limits"
+      ],
+      "activityFormats": [
+        "timeline",
+        "sql",
+        "experiment"
+      ],
+      "webEnvironment": "postgres",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD57",
+      "title": "PostgreSQL: types, functions và FDW",
+      "module": "PostgreSQL chuyên sâu",
+      "before": [
+        "AD55",
+        "AD14"
+      ],
+      "bookPrefixes": [
+        "32.6",
+        "32.7"
+      ],
+      "requiredDeepening": [
+        "Type/extensibility/function/procedural language and custom index APIs",
+        "FDW pushdown/capability/security/time semantics"
+      ],
+      "activityFormats": [
+        "sql",
+        "api-lab",
+        "design"
+      ],
+      "webEnvironment": "postgres",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD58",
+      "title": "PostgreSQL internals: memory, nodes, Datum và tuples",
+      "module": "PostgreSQL chuyên sâu",
+      "before": [
+        "AD55",
+        "AD57"
+      ],
+      "bookPrefixes": [
+        "32.8"
+      ],
+      "requiredDeepening": [
+        "Source/build/code organization; memory contexts and query stack",
+        "Node traversal, Datum/tuple conversion and error handling; isolated server-side build lab"
+      ],
+      "activityFormats": [
+        "code-reading",
+        "debug",
+        "algorithm"
+      ],
+      "webEnvironment": "postgres-dev-container",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD59",
+      "title": "University: schema, constraints và adversarial workload",
+      "module": "Project và tổng hợp",
+      "before": [
+        "Z03",
+        "AD09",
+        "AD10",
+        "AD12"
+      ],
+      "bookPrefixes": [
+        "A",
+        "6",
+        "9",
+        "11"
+      ],
+      "requiredDeepening": [
+        "Full AppendixA entity/grain/key/constraint traceability",
+        "End-to-end fixture/version/query/property tests rather than image matching"
+      ],
+      "activityFormats": [
+        "sql",
+        "design",
+        "project"
+      ],
+      "webEnvironment": "mysql",
+      "status": "proposed-not-authored",
+      "key": true
+    },
+    {
+      "id": "AD60",
+      "title": "Company/Northwind: chứng minh thiết kế và bảo vệ kết quả",
+      "module": "Project và tổng hợp",
+      "before": [
+        "Z01",
+        "Z02",
+        "AD06",
+        "AD37",
+        "AD40"
+      ],
+      "bookPrefixes": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requiredDeepening": [
+        "Inherited30 Northwind task contracts and allCompany schema constraints",
+        "New domain/ID/null/ties/transaction evidence with individual transfer task"
+      ],
+      "activityFormats": [
+        "sql",
+        "proof",
+        "project"
+      ],
+      "webEnvironment": "mysql",
+      "status": "proposed-not-authored",
+      "key": false
+    },
+    {
+      "id": "AD61",
+      "title": "Datalog: fixpoint, recursion và phủ định",
+      "module": "Lập luận truy vấn",
+      "before": [
+        "AD02",
+        "AD10"
+      ],
+      "bookPrefixes": [
+        "27.4"
+      ],
+      "requiredDeepening": [
+        "Rule safety/least fixpoint and semi-naive evaluation",
+        "Negation/stratification and expressive power compared with calculus"
+      ],
+      "activityFormats": [
+        "algorithm",
+        "proof",
+        "trace"
+      ],
+      "webEnvironment": "model",
+      "status": "proposed-not-authored",
+      "key": false
+    }
+  ],
+  "sourceInventory": "source-section-inventory.json",
+  "coverageCaution": "plannedAdvancedLessonIds is an authoring assignment, not proof of knowledge completeness. Basic chapters can be credited to reviewed baseline content. Parent/child book headings are hierarchical and not distinct concepts."
+}

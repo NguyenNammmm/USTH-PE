@@ -1,0 +1,487 @@
+{
+  "date": "2026-11-05",
+  "scope": "Seven exact own-body units for AD39. Otherchapter18unitsnotcredited.",
+  "units": [
+    {
+      "section": "18.1",
+      "title": "Lock-Based Protocols",
+      "owners": [
+        "AD39"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          15,
+          20
+        ],
+        "ownBodySha256": "2a0b63fd84b0b70ae476d578eb68acffcad74a3344d9025b7c7d04b5739ac28a"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            535
+          ],
+          [
+            711,
+            858
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          874,
+          876,
+          884
+        ],
+        "proofScope": "Read actual source algorithm/protocol and full currentAD39. Proofs supplied beyond finite examples; no formal proof assistant/native engine claim."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Lock-basedisolationparentintroduction; permissionbeforeoperation.",
+      "evidence": [
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "teaching",
+          "paragraph": 5,
+          "exactOpening": "S lock cho đọc, X lock cho ghi trong mô hình. Hai S trên cùng item tương thích; S/X và X/X không tương thích khi thuộc transaction khác nhau. Lock manager giữ owner, mode và hàng chờ; thao tác được cấp chỉ khi mode mới tương thích với các owner hiện tại. Hàng chờ còn cần chính sách công bằng để tránh một writer đợi vô hạn giữa các reader liên tục."
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 9,
+          "exactOpening": "Ví dụ số: A=B=100, writer chuyển20 từ B sang A. Nó ghi B=80 rồi nhả B trước khi lấy A. Reader đọc A=100 và B=80 trước khi writer cộng A, báo180 thay vì200. Mỗi thao tác đều có lock đúng mode, nhưng nhả quá sớm làm mất isolation. Giữ các bảo vệ tới khi đủ giai đoạn chặn lịch ấy; đổi lại hai transaction lấy A/B ngược chiều có thể phải xử lý deadlock."
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "activity",
+          "paragraph": 44,
+          "exactOpening": "1. Kiểm chuỗi của T: S(A), read A, release A, X(B), write B. Nó có tuân2PL không? Đổi nhỏ nhất để hợp lệ.\n2. T1,T2 cùng S(A), sau đó cùng xin upgrade X(A). Dựng wait-for graph và giải thích tại sao2PL vẫn có deadlock.\n3. Một transaction giữ IX(tableT), X(row3). Transaction khác xin S(T), IX(T), S(row3) trong ba tình huống độc lập. Quyền nào được cấ"
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "answer",
+          "paragraph": 49,
+          "exactOpening": "1. Không: xin X(B) sau release A. Xin X(B) trước release A, hoặc giữ A tới khi đã lấy B rồi nhả, sửa được phần giai đoạn; vẫn phải xét deadlock với transaction khác.\n2. T1 chờ T2 nhả S, T2 chờ T1 nhả S; hai cạnh tạo vòng. Cả hai đang upgrade trong growing, nên không vi phạm2PL. Một transaction cần bị abort hoặc giao thức tránh upgrade cycle.\n3. S(T"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.1.1",
+      "title": "Locks",
+      "owners": [
+        "AD39"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          21,
+          213
+        ],
+        "ownBodySha256": "d6813df27a493fc1fd32d5cfdcf5cb16f620a90f379e49957a7dc5487b772dfc"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            535
+          ],
+          [
+            711,
+            858
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          874,
+          876,
+          884
+        ],
+        "proofScope": "Read actual source algorithm/protocol and full currentAD39. Proofs supplied beyond finite examples; no formal proof assistant/native engine claim."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "S/Xsemantics/compatibility/requestgrant/earlyrelease inconsistency/deadlock/legalprotocol.",
+      "evidence": [
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "teaching",
+          "paragraph": 7,
+          "exactOpening": "X lock cho phép cả đọc lẫn ghi; transaction đã giữ X không cần hạ xuống S để đọc chính item ấy. Read/write chỉ được chạy sau thông báo grant, không ngay lúc request. Một lịch hợp lệ theo protocol phải giữ cả thứ tự chương trình lẫn các thời điểm chờ/cấp; không được vẽ một read đi qua một request còn bị chặn."
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 9,
+          "exactOpening": "Ví dụ số: A=B=100, writer chuyển20 từ B sang A. Nó ghi B=80 rồi nhả B trước khi lấy A. Reader đọc A=100 và B=80 trước khi writer cộng A, báo180 thay vì200. Mỗi thao tác đều có lock đúng mode, nhưng nhả quá sớm làm mất isolation. Giữ các bảo vệ tới khi đủ giai đoạn chặn lịch ấy; đổi lại hai transaction lấy A/B ngược chiều có thể phải xử lý deadlock."
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "activity",
+          "paragraph": 44,
+          "exactOpening": "1. Kiểm chuỗi của T: S(A), read A, release A, X(B), write B. Nó có tuân2PL không? Đổi nhỏ nhất để hợp lệ.\n2. T1,T2 cùng S(A), sau đó cùng xin upgrade X(A). Dựng wait-for graph và giải thích tại sao2PL vẫn có deadlock.\n3. Một transaction giữ IX(tableT), X(row3). Transaction khác xin S(T), IX(T), S(row3) trong ba tình huống độc lập. Quyền nào được cấ"
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "answer",
+          "paragraph": 49,
+          "exactOpening": "1. Không: xin X(B) sau release A. Xin X(B) trước release A, hoặc giữ A tới khi đã lấy B rồi nhả, sửa được phần giai đoạn; vẫn phải xét deadlock với transaction khác.\n2. T1 chờ T2 nhả S, T2 chờ T1 nhả S; hai cạnh tạo vòng. Cả hai đang upgrade trong growing, nên không vi phạm2PL. Một transaction cần bị abort hoặc giao thức tránh upgrade cycle.\n3. S(T"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.1.2",
+      "title": "Granting of Locks",
+      "owners": [
+        "AD39"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          214,
+          237
+        ],
+        "ownBodySha256": "a35cf81f227c8105e751e5f7d51c0ef9ed36b6a8ddeba47b18bfa4f14a24d304"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            535
+          ],
+          [
+            711,
+            858
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          874,
+          876,
+          884
+        ],
+        "proofScope": "Read actual source algorithm/protocol and full currentAD39. Proofs supplied beyond finite examples; no formal proof assistant/native engine claim."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "FIFO no-bypass starvationpreventionandassumptions;abortheadrescan.",
+      "evidence": [
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "teaching",
+          "paragraph": 11,
+          "exactOpening": "Quy tắc FIFO đơn giản của sách chỉ cấp request nếu tương thích với các lock đang giữ và không có request trước nó còn phải chờ. Nếu T1 đang giữ S(A), T2 xin X(A), rồi T3 xin S(A), T3 không được vượt T2 dù S của nó tương thích với S hiện tại. Khi T1 nhả, cấp X cho T2; T3 tiếp tục chờ. Khi T2 nhả, có thể cấp một nhóm S liên tiếp ở đầu queue. Nếu cứ c"
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 11,
+          "exactOpening": "Quy tắc FIFO đơn giản của sách chỉ cấp request nếu tương thích với các lock đang giữ và không có request trước nó còn phải chờ. Nếu T1 đang giữ S(A), T2 xin X(A), rồi T3 xin S(A), T3 không được vượt T2 dù S của nó tương thích với S hiện tại. Khi T1 nhả, cấp X cho T2; T3 tiếp tục chờ. Khi T2 nhả, có thể cấp một nhóm S liên tiếp ở đầu queue. Nếu cứ c"
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "activity",
+          "paragraph": 44,
+          "exactOpening": "1. Kiểm chuỗi của T: S(A), read A, release A, X(B), write B. Nó có tuân2PL không? Đổi nhỏ nhất để hợp lệ.\n2. T1,T2 cùng S(A), sau đó cùng xin upgrade X(A). Dựng wait-for graph và giải thích tại sao2PL vẫn có deadlock.\n3. Một transaction giữ IX(tableT), X(row3). Transaction khác xin S(T), IX(T), S(row3) trong ba tình huống độc lập. Quyền nào được cấ"
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "answer",
+          "paragraph": 49,
+          "exactOpening": "1. Không: xin X(B) sau release A. Xin X(B) trước release A, hoặc giữ A tới khi đã lấy B rồi nhả, sửa được phần giai đoạn; vẫn phải xét deadlock với transaction khác.\n2. T1 chờ T2 nhả S, T2 chờ T1 nhả S; hai cạnh tạo vòng. Cả hai đang upgrade trong growing, nên không vi phạm2PL. Một transaction cần bị abort hoặc giao thức tránh upgrade cycle.\n3. S(T"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.1.3",
+      "title": "The Two-Phase Locking Protocol",
+      "owners": [
+        "AD39"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          238,
+          361
+        ],
+        "ownBodySha256": "f4a5b232a1ed127bba6ec189349e1536b8fcc22c8ebabae0d03f39583a185050"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            535
+          ],
+          [
+            711,
+            858
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          874,
+          876,
+          884
+        ],
+        "proofScope": "Read actual source algorithm/protocol and full currentAD39. Proofs supplied beyond finite examples; no formal proof assistant/native engine claim."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Growing/shrinking/lockpointproof, strict/rigorous, conversions, automaticlockgeneration, non2PLserializablewitness.",
+      "evidence": [
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "teaching",
+          "paragraph": 17,
+          "exactOpening": "Trong 2PL cơ bản, transaction có giai đoạn growing để xin lock/upgrade; sau lần nhả đầu tiên là shrinking, chỉ được nhả/downgrade, không xin quyền mới. Lock point là thời điểm transaction nhận lock cuối cùng, gồm upgrade nếu có. Không nhầm hai giai đoạn khóa với hai pha commit của giao dịch phân tán."
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 22,
+          "exactOpening": "Basic2PL vẫn có thể cascade: T1 ghi A rồi nhả X(A) ở shrinking trước commit, T2 lấy S(A), đọc giá trị ấy rồi T1 abort. Strict giữ X đến kết thúc để ngăn dirty read/dirty write trên item ấy. Với rigorous2PL, nếu Ti→Tj là một cạnh xung đột, Tj chỉ được cấp quyền sau khi Ti kết thúc; với các transaction commit, cạnh vì thế cùng chiều commit order. Thứ"
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "activity",
+          "paragraph": 44,
+          "exactOpening": "1. Kiểm chuỗi của T: S(A), read A, release A, X(B), write B. Nó có tuân2PL không? Đổi nhỏ nhất để hợp lệ.\n2. T1,T2 cùng S(A), sau đó cùng xin upgrade X(A). Dựng wait-for graph và giải thích tại sao2PL vẫn có deadlock.\n3. Một transaction giữ IX(tableT), X(row3). Transaction khác xin S(T), IX(T), S(row3) trong ba tình huống độc lập. Quyền nào được cấ"
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "answer",
+          "paragraph": 49,
+          "exactOpening": "1. Không: xin X(B) sau release A. Xin X(B) trước release A, hoặc giữ A tới khi đã lấy B rồi nhả, sửa được phần giai đoạn; vẫn phải xét deadlock với transaction khác.\n2. T1 chờ T2 nhả S, T2 chờ T1 nhả S; hai cạnh tạo vòng. Cả hai đang upgrade trong growing, nên không vi phạm2PL. Một transaction cần bị abort hoặc giao thức tránh upgrade cycle.\n3. S(T"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.1.4",
+      "title": "Implementation of Locking",
+      "owners": [
+        "AD39"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          362,
+          421
+        ],
+        "ownBodySha256": "69e5d3d491570331b8dd52a1a6bcfa39af83ade2bd09e7ff40472bd7915e3f70"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            535
+          ],
+          [
+            711,
+            858
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          874,
+          876,
+          884
+        ],
+        "proofScope": "Read actual source algorithm/protocol and full currentAD39. Proofs supplied beyond finite examples; no formal proof assistant/native engine claim."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Hashitemqueue+transactionindex,granted/wait flags,request/unlock/abort algorithm,compatibility/FIFOinvariants andcleanupordering.",
+      "evidence": [
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "teaching",
+          "paragraph": 12,
+          "exactOpening": "Lock table có thể là hash map item→queue; va chạm hash phải so đúng item, không trộn lock của hai item khác nhau. Mỗi request giữ transaction ID, mode và cờ granted/waiting. Một chỉ mục transaction→held/pending requests giúp hủy đúng tất cả request khi abort. Cách truyền message giữa manager và transaction là một mô hình triển khai; shared-memory m"
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 14,
+          "exactOpening": "```text\nrequest(T,Q,mode):\n    atomically:\n        append request to queue[Q]\n        scan queue[Q] from first not-yet-granted request\n        grant compatible requests in order until the first blocked one\nunlock(T,Q):\n    atomically:\n        remove the granted request belonging to T\n        rescan waiting requests in order under compatibility rule"
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "activity",
+          "paragraph": 44,
+          "exactOpening": "1. Kiểm chuỗi của T: S(A), read A, release A, X(B), write B. Nó có tuân2PL không? Đổi nhỏ nhất để hợp lệ.\n2. T1,T2 cùng S(A), sau đó cùng xin upgrade X(A). Dựng wait-for graph và giải thích tại sao2PL vẫn có deadlock.\n3. Một transaction giữ IX(tableT), X(row3). Transaction khác xin S(T), IX(T), S(row3) trong ba tình huống độc lập. Quyền nào được cấ"
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "answer",
+          "paragraph": 49,
+          "exactOpening": "1. Không: xin X(B) sau release A. Xin X(B) trước release A, hoặc giữ A tới khi đã lấy B rồi nhả, sửa được phần giai đoạn; vẫn phải xét deadlock với transaction khác.\n2. T1 chờ T2 nhả S, T2 chờ T1 nhả S; hai cạnh tạo vòng. Cả hai đang upgrade trong growing, nên không vi phạm2PL. Một transaction cần bị abort hoặc giao thức tránh upgrade cycle.\n3. S(T"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.1.5",
+      "title": "Graph-Based Protocols",
+      "owners": [
+        "AD39"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          422,
+          531
+        ],
+        "ownBodySha256": "6c9b7be2b0f20e6b09be98a9cfaeb782877242e405efcbbb8045a4ac2b9071f5"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            535
+          ],
+          [
+            711,
+            858
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          874,
+          876,
+          884
+        ],
+        "proofScope": "Read actual source algorithm/protocol and full currentAD39. Proofs supplied beyond finite examples; no formal proof assistant/native engine claim."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Allfourtreerules,serializability/deadlockproof,earlyrelease/extraancestorcost,protocolincomparability andcommitdependencyrecovery.",
+      "evidence": [
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "teaching",
+          "paragraph": 35,
+          "exactOpening": "Một protocol trên cây rooted dùng X lock có quy tắc: lock đầu có thể ở một node bất kỳ; lock tiếp trên node chỉ được xin khi đang giữ lock của parent; có thể nhả sớm; đã nhả một node thì không lock lại node đó trong cùng transaction. Nó cho phép nhả rồi xin node khác theo đường cây, nên không phải 2PL."
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 36,
+          "exactOpening": "Để thấy ý nghĩa thứ tự, dùng cây A có con B,C. T1 lock A, lock B, nhả A, lock một con D của B rồi nhả B là hợp lệ: lúc xin D vẫn giữ B. T1 nhả B rồi quay lại lock B là không hợp lệ. Nếu không có quy tắc parent và không-relock, mỗi transaction có thể giữ một nhánh rồi quay ngược theo thứ tự đối nhau."
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "activity",
+          "paragraph": 44,
+          "exactOpening": "1. Kiểm chuỗi của T: S(A), read A, release A, X(B), write B. Nó có tuân2PL không? Đổi nhỏ nhất để hợp lệ.\n2. T1,T2 cùng S(A), sau đó cùng xin upgrade X(A). Dựng wait-for graph và giải thích tại sao2PL vẫn có deadlock.\n3. Một transaction giữ IX(tableT), X(row3). Transaction khác xin S(T), IX(T), S(row3) trong ba tình huống độc lập. Quyền nào được cấ"
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "answer",
+          "paragraph": 49,
+          "exactOpening": "1. Không: xin X(B) sau release A. Xin X(B) trước release A, hoặc giữ A tới khi đã lấy B rồi nhả, sửa được phần giai đoạn; vẫn phải xét deadlock với transaction khác.\n2. T1 chờ T2 nhả S, T2 chờ T1 nhả S; hai cạnh tạo vòng. Cả hai đang upgrade trong growing, nên không vi phạm2PL. Một transaction cần bị abort hoặc giao thức tránh upgrade cycle.\n3. S(T"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.3",
+      "title": "Multiple Granularity",
+      "owners": [
+        "AD39"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          711,
+          868
+        ],
+        "ownBodySha256": "798736611655a468656cecbab174334d377f2833b70b8b581d9247edeb23ef3b"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1,
+            535
+          ],
+          [
+            711,
+            858
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          874,
+          876,
+          884
+        ],
+        "proofScope": "Read actual source algorithm/protocol and full currentAD39. Proofs supplied beyond finite examples; no formal proof assistant/native engine claim."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Implicitcoarsesubtree/intentionhierarchy,all5modescompatibility,root/topdown/bottomup/2PLrules,escalation/deadlocktradeoff.",
+      "evidence": [
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "teaching",
+          "paragraph": 30,
+          "exactOpening": "Trong hierarchy này, node coarse đại diện toàn dữ liệu ở hậu duệ: S(table) cho quyền đọc các row bên dưới mà không cần một S riêng ở mỗi row; X(table) cho bảo vệ ghi ở toàn subtree. Đó khác tree protocol bên dưới, nơi mỗi node là một item riêng. IS/IX ở tổ tiên giúp transaction xin coarse lock phát hiện ý định ở dưới bằng compatibility tại node ấy,"
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 32,
+          "exactOpening": "Ví dụ đọc row7: IS(DB)→IS(table)→S(row7); ghi row8: IX(DB)→IX(table)→X(row8); đọc cả table: IS(DB)→S(table). Reader row7 có thể cùng writer row8 nếu lock row độc lập; reader toàn table bị IX(table) của writer chặn. Khi xong, nhả fine locks trước table rồi DB. Multiple granularity vẫn có thể deadlock; nó giảm overhead và giữ tương thích giữa coarse/"
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "activity",
+          "paragraph": 44,
+          "exactOpening": "1. Kiểm chuỗi của T: S(A), read A, release A, X(B), write B. Nó có tuân2PL không? Đổi nhỏ nhất để hợp lệ.\n2. T1,T2 cùng S(A), sau đó cùng xin upgrade X(A). Dựng wait-for graph và giải thích tại sao2PL vẫn có deadlock.\n3. Một transaction giữ IX(tableT), X(row3). Transaction khác xin S(T), IX(T), S(row3) trong ba tình huống độc lập. Quyền nào được cấ"
+        },
+        {
+          "path": "lessons/AD39.md",
+          "lessonSha256": "55db98e94a3b5594262226aaa4a38b1b87596cac63fd21f50b6f53ee3513e611",
+          "kind": "answer",
+          "paragraph": 49,
+          "exactOpening": "1. Không: xin X(B) sau release A. Xin X(B) trước release A, hoặc giữ A tới khi đã lấy B rồi nhả, sửa được phần giai đoạn; vẫn phải xét deadlock với transaction khác.\n2. T1 chờ T2 nhả S, T2 chờ T1 nhả S; hai cạnh tạo vòng. Cả hai đang upgrade trong growing, nên không vi phạm2PL. Một transaction cần bị abort hoặc giao thức tránh upgrade cycle.\n3. S(T"
+        }
+      ],
+      "gaps": []
+    }
+  ],
+  "counts": {
+    "assigned": 7,
+    "complete": 7
+  },
+  "checks": "qa/lock-full-checks.json finite reference states only"
+}

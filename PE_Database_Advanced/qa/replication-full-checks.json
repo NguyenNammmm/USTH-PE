@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-05",
+  "status": "passed",
+  "count": 14,
+  "checks": [
+    {
+      "name": "Exhaustive equal-weight quorum intersections for140threshold fixtures",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Weighted minimal quorums and failure availability",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Read chooses highest committed version rather than value majority",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Disjoint replica-lock subsets can block one logical item",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Catalog switch must cover catch-up/maintenance boundary",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Out-of-order after images need protocol-ordered apply",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Version-vector resolution records both parents and new writer event",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Finite vector comparisons preserve partial order/concurrency classification",
+      "passed": true,
+      "scope": "729 vector pairs; no claim of unlimited-writer identity lifecycle correctness."
+    },
+    {
+      "name": "Async partition move can create duplicate or missing scan observations",
+      "passed": true,
+      "scope": "Two concrete scan/delivery schedules explained in AD66; not an engine scan execution."
+    },
+    {
+      "name": "Actual SHA-256 Merkle traversal matches direct diff on256fixtures",
+      "passed": true,
+      "scope": "Eight fixed key buckets, ordered domain-separated binary tree, canonicalJSON; not cryptographic proof of collision resistance."
+    },
+    {
+      "name": "Key/value commitment detects swaps hidden by value-only collection",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Leaf2 sibling proof recomputes trusted root",
+      "passed": true,
+      "scope": "Actual SHA-256 path recomputation; root is an externally trusted input, no signature generation/verification executed."
+    },
+    {
+      "name": "Tampered leaf fails comparison to the same trusted root",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Same-data trees stop at root",
+      "passed": true,
+      "scope": "Finite model only"
+    }
+  ],
+  "lessonSha256": {
+    "AD51": "a3473a99466ea8dce79569095d8a51d3cb6f7bdcb4362f7489a246450a9516e3",
+    "AD66": "a2b56ad11029914f58bdda746f7afbc8c90c8c09e7c7965e51da10ba1ef9675f"
+  },
+  "limits": "Finite quorum/vector/ordered-message/scan witnesses and actual SHA-256 computation. No replica cluster, database engine, signature verification or network execution."
+}

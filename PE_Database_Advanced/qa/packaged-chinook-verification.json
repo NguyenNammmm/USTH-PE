@@ -1,0 +1,89 @@
+{
+  "scope": "Actual packaged fixtures/chinook_advanced.sql only. Payload has no DROP/CREATE/USE database directives. Loader allocates a new validated task-prefix schema after proving absence, refuses an existing schema, selects it on the connection, then executes the packaged table/data payload unchanged. Only read-only checks run after load; schema retained. Not old pa_repo_chinook evidence or semantic certification of all lessons.",
+  "engine": [
+    "8.4.13",
+    "pe_advanced_chinook_payload_20261105_69"
+  ],
+  "fixtureSha256": "69b2dc90624250f3820c99cef4c8ae3ae7e3a35fd0b59413304328ea9a2def2b",
+  "checks": [
+    {
+      "name": "Invoice row count",
+      "actual": 412,
+      "expected": 412,
+      "passed": true
+    },
+    {
+      "name": "InvoiceLine row count",
+      "actual": 2240,
+      "expected": 2240,
+      "passed": true
+    },
+    {
+      "name": "album.ArtistId orphan count",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "customer.SupportRepId orphan count",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "employee.ReportsTo orphan count",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "invoice.CustomerId orphan count",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "invoiceline.InvoiceId orphan count",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "invoiceline.TrackId orphan count",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "playlisttrack.PlaylistId orphan count",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "playlisttrack.TrackId orphan count",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "track.AlbumId orphan count",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "track.GenreId orphan count",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "track.MediaTypeId orphan count",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "kind": "finite Python reference/model checks; no MySQL/distributed engine execution",
+  "independentOracles": [
+    "nested-loop bag joins and left outer joins",
+    "global built-in sorted",
+    "direct rational aggregate",
+    "exhaustive worker assignments",
+    "enumerated overlapping window membership",
+    "nested-loop right/full outer identities",
+    "full base scan for global index",
+    "full nested-loop view recompute after signed deltas"
+  ],
+  "cases": {
+    "bagEqualityOuterSemijoinBloomCases": 7225,
+    "globalSecondaryIndexUpdateCases": 81,
+    "latchWaitNotificationOrders": 2,
+    "streamReplayIdentityCases": 9,
+    "signedViewDeltaCases": 7,
+    "thetaGridCases": 1600,
+    "parallelExternalSortCases": 7225,
+    "partialAggregationDistinctCases": 364,
+    "consistentHashValues": 100,
+    "overlappingWindowCases": 31,
+    "exhaustiveScheduleInstances": 3
+  },
+  "proofLimit": "Finite checks supplement, and do not replace, lesson correctness arguments.",
+  "lessonSha256": {
+    "AD46": "12a430da36f455ccb65b7080d9e8b4208114b88805bf954f7590118e58e5a789",
+    "AD47": "8c03e85c7454c59fd34e17cacee9bacd48dd98c281fad0e8f9b28c0ce0c61eb5",
+    "AD48": "4fdd391de1234ff09d6840c62d9e512a50a5603b3770e7ee539364bdcf05090e",
+    "AD49": "13495eb217719044e6efa1329a47160e0c9030a80e527c7b659f0521b5676472",
+    "AD64": "edf885f1fd83521b8ec3d07a3afd0c105a3d7fb597cd756f36ac40aafabda752",
+    "AD79": "bc0a04bba28b11d1247268e296a7aff34c8ec80aca97ebc59461698dd616348e",
+    "AD80": "5720687413dcd750995bd0234c65af78f0fb4172d8dcd4b456be6cc9ea47e10b"
+  }
+}

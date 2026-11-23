@@ -1,0 +1,159 @@
+﻿{
+    "date":  "2026-11-05",
+    "scope":  [
+                  "AD16",
+                  "AD68"
+              ],
+    "kind":  "actual-.NET-XML-validation-and-XPath1-smoke-checks",
+    "engine":  "4.0.30319.42000",
+    "allPassed":  true,
+    "xqueryExecuted":  false,
+    "sqlXmlExecuted":  false,
+    "xpath2Or3Executed":  false,
+    "checks":  [
+                   {
+                       "name":  "XSD-full-catalog-valid",
+                       "passed":  true,
+                       "detail":  "Complete authored XSD compiled and accepted authored catalog."
+                   },
+                   {
+                       "name":  "XSD-reject-negative-money",
+                       "passed":  true,
+                       "detail":  "The \u0027price\u0027 element is invalid - The value \u0027-1\u0027 is invalid according to its datatype \u0027Money\u0027 - The MinInclusive constraint failed."
+                   },
+                   {
+                       "name":  "XSD-reject-missing-name",
+                       "passed":  true,
+                       "detail":  "The element \u0027product\u0027 has invalid child element \u0027price\u0027. List of possible elements expected: \u0027name\u0027."
+                   },
+                   {
+                       "name":  "XSD-reject-wrong-sequence",
+                       "passed":  true,
+                       "detail":  "The element \u0027product\u0027 has invalid child element \u0027price\u0027. List of possible elements expected: \u0027name\u0027."
+                   },
+                   {
+                       "name":  "XSD-reject-duplicate-key",
+                       "passed":  true,
+                       "detail":  "There is a duplicate key sequence \u0027A\u0027 for the \u0027productKey\u0027 key or unique identity constraint."
+                   },
+                   {
+                       "name":  "XSD-reject-missing-keyref",
+                       "passed":  true,
+                       "detail":  "The key sequence \u0027C\u0027 in \u0027productKey\u0027 Keyref fails to refer to some key."
+                   },
+                   {
+                       "name":  "XSD-reject-zero-quantity",
+                       "passed":  true,
+                       "detail":  "The \u0027qty\u0027 attribute is invalid - The value \u00270\u0027 is invalid according to its datatype \u0027http://www.w3.org/2001/XMLSchema:positiveInteger\u0027 - Value \u00270\u0027 was either too large or too small for PositiveInteger."
+                   },
+                   {
+                       "name":  "XSD-recursive-part-valid",
+                       "passed":  true,
+                       "detail":  "Compiled recursive PartType and accepted P -\u003e Q -\u003e R."
+                   },
+                   {
+                       "name":  "XSD-recursive-reject-qty-zero",
+                       "passed":  true,
+                       "detail":  "The \u0027qty\u0027 element is invalid - The value \u00270\u0027 is invalid according to its datatype \u0027http://www.w3.org/2001/XMLSchema:positiveInteger\u0027 - Value \u00270\u0027 was either too large or too small for PositiveInteger."
+                   },
+                   {
+                       "name":  "XSD-recursive-reject-name-required",
+                       "passed":  true,
+                       "detail":  "The element \u0027part\u0027 has invalid child element \u0027component\u0027. List of possible elements expected: \u0027name\u0027."
+                   },
+                   {
+                       "name":  "XSD-recursive-reject-component-sequence",
+                       "passed":  true,
+                       "detail":  "The element \u0027component\u0027 has invalid child element \u0027qty\u0027. List of possible elements expected: \u0027part\u0027."
+                   },
+                   {
+                       "name":  "DTD-IDs-and-refs-valid",
+                       "passed":  true,
+                       "detail":  "p1/p2 ID values; refs p2 p1."
+                   },
+                   {
+                       "name":  "DTD-default-currency",
+                       "passed":  true,
+                       "detail":  "Default currency materialized by validating reader."
+                   },
+                   {
+                       "name":  "DTD-reject-missing-ref",
+                       "passed":  true,
+                       "detail":  "Reference to undeclared ID is \u0027p3\u0027."
+                   },
+                   {
+                       "name":  "DTD-reject-duplicate-ID",
+                       "passed":  true,
+                       "detail":  "\u0027p1\u0027 is already used as an ID. | Reference to undeclared ID is \u0027p2\u0027."
+                   },
+                   {
+                       "name":  "DTD-ANY-requires-declared-elements",
+                       "passed":  true,
+                       "detail":  "The \u0027undeclared\u0027 element is not declared."
+                   },
+                   {
+                       "name":  "XPath1-id-is-ID-typed-document-order",
+                       "passed":  true,
+                       "detail":  "DTD-typed IDs returned in document order despite reference-token order."
+                   },
+                   {
+                       "name":  "XPath1-count-items",
+                       "passed":  true,
+                       "detail":  "Native .NET XPath 1.0 subset only."
+                   },
+                   {
+                       "name":  "XPath1-qty-filter",
+                       "passed":  true,
+                       "detail":  "Expected sku A."
+                   },
+                   {
+                       "name":  "XPath1-mixed-content-child-count",
+                       "passed":  true,
+                       "detail":  "text, em element, text."
+                   },
+                   {
+                       "name":  "XPath1-text-direct-only",
+                       "passed":  true,
+                       "detail":  "Direct text() excludes text nested in em."
+                   },
+                   {
+                       "name":  "XPath1-existence",
+                       "passed":  true,
+                       "detail":  "Only o1."
+                   },
+                   {
+                       "name":  "XPath1-nested-union",
+                       "passed":  true,
+                       "detail":  "Parenthesized union can feed another path."
+                   },
+                   {
+                       "name":  "XPath1-position-per-parent",
+                       "passed":  true,
+                       "detail":  "One first item per order."
+                   },
+                   {
+                       "name":  "XPath1-position-global",
+                       "passed":  true,
+                       "detail":  "One first item for complete sequence."
+                   },
+                   {
+                       "name":  "DOM-descendants-versus-child",
+                       "passed":  true,
+                       "detail":  "getElementsByTagName finds descendants; /order/item selects direct children."
+                   },
+                   {
+                       "name":  "CDATA-not-markup",
+                       "passed":  true,
+                       "detail":  "CDATA content is character data, no b element."
+                   },
+                   {
+                       "name":  "XPath1-attribute-axis-is-not-child",
+                       "passed":  true,
+                       "detail":  "Children are text A, b, text B; attribute a is selected separately."
+                   }
+               ],
+    "lessonHashes":  {
+                         "AD16":  "096ed6d3e8de6fa24683b513a34e3ed543e976395e53896ea500cf2ee924c280",
+                         "AD68":  "3a4fcadc989ab7af3c59ca95775d2499ba740573bba3a7264a0880881c05c686"
+                     }
+}

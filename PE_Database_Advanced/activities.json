@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "activities": [
+    {
+      "id": "REPO-H01",
+      "lessonIds": [
+        "AD42"
+      ],
+      "title": "Đọc dữ liệu chưa commit rồi rollback",
+      "repository": "ept/hermitage",
+      "upstreamCommit": "f029bec8e32af6a9506508638fdf74ef61286225",
+      "license": "CC-BY-4.0",
+      "licenseNotice": "research/licenses/THIRD-PARTY-NOTICES.md",
+      "adaptationVersion": "pe-2026-11-05-v1",
+      "capabilityId": "mysql84.two-session.innodb",
+      "contractPath": "docs/repo-labs.md",
+      "sourceRegistryPath": "research/repo-registry.json",
+      "supportPolicy": "Rotate formats suited to skill; support history retained; support pass is not independent mastery.",
+      "independentTask": "Change data/constraints and write or repair the query/schedule on backend engine; submit explanation.",
+      "oracle": "Hai session và observer; giá trị trước/sau abort cùng trạng thái giao dịch.",
+      "expectedEvidence": [
+        "attemptId",
+        "activityVersion",
+        "fixtureVersion",
+        "seed",
+        "supportHistory",
+        "capabilityVersion",
+        "engineArtifactOrExplicitModelMode"
+      ],
+      "status": "authored-contract-and-selected-inputs; production-runner-not-deployed"
+    },
+    {
+      "id": "REPO-H02",
+      "lessonIds": [
+        "AD42",
+        "AD65"
+      ],
+      "title": "Snapshot và predicate read",
+      "repository": "ept/hermitage",
+      "upstreamCommit": "f029bec8e32af6a9506508638fdf74ef61286225",
+      "license": "CC-BY-4.0",
+      "licenseNotice": "research/licenses/THIRD-PARTY-NOTICES.md",
+      "adaptationVersion": "pe-2026-11-05-v1",
+      "capabilityId": "mysql84.two-session.innodb",
+      "contractPath": "docs/repo-labs.md",
+      "sourceRegistryPath": "research/repo-registry.json",
+      "supportPolicy": "Rotate formats suited to skill; support history retained; support pass is not independent mastery.",
+      "independentTask": "Change data/constraints and write or repair the query/schedule on backend engine; submit explanation.",
+      "oracle": "Phân biệt plain consistent read với locking read; reset giữa các isolation.",
+      "expectedEvidence": [
+        "attemptId",
+        "activityVersion",
+        "fixtureVersion",
+        "seed",
+        "supportHistory",
+        "capabilityVersion",
+        "engineArtifactOrExplicitModelMode"
+      ],
+      "status": "authored-contract-and-selected-inputs; production-runner-not-deployed"
+    },
+    {
+      "id": "REPO-H03",
+      "lessonIds": [
+        "AD40",
+        "AD41",
+        "AD42"
+      ],
+      "title": "Mất cập nhật và atomic increment",
+      "repository": "ept/hermitage",
+      "upstreamCommit": "f029bec8e32af6a9506508638fdf74ef61286225",
+      "license": "CC-BY-4.0",
+      "licenseNotice": "research/licenses/THIRD-PARTY-NOTICES.md",
+      "adaptationVersion": "pe-2026-11-05-v1",
+      "capabilityId": "mysql84.two-session.innodb",
+      "contractPath": "docs/repo-labs.md",
+      "sourceRegistryPath": "research/repo-registry.json",
+      "supportPolicy": "Rotate formats suited to skill; support history retained; support pass is not independent mastery.",
+      "independentTask": "Change data/constraints and write or repair the query/schedule on backend engine; submit explanation.",
+      "oracle": "Đủ precondition cùng đọc giá trị cũ; observer xác nhận lock wait; kiểm post-state.",
+      "expectedEvidence": [
+        "attemptId",
+        "activityVersion",
+        "fixtureVersion",
+        "seed",
+        "supportHistory",
+        "capabilityVersion",
+        "engineArtifactOrExplicitModelMode"
+      ],
+      "status": "authored-contract-and-selected-inputs; production-runner-not-deployed"
+    },
+    {
+      "id": "REPO-E01",
+      "lessonIds": [
+        "AD01",
+        "AD30",
+        "AD35",
+        "AD53"
+      ],
+      "title": "Oracle phải bắt query trả rỗng và bỏ điều kiện",
+      "repository": "jsengun/ecommerce-query-optimizer-demo",
+      "upstreamCommit": "c594df3824a82db731946a3fa106ccd679eb1848",
+      "license": "MIT",
+      "licenseNotice": "research/licenses/THIRD-PARTY-NOTICES.md",
+      "adaptationVersion": "pe-2026-11-05-v1",
+      "capabilityId": "mysql84.query.fixture",
+      "contractPath": "docs/repo-labs.md",
+      "sourceRegistryPath": "research/repo-registry.json",
+      "supportPolicy": "Rotate formats suited to skill; support history retained; support pass is not independent mastery.",
+      "independentTask": "Change data/constraints and write or repair the query/schedule on backend engine; submit explanation.",
+      "oracle": "Exact ID/order, nonempty witness, ba mutant định danh; fixture mới khi tự làm.",
+      "expectedEvidence": [
+        "attemptId",
+        "activityVersion",
+        "fixtureVersion",
+        "seed",
+        "supportHistory",
+        "capabilityVersion",
+        "engineArtifactOrExplicitModelMode"
+      ],
+      "status": "authored-contract-and-selected-inputs; production-runner-not-deployed"
+    },
+    {
+      "id": "REPO-E02",
+      "lessonIds": [
+        "AD30",
+        "AD35",
+        "AD36",
+        "AD37",
+        "AD53"
+      ],
+      "title": "Composite index trên cùng hợp đồng kết quả",
+      "repository": "jsengun/ecommerce-query-optimizer-demo",
+      "upstreamCommit": "c594df3824a82db731946a3fa106ccd679eb1848",
+      "license": "MIT",
+      "licenseNotice": "research/licenses/THIRD-PARTY-NOTICES.md",
+      "adaptationVersion": "pe-2026-11-05-v1",
+      "capabilityId": "mysql84.measurement.isolated",
+      "contractPath": "docs/repo-labs.md",
+      "sourceRegistryPath": "research/repo-registry.json",
+      "supportPolicy": "Rotate formats suited to skill; support history retained; support pass is not independent mastery.",
+      "independentTask": "Change data/constraints and write or repair the query/schedule on backend engine; submit explanation.",
+      "oracle": "Query/index/result hash, plan thật, version/configuration; không chấm ngưỡng ms cố định.",
+      "expectedEvidence": [
+        "attemptId",
+        "activityVersion",
+        "fixtureVersion",
+        "seed",
+        "supportHistory",
+        "capabilityVersion",
+        "engineArtifactOrExplicitModelMode"
+      ],
+      "status": "authored-contract-and-selected-inputs; production-runner-not-deployed"
+    },
+    {
+      "id": "REPO-C01",
+      "lessonIds": [
+        "AD01",
+        "AD10",
+        "AD18",
+        "AD60"
+      ],
+      "title": "Đối soát doanh thu theo grain",
+      "repository": "lerocha/chinook-database",
+      "upstreamCommit": "7f67772503d71ba90f19283c38e93923addb43fa",
+      "license": "MIT",
+      "licenseNotice": "research/licenses/THIRD-PARTY-NOTICES.md",
+      "adaptationVersion": "pe-2026-11-05-v1",
+      "capabilityId": "mysql84.query.chinook",
+      "contractPath": "docs/repo-labs.md",
+      "sourceRegistryPath": "research/repo-registry.json",
+      "supportPolicy": "Rotate formats suited to skill; support history retained; support pass is not independent mastery.",
+      "independentTask": "Change data/constraints and write or repair the query/schedule on backend engine; submit explanation.",
+      "oracle": "Decimal oracle, aggregate độc lập, fanout counterexample; ca chuyển giao zero-child.",
+      "expectedEvidence": [
+        "attemptId",
+        "activityVersion",
+        "fixtureVersion",
+        "seed",
+        "supportHistory",
+        "capabilityVersion",
+        "engineArtifactOrExplicitModelMode"
+      ],
+      "status": "authored-contract-and-selected-inputs; production-runner-not-deployed"
+    },
+    {
+      "id": "REPO-C02",
+      "lessonIds": [
+        "AD10",
+        "AD53"
+      ],
+      "title": "Running total có peers",
+      "repository": "lerocha/chinook-database",
+      "upstreamCommit": "7f67772503d71ba90f19283c38e93923addb43fa",
+      "license": "MIT",
+      "licenseNotice": "research/licenses/THIRD-PARTY-NOTICES.md",
+      "adaptationVersion": "pe-2026-11-05-v1",
+      "capabilityId": "mysql84.query.chinook",
+      "contractPath": "docs/repo-labs.md",
+      "sourceRegistryPath": "research/repo-registry.json",
+      "supportPolicy": "Rotate formats suited to skill; support history retained; support pass is not independent mastery.",
+      "independentTask": "Change data/constraints and write or repair the query/schedule on backend engine; submit explanation.",
+      "oracle": "InvoiceDate,InvoiceId và frame; fixture đổi tie/insert order; so Decimal từng dòng.",
+      "expectedEvidence": [
+        "attemptId",
+        "activityVersion",
+        "fixtureVersion",
+        "seed",
+        "supportHistory",
+        "capabilityVersion",
+        "engineArtifactOrExplicitModelMode"
+      ],
+      "status": "authored-contract-and-selected-inputs; production-runner-not-deployed"
+    }
+  ]
+}

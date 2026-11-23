@@ -1,0 +1,723 @@
+{
+  "status": "pass",
+  "engine": "Python finite models + SQLite 3.53.1",
+  "mysqlExecuted": false,
+  "limits": {
+    "sqliteProgressAbortAfterVmInstructions": 500000,
+    "calculusCases": 64,
+    "graphs": 512,
+    "graphVertices": 3,
+    "maximumModelRounds": 4
+  },
+  "checks": [
+    {
+      "name": "aggregate duplicates, NULL, grouping",
+      "status": "pass",
+      "scope": "Portable SQLite SELECT, four input rows; not MySQL execution",
+      "actual": [
+        [
+          "A",
+          3,
+          2,
+          1,
+          20,
+          10.0,
+          10,
+          10
+        ],
+        [
+          "B",
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "expected": [
+        [
+          "A",
+          3,
+          2,
+          1,
+          20,
+          10.0,
+          10,
+          10
+        ],
+        [
+          "B",
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "empty global aggregate",
+      "status": "pass",
+      "scope": "Portable SQLite SELECT",
+      "actual": [
+        [
+          0,
+          null
+        ]
+      ],
+      "expected": [
+        [
+          0,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "empty grouped aggregate",
+      "status": "pass",
+      "scope": "Portable SQLite SELECT",
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "HAVING group predicate",
+      "status": "pass",
+      "scope": "Portable SQLite SELECT",
+      "actual": [
+        [
+          "A",
+          20
+        ]
+      ],
+      "expected": [
+        [
+          "A",
+          20
+        ]
+      ]
+    },
+    {
+      "name": "window frame examples",
+      "status": "pass",
+      "scope": "Portable SQLite numeric ROWS/RANGE on exactly four rows",
+      "actual": [
+        [
+          1,
+          30,
+          10,
+          10,
+          10,
+          30,
+          30
+        ],
+        [
+          2,
+          30,
+          30,
+          30,
+          30,
+          30,
+          35
+        ],
+        [
+          3,
+          35,
+          35,
+          25,
+          35,
+          35,
+          32
+        ],
+        [
+          4,
+          42,
+          42,
+          12,
+          32,
+          7,
+          12
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          30,
+          10,
+          10,
+          10,
+          30,
+          30
+        ],
+        [
+          2,
+          30,
+          30,
+          30,
+          30,
+          30,
+          35
+        ],
+        [
+          3,
+          35,
+          35,
+          25,
+          35,
+          35,
+          32
+        ],
+        [
+          4,
+          42,
+          42,
+          12,
+          32,
+          7,
+          12
+        ]
+      ]
+    },
+    {
+      "name": "rank functions and ties",
+      "status": "pass",
+      "scope": "Portable SQLite rank model; singleton MySQL additionally checked from official source, not run",
+      "actual": [
+        [
+          1,
+          1,
+          1,
+          0.0,
+          0.5,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          0.0,
+          0.5,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          0.6666666666666666,
+          0.75,
+          2
+        ],
+        [
+          4,
+          4,
+          3,
+          1.0,
+          1.0,
+          3
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          1,
+          1,
+          0.0,
+          0.5,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          0.0,
+          0.5,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          0.6666666666666666,
+          0.75,
+          2
+        ],
+        [
+          4,
+          4,
+          3,
+          1.0,
+          1.0,
+          3
+        ]
+      ]
+    },
+    {
+      "name": "singleton percent/cumulative model",
+      "status": "pass",
+      "scope": "SQLite model only",
+      "actual": [
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "NULL comparison versus DISTINCT",
+      "status": "pass",
+      "scope": "Portable SQLite SELECT",
+      "actual": [
+        [
+          1
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "name": "NOT IN NULL trap",
+      "status": "pass",
+      "scope": "Portable SQLite SELECT",
+      "actual": [
+        [
+          null,
+          1
+        ]
+      ],
+      "expected": [
+        [
+          null,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "row comparison and literal LIKE",
+      "status": "pass",
+      "scope": "Portable numeric row comparison and explicit-escape LIKE; no MySQL collation assertion",
+      "actual": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "full outer reconstruction",
+      "status": "pass",
+      "scope": "Portable SQLite anti-branch query; four expected bag rows",
+      "actual": [
+        [
+          1,
+          10,
+          1
+        ],
+        [
+          1,
+          11,
+          1
+        ],
+        [
+          2,
+          null,
+          null
+        ],
+        [
+          null,
+          12,
+          3
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          10,
+          1
+        ],
+        [
+          1,
+          11,
+          1
+        ],
+        [
+          2,
+          null,
+          null
+        ],
+        [
+          null,
+          12,
+          3
+        ]
+      ]
+    },
+    {
+      "name": "pivot conditional aggregation",
+      "status": "pass",
+      "scope": "Portable SQLite SELECT, five input rows",
+      "actual": [
+        [
+          "Book",
+          1,
+          null
+        ],
+        [
+          "Pen",
+          5,
+          4
+        ]
+      ],
+      "expected": [
+        [
+          "Book",
+          1,
+          null
+        ],
+        [
+          "Pen",
+          5,
+          4
+        ]
+      ]
+    },
+    {
+      "name": "cube explicit grouping branches",
+      "status": "pass",
+      "scope": "Portable SQLite explicit grouping branches, no claim that SQLite implements MySQL WITH ROLLUP",
+      "actual": [
+        [
+          "Book",
+          null,
+          6,
+          0,
+          0
+        ],
+        [
+          "Book",
+          "red",
+          1,
+          0,
+          0
+        ],
+        [
+          "Pen",
+          "blue",
+          4,
+          0,
+          0
+        ],
+        [
+          "Pen",
+          "red",
+          5,
+          0,
+          0
+        ],
+        [
+          "Book",
+          null,
+          7,
+          0,
+          1
+        ],
+        [
+          "Pen",
+          null,
+          9,
+          0,
+          1
+        ],
+        [
+          null,
+          null,
+          6,
+          1,
+          0
+        ],
+        [
+          null,
+          "blue",
+          4,
+          1,
+          0
+        ],
+        [
+          null,
+          "red",
+          6,
+          1,
+          0
+        ],
+        [
+          null,
+          null,
+          16,
+          1,
+          1
+        ]
+      ],
+      "expected": [
+        [
+          "Book",
+          null,
+          6,
+          0,
+          0
+        ],
+        [
+          "Book",
+          "red",
+          1,
+          0,
+          0
+        ],
+        [
+          "Pen",
+          "blue",
+          4,
+          0,
+          0
+        ],
+        [
+          "Pen",
+          "red",
+          5,
+          0,
+          0
+        ],
+        [
+          "Book",
+          null,
+          7,
+          0,
+          1
+        ],
+        [
+          "Pen",
+          null,
+          9,
+          0,
+          1
+        ],
+        [
+          null,
+          null,
+          6,
+          1,
+          0
+        ],
+        [
+          null,
+          "blue",
+          4,
+          1,
+          0
+        ],
+        [
+          null,
+          "red",
+          6,
+          1,
+          0
+        ],
+        [
+          null,
+          null,
+          16,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "double NOT EXISTS versus bounded universal calculus",
+      "status": "pass",
+      "scope": "Exhaustive two students/two courses; no NULL, set membership, all16 Passed and4 Required instances",
+      "actual": 64,
+      "expected": 64
+    },
+    {
+      "name": "frontier versus independent positive closure",
+      "status": "pass",
+      "scope": "Finite exhaustive three-vertex graphs; three starts each; model proof support, not universal proof",
+      "actual": 512,
+      "expected": 512
+    },
+    {
+      "name": "positive closure cycle example",
+      "status": "pass",
+      "scope": "SQLite UNION replaces spelling UNION DISTINCT only; three-vertex positive closure",
+      "actual": [
+        [
+          "A",
+          "A"
+        ],
+        [
+          "A",
+          "B"
+        ],
+        [
+          "A",
+          "C"
+        ],
+        [
+          "B",
+          "A"
+        ],
+        [
+          "B",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ]
+      ],
+      "expected": [
+        [
+          "A",
+          "A"
+        ],
+        [
+          "A",
+          "B"
+        ],
+        [
+          "A",
+          "C"
+        ],
+        [
+          "B",
+          "A"
+        ],
+        [
+          "B",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ]
+      ]
+    },
+    {
+      "name": "set ALL multiplicity formulas",
+      "status": "pass",
+      "scope": "Counter model; NULL represented by same sentinel for duplicate comparison",
+      "actual": {
+        "union": {
+          "a": 5,
+          "b": 1,
+          "null": 2,
+          "c": 1
+        },
+        "intersect": {
+          "a": 2,
+          "null": 1
+        },
+        "except": {
+          "a": 1,
+          "b": 1
+        }
+      },
+      "expected": {
+        "union": {
+          "a": 5,
+          "b": 1,
+          "null": 2,
+          "c": 1
+        },
+        "intersect": {
+          "a": 2,
+          "null": 1
+        },
+        "except": {
+          "a": 1,
+          "b": 1
+        }
+      }
+    },
+    {
+      "name": "CASE versus two-statement threshold",
+      "status": "pass",
+      "scope": "Exact Decimal model; no MySQL UPDATE execution",
+      "actual": [
+        "102.90",
+        "105.99"
+      ],
+      "expected": [
+        "102.90",
+        "105.99"
+      ]
+    },
+    {
+      "name": "summary AVG maintenance",
+      "status": "pass",
+      "scope": "Exact Decimal sum/count model",
+      "actual": "60",
+      "expected": "60"
+    },
+    {
+      "name": "bounded safety counterexample",
+      "status": "pass",
+      "scope": "Two explicit trial domains; counterexample only, no safety decision algorithm",
+      "actual": [
+        [],
+        [
+          4
+        ]
+      ],
+      "expected": [
+        [],
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "name": "universal quantifier hidden domain",
+      "status": "pass",
+      "scope": "Two explicit trial domains",
+      "actual": [
+        true,
+        false
+      ],
+      "expected": [
+        true,
+        false
+      ]
+    },
+    {
+      "name": "ledger exact source and lesson witnesses",
+      "status": "pass",
+      "scope": "All80 assigned own-body units; cryptographic reproducibility, not automatic semantic judgement",
+      "actual": 80,
+      "expected": 80
+    }
+  ],
+  "limitations": [
+    "No MySQL server available; DDL/view updatability/LATERAL/ROLLUP/scalar-cardinality-error/collation/transaction behavior is documented and expected, not executed here.",
+    "Finite checks support worked examples; written proofs carry the general claims.",
+    "Hash validation checks references, never substitutes for the full source read and semantic comparison."
+  ]
+}

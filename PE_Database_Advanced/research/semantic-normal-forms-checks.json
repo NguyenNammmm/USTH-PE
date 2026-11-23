@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-05",
+  "kind": "finite-mathematical-example-checks",
+  "scope": [
+    "AD05",
+    "AD06",
+    "AD07",
+    "AD08"
+  ],
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "AD05-lossy-join-two-spurious-tuples",
+      "result": "pass"
+    },
+    {
+      "name": "AD05-instance-forward-versus-reverse-FD",
+      "result": "pass"
+    },
+    {
+      "name": "AD05-projected-violation-through-removed-B",
+      "result": "pass"
+    },
+    {
+      "name": "AD05-composite-class-BCNF-and-preservation",
+      "result": "pass"
+    },
+    {
+      "name": "AD06-already-3NF-still-synthesized-to-BCNF",
+      "result": "pass"
+    },
+    {
+      "name": "AD07-address-pair-moves-as-one-group",
+      "result": "pass"
+    },
+    {
+      "name": "AD07-multistep-four-local-tables-lose-MVD-with-valid-separate-extensions",
+      "result": "pass"
+    },
+    {
+      "name": "AD07-embedded-MVD-is-not-full-schema-MVD",
+      "result": "pass"
+    },
+    {
+      "name": "AD08-three-way-JD-and-all-nontrivial-MVD-counterchecks",
+      "result": "pass"
+    },
+    {
+      "name": "AD08-critical-binary-JD-overlap-condition",
+      "result": "pass"
+    },
+    {
+      "name": "AD08-key-implied-JD-with-redundant-nonkey-component",
+      "result": "pass"
+    },
+    {
+      "name": "AD08-full-mixed-constraint-closure-can-add-empty-key",
+      "result": "pass"
+    },
+    {
+      "name": "AD08-conjunctive-bank-JD-with-non-superkey-components",
+      "result": "pass"
+    },
+    {
+      "name": "AD08-complete-independent-contract-approval-answer",
+      "result": "pass"
+    },
+    {
+      "name": "AD08-DKNF-account-countermodel-and-inclusive-boundary",
+      "result": "pass"
+    }
+  ],
+  "sqlRuntimeUsed": false,
+  "limitation": "Finite relation/closure checks verify worked answers and witnesses. They do not establish general source completeness or replace universal proofs.",
+  "lessonSha256": {
+    "AD05": "3cc1c4c40c2ea5b5ac6178cb8a9b70ae5cad5fd56f2a41bba0c8418d9f4d1433",
+    "AD06": "283aab135f76cf0fb52c7b652f7e9ab0717008da8546657d6d0df15923a9e598",
+    "AD07": "75272cc3153d7e91f9c82a781c514dd799e5cd4430ed9073fce60fa71612482c",
+    "AD08": "df341ddb20dac92edd629883e1daf1eb92b0dcb4b4b78ed6fd3457422a8bad02"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-05T17:46:37.369256+00:00",
+  "scope": "Task-local MySQL only",
+  "port": 33374,
+  "config": "tmp/database-source/mysql-task.ini",
+  "verifiedOwnedProcessIdsBeforeShutdown": [
+    27348,
+    29684
+  ],
+  "shutdownExitCode": 0,
+  "verifiedOwnedProcessesAfterShutdown": 0,
+  "verification": "Exact executable/config identity, graceful mysqladmin shutdown, elevated CIM Count=0",
+  "qaReport": "qa/usth-final-sources-checks.json",
+  "noExistingSchemaModified": true,
+  "ownedDeletionExercise": "Only the exact six tables of the fresh pe_final_company_816bfb6ae7 schema were dropped",
+  "taskSchemasRetained": true
+}

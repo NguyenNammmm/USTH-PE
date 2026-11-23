@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-05",
+  "lesson": "AD40",
+  "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "DFS versus exhaustive topological oracle: all4096 loop-free four-node graphs",
+      "passed": true,
+      "scope": "Finite graphs only; no distributed/OR-wait or multi-instance resource claim."
+    },
+    {
+      "name": "Lesson graph: new edge closes B-D-C cycle",
+      "passed": true,
+      "scope": "Worked example and exercise5."
+    },
+    {
+      "name": "A is not a cycle member in lesson graph",
+      "passed": true,
+      "scope": "Specific witness, not generic membership algorithm."
+    },
+    {
+      "name": "Wait-die waiting edges strictly increase timestamps",
+      "passed": true,
+      "scope": "Unique retained timestamps; proof in lesson is required beyond this finite example."
+    },
+    {
+      "name": "Wound-wait waiting edges strictly decrease timestamps",
+      "passed": true,
+      "scope": "No liveness guarantee under unbounded arrivals/failures."
+    },
+    {
+      "name": "Request20 against holder10 differs between policies",
+      "passed": true,
+      "scope": "Requester/holder orientation."
+    },
+    {
+      "name": "Partial rollback exercise undoes all suffix updates",
+      "passed": true,
+      "scope": "Abstract engine with partial rollback support; not a SAVEPOINT/MySQL execution."
+    },
+    {
+      "name": "Delete timestamp examples",
+      "passed": true,
+      "scope": "Independent requests on same initial state."
+    },
+    {
+      "name": "Insert initializes both timestamps",
+      "passed": true,
+      "scope": "Abstract timestamp-ordering initialization."
+    },
+    {
+      "name": "Phantom membership anomaly and serial reference",
+      "passed": true,
+      "scope": "Logical model, not engine isolation-level result."
+    },
+    {
+      "name": "Empty range must still protect index leaf",
+      "passed": true,
+      "scope": "S(leaf) conflicts with X(leaf) for matching insert15."
+    },
+    {
+      "name": "Leaf granularity causes false conflict for29",
+      "passed": true,
+      "scope": "All three keys and insert positions assumed in same unchanged leafL."
+    }
+  ],
+  "count": 12,
+  "limits": "Finite mathematical/reference checks. No new MySQL, web backend, browser or partial rollback execution."
+}

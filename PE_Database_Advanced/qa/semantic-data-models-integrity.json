@@ -1,0 +1,24 @@
+{
+  "scopeLessonIds": [
+    "AD13",
+    "AD14"
+  ],
+  "sourceUnits": 29,
+  "witnessesChecked": 200,
+  "integrity": "passed",
+  "sourceHashConvention": "UTF-8 of LF-joined decoded source lines; no final newline",
+  "checks": [
+    "29 source file hashes and own-body ranges",
+    "all exact lesson/query/exercise/answer range hashes",
+    "no heading-only teaching witnesses",
+    "balanced fences and question/answer numbering",
+    "original XML tree/path expected nodes",
+    "original two-collection multiplication and multiset count examples"
+  ],
+  "semanticCertification": "manual per-unit comparison recorded in semantic-data-models.json; integrity checks do not infer semantic credit",
+  "sqlRuntimePerformed": false,
+  "lessonSha256": {
+    "AD13": "09fea295e593d132a340dc0650086b4a98aea77452467607b61e608af86725b6",
+    "AD14": "4f48f9ec26343520b6ae7872193759bfa0ffedb5df6bbe3c6086adb15da80888"
+  }
+}

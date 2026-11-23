@@ -1,0 +1,324 @@
+{
+  "date": "2026-11-05",
+  "seed": 20261105,
+  "status": "pass",
+  "scope": "Independent finite models for the authored AD15/20/21/22/35/36/37/61/73 examples.\n\nRun with the bundled Python. These checks do not run MySQL, Hadoop, Spark,\nMongoDB, Neo4j or a distributed service, and do not establish general proofs.",
+  "counts": {
+    "namedChecks": 48,
+    "finiteComparisons": 3400,
+    "actualSQLiteChecks": 3
+  },
+  "checks": [
+    {
+      "name": "Datalog naive and semi-naive versus Warshall on every 3-node directed graph",
+      "status": "pass",
+      "comparisons": 512,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "BFS versus all-pairs distances, all starts including cycles and disconnected nodes",
+      "status": "pass",
+      "comparisons": 1536,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Datalog authored cycle closure",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Datalog exercise Delta closure",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Nonlinear rule needs new-old term",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Unsafe arithmetic recursion keeps extending beyond finite input domain",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Ground rule and nonrecursive arithmetic examples",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Difference counterexample to monotonicity",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "R-tree quadratic split trace",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "R-tree split invariants and range-search completeness versus full scan",
+      "status": "pass",
+      "comparisons": 200,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Spatial triangle filter/exact/boundary cases",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Nearest-distance tie contract",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "TIN and triangulated rectangle area",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Region quadtree lossless leaf condition",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "MapReduce combiner and partition invariance versus occurrence Counter",
+      "status": "pass",
+      "comparisons": 200,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Weighted-average sufficient state and wrong scalar combine",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Authored word-count fixture",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Authored map versus flatMap fixture",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Log interval right boundary and aggregate grain",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Catalan-labelled tree counts",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "DP interesting-order state versus exhaustive physical trees under 12 seeded cost models",
+      "status": "pass",
+      "comparisons": 12,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Authored greedy, interesting-order and lookup conventions",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Sequential two-input join deltas with inserts/deletes versus full bag recompute",
+      "status": "pass",
+      "comparisons": 200,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Authored join cross term",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "SUM/COUNT/AVG sufficient state, empty/all-NULL/zero-sum groups versus recompute",
+      "status": "pass",
+      "comparisons": 300,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "DISTINCT support-count exercise trace",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Outer-join match transitions",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Top-K tie-break and WITH TIES",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Parametric plan threshold and workload benefit",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Shared-plan, restart sunk work and MV expansion arithmetic",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Stream authored tumbling/hopping/sliding populations",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Watermarks and late revision/drop",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Hopping/tumbling boundary at exactly time10",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Pubsub fanout and retention distinction",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Temporal dimension join before and after category change",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Synchronous weighted relaxation versus independent simple-path enumeration on acyclic graphs",
+      "status": "pass",
+      "comparisons": 400,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "BFS minimum-hop counterexample",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Reachable negative-cycle flag and unaffected branch",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Actual SQLite inner-selection pushdown with bag rows",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "executed SQLite 3.53.1"
+    },
+    {
+      "name": "Actual SQLite invalid outer-predicate pushdown counterexample",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "executed SQLite 3.53.1"
+    },
+    {
+      "name": "Actual SQLite NULL-aware equality-join count",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "executed SQLite 3.53.1"
+    },
+    {
+      "name": "Cardinality arithmetic and FALSE/UNKNOWN distinction",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Same-base independent predicate union/intersection/difference estimates",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "File copies after sequential failures",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "CAS rejects stale second writer",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Wide-column latest and bounded version lookup",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "Hierarchical row-key prefix delimiter",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    },
+    {
+      "name": "File assembly follows metadata rather than completion order",
+      "status": "pass",
+      "comparisons": 1,
+      "scope": "finite Python model"
+    }
+  ],
+  "notExecuted": [
+    "MySQL",
+    "Hadoop",
+    "Spark",
+    "MongoDB",
+    "Neo4j",
+    "distributed services"
+  ],
+  "limitations": [
+    "Finite examples corroborate worked calculations; general correctness is supplied by conditional arguments in the lessons.",
+    "No frontend, browser interaction, runtime latency or live distributed failure experiment was run."
+  ],
+  "lessonSha256": {
+    "AD15": "841e809bf6e0a50eb56bfb739cdf5cd8ded93761aa0b7ec28c3cadc526ed9e63",
+    "AD20": "d5fa878c2eb57aa71db65ad81e5d686480b0b80bb781d82f7f069aef52328bc7",
+    "AD21": "bf4262eb6af77eb442eae9d01dcee705684501bac7eddb1a47752f0518577de9",
+    "AD22": "32cb5b8fda2a24bacc60c04922eb7ecc5ea600fc37cecabd288157be747aee66",
+    "AD35": "1ad19447a372a986a06ccfdf189f09bde05a6f93b70330479e5f62aeb009a6f0",
+    "AD36": "657410797f840102b367179dc0a7f923d03d78d2d47b249a5c2323cc6752eb0c",
+    "AD37": "03308e95e2f98ac1b6b8d020e742595ab1133cbe5b6bbe589a06e92fcbc67135",
+    "AD61": "0fa552d885fab671c76bf2013ab2d9ec31c52c0c1af22d7afa5b779d65c8afca",
+    "AD73": "13c86010a8aa3028902a22822110e7310f43090fa82d03fd0f55a3708915b43a"
+  }
+}

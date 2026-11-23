@@ -1,0 +1,243 @@
+{
+  "scope": "New AD85 finite examples/invariants and optional explicitly named nativechecks only. Does not rerun/certify every old routine/trigger.",
+  "engine": "8.4.13",
+  "schemaCreatedFresh": "pe_advanced_routine_full_dafdbd3dc1",
+  "schemaCleanup": "Retained task-local schema; no DROP issued",
+  "lessonSha256": "08108aff10abdac7883d5ad965dfc2d6f3a6ffdf3b9218385d73e3f28d3ea4fe",
+  "checks": [
+    {
+      "name": "WHILE invariant and output n=0",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "WHILE invariant and output n=1",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "WHILE invariant and output n=3",
+      "actual": 6,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "name": "WHILE invariant and output n=20",
+      "actual": 210,
+      "expected": 210,
+      "passed": true
+    },
+    {
+      "name": "naive REPEAT computed counterexample n0",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "naive REPEAT still works on positive sample",
+      "actual": 6,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "name": "ITERATE-style skip increments control",
+      "actual": 9,
+      "expected": 9,
+      "passed": true
+    },
+    {
+      "name": "table/scalar DA shape",
+      "actual": [
+        2,
+        [
+          1,
+          3
+        ]
+      ],
+      "expected": [
+        2,
+        [
+          1,
+          3
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "empty relation not oneNULLrow",
+      "actual": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "name": "grade transitions delta",
+      "actual": [
+        3,
+        0,
+        -3,
+        0
+      ],
+      "expected": [
+        3,
+        0,
+        -3,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "name": "enrollment move/delete trace",
+      "actual": [
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "expected": [
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "statement transition grouped deltas",
+      "actual": {
+        "A": -8,
+        "B": 8
+      },
+      "expected": {
+        "A": -8,
+        "B": 8
+      },
+      "passed": true
+    },
+    {
+      "name": "snapshot replays derived contribution twice",
+      "actual": 12,
+      "expected": 12,
+      "passed": true
+    },
+    {
+      "name": "Luyện tập numbering",
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "name": "Đáp án và lập luận numbering",
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "name": "balanced code fences",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "actualMySQL scalarfunction normalNULLINTboundary",
+      "actual": [
+        21,
+        null,
+        4611686018427387904
+      ],
+      "expected": [
+        21,
+        null,
+        4611686018427387904
+      ],
+      "passed": true
+    },
+    {
+      "name": "actualMySQL normalize expression",
+      "actual": [
+        null,
+        "A",
+        null
+      ],
+      "expected": [
+        null,
+        "A",
+        null
+      ],
+      "passed": true
+    }
+  ],
+  "passed": 18,
+  "total": 18,
+  "serverLifecycle": {
+    "startAttempt": "Refused duplicate launch after elevated process inventory found existing verified task-local binary/config. No new process was started in this turn.",
+    "execution": "Connected to verified loopback port33374, created only a fresh random schema, no DROP.",
+    "cleanup": "Graceful mysqladmin shutdown to task-local port; elevated executable/config filter confirmed0taskMySQLprocessesremaining.",
+    "scopeWarning": "Default-sandbox Get-Process visibility was insufficient; absence there was not accepted as final cleanup evidence."
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "scope": "Only checks explicitly named below. Finite model checks are not general proofs; MySQL checks are real engine checks on an isolated disposable schema. No PostgreSQL, FDW, extension build/load or C memory test was run.",
+  "mysqlEngine": [
+    [
+      "8.4.13",
+      "ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+    ]
+  ],
+  "lessonSha256": {
+    "AD02": "94ab843957a00468931ea5935280eb228f4addcd2881a557333236dd89f15fe5",
+    "AD04": "a8de9b0fc3932be57608c2987a7ee803de6c27fe2931bf2413cbc0b94f4983fd",
+    "AD05": "cbc79dd1e649bec4fdf188fc7796491e4b279468015498308828827f6bc2f33a",
+    "AD07": "bf5250a8a30ff047a5cce9c4cb7d0125f49dba18f6716a96bc2dba0b2eccb558",
+    "AD08": "2d937ffda052e4483482e198ddc3fd644207b5a807f621ed04d8cdd3369b1ee0",
+    "AD09": "007a83a45139ac524c5db47be4d753398a052e5733cce57b8a938a8a28fc8412",
+    "AD55": "7a39aa7112ea8b3b236c807e75e8843e3d078c37a4dd0dc2b37ee1316fe08d59",
+    "AD57": "62c1e029de5286817373690d3acc72812dd0e5456a59bb95a98624585ac22927",
+    "AD59": "a63f1072441af00b61c5b731610417b5873993b2f061634af403c3961b29d242",
+    "AD83": "2e03a3ad2de19c6bfb4100740e782544ecb890be906f4ff6cf149d374dbbc77c",
+    "AD84": "450ec1cce36c23218c7b183d67728e1d7dac950907f66068a2355dabe12e5c20"
+  },
+  "checks": [
+    {
+      "name": "AD05 AB/AC lossless for every binary-domain instance satisfying A->B",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "AD05 wrong AB/BC decomposition adds exact witness tuples",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          7,
+          10
+        ],
+        [
+          2,
+          7,
+          9
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          7,
+          10
+        ],
+        [
+          2,
+          7,
+          9
+        ]
+      ]
+    },
+    {
+      "name": "AD08 JD holds on four-row instance",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "AD08 deleting 000 preserves projections but violates JD",
+      "passed": true,
+      "actual": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "expected": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "AD07 2x3 independence reconstructs six tuples",
+      "passed": true,
+      "actual": 6,
+      "expected": 6
+    },
+    {
+      "name": "AD07 missing combination detected by exact tuple witness",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          "Python",
+          "Hue"
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          "Python",
+          "Hue"
+        ]
+      ]
+    },
+    {
+      "name": "AD04 all keys for independent transfer exercise",
+      "passed": true,
+      "actual": [
+        "AC",
+        "AD",
+        "BC",
+        "BD"
+      ],
+      "expected": [
+        "AC",
+        "AD",
+        "BC",
+        "BD"
+      ]
+    },
+    {
+      "name": "AD55 deterministic generator counts",
+      "passed": true,
+      "actual": [
+        200,
+        19800
+      ],
+      "expected": [
+        200,
+        19800
+      ]
+    },
+    {
+      "name": "AD84 transfer deep-copy arithmetic/alias example",
+      "passed": true,
+      "actual": [
+        -28,
+        -12
+      ],
+      "expected": [
+        -28,
+        -12
+      ]
+    },
+    {
+      "name": "AD83 stable top-two ownership-model answer order",
+      "passed": true,
+      "actual": [
+        [
+          2,
+          "long"
+        ],
+        [
+          3,
+          "tail"
+        ]
+      ],
+      "expected": [
+        [
+          2,
+          "long"
+        ],
+        [
+          3,
+          "tail"
+        ]
+      ]
+    },
+    {
+      "name": "AD02 all required-course SQL",
+      "passed": true,
+      "actual": [
+        [
+          1
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "name": "AD02 empty requirements vacuous truth",
+      "passed": true,
+      "actual": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ]
+    },
+    {
+      "name": "AD02 transfer answer exact SQL",
+      "passed": true,
+      "actual": [
+        [
+          5
+        ]
+      ],
+      "expected": [
+        [
+          5
+        ]
+      ]
+    },
+    {
+      "name": "expected MySQL error 1452",
+      "passed": true,
+      "actual": 1452,
+      "expected": 1452
+    },
+    {
+      "name": "AD09 bitemporal Feb6",
+      "passed": true,
+      "actual": [
+        [
+          "3500.00"
+        ]
+      ],
+      "expected": [
+        [
+          "3500.00"
+        ]
+      ]
+    },
+    {
+      "name": "AD09 bitemporal Feb12",
+      "passed": true,
+      "actual": [
+        [
+          "3600.00"
+        ]
+      ],
+      "expected": [
+        [
+          "3600.00"
+        ]
+      ]
+    },
+    {
+      "name": "AD09 valid history overlap empty",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "AD09 overlap detector catches bad correction",
+      "passed": true,
+      "actual": [
+        [
+          3,
+          4
+        ]
+      ],
+      "expected": [
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "name": "AD09 corrected history removes conflict",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "AD59 zero-registration preserving report",
+      "passed": true,
+      "actual": [
+        [
+          "S1",
+          2
+        ],
+        [
+          "S2",
+          1
+        ],
+        [
+          "S3",
+          1
+        ],
+        [
+          "S4",
+          0
+        ]
+      ],
+      "expected": [
+        [
+          "S1",
+          2
+        ],
+        [
+          "S2",
+          1
+        ],
+        [
+          "S3",
+          1
+        ],
+        [
+          "S4",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "AD59 transitive prerequisite eligibility",
+      "passed": true,
+      "actual": [
+        [
+          "S1"
+        ]
+      ],
+      "expected": [
+        [
+          "S1"
+        ]
+      ]
+    },
+    {
+      "name": "AD59 complete-key capacity detector",
+      "passed": true,
+      "actual": [
+        [
+          "DB",
+          "1",
+          "Fall",
+          2026,
+          3,
+          2
+        ]
+      ],
+      "expected": [
+        [
+          "DB",
+          "1",
+          "Fall",
+          2026,
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "AD59 detailed timetable conflict row",
+      "passed": true,
+      "actual": [
+        [
+          "S1",
+          "DB",
+          "OS",
+          "Fall",
+          2026,
+          "M",
+          "9:30:00",
+          "10:00:00"
+        ]
+      ],
+      "expected": [
+        [
+          "S1",
+          "DB",
+          "OS",
+          "Fall",
+          2026,
+          "M",
+          "9:30:00",
+          "10:00:00"
+        ]
+      ]
+    },
+    {
+      "name": "AD59 half-open touching boundary has no conflict",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "AD59 original prerequisite graph acyclic",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "AD59 cycle detector exact participating courses",
+      "passed": true,
+      "actual": [
+        [
+          "AI"
+        ],
+        [
+          "DB"
+        ],
+        [
+          "OS"
+        ]
+      ],
+      "expected": [
+        [
+          "AI"
+        ],
+        [
+          "DB"
+        ],
+        [
+          "OS"
+        ]
+      ]
+    }
+  ],
+  "passed": true
+}

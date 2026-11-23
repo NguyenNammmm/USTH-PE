@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-05",
+  "passed": 19,
+  "checks": [
+    {
+      "name": "actual-inner-and-full-emulation",
+      "passed": true,
+      "detail": "Actual SQLite3.53.1 executes exact lesson SQL; not native MySQL validation."
+    },
+    {
+      "name": "actual-cross-cardinality",
+      "passed": true,
+      "detail": "3x4 row pairs."
+    },
+    {
+      "name": "on-versus-where",
+      "passed": true,
+      "detail": "Actual two SQL executions show NULL-extended row preservation difference."
+    },
+    {
+      "name": "range-join-boundaries",
+      "passed": true,
+      "detail": "Non-equijoin is inner; inclusive upper-bound mutant creates two extra witnesses."
+    },
+    {
+      "name": "group-null-count-sum",
+      "passed": true,
+      "detail": "Exact lesson aggregation executes with NULL group and all-NULL group inputs."
+    },
+    {
+      "name": "aggregate-distinct",
+      "passed": true,
+      "detail": "Actual numeric bag and NULL-distinct examples."
+    },
+    {
+      "name": "empty-group-versus-empty-input",
+      "passed": true,
+      "detail": "No-GROUP-BY implicit aggregate row versus no groups."
+    },
+    {
+      "name": "where-group-having",
+      "passed": true,
+      "detail": "Exact lesson filter/group/HAVING/ORDER BY query."
+    },
+    {
+      "name": "nested-aggregate-rewrite",
+      "passed": true,
+      "detail": "Derived-table query avoids invalid same-query-block nested aggregation."
+    },
+    {
+      "name": "bag-set-operations",
+      "passed": true,
+      "detail": "Python multiset oracle, not SQL ALL syntax execution."
+    },
+    {
+      "name": "population-versus-sample",
+      "passed": true,
+      "detail": "Actual arithmetic, no engine variance-function execution."
+    },
+    {
+      "name": "all-five-fd-systems",
+      "passed": true,
+      "detail": "Exact full candidate-key sets, nonminimal-superkey counts and all implied singleton FD normal-form conditions for five teaching systems, not just source answer strings."
+    },
+    {
+      "name": "closure-independent-oracle",
+      "passed": true,
+      "detail": "128 closures compared with independent enumeration of two-tuple binary agreement models satisfying each input FD set; unbounded argument provided in lesson."
+    },
+    {
+      "name": "closure-exercise-AB-CF",
+      "passed": true,
+      "detail": "Explicit source exercise and missing-F distinction."
+    },
+    {
+      "name": "single-PK-does-not-prove-2NF",
+      "passed": true,
+      "detail": "D is nonprime, C proper subset of alternate candidate keyBC; counterexample to primary-key-only claim."
+    },
+    {
+      "name": "right-side-pruning-counterexample",
+      "passed": true,
+      "detail": "All attributes appear on RHS yet each is a candidate key."
+    },
+    {
+      "name": "lossy-projection-join",
+      "passed": true,
+      "detail": "Exact new tuple identities, not just larger cardinality."
+    },
+    {
+      "name": "preservation-versus-lossless",
+      "passed": true,
+      "detail": "Local C->B holds but reconstructed equalAB has twoC values."
+    },
+    {
+      "name": "eighteen-questions-answered",
+      "passed": true,
+      "detail": "Full lesson activity/answer sequence matches; semantic answers separately manually compared with sources and finite models."
+    }
+  ],
+  "scope": "Selected actual SQLite execution plus finite multiset/arithmetic/FD models. No native MySQL join/ALL/collation/ONLY_FULL_GROUP_BY execution, general SQL equivalence certification, or deployed web runner. Source pages manually read separately.",
+  "lessons": {
+    "USTH04": "0a161e7d49a9c1dca3db55745f38753f6f1c71d8defbecd8599541427f1aef67",
+    "USTH05": "b083f671cff066c113401e2c9c91cb8e3e19587f46788926f4fb2b697f531bdd"
+  }
+}

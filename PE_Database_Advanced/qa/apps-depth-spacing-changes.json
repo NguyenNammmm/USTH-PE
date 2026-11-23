@@ -1,0 +1,844 @@
+[
+  {
+    "id": "AD01",
+    "count": 0,
+    "reviewed_replacements": []
+  },
+  {
+    "id": "AD10",
+    "count": 0,
+    "reviewed_replacements": []
+  },
+  {
+    "id": "AD11",
+    "count": 2,
+    "reviewed_replacements": [
+      {
+        "before": "thành100",
+        "after": "thành 100",
+        "count": 1
+      },
+      {
+        "before": "thì70",
+        "after": "thì 70",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD12",
+    "count": 1,
+    "reviewed_replacements": [
+      {
+        "before": "thànhprincipal1",
+        "after": "thành principal1",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD13",
+    "count": 1,
+    "reviewed_replacements": [
+      {
+        "before": "count0,total0",
+        "after": "count 0,total 0",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD14",
+    "count": 10,
+    "reviewed_replacements": [
+      {
+        "before": "từversion5",
+        "after": "từ version5",
+        "count": 1
+      },
+      {
+        "before": "gửiversion5",
+        "after": "gửi version5",
+        "count": 1
+      },
+      {
+        "before": "đãthăm",
+        "after": "đã thăm",
+        "count": 1
+      },
+      {
+        "before": "đọcM2",
+        "after": "đọc M2",
+        "count": 1
+      },
+      {
+        "before": "cùngid",
+        "after": "cùng id",
+        "count": 1
+      },
+      {
+        "before": "thứhai",
+        "after": "thứ hai",
+        "count": 1
+      },
+      {
+        "before": "cònA,B",
+        "after": "còn A,B",
+        "count": 1
+      },
+      {
+        "before": "dùngID",
+        "after": "dùng ID",
+        "count": 1
+      },
+      {
+        "before": "sharedC",
+        "after": "shared C",
+        "count": 1
+      },
+      {
+        "before": "Cversion5",
+        "after": "C version5",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD15",
+    "count": 8,
+    "reviewed_replacements": [
+      {
+        "before": "SRS0",
+        "after": "SRS 0",
+        "count": 2
+      },
+      {
+        "before": "là5m",
+        "after": "là 5 m",
+        "count": 1
+      },
+      {
+        "before": "thẳng5km",
+        "after": "thẳng 5 km",
+        "count": 1
+      },
+      {
+        "before": "chuẩn bị5",
+        "after": "chuẩn bị 5",
+        "count": 1
+      },
+      {
+        "before": "tạo4children",
+        "after": "tạo 4 children",
+        "count": 1
+      },
+      {
+        "before": "thành4buckets",
+        "after": "thành 4 buckets",
+        "count": 1
+      },
+      {
+        "before": "bucketSW",
+        "after": "bucket SW",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD16",
+    "count": 12,
+    "reviewed_replacements": [
+      {
+        "before": "ordero1",
+        "after": "order o1",
+        "count": 1
+      },
+      {
+        "before": "hay45.0",
+        "after": "hay 45.0",
+        "count": 1
+      },
+      {
+        "before": "theoid",
+        "after": "theo id",
+        "count": 1
+      },
+      {
+        "before": "count2,total65",
+        "after": "count 2,total 65",
+        "count": 1
+      },
+      {
+        "before": "count0,total0",
+        "after": "count 0,total 0",
+        "count": 1
+      },
+      {
+        "before": "qtyhai",
+        "after": "qty=hai",
+        "count": 2
+      },
+      {
+        "before": "let$total",
+        "after": "let $total",
+        "count": 1
+      },
+      {
+        "before": "where$total",
+        "after": "where $total",
+        "count": 2
+      },
+      {
+        "before": "vàtotal",
+        "after": "và total",
+        "count": 1
+      },
+      {
+        "before": "cóord",
+        "after": "có ord",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD17",
+    "count": 4,
+    "reviewed_replacements": [
+      {
+        "before": "chỉdA",
+        "after": "chỉ dA",
+        "count": 1
+      },
+      {
+        "before": "cùngdoc",
+        "after": "cùng doc",
+        "count": 1
+      },
+      {
+        "before": "thêmd1",
+        "after": "thêm d1",
+        "count": 1
+      },
+      {
+        "before": "bỏd1",
+        "after": "bỏ d1",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD18",
+    "count": 3,
+    "reviewed_replacements": [
+      {
+        "before": "Xóa20",
+        "after": "Xóa 20",
+        "count": 1
+      },
+      {
+        "before": "Tầng1:",
+        "after": "Tầng 1:",
+        "count": 1
+      },
+      {
+        "before": "Tầng2:",
+        "after": "Tầng 2:",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD19",
+    "count": 7,
+    "reviewed_replacements": [
+      {
+        "before": "Trên20kiện",
+        "after": "Trên 20 kiện",
+        "count": 1
+      },
+      {
+        "before": "Nếu100kiện",
+        "after": "Nếu 100 kiện",
+        "count": 1
+      },
+      {
+        "before": "chỉ10positive",
+        "after": "chỉ 10 positive",
+        "count": 1
+      },
+      {
+        "before": "lúc10:00",
+        "after": "lúc 10:00",
+        "count": 1
+      },
+      {
+        "before": "trên100kiện",
+        "after": "trên 100 kiện",
+        "count": 1
+      },
+      {
+        "before": "có10positive",
+        "after": "có 10 positive",
+        "count": 1
+      },
+      {
+        "before": "vàtext",
+        "after": "và text",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD20",
+    "count": 7,
+    "reviewed_replacements": [
+      {
+        "before": "cùngkey",
+        "after": "cùng key",
+        "count": 2
+      },
+      {
+        "before": "cùngreducer",
+        "after": "cùng reducer",
+        "count": 1
+      },
+      {
+        "before": "từngdoc",
+        "after": "từng doc",
+        "count": 1
+      },
+      {
+        "before": "bằngtaskversion",
+        "after": "bằng task version",
+        "count": 1
+      },
+      {
+        "before": "vàcounts",
+        "after": "và counts",
+        "count": 1
+      },
+      {
+        "before": "vàSpark",
+        "after": "và Spark",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD21",
+    "count": 19,
+    "reviewed_replacements": [
+      {
+        "before": "đúngtime10",
+        "after": "đúng time10",
+        "count": 1
+      },
+      {
+        "before": "thành18",
+        "after": "thành 18",
+        "count": 1
+      },
+      {
+        "before": "vàhiển",
+        "after": "và hiển",
+        "count": 1
+      },
+      {
+        "before": "lấymin",
+        "after": "lấy min",
+        "count": 1
+      },
+      {
+        "before": "offset42chứa",
+        "after": "offset42 chứa",
+        "count": 1
+      },
+      {
+        "before": "offset42có",
+        "after": "offset42 có",
+        "count": 1
+      },
+      {
+        "before": "cộng3,checkpoint",
+        "after": "cộng 3, checkpoint",
+        "count": 1
+      },
+      {
+        "before": "thêm3nếu",
+        "after": "thêm 3 nếu",
+        "count": 1
+      },
+      {
+        "before": "effectbền",
+        "after": "effect bền",
+        "count": 1
+      },
+      {
+        "before": "ackoffset",
+        "after": "ack offset",
+        "count": 1
+      },
+      {
+        "before": "vàoutput",
+        "after": "và output",
+        "count": 1
+      },
+      {
+        "before": "khácID",
+        "after": "khác ID",
+        "count": 1
+      },
+      {
+        "before": "vàpurchase",
+        "after": "và purchase",
+        "count": 1
+      },
+      {
+        "before": "cùngsession",
+        "after": "cùng session",
+        "count": 1
+      },
+      {
+        "before": "khoảng10phút",
+        "after": "khoảng 10 phút",
+        "count": 1
+      },
+      {
+        "before": "rowcuối",
+        "after": "row cuối",
+        "count": 1
+      },
+      {
+        "before": "ứng10",
+        "after": "ứng 10",
+        "count": 1
+      },
+      {
+        "before": "cộng23",
+        "after": "cộng 23",
+        "count": 1
+      },
+      {
+        "before": "tổng15",
+        "after": "tổng 15",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD22",
+    "count": 0,
+    "reviewed_replacements": []
+  },
+  {
+    "id": "AD68",
+    "count": 7,
+    "reviewed_replacements": [
+      {
+        "before": "cùngid",
+        "after": "cùng id",
+        "count": 1
+      },
+      {
+        "before": "qtyhai",
+        "after": "qty=hai",
+        "count": 1
+      },
+      {
+        "before": "ordero1",
+        "after": "order o1",
+        "count": 1
+      },
+      {
+        "before": "elementem",
+        "after": "element em",
+        "count": 1
+      },
+      {
+        "before": "text“",
+        "after": "text “",
+        "count": 1
+      },
+      {
+        "before": "itemskuC",
+        "after": "item skuC",
+        "count": 1
+      },
+      {
+        "before": "cùngorder",
+        "after": "cùng order",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD69",
+    "count": 19,
+    "reviewed_replacements": [
+      {
+        "before": "đúng80%",
+        "after": "đúng 80%",
+        "count": 1
+      },
+      {
+        "before": "score0.8",
+        "after": "score 0.8",
+        "count": 1
+      },
+      {
+        "before": "chương31",
+        "after": "chương 31",
+        "count": 1
+      },
+      {
+        "before": "termt",
+        "after": "term t",
+        "count": 1
+      },
+      {
+        "before": "Vectorw",
+        "after": "Vector w",
+        "count": 1
+      },
+      {
+        "before": "uniformv",
+        "after": "uniform v",
+        "count": 1
+      },
+      {
+        "before": "từi sangj",
+        "after": "từ i sang j",
+        "count": 1
+      },
+      {
+        "before": "vàr là",
+        "after": "và r là",
+        "count": 1
+      },
+      {
+        "before": "stationaryrC",
+        "after": "stationary rC",
+        "count": 1
+      },
+      {
+        "before": "stochasticP",
+        "after": "stochastic P",
+        "count": 2
+      },
+      {
+        "before": "cộtP",
+        "after": "cột P",
+        "count": 1
+      },
+      {
+        "before": "hiện10",
+        "after": "hiện 10",
+        "count": 2
+      },
+      {
+        "before": "nhận10",
+        "after": "nhận 10",
+        "count": 1
+      },
+      {
+        "before": "cả3nodes",
+        "after": "cả 3 nodes",
+        "count": 1
+      },
+      {
+        "before": "làdistribution",
+        "after": "là distribution",
+        "count": 1
+      },
+      {
+        "before": "cùngdoc",
+        "after": "cùng doc",
+        "count": 1
+      },
+      {
+        "before": "làmdf",
+        "after": "làm df",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD70",
+    "count": 4,
+    "reviewed_replacements": [
+      {
+        "before": "max-depth/ít",
+        "after": "max-depth/ít",
+        "count": 1
+      },
+      {
+        "before": "B1mẫu",
+        "after": "B 1 mẫu",
+        "count": 1
+      },
+      {
+        "before": "A3mẫu",
+        "after": "A 3 mẫu",
+        "count": 1
+      },
+      {
+        "before": "dfeatures",
+        "after": "d features",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD71",
+    "count": 24,
+    "reviewed_replacements": [
+      {
+        "before": "kitems",
+        "after": "k items",
+        "count": 1
+      },
+      {
+        "before": "L3rỗng",
+        "after": "L3 rỗng",
+        "count": 1
+      },
+      {
+        "before": "threshold0.5",
+        "after": "threshold 0.5",
+        "count": 2
+      },
+      {
+        "before": "mitems",
+        "after": "m items",
+        "count": 1
+      },
+      {
+        "before": "nonemptyitemsets",
+        "after": "nonempty itemsets",
+        "count": 1
+      },
+      {
+        "before": "Points1chiều",
+        "after": "Points 1 chiều",
+        "count": 1
+      },
+      {
+        "before": "centers0,10",
+        "after": "centers 0,10",
+        "count": 2
+      },
+      {
+        "before": "initialcenters",
+        "after": "initial centers",
+        "count": 1
+      },
+      {
+        "before": "maxiterations",
+        "after": "max iterations",
+        "count": 1
+      },
+      {
+        "before": "dfeatures",
+        "after": "d features",
+        "count": 1
+      },
+      {
+        "before": "Npoints",
+        "after": "N points",
+        "count": 1
+      },
+      {
+        "before": "kcenters",
+        "after": "k centers",
+        "count": 1
+      },
+      {
+        "before": "naiveO(",
+        "after": "naive O(",
+        "count": 1
+      },
+      {
+        "before": "updateO(",
+        "after": "update O(",
+        "count": 1
+      },
+      {
+        "before": "từ0thành",
+        "after": "từ 0 thành",
+        "count": 1
+      },
+      {
+        "before": "min-support0.5",
+        "after": "min-support 0.5",
+        "count": 1
+      },
+      {
+        "before": "min-support0.75",
+        "after": "min-support 0.75",
+        "count": 1
+      },
+      {
+        "before": "Tầng1:",
+        "after": "Tầng 1:",
+        "count": 1
+      },
+      {
+        "before": "count3nhưng",
+        "after": "count3 nhưng",
+        "count": 1
+      },
+      {
+        "before": "khôngfrequent",
+        "after": "không frequent",
+        "count": 1
+      },
+      {
+        "before": "Tầng2:",
+        "after": "Tầng 2:",
+        "count": 1
+      },
+      {
+        "before": "threshold0.75",
+        "after": "threshold 0.75",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD72",
+    "count": 21,
+    "reviewed_replacements": [
+      {
+        "before": "tổng35",
+        "after": "tổng 35",
+        "count": 1
+      },
+      {
+        "before": "cộng180",
+        "after": "cộng 180",
+        "count": 1
+      },
+      {
+        "before": "có2orders",
+        "after": "có 2 orders",
+        "count": 1
+      },
+      {
+        "before": "tổng20",
+        "after": "tổng 20",
+        "count": 1
+      },
+      {
+        "before": "có1order",
+        "after": "có 1 order",
+        "count": 1
+      },
+      {
+        "before": "tổng100",
+        "after": "tổng 100",
+        "count": 1
+      },
+      {
+        "before": "vàcount",
+        "after": "và count",
+        "count": 1
+      },
+      {
+        "before": "haymọirow",
+        "after": "hay mọi row",
+        "count": 1
+      },
+      {
+        "before": "với2dimensions",
+        "after": "với 2 dimensions",
+        "count": 1
+      },
+      {
+        "before": "vàdistinct",
+        "after": "và distinct",
+        "count": 1
+      },
+      {
+        "before": "vàreport",
+        "after": "và report",
+        "count": 1
+      },
+      {
+        "before": "cộngcounts",
+        "after": "cộng counts",
+        "count": 1
+      },
+      {
+        "before": "của2orders",
+        "after": "của 2 orders",
+        "count": 1
+      },
+      {
+        "before": "và100",
+        "after": "và 100",
+        "count": 1
+      },
+      {
+        "before": "của1order",
+        "after": "của 1 order",
+        "count": 1
+      },
+      {
+        "before": "không55",
+        "after": "không 55",
+        "count": 1
+      },
+      {
+        "before": "vàreload",
+        "after": "và reload",
+        "count": 1
+      },
+      {
+        "before": "vàlineage",
+        "after": "và lineage",
+        "count": 1
+      },
+      {
+        "before": "cótotal",
+        "after": "có total",
+        "count": 1
+      },
+      {
+        "before": "cùngcustomer2lần",
+        "after": "cùng customer 2 lần",
+        "count": 1
+      },
+      {
+        "before": "fixturecross-store",
+        "after": "fixture cross-store",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "AD73",
+    "count": 4,
+    "reviewed_replacements": [
+      {
+        "before": "thứhai",
+        "after": "thứ hai",
+        "count": 1
+      },
+      {
+        "before": "Tầng1:",
+        "after": "Tầng 1:",
+        "count": 1
+      },
+      {
+        "before": "Tầng2:",
+        "after": "Tầng 2:",
+        "count": 1
+      },
+      {
+        "before": "từversion5",
+        "after": "từ version5",
+        "count": 1
+      }
+    ]
+  }
+]

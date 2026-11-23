@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-05T17:22:37.021224+00:00",
+  "scope": "Task-local MySQL only; no Windows service registered or other instance stopped.",
+  "config": "tmp/database-source/mysql-task.ini",
+  "port": 33374,
+  "verifiedOwnedProcessIdsBeforeShutdown": [
+    32140,
+    10792
+  ],
+  "shutdown": "mysqladmin on 127.0.0.1:33374 after exact executable/config identity check; exited 0",
+  "verifiedOwnedProcessesAfterShutdown": 0,
+  "verification": "Elevated Win32_Process CIM query filtered to mysql-task.ini returned Count=0",
+  "qaReport": "qa/usth-lecture67-checks.json",
+  "schemaCreatedFresh": "pe_usth67_af07e3e10c57",
+  "schemaDisposition": "Retained in task data directory; no DROP"
+}

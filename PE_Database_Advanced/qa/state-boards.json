@@ -1,0 +1,395 @@
+{
+  "count": 24,
+  "boards": [
+    {
+      "id": "AD03",
+      "path": "assets/state-boards/AD03.png",
+      "states": [
+        "Khởi tạo: result=AB; các FD được tô “đủ LHS” hoặc “chưa đủ”.",
+        "Dùng AB→C: result=ABC; thẻ C vừa được thêm, chưa xóa thẻ nào.",
+        "Dùng C→D: result=ABCD; mở dẫn xuất AB→C→D.",
+        "Dùng D→E: result=ABCDE; đánh dấu đã phủ schema.",
+        "Quét không đổi: trả closure; kiểm tối thiểu của khóa là nhiệm vụ khác."
+      ],
+      "width": 1380,
+      "height": 789,
+      "lessonSha256": "1da2beb97aced993745b0642709b74d0128880ce020060e8ba77161943f679b1",
+      "imageSha256": "4e7d99073adf7b9cbdc49309bd3d588b8c475a30a69549e8e679fcf2f18033c4",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD05",
+      "path": "assets/state-boards/AD05.png",
+      "states": [
+        "R=ABCD; B+=BC, đánh dấu thiếu A,D nên B→C là vi phạm.",
+        "Tách thành BC,ABD; giao B được tô cùng chứng cứ B→BC.",
+        "Trên ABD, A+=AB trong schema này, thiếu D; chọn A→B.",
+        "Tách thành BC,AB,AD; mỗi relation có key hoặc không có FD vi phạm.",
+        "Kiểm hai bảo đảm riêng: lossless qua từng bước; preservation qua closure của union FD chiếu."
+      ],
+      "width": 1380,
+      "height": 819,
+      "lessonSha256": "3cc1c4c40c2ea5b5ac6178cb8a9b70ae5cad5fd56f2a41bba0c8418d9f4d1433",
+      "imageSha256": "c147c2f738d05fcace8138f807e969b25a7058fe0330817fe82df9afc863e739",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD06",
+      "path": "assets/state-boards/AD06.png",
+      "states": [
+        "Hiện cover cùng closure A+=ABC và D chưa được sinh.",
+        "Tạo AB,BC; mỗi FD được nối với relation có đủ hai vế.",
+        "Kiểm relation chứa candidate key: cả hai đều không chứa AD.",
+        "Thêm AD; nối tuple seed của AD tới bước chase bằng các FD.",
+        "Closure AD đạt ABCD; đánh dấu ba kiểm riêng: 3NF, preservation, lossless."
+      ],
+      "width": 1380,
+      "height": 789,
+      "lessonSha256": "283aab135f76cf0fb52c7b652f7e9ab0717008da8546657d6d0df15923a9e598",
+      "imageSha256": "5fdb4517b51934ce44668cebddc6f19f219251122932fa63e4fae4c36a0637f8",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD10",
+      "path": "assets/state-boards/AD10.png",
+      "states": [
+        "R={1}, frontier={1}; đỉnh 1 sáng, chưa duyệt cạnh.",
+        "Mở 1, next={2,3}; R={1,2,3}; hai đỉnh mới vào frontier.",
+        "Mở 2 và 3, cả hai dẫn tới 4; set next chỉ có {4}, R={1,2,3,4}.",
+        "Mở 4 gặp 2 đã thuộc R; next rỗng, thuật toán dừng.",
+        "Đổi state thành (v,depth): (2,3) khác (2,1); tô rõ lý do DISTINCT không chặn walk mới."
+      ],
+      "width": 1380,
+      "height": 789,
+      "lessonSha256": "cf1a249e4922dfe823b9cb7170c47e3b9ba82612706e6709a204a43442872427",
+      "imageSha256": "9d46e13801ff60a2c184737688563c8a4b70d2f961a5c8207a76aba13a074ff8",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD25",
+      "path": "assets/state-boards/AD25.png",
+      "states": [
+        "A(1,1,0), B(0,1,1), C(0,1,0) · Kim A; A không evictable",
+        "A giữ nguyên; B ref 0; C ref 0 · Quét bỏ A và cho B,C cơ hội thứ hai",
+        "B được chọn · Phải flush B theo giao thức trước tái dùng vì dirty",
+        "D thay B, pin 1,ref 1,dirty 0 · Mapping B bị bỏ; handle D mới được công bố",
+        "A unpin→0; D vẫn pin 1 · Lần chọn sau có tập ứng viên mới; không chọn D"
+      ],
+      "width": 1380,
+      "height": 789,
+      "lessonSha256": "52eaf5aa07020eb881eb509a0e2b4f9362a1637d79ad54782127abe4d5ecb3e4",
+      "imageSha256": "bacf83b028c0ed11288db6eafed739d88717b3f966e48edde34a7c18f4644e03",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD27",
+      "path": "assets/state-boards/AD27.png",
+      "states": [
+        "Leaf[10,20,30] · Root là leaf, chưa có separator",
+        "Chèn 25→[10,20,25,30] · Overflow là trạng thái tạm",
+        "Root[25], leaf[10,20]→[25,30] · Copy 25 vào root;25 vẫn là entry leaf",
+        "Chèn 5→[5,10,20] · Không split khi chưa vượt max",
+        "Chèn 15→root[15,25], leaves[5,10]→[15,20]→[25,30] · Leaf link và parent cùng được sửa"
+      ],
+      "width": 1380,
+      "height": 819,
+      "lessonSha256": "882709422d93182c7a6a4f207a935fc79cf49c7ee4239cfe54a4b3dc0817a696",
+      "imageSha256": "688d4a897001853f0f8ca15dd48d4ad35b869b1f1900d9192cdaf4b07f67a557",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD33",
+      "path": "assets/state-boards/AD33.png",
+      "states": [
+        "R=A,S=A · Thu nhóm R size 2 và S size 3",
+        "Cùng nhóm A · Phát 6 cặp, không chỉ 2",
+        "R=C,S=B · B nhỏ hơn C nên tiến S",
+        "R=C,S=C · Phát(r3,s5)",
+        "R hoặc S cạn · Tổng 7 cặp; kết thúc inner join"
+      ],
+      "width": 1380,
+      "height": 789,
+      "lessonSha256": "a56d7028b24a9ae2cd5f6c3ecd9a17982904529fc47dab1478db0fd082296ade",
+      "imageSha256": "26e0c94fb465292ad71894d7cb88339fee706d32c729e16aeddf073c49f860ae",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD36",
+      "path": "assets/state-boards/AD36.png",
+      "states": [
+        "R=5, S=5, T=5 · Access path cơ sở",
+        "RS=20, ST=12, RT=110 · Giữ từng tập, không chọn một cặp toàn cục duy nhất",
+        "RST qua RS=30 · Một ứng viên cho phép nối gốc",
+        "RST qua ST=67, qua RT=135 · So mọi phân hoạch trong model",
+        "Chọn 30 · Tối ưu trong không gian và cost đã cho"
+      ],
+      "width": 1380,
+      "height": 789,
+      "lessonSha256": "657410797f840102b367179dc0a7f923d03d78d2d47b249a5c2323cc6752eb0c",
+      "imageSha256": "f48939822a0dd0a0816e0134e2a7850d2e9abc423ab3d9045f58c59af9b7a182",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD38",
+      "path": "assets/state-boards/AD38.png",
+      "states": [
+        "Nhập r1(A),r2(A),w1(A),w2(A); có hai đỉnh, chưa có cạnh.",
+        "Chọn r1(A),w2(A): thêm T1→T2 và lưu vị trí1,4.",
+        "Chọn r2(A),w1(A): thêm T2→T1 và lưu vị trí2,3.",
+        "Hàng đợi indegree0 rỗng: tô đường T1→T2→T1, không tạo thứ tự serial giả.",
+        "Đổi lịch thành r1(A),w1(A),r2(A),w2(A): chỉ còn cạnh T1→T2; output T1,T2."
+      ],
+      "width": 1380,
+      "height": 789,
+      "lessonSha256": "d2085baca4c16cdca89018e93355096475c363058a60a7bb47cc544b69f3e6f4",
+      "imageSha256": "359045f2e393ff83356b2ff4c4b71644d7166a5876bde0b86aa8c22e55f2e632",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD42",
+      "path": "assets/state-boards/AD42.png",
+      "states": [
+        "Snapshot0: row1=1,row2=1; cả T1,T2 đọc tổng2.",
+        "T1 chuẩn bị write row1=0, T2 chuẩn bị write row2=0; hai write set rời nhau.",
+        "Kiểm write/write: không overlap; model cho cả hai commit.",
+        "Trạng thái mới (0,0) bác invariant và khác hai serial executions của chương trình.",
+        "Thêm row điều phối: một transaction nhận lock trước, bên sau đọc lại tổng sau commit và giữ người cuối."
+      ],
+      "width": 1380,
+      "height": 819,
+      "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+      "imageSha256": "548764d8cd5f1c7c38e70d103bbfc8a394375703780e2a70a5db56d41290a6fc",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD44",
+      "path": "assets/state-boards/AD44.png",
+      "states": [
+        "Input log10..60, TT cho T1 committed và T2 active; storage P20,Q0.",
+        "DPT P20,Q40; redo20 được bỏ,40 và60 được áp.",
+        "Undo60 tạo CLR70, C về0; hàng chờ undo còn40.",
+        "Crash sau CLR70 bền nhưng page chưa flush: storage P60,C30.",
+        "Restart redo70, rồi undo đi theo undoNextLSN40 và tạo CLR80.",
+        "T2 end; A10,B0,C0. T1 không bị undo."
+      ],
+      "width": 1380,
+      "height": 917,
+      "lessonSha256": "2b4557e5d4341023edae40add7307cd9e61388a6a6d2064c8122a479f6c15abb",
+      "imageSha256": "a904bfd3e9e7d230e5d52dd72ee5fbb9994bdfa1d817854902fd0ae2e6f471d0",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD48",
+      "path": "assets/state-boards/AD48.png",
+      "states": [
+        "R có hai rowA và mộtB, S có haiA và mộtC; tô mỗi row bằng ID giữ nguyên duplicates.",
+        "Exchange gửi theo key, hiển thị số byte/row ở từng worker theo giả định.",
+        "Local join tạo bốn cặpA; hash collisionB/C vẫn không tạo match.",
+        "Đổi sang broadcastS, chỉ một bảnR mỗi nơi tạo các cặp của chính nó.",
+        "Bật hotkey và so công việc/traffic, không gắn nhãn một phương án luôn thắng."
+      ],
+      "width": 1380,
+      "height": 789,
+      "lessonSha256": "4fdd391de1234ff09d6840c62d9e512a50a5603b3770e7ee539364bdcf05090e",
+      "imageSha256": "4e70176a9a7d47debd3e03d5f8d47c136bc6aadb31018d833baf712a95b47780",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD50",
+      "path": "assets/state-boards/AD50.png",
+      "states": [
+        "C,P1,P2 có cùng transactionID, local work chưa kết thúc.",
+        "P1 vàP2 ghiPREPARED bền rồiYES; log RAM và log bền hiển thị riêng.",
+        "C ghiCOMMIT bền; decision trở thành bất biến.",
+        "P1 nhận COMMIT; message tớiP2 bị trì hoãn.",
+        "CrashC rồi restart; log decision dẫn đến gửi lại COMMIT.",
+        "P2 commit; message trùng chỉ trảACK, không cập nhật tiền lần nữa."
+      ],
+      "width": 1380,
+      "height": 917,
+      "lessonSha256": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+      "imageSha256": "97d5e5a94f47b3858fc739c917e4138b1e620656393a5a9f09ec2d381f802142",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD51",
+      "path": "assets/state-boards/AD51.png",
+      "states": [
+        "Ba replica A,B,C có tag7,value100, cùng một membership.",
+        "Writer gửi tag8,value90 tớiA,B và nhận ACK theo contract.",
+        "Read hỏi B,C, nhìn thấy8 và7; lựa chọn tag được hiển thị cùng lý do.",
+        "Bật một write chưa hoàn tất chỉ tớiA; hai read tiếp theo tạo ca quay về cũ nếu thiếu bước protocol cần thiết.",
+        "Thêm bước publish/write-back theo mô hình register đã chọn, rồi kiểm lại lịch read sau."
+      ],
+      "width": 1380,
+      "height": 849,
+      "lessonSha256": "a3473a99466ea8dce79569095d8a51d3cb6f7bdcb4362f7489a246450a9516e3",
+      "imageSha256": "3a2bd15cb0d1288af9b62eddc576a7d85ad888059933aa13979636c20b012d0d",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD52",
+      "path": "assets/state-boards/AD52.png",
+      "states": [
+        "A,B,C chưa có promise/accepted; P muốn chọnX ở proposal5.",
+        "A,B promise5; P gửi ACCEPT(5,X).",
+        "A,B ghiaccepted bền: X chosen, nhưng notification bị mất.",
+        "Q dùng8, B,C promise; B trả(5,X), C rỗng.",
+        "Q kế thừaX, B,C accept(8,X); không có value mớiY chosen.",
+        "Bật mutant bỏ kế thừa để tìm trace vi phạm, giữ nhãn đây là protocol lỗi."
+      ],
+      "width": 1380,
+      "height": 917,
+      "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+      "imageSha256": "5606fecd364c416ac0cdc776cce9d83c39cbda6522be0cd025ed99490d1dd858",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD55",
+      "path": "assets/state-boards/AD55.png",
+      "states": [
+        "SQL cùng schema: tên id/cohort được gắn đúng table và kiểu.",
+        "Biểu thức logic: filter cohort='A', projection id, order id; chưa gán operator vật lý.",
+        "Planner xét scan/index và chi phí với statistics đã có; một plan được chọn theo fixture.",
+        "Executor mở các node, lấy candidate và kiểm predicate/visibility thích hợp.",
+        "Trả rows1,2; plan/thời gian thật chỉ được hiện nếu runner đã tạo artifact."
+      ],
+      "width": 1380,
+      "height": 789,
+      "lessonSha256": "e3b9b6437f987b9a2121a3198f9730bf7db7d954b836999e32b34b466dad259e",
+      "imageSha256": "cb537abbe99ff213892940ac1ab51d7910dc6fbd62316a48abe4620be2bc6ce0",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD58",
+      "path": "assets/state-boards/AD58.png",
+      "states": [
+        "SQL được phân giải tới function có signature(integer,integer) và metadata STRICT.",
+        "Loader tìm library/symbol theo extension đã cài; version/magic phải phù hợp.",
+        "Interface chuyển hai đối số không NULL tới PG_GETARG_INT32.",
+        "Code nâng lên int64, tổng 42 nằm trong int32 nên trả 42.",
+        "Executor nhận Datum đúng type và dựng row kết quả.",
+        "Đổi input thành maxint32+1: đi nhánh ERROR, rollback theo phạm vi đã định nghĩa, không có output số."
+      ],
+      "width": 1380,
+      "height": 947,
+      "lessonSha256": "5900d1d34bc47eb918e578f9609048c4b7ae6e569bb3640796a24d0be06eb5c3",
+      "imageSha256": "521b9fa3d612d76fd0c169f3afa1e4f03de05a835e7ababa4137f99efc1c3e90",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD59",
+      "path": "assets/state-boards/AD59.png",
+      "states": [
+        "Hiện graph AI→DB,AI→OS,OS→DB và policy grade A/B/C.",
+        "Fixpoint giữ required(AI,DB),(AI,OS), không nhân DB do hai đường.",
+        "S1 tìm được hai chứng nhân Takes đạt, không có phản ví dụ.",
+        "S2 bị môn OS làm chứng thiếu; S3 bị DB chưa đạt; S4 thiếu cả hai.",
+        "Trả S1; đổi grade OS của S1 thành NULL làm kết quả rỗng và hết hiệu lực kết quả trước."
+      ],
+      "width": 1380,
+      "height": 819,
+      "lessonSha256": "8b02003b53f7312db50270b6a699ea35759113c90ed40a9da515ce499e8b8d3e",
+      "imageSha256": "2b4302f55f545d30ee1dd382334f93d15a6472b1593e18ebbf61647b4b2ef54e",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD62",
+      "path": "assets/state-boards/AD62.png",
+      "states": [
+        "Năm node có prefix index1,t1; hiển thị term/vote/log bền riêng.",
+        "X t2 có hai bản, Y t3 có một bản; không entry nào ởindex2 được model đánh dấu commit.",
+        "Leader term4 replicate old X tới majority; nút commit vẫn từ chối vì thiếu entry term4.",
+        "Thêm no-op index3,t4 và replicate majority; commitIndex tăng3.",
+        "Candidate chỉ có last term3 xin vote bị voter cót4 từ chối."
+      ],
+      "width": 1380,
+      "height": 819,
+      "lessonSha256": "0c66ab2f57450ea475c863bb22b0fc341e5c30c8ae479bbab3ee6b5ed013ee58",
+      "imageSha256": "90d1b52fdc64b11319ebbde13b3e34ee2304b3ee1495f2f09c1cc3bf0f79f9ad",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD65",
+      "path": "assets/state-boards/AD65.png",
+      "states": [
+        "Giữ các lock cần thiết; khoảng khi chọn là [98,102] ms, nên commit timestamp tc=102 ms.",
+        "Kiểm lại được [101,105] ms; lower bound 101 chưa lớn hơn tc, nên chưa công bố hoàn tất.",
+        "Kiểm lại được [103,107] ms; lower bound 103 đã qua tc. Các điều kiện atomic commit và log bền vẫn phải thỏa riêng.",
+        "Reader yêu cầu snapshot r=105 ms; transaction khác có tc=104 ms còn prepared nên reader chưa được trả version cũ.",
+        "Đợi outcome, visibility và bằng chứng safe time: không còn transaction đến muộn có thể tạo commitTS≤105 ms chưa được phản ánh. Sau đó mới trả snapshot."
+      ],
+      "width": 1380,
+      "height": 939,
+      "lessonSha256": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1",
+      "imageSha256": "d70c70b8fa70ee38f76862a5005feedd2720da09f9c746ca3725dd88dd7b8414",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD75",
+      "path": "assets/state-boards/AD75.png",
+      "states": [
+        "Khởi tạo · 00000000 · Chưa có key được insert",
+        "Add 1, đặt vị trí 1 và 4 · 01001000 · Mọi bit query của key 1 đều là 1",
+        "Add 2, đặt vị trí 2 và 7 · 01101001 · Không clear bit của key 1; key 2 cũng được bảo vệ",
+        "Query 3 kiểm vị trí 3 và 2 · Vị trí 3 là 0 → ABSENT · Chỉ một bit 0 đã đủ chứng minh âm trong contract",
+        "Query 9 kiểm vị trí 1 và 4 · Cả hai là 1 → MAYBE · Exact set {1,2} không có 9: đây là false positive",
+        "Query lại 1 và 2 · Cả hai trả MAYBE · Hai key đã insert không bị false negative; vẫn cần exact lookup để báo FOUND"
+      ],
+      "width": 1380,
+      "height": 1007,
+      "lessonSha256": "7bdc9111b9e9d654c916b0ce6d393d702de6e7df6fe5d9081380911c9d6df0b8",
+      "imageSha256": "7cb35b775ab1a048d3d19caee7b69fe23b8cd2622cdb68c089261c647130f2ef",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD77",
+      "path": "assets/state-boards/AD77.png",
+      "states": [
+        "Mở R,S; chọn R row 1, S row 10 · Chưa có · 0",
+        "So A=A ở (1,10) · (1,10) · 1",
+        "So (1,11) không match; (1,12) match · (1,12) · 3",
+        "R sang row 2, reset S về row 10 · (2,10) · 4",
+        "So (2,11) không match; (2,12) match · (2,12) · 6",
+        "S cạn rồi R cạn; đóng cursors · Tổng 4 cặp, không xóa duplicate key A · 6=2×3"
+      ],
+      "width": 1380,
+      "height": 917,
+      "lessonSha256": "7e8fcdf422793e25c1f727976a4c49201dfe32764b12bdc696a8069b6a9847ea",
+      "imageSha256": "0000067fadb5f8d737ec5aa3d1229d2498cf70fce8969ddc11b1939daf396dcc",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD83",
+      "path": "assets/state-boards/AD83.png",
+      "states": [
+        "Q tồn tại, T là child, current=Q; chưa có chunk.",
+        "Switch sang T; tmp→A, owner(A)=T, bytes(A)=\"Lan\".",
+        "Switch về Q; tạo saved→B, owner(B)=Q, bytes(B)=\"Lan\"; A và B khác nhau.",
+        "Reset T; A hết hạn, T còn tồn tại, B hợp lệ; edge tới A được tô lỗi nếu dùng.",
+        "Consumer dùng B rồi kết thúc Q; Q, T và B được thu hồi; không còn quyền đọc B."
+      ],
+      "width": 1380,
+      "height": 789,
+      "lessonSha256": "bc86307fab7df1bf83d0e732b643f27a250f7b87953c72be390aa2ead2b4548b",
+      "imageSha256": "fe7475713194d93783d202083d47711f74e68eb4454922f264d3437a7407267c",
+      "mode": "prepared illustration, not runtime trace"
+    },
+    {
+      "id": "AD84",
+      "path": "assets/state-boards/AD84.png",
+      "states": [
+        "Root model có tag ADD, hai child hợp lệ; chưa đánh giá.",
+        "Dispatch chọn nhánh ADD, leaf 7 và NEGATE(2) cho kết quả 5; không cast node tùy ý.",
+        "Clone tạo bốn node độc lập; sửa leaf gốc không thay bản sao.",
+        "Slot chứa (10,'An'), descriptor xác nhận integer/text; d là reference mượn, isnull=false.",
+        "Copy note sang R; slot được clear/reuse cho (20,'Binh'); chỉ owned note còn hợp đồng dùng về sau."
+      ],
+      "width": 1380,
+      "height": 849,
+      "lessonSha256": "624a1a95562786630f4a79a63bb4f036d380b15807ba0f2a3b95c036426ba0f5",
+      "imageSha256": "9f5ab2c1c11b4f82fe2cac312c8ee03338a51db47b118d9c9466c4227a74db74",
+      "mode": "prepared illustration, not runtime trace"
+    }
+  ]
+}

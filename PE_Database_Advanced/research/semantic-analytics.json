@@ -1,0 +1,2062 @@
+{
+  "auditType": "Full source semantic continuation: warehouse, OLAP, mining and materialized-view maintenance",
+  "date": "2026-11-05",
+  "status": "complete",
+  "semanticStatus": "complete",
+  "scopeLessonIds": [
+    "AD18",
+    "AD19",
+    "AD70",
+    "AD71",
+    "AD72"
+  ],
+  "scopeNote": "All22 chapter11 own bodies plus seven AD18-mapped section16.5 bodies were directly read and compared to full current lessons. AD37 is a secondary inventory owner and was not edited or credited by this batch. Unassigned16.5 parent was read for context;16.5.3/16.5.4 remain outside this batch. No baseline lesson or prior-agent intent receives credit. USTH page review is coordinated separately by root.",
+  "inventorySha256": "5d0d4501d686d1d36cf16e960f8aecfc65a047b3d70032df3d07631abab6977b",
+  "sourceBookSha256FromInventory": "2cda5df12b8a5ed4f93e69e95c876ff7d07f49ece352c3962157572030178b05",
+  "lessonSha256": {
+    "AD18": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+    "AD19": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+    "AD70": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+    "AD71": "6d8cd53f34a48bcada02852fdb44cba1f8b2af92802da5f792f59419b198d53f",
+    "AD72": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62"
+  },
+  "counts": {
+    "assignedUnits": 29,
+    "coveredAfterFix": 29,
+    "partial": 0,
+    "pending": 0,
+    "chapter11Units": 22,
+    "ad18Units": 7,
+    "sourceOwnBodyWords": 15219
+  },
+  "readRangesByReviewer": {
+    "reviewer": "er_full_gate_complete",
+    "sourceFullContiguousRanges": {
+      "tmp/database-source/chapter-11.txt": [
+        [
+          1,
+          1645
+        ]
+      ],
+      "tmp/database-source/chapter-16.txt": [
+        [
+          1478,
+          1654
+        ]
+      ]
+    },
+    "lessonsFullyRead": [
+      "output/database-advanced/lessons/AD18.md",
+      "output/database-advanced/lessons/AD19.md",
+      "output/database-advanced/lessons/AD70.md",
+      "output/database-advanced/lessons/AD71.md",
+      "output/database-advanced/lessons/AD72.md"
+    ],
+    "figuresInspected": [
+      "11.1",
+      "11.2",
+      "11.3",
+      "11.4",
+      "11.5",
+      "11.6",
+      "11.7",
+      "11.8",
+      "11.9",
+      "11.10",
+      "11.11",
+      "11.12"
+    ],
+    "sourcePdfPagesInspected": [
+      551,
+      554,
+      557,
+      558,
+      559,
+      560,
+      561,
+      562,
+      563,
+      568,
+      571,
+      573
+    ],
+    "renderedContactSheets": [
+      {
+        "path": "tmp/pdfs/analytics-source/contact-1.png",
+        "sha256": "15ac6484b9d5f7fd2218cdea76f00861599e31b98f0a28f5f800954274bb6fd7",
+        "visuallyInspected": true
+      },
+      {
+        "path": "tmp/pdfs/analytics-source/contact-2.png",
+        "sha256": "7f60a6d53d01282164091adba3ec7ea13d1055d4da36df16bcd4c230039b7cb7",
+        "visuallyInspected": true
+      },
+      {
+        "path": "tmp/pdfs/analytics-source/contact-3.png",
+        "sha256": "ca98e941804ee5ae7b40a05b36f4f4d73ea71a66fa455447dc05fcdc6936c26e",
+        "visuallyInspected": true
+      },
+      {
+        "path": "tmp/pdfs/analytics-source/contact-4.png",
+        "sha256": "1e34699761e3d826c70a3c25a0bb95192ba37a0d5b5ce0fc80eaca389d5018c8",
+        "visuallyInspected": true
+      },
+      {
+        "path": "tmp/pdfs/analytics-source/contact-5.png",
+        "sha256": "8802b8a6eb24e4d480d37af722a4748b5cc379e7c35ca674c06bb0769273b002",
+        "visuallyInspected": true
+      },
+      {
+        "path": "tmp/pdfs/analytics-source/contact-6.png",
+        "sha256": "d4cef748a6e75949bc774babaa256fa90740063edf25e9fb506c50b8b8c995d9",
+        "visuallyInspected": true
+      }
+    ]
+  },
+  "changesThisContinuation": [
+    "AD18 adds manual/trigger/native and immediate/deferred maintenance, set membership differential laws and bottom-up expression/DAG trace with independent answered activity.",
+    "AD19 adds semiautomatic KDD boundaries, entity mention/linking ambiguity, aspect sentiment, structured facts/knowledge-graph provenance and a complete answered activity.",
+    "AD70 adds joint-configuration sparsity, histogram boundary, geometric SVM/support vectors, multiclass softmax and a numerical gradient update with an answered activity; no training-quality claim.",
+    "AD71 adds objective distinctions and explicit item-group collaborative filtering/co-clustering protocol, missing/holdout/termination limits and an answered activity.",
+    "AD72 adds analytics/decision-support roles, complete warehouse components/cleansing/schema integration/ETL/ELT/freshness, concrete star/snowflake dimensions, cube cells/grouping sets/hierarchy limits, relational cross-tab/pivot, MOLAP/ROLAP/HOLAP/partial aggregates, row-column tradeoffs, lake query contracts and reporting/visualization with three answered activities."
+  ],
+  "sourceCaveats": [
+    "Chapter11.2.3 says warehouse records are never updated and therefore no concurrency-control overhead is needed. The lesson explicitly limits that simplifying model and retains snapshot/refresh/correction coordination.",
+    "Figure11.7 displays repeated dark/pastel values inconsistent with the source fact rows/earlier cross-tab. Lesson fixtures and totals are original and computed independently.",
+    "Section16.5.2.3 count(B) prose omits SQL NULL detail; lesson distinguishes row_count and nonnull_count and preserves SQL SUM/AVG all-NULL/group-disappearance behavior.",
+    "Book omits many ML solver and tree-building details. Original toy algorithms/proofs/calculations teach mechanics; neither model quality, convergence for every solver nor large-data benchmark is inferred.",
+    "Historical vendor/tool support statements are not repeated as current recommendations. MySQL examples are explicitly expected outputs, not SQL execution evidence."
+  ],
+  "validation": {
+    "path": "output/database-advanced/qa/analytics-full-checks.json",
+    "sqlRuntimeUsed": false,
+    "heavyTrainingRuntimeUsed": false,
+    "allPassed": true,
+    "checkCount": 32,
+    "reportSha256": "a1704f32ee804e6bc03e8f832303365e6af97f4aeeda73b1af61f1064ff662e2",
+    "claimLimit": "Finite answer/model checks and cryptographic freshness supplement the manual full-source content judgments. They do not automatically establish source completeness, model quality or runtime/transaction performance."
+  },
+  "units": [
+    {
+      "section": "11.1",
+      "title": "Overview of Analytics",
+      "primaryLesson": "AD72",
+      "inventoryOwners": [
+        "AD72"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 24,
+        "ownLineEnd": 107,
+        "ownBodySha256": "85a188c5c2c1b81b60607fcae5b99e9907fd341e1f3831ada49fce1a55602f33",
+        "ownBodyWordCount": 1030,
+        "sourcePdfPage": 548,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 15,
+        "lineEnd": 15,
+        "exactParagraph": "Trong phạm vi sách, analytics/BI là các khái niệm rộng, gồm tổng hợp/report/visualization và tìm patterns/models dự đoán; decision support nhấn mạnh reporting/aggregation. OLAP là phân tích tương tác nhiều aggregates với thời gian phản hồi đủ ngắn để analyst đặt câu hỏi tiếp, không chỉ tên một kiểu chart. Statistical analysis kiểm mối quan hệ/uncertainty, còn mining/ML ở AD19/70/71 học patterns để dùng cho instances mới. Query trả đúng sales đã có chưa đo được chất lượng dự đoán sales tháng sau. Đội vận hành phải chốt câu hỏi và cost của quyết định: dự trữ thiếu gây mất đơn, dự trữ thừa gây hàng tồn; dự đoán cần protocol đánh giá tương ứng, không mặc định quy tắc rút từ quá khứ luôn đúng.",
+        "paragraphSha256": "cce3aa9d871cfc983709a913eca6eb82e0b5282ff42c3e173c6cf111fc7ffec1",
+        "locator": "Trong phạm vi sách, analytics/BI",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 13,
+        "lineEnd": 13,
+        "exactParagraph": "Một truy vấn OLTP thường đọc/sửa ít rows cho một giao dịch như nhận một order; một truy vấn decision-support có thể quét nhiều tháng để so doanh thu theo vùng. Cùng SQL nhưng workload, latency và cách đọc kết quả khác nhau. Warehouse gom nhiều nguồn có schemas/quyền truy cập khác nhau thành một giao diện phân tích và giữ lịch sử khi hệ nguồn chỉ còn state hiện tại; nó cũng tách phần lớn report workload khỏi đường giao dịch. Loader vẫn có thể gây tải nguồn, nên “tách workload” chưa nghĩa extract không có chi phí.",
+        "paragraphSha256": "619109ca778464f7f8a61745624228da00b7f5a9374d1f5c83ba3d12282c1541",
+        "locator": "Một truy vấn OLTP thường",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 124,
+        "lineEnd": 124,
+        "exactParagraph": "5. Hai nguồn gửi cùng order theo cents và currency units; hai customer names gần giống, hai người khác nhau cùng địa chỉ, orders frontier200 và returns frontier150. Thiết kế integrated schema/cleansing/dedup/householding policy, freshness label và cách replay. So ETL với ELT và nêu một truy vấn không trả được nếu chỉ giữ monthly totals.",
+        "paragraphSha256": "15add7325a7358c77e9d82f4b3d66c4827453c53de5ba4288ed4a7821ad565af",
+        "locator": "5. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 140,
+        "lineEnd": 140,
+        "exactParagraph": "5. Giữ source/key/version và normalize cents1000 thành10 theo cùng currency contract trước khi SUM; gộp duplicate order chỉ khi có identity/evidence, không chỉ vì amount bằng nhau. Fuzzy name match tạo candidates; cùng household có thể cho một mailing nhưng vẫn giữ hai Person IDs. Công bố report ở frontier/version orders/returns đã phối hợp hoặc ghi rõ hai cutoffs không phải snapshot chung; replay dedup theo batch/event identity. ETL transform trước load curated,ELT load raw/staging rồi transform trong hệ đích, cả hai cần lineage/quality. Monthly totals không cho từng order,category chưa lưu hoặc detail để drill down; không bịa phân bố từ một tổng.",
+        "paragraphSha256": "77cf15762d211e25d4fac16d9f39feb1e6d1ee5a6eab1c1ca893b7724479e1a6",
+        "locator": "5. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "semanticJudgment": "Analytics/BI, decision support, statistical analysis, interactive OLAP and predictive mining are distinguished; multi-source integration/history and workload separation are explained without claiming every future prediction is valid.",
+      "algorithmProofAssessment": "Cube construction has an induction invariant and explicit exponential grouping cost; reports/storage/ETL examples are design/model evidence, not measured runtime."
+    },
+    {
+      "section": "11.2",
+      "title": "Data Warehousing",
+      "primaryLesson": "AD72",
+      "inventoryOwners": [
+        "AD72"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 108,
+        "ownLineEnd": 132,
+        "ownBodySha256": "4189dbf29a140d2ed1bd2577e746f7fb45327e008d5a3a4e5c155493afe40077",
+        "ownBodyWordCount": 267,
+        "sourcePdfPage": 550,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 13,
+        "lineEnd": 13,
+        "exactParagraph": "Một truy vấn OLTP thường đọc/sửa ít rows cho một giao dịch như nhận một order; một truy vấn decision-support có thể quét nhiều tháng để so doanh thu theo vùng. Cùng SQL nhưng workload, latency và cách đọc kết quả khác nhau. Warehouse gom nhiều nguồn có schemas/quyền truy cập khác nhau thành một giao diện phân tích và giữ lịch sử khi hệ nguồn chỉ còn state hiện tại; nó cũng tách phần lớn report workload khỏi đường giao dịch. Loader vẫn có thể gây tải nguồn, nên “tách workload” chưa nghĩa extract không có chi phí.",
+        "paragraphSha256": "619109ca778464f7f8a61745624228da00b7f5a9374d1f5c83ba3d12282c1541",
+        "locator": "Một truy vấn OLTP thường",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 13,
+        "lineEnd": 13,
+        "exactParagraph": "Một truy vấn OLTP thường đọc/sửa ít rows cho một giao dịch như nhận một order; một truy vấn decision-support có thể quét nhiều tháng để so doanh thu theo vùng. Cùng SQL nhưng workload, latency và cách đọc kết quả khác nhau. Warehouse gom nhiều nguồn có schemas/quyền truy cập khác nhau thành một giao diện phân tích và giữ lịch sử khi hệ nguồn chỉ còn state hiện tại; nó cũng tách phần lớn report workload khỏi đường giao dịch. Loader vẫn có thể gây tải nguồn, nên “tách workload” chưa nghĩa extract không có chi phí.",
+        "paragraphSha256": "619109ca778464f7f8a61745624228da00b7f5a9374d1f5c83ba3d12282c1541",
+        "locator": "Warehouse gom nhiều nguồn",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 124,
+        "lineEnd": 124,
+        "exactParagraph": "5. Hai nguồn gửi cùng order theo cents và currency units; hai customer names gần giống, hai người khác nhau cùng địa chỉ, orders frontier200 và returns frontier150. Thiết kế integrated schema/cleansing/dedup/householding policy, freshness label và cách replay. So ETL với ELT và nêu một truy vấn không trả được nếu chỉ giữ monthly totals.",
+        "paragraphSha256": "15add7325a7358c77e9d82f4b3d66c4827453c53de5ba4288ed4a7821ad565af",
+        "locator": "5. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 140,
+        "lineEnd": 140,
+        "exactParagraph": "5. Giữ source/key/version và normalize cents1000 thành10 theo cùng currency contract trước khi SUM; gộp duplicate order chỉ khi có identity/evidence, không chỉ vì amount bằng nhau. Fuzzy name match tạo candidates; cùng household có thể cho một mailing nhưng vẫn giữ hai Person IDs. Công bố report ở frontier/version orders/returns đã phối hợp hoặc ghi rõ hai cutoffs không phải snapshot chung; replay dedup theo batch/event identity. ETL transform trước load curated,ELT load raw/staging rồi transform trong hệ đích, cả hai cần lineage/quality. Monthly totals không cho từng order,category chưa lưu hoặc detail để drill down; không bịa phân bố từ một tổng.",
+        "paragraphSha256": "77cf15762d211e25d4fac16d9f39feb1e6d1ee5a6eab1c1ca893b7724479e1a6",
+        "locator": "5. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "semanticJudgment": "A consolidated historical repository gives a uniform analytical interface over differing sources and relieves source reporting load. Extraction still has a cost; warehouse data are not presumed identical copies or free of writes.",
+      "algorithmProofAssessment": "Cube construction has an induction invariant and explicit exponential grouping cost; reports/storage/ETL examples are design/model evidence, not measured runtime."
+    },
+    {
+      "section": "11.2.1",
+      "title": "Components of a Data Warehouse",
+      "primaryLesson": "AD72",
+      "inventoryOwners": [
+        "AD72"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 133,
+        "ownLineEnd": 208,
+        "ownBodySha256": "7d2e8fa771a184b032561f0c028a333dae763910ca2d7b672b8cafb64a38a306",
+        "ownBodyWordCount": 792,
+        "sourcePdfPage": 551,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 19,
+        "lineEnd": 19,
+        "exactParagraph": "Luồng cơ bản là sources → extract/loaders và transformations → warehouse DBMS/storage → query/analysis/report tools. Sources có thể là orders quan hệ, return files và logs JSON. Một integrated schema ánh xạ facts/keys/units từ các nguồn, không chỉ COPY từng bảng rồi cho mọi cột cùng tên. Ví dụ nguồn A có amount theo cents, nguồn B theo currency units; cộng 1000 và10 trước khi đổi đơn vị có thể làm 10+10 thành1010. Giữ source_id/source_key, đơn vị, rule đổi và revision để sửa/reconcile được. Hợp các nguồn có cùng tên customer chưa chứng minh đó là cùng người.",
+        "paragraphSha256": "2a0fdec83aa35fee06c33020e42ed33aaaded8a6a0a7a7681351b5961d037e36",
+        "locator": "Luồng cơ bản là sources",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 21,
+        "lineEnd": 21,
+        "exactParagraph": "Data cleansing có những việc khác nhau: fuzzy lookup tìm candidates gần giống tên/địa chỉ theo dữ liệu tham chiếu; merge–purge/dedup gộp các bản ghi thật sự cùng identity; householding gom những người cùng hộ khi mục tiêu là gửi một thư mỗi hộ. “Nguyễn An” và “Nguyen An” có thể là candidates, nhưng tên gần giống chưa đủ chứng minh trùng người. Hai người cùng địa chỉ không được bị xóa thành một customer chỉ vì report muốn một mailing mỗi hộ. Lưu rule/evidence và hàng cần review; một nguồn chưa xác nhận không tự thành địa chỉ đúng. Chuyển kiểu/đơn vị, join nguồn và route accepted/rejected records cũng là transformation, không chỉ sửa spelling.",
+        "paragraphSha256": "0832fc2078d652e11426b7b63aef47e2962b45b250dd761e69da715c8a1b87da",
+        "locator": "Data cleansing có những việc khác nhau:",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 124,
+        "lineEnd": 124,
+        "exactParagraph": "5. Hai nguồn gửi cùng order theo cents và currency units; hai customer names gần giống, hai người khác nhau cùng địa chỉ, orders frontier200 và returns frontier150. Thiết kế integrated schema/cleansing/dedup/householding policy, freshness label và cách replay. So ETL với ELT và nêu một truy vấn không trả được nếu chỉ giữ monthly totals.",
+        "paragraphSha256": "15add7325a7358c77e9d82f4b3d66c4827453c53de5ba4288ed4a7821ad565af",
+        "locator": "5. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 140,
+        "lineEnd": 140,
+        "exactParagraph": "5. Giữ source/key/version và normalize cents1000 thành10 theo cùng currency contract trước khi SUM; gộp duplicate order chỉ khi có identity/evidence, không chỉ vì amount bằng nhau. Fuzzy name match tạo candidates; cùng household có thể cho một mailing nhưng vẫn giữ hai Person IDs. Công bố report ở frontier/version orders/returns đã phối hợp hoặc ghi rõ hai cutoffs không phải snapshot chung; replay dedup theo batch/event identity. ETL transform trước load curated,ELT load raw/staging rồi transform trong hệ đích, cả hai cần lineage/quality. Monthly totals không cho từng order,category chưa lưu hoặc detail để drill down; không bịa phân bố từ một tổng.",
+        "paragraphSha256": "77cf15762d211e25d4fac16d9f39feb1e6d1ee5a6eab1c1ca893b7724479e1a6",
+        "locator": "5. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "semanticJudgment": "All components/issues are taught: source/destination driven capture, freshness/replication, schema integration, cleansing/fuzzy lookup, merge-purge versus householding, units/joins/routing, update propagation, summary information loss, ETL and ELT. Original unit/identity/frontier cases have an answered design activity.",
+      "algorithmProofAssessment": "Cube construction has an induction invariant and explicit exponential grouping cost; reports/storage/ETL examples are design/model evidence, not measured runtime."
+    },
+    {
+      "section": "11.2.2",
+      "title": "Multidimensional Data and Warehouse Schemas",
+      "primaryLesson": "AD72",
+      "inventoryOwners": [
+        "AD72"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 209,
+        "ownLineEnd": 283,
+        "ownBodySha256": "2f98fa2df49f3df93904c61a338224eced1d35dd397273b25a7b85c30eaaaba6",
+        "ownBodyWordCount": 494,
+        "sourcePdfPage": 553,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 39,
+        "lineEnd": 39,
+        "exactParagraph": "Một schema gốc cho bài là SaleLine(order_id,line_no,product_version_id,store_id,customer_id,date_id,quantity,revenue), PK(order_id,line_no), FK tới ProductVersion,Store,Customer,DateDimension. Measures là quantity/revenue; các FK dimension là tọa độ để group, không phải measures cần cộng. DateDimension(date_id,date,month,quarter,year) cho calendar attributes; Store(store_id,city_id,city_name,country) và ProductVersion có product/category attributes. Dùng keys ngắn để fact không lặp toàn tên/địa chỉ ở mỗi sale. Nếu Category(category_id,name,...) hoặc City(city_id,state,country,region) được tách ra và dimensions tham chiếu tiếp, đó là snowflake ở các hierarchy ấy. Nhiều fact tables như SaleLine và ReturnLine có grain khác nhau; một star quanh mỗi fact không cho phép join trực tiếp hai facts rồi SUM mà bỏ qua multiplication.",
+        "paragraphSha256": "bfe1909590a17e0970c4368f2ca8398c6b0a178f4a77e878bd943ad4ae74a0ab",
+        "locator": "Một schema gốc cho bài",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 7,
+        "lineEnd": 7,
+        "exactParagraph": "Fact bán hàng có một row cho mỗi line của đơn: order_id,line_id,product_id,date_id,store_id,quantity,revenue. Nếu thêm payment rows vào cùng join trước SUM, grain đổi như AD01 và revenue có thể nhân. Một star schema không tự ngăn người viết query nối hai facts có grain khác nhau. Câu đầu của thiết kế là “một hàng biểu diễn sự kiện nào”, rồi mới chọn dimensions/measures.",
+        "paragraphSha256": "59aaba8c4b01341d1ace948e9a7edf73ba2aaca4530c7c1a7768dc4bb7c8d1b1",
+        "locator": "Fact bán hàng có một row",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 123,
+        "lineEnd": 123,
+        "exactParagraph": "4. Tự làm: xây brief warehouse orders/returns, xác định grain,dimensions,measure,ETL snapshot và report theo tháng. Nêu refund phải gắn tháng giao dịch hay tháng đơn theo hai câu hỏi khác nhau; không trộn cả hai trong một chỉ số không nhãn.",
+        "paragraphSha256": "4ad0cfc44e2b96105b185b79c9782bee140269d20d68796f2ee8e63690ea4227",
+        "locator": "4. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 139,
+        "lineEnd": 139,
+        "exactParagraph": "4. Rubric: facts/returns có grain riêng hoặc thống nhất thành signed events rõ; nêu units/currency, time semantics, late data và idempotent load. Report “net receipts tháng” khác “giá trị đơn tháng sau eventual refunds”; chấp nhận cả hai khi công thức/period cohort rõ và test không double-count joins.",
+        "paragraphSha256": "ff702baa720f27320dd7a9376488a2f1c6343fdd93139446fbfe76b04017d034",
+        "locator": "4. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "semanticJudgment": "Fact grain, dimensions/measures, short dimension keys, calendar dimension and star versus snowflake/multiple facts are explicit. History/version and bridge assumptions are added without treating a star schema as a grain proof.",
+      "algorithmProofAssessment": "Cube construction has an induction invariant and explicit exponential grouping cost; reports/storage/ETL examples are design/model evidence, not measured runtime."
+    },
+    {
+      "section": "11.2.3",
+      "title": "Database Support for Data Warehouses",
+      "primaryLesson": "AD72",
+      "inventoryOwners": [
+        "AD72"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 284,
+        "ownLineEnd": 348,
+        "ownBodySha256": "791fc7d74fd8faf87e9e5eadc1f5ba96ed7e92d47a571fb5a3be5a2a8499831b",
+        "ownBodyWordCount": 754,
+        "sourcePdfPage": 554,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 106,
+        "lineEnd": 106,
+        "exactParagraph": "Row-oriented storage để các cột của một row gần nhau; column-oriented để các giá trị của cùng attribute ở gần nhau theo row position. Với kiểu fixed-width đơn giản, giá trị thứ i của một column có offset (i−1)·width trong mảng column; thực tế compression/null/variable-width cần metadata thêm. Một scan SUM(revenue) có thể chỉ đọc column đó, giảm bytes/I/O/cache bandwidth so với kéo cả row rộng; các values cùng kiểu cũng dễ compress hơn. Ngược lại, đọc/sửa một row đủ nhiều columns có thể phải chạm nhiều vùng/structures. Minh họa lý tưởng 1 triệu rows×20 columns×8 bytes là160MB payload; đọc hai columns là16MB trước overhead/compression, không là benchmark thời gian. Hệ SQL trên files và columnar formats có thể phục vụ warehouse/lake query; SQL interface không tự nói file là row hay column layout.",
+        "paragraphSha256": "4f4e6925ede18f572f7a26a4f78889cd3a8e802166e593545274f11088fd54c2",
+        "locator": "Row-oriented storage để",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 106,
+        "lineEnd": 106,
+        "exactParagraph": "Row-oriented storage để các cột của một row gần nhau; column-oriented để các giá trị của cùng attribute ở gần nhau theo row position. Với kiểu fixed-width đơn giản, giá trị thứ i của một column có offset (i−1)·width trong mảng column; thực tế compression/null/variable-width cần metadata thêm. Một scan SUM(revenue) có thể chỉ đọc column đó, giảm bytes/I/O/cache bandwidth so với kéo cả row rộng; các values cùng kiểu cũng dễ compress hơn. Ngược lại, đọc/sửa một row đủ nhiều columns có thể phải chạm nhiều vùng/structures. Minh họa lý tưởng 1 triệu rows×20 columns×8 bytes là160MB payload; đọc hai columns là16MB trước overhead/compression, không là benchmark thời gian. Hệ SQL trên files và columnar formats có thể phục vụ warehouse/lake query; SQL interface không tự nói file là row hay column layout.",
+        "paragraphSha256": "4f4e6925ede18f572f7a26a4f78889cd3a8e802166e593545274f11088fd54c2",
+        "locator": "Minh họa lý tưởng 1 triệu",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 126,
+        "lineEnd": 126,
+        "exactParagraph": "7. Với query đọc hai trong20 columns, mỗi column8 bytes trên1 triệu rows, so payload lý tưởng row/column scan và nêu giới hạn phép tính. Thiết kế report có parameter period/snapshot và một heatmap late deliveries: nêu subtotal/page-total/denominator/filters cần giữ, rồi chỉ một invariant vẫn phải kiểm khi warehouse có corrections/refresh. Một lake log thiếu revenue khác sale0 thế nào?",
+        "paragraphSha256": "62afadf98a66ce4bedd3f8aadb01613409b334b79064e674919fcc55833622cf",
+        "locator": "7. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 142,
+        "lineEnd": 142,
+        "exactParagraph": "7. Payload row160MB và hai columns16MB trong giả định toàn bộ fixed-width data không compression/metadata; không suy runtime nhanh đúng10 lần hoặc single-row lookup tốt hơn. Report lưu query/template/parameters/period/snapshot; business subtotals/grandtotal tách page subtotals. Heatmap rate cần late_count/eligible_count cùng population/time filter; drill-down phải cập nhật cả numerator/denominator/labels. Corrections/refresh cần atomic/version publication để summary=query(baseVersion), không thấy nửa batch. Revenue thiếu ở lake là unknown/malformed theo parser/quality contract, không được tự đổi thành0 làm sai tổng; giữ raw/provenance và hàng cần xử lý.",
+        "paragraphSha256": "e317322ec3fce1e5596d00005d53191ad760f1075d1b8371774be346c57aa0f7",
+        "locator": "7. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "semanticJudgment": "Row/column layout, fixed-width offset intuition, selective-column I/O/cache/compression benefits and single-row tradeoff are explained, along with SQL/file-system architecture. The source overgeneralization that warehouses need no concurrency control is explicitly qualified for corrections, loaders, readers and publication.",
+      "algorithmProofAssessment": "Cube construction has an induction invariant and explicit exponential grouping cost; reports/storage/ETL examples are design/model evidence, not measured runtime."
+    },
+    {
+      "section": "11.2.4",
+      "title": "Data Lakes",
+      "primaryLesson": "AD72",
+      "inventoryOwners": [
+        "AD72"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 349,
+        "ownLineEnd": 359,
+        "ownBodySha256": "cdc95e8a5643cabc3a93c9687b7e251aa129cfda498f1876546e73bffb52820f",
+        "ownBodyWordCount": 150,
+        "sourcePdfPage": 556,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 110,
+        "lineEnd": 110,
+        "exactParagraph": "Data lake lưu raw CSV/JSON/logs hoặc dữ liệu có cấu trúc ở nhiều formats trước khi có một unified schema. Cost chuyển sang lúc query: chọn parser/schema version, convert units, xác định event identity và quality/missing policy. Một log thiếu field revenue không tự là một sale0; giữ raw bytes/provenance và lỗi parse để sửa lại transformation. Lake có thể cấp dữ liệu cho curated warehouse, không thay nó bằng một folder chưa có query contract.",
+        "paragraphSha256": "4f98906f564bd942efe2bb1ba539e3317a598650368e00e3a3eeea1fa14a248b",
+        "locator": "Data lake lưu raw CSV/JSON/logs",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 110,
+        "lineEnd": 110,
+        "exactParagraph": "Data lake lưu raw CSV/JSON/logs hoặc dữ liệu có cấu trúc ở nhiều formats trước khi có một unified schema. Cost chuyển sang lúc query: chọn parser/schema version, convert units, xác định event identity và quality/missing policy. Một log thiếu field revenue không tự là một sale0; giữ raw bytes/provenance và lỗi parse để sửa lại transformation. Lake có thể cấp dữ liệu cho curated warehouse, không thay nó bằng một folder chưa có query contract.",
+        "paragraphSha256": "4f98906f564bd942efe2bb1ba539e3317a598650368e00e3a3eeea1fa14a248b",
+        "locator": "Một log thiếu field revenue",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 126,
+        "lineEnd": 126,
+        "exactParagraph": "7. Với query đọc hai trong20 columns, mỗi column8 bytes trên1 triệu rows, so payload lý tưởng row/column scan và nêu giới hạn phép tính. Thiết kế report có parameter period/snapshot và một heatmap late deliveries: nêu subtotal/page-total/denominator/filters cần giữ, rồi chỉ một invariant vẫn phải kiểm khi warehouse có corrections/refresh. Một lake log thiếu revenue khác sale0 thế nào?",
+        "paragraphSha256": "62afadf98a66ce4bedd3f8aadb01613409b334b79064e674919fcc55833622cf",
+        "locator": "7. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 142,
+        "lineEnd": 142,
+        "exactParagraph": "7. Payload row160MB và hai columns16MB trong giả định toàn bộ fixed-width data không compression/metadata; không suy runtime nhanh đúng10 lần hoặc single-row lookup tốt hơn. Report lưu query/template/parameters/period/snapshot; business subtotals/grandtotal tách page subtotals. Heatmap rate cần late_count/eligible_count cùng population/time filter; drill-down phải cập nhật cả numerator/denominator/labels. Corrections/refresh cần atomic/version publication để summary=query(baseVersion), không thấy nửa batch. Revenue thiếu ở lake là unknown/malformed theo parser/quality contract, không được tự đổi thành0 làm sai tổng; giữ raw/provenance và hàng cần xử lý.",
+        "paragraphSha256": "e317322ec3fce1e5596d00005d53191ad760f1075d1b8371774be346c57aa0f7",
+        "locator": "7. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "semanticJudgment": "A lake postpones schema integration across structured/unstructured formats, shifting parser/schema/quality work to query time; raw lineage and missing versus zero are tested. No current vendor recommendation is inferred from historical source examples.",
+      "algorithmProofAssessment": "Cube construction has an induction invariant and explicit exponential grouping cost; reports/storage/ETL examples are design/model evidence, not measured runtime."
+    },
+    {
+      "section": "11.3",
+      "title": "Online Analytical Processing",
+      "primaryLesson": "AD72",
+      "inventoryOwners": [
+        "AD72"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 360,
+        "ownLineEnd": 366,
+        "ownBodySha256": "211e427c3e57e7ba3fdfd0ea8737c5f1944b6f1a958a90fe5e490c8add07a6df",
+        "ownBodyWordCount": 83,
+        "sourcePdfPage": 556,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 61,
+        "lineEnd": 61,
+        "exactParagraph": "Cube trên d dimensions có tối đa 2^d grouping sets; mỗi set có thể có số groups khác nhau. Sparse data chỉ materialize phần xuất hiện; precompute mọi combinations có thể lớn hơn dữ liệu ban đầu. Drill-down thêm dimension/level; roll-up bỏ level; slice cố định một dimension; dice chọn nhiều điều kiện. Pivot chỉ đổi presentation rows/columns, không sửa grain hoặc tạo dữ liệu thiếu.",
+        "paragraphSha256": "70faf0ef1b2e4bc5574b4b7eb63d9edab5759005c63e13ad6455376e3aa12c37",
+        "locator": "Cube trên d dimensions",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 63,
+        "lineEnd": 63,
+        "exactParagraph": "Đừng lẫn số **groupings** với số **cells**. Ba dimensions có lần lượt 2,3,2 values cho 12 detailed combinations; nếu dữ liệu dense và thêm một ALL member cho mỗi dimension, toàn cube có (2+1)(3+1)(2+1)=36 cells, thuộc 2^3=8 groupings. Một grouping là tập columns được giữ, còn cell là một value combination cụ thể của grouping đó. Sparse data có thể ít cells hơn; original NULL values không phải ALL member. Một report cố định day1 là slice khác với roll-up cả hai days: case đầu lọc population, case sau gộp population.",
+        "paragraphSha256": "d59e6df56f452addc9430544d8d05c8c15bf87000bf23f9a77be7354da1fae5f",
+        "locator": "Một report cố định day1",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 125,
+        "lineEnd": 125,
+        "exactParagraph": "6. Ba dimensions có 2,3,2 values: tính số detailed cells, dense cube cells gồm ALL và số grouping sets. Liệt kê ROLLUP(region)×ROLLUP(category,day), rồi hai groupings thiếu so với CUBE3. Dựng hai detail distributions có cùng subtotalNorth30 để bác khả năng drill-down từ subtotal đơn lẻ. Giải thích vì sao day_of_week→month không là hierarchy FD.",
+        "paragraphSha256": "87384ce223b67df9a1e3653b160694366e81397a185270d4e9b2e5729b8bff75",
+        "locator": "6. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 141,
+        "lineEnd": 141,
+        "exactParagraph": "6. Detailed12,dense cube36,grouping sets8. Tích rollups cho (region,category,day),(region,category),(region),(category,day),(category),(); thiếu (region,day) và(day). A10/B20 vàA15/B15 đều total30 nên không khôi phục duy nhất; cần base/finer summary. Thứ Hai xuất hiện ở nhiều months, nên day_of_week không xác định month; date_id mới map được calendar attributes theo contract. Sparse data có thể ít cells hơn dense36 và NULL thật vẫn tách ALL qua flags.",
+        "paragraphSha256": "559a198d8df8efa462b65461ba41f95ba3500a1a61627ce9e822c09ee481f70d",
+        "locator": "6. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "semanticJudgment": "The own OLAP introduction is matched to grouping dimensions and interactive analysis; source descendants are independently reviewed, not credited by this parent.",
+      "algorithmProofAssessment": "Cube construction has an induction invariant and explicit exponential grouping cost; reports/storage/ETL examples are design/model evidence, not measured runtime."
+    },
+    {
+      "section": "11.3.1",
+      "title": "Aggregation on Multidimensional Data",
+      "primaryLesson": "AD72",
+      "inventoryOwners": [
+        "AD72"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 367,
+        "ownLineEnd": 759,
+        "ownBodySha256": "782f57049f430c92fc162a42ed0126f483c19c376e2567e626127917562b16c1",
+        "ownBodyWordCount": 1860,
+        "sourcePdfPage": 556,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 63,
+        "lineEnd": 63,
+        "exactParagraph": "Đừng lẫn số **groupings** với số **cells**. Ba dimensions có lần lượt 2,3,2 values cho 12 detailed combinations; nếu dữ liệu dense và thêm một ALL member cho mỗi dimension, toàn cube có (2+1)(3+1)(2+1)=36 cells, thuộc 2^3=8 groupings. Một grouping là tập columns được giữ, còn cell là một value combination cụ thể của grouping đó. Sparse data có thể ít cells hơn; original NULL values không phải ALL member. Một report cố định day1 là slice khác với roll-up cả hai days: case đầu lọc population, case sau gộp population.",
+        "paragraphSha256": "d59e6df56f452addc9430544d8d05c8c15bf87000bf23f9a77be7354da1fae5f",
+        "locator": "Đừng lẫn số **groupings**",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 65,
+        "lineEnd": 65,
+        "exactParagraph": "Hierarchy cần mappings có identity rõ: city_id→state→country→region, không group bằng city_name rồi gộp hai thành phố trùng tên. Thời gian có thể có nhiều đường: date→month→quarter→year và date→day_of_week; day_of_week không xác định month. Giữ calendar/timezone contract trước khi map timestamp thành date. Drill-down không thể suy lại chi tiết đã mất: North total30 có thể từ A10/B20 hoặc A15/B15. Phải đọc base hoặc summary đủ chi tiết, không “chia ngược” một subtotal để tạo facts. Aggregates ở nhiều mức có thể hiển thị chung nhưng cần level flag để không cộng detail+subtotal thêm một lần.",
+        "paragraphSha256": "b43fe3f05002b24d3547b588fed6f3b91bab63264ebf2ee6a3b167e4ee4e9a95",
+        "locator": "Hierarchy cần mappings có identity rõ:",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 125,
+        "lineEnd": 125,
+        "exactParagraph": "6. Ba dimensions có 2,3,2 values: tính số detailed cells, dense cube cells gồm ALL và số grouping sets. Liệt kê ROLLUP(region)×ROLLUP(category,day), rồi hai groupings thiếu so với CUBE3. Dựng hai detail distributions có cùng subtotalNorth30 để bác khả năng drill-down từ subtotal đơn lẻ. Giải thích vì sao day_of_week→month không là hierarchy FD.",
+        "paragraphSha256": "87384ce223b67df9a1e3653b160694366e81397a185270d4e9b2e5729b8bff75",
+        "locator": "6. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 141,
+        "lineEnd": 141,
+        "exactParagraph": "6. Detailed12,dense cube36,grouping sets8. Tích rollups cho (region,category,day),(region,category),(region),(category,day),(category),(); thiếu (region,day) và(day). A10/B20 vàA15/B15 đều total30 nên không khôi phục duy nhất; cần base/finer summary. Thứ Hai xuất hiện ở nhiều months, nên day_of_week không xác định month; date_id mới map được calendar attributes theo contract. Sparse data có thể ít cells hơn dense36 và NULL thật vẫn tách ALL qua flags.",
+        "paragraphSha256": "559a198d8df8efa462b65461ba41f95ba3500a1a61627ce9e822c09ee481f70d",
+        "locator": "6. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "semanticJudgment": "Cross-tab/cube cells, measures versus dimensions, ALL summaries, 2^d groupings versus product dense cell counts, pivot/slice/dice/rollup/drilldown and hierarchies are taught. An explicit counterexample proves coarse totals cannot reconstruct detail, and cube construction has an induction invariant and cost limits.",
+      "algorithmProofAssessment": "Cube construction has an induction invariant and explicit exponential grouping cost; reports/storage/ETL examples are design/model evidence, not measured runtime."
+    },
+    {
+      "section": "11.3.2",
+      "title": "Relational Representation of Cross-Tabs",
+      "primaryLesson": "AD72",
+      "inventoryOwners": [
+        "AD72"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 760,
+        "ownLineEnd": 885,
+        "ownBodySha256": "ce9ff7983cddc965f0e7910182144ae0b89b4940e22cd4d7365a062547d419d4",
+        "ownBodyWordCount": 521,
+        "sourcePdfPage": 561,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 75,
+        "lineEnd": 75,
+        "exactParagraph": "Cross-tab hợp với display vì values của category trở thành headers; lưu dạng relation SalesByRegionCategory(region,category,total,all_regions,all_categories) giữ schema cố định khi category C xuất hiện. Chẳng hạn (North,NULL,30,0,1) là subtotal mọi categories, còn (NULL,A,15,1,0) là tổng A mọi regions. Nếu category thực sự NULL thì row detail có all_categories=0; thay mọi NULL bằng text “ALL” sẽ xóa khác biệt. Một hierarchy có thể lưu trong một dimension denormalized hoặc nhiều mappings giữa các levels, rồi join trước aggregation theo key/time contract.",
+        "paragraphSha256": "ff629f4cec09072b8325f7b02dac82deab33565124f641cc9e6c5fbf3c6d255a",
+        "locator": "Cross-tab hợp với display",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 75,
+        "lineEnd": 75,
+        "exactParagraph": "Cross-tab hợp với display vì values của category trở thành headers; lưu dạng relation SalesByRegionCategory(region,category,total,all_regions,all_categories) giữ schema cố định khi category C xuất hiện. Chẳng hạn (North,NULL,30,0,1) là subtotal mọi categories, còn (NULL,A,15,1,0) là tổng A mọi regions. Nếu category thực sự NULL thì row detail có all_categories=0; thay mọi NULL bằng text “ALL” sẽ xóa khác biệt. Một hierarchy có thể lưu trong một dimension denormalized hoặc nhiều mappings giữa các levels, rồi join trước aggregation theo key/time contract.",
+        "paragraphSha256": "ff629f4cec09072b8325f7b02dac82deab33565124f641cc9e6c5fbf3c6d255a",
+        "locator": "Chẳng hạn (North,NULL,30,0,1)",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 121,
+        "lineEnd": 121,
+        "exactParagraph": "2. Viết grouping còn thiếu để biến ROLLUP2dimensions thành đủ cube2dimensions trong MySQL. Giữ flags phân biệt NULL thật.",
+        "paragraphSha256": "1d4a0807e9508642cf58d8023c61c32193d4cbae7f7c0c6883818f49008fa56b",
+        "locator": "2. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 137,
+        "lineEnd": 137,
+        "exactParagraph": "2. UNION ALL thêm nhóm category với region ở trạng thái all và flags 1,0; giữ các nhóm ROLLUP còn lại. Category A có 15, B có 20. Cột flags là contract, không thay total NULL bằng nhãn gây lẫn một category thật cùng chữ.",
+        "paragraphSha256": "fc1eb7df254744af29654f89bc5332837918f1b38c7eac6c0d1939daa37e21aa",
+        "locator": "2. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "semanticJudgment": "Fixed relational schema represents dynamic cross-tabs, flags distinguish subtotal NULL from real NULL, and dimension hierarchy mappings use identity keys rather than ambiguous names. Original detail/subtotal and missing-cell examples are used.",
+      "algorithmProofAssessment": "Cube construction has an induction invariant and explicit exponential grouping cost; reports/storage/ETL examples are design/model evidence, not measured runtime."
+    },
+    {
+      "section": "11.3.3",
+      "title": "OLAP in SQL",
+      "primaryLesson": "AD72",
+      "inventoryOwners": [
+        "AD72"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 886,
+        "ownLineEnd": 1187,
+        "ownBodySha256": "a9e7f86bbeb5139c758fa781100b2e6061a555a2b143a32f750deea4d3694aa7",
+        "ownBodyWordCount": 1934,
+        "sourcePdfPage": 562,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 59,
+        "lineEnd": 59,
+        "exactParagraph": "ROLLUP(region,category) tạo hierarchy prefixes: (region,category),(region),(). CUBE với 2 dimensions còn có(category), tức totalsA15,B20. MySQL8.4 không được giả hỗ trợ nguyên cú pháp CUBE chỉ vì sách có SQL chuẩn. Có thể ghép đúng grouping bằng UNION ALL, thêm level flags và cùng null policy; không deduplicate các rows trông giống nhau mà làm mất hai loại subtotal khác nghĩa.",
+        "paragraphSha256": "ac915164d30c85ef1c1850bc00519e6e3e2f9949451ebce1bf260e9c7efd104f",
+        "locator": "ROLLUP(region,category) tạo hierarchy prefixes",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 69,
+        "lineEnd": 69,
+        "exactParagraph": "Với ba dimensions (region,category,day), CUBE có các groupings (region,category,day),(region,category),(region,day),(category,day),(region),(category),(day),(). ROLLUP theo đúng thứ tự ấy chỉ có (region,category,day),(region,category),(region),(); đổi thứ tự đổi hierarchy prefixes. ROLLUP(region) kết hợp ROLLUP(category,day) cho 2×3=6 groupings, không phải đầy đủ cube8: thiếu (region,day) và(day). Mỗi grouping trả một relation có cùng schema bằng cách đặt subtotal NULL ở dimensions bị loại và flags tương ứng; UNION ALL giữ các mức có thể trông giống nhau về values nhưng khác meaning.",
+        "paragraphSha256": "5e7698f7c7856c180e9819783fba82527d0f04c0d9c57f92b536368855e93fff",
+        "locator": "Với ba dimensions (region,category,day)",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 125,
+        "lineEnd": 125,
+        "exactParagraph": "6. Ba dimensions có 2,3,2 values: tính số detailed cells, dense cube cells gồm ALL và số grouping sets. Liệt kê ROLLUP(region)×ROLLUP(category,day), rồi hai groupings thiếu so với CUBE3. Dựng hai detail distributions có cùng subtotalNorth30 để bác khả năng drill-down từ subtotal đơn lẻ. Giải thích vì sao day_of_week→month không là hierarchy FD.",
+        "paragraphSha256": "87384ce223b67df9a1e3653b160694366e81397a185270d4e9b2e5729b8bff75",
+        "locator": "6. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 141,
+        "lineEnd": 141,
+        "exactParagraph": "6. Detailed12,dense cube36,grouping sets8. Tích rollups cho (region,category,day),(region,category),(region),(category,day),(category),(); thiếu (region,day) và(day). A10/B20 vàA15/B15 đều total30 nên không khôi phục duy nhất; cần base/finer summary. Thứ Hai xuất hiện ở nhiều months, nên day_of_week không xác định month; date_id mới map được calendar attributes theo contract. Sparse data có thể ít cells hơn dense36 và NULL thật vẫn tách ALL qua flags.",
+        "paragraphSha256": "559a198d8df8efa462b65461ba41f95ba3500a1a61627ce9e822c09ee481f70d",
+        "locator": "6. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "semanticJudgment": "The whole source own body including OLAP implementation note is covered: pivot input/output and no implicit subtotal, cube powerset, ordered rollup prefixes, products of independent rollups, arbitrary grouping sets, grouping flags, MOLAP/ROLAP/HOLAP and selective/shared precomputation. SQL-standard syntax is separated from MySQL rewrites; no unexecuted SQL is reported as runtime evidence.",
+      "algorithmProofAssessment": "Cube construction has an induction invariant and explicit exponential grouping cost; reports/storage/ETL examples are design/model evidence, not measured runtime."
+    },
+    {
+      "section": "11.3.4",
+      "title": "Reporting and Visualization Tools",
+      "primaryLesson": "AD72",
+      "inventoryOwners": [
+        "AD72"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 1188,
+        "ownLineEnd": 1262,
+        "ownBodySha256": "35b49f523051836d00a1404d204db834610ec688445bb53661ea5879401962d3",
+        "ownBodyWordCount": 780,
+        "sourcePdfPage": 567,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 114,
+        "lineEnd": 114,
+        "exactParagraph": "Một report definition gồm query, parameters như start/end period, columns/units, ordering, groups/subtotals và layout có thể chạy lại khi data/version đổi. Một mẫu report tháng theo region giữ region/category totals, hiển thị subtotal riêng và grand total35; khi chia trang, page subtotal khác subtotal business group và không được cộng chồng. Save template/parameters/query revision và snapshot để người khác biết số nào đã được công bố. Refresh chart phải chạy lại query hoặc lấy artifact mới đúng contract, không chỉ đổi ngày trên tiêu đề.",
+        "paragraphSha256": "3a7bc65eb29e42d382f2c5eefe35319a9aaa7d06e9bd250b73988faa25dea1b6",
+        "locator": "Một report definition gồm query",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 116,
+        "lineEnd": 116,
+        "exactParagraph": "Visualization giúp tìm patterns/anomalies rồi đặt giả thuyết để kiểm bằng data. Có thể map late deliveries theo khu vực, hoặc dùng heatmap row/column là hai items và màu là co-purchase fraction. Điểm nóng nhiều đơn có thể phản ánh nhiều traffic, nên nếu câu hỏi là risk cần thêm denominator; màu sáng chưa chứng minh nguyên nhân. Tương tác filter/drill-down phải cập nhật query/labels/denominator cùng nhau, giữ time period và unit; một screenshot đẹp không thay kiểm tổng và population. Dashboard web có thể gọi nhiều queries và tái sử dụng summary/cache, nên freshness của từng panel phải đủ rõ để không so các versions khác nhau như một snapshot thống nhất.",
+        "paragraphSha256": "da8b95d988c046bc26538f83c74cbc5fb8f5d7454a5f8ef900d9aa6d502e24ad",
+        "locator": "Visualization giúp tìm patterns/anomalies",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 126,
+        "lineEnd": 126,
+        "exactParagraph": "7. Với query đọc hai trong20 columns, mỗi column8 bytes trên1 triệu rows, so payload lý tưởng row/column scan và nêu giới hạn phép tính. Thiết kế report có parameter period/snapshot và một heatmap late deliveries: nêu subtotal/page-total/denominator/filters cần giữ, rồi chỉ một invariant vẫn phải kiểm khi warehouse có corrections/refresh. Một lake log thiếu revenue khác sale0 thế nào?",
+        "paragraphSha256": "62afadf98a66ce4bedd3f8aadb01613409b334b79064e674919fcc55833622cf",
+        "locator": "7. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD72.md",
+        "lineStart": 142,
+        "lineEnd": 142,
+        "exactParagraph": "7. Payload row160MB và hai columns16MB trong giả định toàn bộ fixed-width data không compression/metadata; không suy runtime nhanh đúng10 lần hoặc single-row lookup tốt hơn. Report lưu query/template/parameters/period/snapshot; business subtotals/grandtotal tách page subtotals. Heatmap rate cần late_count/eligible_count cùng population/time filter; drill-down phải cập nhật cả numerator/denominator/labels. Corrections/refresh cần atomic/version publication để summary=query(baseVersion), không thấy nửa batch. Revenue thiếu ở lake là unknown/malformed theo parser/quality contract, không được tự đổi thành0 làm sai tổng; giữ raw/provenance và hàng cần xử lý.",
+        "paragraphSha256": "e317322ec3fce1e5596d00005d53191ad760f1075d1b8371774be346c57aa0f7",
+        "locator": "7. ",
+        "lessonSha256": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62",
+        "lessonHashPath": "output/database-advanced/lessons/AD72.md"
+      },
+      "semanticJudgment": "Parameterized reusable report definitions, formatting/groups/page subtotals, query reexecution/chart refresh, maps/association heatmaps and interactive drill/filter are explained with original cases. Visual hypotheses require quantitative checking and valid denominators; source tool brands are not treated as current recommendations.",
+      "algorithmProofAssessment": "Cube construction has an induction invariant and explicit exponential grouping cost; reports/storage/ETL examples are design/model evidence, not measured runtime."
+    },
+    {
+      "section": "11.4",
+      "title": "Data Mining",
+      "primaryLesson": "AD19",
+      "inventoryOwners": [
+        "AD19"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 1263,
+        "ownLineEnd": 1292,
+        "ownBodySha256": "e468db0f114e9cbb27c8b0f72fdfdd5f6a107df665b08b26b832fc55d2eb97ec",
+        "ownBodyWordCount": 367,
+        "sourcePdfPage": 569,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD19.md",
+        "lineStart": 11,
+        "lineEnd": 11,
+        "exactParagraph": "Data mining là một phần của knowledge discovery in databases (KDD): tìm patterns/models hữu ích trong dữ liệu, thường đòi cách thực thi xử lý được dữ liệu lớn lưu trên đĩa. Ranh giới với machine learning/statistics không cứng; chỉ gọi một tác vụ “mining” chưa chỉ ra thuật toán hoặc scale. Quy trình thực tế có người chọn dữ liệu, làm sạch/biểu diễn và hậu kiểm patterns nào đáng dùng, nên là bán tự động. Model có thể là rules, một phương trình hoặc một cấu trúc học được; nó khác kết quả GROUP BY mô tả đúng dữ liệu đã có ở AD72. Một association hoặc cluster có thể giúp đặt giả thuyết cần kiểm tiếp, chưa tự là dự đoán đã đánh giá hoặc quan hệ nhân quả.",
+        "paragraphSha256": "f5aabf087ad0452c26cafcf988c26a4efc07dc5e9ad62160274a733d5949e066",
+        "locator": "Data mining là một phần",
+        "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+        "lessonHashPath": "output/database-advanced/lessons/AD19.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD19.md",
+        "lineStart": 9,
+        "lineEnd": 9,
+        "exactParagraph": "Một nhiệm vụ mining cần target, unit of observation, prediction time và population. Classification dự đoán class; regression dự đoán số; association tìm đồng xuất hiện; clustering tìm cấu trúc nhóm; text mining biến văn bản thành features hoặc thông tin có cấu trúc. Chọn loại tác vụ dựa câu hỏi, không dựa tên một library sẵn có.",
+        "paragraphSha256": "11d32b4e76fe24cb95f3ab9f30bcb4bd5db8ca87f356d6b9c2303f14bab43acb",
+        "locator": "Một nhiệm vụ mining cần target",
+        "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+        "lessonHashPath": "output/database-advanced/lessons/AD19.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD19.md",
+        "lineStart": 70,
+        "lineEnd": 70,
+        "exactParagraph": "4. Tự làm: viết experiment manifest cho dự đoán phút xử lý kiện, gồm prediction time,features,split,baseline,metric,seed,artifact và một test kiểm không dùng future columns. Không chọn model bằng test.",
+        "paragraphSha256": "7974c74e3214ba12e0e3a8806c7c1fbef3c9157bdc4b650d81241b7e6ece5311",
+        "locator": "4. ",
+        "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+        "lessonHashPath": "output/database-advanced/lessons/AD19.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD19.md",
+        "lineStart": 84,
+        "lineEnd": 84,
+        "exactParagraph": "4. Rubric: một manifest cụ thể với source revision/split IDs, mỗi feature có thời điểm khả dụng, baseline phù hợp loss, metric units,fit/tune/test tách rõ và test future-column deny. Model/regression code có thể thay nhưng protocol phải giữ đủ để người khác chạy lại.",
+        "paragraphSha256": "f339cbeb142d2733361cffbbdc962ec5c0289c645614078198899da1dae53c65",
+        "locator": "4. ",
+        "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+        "lessonHashPath": "output/database-advanced/lessons/AD19.md"
+      },
+      "semanticJudgment": "Mining is semiautomatic KDD combining data representation, scalable execution and useful pattern/model selection; rules/equations/models and descriptive versus predictive goals are distinguished. Human preprocessing/postprocessing remains explicit.",
+      "algorithmProofAssessment": "The source introduces task families and text mining; the lesson adds an explicit evaluation protocol/provenance contract, not a trained or quality-validated ML artifact."
+    },
+    {
+      "section": "11.4.1",
+      "title": "Types of Data-Mining Tasks",
+      "primaryLesson": "AD19",
+      "inventoryOwners": [
+        "AD19"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 1293,
+        "ownLineEnd": 1318,
+        "ownBodySha256": "1461dc69f2c06c9a71cc54c2af1fa25913b4a715b11aff00570e5a5fe887dcb0",
+        "ownBodyWordCount": 323,
+        "sourcePdfPage": 570,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD19.md",
+        "lineStart": 9,
+        "lineEnd": 9,
+        "exactParagraph": "Một nhiệm vụ mining cần target, unit of observation, prediction time và population. Classification dự đoán class; regression dự đoán số; association tìm đồng xuất hiện; clustering tìm cấu trúc nhóm; text mining biến văn bản thành features hoặc thông tin có cấu trúc. Chọn loại tác vụ dựa câu hỏi, không dựa tên một library sẵn có.",
+        "paragraphSha256": "11d32b4e76fe24cb95f3ab9f30bcb4bd5db8ca87f356d6b9c2303f14bab43acb",
+        "locator": "Một nhiệm vụ mining cần target",
+        "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+        "lessonHashPath": "output/database-advanced/lessons/AD19.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD19.md",
+        "lineStart": 7,
+        "lineEnd": 7,
+        "exactParagraph": "Một kho muốn dự đoán kiện nào có khả năng giao chậm tại lúc nhận đơn. Dataset có cả thông tin nhận đơn và cột thời gian giao thực tế. Dùng thời gian giao thực tế làm feature có thể cho score gần hoàn hảo, nhưng cột ấy chưa tồn tại tại lúc dự đoán. Query chuẩn bị feature chạy đúng SQL vẫn có thể tạo một thí nghiệm vô nghĩa.",
+        "paragraphSha256": "27d255a706940969b75da095d708a23fec6ffb78ef7b494819de3d26735be825",
+        "locator": "Một kho muốn dự đoán kiện",
+        "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+        "lessonHashPath": "output/database-advanced/lessons/AD19.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD19.md",
+        "lineStart": 70,
+        "lineEnd": 70,
+        "exactParagraph": "4. Tự làm: viết experiment manifest cho dự đoán phút xử lý kiện, gồm prediction time,features,split,baseline,metric,seed,artifact và một test kiểm không dùng future columns. Không chọn model bằng test.",
+        "paragraphSha256": "7974c74e3214ba12e0e3a8806c7c1fbef3c9157bdc4b650d81241b7e6ece5311",
+        "locator": "4. ",
+        "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+        "lessonHashPath": "output/database-advanced/lessons/AD19.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD19.md",
+        "lineStart": 84,
+        "lineEnd": 84,
+        "exactParagraph": "4. Rubric: một manifest cụ thể với source revision/split IDs, mỗi feature có thời điểm khả dụng, baseline phù hợp loss, metric units,fit/tune/test tách rõ và test future-column deny. Model/regression code có thể thay nhưng protocol phải giữ đủ để người khác chạy lại.",
+        "paragraphSha256": "f339cbeb142d2733361cffbbdc962ec5c0289c645614078198899da1dae53c65",
+        "locator": "4. ",
+        "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+        "lessonHashPath": "output/database-advanced/lessons/AD19.md"
+      },
+      "semanticJudgment": "Prediction/classification/regression, descriptive associations/clusters and textual tasks are connected to original business questions. Association may inspire a hypothesis but does not by itself establish causation; split/feature-time protocol is an original practical supplement.",
+      "algorithmProofAssessment": "The source introduces task families and text mining; the lesson adds an explicit evaluation protocol/provenance contract, not a trained or quality-validated ML artifact."
+    },
+    {
+      "section": "11.4.2",
+      "title": "Classification",
+      "primaryLesson": "AD70",
+      "inventoryOwners": [
+        "AD70"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 1319,
+        "ownLineEnd": 1338,
+        "ownBodySha256": "e551ffc8f236c8da37d2240b9a7389098e352631c675fc328f83a82d0ca508c1",
+        "ownBodyWordCount": 244,
+        "sourcePdfPage": 570,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 7,
+        "lineEnd": 7,
+        "exactParagraph": "Kho muốn dự đoán một kiện cần “xử lý đặc biệt” hay “thường”, đó là classification. Muốn dự đoán số phút xử lý, đó là regression. Cùng features khối lượng/kích thước có thể dùng cho hai nhiệm vụ nhưng loss và cách kiểm khác nhau. Nhãn training phải có nguồn và thời điểm; một cột chỉ có sau khi xử lý xong không được dùng để dự đoán trước lúc bắt đầu.",
+        "paragraphSha256": "5245707e2156589058317f1e58697ca204a20bbdc18d985dd1d537b055eb32e7",
+        "locator": "Kho muốn dự đoán một kiện",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 9,
+        "lineEnd": 9,
+        "exactParagraph": "Model fitting không chỉ lưu training rows rồi báo accuracy. Ta cần một rule có thể áp dụng cho instance mới, cùng phạm vi/giả định. Sách trình bày các họ classifiers và nguyên lý; một số solver chi tiết thuộc tài liệu ML chuyên sâu. Bài này tính được ví dụ nhỏ và giải thích lựa chọn, không nhận đã chứng minh mọi optimizer huấn luyện tìm global optimum.",
+        "paragraphSha256": "85f52ecb15ce26e6abeb345f498313a35aa3477595a2e87d82ed7111ed660f54",
+        "locator": "Model fitting không chỉ lưu training",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 55,
+        "lineEnd": 55,
+        "exactParagraph": "1. Tính Gini gain của split x≤1.5 trên bốn points đầu và so split2.5. Trace inference x2.2; nêu vì sao training thuần nhãn chưa chứng minh được generalization.",
+        "paragraphSha256": "2da31547ca048ae32e753610583d3c01d47bfaf30e9767c8f7e2fb8a6d9a4dbc",
+        "locator": "1. ",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 69,
+        "lineEnd": 69,
+        "exactParagraph": "1. Gain1/6 nhỏ hơn0.5 của split2.5. x2.2→leaf0 theo split2.5. Model có thể fit noise; cần validation/test mới và không tune trên test.",
+        "paragraphSha256": "1f7830ae689d5af8bba509397abb0f2da7f32291ba0fcd8b0c1869d9cca7f622",
+        "locator": "1. ",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "semanticJudgment": "Classification learns from labeled training instances to predict a new instance class using available features. Continuous regression and unavailable future labels/features are separated; introductory completion does not credit classifier descendants.",
+      "algorithmProofAssessment": "Original finite algorithms/proofs extend the source outline; their arithmetic/invariants are checked, not claimed as empirical model quality or global optimizer guarantees."
+    },
+    {
+      "section": "11.4.2.1",
+      "title": "Decision-Tree Classifiers",
+      "primaryLesson": "AD70",
+      "inventoryOwners": [
+        "AD70"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 1339,
+        "ownLineEnd": 1366,
+        "ownBodySha256": "3ddc43c88c6b0a560290b079f5e24f72c65c5ab10289ec9d39c81bc400036665",
+        "ownBodyWordCount": 248,
+        "sourcePdfPage": 571,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 15,
+        "lineEnd": 15,
+        "exactParagraph": "Algorithm greedy tree cho fixture hữu hạn: ở node, tính class counts; nếu pure/đạt max-depth/ít mẫu thì làm leaf với majority theo tie policy. Nếu còn được split, xét ngưỡng giữa các values liên tiếp khác nhau và các splits categorical được cho; bỏ split tạo child rỗng; chọn gain lớn nhất vượt min-gain; partition samples và recurse. Output là cây gồm predicates và leaf predictions, không phải một score cho training set.",
+        "paragraphSha256": "eeffaa6afa5367f183d677c9094b1478c083dd838ab26e3cb987bedfdc1ece86",
+        "locator": "Algorithm greedy tree cho fixture hữu hạn:",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 13,
+        "lineEnd": 13,
+        "exactParagraph": "Training một chiều x với nhãn y: (1,0),(2,0),(3,1),(4,1). Root có hai0,hai1. Dùng Gini=1−Σp(class)², impurityroot=0.5. Split x≤2.5 cho hai leaf thuần: bên trái{1,2}nhãn0, bên phải{3,4}nhãn1; weighted impurity0, gain0.5. Predict x=2.2 đi trái→0, x=3.5 đi phải→1.",
+        "paragraphSha256": "6d25ac67863d69db72ee570a6b6cd783d0924ff99cd708647a0570b466b094cf",
+        "locator": "Training một chiều x với nhãn y:",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 55,
+        "lineEnd": 55,
+        "exactParagraph": "1. Tính Gini gain của split x≤1.5 trên bốn points đầu và so split2.5. Trace inference x2.2; nêu vì sao training thuần nhãn chưa chứng minh được generalization.",
+        "paragraphSha256": "2da31547ca048ae32e753610583d3c01d47bfaf30e9767c8f7e2fb8a6d9a4dbc",
+        "locator": "1. ",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 69,
+        "lineEnd": 69,
+        "exactParagraph": "1. Gain1/6 nhỏ hơn0.5 của split2.5. x2.2→leaf0 theo split2.5. Model có thể fit noise; cần validation/test mới và không tune trên test.",
+        "paragraphSha256": "1f7830ae689d5af8bba509397abb0f2da7f32291ba0fcd8b0c1869d9cca7f622",
+        "locator": "1. ",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "semanticJudgment": "Internal predicates/leaf classes and traversal are fully demonstrated; an original greedy construction adds stopping rules, node invariant, termination, complexity and generalization limits. The book omits construction details, so the extension is identified rather than attributed as a source solver proof.",
+      "algorithmProofAssessment": "Original finite algorithms/proofs extend the source outline; their arithmetic/invariants are checked, not claimed as empirical model quality or global optimizer guarantees."
+    },
+    {
+      "section": "11.4.2.2",
+      "title": "Bayesian Classifiers",
+      "primaryLesson": "AD70",
+      "inventoryOwners": [
+        "AD70"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 1367,
+        "ownLineEnd": 1411,
+        "ownBodySha256": "1f0d3902d500fded9b29790d975f66d6d1676c796444e6f128722b6b1f164d6b",
+        "ownBodyWordCount": 552,
+        "sourcePdfPage": 572,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 25,
+        "lineEnd": 25,
+        "exactParagraph": "Bayes theorem: P(c|x)=P(x|c)P(c)/P(x). Denominator giống nhau cho mọi class của cùngx nên argmax chỉ cần tử số. Naive Bayes thay joint likelihood bằng tích P(xj|c), tức giả định các features độc lập có điều kiện theo class. Nếu hai features chỉ sao lại cùng một tín hiệu, tích có thể đếm bằng chứng hai lần và làm confidence quá mạnh. Model vẫn có thể phân loại hữu ích nhưng không được diễn số ấy như posterior đã hiệu chỉnh ngoài giả định.",
+        "paragraphSha256": "9c77da67f4e747a828fd7daccfc76f3fbacc18ced1852455667985e6ae402564",
+        "locator": "Bayes theorem:",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 23,
+        "lineEnd": 23,
+        "exactParagraph": "Có class A 3 mẫu,B 1 mẫu. Feature yes xuất hiện ở2/3mẫuA và1/1mẫuB. P(A)=3/4,P(B)=1/4; với x=yes, scores P(x|A)P(A)=1/2 vàP(x|B)P(B)=1/4. Chuẩn hóa tổng3/4 cho posterior2/3 và1/3; predictA. Chỉ nhìn P(x|B)=1 lớn hơn2/3 sẽ bỏ prior và chọn sai theo mô hình đã nêu.",
+        "paragraphSha256": "6947dcdfc261d39f0181c442eb54debc682765b1ff98cad0fc6cc720d534e812",
+        "locator": "Có class A 3 mẫu",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 56,
+        "lineEnd": 56,
+        "exactParagraph": "2. Tính posterior Bayes của ví dụ A/B; thêm hai features trùng nhau và giải thích nguy cơ đếm bằng chứng. Chọn một zero-count policy có ghi công thức.",
+        "paragraphSha256": "79dde99204587423e28b288323f794be1530df7fdddfa28454d914dba7d10117",
+        "locator": "2. ",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 70,
+        "lineEnd": 70,
+        "exactParagraph": "2. Posterior A=2/3,B=1/3. Nhân hai likelihood giống nhau khi giả độc lập làm tín hiệu bị đếm lại. Laplace cho feature categorical có K values là (count+1)/(nclass+K); dùng cùng policy cho mọi class và chỉ fit training.",
+        "paragraphSha256": "451922e01966014bd5c8e32bef9c54d129e19f2ed455c937fbabc80d2b520779",
+        "locator": "2. ",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "semanticJudgment": "Bayes prior/likelihood/denominator argument, training distributions/histograms and conditional-independence product are taught with posterior arithmetic and joint-state sparsity explanation. Smoothing, log computation, fit-only-on-train and calibration limits are original explicit implementation policies.",
+      "algorithmProofAssessment": "Original finite algorithms/proofs extend the source outline; their arithmetic/invariants are checked, not claimed as empirical model quality or global optimizer guarantees."
+    },
+    {
+      "section": "11.4.2.3",
+      "title": "Support Vector Machine Classifiers",
+      "primaryLesson": "AD70",
+      "inventoryOwners": [
+        "AD70"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 1412,
+        "ownLineEnd": 1451,
+        "ownBodySha256": "823e82c22119a4778d36c94e5ff6af192cc0027bc5c763a87a64ceb780538e24",
+        "ownBodyWordCount": 557,
+        "sourcePdfPage": 573,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 33,
+        "lineEnd": 33,
+        "exactParagraph": "Một bài SVM một chiều có negative points−2,−1 vàpositive1,2. Boundaryx=0 có nearest geometric distance1 ở hai class; boundaryx=0.5 có nearest distance0.5. Với hard-margin formulation y(wx+b)≥1, maximize margin tương ứng minimize ||w||²/2 khi normalization được cố định. w=1,b=0 đáp ứng nearest±1. Không so functional values wx+b của hai scaledw rồi kết luận margin lớn hơn: scale thay score nhưng không thay đường phân cách.",
+        "paragraphSha256": "e5977a0bcd533c67de8c139dd574c4ca79c5ea6686f1c4fe4af577c330693cb9",
+        "locator": "Một bài SVM một chiều",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 37,
+        "lineEnd": 37,
+        "exactParagraph": "Với w≠0, khoảng cách từ x tới hyperplane w·x+b=0 là |w·x+b|/||w||; trong nhiều chiều vẫn tìm hyperplane có margin phù hợp. Các training points chạm biên margin trong nghiệm hard-margin là support vectors, ví dụ −1 và1 trong fixture, không phải mọi point đều quyết định cùng một biên. Dữ liệu có cùng x nhưng hai labels đối nghịch không thể được tách hoàn hảo bằng một hàm deterministic của riêng x; cần chấp nhận lỗi/noise hoặc thêm thông tin hợp lệ, không chỉ tăng số chiều bằng một tên kernel.",
+        "paragraphSha256": "b90af747fbff96953a61edd6f3b26d2da22f32f3ac4addd884ed9204e8e55b48",
+        "locator": "Với w≠0, khoảng cách",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 55,
+        "lineEnd": 55,
+        "exactParagraph": "1. Tính Gini gain của split x≤1.5 trên bốn points đầu và so split2.5. Trace inference x2.2; nêu vì sao training thuần nhãn chưa chứng minh được generalization.",
+        "paragraphSha256": "2da31547ca048ae32e753610583d3c01d47bfaf30e9767c8f7e2fb8a6d9a4dbc",
+        "locator": "5. ",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 69,
+        "lineEnd": 69,
+        "exactParagraph": "1. Gain1/6 nhỏ hơn0.5 của split2.5. x2.2→leaf0 theo split2.5. Model có thể fit noise; cần validation/test mới và không tune trên test.",
+        "paragraphSha256": "1f7830ae689d5af8bba509397abb0f2da7f32291ba0fcd8b0c1869d9cca7f622",
+        "locator": "5. ",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "semanticJudgment": "Maximum geometric margin, support points, score-scale invariance, higher-dimensional hyperplanes, soft-margin/noise, kernel inner products and one-vs-rest multiclass are explained. No optimized SVM training or guaranteed accuracy is claimed by a hand-computed separator.",
+      "algorithmProofAssessment": "Original finite algorithms/proofs extend the source outline; their arithmetic/invariants are checked, not claimed as empirical model quality or global optimizer guarantees."
+    },
+    {
+      "section": "11.4.2.4",
+      "title": "Neural Network Classifiers",
+      "primaryLesson": "AD70",
+      "inventoryOwners": [
+        "AD70"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 1452,
+        "ownLineEnd": 1485,
+        "ownBodySha256": "1a49e3ecbb05d2c136898ac38ec8a577686552f25db49db28fa5c2686d1385ed",
+        "ownBodyWordCount": 429,
+        "sourcePdfPage": 574,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 39,
+        "lineEnd": 39,
+        "exactParagraph": "Neural classifier ghép layers: z=W a+b rồi activation. Với một logistic unit, x=(1,2),w=(0.5,0.5),b=−1, z=0.5 vàsigmoid(z)≈0.622459. Threshold0.5cho class1. Nếu label thật1, binary cross-entropy có gradient theoz là p−1≈−0.377541; gradient theo wj là(p−1)xj. Một update gradient descent với learning rateη đổi w ngược gradient. Đây là một bước tính có thể kiểm, không bằng chứng mạng nhiều lớp sẽ hội tụ đúng trên mọi dữ liệu.",
+        "paragraphSha256": "794444ae5e960822ff62e289e3ff93217b94cca200971a5a9d32251587cd0d7e",
+        "locator": "Neural classifier ghép layers:",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 43,
+        "lineEnd": 43,
+        "exactParagraph": "Ở multiclass output, có thể có một output unit cho mỗi class và chọn argmax theo tie policy; softmax chuyển logits thành các số không âm tổng1 theo model. Ví dụ logits (0,ln2,0) cho probabilities (1/4,1/2,1/4), nên chọn class thứ hai. “Tổng bằng1” chưa chứng minh xác suất được calibration đúng trên population mới. Gradient loss có thể khác0 ngay khi class argmax đã đúng; huấn luyện bằng differentiable loss không chỉ cập nhật khi label dự đoán sai. Với logistic unit ở trên, learning rate0.1 và label1 cho w mới≈(0.537754,0.575508), b mới≈−0.962246. Một bước theo gradient và một trace inference chỉ xác minh phép tính, không chứng minh chất lượng học hoặc convergence của mạng sâu.",
+        "paragraphSha256": "299c4e812265a1a21637e1cfb981b37d9f2f911e90db9b8e91209006e05eb951",
+        "locator": "Ở multiclass output, có thể có",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 57,
+        "lineEnd": 57,
+        "exactParagraph": "3. Với logistic unit đã cho, tính z,p,p−1 và gradient w1,w2. Sau đó nêu vai trò của activation và khác biệt score/probability trong SVM.",
+        "paragraphSha256": "44bede15ddc8f198a01cf1ac58f17e9cb0832a340c883a7b68bf9aceabdad2cc",
+        "locator": "3. ",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 70,
+        "lineEnd": 70,
+        "exactParagraph": "2. Posterior A=2/3,B=1/3. Nhân hai likelihood giống nhau khi giả độc lập làm tín hiệu bị đếm lại. Laplace cho feature categorical có K values là (count+1)/(nclass+K); dùng cùng policy cho mọi class và chỉ fit training.",
+        "paragraphSha256": "451922e01966014bd5c8e32bef9c54d129e19f2ed455c937fbabc80d2b520779",
+        "locator": "3. ",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "semanticJudgment": "Layer connections/weighted activations, output per class/argmax, learned weights and chain-rule backpropagation are explained with logistic/softmax and one gradient step. Deep/data dependence and train/validation separation are explicit; neither a toy calculation nor a sum-to-one output proves quality/convergence/calibration.",
+      "algorithmProofAssessment": "Original finite algorithms/proofs extend the source outline; their arithmetic/invariants are checked, not claimed as empirical model quality or global optimizer guarantees."
+    },
+    {
+      "section": "11.4.3",
+      "title": "Regression",
+      "primaryLesson": "AD70",
+      "inventoryOwners": [
+        "AD70"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 1486,
+        "ownLineEnd": 1501,
+        "ownBodySha256": "6704519468bdabc19cc6a1229aad3a80e98f7aeb129d5b390ba4505bbb1c1178",
+        "ownBodyWordCount": 223,
+        "sourcePdfPage": 575,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 49,
+        "lineEnd": 49,
+        "exactParagraph": "Trong simple linear regression, b=Σ(x−xbar)(y−ybar)/Σ(x−xbar)², a=ybar−bxbar khi denominator>0. Công thức đến từ đặt hai partial derivatives của squared loss bằng0. Hessian của loss là positive semidefinite, và khi x không hằng, đủ rank cho nghiệm duy nhất; vì vậy nghiệm stationary là minimum của mô hình squared-error này. Nếu mọi x bằng nhau, slope không được xác định duy nhất; không chia0 rồi xuất số bất kỳ. Với nhiều features, normal equations cần rank/conditioning hoặc solver thích hợp; không dùng inverse trực tiếp như một mẹo luôn ổn định.",
+        "paragraphSha256": "7369481c6dd1e154d00d5d32f9f84651baec29ab33b16a16ace5f6343fdea2e9",
+        "locator": "Trong simple linear regression",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 47,
+        "lineEnd": 47,
+        "exactParagraph": "Với points(1,2),(2,4),(3,6), modely=a+bx có least-squares solutiona=0,b=2, residuals0. Dự đoánx4→8 là extrapolation theo giả định quan hệ tiếp tục linear; dữ liệu không chứng minh mọi x lớn đều theo quy tắc ấy.",
+        "paragraphSha256": "222e6d9b1e539fefcfe46e5ee29a67e7314b4e5bfc28daca089a49a1933eed15",
+        "locator": "Với points(1,2)",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 58,
+        "lineEnd": 58,
+        "exactParagraph": "4. Tự làm: fit regression cho (1,3),(2,5),(3,7), dự đoán x4; kiểm ca mọi x=2 và đề xuất cách báo lỗi/giới hạn. Ghi training/test boundary và một baseline.",
+        "paragraphSha256": "f8a790fad11dc082ea5b7ebe3b23c6124bfffbc1c88e5511322db265068c583c",
+        "locator": "4. ",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD70.md",
+        "lineStart": 72,
+        "lineEnd": 72,
+        "exactParagraph": "4. a=1,b=2,yhat4=9. Nếu x hằng, không xác định được slope duy nhất; báo rank deficiency hoặc dùng model chỉ có intercept theo contract. Baseline dự đoán train mean, đánh giá trên holdout tách trước fit; không lấy residual0 trên ba points làm bằng chứng chất lượng ngoài mẫu.",
+        "paragraphSha256": "6eca22452e5a81abbfe0e0e9ebadaca1c883a0140ad3fd2e0952a21a62b92653",
+        "locator": "4. ",
+        "lessonSha256": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+        "lessonHashPath": "output/database-advanced/lessons/AD70.md"
+      },
+      "semanticJudgment": "Numeric target versus class and multivariable linear/curve-fitting principle are matched. Original simple least-squares equations, stationary/convexity reasoning, rank failure, residual and extrapolation limits make the source outline self-contained for the finite exercise.",
+      "algorithmProofAssessment": "Original finite algorithms/proofs extend the source outline; their arithmetic/invariants are checked, not claimed as empirical model quality or global optimizer guarantees."
+    },
+    {
+      "section": "11.4.4",
+      "title": "Association Rules",
+      "primaryLesson": "AD71",
+      "inventoryOwners": [
+        "AD71"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 1502,
+        "ownLineEnd": 1554,
+        "ownBodySha256": "6f1625f2f926e3177882ad7c825b50040c1ebc153159d2652af1084ce3450aa5",
+        "ownBodyWordCount": 598,
+        "sourcePdfPage": 575,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "6d8cd53f34a48bcada02852fdb44cba1f8b2af92802da5f792f59419b198d53f",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD71.md",
+        "lineStart": 13,
+        "lineEnd": 13,
+        "exactParagraph": "Rule A→B có support2/4, confidence support(AB)/support(A)=2/3. Baseline P(B)=3/4 nên lift=(2/3)/(3/4)=8/9<1. Trong fixture này, gặp A không làm xác suất B cao hơn baseline. Không diễn lift<1 thành “A gây giảm B”; dữ liệu quan sát không loại confounding hoặc selection bias.",
+        "paragraphSha256": "a591455154895fe3eb4a2e3bfbb78abc42af1ee8d6e66f34b358f4d7354c7c3f",
+        "locator": "Rule A→B có support",
+        "lessonSha256": "6d8cd53f34a48bcada02852fdb44cba1f8b2af92802da5f792f59419b198d53f",
+        "lessonHashPath": "output/database-advanced/lessons/AD71.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD71.md",
+        "lineStart": 11,
+        "lineEnd": 11,
+        "exactParagraph": "Bốn baskets: t1={A,B},t2={A,B,C},t3={A,C},t4={B,C}. Mỗi basket là một tập item đã xác định, không đếm số lượng2 của A như hai transactions. A,B,C đều có support3/4; AB,AC,BC có2/4; ABC có1/4.",
+        "paragraphSha256": "f44af74f8a6058be6ef713e3d8ef8f7a6adc4db63427bb31f296df343e804134",
+        "locator": "Bốn baskets:",
+        "lessonSha256": "6d8cd53f34a48bcada02852fdb44cba1f8b2af92802da5f792f59419b198d53f",
+        "lessonHashPath": "output/database-advanced/lessons/AD71.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD71.md",
+        "lineStart": 73,
+        "lineEnd": 73,
+        "exactParagraph": "1. Tính support/confidence/lift A→B trên bốn baskets và so với B→A. Thêm một basket chỉ A rồi tính hai confidences mới.",
+        "paragraphSha256": "ab58160ddb582752ffec0e1e259a7a9c42f18c8cb20e09b038d2a51656d89d28",
+        "locator": "1. ",
+        "lessonSha256": "6d8cd53f34a48bcada02852fdb44cba1f8b2af92802da5f792f59419b198d53f",
+        "lessonHashPath": "output/database-advanced/lessons/AD71.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD71.md",
+        "lineStart": 88,
+        "lineEnd": 88,
+        "exactParagraph": "1. Ban đầu hai confidences đều2/3,lift8/9. Sau thêmA: supportAB2/5,confidenceA→B1/2,B→A2/3; baselineB3/5,A4/5 nên cả hai lifts5/6. Đồng confidence ban đầu chỉ do counts bằng nhau, không là tính chất chung của rules.",
+        "paragraphSha256": "9eadf3c1f42ddb27b2185b0fd5207ea703a09f09882c4e25939077630d5cbf09",
+        "locator": "1. ",
+        "lessonSha256": "6d8cd53f34a48bcada02852fdb44cba1f8b2af92802da5f792f59419b198d53f",
+        "lessonHashPath": "output/database-advanced/lessons/AD71.md"
+      },
+      "semanticJudgment": "Population/grain, support and asymmetric confidence, low-evidence patterns and uses of associations are explained with exact counts and lift baseline. Original Apriori construction adds soundness/completeness and finite-universe complexity, without claiming toy patterns are causal or validated useful recommendations.",
+      "algorithmProofAssessment": "Original finite algorithms/proofs extend the source outline; their arithmetic/invariants are checked, not claimed as empirical model quality or global optimizer guarantees."
+    },
+    {
+      "section": "11.4.5",
+      "title": "Clustering",
+      "primaryLesson": "AD71",
+      "inventoryOwners": [
+        "AD71"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 1555,
+        "ownLineEnd": 1604,
+        "ownBodySha256": "d5154d632eba7509e3b470f87217af8ad839e62a35b7e734b601aa862124958e",
+        "ownBodyWordCount": 531,
+        "sourcePdfPage": 577,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "6d8cd53f34a48bcada02852fdb44cba1f8b2af92802da5f792f59419b198d53f",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD71.md",
+        "lineStart": 63,
+        "lineEnd": 63,
+        "exactParagraph": "“Clustering” không có một objective duy nhất. Có thể tối thiểu hóa khoảng cách tới centroid, hoặc một hàm khoảng cách giữa các cặp trong cluster; chọn squared Euclidean SSE mới cho mean update và proof ở trên. Dùng Euclidean distance không bình phương, categorical mismatch hay complete-link distance rồi vẫn lấy mean/SSE proof là đổi bài toán. Hierarchical clusters còn có thể biểu diễn nhiều mức, thay vì đúng một flat partition với k đã chọn. Thuật toán khả dụng trên dữ liệu rất lớn cần tổ chức storage/processing phù hợp; toy fixture bốn points không là bằng chứng scale hoặc timing.",
+        "paragraphSha256": "211a7cf1bacc4770cce7c6e030f66d0925baef903d4e835ea3c32190156b22c3",
+        "locator": "“Clustering” không có một objective",
+        "lessonSha256": "6d8cd53f34a48bcada02852fdb44cba1f8b2af92802da5f792f59419b198d53f",
+        "lessonHashPath": "output/database-advanced/lessons/AD71.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD71.md",
+        "lineStart": 67,
+        "lineEnd": 67,
+        "exactParagraph": "Collaborative filtering suy sở thích từ người có lịch sử gần nhau. Cho ratings U1:{A:5,B:4}, U2:{A:5,B:4,C:5}, U3:{A:1,B:1,C:1}; C của U1 là chưa biết, không phải rating0. Trên hai items chung A/B, U2 gần U1 hơn U3 theo Euclidean distance, nên mô hình một-neighbor có thể dự đoán C=5 từ U2. Sách còn đề cập luân phiên cluster users và items để khai thác các movies tương tự dù người dùng chưa xem cùng một phim. Cần policy cho ít overlap, user/item mới và holdout theo thời điểm: giấu rating C của U1 khi fit/predict rồi mới dùng nó đánh giá. Một gợi ý theo nhóm chưa chứng minh người ấy chắc chắn thích C, và missing không tự là một phiếu chê.",
+        "paragraphSha256": "1dfe044f7f3b17d34d80e34b47600e982a12ddf45832d77f0d2abbc6dbe741b3",
+        "locator": "Collaborative filtering suy sở thích",
+        "lessonSha256": "6d8cd53f34a48bcada02852fdb44cba1f8b2af92802da5f792f59419b198d53f",
+        "lessonHashPath": "output/database-advanced/lessons/AD71.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD71.md",
+        "lineStart": 78,
+        "lineEnd": 78,
+        "exactParagraph": "6. Với Action/Calm và U4/U5, tính profile theo item groups và giải thích vì sao có thể gợi ý dù không có item co-rated. Thêm U6 chỉ có A5: profile Calm và distance policy cần ghi thế nào? So mục tiêu SSE, pairwise-distance và dendrogram; một lần alternate user/item clusters chưa chứng minh gì về optimum hoặc chất lượng dự đoán?",
+        "paragraphSha256": "987811d819daea74f86a41b79255ef721bbeafef1fbfa1bcb92af5349c1247f9",
+        "locator": "6. ",
+        "lessonSha256": "6d8cd53f34a48bcada02852fdb44cba1f8b2af92802da5f792f59419b198d53f",
+        "lessonHashPath": "output/database-advanced/lessons/AD71.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD71.md",
+        "lineStart": 88,
+        "lineEnd": 88,
+        "exactParagraph": "1. Ban đầu hai confidences đều2/3,lift8/9. Sau thêmA: supportAB2/5,confidenceA→B1/2,B→A2/3; baselineB3/5,A4/5 nên cả hai lifts5/6. Đồng confidence ban đầu chỉ do counts bằng nhau, không là tính chất chung của rules.",
+        "paragraphSha256": "9eadf3c1f42ddb27b2185b0fd5207ea703a09f09882c4e25939077630d5cbf09",
+        "locator": "6. ",
+        "lessonSha256": "6d8cd53f34a48bcada02852fdb44cba1f8b2af92802da5f792f59419b198d53f",
+        "lessonHashPath": "output/database-advanced/lessons/AD71.md"
+      },
+      "semanticJudgment": "The source full body is matched: distance/centroid versus pairwise objectives, flat versus hierarchical groups, and collaborative filtering with alternating user/item grouping. Original Lloyd and agglomerative algorithms include traces/proofs/termination/cost policies; item-group profiles show how users without co-rated items can be related. No holdout quality or global-optimum guarantee is inferred.",
+      "algorithmProofAssessment": "Original finite algorithms/proofs extend the source outline; their arithmetic/invariants are checked, not claimed as empirical model quality or global optimizer guarantees."
+    },
+    {
+      "section": "11.4.6",
+      "title": "Text Mining",
+      "primaryLesson": "AD19",
+      "inventoryOwners": [
+        "AD19"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-11.txt",
+        "sha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "rawSha256": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+        "ownLineStart": 1605,
+        "ownLineEnd": 1645,
+        "ownBodySha256": "0d70113bc2a0ff7fcf85cb26b7851718c58d3c0b031396fb027ec13e485d011f",
+        "ownBodyWordCount": 516,
+        "sourcePdfPage": 578,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD19.md",
+        "lineStart": 53,
+        "lineEnd": 53,
+        "exactParagraph": "Entity recognition tìm một **mention/span**; entity disambiguation/linking xác định mention ấy chỉ identity nào. Hai ghi chú “An xử lý đơn P17 ở quầy 2” và “Gửi đơn P17 về cửa hàng An ở phố X” có cùng token An nhưng không đủ lý do gộp thành một entity. Context, type, địa điểm và registry có thể hỗ trợ; khi không đủ bằng chứng phải cho phép unresolved hoặc nhiều candidates với trạng thái rõ. Sau recognition/linking mới trích attributes hoặc relations như handled_by(P17,employee_E4) và destination(P17,store_S8), kèm document/span nguồn; một chuỗi giống nhau chưa là key.",
+        "paragraphSha256": "86390463882cf656fe36d8c506098574ec5f54ca7445aa7bdb07a63fd42def5a",
+        "locator": "Entity recognition tìm một",
+        "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+        "lessonHashPath": "output/database-advanced/lessons/AD19.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD19.md",
+        "lineStart": 55,
+        "lineEnd": 55,
+        "exactParagraph": "Sentiment còn có thể theo **aspect**: “đóng gói tốt nhưng giao chậm” cho đóng gói tích cực và tốc độ tiêu cực; ép một document chỉ có một nhãn làm mất thông tin người vận hành cần sửa. Information extraction có thể tạo structured rows từ prose hoặc bảng trong tài liệu, rồi liên kết facts thành knowledge graph với entities/edges/provenance. Graph ấy là cách biểu diễn thông tin đã trích, không là bằng chứng mọi edge đúng. Cần đánh giá riêng span detection, linking, relation/aspect và giữ cách xử lý mâu thuẫn/không biết; một overall document score chưa kiểm các tầng ấy.",
+        "paragraphSha256": "7d5b48476976af689415426b2c304532c61182bcaf22fdacb8e552d695452903",
+        "locator": "Sentiment còn có thể theo **aspect**:",
+        "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+        "lessonHashPath": "output/database-advanced/lessons/AD19.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD19.md",
+        "lineStart": 71,
+        "lineEnd": 71,
+        "exactParagraph": "5. Với hai ghi chú về An và câu “đóng gói tốt nhưng giao chậm”, thiết kế output recognition/linking/relation/aspect có provenance. Nêu một ca unresolved, một edge không được tự suy và cách chấm đúng từng tầng. Phân biệt output graph, descriptive aggregate và model dự đoán cho instance mới.",
+        "paragraphSha256": "7209087cc4fc8aca62946a9a065bf7a186bca160ec89521b5de7c6121ecc887b",
+        "locator": "5. ",
+        "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+        "lessonHashPath": "output/database-advanced/lessons/AD19.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD19.md",
+        "lineStart": 85,
+        "lineEnd": 85,
+        "exactParagraph": "5. Output giữ mention An, span và document_id; ghi type Employee cho context xử lý tại quầy, Store cho context cửa hàng khi registry/evidence đủ, rồi link tới hai IDs riêng. Nếu chỉ có “An nhận P17”, giữ unresolved thay vì đoán identity. Không suy Employee tên An sở hữu Store tên An. Relation handled_by/destination và aspect packaging-positive/delivery-speed-negative cần span hỗ trợ và policy chấm riêng; chấm mentions, linked IDs, edges/aspects theo gold contract, không dùng một document accuracy cho mọi tầng. Graph lưu facts/candidates đã trích; aggregate đếm phản hồi đã quan sát; predictive model nhận features của một instance mới để dự đoán outcome, còn chất lượng cần holdout đúng protocol.",
+        "paragraphSha256": "2b3328003667f4a62dbe22529c31df6e1430e0b0f53b5e653c39b7d43086f2e2",
+        "locator": "5. ",
+        "lessonSha256": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+        "lessonHashPath": "output/database-advanced/lessons/AD19.md"
+      },
+      "semanticJudgment": "Sentiment, entity mentions and identity disambiguation, structured extraction/relations, aspect-specific sentiment/location and knowledge-graph representation all have original examples with provenance. Graph structure does not validate extracted facts and ambiguous identity may remain unresolved.",
+      "algorithmProofAssessment": "The source introduces task families and text mining; the lesson adds an explicit evaluation protocol/provenance contract, not a trained or quality-validated ML artifact."
+    },
+    {
+      "section": "16.5.1",
+      "title": "View Maintenance",
+      "primaryLesson": "AD18",
+      "inventoryOwners": [
+        "AD18",
+        "AD37"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-16.txt",
+        "sha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+        "rawSha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+        "ownLineStart": 1506,
+        "ownLineEnd": 1537,
+        "ownBodySha256": "fa87dd4e94369e5cd187555b68b475670400e13228255b20be215f467c369cec",
+        "ownBodyWordCount": 369,
+        "sourcePdfPage": 808,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 11,
+        "lineEnd": 11,
+        "exactParagraph": "Có nhiều cách giữ view: sửa mọi đường ghi của ứng dụng để cùng sửa summary; dùng triggers cho INSERT/DELETE/UPDATE; hoặc dùng cơ chế materialized-view maintenance mà DBMS thực sự cung cấp cho expression đó. Cách thứ nhất dễ bỏ sót một writer; trigger tính lại toàn view sau mỗi row có thể đúng nhưng đắt. Incremental maintenance chỉ tính phần bị ảnh hưởng. **Immediate maintenance** hoàn tất cùng transaction thay đổi base, nên có thể công bố invariant ở mỗi commit; **deferred maintenance** gom changes rồi refresh sau, giảm công việc trên đường ghi nhưng cho phép summary trễ. Deferred không có nghĩa được bỏ version/freshness contract. Chọn cách nào cũng cần baseline snapshot đúng, capture đủ changes và xử lý failure; tên một tính năng không tự chứng minh tất cả view expressions được hỗ trợ.",
+        "paragraphSha256": "7608e5176860a6b0d40cf37cf90425f89ef734a769de5bc62329cc6bd060330b",
+        "locator": "Có nhiều cách giữ view:",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 70,
+        "lineEnd": 70,
+        "exactParagraph": "Để reload batch B không cộng lại, dùng processed_batches(B UNIQUE) cùng transaction update base/summary hoặc protocol atomic tương ứng. Hai workers cùng B: chỉ một bên ghi key thành công; bên kia trả outcome đã xử lý theo policy. Nếu commit key trước summary, crash có thể khiến B được báo hoàn tất nhưng total chưa cộng. Nếu summary commit trước key, retry có thể cộng hai lần. Transaction cần giữ hai thay đổi không tách rời.",
+        "paragraphSha256": "4fb920898eaa5510f01a62973d1c6a1ca97b906f1899c6c2956e76754f4bf541",
+        "locator": "Để reload batch B không cộng lại",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 88,
+        "lineEnd": 88,
+        "exactParagraph": "5. Với R={a,b},S={b,c}, trace insert a vào S rồi delete b khỏi R cho intersection/union/difference. Với SELECT DISTINCT a FROM T, T có (A,2),(A,3), trace hai deletes và nói state cần giữ. Sau đó tự tính delta V=σ(a+b>6)(R⋈S) trong fixture r1/r2/s1/s2 của bài, gồm pair mới–mới và số rows cuối; chọn immediate/deferred maintenance cho một report có freshness cho phép 1 giờ và giải thích điều reader được thấy.",
+        "paragraphSha256": "d9127fd6f3ec43a3b671b4a89434611e06e373a304cb3be3fb224152c9f4e5a1",
+        "locator": "5. ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 102,
+        "lineEnd": 102,
+        "exactParagraph": "5. Sau insert a vào S: intersection={a,b},union={a,b,c},difference=∅. Sau delete b khỏi R: intersection={a},union={a,b,c},difference=∅. Projection count A:2→1→0; chỉ delete thứ hai mới xóa A khỏi DISTINCT output. Join delta có r2s1,r1s2,r2s2, tất cả sum>6 nên V cuối có 3 rows; không thêm r1s1. Immediate công bố view cùng base commit nhưng tăng công việc writer; deferred có thể dùng snapshot/offset đã hoàn tất và nhãn as-of không quá 1 giờ theo contract, reader không được hiểu nó là base mới nhất. Chấp nhận cả hai khi giải thích cost/freshness và không trộn versions.",
+        "paragraphSha256": "acbb1f9bf7cfcfdd92fcf7275ee6a11879fef12ff5837e26a9aa890720e95d8e",
+        "locator": "5. ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "semanticJudgment": "Manual writer changes, triggers/full refresh, native maintenance when supported, incremental versus immediate/deferred refresh and consistency/freshness tradeoffs are explicit. Original replay/atomic batch protocol extends rather than assumes DBMS support.",
+      "algorithmProofAssessment": "Differential laws include state/version assumptions and multiplicity or membership reasoning; operator composition is by induction. Finite checks supplement universal arguments, not transaction-runtime evidence."
+    },
+    {
+      "section": "16.5.2",
+      "title": "Incremental View Maintenance",
+      "primaryLesson": "AD18",
+      "inventoryOwners": [
+        "AD18",
+        "AD37"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-16.txt",
+        "sha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+        "rawSha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+        "ownLineStart": 1538,
+        "ownLineEnd": 1549,
+        "ownBodySha256": "4d0b0046ee09ac8323b795af8363b2e43323830cc5e98c4b72e297339ca799c5",
+        "ownBodyWordCount": 131,
+        "sourcePdfPage": 808,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 31,
+        "lineEnd": 31,
+        "exactParagraph": "Sign +1 là insert một occurrence, −1 là delete một occurrence. UPDATE được tách old row−1 và new row+1. Cần before image hoặc key để trừ đúng giá trị cũ. Hai rows cùng amount vẫn là hai occurrences. Nếu amount có thể âm vì refund, dấu delta là một chiều khác: refund −10 không tự là delete của sale +10.",
+        "paragraphSha256": "cfacf95f31c3fac8205337f80ed381021d0d3863f0e03326abd980ef2f848ad9",
+        "locator": "Sign +1 là insert một occurrence",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 17,
+        "lineEnd": 17,
+        "exactParagraph": "Insert (4,A,20) cho state A=(3,2,30), AVG=15. Delete event1 cho (2,1,20), AVG=20. Delete event4 còn một row NULL: state=(1,0,0 nội bộ), nhưng SUM và AVG hiển thị NULL. Delete nốt event2 mới làm group A biến mất. Một cột total đơn lẻ không phân biệt tổng0 thật, toàn NULL và không còn nhóm.",
+        "paragraphSha256": "1695d476ea798cf2b08cef1ea263825acde282c1771bf44cd595f556925c6acf",
+        "locator": "Insert (4,A,20)",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 84,
+        "lineEnd": 84,
+        "exactParagraph": "1. Trace insert event4, delete event1, delete event4 của ví dụ1; ghi row_count,nonnull_count,SUM,AVG và nhóm còn hay không.",
+        "paragraphSha256": "bf71878ed7087b85b1803e1b66747c3f26ea009a94d20580bb1afdfb7ce5b403",
+        "locator": "1. ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 98,
+        "lineEnd": 98,
+        "exactParagraph": "1. Sau insert: (3,2,30,15,còn). Sau xóa1: (2,1,20,20,còn). Sau xóa4: (1,0,NULL,NULL,còn). Chỉ xóa nốt row NULL mới làm group biến mất.",
+        "paragraphSha256": "b56368a419021b2c25e00a4127be2dce6b00c47435fcc53c5b4b5a3ca8ad762a",
+        "locator": "1. ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "semanticJudgment": "Insert/delete differentials and update-as-delete-old/insert-new are explicit with signed multiplicity, before images and version assumptions. The source parent introduction is reviewed separately from all operator descendants.",
+      "algorithmProofAssessment": "Differential laws include state/version assumptions and multiplicity or membership reasoning; operator composition is by induction. Finite checks supplement universal arguments, not transaction-runtime evidence."
+    },
+    {
+      "section": "16.5.2.1",
+      "title": "Join Operation",
+      "primaryLesson": "AD18",
+      "inventoryOwners": [
+        "AD18",
+        "AD37"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-16.txt",
+        "sha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+        "rawSha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+        "ownLineStart": 1550,
+        "ownLineEnd": 1563,
+        "ownBodySha256": "d99e2ddbbb1d07bc617033fe8052cab8c6d42ce62f8c4abd9cad0d02c502e8db",
+        "ownBodyWordCount": 216,
+        "sourcePdfPage": 809,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 56,
+        "lineEnd": 56,
+        "exactParagraph": "Proof cho một tuple pair khớp predicate: multiplicity mới là (mR+δR)(mS+δS); trừ multiplicity cũ mRmS được mRδS+δRmS+δRδS. Ba terms tương ứng ba nguồn của pairs. Đó là luật bag join; dùng set UNION có thể loại occurrences hợp lệ. Không mang luật inner join sang outer join nguyên xi: outer join còn phải thêm/bỏ hàng bù khi match count chuyển0↔positive.",
+        "paragraphSha256": "ee25f9a89f95e8f0de586303c698d829a1b569b3ca625743c002ce74ecd7caa2",
+        "locator": "Proof cho một tuple pair khớp predicate:",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 45,
+        "lineEnd": 45,
+        "exactParagraph": "Old R có r1, old S có s1, cùng join-key k. View có r1s1. Insert đồng thời r2 và s2 cùng key: view mới có r1s1,r1s2,r2s1,r2s2; delta có ba pairs. Với old snapshots:",
+        "paragraphSha256": "5b68ea0c10d257b08edc9823dff059e1502a1177dedaf94190bc76041232a945",
+        "locator": "Old R có r1, old S có s1",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 86,
+        "lineEnd": 86,
+        "exactParagraph": "3. Old R={r1,r2}, old S={s1}, DeltaR={r3}, DeltaS={s2,s3}; mọi key là k. Liệt kê ba terms và tổng delta join. Sau đó cho một r không match: thêm match đầu hoặc xóa match cuối phải sửa những hàng nào trong LEFT JOIN?",
+        "paragraphSha256": "a68442e93fe63f44eb4ec8d9644c49381da26a2d9092e97ee3ad76b507e78dc0",
+        "locator": "3. ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 100,
+        "lineEnd": 100,
+        "exactParagraph": "3. Term1 r3s1; term2 r1s2,r1s3,r2s2,r2s3; term3 r3s2,r3s3. Delta7, view mới9 pairs so old2. Cross term xuất hiện đúng một lần. LEFT JOIN thêm match đầu phải xóa (r,NULL) rồi thêm pair thật; xóa match cuối phải xóa pair rồi thêm lại (r,NULL). Nếu còn một match khác, không có hàng bù.",
+        "paragraphSha256": "d3e6fb07a31c45e56b01fb05606c2b418c039c05053847e0f807b5c1def6c66e",
+        "locator": "3. ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "semanticJudgment": "Single-input source join insert/delete laws are covered by a more general signed bag identity, with explicit old/new snapshots and simultaneous cross term. Multiplicity polynomial supplies correctness; set union is not substituted for bag union.",
+      "algorithmProofAssessment": "Differential laws include state/version assumptions and multiplicity or membership reasoning; operator composition is by induction. Finite checks supplement universal arguments, not transaction-runtime evidence."
+    },
+    {
+      "section": "16.5.2.2",
+      "title": "Selection and Projection Operations",
+      "primaryLesson": "AD18",
+      "inventoryOwners": [
+        "AD18",
+        "AD37"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-16.txt",
+        "sha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+        "rawSha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+        "ownLineStart": 1564,
+        "ownLineEnd": 1589,
+        "ownBodySha256": "64f5f2de3158048ba5054d5655eecf5833a72b0a78a85fc9498277dd539751e2",
+        "ownBodyWordCount": 359,
+        "sourcePdfPage": 809,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 58,
+        "lineEnd": 58,
+        "exactParagraph": "Selection và projection ở §16.5.2.2 cũng cần delta rule cụ thể. Với view `SELECT DISTINCT a FROM R`, base R={(A,2),(A,3),(B,4)} cho view {A,B}. Delete (A,2) chưa được xóa A khỏi view vì còn witness (A,3). Giữ derivation count A:2,B:1; delete giảm A xuống1 nên vẫn giữ, delete nốt (A,3) mới xóa A ở count0. Insert tăng count tương ứng. Với bag projection không DISTINCT, multiplicity chính là số witnesses, chưa cần bước ép membership về0/1. Selection chỉ phát delta của rows thỏa predicate; với predicate amount>0, thay amount5→−2 tạo delta xóa row5 khỏi view, không thêm row−2. Proof đều theo số witnesses của mỗi output tuple, ngoài giả định predicate không có hiệu ứng phụ thay đổi theo lượt chạy.",
+        "paragraphSha256": "059f1e01b216ed8aed1e83233ff5304bb0ddc222f7bb5a343d9356fe8180b09c",
+        "locator": "Selection và projection ở §16.5.2.2",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 58,
+        "lineEnd": 58,
+        "exactParagraph": "Selection và projection ở §16.5.2.2 cũng cần delta rule cụ thể. Với view `SELECT DISTINCT a FROM R`, base R={(A,2),(A,3),(B,4)} cho view {A,B}. Delete (A,2) chưa được xóa A khỏi view vì còn witness (A,3). Giữ derivation count A:2,B:1; delete giảm A xuống1 nên vẫn giữ, delete nốt (A,3) mới xóa A ở count0. Insert tăng count tương ứng. Với bag projection không DISTINCT, multiplicity chính là số witnesses, chưa cần bước ép membership về0/1. Selection chỉ phát delta của rows thỏa predicate; với predicate amount>0, thay amount5→−2 tạo delta xóa row5 khỏi view, không thêm row−2. Proof đều theo số witnesses của mỗi output tuple, ngoài giả định predicate không có hiệu ứng phụ thay đổi theo lượt chạy.",
+        "paragraphSha256": "059f1e01b216ed8aed1e83233ff5304bb0ddc222f7bb5a343d9356fe8180b09c",
+        "locator": "base R={(A,2),(A,3),(B,4)}",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 88,
+        "lineEnd": 88,
+        "exactParagraph": "5. Với R={a,b},S={b,c}, trace insert a vào S rồi delete b khỏi R cho intersection/union/difference. Với SELECT DISTINCT a FROM T, T có (A,2),(A,3), trace hai deletes và nói state cần giữ. Sau đó tự tính delta V=σ(a+b>6)(R⋈S) trong fixture r1/r2/s1/s2 của bài, gồm pair mới–mới và số rows cuối; chọn immediate/deferred maintenance cho một report có freshness cho phép 1 giờ và giải thích điều reader được thấy.",
+        "paragraphSha256": "d9127fd6f3ec43a3b671b4a89434611e06e373a304cb3be3fb224152c9f4e5a1",
+        "locator": "5. ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 102,
+        "lineEnd": 102,
+        "exactParagraph": "5. Sau insert a vào S: intersection={a,b},union={a,b,c},difference=∅. Sau delete b khỏi R: intersection={a},union={a,b,c},difference=∅. Projection count A:2→1→0; chỉ delete thứ hai mới xóa A khỏi DISTINCT output. Join delta có r2s1,r1s2,r2s2, tất cả sum>6 nên V cuối có 3 rows; không thêm r1s1. Immediate công bố view cùng base commit nhưng tăng công việc writer; deferred có thể dùng snapshot/offset đã hoàn tất và nhãn as-of không quá 1 giờ theo contract, reader không được hiểu nó là base mới nhất. Chấp nhận cả hai khi giải thích cost/freshness và không trộn versions.",
+        "paragraphSha256": "acbb1f9bf7cfcfdd92fcf7275ee6a11879fef12ff5837e26a9aa890720e95d8e",
+        "locator": "5. ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "semanticJudgment": "Selection forwards only matching changes, including predicate-crossing updates; projection DISTINCT needs derivation counts until the last witness disappears. Bag projection is distinguished and witness-count reasoning justifies the laws.",
+      "algorithmProofAssessment": "Differential laws include state/version assumptions and multiplicity or membership reasoning; operator composition is by induction. Finite checks supplement universal arguments, not transaction-runtime evidence."
+    },
+    {
+      "section": "16.5.2.3",
+      "title": "Aggregation Operations",
+      "primaryLesson": "AD18",
+      "inventoryOwners": [
+        "AD18",
+        "AD37"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-16.txt",
+        "sha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+        "rawSha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+        "ownLineStart": 1590,
+        "ownLineEnd": 1634,
+        "ownBodySha256": "24a70dac6a48701384b2576eadc5c8ecbaf73ba58fbf175e20af51167978aaba",
+        "ownBodyWordCount": 613,
+        "sourcePdfPage": 810,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 15,
+        "lineEnd": 15,
+        "exactParagraph": "Fact f=(event_id,group,amount) có (1,A,10),(2,A,NULL),(3,B,5). Nhóm A có COUNT(*)=2, COUNT(amount)=1, SUM=10, AVG=10. Để xử lý deletions đúng, giữ row_count, nonnull_count và sum_nonnull. SUM hiển thị NULL khi nonnull_count=0; group biến mất khi row_count=0 đối với GROUP BY trên các rows còn lại.",
+        "paragraphSha256": "1fe0f130d95e10828a193d80e6a993a9be07fdc57d50d62e841d685af776f533",
+        "locator": "Fact f=(event_id,group,amount)",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 39,
+        "lineEnd": 39,
+        "exactParagraph": "MIN5,count3,sum35 lại không đủ biết min sau khi xóa5. Hai multisets {5,10,20} và {5,7,23} có cùng ba số ấy nhưng min mới lần lượt10 và7. Cần multiset/index bổ sung hoặc recompute group. Phản ví dụ xác nhận rằng không có hàm từ riêng bộ state cũ ấy và giá trị bị xóa tới mọi min mới đúng.",
+        "paragraphSha256": "f51fa2d34998cf5157f33c88f71d4cde25129ca381df849542c29aa2e82ea491",
+        "locator": "MIN5,count3,sum35 lại không đủ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 85,
+        "lineEnd": 85,
+        "exactParagraph": "2. Dùng hai multisets có cùng min/count/sum nhưng min sau delete khác nhau để bác state MIN không đủ.",
+        "paragraphSha256": "364bde7a701578c44c82ccd967923a75906926268489c9b8137e4403713f8014",
+        "locator": "2. ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 99,
+        "lineEnd": 99,
+        "exactParagraph": "2. {5,10,20} và {5,7,23} đều min5,count3,sum35; delete5 cho10 và7. Chọn index/multiset hoặc recompute, cùng chi phí tương ứng.",
+        "paragraphSha256": "15f49d253f39129e8aeac826d3113404f7ddab39638ac46616dad07c77ddf7b5",
+        "locator": "2. ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "semanticJudgment": "COUNT/SUM/AVG state, all-NULL versus zero versus absent group and deletes are traced with an induction invariant. MIN/MAX deletion needs more information/recompute or ordered index; the original counterexample proves insufficiency of min/count/sum alone.",
+      "algorithmProofAssessment": "Differential laws include state/version assumptions and multiplicity or membership reasoning; operator composition is by induction. Finite checks supplement universal arguments, not transaction-runtime evidence."
+    },
+    {
+      "section": "16.5.2.4",
+      "title": "Other Operations",
+      "primaryLesson": "AD18",
+      "inventoryOwners": [
+        "AD18",
+        "AD37"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-16.txt",
+        "sha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+        "rawSha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+        "ownLineStart": 1635,
+        "ownLineEnd": 1644,
+        "ownBodySha256": "a7208ede3f6bd25cba093b2e22f33d185370b580a2c937c81d3722e81f67b99a",
+        "ownBodyWordCount": 154,
+        "sourcePdfPage": 811,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 62,
+        "lineEnd": 62,
+        "exactParagraph": "Với **set** intersection/union/difference, theo dõi presence của tuple ở từng input. Nếu r,s∈{0,1} là membership ở R,S thì output membership lần lượt là r∧s, r∨s và r∧¬s; delta là membership mới trừ membership cũ. Ví dụ R={a,b},S={b,c}: R∩S={b},R∪S={a,b,c},R−S={a}. Insert a vào S thêm a vào intersection, không đổi union, và xóa a khỏi difference. Delete b khỏi R xóa b khỏi intersection nhưng union vẫn giữ b vì S còn witness. Nếu input là bags nhưng output DISTINCT, cần counts ở mỗi phía để phát hiện chuyển 0↔positive, không coi xóa một occurrence là mất membership. Với bag UNION ALL, có thể cộng signed multiplicities; không tráo công thức ấy cho set union hoặc bag intersection/difference mà chưa định nghĩa semantics.",
+        "paragraphSha256": "114fafffa79196ee3f9413f62a46e01c2af811ffd6f754f8a22151eb380c9f8c",
+        "locator": "Với **set** intersection/union/difference",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 60,
+        "lineEnd": 60,
+        "exactParagraph": "Outer-join maintenance có điểm chuyển match count0↔positive như §16.5.2.4. R={r1(key=A)}, S rỗng cho LEFT JOIN row (r1,NULL). Insert s1(key=A) phải **xóa hàng bù** rồi thêm (r1,s1); chỉ thêm pair mới sẽ để lại hai rows sai. Delete match cuối làm ngược lại, thêm lại hàng bù. Nếu còn s2 cùng key thì delete s1 chỉ xóa pair với s1, không thêm hàng bù. Cho expression `V=select_p(R join S)`, có thể đẩy join delta qua selection để nhận delta của V. Khi cả hai nhánh cùng đổi phải giữ cross term ở trên; khi expression tự join cùng một base ở hai chỗ thì cả hai nhánh cùng chịu delta, không được coi base chỉ xuất hiện một lần.",
+        "paragraphSha256": "a7b0b7326871d5f86796bd02550c2bb9d81302a63285778f256446f1ce7b97ec",
+        "locator": "Outer-join maintenance có điểm chuyển",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 88,
+        "lineEnd": 88,
+        "exactParagraph": "5. Với R={a,b},S={b,c}, trace insert a vào S rồi delete b khỏi R cho intersection/union/difference. Với SELECT DISTINCT a FROM T, T có (A,2),(A,3), trace hai deletes và nói state cần giữ. Sau đó tự tính delta V=σ(a+b>6)(R⋈S) trong fixture r1/r2/s1/s2 của bài, gồm pair mới–mới và số rows cuối; chọn immediate/deferred maintenance cho một report có freshness cho phép 1 giờ và giải thích điều reader được thấy.",
+        "paragraphSha256": "d9127fd6f3ec43a3b671b4a89434611e06e373a304cb3be3fb224152c9f4e5a1",
+        "locator": "5. ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 102,
+        "lineEnd": 102,
+        "exactParagraph": "5. Sau insert a vào S: intersection={a,b},union={a,b,c},difference=∅. Sau delete b khỏi R: intersection={a},union={a,b,c},difference=∅. Projection count A:2→1→0; chỉ delete thứ hai mới xóa A khỏi DISTINCT output. Join delta có r2s1,r1s2,r2s2, tất cả sum>6 nên V cuối có 3 rows; không thêm r1s1. Immediate công bố view cùng base commit nhưng tăng công việc writer; deferred có thể dùng snapshot/offset đã hoàn tất và nhãn as-of không quá 1 giờ theo contract, reader không được hiểu nó là base mới nhất. Chấp nhận cả hai khi giải thích cost/freshness và không trộn versions.",
+        "paragraphSha256": "acbb1f9bf7cfcfdd92fcf7275ee6a11879fef12ff5837e26a9aa890720e95d8e",
+        "locator": "5. ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "semanticJudgment": "Set intersection/union/difference use both-side membership and transition laws; bags/DISTINCT need counts. Outer joins remove/add null-extended rows on first/last match transitions. Source intentionally leaves details open; original examples/answered exercises fill them.",
+      "algorithmProofAssessment": "Differential laws include state/version assumptions and multiplicity or membership reasoning; operator composition is by induction. Finite checks supplement universal arguments, not transaction-runtime evidence."
+    },
+    {
+      "section": "16.5.2.5",
+      "title": "Handling Expressions",
+      "primaryLesson": "AD18",
+      "inventoryOwners": [
+        "AD18",
+        "AD37"
+      ],
+      "status": "covered-after-fix",
+      "semanticStatus": "complete",
+      "baselineCreditApplied": false,
+      "source": {
+        "path": "tmp/database-source/chapter-16.txt",
+        "sha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+        "rawSha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+        "ownLineStart": 1645,
+        "ownLineEnd": 1654,
+        "ownBodySha256": "584ef42628f61aaf832cc148544899319fb96e9a10a537580c995ada0cddc285",
+        "ownBodyWordCount": 124,
+        "sourcePdfPage": 811,
+        "readInFull": true,
+        "rangePolicy": "Own body ends immediately before the next numbered heading in the same chapter; final chapter own body ends at the reviewed pre-Summary boundary."
+      },
+      "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+      "explanation": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 64,
+        "lineEnd": 64,
+        "exactParagraph": "Để xử lý một expression, đi từ leaves lên root: tính delta cho mỗi subexpression theo operator của nó, chuyển delta và version output lên parent, rồi áp vào view đã materialize. Với V=σ(a+b>6)(R⋈S), old R={r1:a2},old S={s1:b3}, mọi key K, view cũ rỗng. Insert r2:a4 và s2:b5 cùng batch tạo join delta r2s1(sum7),r1s2(sum7),r2s2(sum9); selection giữ cả ba. Old r1s1(sum5) vẫn không vào view. Nếu hai changes được xử tuần tự, term thứ hai phải dùng state sau change thứ nhất; nếu xử cùng old snapshots, phải có cross term. Induction trên expression tree cho correctness khi mỗi operator law đúng và versions của children nhất quán. Một DAG có subexpression dùng lại hoặc self-join phải truyền change tới mọi occurrence đúng một lần theo cạnh phụ thuộc; không bỏ một nhánh chỉ vì base name đã xuất hiện trước đó.",
+        "paragraphSha256": "26743b3cb5e2fa8c4863c8db7c39a0536d09897be07923a4c1a398aab9d79c57",
+        "locator": "Để xử lý một expression",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "workedExampleOrTrace": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 64,
+        "lineEnd": 64,
+        "exactParagraph": "Để xử lý một expression, đi từ leaves lên root: tính delta cho mỗi subexpression theo operator của nó, chuyển delta và version output lên parent, rồi áp vào view đã materialize. Với V=σ(a+b>6)(R⋈S), old R={r1:a2},old S={s1:b3}, mọi key K, view cũ rỗng. Insert r2:a4 và s2:b5 cùng batch tạo join delta r2s1(sum7),r1s2(sum7),r2s2(sum9); selection giữ cả ba. Old r1s1(sum5) vẫn không vào view. Nếu hai changes được xử tuần tự, term thứ hai phải dùng state sau change thứ nhất; nếu xử cùng old snapshots, phải có cross term. Induction trên expression tree cho correctness khi mỗi operator law đúng và versions của children nhất quán. Một DAG có subexpression dùng lại hoặc self-join phải truyền change tới mọi occurrence đúng một lần theo cạnh phụ thuộc; không bỏ một nhánh chỉ vì base name đã xuất hiện trước đó.",
+        "paragraphSha256": "26743b3cb5e2fa8c4863c8db7c39a0536d09897be07923a4c1a398aab9d79c57",
+        "locator": "V=σ(a+b>6)(R⋈S)",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "activity": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 88,
+        "lineEnd": 88,
+        "exactParagraph": "5. Với R={a,b},S={b,c}, trace insert a vào S rồi delete b khỏi R cho intersection/union/difference. Với SELECT DISTINCT a FROM T, T có (A,2),(A,3), trace hai deletes và nói state cần giữ. Sau đó tự tính delta V=σ(a+b>6)(R⋈S) trong fixture r1/r2/s1/s2 của bài, gồm pair mới–mới và số rows cuối; chọn immediate/deferred maintenance cho một report có freshness cho phép 1 giờ và giải thích điều reader được thấy.",
+        "paragraphSha256": "d9127fd6f3ec43a3b671b4a89434611e06e373a304cb3be3fb224152c9f4e5a1",
+        "locator": "5. ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "answer": {
+        "path": "output/database-advanced/lessons/AD18.md",
+        "lineStart": 102,
+        "lineEnd": 102,
+        "exactParagraph": "5. Sau insert a vào S: intersection={a,b},union={a,b,c},difference=∅. Sau delete b khỏi R: intersection={a},union={a,b,c},difference=∅. Projection count A:2→1→0; chỉ delete thứ hai mới xóa A khỏi DISTINCT output. Join delta có r2s1,r1s2,r2s2, tất cả sum>6 nên V cuối có 3 rows; không thêm r1s1. Immediate công bố view cùng base commit nhưng tăng công việc writer; deferred có thể dùng snapshot/offset đã hoàn tất và nhãn as-of không quá 1 giờ theo contract, reader không được hiểu nó là base mới nhất. Chấp nhận cả hai khi giải thích cost/freshness và không trộn versions.",
+        "paragraphSha256": "acbb1f9bf7cfcfdd92fcf7275ee6a11879fef12ff5837e26a9aa890720e95d8e",
+        "locator": "5. ",
+        "lessonSha256": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+        "lessonHashPath": "output/database-advanced/lessons/AD18.md"
+      },
+      "semanticJudgment": "Bottom-up expression differentials propagate each child change with consistent versions; original simultaneous join/selection trace includes cross term. Structural induction, repeated base occurrences and DAG dependency handling are explained, without claiming a race-proof implementation from algebra alone.",
+      "algorithmProofAssessment": "Differential laws include state/version assumptions and multiplicity or membership reasoning; operator composition is by induction. Finite checks supplement universal arguments, not transaction-runtime evidence."
+    }
+  ]
+}

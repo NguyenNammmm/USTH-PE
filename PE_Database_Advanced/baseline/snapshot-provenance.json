@@ -1,0 +1,431 @@
+{
+  "scope": "Unchanged85 previousPE lessons, not a claim of independent complete new-depth coverage.",
+  "sourceManifestSha256": "bb6691ea7f7414b7ec24f6dc62017fa455274abfe46f6af1ec5a68276d51b379",
+  "files": [
+    {
+      "path": "lessons/F01.md",
+      "sha256": "01f8ce4e22863d66f10993a42fe0c3d20992cedc5708e39c0a993214b0ffc5f0",
+      "snapshotSha256": "01f8ce4e22863d66f10993a42fe0c3d20992cedc5708e39c0a993214b0ffc5f0"
+    },
+    {
+      "path": "lessons/F02.md",
+      "sha256": "40509f2d06e259c7f278e60064897f8172054a1b995d090ca2a7f6e1ac97ce27",
+      "snapshotSha256": "40509f2d06e259c7f278e60064897f8172054a1b995d090ca2a7f6e1ac97ce27"
+    },
+    {
+      "path": "lessons/M01.md",
+      "sha256": "879b8e1264f460304bd934b3c8760d22e69cee6d624868275fa7417d259bdfa2",
+      "snapshotSha256": "879b8e1264f460304bd934b3c8760d22e69cee6d624868275fa7417d259bdfa2"
+    },
+    {
+      "path": "lessons/M02.md",
+      "sha256": "9340a9a9d91929bb6851e95b23240561988686ab9d6788cd546994701eeaaad8",
+      "snapshotSha256": "9340a9a9d91929bb6851e95b23240561988686ab9d6788cd546994701eeaaad8"
+    },
+    {
+      "path": "lessons/M03.md",
+      "sha256": "9fa7c189fc082c3f862975e9d6cd4bdf2d1addc9eb3d6f7dc4a0d5da11ae183d",
+      "snapshotSha256": "9fa7c189fc082c3f862975e9d6cd4bdf2d1addc9eb3d6f7dc4a0d5da11ae183d"
+    },
+    {
+      "path": "lessons/M04.md",
+      "sha256": "b5d112b43be2ec25ed16794fef7383cfc1175aeb963710fcd35b4277e69ac6d5",
+      "snapshotSha256": "b5d112b43be2ec25ed16794fef7383cfc1175aeb963710fcd35b4277e69ac6d5"
+    },
+    {
+      "path": "lessons/M05.md",
+      "sha256": "53f68435115e3af1daabb78b42c79088a79f5fc3b8961fdd528f47a9cddb7f53",
+      "snapshotSha256": "53f68435115e3af1daabb78b42c79088a79f5fc3b8961fdd528f47a9cddb7f53"
+    },
+    {
+      "path": "lessons/M06.md",
+      "sha256": "b23f7cc98cf0aa209acc7c89e982bacd06331ec51034d5b55c58cd03e2716e0e",
+      "snapshotSha256": "b23f7cc98cf0aa209acc7c89e982bacd06331ec51034d5b55c58cd03e2716e0e"
+    },
+    {
+      "path": "lessons/C01.md",
+      "sha256": "eddd90bcb48235daaf63e10d520b09277ce82e1a109862811cac38cc1e5c3c75",
+      "snapshotSha256": "eddd90bcb48235daaf63e10d520b09277ce82e1a109862811cac38cc1e5c3c75"
+    },
+    {
+      "path": "lessons/C02.md",
+      "sha256": "05cb47ed478085b4ecce37e39eda0bf4108439c3ddddf28cec5e7f60c25301b6",
+      "snapshotSha256": "05cb47ed478085b4ecce37e39eda0bf4108439c3ddddf28cec5e7f60c25301b6"
+    },
+    {
+      "path": "lessons/C03.md",
+      "sha256": "5162a531c9422502c00557b85dca1666a2819c6bc3c47268714a163376f5c1c2",
+      "snapshotSha256": "5162a531c9422502c00557b85dca1666a2819c6bc3c47268714a163376f5c1c2"
+    },
+    {
+      "path": "lessons/C04.md",
+      "sha256": "5bbb4d3e31bfe68ebf8f1b3b321aaf18a2820ce68d1b9bf8315d51057a3435cc",
+      "snapshotSha256": "5bbb4d3e31bfe68ebf8f1b3b321aaf18a2820ce68d1b9bf8315d51057a3435cc"
+    },
+    {
+      "path": "lessons/S01.md",
+      "sha256": "40c9f584b1fa6c8ff3023f4b2c2ed5098dfc90eb103650dd78286ca8162410f4",
+      "snapshotSha256": "40c9f584b1fa6c8ff3023f4b2c2ed5098dfc90eb103650dd78286ca8162410f4"
+    },
+    {
+      "path": "lessons/S02.md",
+      "sha256": "657a205d597a332a382816cd936c433385685c478e5f9d4344a66877e5c22122",
+      "snapshotSha256": "657a205d597a332a382816cd936c433385685c478e5f9d4344a66877e5c22122"
+    },
+    {
+      "path": "lessons/S03.md",
+      "sha256": "aea1203138504c3cace949b81cb58791544aa450f78ff6b263903301c2427f34",
+      "snapshotSha256": "aea1203138504c3cace949b81cb58791544aa450f78ff6b263903301c2427f34"
+    },
+    {
+      "path": "lessons/S04.md",
+      "sha256": "f925d3bf56e68f9bd9eb9248d136021d8fdc9345ea660233fe0f3ab7901fae1d",
+      "snapshotSha256": "f925d3bf56e68f9bd9eb9248d136021d8fdc9345ea660233fe0f3ab7901fae1d"
+    },
+    {
+      "path": "lessons/S05.md",
+      "sha256": "4c050def9d2a57e76b48bd2a2b3978f329e4ad50ce816753009024eaad0921b0",
+      "snapshotSha256": "4c050def9d2a57e76b48bd2a2b3978f329e4ad50ce816753009024eaad0921b0"
+    },
+    {
+      "path": "lessons/S06.md",
+      "sha256": "1227627253c3a1e024d98a1074a81a6bd1322f5ffcf21969651081111b41a67a",
+      "snapshotSha256": "1227627253c3a1e024d98a1074a81a6bd1322f5ffcf21969651081111b41a67a"
+    },
+    {
+      "path": "lessons/S07.md",
+      "sha256": "0d3f610efbca314e88100f886b7843d4f3bdfd4c5da53e4336a6eaf6c647710a",
+      "snapshotSha256": "0d3f610efbca314e88100f886b7843d4f3bdfd4c5da53e4336a6eaf6c647710a"
+    },
+    {
+      "path": "lessons/S08.md",
+      "sha256": "dfd8c238792a22521f3820caad6e3c3517a281fe16da21eb680b26ccc1dfd423",
+      "snapshotSha256": "dfd8c238792a22521f3820caad6e3c3517a281fe16da21eb680b26ccc1dfd423"
+    },
+    {
+      "path": "lessons/S09.md",
+      "sha256": "abdca67d96c2fe74c65316d0c0b23e6b1db59fc9635aa53b6f604798f653c7f7",
+      "snapshotSha256": "abdca67d96c2fe74c65316d0c0b23e6b1db59fc9635aa53b6f604798f653c7f7"
+    },
+    {
+      "path": "lessons/S10.md",
+      "sha256": "976e0a2b1ee0316cbbd8e0bc34b9363cccd273b1fc4514f04a89dbef3ebe688f",
+      "snapshotSha256": "976e0a2b1ee0316cbbd8e0bc34b9363cccd273b1fc4514f04a89dbef3ebe688f"
+    },
+    {
+      "path": "lessons/S11.md",
+      "sha256": "d35d0e9441dbbb9489be37ebc3023e1bdca3c3cdc68b52763faddebdc3bb77d3",
+      "snapshotSha256": "d35d0e9441dbbb9489be37ebc3023e1bdca3c3cdc68b52763faddebdc3bb77d3"
+    },
+    {
+      "path": "lessons/S12.md",
+      "sha256": "af3844571c0fb665aa26014bb914fa55703d26a6fa90ede00772b2057d8b3665",
+      "snapshotSha256": "af3844571c0fb665aa26014bb914fa55703d26a6fa90ede00772b2057d8b3665"
+    },
+    {
+      "path": "lessons/S13.md",
+      "sha256": "a99600ef85fa7f5fa270a4bbb9207a2b441b5e764c2ae7c3f8098d4ba2287bb9",
+      "snapshotSha256": "a99600ef85fa7f5fa270a4bbb9207a2b441b5e764c2ae7c3f8098d4ba2287bb9"
+    },
+    {
+      "path": "lessons/S14.md",
+      "sha256": "74726035f05aa566826fd09748bb4c82ccfac35b0e11b010f05b99e477b094ee",
+      "snapshotSha256": "74726035f05aa566826fd09748bb4c82ccfac35b0e11b010f05b99e477b094ee"
+    },
+    {
+      "path": "lessons/S15.md",
+      "sha256": "455699b6d7eb18a4a9bd81947819ec4267b239b9bccd55ec18cb497914152345",
+      "snapshotSha256": "455699b6d7eb18a4a9bd81947819ec4267b239b9bccd55ec18cb497914152345"
+    },
+    {
+      "path": "lessons/S16.md",
+      "sha256": "4533cf34dce7acbcc85588e021ba8b1f1c0064ef33a277709c7d3b74077dc908",
+      "snapshotSha256": "4533cf34dce7acbcc85588e021ba8b1f1c0064ef33a277709c7d3b74077dc908"
+    },
+    {
+      "path": "lessons/S17.md",
+      "sha256": "4cd41532b48bc1c0052547553753db7a08a59e1e54e0de0c50a792cb160dfec1",
+      "snapshotSha256": "4cd41532b48bc1c0052547553753db7a08a59e1e54e0de0c50a792cb160dfec1"
+    },
+    {
+      "path": "lessons/S18.md",
+      "sha256": "db8fc63c9897b9ad91e9dbc7874b0b8c03c46c6b6ebf656af5072cae233b04ef",
+      "snapshotSha256": "db8fc63c9897b9ad91e9dbc7874b0b8c03c46c6b6ebf656af5072cae233b04ef"
+    },
+    {
+      "path": "lessons/D01.md",
+      "sha256": "18d9bfd6c8bb35200be98ab7c21f39e39f0a6a8801f93ca0931b7e85313c6546",
+      "snapshotSha256": "18d9bfd6c8bb35200be98ab7c21f39e39f0a6a8801f93ca0931b7e85313c6546"
+    },
+    {
+      "path": "lessons/D02.md",
+      "sha256": "b802e0d592f6f5dec64bbe8f7ad5c4afb1016af0da3f29691e6b5980f805a297",
+      "snapshotSha256": "b802e0d592f6f5dec64bbe8f7ad5c4afb1016af0da3f29691e6b5980f805a297"
+    },
+    {
+      "path": "lessons/D03.md",
+      "sha256": "a7657e76cf29bef5d18f9d2144e5fb988699099e0babb8dc52415ed0590ec19a",
+      "snapshotSha256": "a7657e76cf29bef5d18f9d2144e5fb988699099e0babb8dc52415ed0590ec19a"
+    },
+    {
+      "path": "lessons/D04.md",
+      "sha256": "4f3741f972a3b8f2f9e4db35504f02cc4a78bc6790a998d7919f61101477b1a9",
+      "snapshotSha256": "4f3741f972a3b8f2f9e4db35504f02cc4a78bc6790a998d7919f61101477b1a9"
+    },
+    {
+      "path": "lessons/D05.md",
+      "sha256": "5c549b3e3a0877712809943def7f1c25dd70c9237eefc75649a017c05c34cd9a",
+      "snapshotSha256": "5c549b3e3a0877712809943def7f1c25dd70c9237eefc75649a017c05c34cd9a"
+    },
+    {
+      "path": "lessons/D06.md",
+      "sha256": "067744c501fa58101ba9e32280505522f1080c412d2a515a943f2e31c7406298",
+      "snapshotSha256": "067744c501fa58101ba9e32280505522f1080c412d2a515a943f2e31c7406298"
+    },
+    {
+      "path": "lessons/D07.md",
+      "sha256": "e330ca40c784c85cf5fc8897154835c24a0f6123ef88af3a2b72f8f838f15285",
+      "snapshotSha256": "e330ca40c784c85cf5fc8897154835c24a0f6123ef88af3a2b72f8f838f15285"
+    },
+    {
+      "path": "lessons/D08.md",
+      "sha256": "cb24fe82738c7061ac8a098648ec568ec51e80b0be194dc65afa43b00d0cae13",
+      "snapshotSha256": "cb24fe82738c7061ac8a098648ec568ec51e80b0be194dc65afa43b00d0cae13"
+    },
+    {
+      "path": "lessons/D09.md",
+      "sha256": "f90e38a460b587aa3a73d940548e77a7d1d107e9f5a0cc0f74ae9f66a4b617a8",
+      "snapshotSha256": "f90e38a460b587aa3a73d940548e77a7d1d107e9f5a0cc0f74ae9f66a4b617a8"
+    },
+    {
+      "path": "lessons/A01.md",
+      "sha256": "73147044180d46fb5d31a7c207ae6ac2e27187685e8a7bedcecf8ac6381df10d",
+      "snapshotSha256": "73147044180d46fb5d31a7c207ae6ac2e27187685e8a7bedcecf8ac6381df10d"
+    },
+    {
+      "path": "lessons/A02.md",
+      "sha256": "4f3e26990d8270017417e5148c294049a6bd76a959f4dc1a23c7f662ab5016f3",
+      "snapshotSha256": "4f3e26990d8270017417e5148c294049a6bd76a959f4dc1a23c7f662ab5016f3"
+    },
+    {
+      "path": "lessons/A03.md",
+      "sha256": "e16f1d13bb69e9df08712db2a178a57a9c01e320c794f1b9a8aa1fe6bcc39b38",
+      "snapshotSha256": "e16f1d13bb69e9df08712db2a178a57a9c01e320c794f1b9a8aa1fe6bcc39b38"
+    },
+    {
+      "path": "lessons/A04.md",
+      "sha256": "d027808e12820c62799a85317f3854e716dd679b6f58d75bef5da0d61e0b929f",
+      "snapshotSha256": "d027808e12820c62799a85317f3854e716dd679b6f58d75bef5da0d61e0b929f"
+    },
+    {
+      "path": "lessons/A05.md",
+      "sha256": "82c2a6be1e3263cfe429cdb1906054edcd6de8db9752005fb52410fcb41b2bc1",
+      "snapshotSha256": "82c2a6be1e3263cfe429cdb1906054edcd6de8db9752005fb52410fcb41b2bc1"
+    },
+    {
+      "path": "lessons/B01.md",
+      "sha256": "15d7ef5b6131b6d5b563c6043d574293af1d1ef85348226db3fa5254de67b28a",
+      "snapshotSha256": "15d7ef5b6131b6d5b563c6043d574293af1d1ef85348226db3fa5254de67b28a"
+    },
+    {
+      "path": "lessons/B02.md",
+      "sha256": "c2c7ef80997f6a357bd1e6a8ce1bec7dd0f583431e9a10f03a024bada027ebfd",
+      "snapshotSha256": "c2c7ef80997f6a357bd1e6a8ce1bec7dd0f583431e9a10f03a024bada027ebfd"
+    },
+    {
+      "path": "lessons/B03.md",
+      "sha256": "6b481cd7bc63ab2c59fa178d6daf55aacee535759273929f8b873bfe980172bc",
+      "snapshotSha256": "6b481cd7bc63ab2c59fa178d6daf55aacee535759273929f8b873bfe980172bc"
+    },
+    {
+      "path": "lessons/B04.md",
+      "sha256": "7254a1ada3352212fe41d9348c5668502211f85c93283048d77b5014aa1e63ea",
+      "snapshotSha256": "7254a1ada3352212fe41d9348c5668502211f85c93283048d77b5014aa1e63ea"
+    },
+    {
+      "path": "lessons/I01.md",
+      "sha256": "0e399c95c40e3d2d02ff05847d22d8a81c378e72423b19df1fe6a7160d1ef973",
+      "snapshotSha256": "0e399c95c40e3d2d02ff05847d22d8a81c378e72423b19df1fe6a7160d1ef973"
+    },
+    {
+      "path": "lessons/I02.md",
+      "sha256": "9cfc0ba79f38e52979ea427ee5730747c5e8d06a620a827fef70139e96cbf331",
+      "snapshotSha256": "9cfc0ba79f38e52979ea427ee5730747c5e8d06a620a827fef70139e96cbf331"
+    },
+    {
+      "path": "lessons/I03.md",
+      "sha256": "9b7b4651a3d38a448115563a8524777ce314b4b578eb21fe77520eec50507ef4",
+      "snapshotSha256": "9b7b4651a3d38a448115563a8524777ce314b4b578eb21fe77520eec50507ef4"
+    },
+    {
+      "path": "lessons/I04.md",
+      "sha256": "044ea22687e83d984777c511cff510e4eac79d599673bc860fc11a019d86a890",
+      "snapshotSha256": "044ea22687e83d984777c511cff510e4eac79d599673bc860fc11a019d86a890"
+    },
+    {
+      "path": "lessons/I05.md",
+      "sha256": "e55a7e6ba8b7c124a1bc00285bb9be3bef4d7ba4e211ae4f3180d9b7e01b5435",
+      "snapshotSha256": "e55a7e6ba8b7c124a1bc00285bb9be3bef4d7ba4e211ae4f3180d9b7e01b5435"
+    },
+    {
+      "path": "lessons/I06.md",
+      "sha256": "258a3b2b05b0195c7633731aa0c82e571ed5deda11c79023211cd4ac79eef76e",
+      "snapshotSha256": "258a3b2b05b0195c7633731aa0c82e571ed5deda11c79023211cd4ac79eef76e"
+    },
+    {
+      "path": "lessons/Q01.md",
+      "sha256": "ec53f89e21252210830f6163a41c162434386c863498459a6fb3cc8a9b0eac79",
+      "snapshotSha256": "ec53f89e21252210830f6163a41c162434386c863498459a6fb3cc8a9b0eac79"
+    },
+    {
+      "path": "lessons/Q02.md",
+      "sha256": "a81bb3087d0ee5aecdf79990cce89153650e91815237ffb5bee591de875a4523",
+      "snapshotSha256": "a81bb3087d0ee5aecdf79990cce89153650e91815237ffb5bee591de875a4523"
+    },
+    {
+      "path": "lessons/Q03.md",
+      "sha256": "2e967257055e2061f5b10397e9615aad72732a7f4546129ac7c4b0cc7f47d890",
+      "snapshotSha256": "2e967257055e2061f5b10397e9615aad72732a7f4546129ac7c4b0cc7f47d890"
+    },
+    {
+      "path": "lessons/Q04.md",
+      "sha256": "07a1a44d255e513b15152942f14ce7c5586ec0016fc549c366f44fd87e929197",
+      "snapshotSha256": "07a1a44d255e513b15152942f14ce7c5586ec0016fc549c366f44fd87e929197"
+    },
+    {
+      "path": "lessons/T01.md",
+      "sha256": "e3a8ac6dca0dbd66fda02a9c56389d0e4d2c4dfb48af6a18977bd2bf60b17f30",
+      "snapshotSha256": "e3a8ac6dca0dbd66fda02a9c56389d0e4d2c4dfb48af6a18977bd2bf60b17f30"
+    },
+    {
+      "path": "lessons/T02.md",
+      "sha256": "f4b22c4087005bc0e98f3980c5784f3532441ab3b8ed1e16ec7993c18e1f2d71",
+      "snapshotSha256": "f4b22c4087005bc0e98f3980c5784f3532441ab3b8ed1e16ec7993c18e1f2d71"
+    },
+    {
+      "path": "lessons/T03.md",
+      "sha256": "fd59c3b5e9f44da10a7cfb7b3799d065278b0e74df8b93c21398d5e885fc6c5f",
+      "snapshotSha256": "fd59c3b5e9f44da10a7cfb7b3799d065278b0e74df8b93c21398d5e885fc6c5f"
+    },
+    {
+      "path": "lessons/T04.md",
+      "sha256": "807cb8e3caa8e0934f0d9397f624c4f1c0e39872c84abaca1e82a101be66649f",
+      "snapshotSha256": "807cb8e3caa8e0934f0d9397f624c4f1c0e39872c84abaca1e82a101be66649f"
+    },
+    {
+      "path": "lessons/T05.md",
+      "sha256": "c334a9d2d0fb84a922a49242bae95a84c8e384f96684f708fd907f0f263a511f",
+      "snapshotSha256": "c334a9d2d0fb84a922a49242bae95a84c8e384f96684f708fd907f0f263a511f"
+    },
+    {
+      "path": "lessons/T06.md",
+      "sha256": "d808fb193c37a0a6cd449562f0ed4ccbc9d494747205211da881bc6a1141104e",
+      "snapshotSha256": "d808fb193c37a0a6cd449562f0ed4ccbc9d494747205211da881bc6a1141104e"
+    },
+    {
+      "path": "lessons/T07.md",
+      "sha256": "e82adc7895b563918c5bfdecfc8d2354de4d2d0838d9d1c7c7e4180c68e35823",
+      "snapshotSha256": "e82adc7895b563918c5bfdecfc8d2354de4d2d0838d9d1c7c7e4180c68e35823"
+    },
+    {
+      "path": "lessons/P01.md",
+      "sha256": "cafd6438c1dc2069bec33fc17c29d8707e0c7e72481a559c98b5ec9e31b60f53",
+      "snapshotSha256": "cafd6438c1dc2069bec33fc17c29d8707e0c7e72481a559c98b5ec9e31b60f53"
+    },
+    {
+      "path": "lessons/P02.md",
+      "sha256": "6de98e4e65e11bdc62cd03fc2fb7f33c3a973235a1a4217f7ff5ad7765d60abe",
+      "snapshotSha256": "6de98e4e65e11bdc62cd03fc2fb7f33c3a973235a1a4217f7ff5ad7765d60abe"
+    },
+    {
+      "path": "lessons/P03.md",
+      "sha256": "e65f4addf171b6cb5d33f0182f05b20eaf1993e4f3cd0678637bfefc737869a6",
+      "snapshotSha256": "e65f4addf171b6cb5d33f0182f05b20eaf1993e4f3cd0678637bfefc737869a6"
+    },
+    {
+      "path": "lessons/P04.md",
+      "sha256": "5ada1ff99f1acf79c300f224244f8b8bd2a503f4f7bb64afe7e2c69b12788a4c",
+      "snapshotSha256": "5ada1ff99f1acf79c300f224244f8b8bd2a503f4f7bb64afe7e2c69b12788a4c"
+    },
+    {
+      "path": "lessons/P05.md",
+      "sha256": "264cc552f04e5fe3e25e5e622226f67d9bca00acfa320e0c45f3a37d3c2acab1",
+      "snapshotSha256": "264cc552f04e5fe3e25e5e622226f67d9bca00acfa320e0c45f3a37d3c2acab1"
+    },
+    {
+      "path": "lessons/P06.md",
+      "sha256": "14c27da6c36329da35fc908f3e14bc88173612a1592cefb7f7d87b64dc5b9172",
+      "snapshotSha256": "14c27da6c36329da35fc908f3e14bc88173612a1592cefb7f7d87b64dc5b9172"
+    },
+    {
+      "path": "lessons/P07.md",
+      "sha256": "e5782a08a73f936e2ca1b289b93dedb76597f8718d93321c0809e3107f5c8538",
+      "snapshotSha256": "e5782a08a73f936e2ca1b289b93dedb76597f8718d93321c0809e3107f5c8538"
+    },
+    {
+      "path": "lessons/P08.md",
+      "sha256": "54c8bbce9cbcdfcb3500b46404019772c9f3ff23fb4fc782882aa21f8e1a5670",
+      "snapshotSha256": "54c8bbce9cbcdfcb3500b46404019772c9f3ff23fb4fc782882aa21f8e1a5670"
+    },
+    {
+      "path": "lessons/P09.md",
+      "sha256": "217bdcb95f016bbfb1a362d14b44b5d8dbc3bffd7421d590106565307293cf27",
+      "snapshotSha256": "217bdcb95f016bbfb1a362d14b44b5d8dbc3bffd7421d590106565307293cf27"
+    },
+    {
+      "path": "lessons/O01.md",
+      "sha256": "2d11e9767dff4480c20608e5ab77d56f2d87e37e22f79e40c16357a5c07a1ae2",
+      "snapshotSha256": "2d11e9767dff4480c20608e5ab77d56f2d87e37e22f79e40c16357a5c07a1ae2"
+    },
+    {
+      "path": "lessons/O02.md",
+      "sha256": "0fd830406febf29b9ecefaa34b6db313d800a5c94b6041c1ac66483eb0848245",
+      "snapshotSha256": "0fd830406febf29b9ecefaa34b6db313d800a5c94b6041c1ac66483eb0848245"
+    },
+    {
+      "path": "lessons/O03.md",
+      "sha256": "69ca5882b8785865f1b641437f809253a6c2a898ed9307bc9be3ebd6d8e25ddf",
+      "snapshotSha256": "69ca5882b8785865f1b641437f809253a6c2a898ed9307bc9be3ebd6d8e25ddf"
+    },
+    {
+      "path": "lessons/O04.md",
+      "sha256": "4c5dc19b16c46e9e137b292c2fb10d98005cdc90006319a21760969f00c02a05",
+      "snapshotSha256": "4c5dc19b16c46e9e137b292c2fb10d98005cdc90006319a21760969f00c02a05"
+    },
+    {
+      "path": "lessons/O05.md",
+      "sha256": "3598c39aea5afc8936a596da56ad1fbdbd640508f0ea9a061d89e744194cc6d5",
+      "snapshotSha256": "3598c39aea5afc8936a596da56ad1fbdbd640508f0ea9a061d89e744194cc6d5"
+    },
+    {
+      "path": "lessons/O06.md",
+      "sha256": "50fa6571c56548e9da12ee437b766b1da5974a5d51191adfbb3e0ecec27f19f3",
+      "snapshotSha256": "50fa6571c56548e9da12ee437b766b1da5974a5d51191adfbb3e0ecec27f19f3"
+    },
+    {
+      "path": "lessons/O07.md",
+      "sha256": "ea6e70a068bedb79db65aaa30448429ad00ee1191954d887ab2c20826c3ec4a5",
+      "snapshotSha256": "ea6e70a068bedb79db65aaa30448429ad00ee1191954d887ab2c20826c3ec4a5"
+    },
+    {
+      "path": "lessons/Z01.md",
+      "sha256": "6c17c81605ffe9e5ed650ac03a24129cfdba87166255c47ce2072b7348507b57",
+      "snapshotSha256": "6c17c81605ffe9e5ed650ac03a24129cfdba87166255c47ce2072b7348507b57"
+    },
+    {
+      "path": "lessons/Z02.md",
+      "sha256": "87a3ad5721c7b983bf36d6e3de8eae9628c4bf6f612e7606dced8ab5d162c922",
+      "snapshotSha256": "87a3ad5721c7b983bf36d6e3de8eae9628c4bf6f612e7606dced8ab5d162c922"
+    },
+    {
+      "path": "lessons/Z03.md",
+      "sha256": "670e5644a1bc6501e8c219695c88581b83ca2ea87e8cccfffb009defa9aad6d6",
+      "snapshotSha256": "670e5644a1bc6501e8c219695c88581b83ca2ea87e8cccfffb009defa9aad6d6"
+    },
+    {
+      "path": "lessons/Z04.md",
+      "sha256": "2e48564f9bea051e47611e6c900bc00b702bf47ecbc0992a030aaa8d278a2d50",
+      "snapshotSha256": "2e48564f9bea051e47611e6c900bc00b702bf47ecbc0992a030aaa8d278a2d50"
+    }
+  ]
+}

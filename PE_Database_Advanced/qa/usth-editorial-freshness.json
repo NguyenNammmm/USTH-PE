@@ -1,0 +1,15 @@
+{
+  "scope": "Native run remains qa/usth-final-sources-checks.json; no new native execution. Exact previous USTH10 bytes reconstructed from three prose-only changes and matched to its execution hash. Every SQL block unchanged; three other lesson hashes unchanged.",
+  "nativeReportSha256": "5d05a60c3bc4ac22318c7b64f47b4f347c6a3fe18f74f2c2c025ff5dbc072fd5",
+  "previousUSTH10Sha256": "0107468fa4ded377f6ffc97c16f73a61dc0fd57efe82deca8d162497f7114d0a",
+  "currentUSTH10Sha256": "e97330a1f7c7b3fb13fa88162e336eb39c8bdfcd36005b0d6ccdb28328568ed4",
+  "unchangedSQLBlocks": 37,
+  "sqlPayloadSha256": "d3fce014a4e99e3db551f906e7d651525385c29592c2ffb6f0dda954c97330fb",
+  "currentLessonHashes": {
+    "USTH08": "c684cd84272c6920a9c9a31f8431b954c408c2db5bfed4c24cd4ba5b76f8898a",
+    "USTH09": "ee5a20daeb718db72681e8039b380f84f7a34b903e358a464dfe92bcbd734da9",
+    "USTH10": "e97330a1f7c7b3fb13fa88162e336eb39c8bdfcd36005b0d6ccdb28328568ed4",
+    "USTH11": "76c9098ce3fb29a162b45d55e85bb0773433f67a1a55c8164abd09b6d3094eec"
+  },
+  "result": "pass"
+}

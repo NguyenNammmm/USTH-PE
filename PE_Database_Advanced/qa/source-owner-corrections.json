@@ -1,0 +1,226 @@
+{
+  "policy": "Actual instructional location; not semantic certification",
+  "corrections": [
+    {
+      "section": "8.3",
+      "before": [
+        "AD14"
+      ],
+      "after": [
+        "AD17",
+        "AD69"
+      ]
+    },
+    {
+      "section": "8.3.1",
+      "before": [
+        "AD14"
+      ],
+      "after": [
+        "AD17",
+        "AD69"
+      ]
+    },
+    {
+      "section": "8.3.2",
+      "before": [
+        "AD14"
+      ],
+      "after": [
+        "AD17",
+        "AD69"
+      ]
+    },
+    {
+      "section": "8.3.2.1",
+      "before": [
+        "AD14"
+      ],
+      "after": [
+        "AD17",
+        "AD69"
+      ]
+    },
+    {
+      "section": "8.3.2.2",
+      "before": [
+        "AD14"
+      ],
+      "after": [
+        "AD17",
+        "AD69"
+      ]
+    },
+    {
+      "section": "8.3.3",
+      "before": [
+        "AD14"
+      ],
+      "after": [
+        "AD17",
+        "AD69"
+      ]
+    },
+    {
+      "section": "8.3.4",
+      "before": [
+        "AD14"
+      ],
+      "after": [
+        "AD17",
+        "AD69"
+      ]
+    },
+    {
+      "section": "30.4.1",
+      "before": [
+        "AD16"
+      ],
+      "after": [
+        "AD68"
+      ]
+    },
+    {
+      "section": "30.4.2",
+      "before": [
+        "AD16"
+      ],
+      "after": [
+        "AD68"
+      ]
+    },
+    {
+      "section": "10.3",
+      "before": [
+        "AD73"
+      ],
+      "after": [
+        "AD20"
+      ]
+    },
+    {
+      "section": "10.3.1",
+      "before": [
+        "AD73"
+      ],
+      "after": [
+        "AD20"
+      ]
+    },
+    {
+      "section": "10.3.2",
+      "before": [
+        "AD73"
+      ],
+      "after": [
+        "AD20"
+      ]
+    },
+    {
+      "section": "10.3.3",
+      "before": [
+        "AD73"
+      ],
+      "after": [
+        "AD20"
+      ]
+    },
+    {
+      "section": "10.3.4",
+      "before": [
+        "AD73"
+      ],
+      "after": [
+        "AD20"
+      ]
+    },
+    {
+      "section": "10.3.5",
+      "before": [
+        "AD73"
+      ],
+      "after": [
+        "AD20"
+      ]
+    },
+    {
+      "section": "10.3.6",
+      "before": [
+        "AD73"
+      ],
+      "after": [
+        "AD20"
+      ]
+    },
+    {
+      "section": "16.5.1",
+      "before": [
+        "AD37"
+      ],
+      "after": [
+        "AD18",
+        "AD37"
+      ]
+    },
+    {
+      "section": "16.5.2",
+      "before": [
+        "AD37"
+      ],
+      "after": [
+        "AD18",
+        "AD37"
+      ]
+    },
+    {
+      "section": "16.5.2.1",
+      "before": [
+        "AD37"
+      ],
+      "after": [
+        "AD18",
+        "AD37"
+      ]
+    },
+    {
+      "section": "16.5.2.2",
+      "before": [
+        "AD37"
+      ],
+      "after": [
+        "AD18",
+        "AD37"
+      ]
+    },
+    {
+      "section": "16.5.2.3",
+      "before": [
+        "AD37"
+      ],
+      "after": [
+        "AD18",
+        "AD37"
+      ]
+    },
+    {
+      "section": "16.5.2.4",
+      "before": [
+        "AD37"
+      ],
+      "after": [
+        "AD18",
+        "AD37"
+      ]
+    },
+    {
+      "section": "16.5.2.5",
+      "before": [
+        "AD37"
+      ],
+      "after": [
+        "AD18",
+        "AD37"
+      ]
+    }
+  ]
+}

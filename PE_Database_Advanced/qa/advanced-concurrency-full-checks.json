@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-05",
+  "status": "passed",
+  "count": 15,
+  "checks": [
+    {
+      "name": "Online build snapshot+delta equals current relation for24 schedules/cuts",
+      "passed": true,
+      "scope": "Single relation, deterministic finite updates; publication barrier assumed and checked separately."
+    },
+    {
+      "name": "Missing publication barrier has an explicit counterexample",
+      "passed": true,
+      "scope": "Finite mathematical state model"
+    },
+    {
+      "name": "Second CAS with stale expected pointer fails",
+      "passed": true,
+      "scope": "Finite mathematical state model"
+    },
+    {
+      "name": "CAS retry recomputes next and retains both inserted nodes",
+      "passed": true,
+      "scope": "Finite mathematical state model"
+    },
+    {
+      "name": "ABA pointer comparison passes while tagged comparison fails",
+      "passed": true,
+      "scope": "Finite mathematical state model"
+    },
+    {
+      "name": "Finite tag can wrap",
+      "passed": true,
+      "scope": "Counter-width witness; memory reclamation is a distinct requirement."
+    },
+    {
+      "name": "B-link stale parent uses high-key/right-link route",
+      "passed": true,
+      "scope": "Route35 reaches correct leaf, then reports absent; fence/link publication and node lifetime assumed."
+    },
+    {
+      "name": "Empty predicate range protects successor",
+      "passed": true,
+      "scope": "Finite mathematical state model"
+    },
+    {
+      "name": "Nonempty predicate range and unbounded tail",
+      "passed": true,
+      "scope": "Finite mathematical state model"
+    },
+    {
+      "name": "Insert/delete successor conflicts match lesson witnesses",
+      "passed": true,
+      "scope": "Finite mathematical state model"
+    },
+    {
+      "name": "Increment commutation across49 delta pairs",
+      "passed": true,
+      "scope": "No returned intermediate value or additional invariant; arbitrary-precision model integers."
+    },
+    {
+      "name": "Compensation preserves another transaction contribution",
+      "passed": true,
+      "scope": "Finite mathematical state model"
+    },
+    {
+      "name": "Conditional reservation does not commute as labeled outcomes",
+      "passed": true,
+      "scope": "Finite mathematical state model"
+    },
+    {
+      "name": "Transfer interleaving preserves only the stated total invariant",
+      "passed": true,
+      "scope": "Finite mathematical state model"
+    },
+    {
+      "name": "Deadline counterexample: rollback slower than waiting",
+      "passed": true,
+      "scope": "Declared milliseconds with zero other overhead; not a realtime benchmark."
+    }
+  ],
+  "lessonSha256": {
+    "AD28": "1623f821bc551200a6e77410c17a179b3c91f07ffd52ffa11eb6f34b14b12326",
+    "AD63": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7"
+  },
+  "limits": "Finite state and arithmetic witnesses only. No SQL, native atomic/memory-order, concurrent index implementation or deadline execution."
+}

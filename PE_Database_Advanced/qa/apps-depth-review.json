@@ -1,0 +1,575 @@
+{
+  "date": "2026-11-05",
+  "scope": [
+    "AD01",
+    "AD10",
+    "AD11",
+    "AD12",
+    "AD13",
+    "AD14",
+    "AD15",
+    "AD16",
+    "AD17",
+    "AD18",
+    "AD19",
+    "AD20",
+    "AD21",
+    "AD22",
+    "AD68",
+    "AD69",
+    "AD70",
+    "AD71",
+    "AD72",
+    "AD73"
+  ],
+  "reviewKind": "bounded-independent-source-aware-depth-review",
+  "lessonFilesFrozen": true,
+  "lessons": [
+    {
+      "id": "AD01",
+      "sha256": "b722370a79dad863c60bcf514cbd729167c1ebe2bfa232a0a18c22d0764d58e0",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD10",
+      "sha256": "8d20e0bd47fb393645064e1655863b48235ecab8e05837e8ced8ceb4f519a6e0",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD11",
+      "sha256": "95cacd889a71af5a914f7692f77c46ae8c6a76513afe646906172fdcba909855",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD12",
+      "sha256": "4f335a39f5caf421487a95bb835d7493e14d6da1ca0887ed2c6a50f713a4be74",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD13",
+      "sha256": "2a6152f74f9f225102c2b63241f437a6252a4687dbf1f6bfe7a5b3c8e1dfc082",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD14",
+      "sha256": "ef4b0222ec4e7d7620b1e88ee4dce51c1bc4bf2200f5c11df39c41383de609e9",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD15",
+      "sha256": "8c778befe5b4d79ecb5ea703252a16944b9b1da835fbc8e7c9687173081934c7",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD16",
+      "sha256": "c5831347ca3af3e85730b4567085b099d089facc18f5b39b4ed3a382fcebde78",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD17",
+      "sha256": "606410e0f22f5ab761fe1700bd2c9d07f4880a9cc043ed81c5803f508bb2dd3e",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD18",
+      "sha256": "599da32b0136955a0c2e14c8343e62aa9f7d43fbfed1a5d920a105890cb044a9",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD19",
+      "sha256": "ae5b95ead41b43cc88e9345ea08ea141bbaf9841bcc19cc14d4be9f594d9d9c1",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD20",
+      "sha256": "dd63e8e419635a716e3b9272fa5b8b3d555e0ede6fcfc6edaf000ce909f2d0c1",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD21",
+      "sha256": "3614aae667d09d5e4f5b36be9fb8bc3492f922cf962cba74740ef822f3297291",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD22",
+      "sha256": "53a10c87411ee4d175b64b0b486a38b15e4da9805b07bfad7c0bac307e25a4c6",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD68",
+      "sha256": "59652f9da821f9ed9acc13219044c93bc2d35ff7972c04d0439583c08675a51c",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD69",
+      "sha256": "3c8a2ec761a013fbdd3319a793e58271e1094e59fe4c3f8f477776258b37b4e7",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD70",
+      "sha256": "f50272ec501b53dcbc8494ec17b4f6e24888d8e89cf9c9410bd5ad06e024c593",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD71",
+      "sha256": "47931fe33b9967f494be8f048b630795515863c87d8ed2d3dbb76cdee6e0af88",
+      "questionCount": 5,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD72",
+      "sha256": "872f1bae2c3e1e379aecac05e0a103dd7b240c02f196b42e4098023b1b99edea",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD73",
+      "sha256": "2aca3672bd83fb4da7ed686351a7b24f23318feac0a35838dcac9cb03faad1b6",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    }
+  ],
+  "sourceReads": [
+    {
+      "id": "AD01",
+      "inspectedSourceRanges": "chapter-2:1770–1801; chapter-3:1322–1403; chapter-4:605–664",
+      "reviewFocus": "Equivalent queries; NULL/UNKNOWN/duplicates; outer-join rows bù."
+    },
+    {
+      "id": "AD10",
+      "inspectedSourceRanges": "chapter-5:1393–1464,1874–1938",
+      "reviewFocus": "Closure iteration, finite visited state; window order/ranges."
+    },
+    {
+      "id": "AD11",
+      "inspectedSourceRanges": "chapter-5:444–503",
+      "reviewFocus": "Python parameter/commit/rollback; phân biệt driver/API, còn request-id protocol là PE bổ sung."
+    },
+    {
+      "id": "AD12",
+      "inspectedSourceRanges": "chapter-4:2840–2927; chapter-9:1679–1726",
+      "reviewFocus": "Grant path/cycle/revoke/role; end-user identity và application authorization."
+    },
+    {
+      "id": "AD13",
+      "inspectedSourceRanges": "chapter-8:451–517",
+      "reviewFocus": "Shared-variable SPARQL joins, predicate variable, n-ary event representation."
+    },
+    {
+      "id": "AD14",
+      "inspectedSourceRanges": "chapter-8:518–577; online-29:529–653",
+      "reviewFocus": "Object-relational/ORM khác nhau; flatten nhiều collections và nesting."
+    },
+    {
+      "id": "AD15",
+      "inspectedSourceRanges": "chapter-8:980–1061; chapter-24:489–653",
+      "reviewFocus": "Geometry representation; PR/raster quadtrees, R-tree overlap, quadratic split."
+    },
+    {
+      "id": "AD16",
+      "inspectedSourceRanges": "online-30:1201–1280,1301–1390,1471–1615",
+      "reviewFocus": "FLWOR/functions/types; DOM/SAX; relational mapping/native XML/SQL/XML."
+    },
+    {
+      "id": "AD17",
+      "inspectedSourceRanges": "chapter-8:745–804; online-31:557–661",
+      "reviewFocus": "Keywords, inverted/positional postings, top-k conditions, precision/recall."
+    },
+    {
+      "id": "AD18",
+      "inspectedSourceRanges": "chapter-16:1478–1689; chapter-11:209–273",
+      "reviewFocus": "Maintenance operations, expression delta, view rewrites/selection; fact/dimension context."
+    },
+    {
+      "id": "AD19",
+      "inspectedSourceRanges": "chapter-11:1263–1642",
+      "reviewFocus": "Mining tasks, classifiers, regression, association, clustering, text mining; leakage protocol is PE extension."
+    },
+    {
+      "id": "AD20",
+      "inspectedSourceRanges": "chapter-10:703–752,882–941",
+      "reviewFocus": "Word-count contributions; map/shuffle/reduce task flow."
+    },
+    {
+      "id": "AD21",
+      "inspectedSourceRanges": "chapter-10:1501–1640",
+      "reviewFocus": "Continuous query, punctuations/windows, CEP/lambda, hopping/sliding/session/stream joins."
+    },
+    {
+      "id": "AD22",
+      "inspectedSourceRanges": "chapter-10:1756–1875",
+      "reviewFocus": "Graph representations/path queries; MapReduce-style processing versus BSP, messages and halt."
+    },
+    {
+      "id": "AD68",
+      "inspectedSourceRanges": "online-30:741–860,864–953",
+      "reviewFocus": "Schema types/keys/namespaces; XML tree and XPath context/order."
+    },
+    {
+      "id": "AD69",
+      "inspectedSourceRanges": "online-31:126–305,311–448",
+      "reviewFocus": "Exact1/df variant, cosine, random walk/PageRank, clicks/anchor text/HITS/spam."
+    },
+    {
+      "id": "AD70",
+      "inspectedSourceRanges": "chapter-11:1320–1502",
+      "reviewFocus": "Tree/Bayes/SVM/neural/regression; detailed fitting proofs are PE extension."
+    },
+    {
+      "id": "AD71",
+      "inspectedSourceRanges": "chapter-11:1503–1642",
+      "reviewFocus": "Association/confidence; hierarchical clustering and collaborative filtering."
+    },
+    {
+      "id": "AD72",
+      "inspectedSourceRanges": "chapter-11:209–273,1141–1210",
+      "reviewFocus": "Fact/star/snowflake; combined ROLLUP, GROUPING SETS, reporting."
+    },
+    {
+      "id": "AD73",
+      "inspectedSourceRanges": "chapter-10:257–331",
+      "reviewFocus": "DFS metadata/block replicas/read path; CAS/cutover examples are PE extensions."
+    }
+  ],
+  "sourceFileSha256": {
+    "chapter-2.txt": "1fdcae23b539872b69ad47d4ab91dcfac971d33c041219bef9fc26ced0b2b0de",
+    "chapter-3.txt": "0a5409e58a103faa56ff7176d3220bfdeeb12419ac4805ff6acab25c5d5e2360",
+    "chapter-4.txt": "a644782e826372cfa2d233d47023a37c7c7253140203dc543fd6c09d22ef8f24",
+    "chapter-5.txt": "b7f7dd2241335c3c9510d3befd19d8a0849386825a484e1e8471fe1fd271f32c",
+    "chapter-8.txt": "f85064f147ee1fa9ea767d6ea139f8ca1b0f5a868115fba26ec78b705e8701c9",
+    "chapter-9.txt": "6e5624f6b399bf0ca233257726172a9b848484cfa76667714009cf909e2346e7",
+    "chapter-10.txt": "673b1bccfcf5ac0332f0173858c2addc29671645c7fd41c43ad8746f36a5411d",
+    "chapter-11.txt": "70ce7560982ec6915744ffa80b3facb2c91fc31f4aea3d562d570a835334c1f8",
+    "chapter-16.txt": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b",
+    "chapter-24.txt": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca",
+    "online-29.txt": "00a14166d5a0909eb57e947704c26bf53f720e2a14b238ece5fdca3423017902",
+    "online-30.txt": "3adc56b2e1677fefea45ac19061f57fce5692cea204155a4c449a13c7dac270e",
+    "online-31.txt": "175a1c3d2684dd627f312755217b39b45c396d1794b7361d8f36324afa67e48e"
+  },
+  "fixes": [
+    {
+      "id": "AP01",
+      "lesson": "AD22",
+      "priority": "P1",
+      "issue": "IQ17 concatenated Vietnamese prose",
+      "fix": "Full coherent prose rewrite, new transfer graph and solved trace",
+      "status": "closed-in-reviewed-snapshot"
+    },
+    {
+      "id": "AP02",
+      "lesson": "AD22",
+      "priority": "P1",
+      "issue": "Synchronous relaxation invariant needs prior-round snapshot; graph source citation and BSP halt incomplete",
+      "fix": "Read-old/write-next Bellman-Ford, bounded-walk proof/trace, negative-cycle scope, BSP vote-to-halt and MIN versus SUM replay",
+      "status": "closed-in-reviewed-snapshot"
+    },
+    {
+      "id": "AP03",
+      "lesson": "AD15",
+      "priority": "P1",
+      "issue": "PR quadtree misnamed region quadtree; source quadratic split omitted",
+      "fix": "PR/raster distinction, source/alternative insertion heuristics separated, complete quadratic split with occupancy/coverage/cost and numeric trace",
+      "status": "closed-in-reviewed-snapshot"
+    },
+    {
+      "id": "AP04",
+      "lesson": "AD18",
+      "priority": "P2",
+      "issue": "Projection/selection/outer-join delta, expression propagation and reverse view expansion compressed or absent",
+      "fix": "Worked witness counts, null-row transitions, expression/self-join caveat and both rewrite directions",
+      "status": "closed-in-reviewed-snapshot"
+    },
+    {
+      "id": "AP05",
+      "lesson": "AD21",
+      "priority": "P2",
+      "issue": "Source CEP/lambda mechanisms missing and joined answer/web tails",
+      "fix": "Pattern state/expiry and stream/batch version replacement examples; tail rewrites",
+      "status": "closed-in-reviewed-snapshot"
+    },
+    {
+      "id": "AP06",
+      "lesson": "AD71",
+      "priority": "P2",
+      "issue": "Hierarchical clustering and collaborative filtering from11.4.5 absent",
+      "fix": "Merge algorithm/invariant/cost/heights, ratings/cold-start/holdout example, fifth exercise and answer",
+      "status": "closed-in-reviewed-snapshot"
+    },
+    {
+      "id": "AP07",
+      "lesson": "AD72",
+      "priority": "P2",
+      "issue": "Combined ROLLUP/GROUPING SETS omitted, joined tails",
+      "fix": "Explicit grouping combinations/totals and MySQL UNION ALL equivalent, prose rewrite",
+      "status": "closed-in-reviewed-snapshot"
+    }
+  ],
+  "existingFixesRechecked": [
+    "AD13 RDF predicate/event fixture",
+    "AD14 multi-collection unnest round-trip",
+    "AD16 interval/path index and SQL/XML",
+    "AD17 top-k heap proof",
+    "AD21 hopping/sliding and final-window late policy",
+    "AD69 click/anchor/HITS example",
+    "AD71 Apriori prefix generation and pre-count pruning"
+  ],
+  "spacing": {
+    "reviewedExactReplacementOccurrences": 153,
+    "lessonsWithExactReplacements": 17,
+    "genericSegmentationApplied": false,
+    "diagnosticRemainingSuggestions": 0,
+    "log": "apps-depth-spacing-changes.json"
+  },
+  "validation": {
+    "modelPassed": 32,
+    "modelTotal": 32,
+    "lessonStructuralPasses": 20,
+    "nativeExecutionsThisPass": 0,
+    "script": "apps_depth_checks.py",
+    "evidence": "apps-depth-model-checks.json"
+  },
+  "mappingCorrections": {
+    "status": "root-reported-implemented",
+    "editedByThisReviewer": false,
+    "changes": [
+      {
+        "sections": [
+          "8.3",
+          "8.3.1",
+          "8.3.3",
+          "8.3.4"
+        ],
+        "fromLesson": "AD14",
+        "toLesson": "AD17"
+      },
+      {
+        "sections": [
+          "8.3.2",
+          "8.3.2.1",
+          "8.3.2.2"
+        ],
+        "fromLesson": "AD14",
+        "toLesson": "AD69"
+      },
+      {
+        "sections": [
+          "30.4.1",
+          "30.4.2"
+        ],
+        "fromLesson": "AD16",
+        "toLesson": "AD68"
+      },
+      {
+        "sections": [
+          "10.3",
+          "10.3.1",
+          "10.3.2",
+          "10.3.3",
+          "10.3.4",
+          "10.3.5",
+          "10.3.6"
+        ],
+        "fromLesson": "AD73",
+        "toLesson": "AD20"
+      },
+      {
+        "sections": [
+          "16.5.1",
+          "16.5.2",
+          "16.5.2.1",
+          "16.5.2.2",
+          "16.5.2.3",
+          "16.5.2.4",
+          "16.5.2.5"
+        ],
+        "fromLesson": "AD37",
+        "toLesson": "AD18"
+      }
+    ]
+  },
+  "limits": [
+    "No native SQL/XML/RDF/graph/cluster execution in this pass.",
+    "Finite calculations are not general correctness proofs.",
+    "Not a semantic certification of all 945 source inventory entries.",
+    "HTML/PDF rendering is owned by the root packaging task."
+  ],
+  "wholeInventorySemanticCertification": false,
+  "openConcreteLessonDefectsIdentifiedInThisScope": []
+}

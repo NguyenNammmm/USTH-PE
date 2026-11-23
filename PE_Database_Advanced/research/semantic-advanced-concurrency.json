@@ -1,0 +1,557 @@
+{
+  "date": "2026-11-05",
+  "scope": "Seven18.10own-body units only, distinct from48chapter14/index units.",
+  "counts": {
+    "assigned": 7,
+    "complete": 7
+  },
+  "units": [
+    {
+      "section": "18.10",
+      "title": "Advanced Topics in Concurrency Control",
+      "owners": [
+        "AD63"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1928,
+          1940
+        ],
+        "ownBodySha256": "396a7fcf80bc65b954533a0d71aea76bd70db41a0b9346392cd6f04e1d9a8b0e"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1928,
+            2087
+          ],
+          [
+            2088,
+            2200
+          ],
+          [
+            2201,
+            2385
+          ],
+          [
+            2386,
+            2414
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          917,
+          918,
+          920,
+          922
+        ],
+        "baselineCredit": false,
+        "scope": "Full own bodies and full current AD63 reviewed; full AD28 chapter14 content retained with79 exact old witnesses revalidated after concurrency-only additions."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Advanced control options motivated by index operation semantics, RAM costs, user interaction and deadlines; descendants assessed separately.",
+      "evidence": [
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "teaching",
+          "paragraph": 5,
+          "exactOpening": "Với dữ liệu trên disk, chờ I/O có thể che một phần chi phí lock manager. Khi dữ liệu chủ yếu ở RAM, thời gian quản lý lock, cache coherence, allocation và validation có thể chiếm tỷ trọng lớn. Khóa coarse trong một critical section rất ngắn có thể rẻ hơn nhiều fine locks, dù concurrency lý thuyết giảm. Kết luận phụ thuộc workload; không suy “RAM lu"
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 14,
+          "exactOpening": "Head trỏ A. Hai worker cùng tạo node N1,N2, đều đọc head=A, rồi lần lượt gán head=N1 và head=N2. Kết quả chỉ còn N2→A; N1 bị mất. Một latch quanh đọc-head/cập-nhật có thể giải; compare-and-swap cung cấp một atomic conditional update khác."
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "activity",
+          "paragraph": 43,
+          "exactOpening": "1. Trace hai insert_head cùng đọc A và chứng minh vì sao CAS retry phải cập nhật next. Chỉ rõ linearization point trong model.\n2. Dựng ABA với ba node và một tagged pointer. Nêu giới hạn counter wrap và memory reclamation thay vì gọi tag là giải pháp đầy đủ.\n3. So incremental total và conditional ticket reservation. Cho một ca commute và một ca khô"
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "answer",
+          "paragraph": 48,
+          "exactOpening": "1. N1 thắng trước; N2 đọc lại N1 rồi nối N2→N1→A. Nếu N2 giữ next=A, nó có thể mất N1 khi CAS thành công. Linearization point là CAS đổi head hợp lệ; assumptions về atomic load và publication phải rõ.\n2. ABA làm CAS pointer cũ thành công sai. Tag7→10 đổi expected nhưng counter wrap và freed memory vẫn cần protocol riêng. Nêu giới hạn của cách sửa, "
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.10.1",
+      "title": "Online Index Creation",
+      "owners": [
+        "AD63"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1941,
+          1993
+        ],
+        "ownBodySha256": "39706f4cb0181fd09a8c20add64bd6b5c558fe417e688c74b590bce50d46b4ed"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1928,
+            2087
+          ],
+          [
+            2088,
+            2200
+          ],
+          [
+            2201,
+            2385
+          ],
+          [
+            2386,
+            2414
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          917,
+          918,
+          920,
+          922
+        ],
+        "baselineCredit": false,
+        "scope": "Full own bodies and full current AD63 reviewed; full AD28 chapter14 content retained with79 exact old witnesses revalidated after concurrency-only additions."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "All3online-build stages, final lock/catalog gap-free transition, delta invariant/termination assumptions, materialized view construction, tuple schema-version migration and online constraint validation.",
+      "evidence": [
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "teaching",
+          "paragraph": 8,
+          "exactOpening": "§18.10.1 đưa một thuật toán ba giai đoạn. Chọn snapshot cut s và ghi mọi update base sau s. Build index từ snapshot; khi build xong, replay delta theo thứ tự phù hợp. Trong lúc replay vẫn có write mới, nên chưa được công bố index là đầy đủ. Cuối cùng lấy shared table lock theo mô hình sách để chặn update, áp hết delta còn lại, cập nhật catalog để c"
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 10,
+          "exactOpening": "Ca1: snapshot có row1=A; sau cut, insert row2=B và update row1=C. Build đầu giữ A, replay phải xóa A, thêm C và B trước publish. Ca2: delete row1 sau snapshot, index không được còn A/C ghost. Ca3: insert row3 ngay trước final lock phải nằm trong delta; insert sau publication phải tự maintenance qua catalog mới. Nếu có khoảng trống giữa dừng log và "
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "activity",
+          "paragraph": 43,
+          "exactOpening": "1. Trace hai insert_head cùng đọc A và chứng minh vì sao CAS retry phải cập nhật next. Chỉ rõ linearization point trong model.\n2. Dựng ABA với ba node và một tagged pointer. Nêu giới hạn counter wrap và memory reclamation thay vì gọi tag là giải pháp đầy đủ.\n3. So incremental total và conditional ticket reservation. Cho một ca commute và một ca khô"
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "answer",
+          "paragraph": 48,
+          "exactOpening": "1. N1 thắng trước; N2 đọc lại N1 rồi nối N2→N1→A. Nếu N2 giữ next=A, nó có thể mất N1 khi CAS thành công. Linearization point là CAS đổi head hợp lệ; assumptions về atomic load và publication phải rõ.\n2. ABA làm CAS pointer cũ thành công sai. Tag7→10 đổi expected nhưng counter wrap và freed memory vẫn cần protocol riêng. Nêu giới hạn của cách sửa, "
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.10.2",
+      "title": "Concurrency in Index Structures",
+      "owners": [
+        "AD28"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1994,
+          2087
+        ],
+        "ownBodySha256": "7c008b73c30abb2ced9a863c41c44d63c45228011a10bb547fba43398083135f"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1928,
+            2087
+          ],
+          [
+            2088,
+            2200
+          ],
+          [
+            2201,
+            2385
+          ],
+          [
+            2386,
+            2414
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          917,
+          918,
+          920,
+          922
+        ],
+        "baselineCredit": false,
+        "scope": "Full own bodies and full current AD63 reviewed; full AD28 chapter14 content retained with79 exact old witnesses revalidated after concurrency-only additions."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Index operation serializability separate from transactions; exact source crabbing ascent/deadlock/restart, B-link all-level right links/changed parent handling, key-value/next-key including empty/end range, insert and delete successors.",
+      "evidence": [
+        {
+          "path": "lessons/AD28.md",
+          "lessonSha256": "1623f821bc551200a6e77410c17a179b3c91f07ffd52ffa11eb6f34b14b12326",
+          "kind": "teaching",
+          "paragraph": 42,
+          "exactOpening": "Crabbing ở §18.10.2 đi xuống bằng S trên parent, lấy S trên child rồi nhả parent. Insert/delete theo đường tìm tới leaf rồi cần X trên leaf. Khi split, merge hoặc redistribution lan lên, operation cần X trên parent, sửa các node liên quan rồi nhả những node không còn cần; có thể tiếp tục lên nếu parent cũng phải sửa. Giao thức này có thể deadlock g"
+        },
+        {
+          "path": "lessons/AD28.md",
+          "lessonSha256": "1623f821bc551200a6e77410c17a179b3c91f07ffd52ffa11eb6f34b14b12326",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 43,
+          "exactOpening": "B-link tree thêm right-sibling link ở **mọi mức**, không chỉ leaf. Khi split đã tạo sibling phải nhưng parent chưa cập nhật kịp, reader dùng ranh giới/high key và link phải để tìm tiếp nếu key nằm ngoài node hiện tại. Ví dụ leaf cũ chứa[10,20,30,40], split thành trái[10,20] và phải[30,40]. Reader tìm35 từ parent cũ có thể tới trái; fence và right l"
+        },
+        {
+          "path": "lessons/AD28.md",
+          "lessonSha256": "1623f821bc551200a6e77410c17a179b3c91f07ffd52ffa11eb6f34b14b12326",
+          "kind": "activity",
+          "paragraph": 49,
+          "exactOpening": "1. Từ root[10,20] và ba leaf của ví dụ 1, xóa 10 rồi 5. Ghi entry được mượn/gộp và root sau mỗi bước.\n2. Cho leaf[3,7] và[10,12], root[10]. Xóa 3. Có thể borrow không? Vẽ cây hợp lệ cuối và giải thích ngoại lệ root.\n3. Bulk load 10 khóa với max 3/min 2. Bác phương án 3,3,3,1 và đưa một phương án đúng. Đổi thành một khóa chuỗi rất dài; vì sao chỉ đế"
+        },
+        {
+          "path": "lessons/AD28.md",
+          "lessonSha256": "1623f821bc551200a6e77410c17a179b3c91f07ffd52ffa11eb6f34b14b12326",
+          "kind": "answer",
+          "paragraph": 54,
+          "exactOpening": "1. Xóa 10 rồi borrow 20 cho root[15,25], leaves[2,5]→[15,20]→[25,30]. Xóa 5 rồi merge cho root[25], leaves[2,15,20]→[25,30]. Mỗi bước giữ đúng tập entry cũ trừ khóa bị xóa.\n2. Không borrow vì sibling có đúng 2. Merge thành[7,10,12], root cũ còn một child và co thành leaf root. Leaf root hợp lệ theo ngoại lệ đã nêu.\n3. Leaf cuối 1 dưới min 2. Phương"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.10.3",
+      "title": "Concurrency Control in Main-Memory Databases",
+      "owners": [
+        "AD63"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          2088,
+          2200
+        ],
+        "ownBodySha256": "f7d9f27f61d18bdbf0358a7b6dd66f0605f935cd84435921ffed4c6fbcff3e55"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1928,
+            2087
+          ],
+          [
+            2088,
+            2200
+          ],
+          [
+            2201,
+            2385
+          ],
+          [
+            2386,
+            2414
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          917,
+          918,
+          920,
+          922
+        ],
+        "baselineCredit": false,
+        "scope": "Full own bodies and full current AD63 reviewed; full AD28 chapter14 content retained with79 exact old witnesses revalidated after concurrency-only additions."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "RAM latch cost/coarse granularity tradeoff, atomic CAS semantics and insertion algorithm, unsafe deletion ABA trace, tagged pointer/wrap and reclamation limits; library-use rationale and no native memory-order claim.",
+      "evidence": [
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "teaching",
+          "paragraph": 5,
+          "exactOpening": "Với dữ liệu trên disk, chờ I/O có thể che một phần chi phí lock manager. Khi dữ liệu chủ yếu ở RAM, thời gian quản lý lock, cache coherence, allocation và validation có thể chiếm tỷ trọng lớn. Khóa coarse trong một critical section rất ngắn có thể rẻ hơn nhiều fine locks, dù concurrency lý thuyết giảm. Kết luận phụ thuộc workload; không suy “RAM lu"
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 19,
+          "exactOpening": "Một pop đơn giản đọc old head=A,new head=B rồi chờ. Worker khác bỏ A,B và đưa A trở lại trước C. Head lại bằng địa chỉ A, CAS của pop cũ tưởng không có gì đổi, đặt head=B dù B không còn thuộc danh sách hợp lệ. Đây là ABA: giá trị pointer quay về A nhưng lịch sử và quan hệ next đã khác."
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "activity",
+          "paragraph": 43,
+          "exactOpening": "1. Trace hai insert_head cùng đọc A và chứng minh vì sao CAS retry phải cập nhật next. Chỉ rõ linearization point trong model.\n2. Dựng ABA với ba node và một tagged pointer. Nêu giới hạn counter wrap và memory reclamation thay vì gọi tag là giải pháp đầy đủ.\n3. So incremental total và conditional ticket reservation. Cho một ca commute và một ca khô"
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "answer",
+          "paragraph": 48,
+          "exactOpening": "1. N1 thắng trước; N2 đọc lại N1 rồi nối N2→N1→A. Nếu N2 giữ next=A, nó có thể mất N1 khi CAS thành công. Linearization point là CAS đổi head hợp lệ; assumptions về atomic load và publication phải rõ.\n2. ABA làm CAS pointer cũ thành công sai. Tag7→10 đổi expected nhưng counter wrap và freed memory vẫn cần protocol riêng. Nêu giới hạn của cách sửa, "
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.10.4",
+      "title": "Long-Duration Transactions",
+      "owners": [
+        "AD63"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          2201,
+          2258
+        ],
+        "ownBodySha256": "1040349131d342c3023551130d6a0516252666276572b8a1882da496eab783ee"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1928,
+            2087
+          ],
+          [
+            2088,
+            2200
+          ],
+          [
+            2201,
+            2385
+          ],
+          [
+            2386,
+            2414
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          917,
+          918,
+          920,
+          922
+        ],
+        "baselineCredit": false,
+        "scope": "Full own bodies and full current AD63 reviewed; full AD28 chapter14 content retained with79 exact old witnesses revalidated after concurrency-only additions."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "All5long-duration properties, predictable response and recovery of human work, uncommitted draft exchange/subtasks, SI/optimistic-no-read-validation partial solutions and higher long-duration conflicts.",
+      "evidence": [
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "teaching",
+          "paragraph": 25,
+          "exactOpening": "Năm yêu cầu trong sách liên hệ với nhau: thời gian kéo dài theo người dùng; chia sẻ dữ liệu chưa commit khi cộng tác; hủy riêng một subtask; khôi phục phần công việc gần nhất sau crash; và phản hồi nhanh, có thời gian dễ dự đoán. Nếu phải xem draft chung, cần nhãn workspace/phiên bản và quy tắc publish rõ, vì “người khác đã nhìn thấy” không tự roll"
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 27,
+          "exactOpening": "Ví dụ 3: hai người chỉnh cùng budget100. Người A đổi limit thành120, người B dựa vào100 phê duyệt khoản chi110. Chỉ kiểm version của field B định sửa có thể không bắt dữ liệu limit mà B đã đọc. Validation phải bao read dependency cần cho nghiệp vụ; hoặc người dùng xác nhận lại trên version mới. “Không mất cập nhật field” chưa bảo vệ mọi quyết định "
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "activity",
+          "paragraph": 43,
+          "exactOpening": "1. Trace hai insert_head cùng đọc A và chứng minh vì sao CAS retry phải cập nhật next. Chỉ rõ linearization point trong model.\n2. Dựng ABA với ba node và một tagged pointer. Nêu giới hạn counter wrap và memory reclamation thay vì gọi tag là giải pháp đầy đủ.\n3. So incremental total và conditional ticket reservation. Cho một ca commute và một ca khô"
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "answer",
+          "paragraph": 48,
+          "exactOpening": "1. N1 thắng trước; N2 đọc lại N1 rồi nối N2→N1→A. Nếu N2 giữ next=A, nó có thể mất N1 khi CAS thành công. Linearization point là CAS đổi head hợp lệ; assumptions về atomic load và publication phải rõ.\n2. ABA làm CAS pointer cũ thành công sai. Tag7→10 đổi expected nhưng counter wrap và freed memory vẫn cần protocol riêng. Nêu giới hạn của cách sửa, "
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.10.5",
+      "title": "Concurrency Control with Operations",
+      "owners": [
+        "AD63"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          2259,
+          2385
+        ],
+        "ownBodySha256": "f6323bf775c93652abeea4c940eb6502c16807fa52ff031e7cbed86a18eeb8b6"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1928,
+            2087
+          ],
+          [
+            2088,
+            2200
+          ],
+          [
+            2201,
+            2385
+          ],
+          [
+            2386,
+            2414
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          917,
+          918,
+          920,
+          922
+        ],
+        "baselineCredit": false,
+        "scope": "Full own bodies and full current AD63 reviewed; full AD28 chapter14 content retained with79 exact old witnesses revalidated after concurrency-only additions."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Correctness versus selected invariant, daily summary commutative increment with atomic local step and I-mode compatibility, logical inverse versus physical restore/index shape, noncommuting conditional reservation and compensation.",
+      "evidence": [
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "teaching",
+          "paragraph": 32,
+          "exactOpening": "I ở bảng này là **increment**, khác intention lock ở AD39. Trong thiết kế giữ transaction isolation bằng operation lock, giữ I theo protocol tới khi commit hoặc compensation/abort hoàn tất; latch cho từng phép cộng được nhả sớm. Nếu nhả cả I ngay rồi cho reader đọc một phần đóng góp chưa có outcome, cần một mô hình consistency khác và không được dù"
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 34,
+          "exactOpening": "Với tổng100, T1 cộng7, T2 cộng9, sau đó T1 abort: bù−7 để còn109; set lại old value100 sẽ xóa cả9 hợp lệ của T2. Logical undo cho insert index tương tự: xóa đúng record do operation đó chèn, dù tree đã split/merge thêm vì transaction khác. Cây sau undo cần đúng tập record/invariant, không cần giống từng page của cây trước insert. Đưa nguyên ảnh pag"
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "activity",
+          "paragraph": 43,
+          "exactOpening": "1. Trace hai insert_head cùng đọc A và chứng minh vì sao CAS retry phải cập nhật next. Chỉ rõ linearization point trong model.\n2. Dựng ABA với ba node và một tagged pointer. Nêu giới hạn counter wrap và memory reclamation thay vì gọi tag là giải pháp đầy đủ.\n3. So incremental total và conditional ticket reservation. Cho một ca commute và một ca khô"
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "answer",
+          "paragraph": 48,
+          "exactOpening": "1. N1 thắng trước; N2 đọc lại N1 rồi nối N2→N1→A. Nếu N2 giữ next=A, nó có thể mất N1 khi CAS thành công. Linearization point là CAS đổi head hợp lệ; assumptions về atomic load và publication phải rõ.\n2. ABA làm CAS pointer cũ thành công sai. Tag7→10 đổi expected nhưng counter wrap và freed memory vẫn cần protocol riêng. Nêu giới hạn của cách sửa, "
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.10.6",
+      "title": "Real-Time Transaction Systems",
+      "owners": [
+        "AD63"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          2386,
+          2414
+        ],
+        "ownBodySha256": "6690a1e5ce8dde13019e2453ddb377cf44519098f561cbe3e8b4e1814bd94e42"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1928,
+            2087
+          ],
+          [
+            2088,
+            2200
+          ],
+          [
+            2201,
+            2385
+          ],
+          [
+            2386,
+            2414
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          917,
+          918,
+          920,
+          922
+        ],
+        "baselineCredit": false,
+        "scope": "Full own bodies and full current AD63 reviewed; full AD28 chapter14 content retained with79 exact old witnesses revalidated after concurrency-only additions."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Hard/firm/soft value semantics, deadline versus consistency, preemption rollback costs, RAM still variable, deadline-aware priority and conditional empirical OCC findings.",
+      "evidence": [
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "teaching",
+          "paragraph": 38,
+          "exactOpening": "Hard deadline bị trễ có hậu quả nghiêm trọng theo yêu cầu hệ; firm deadline cho giá trị 0 sau hạn; soft deadline giảm giá trị dần theo độ trễ. Không đồng nhất hard deadline với “chạy nhanh hơn bình thường”. Cần worst-case hoặc mô hình response-time đủ để bàn đảm bảo, không lấy average nhỏ làm chứng minh."
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 41,
+          "exactOpening": "Ví dụ 4: Tlow giữ lock, còn4ms để hoàn thành; Thigh deadline5ms và cần1ms sau khi được khóa. Chờ có thể vừa đủ trong model không overhead. Nếu abort Tlow cần6ms rollback, preempt lại làm Thigh trễ. Đổi số để thấy không có rule “ưu tiên cao luôn abort holder” đúng mọi tình huống."
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "activity",
+          "paragraph": 43,
+          "exactOpening": "1. Trace hai insert_head cùng đọc A và chứng minh vì sao CAS retry phải cập nhật next. Chỉ rõ linearization point trong model.\n2. Dựng ABA với ba node và một tagged pointer. Nêu giới hạn counter wrap và memory reclamation thay vì gọi tag là giải pháp đầy đủ.\n3. So incremental total và conditional ticket reservation. Cho một ca commute và một ca khô"
+        },
+        {
+          "path": "lessons/AD63.md",
+          "lessonSha256": "93db8344a5a99e3a23ad0008e0c899f91df146999bcc032828cd4375b84ecdc7",
+          "kind": "answer",
+          "paragraph": 48,
+          "exactOpening": "1. N1 thắng trước; N2 đọc lại N1 rồi nối N2→N1→A. Nếu N2 giữ next=A, nó có thể mất N1 khi CAS thành công. Linearization point là CAS đổi head hợp lệ; assumptions về atomic load và publication phải rõ.\n2. ABA làm CAS pointer cũ thành công sai. Tag7→10 đổi expected nhưng counter wrap và freed memory vẫn cần protocol riêng. Nêu giới hạn của cách sửa, "
+        }
+      ],
+      "gaps": []
+    }
+  ],
+  "checks": "qa/advanced-concurrency-full-checks.json:15finite witnesses,24online-build schedules/cuts,49increment pairs; no native/SQL/real-time execution."
+}

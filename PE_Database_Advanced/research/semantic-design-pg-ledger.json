@@ -1,0 +1,4669 @@
+{
+  "date": "2026-11-05",
+  "scope": "Full section-by-section semantic audit of exact assigned source units for 15 new lessons; incremental ledger. Pending rows are NOT completion.",
+  "ownedLessonIds": [
+    "AD02",
+    "AD03",
+    "AD04",
+    "AD05",
+    "AD06",
+    "AD07",
+    "AD08",
+    "AD09",
+    "AD55",
+    "AD56",
+    "AD57",
+    "AD58",
+    "AD59",
+    "AD83",
+    "AD84"
+  ],
+  "inventorySha256": "5d0d4501d686d1d36cf16e960f8aecfc65a047b3d70032df3d07631abab6977b",
+  "rules": [
+    "A heading/mapping/keyword match never establishes semantic completion.",
+    "Record actual own-body reading including parent introductions, figures/algorithms/proofs.",
+    "Record actual teaching/example/proof/activity/answer paragraph evidence or keep partial/missing explicit.",
+    "Baseline evidence only counts after reading its actual content.",
+    "Finite tests, source reading and runtime checks are separate kinds of evidence."
+  ],
+  "readBatches": [
+    {
+      "id": "full-27-calculus",
+      "sourcePath": "tmp/database-source/online-27.txt",
+      "readLineRanges": [
+        [
+          1,
+          404
+        ]
+      ],
+      "baselineRead": [
+        "output/database-pe/lessons/M02.md"
+      ],
+      "lessonRead": [
+        "output/database-advanced/lessons/AD02.md"
+      ],
+      "newChanges": [
+        "Formal tuple atom/grammar/type checks",
+        "OR vs AND independent-witness exercise and answer",
+        "Actual basic-RA translation exercise and answer"
+      ],
+      "figureReview": "Figures27.1–27.3 extracted result tables inspected; Figure27.4 noted as next Datalog section figure, not calculus coverage."
+    }
+  ],
+  "units": [
+    {
+      "section": "6.1",
+      "title": "Overview of the Design Process",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          17,
+          22
+        ],
+        "scopeLines": [
+          17,
+          133
+        ],
+        "ownBodySha256": "86968053729876dc3dda8ba479384d1ed51cff756f4f11765e6b29868d20c7b2",
+        "scopeSha256": "ac589bbba4cb04c27e8b68440a61251ff83864d4d99c0d668a138e5cc1c229f3"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.1.1",
+      "title": "Design Phases",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          23,
+          81
+        ],
+        "scopeLines": [
+          23,
+          81
+        ],
+        "ownBodySha256": "ece71c4a7f1b73a56787741c74ae90983c6bad97b2e30ee4b35a52735155daab",
+        "scopeSha256": "ece71c4a7f1b73a56787741c74ae90983c6bad97b2e30ee4b35a52735155daab"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.1.2",
+      "title": "Design Alternatives",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          82,
+          133
+        ],
+        "scopeLines": [
+          82,
+          133
+        ],
+        "ownBodySha256": "90c073bde0804098c7bcb4bb233f2160c1f5b019a5dedf326b88429000098e4e",
+        "scopeSha256": "90c073bde0804098c7bcb4bb233f2160c1f5b019a5dedf326b88429000098e4e"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.2",
+      "title": "The Entity-Relationship Model",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          134,
+          147
+        ],
+        "scopeLines": [
+          134,
+          392
+        ],
+        "ownBodySha256": "f9cb6486e2e66f057dca5ff185770c59a948b10ab33df7f8189b2edbe6cc5733",
+        "scopeSha256": "da8e2c0102aa798138b5f3528d86426523151fa5ef134c95df32b0fcc65c1754"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.2.1",
+      "title": "Entity Sets",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          148,
+          225
+        ],
+        "scopeLines": [
+          148,
+          225
+        ],
+        "ownBodySha256": "67a682fa1390849715269dc16e1e659406704584c6e170605ee01ab4a7853531",
+        "scopeSha256": "67a682fa1390849715269dc16e1e659406704584c6e170605ee01ab4a7853531"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.2.2",
+      "title": "Relationship Sets",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          226,
+          392
+        ],
+        "scopeLines": [
+          226,
+          392
+        ],
+        "ownBodySha256": "7d6a8509339c1dc58eac530bc98dac6a9bf095ef12f9e45331a03d1a4167bc26",
+        "scopeSha256": "7d6a8509339c1dc58eac530bc98dac6a9bf095ef12f9e45331a03d1a4167bc26"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.3",
+      "title": "Complex Attributes",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          393,
+          528
+        ],
+        "scopeLines": [
+          393,
+          528
+        ],
+        "ownBodySha256": "9473e6451878ee8b146fc3054de2c8637c2e3fa1905eae669c1382bc076aaaf2",
+        "scopeSha256": "9473e6451878ee8b146fc3054de2c8637c2e3fa1905eae669c1382bc076aaaf2"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.4",
+      "title": "Mapping Cardinalities",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          529,
+          728
+        ],
+        "scopeLines": [
+          529,
+          728
+        ],
+        "ownBodySha256": "ad9f93b34e27e7ac9d89d664e7f9ff22c89944d9a75221cc24071cb7afc57ab0",
+        "scopeSha256": "ad9f93b34e27e7ac9d89d664e7f9ff22c89944d9a75221cc24071cb7afc57ab0"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.5",
+      "title": "Primary Key",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          729,
+          733
+        ],
+        "scopeLines": [
+          729,
+          918
+        ],
+        "ownBodySha256": "f7ae4f4d9ac90b1000d473dc59271202f906979c35c86d2b55158d62482c40d3",
+        "scopeSha256": "e6a45f3027b5a5c6c2de2118a1e0bc614cff4611200a9611b514b7842f248aae"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.5.1",
+      "title": "Entity Sets",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          734,
+          745
+        ],
+        "scopeLines": [
+          734,
+          745
+        ],
+        "ownBodySha256": "736ddaca6927f0142567e39854e26e4d8d62cfeec4e0619e98e278a92f5e3dab",
+        "scopeSha256": "736ddaca6927f0142567e39854e26e4d8d62cfeec4e0619e98e278a92f5e3dab"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.5.2",
+      "title": "Relationship Sets",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          746,
+          824
+        ],
+        "scopeLines": [
+          746,
+          824
+        ],
+        "ownBodySha256": "70ada01a002609cedd037e932ac2ddb007dfce1427824bbe4c57f592d8ffad5d",
+        "scopeSha256": "70ada01a002609cedd037e932ac2ddb007dfce1427824bbe4c57f592d8ffad5d"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.5.3",
+      "title": "Weak Entity Sets",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          825,
+          918
+        ],
+        "scopeLines": [
+          825,
+          918
+        ],
+        "ownBodySha256": "3f4e719f246710dc4d201bde048361a741e1739ff8ba8a9e8632a6a77ea78079",
+        "scopeSha256": "3f4e719f246710dc4d201bde048361a741e1739ff8ba8a9e8632a6a77ea78079"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.6",
+      "title": "Removing Redundant Attributes in Entity Sets",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          919,
+          1157
+        ],
+        "scopeLines": [
+          919,
+          1157
+        ],
+        "ownBodySha256": "67cceb087dd022b4262307bdfbf0629c0cb6174f759e433ad125a9c49910004d",
+        "scopeSha256": "67cceb087dd022b4262307bdfbf0629c0cb6174f759e433ad125a9c49910004d"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.7",
+      "title": "Reducing E-R Diagrams to Relational Schemas",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1158,
+          1168
+        ],
+        "scopeLines": [
+          1158,
+          1601
+        ],
+        "ownBodySha256": "c232d0c2c13a32c72637a9ab3c50d0d8a7ef303349a464c4a4ba241bcc8cac21",
+        "scopeSha256": "193595810c19ea217f38ee12d6e95353c3c1db4ecf88ac01119a3e926d94d9c9"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.7.1",
+      "title": "Representation of Strong Entity Sets",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1169,
+          1191
+        ],
+        "scopeLines": [
+          1169,
+          1191
+        ],
+        "ownBodySha256": "7a55203c765372d1a75767f475e4d8cb760b6576db07a5eaa6b37f12ba020035",
+        "scopeSha256": "7a55203c765372d1a75767f475e4d8cb760b6576db07a5eaa6b37f12ba020035"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.7.2",
+      "title": "Representation of Strong Entity Sets with Complex Attributes",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1192,
+          1308
+        ],
+        "scopeLines": [
+          1192,
+          1308
+        ],
+        "ownBodySha256": "ef2df645c5e097aff6558c668d4e1009dcf91302e1ce8a79a3012f004e70a389",
+        "scopeSha256": "ef2df645c5e097aff6558c668d4e1009dcf91302e1ce8a79a3012f004e70a389"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.7.3",
+      "title": "Representation of Weak Entity Sets",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1309,
+          1342
+        ],
+        "scopeLines": [
+          1309,
+          1342
+        ],
+        "ownBodySha256": "6fba439c611b4abde22baffec0f4a405fc508480c093135454eb8a9f2a16a273",
+        "scopeSha256": "6fba439c611b4abde22baffec0f4a405fc508480c093135454eb8a9f2a16a273"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.7.4",
+      "title": "Representation of Relationship Sets",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1343,
+          1496
+        ],
+        "scopeLines": [
+          1343,
+          1496
+        ],
+        "ownBodySha256": "656ffff14cda6274267ce9a4662bd1127ba03c3a179d7e4632f683f618bb9b1f",
+        "scopeSha256": "656ffff14cda6274267ce9a4662bd1127ba03c3a179d7e4632f683f618bb9b1f"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.7.5",
+      "title": "Redundancy of Schemas",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1497,
+          1528
+        ],
+        "scopeLines": [
+          1497,
+          1528
+        ],
+        "ownBodySha256": "bfb4621fd3cbc27d433fbc12f40ff12f9530b52ef621ecc758774bd795c837c5",
+        "scopeSha256": "bfb4621fd3cbc27d433fbc12f40ff12f9530b52ef621ecc758774bd795c837c5"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.7.6",
+      "title": "Combination of Schemas",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1529,
+          1601
+        ],
+        "scopeLines": [
+          1529,
+          1601
+        ],
+        "ownBodySha256": "b2fea8a53f56d311d0fee9b4072953d4ae3d3b979f3cc84d6dfb6903fae299ec",
+        "scopeSha256": "b2fea8a53f56d311d0fee9b4072953d4ae3d3b979f3cc84d6dfb6903fae299ec"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.8",
+      "title": "Extended E-R Features",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1602,
+          1609
+        ],
+        "scopeLines": [
+          1602,
+          1954
+        ],
+        "ownBodySha256": "3e3be5476a97082223d23190d6ef402e12ec3f0cc91e8259efe273bed81c37be",
+        "scopeSha256": "eb85aac9839f52c91504af778c8757a32c1479a47d8fce9be4dd4a36b655f86d"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.8.1",
+      "title": "Specialization",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1610,
+          1690
+        ],
+        "scopeLines": [
+          1610,
+          1690
+        ],
+        "ownBodySha256": "d72f7f380de12bb33a963dc756b230169431f48290ef6e0f38edd6006970cc13",
+        "scopeSha256": "d72f7f380de12bb33a963dc756b230169431f48290ef6e0f38edd6006970cc13"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.8.2",
+      "title": "Generalization",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1691,
+          1743
+        ],
+        "scopeLines": [
+          1691,
+          1743
+        ],
+        "ownBodySha256": "108ef7e9bc6e9b57969bd4768865bf896ed22a336481e6a5be2ae8e4eb4bca0b",
+        "scopeSha256": "108ef7e9bc6e9b57969bd4768865bf896ed22a336481e6a5be2ae8e4eb4bca0b"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.8.3",
+      "title": "Attribute Inheritance",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1744,
+          1780
+        ],
+        "scopeLines": [
+          1744,
+          1780
+        ],
+        "ownBodySha256": "9675497a2c85e8e0cbc9911a35010746cc5b0da7df2942fa92cd903e0fd4a2b6",
+        "scopeSha256": "9675497a2c85e8e0cbc9911a35010746cc5b0da7df2942fa92cd903e0fd4a2b6"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.8.4",
+      "title": "Constraints on Specializations",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1781,
+          1811
+        ],
+        "scopeLines": [
+          1781,
+          1811
+        ],
+        "ownBodySha256": "8f80586283db9a77e4397d25ed737caae39f27ca773ad1a4bef859abf8ee523a",
+        "scopeSha256": "8f80586283db9a77e4397d25ed737caae39f27ca773ad1a4bef859abf8ee523a"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.8.5",
+      "title": "Aggregation",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1812,
+          1868
+        ],
+        "scopeLines": [
+          1812,
+          1868
+        ],
+        "ownBodySha256": "5a6fd915f9cfaeb65968ff79dbd9c93da75c312eedc71ee8d1b30d301e140c37",
+        "scopeSha256": "5a6fd915f9cfaeb65968ff79dbd9c93da75c312eedc71ee8d1b30d301e140c37"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.8.6",
+      "title": "Reduction to Relation Schemas",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1869,
+          1873
+        ],
+        "scopeLines": [
+          1869,
+          1954
+        ],
+        "ownBodySha256": "591f5c4b41157ab2844866ee36c797139fe1faa1e4020a4a9de66626516b3504",
+        "scopeSha256": "0161f5975c5a53fac9e43cb87bcc55bf776db22188eb9204cd7ba6d22d655d33"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.8.6.1",
+      "title": "Representation of Generalization",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1874,
+          1936
+        ],
+        "scopeLines": [
+          1874,
+          1936
+        ],
+        "ownBodySha256": "a3365f0fe16a1806fa073de091b116d79453e48053754b01f54dc6b4d6290774",
+        "scopeSha256": "a3365f0fe16a1806fa073de091b116d79453e48053754b01f54dc6b4d6290774"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.8.6.2",
+      "title": "Representation of Aggregation",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1937,
+          1954
+        ],
+        "scopeLines": [
+          1937,
+          1954
+        ],
+        "ownBodySha256": "9015a95ee1767ba3094024d83f6ff0adddabf8ef520e4f2863db6547eea59e89",
+        "scopeSha256": "9015a95ee1767ba3094024d83f6ff0adddabf8ef520e4f2863db6547eea59e89"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.9",
+      "title": "Entity-Relationship Design Issues",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1955,
+          1978
+        ],
+        "scopeLines": [
+          1955,
+          2195
+        ],
+        "ownBodySha256": "08864be34bffbe3987ef55b1d7e63b7f031046c4955a89620318d03a4203f7d3",
+        "scopeSha256": "379cc0909badbea61982e987c0d324f197744d7dfcf13b409b43a9c82f049734"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.9.1",
+      "title": "Common Mistakes in E-R Diagrams",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          1979,
+          2036
+        ],
+        "scopeLines": [
+          1979,
+          2036
+        ],
+        "ownBodySha256": "5581bd3b129892cd23377deeb3a24fe440b715377d708ccd15ec2ad3d29d42e3",
+        "scopeSha256": "5581bd3b129892cd23377deeb3a24fe440b715377d708ccd15ec2ad3d29d42e3"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.9.2",
+      "title": "Use of Entity Sets versus Attributes",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          2037,
+          2089
+        ],
+        "scopeLines": [
+          2037,
+          2089
+        ],
+        "ownBodySha256": "ae947ada3fb38a2b1b93127aa7ba37cf581a835aad6ad7ad876998153ab34132",
+        "scopeSha256": "ae947ada3fb38a2b1b93127aa7ba37cf581a835aad6ad7ad876998153ab34132"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.9.3",
+      "title": "Use of Entity Sets versus Relationship Sets",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          2090,
+          2130
+        ],
+        "scopeLines": [
+          2090,
+          2130
+        ],
+        "ownBodySha256": "650082ec315b330d8078f52b8f89b63b29d8d6ca0c18a4478ed789c681281a46",
+        "scopeSha256": "650082ec315b330d8078f52b8f89b63b29d8d6ca0c18a4478ed789c681281a46"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.9.4",
+      "title": "Binary versus n-ary Relationship Sets",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          2131,
+          2195
+        ],
+        "scopeLines": [
+          2131,
+          2195
+        ],
+        "ownBodySha256": "55e75d429662aae5a5ed7f354e17a2a9a58b78b40a97109eaed36e4ea9d4dcd0",
+        "scopeSha256": "55e75d429662aae5a5ed7f354e17a2a9a58b78b40a97109eaed36e4ea9d4dcd0"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.10",
+      "title": "Alternative Notations for Modeling Data",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          2196,
+          2210
+        ],
+        "scopeLines": [
+          2196,
+          2510
+        ],
+        "ownBodySha256": "66492753a233744f25824c90c5f11cf83efc3e43ed5d73e8df9d7d9fa117a51a",
+        "scopeSha256": "bca0918f33035d9e36d8d8abbac6d44db066a369c51b119ce356385bfba3f349"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.10.1",
+      "title": "Alternative E-R Notations",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          2211,
+          2369
+        ],
+        "scopeLines": [
+          2211,
+          2369
+        ],
+        "ownBodySha256": "1627ecf962b6cfebaedbaa665d3539d7b4ac964fc5587085ef9861217b46ae31",
+        "scopeSha256": "1627ecf962b6cfebaedbaa665d3539d7b4ac964fc5587085ef9861217b46ae31"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.10.2",
+      "title": "The Unified Modeling Language UML",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          2370,
+          2510
+        ],
+        "scopeLines": [
+          2370,
+          2510
+        ],
+        "ownBodySha256": "5a6441e76f3915cbc5d984687cb934200e665a8d1549701664ccd24ebd2c2571",
+        "scopeSha256": "5a6441e76f3915cbc5d984687cb934200e665a8d1549701664ccd24ebd2c2571"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.11",
+      "title": "Other Aspects of Database Design",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          2511,
+          2515
+        ],
+        "scopeLines": [
+          2511,
+          2572
+        ],
+        "ownBodySha256": "2672437a9ffc9d8d1341207c5a686510b7f455b93ad46d5657ef4a7792eed875",
+        "scopeSha256": "089f5a5b7354edb2564019622c222349a0d40621256c9159b9c87251566822c8"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.11.1",
+      "title": "Functional Requirements",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          2516,
+          2525
+        ],
+        "scopeLines": [
+          2516,
+          2525
+        ],
+        "ownBodySha256": "43f5f1664a4bb46da83162e5a1f47c537a376c18217a219e9a7dba2683fe9c87",
+        "scopeSha256": "43f5f1664a4bb46da83162e5a1f47c537a376c18217a219e9a7dba2683fe9c87"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.11.2",
+      "title": "Data Flow, Workflow",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          2526,
+          2544
+        ],
+        "scopeLines": [
+          2526,
+          2544
+        ],
+        "ownBodySha256": "ec496c9d5523e0fcc774c45980be94edf920b8f6ec85f614c553398bc75fe16d",
+        "scopeSha256": "ec496c9d5523e0fcc774c45980be94edf920b8f6ec85f614c553398bc75fe16d"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "6.11.3",
+      "title": "Schema Evolution",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-6.txt",
+        "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+        "ownBodyLines": [
+          2545,
+          2572
+        ],
+        "scopeLines": [
+          2545,
+          2572
+        ],
+        "ownBodySha256": "bf644b57b45a72cf8efec86edd0ffa19c9888686081ab9a6900f1dd83a234f69",
+        "scopeSha256": "bf644b57b45a72cf8efec86edd0ffa19c9888686081ab9a6900f1dd83a234f69"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.1",
+      "title": "Features of Good Relational Designs",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          20,
+          214
+        ],
+        "scopeLines": [
+          20,
+          363
+        ],
+        "ownBodySha256": "a7330bf5edde5428b911691a7e354dd44b6ee23f217e6ab0d374138a9440d46b",
+        "scopeSha256": "e65d33eafbb331631b43a66473d2a2a6acbcc32404f7e94540bf186f88605d21"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.1.1",
+      "title": "Decomposition",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          215,
+          307
+        ],
+        "scopeLines": [
+          215,
+          307
+        ],
+        "ownBodySha256": "79a5fe31019abc73bcdf15c250b8189f10a6589d14db7e2fe3a0f211b8f24eb2",
+        "scopeSha256": "79a5fe31019abc73bcdf15c250b8189f10a6589d14db7e2fe3a0f211b8f24eb2"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.1.2",
+      "title": "Lossless Decomposition",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          308,
+          346
+        ],
+        "scopeLines": [
+          308,
+          346
+        ],
+        "ownBodySha256": "308ca496c526c82cee316c3849ed8ab54efc5fa5474bd8520357cc8b12608cbb",
+        "scopeSha256": "308ca496c526c82cee316c3849ed8ab54efc5fa5474bd8520357cc8b12608cbb"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.1.3",
+      "title": "Normalization Theory",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          347,
+          363
+        ],
+        "scopeLines": [
+          347,
+          363
+        ],
+        "ownBodySha256": "9cded6c5a471f118a8b373fac9b7eabd6db0f28f23410d46810de3905fcd3032",
+        "scopeSha256": "9cded6c5a471f118a8b373fac9b7eabd6db0f28f23410d46810de3905fcd3032"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.2",
+      "title": "Decomposition Using Functional Dependencies",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          364,
+          380
+        ],
+        "scopeLines": [
+          364,
+          591
+        ],
+        "ownBodySha256": "c0a54846ef0700797090b7db0fedc1f11652e64a57aa0a5e1a5313aa5d618c2c",
+        "scopeSha256": "864b0b8acf25fb2e4e3f4e6556e2f9abe46408faf579fce7f59dd4828ca1d76f"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.2.1",
+      "title": "Notational Conventions",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          381,
+          403
+        ],
+        "scopeLines": [
+          381,
+          403
+        ],
+        "ownBodySha256": "1f6f67f5f07aa5ba86927a9dbe3152a3cec0db8ea069e52219a09eeb452bc490",
+        "scopeSha256": "1f6f67f5f07aa5ba86927a9dbe3152a3cec0db8ea069e52219a09eeb452bc490"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.2.2",
+      "title": "Keys and Functional Dependencies",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          404,
+          546
+        ],
+        "scopeLines": [
+          404,
+          546
+        ],
+        "ownBodySha256": "9bdf9c5c04c6cf74cfe638c11e499fd0b911100a275da927a35711092b98fdfa",
+        "scopeSha256": "9bdf9c5c04c6cf74cfe638c11e499fd0b911100a275da927a35711092b98fdfa"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.2.3",
+      "title": "Lossless Decomposition and Functional Dependencies",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          547,
+          591
+        ],
+        "scopeLines": [
+          547,
+          591
+        ],
+        "ownBodySha256": "d0fcafc7ae4eb7d74d625d6b3fa56d8514aed3e523614da612b54ce9f87b11fe",
+        "scopeSha256": "d0fcafc7ae4eb7d74d625d6b3fa56d8514aed3e523614da612b54ce9f87b11fe"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.3",
+      "title": "Normal Forms",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          592,
+          595
+        ],
+        "scopeLines": [
+          592,
+          909
+        ],
+        "ownBodySha256": "d3542bbaeb1144d9f8dff3138462a638b11c4be31b9f6965701b921d8e6264b7",
+        "scopeSha256": "422221dd03c5fa75f98a5d303c51e089bbce653d8b3bea75aaaf19a517215908"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.3.1",
+      "title": "Boyce – Codd Normal Form",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          596,
+          600
+        ],
+        "scopeLines": [
+          596,
+          767
+        ],
+        "ownBodySha256": "8f396090e872522451aa7ee8a1d62ff0fa9e947e309ba80f4e0c87696ca7d101",
+        "scopeSha256": "90dbec38a7f8a8c9491b11a576c616e391075ee0091a098521af2822493c6576"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.3.1.1",
+      "title": "Definition",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          601,
+          678
+        ],
+        "scopeLines": [
+          601,
+          678
+        ],
+        "ownBodySha256": "f458014483c7e36ecadc8bc7872398da715dd78b88e444bd18f47a9fb9963e12",
+        "scopeSha256": "f458014483c7e36ecadc8bc7872398da715dd78b88e444bd18f47a9fb9963e12"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.3.1.2",
+      "title": "BCNF and Dependency Preservation",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          679,
+          767
+        ],
+        "scopeLines": [
+          679,
+          767
+        ],
+        "ownBodySha256": "9f025b579d3f5ea8e4cc1658c758e4ffe943988fe5a7e153e0a22fa6aa53e870",
+        "scopeSha256": "9f025b579d3f5ea8e4cc1658c758e4ffe943988fe5a7e153e0a22fa6aa53e870"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.3.2",
+      "title": "Third Normal Form",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          768,
+          827
+        ],
+        "scopeLines": [
+          768,
+          827
+        ],
+        "ownBodySha256": "dc96511fe30d3c6ceed339a75685efd400f67b5b478e58f3751f378b9d5cb54b",
+        "scopeSha256": "dc96511fe30d3c6ceed339a75685efd400f67b5b478e58f3751f378b9d5cb54b"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.3.3",
+      "title": "Comparison of BCNF and 3NF",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          828,
+          869
+        ],
+        "scopeLines": [
+          828,
+          869
+        ],
+        "ownBodySha256": "16675cdf0a264d72420289d31097c9e9368feef136bc020e56222a376da72dca",
+        "scopeSha256": "16675cdf0a264d72420289d31097c9e9368feef136bc020e56222a376da72dca"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.3.4",
+      "title": "Higher Normal Forms",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          870,
+          909
+        ],
+        "scopeLines": [
+          870,
+          909
+        ],
+        "ownBodySha256": "f2a103fe248439c2b7f7900d3e9c5c7626a46e5a9c20d64c5dd7c69988a2ee3c",
+        "scopeSha256": "f2a103fe248439c2b7f7900d3e9c5c7626a46e5a9c20d64c5dd7c69988a2ee3c"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.4",
+      "title": "Functional-Dependency Theory",
+      "owners": [
+        "AD03"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          910,
+          912
+        ],
+        "scopeLines": [
+          910,
+          1292
+        ],
+        "ownBodySha256": "b3087a2406ea36f650fedc1f03afd43bc6c5a5a93f74cf71b0c6565e1348300e",
+        "scopeSha256": "872703516d97eaa27bdf2657869e785442500275d5bb88aa0727ab542638ef99"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.4.1",
+      "title": "Closure of a Set of Functional Dependencies",
+      "owners": [
+        "AD03"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          913,
+          1006
+        ],
+        "scopeLines": [
+          913,
+          1006
+        ],
+        "ownBodySha256": "fdad37dad7ed73fae2212bd1e7a64a7c3c727ddb48cb6b8602c2641cd1da52bf",
+        "scopeSha256": "fdad37dad7ed73fae2212bd1e7a64a7c3c727ddb48cb6b8602c2641cd1da52bf"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.4.2",
+      "title": "Closure of Attribute Sets",
+      "owners": [
+        "AD03"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1007,
+          1071
+        ],
+        "scopeLines": [
+          1007,
+          1071
+        ],
+        "ownBodySha256": "7e69b9a8aa765bf568a2876c54155c3ca14ce88c90560a85bdf2f1d4d13d5e5f",
+        "scopeSha256": "7e69b9a8aa765bf568a2876c54155c3ca14ce88c90560a85bdf2f1d4d13d5e5f"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.4.3",
+      "title": "Canonical Cover",
+      "owners": [
+        "AD04"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1072,
+          1224
+        ],
+        "scopeLines": [
+          1072,
+          1224
+        ],
+        "ownBodySha256": "ef98752390cd06fc63a72fc6022eb31354b4de714329243a3dd4719ad60a1e6e",
+        "scopeSha256": "ef98752390cd06fc63a72fc6022eb31354b4de714329243a3dd4719ad60a1e6e"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.4.4",
+      "title": "Dependency Preservation",
+      "owners": [
+        "AD04"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1225,
+          1292
+        ],
+        "scopeLines": [
+          1225,
+          1292
+        ],
+        "ownBodySha256": "ffe6742dd423e3651fe291722b1e2f339bc717693aa248a9eeb6fc6bce1f766a",
+        "scopeSha256": "ffe6742dd423e3651fe291722b1e2f339bc717693aa248a9eeb6fc6bce1f766a"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.5",
+      "title": "Algorithms for Decomposition Using Functional Dependencies",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1293,
+          1296
+        ],
+        "scopeLines": [
+          1293,
+          1552
+        ],
+        "ownBodySha256": "5297fb5de844aa85ff2f5e92b56d7f14f990f1518bb4d9177952085b77e6f2d3",
+        "scopeSha256": "bf8a38c5b993e0a60bb8dc83f83e9b831ab4f074b3c3e357d34873ab4a2529d8"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.5.1",
+      "title": "BCNF Decomposition",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1297,
+          1302
+        ],
+        "scopeLines": [
+          1297,
+          1510
+        ],
+        "ownBodySha256": "074a416b8950d0c257df37b28a4999babc082fb97cec515449bc28cd10489e3c",
+        "scopeSha256": "55d76a9c24c62174278adce7ad8ba570f97eb1694eb679d1864710c0fd1124d2"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.5.1.1",
+      "title": "Testing for BCNF",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1303,
+          1345
+        ],
+        "scopeLines": [
+          1303,
+          1345
+        ],
+        "ownBodySha256": "c4f697c97cbce2618350060e5265ae91d7cd3042f6983ff38dfb7d40d815a717",
+        "scopeSha256": "c4f697c97cbce2618350060e5265ae91d7cd3042f6983ff38dfb7d40d815a717"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.5.1.2",
+      "title": "BCNF Decomposition Algorithm",
+      "owners": [
+        "AD05"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1346,
+          1510
+        ],
+        "scopeLines": [
+          1346,
+          1510
+        ],
+        "ownBodySha256": "50c8505c0e0d12cdd36bb12064e0588cd06d57edbd98aea0e39dba90e58f5258",
+        "scopeSha256": "50c8505c0e0d12cdd36bb12064e0588cd06d57edbd98aea0e39dba90e58f5258"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.5.3",
+      "title": "Correctness of the 3NF Algorithm",
+      "owners": [
+        "AD06"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1511,
+          1552
+        ],
+        "scopeLines": [
+          1511,
+          1552
+        ],
+        "ownBodySha256": "edd79f97a943562984c890b34bb4983aa6a802ddc0bfe45f34a14778b32b3f73",
+        "scopeSha256": "edd79f97a943562984c890b34bb4983aa6a802ddc0bfe45f34a14778b32b3f73"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.6",
+      "title": "Decomposition Using Multivalued Dependencies",
+      "owners": [
+        "AD07"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1553,
+          1609
+        ],
+        "scopeLines": [
+          1553,
+          1803
+        ],
+        "ownBodySha256": "018e8a6e423c38319b0d4ac54c0b90d89192ed86962f9458b4ff2d6fabc6ce68",
+        "scopeSha256": "553fac9cc8919e308575b440445b2147d71440b41ef51565b21c34d5c8a90774"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.6.1",
+      "title": "Multivalued Dependencies",
+      "owners": [
+        "AD07"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1610,
+          1710
+        ],
+        "scopeLines": [
+          1610,
+          1710
+        ],
+        "ownBodySha256": "326af417f8362e2597f9b33081a542fa950527196af304538425ea390cfef64f",
+        "scopeSha256": "326af417f8362e2597f9b33081a542fa950527196af304538425ea390cfef64f"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.6.2",
+      "title": "Fourth Normal Form",
+      "owners": [
+        "AD07"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1711,
+          1803
+        ],
+        "scopeLines": [
+          1711,
+          1803
+        ],
+        "ownBodySha256": "c152cc3e230ed2f1b940ad2e4deba7eec71e3b87c3273a119585c68aaa3ef770",
+        "scopeSha256": "c152cc3e230ed2f1b940ad2e4deba7eec71e3b87c3273a119585c68aaa3ef770"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.7",
+      "title": "More Normal Forms",
+      "owners": [
+        "AD08"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1804,
+          1822
+        ],
+        "scopeLines": [
+          1804,
+          1822
+        ],
+        "ownBodySha256": "980da768450efefc5d7d4d6264ddc9b288af3f237858fa20ae5e3d23216bea43",
+        "scopeSha256": "980da768450efefc5d7d4d6264ddc9b288af3f237858fa20ae5e3d23216bea43"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.8",
+      "title": "Atomic Domains and First Normal Form",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1823,
+          1894
+        ],
+        "scopeLines": [
+          1823,
+          1894
+        ],
+        "ownBodySha256": "30cd04ad3cb087e920976f490a23c334eee12873ee7d9bea3911243e7f7c0832",
+        "scopeSha256": "30cd04ad3cb087e920976f490a23c334eee12873ee7d9bea3911243e7f7c0832"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.9",
+      "title": "Database-Design Process",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1895,
+          1911
+        ],
+        "scopeLines": [
+          1895,
+          2069
+        ],
+        "ownBodySha256": "1e1be5782fdc646decb111aa50922da5b9669e852582aa8b508349a38a34d934",
+        "scopeSha256": "8fa8f46317afce22a3c7d172e3acdf9ed9c7bbd34d89697ece800a0cbbc795f2"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.9.1",
+      "title": "E-R Model and Normalization",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1912,
+          1952
+        ],
+        "scopeLines": [
+          1912,
+          1952
+        ],
+        "ownBodySha256": "32b0495674894d629445c758355c027be4dbe3dffa84e70e0a3be626c5f4d92a",
+        "scopeSha256": "32b0495674894d629445c758355c027be4dbe3dffa84e70e0a3be626c5f4d92a"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.9.2",
+      "title": "Naming of Attributes and Relationships",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1953,
+          1995
+        ],
+        "scopeLines": [
+          1953,
+          1995
+        ],
+        "ownBodySha256": "a45ef577ac4eb0d5d50adf9981dc40c9ce6d807b641c11943551217c067c1f49",
+        "scopeSha256": "a45ef577ac4eb0d5d50adf9981dc40c9ce6d807b641c11943551217c067c1f49"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.9.3",
+      "title": "Denormalization for Performance",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1996,
+          2017
+        ],
+        "scopeLines": [
+          1996,
+          2017
+        ],
+        "ownBodySha256": "63ecc40ba916018ccd8c95bcc71821795ed373df013e16c274a3abf8dfd8c5ba",
+        "scopeSha256": "63ecc40ba916018ccd8c95bcc71821795ed373df013e16c274a3abf8dfd8c5ba"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.9.4",
+      "title": "Other Design Issues",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          2018,
+          2069
+        ],
+        "scopeLines": [
+          2018,
+          2069
+        ],
+        "ownBodySha256": "3e9bda796ecb4a506ab34dcbe60e8a0afe3e803f447c945838b17695e6175f92",
+        "scopeSha256": "3e9bda796ecb4a506ab34dcbe60e8a0afe3e803f447c945838b17695e6175f92"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.10",
+      "title": "Modeling Temporal Data",
+      "owners": [
+        "AD09"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          2070,
+          2268
+        ],
+        "scopeLines": [
+          2070,
+          2268
+        ],
+        "ownBodySha256": "70d2741d62beefc91bd5efa7b88250467c173993b51100e8094181d09eaa7784",
+        "scopeSha256": "70d2741d62beefc91bd5efa7b88250467c173993b51100e8094181d09eaa7784"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "27.1",
+      "title": "The Tuple Relational Calculus",
+      "owners": [
+        "AD02"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-27.txt",
+        "sha256": "7d8451938cd63e83912b5875a9282f75bc7dc272738678e0eed28bbfb7bfd795",
+        "ownBodyLines": [
+          16,
+          30
+        ],
+        "scopeLines": [
+          16,
+          239
+        ],
+        "ownBodySha256": "d54c66d8c3e7e4b8b07e694499adf6cdca3a25e44b8b7541158c5ee9012a90f3",
+        "scopeSha256": "7a4886ce775ea25d28473163bff9a212d7907a567da22984bd1b81edb23bb6a5"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "full-assigned-own-body-read",
+      "semanticStatus": "complete",
+      "evidence": [
+        {
+          "kind": "teaching",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "",
+          "line": 5,
+          "paragraphAnchor": "Relational calculus cho phép viết điều kiện",
+          "paragraphExcerpt": "Một trường muốn tìm sinh viên đã hoàn thành mọi môn bắt buộc. Viết JOIN trước khi xác định chữ “mọi” rất dễ làm sai: một sinh viên học được một môn có thể xuất hiện nhiều lần, còn bộ môn bắt buộc rỗng có thể làm truy vấn mất hết sinh viên. Relational calculus cho phép viết điều kiện của một kết quả trước khi chọn thuật toán thực hiện.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "worked-example",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Tuple variables và lượng từ",
+          "line": 27,
+          "paragraphAnchor": "Với s=(1)",
+          "paragraphExcerpt": "Với s=(1), chọn p=(1,'DB') làm chứng nhân, nên giữ 1. Với s=(2), p=(2,'DB') cũng đủ, nên giữ 2. Với s=(3), không có chứng nhân, nên bỏ. Kết quả là {(1),(2)}; số môn khác sinh viên 1 đã qua không nhân bản tuple kết quả. Lượng từ ∃ nói “ít nhất một”, không phải “đúng một”.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "activity",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Luyện tập",
+          "line": 104,
+          "paragraphAnchor": "viết tuple calculus cho sinh viên qua DB",
+          "paragraphExcerpt": "5. Trên dữ liệu đầu bài, viết tuple calculus cho sinh viên qua DB **hoặc** OS, rồi qua **cả** DB và OS. Vì sao một biến p với `p[course]='DB' ∧ p[course]='OS'` không diễn đạt câu thứ hai? Chỉ ra một atom sai schema/kiểu.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "answer",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Đáp án và lập luận",
+          "line": 119,
+          "paragraphAnchor": "Đặt `D(s)=",
+          "paragraphExcerpt": "5. Đặt `D(s)=∃p(p∈Passed ∧ p[id]=s[id] ∧ p[course]='DB')`, `O(s)=∃q(q∈Passed ∧ q[id]=s[id] ∧ q[course]='OS')`. Hai đáp án là `{s | s∈Student ∧ (D(s)∨O(s))}` trả 1,2 và `{s | s∈Student ∧ D(s)∧O(s)}` trả 1. Hai chứng nhân có thể là hai tuple khác nhau; một field course không thể đồng thời bằng hai chuỗi DB và OS. Atom `s[course]='DB'` sai vì Student chỉ có id; `p[course]>s[id]` chưa có domain/operator so sánh hợp lệ tr",
+          "baselineActuallyRead": false
+        }
+      ],
+      "algorithmsProofsFigures": [],
+      "gaps": [],
+      "contentComparison": "Own introduction: declarative result predicate versus procedural RA. Full descendants read separately; source result tables support set semantics.",
+      "reviewBatch": "full-27-calculus"
+    },
+    {
+      "section": "27.1.1",
+      "title": "Example Queries",
+      "owners": [
+        "AD02"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-27.txt",
+        "sha256": "7d8451938cd63e83912b5875a9282f75bc7dc272738678e0eed28bbfb7bfd795",
+        "ownBodyLines": [
+          31,
+          174
+        ],
+        "scopeLines": [
+          31,
+          174
+        ],
+        "ownBodySha256": "2d9b4daa186388f856c3a406e070cae8c3b5c064e167560e41caa5ac64f1aeb5",
+        "scopeSha256": "2d9b4daa186388f856c3a406e070cae8c3b5c064e167560e41caa5ac64f1aeb5"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "full-assigned-own-body-read",
+      "semanticStatus": "complete",
+      "evidence": [
+        {
+          "kind": "worked-example",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Tuple variables và lượng từ",
+          "line": 27,
+          "paragraphAnchor": "Với s=(1)",
+          "paragraphExcerpt": "Với s=(1), chọn p=(1,'DB') làm chứng nhân, nên giữ 1. Với s=(2), p=(2,'DB') cũng đủ, nên giữ 2. Với s=(3), không có chứng nhân, nên bỏ. Kết quả là {(1),(2)}; số môn khác sinh viên 1 đã qua không nhân bản tuple kết quả. Lượng từ ∃ nói “ít nhất một”, không phải “đúng một”.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "worked-example",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## “Mọi môn” bằng một phản ví dụ không tồn tại",
+          "line": 45,
+          "paragraphAnchor": "Với sinh viên 2, r=",
+          "paragraphExcerpt": "Đây là dạng `¬∃r ¬P(r)`, tương đương với lượng từ phổ quát khi miền đã được chỉ rõ. Với sinh viên 1, cả DB và OS đều tìm được p. Với sinh viên 2, r=('OS') là phản ví dụ. Với sinh viên 3, r=('DB') đã đủ làm điều kiện sai. Kết quả {(1)}.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "activity",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Luyện tập",
+          "line": 104,
+          "paragraphAnchor": "viết tuple calculus cho sinh viên qua DB",
+          "paragraphExcerpt": "5. Trên dữ liệu đầu bài, viết tuple calculus cho sinh viên qua DB **hoặc** OS, rồi qua **cả** DB và OS. Vì sao một biến p với `p[course]='DB' ∧ p[course]='OS'` không diễn đạt câu thứ hai? Chỉ ra một atom sai schema/kiểu.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "answer",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Đáp án và lập luận",
+          "line": 119,
+          "paragraphAnchor": "Hai chứng nhân có thể là hai tuple khác nhau",
+          "paragraphExcerpt": "5. Đặt `D(s)=∃p(p∈Passed ∧ p[id]=s[id] ∧ p[course]='DB')`, `O(s)=∃q(q∈Passed ∧ q[id]=s[id] ∧ q[course]='OS')`. Hai đáp án là `{s | s∈Student ∧ (D(s)∨O(s))}` trả 1,2 và `{s | s∈Student ∧ D(s)∧O(s)}` trả 1. Hai chứng nhân có thể là hai tuple khác nhau; một field course không thể đồng thời bằng hai chuỗi DB và OS. Atom `s[course]='DB'` sai vì Student chỉ có id; `p[course]>s[id]` chưa có domain/operator so sánh hợp lệ tr",
+          "baselineActuallyRead": false
+        }
+      ],
+      "algorithmsProofsFigures": [
+        {
+          "label": "Figures 27.1–27.3",
+          "review": "Read extracted result tables: names; union of course IDs; singleton intersection. Equivalent authored set/independent-witness examples replace source data."
+        }
+      ],
+      "gaps": [],
+      "contentComparison": "Source examples cover selection/projection, join witnesses, OR/AND/difference, forall and empty-domain subtlety. New examples/answers now exercise each pattern.",
+      "reviewBatch": "full-27-calculus"
+    },
+    {
+      "section": "27.1.2",
+      "title": "Formal Definition",
+      "owners": [
+        "AD02"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-27.txt",
+        "sha256": "7d8451938cd63e83912b5875a9282f75bc7dc272738678e0eed28bbfb7bfd795",
+        "ownBodyLines": [
+          175,
+          209
+        ],
+        "scopeLines": [
+          175,
+          209
+        ],
+        "ownBodySha256": "a23b05d270701aaefee3614a49b53acee6693546e52c04c9dc0a43539f783079",
+        "scopeSha256": "a23b05d270701aaefee3614a49b53acee6693546e52c04c9dc0a43539f783079"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "full-assigned-own-body-read",
+      "semanticStatus": "complete",
+      "evidence": [
+        {
+          "kind": "teaching",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Tuple variables và lượng từ",
+          "line": 33,
+          "paragraphAnchor": "Một atom của tuple calculus có ba dạng",
+          "paragraphExcerpt": "Một atom của tuple calculus có ba dạng: membership `s∈R`, so sánh hai field `s[A] Θ u[B]`, hoặc so sánh field với hằng `s[A] Θ c`; Θ là =, ≠, <, ≤, > hoặc ≥ trên các domain so sánh được. Từ các atom, ta ghép bằng AND/OR/NOT/implication, ngoặc và lượng từ có phạm vi. Viết `s∉R` chỉ là viết tắt của `¬(s∈R)`, không phải một loại atom mới trong định nghĩa nguồn. Một biểu thức có tên field không thuộc schema hoặc so sánh ",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "teaching",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Tuple variables và lượng từ",
+          "line": 19,
+          "paragraphAnchor": "Biến không bị một lượng từ",
+          "paragraphExcerpt": "Trong tuple relational calculus, biến s đại diện một tuple; s[id] lấy thuộc tính id. Một biểu thức `{s | P(s)}` trả tập tuple s làm P đúng. Biến không bị một lượng từ bên trong công thức ràng buộc là free variable; nó góp vào kết quả hoặc là tham số đã định nghĩa. Biến trong `∃p` hoặc `∀p` là bound variable tại phạm vi lượng từ ấy.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "teaching",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Tuple variables và lượng từ",
+          "line": 31,
+          "paragraphAnchor": "Quy tắc đổi tên bound variable",
+          "paragraphExcerpt": "Quy tắc đổi tên bound variable giúp tránh bắt nhầm phạm vi. `∃p Q(p)` và `∃q Q(q)` tương đương nếu q mới và thay nhất quán. Ngược lại, dời ∃ ra khỏi một nhánh hoặc dùng cùng tên với biến free có thể đổi nghĩa. Khi debug công thức, đánh dấu phạm vi của từng lượng từ trước khi tính kết quả.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "activity",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Luyện tập",
+          "line": 104,
+          "paragraphAnchor": "Chỉ ra một atom sai schema/kiểu",
+          "paragraphExcerpt": "5. Trên dữ liệu đầu bài, viết tuple calculus cho sinh viên qua DB **hoặc** OS, rồi qua **cả** DB và OS. Vì sao một biến p với `p[course]='DB' ∧ p[course]='OS'` không diễn đạt câu thứ hai? Chỉ ra một atom sai schema/kiểu.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "answer",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Đáp án và lập luận",
+          "line": 119,
+          "paragraphAnchor": "Atom `s[course]",
+          "paragraphExcerpt": "5. Đặt `D(s)=∃p(p∈Passed ∧ p[id]=s[id] ∧ p[course]='DB')`, `O(s)=∃q(q∈Passed ∧ q[id]=s[id] ∧ q[course]='OS')`. Hai đáp án là `{s | s∈Student ∧ (D(s)∨O(s))}` trả 1,2 và `{s | s∈Student ∧ D(s)∧O(s)}` trả 1. Hai chứng nhân có thể là hai tuple khác nhau; một field course không thể đồng thời bằng hai chuỗi DB và OS. Atom `s[course]='DB'` sai vì Student chỉ có id; `p[course]>s[id]` chưa có domain/operator so sánh hợp lệ tr",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "baseline-foundation",
+          "path": "output/database-pe/lessons/M02.md",
+          "sha256": "9340a9a9d91929bb6851e95b23240561988686ab9d6788cd546994701eeaaad8",
+          "heading": "## Kéo theo và phủ định",
+          "line": 15,
+          "paragraphAnchor": "P ⇒ Q đọc là",
+          "paragraphExcerpt": "P ⇒ Q đọc là “nếu P thì Q”. Nó không khẳng định Q chỉ xảy ra khi P. Quy tắc “nếu đơn paid thì được phát hóa đơn” không nói mọi hóa đơn đều xuất phát từ paid, nếu nghiệp vụ chưa phát biểu chiều ngược. Sai lầm đảo điều kiện này cũng xảy ra khi suy khóa và functional dependency.",
+          "baselineActuallyRead": true
+        }
+      ],
+      "algorithmsProofsFigures": [],
+      "gaps": [],
+      "contentComparison": "Actual source grammar, atoms, comparable domains, free/bound variables and equivalent formula rules matched. M02 was read for Boolean/implication foundations, not inferred from its mapping.",
+      "reviewBatch": "full-27-calculus"
+    },
+    {
+      "section": "27.1.3",
+      "title": "Safety of Expressions",
+      "owners": [
+        "AD02"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-27.txt",
+        "sha256": "7d8451938cd63e83912b5875a9282f75bc7dc272738678e0eed28bbfb7bfd795",
+        "ownBodyLines": [
+          210,
+          239
+        ],
+        "scopeLines": [
+          210,
+          239
+        ],
+        "ownBodySha256": "193e824a9b4b26e600bbb435358d0728cc9fc33ad56b2a12f8c6fde3c06b6b31",
+        "scopeSha256": "193e824a9b4b26e600bbb435358d0728cc9fc33ad56b2a12f8c6fde3c06b6b31"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "full-assigned-own-body-read",
+      "semanticStatus": "complete",
+      "evidence": [
+        {
+          "kind": "teaching",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Tại sao một công thức có thể không an toàn?",
+          "line": 71,
+          "paragraphAnchor": "Gọi `dom(P)`",
+          "paragraphExcerpt": "Gọi `dom(P)` là các giá trị xuất hiện trong những quan hệ được nhắc tới và các hằng của P theo định nghĩa safety trong nguồn. Đòi kết quả nằm trong miền hữu hạn là một phần cần thiết; còn các lượng từ phải không làm kết quả phụ thuộc vào những giá trị ngoài miền thích hợp. Cách thực hành dễ kiểm là range-restrict biến bằng quan hệ dương hoặc miền hữu hạn đã định nghĩa, và chỉ phủ định trên những biến đã có miền.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "worked-example",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Tại sao một công thức có thể không an toàn?",
+          "line": 69,
+          "paragraphAnchor": "mở miền thử thêm 4",
+          "paragraphExcerpt": "Xét biểu thức một cột `{t | ¬(t∈Student)}`. Nếu miền id là mọi số nguyên, nó trả vô hạn tuple không có trong Student. Nếu một công cụ chỉ thử các số 1,2,3, nó có thể báo kết quả rỗng; mở miền thử thêm 4 thì kết quả đột ngột có 4 dù database không đổi. Công cụ ấy đã thay ngữ nghĩa chứ chưa làm truy vấn an toàn.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "activity",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Luyện tập",
+          "line": 101,
+          "paragraphAnchor": "Dựng hai miền id khác nhau",
+          "paragraphExcerpt": "2. Tìm lỗi trong `{<i> | ¬∃c Passed(i,c)}` nếu nghiệp vụ hỏi sinh viên chưa học môn nào. Dựng hai miền id khác nhau nhưng cùng database để chỉ ra vấn đề, rồi sửa.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "answer",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Đáp án và lập luận",
+          "line": 116,
+          "paragraphAnchor": "i chưa bị chặn bởi Student",
+          "paragraphExcerpt": "2. i chưa bị chặn bởi Student. Với miền {1,2,3}, kết quả chứa 3; mở thêm 4 thì chứa 3,4 dù Student không đổi. Sửa thành `{<i> | Student(i) ∧ ¬∃c Passed(i,c)}`; trên dữ liệu đầu bài chỉ có 3.",
+          "baselineActuallyRead": false
+        }
+      ],
+      "algorithmsProofsFigures": [],
+      "gaps": [],
+      "contentComparison": "Source dom(P) includes relation values and literal constants; unsafe complement can be infinite. New counterexample and repaired bound cover definition and result-domain failure.",
+      "reviewBatch": "full-27-calculus"
+    },
+    {
+      "section": "27.2",
+      "title": "The Domain Relational Calculus",
+      "owners": [
+        "AD02"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-27.txt",
+        "sha256": "7d8451938cd63e83912b5875a9282f75bc7dc272738678e0eed28bbfb7bfd795",
+        "ownBodyLines": [
+          240,
+          247
+        ],
+        "scopeLines": [
+          240,
+          353
+        ],
+        "ownBodySha256": "fbc29b5750387196ccdab7891ef4d1e459945a686b3ced91097fed899457c742",
+        "scopeSha256": "00968a3dfd5fd68b09ec2b6d72d9fb099c5b24e79d7d108f73a5a290a179d887"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "full-assigned-own-body-read",
+      "semanticStatus": "complete",
+      "evidence": [
+        {
+          "kind": "teaching",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Domain relational calculus",
+          "line": 79,
+          "paragraphAnchor": "Trong domain calculus, biến đại diện",
+          "paragraphExcerpt": "Trong domain calculus, biến đại diện một giá trị thuộc tính thay vì nguyên tuple. `Passed(i,c)` nói cặp (i,c) thuộc Passed. Truy vấn hoàn thành mọi môn có thể viết:",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "worked-example",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Domain relational calculus",
+          "line": 86,
+          "paragraphAnchor": "Nếu quan hệ Student thực tế có hai cột",
+          "paragraphExcerpt": "Nếu quan hệ Student thực tế có hai cột (id,name), cần viết `∃n Student(i,n)` chứ không tự đổi arity của Student. Atom quan hệ, phép so sánh, AND/OR/NOT và lượng từ tạo nên công thức; mỗi atom phải có đúng số đối số và kiểu so sánh hợp lệ. Một biến không được “tự có miền” chỉ vì tên của nó là id.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "activity",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Luyện tập",
+          "line": 102,
+          "paragraphAnchor": "Viết domain calculus cho sinh viên qua DB",
+          "paragraphExcerpt": "3. Tự làm: Student={(4),(5),(6)}, Required={('DB')}, Passed={(4,'OS'),(5,'DB'),(6,'DB'),(6,'OS')}. Viết domain calculus cho sinh viên qua DB nhưng chưa qua OS. Dịch sang SQL và ghi expected.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "answer",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Đáp án và lập luận",
+          "line": 117,
+          "paragraphAnchor": "`{<i> | Student(i) ∧ Passed(i,'DB')",
+          "paragraphExcerpt": "3. `{<i> | Student(i) ∧ Passed(i,'DB') ∧ ¬Passed(i,'OS')}` trả {(5)}. SQL dùng Student s, EXISTS với course='DB' và NOT EXISTS với course='OS', cùng p.id=s.id. Không dùng `course<>'OS'` trên từng hàng: sinh viên 6 có một hàng DB thỏa điều kiện đó nhưng vẫn đã qua OS.",
+          "baselineActuallyRead": false
+        }
+      ],
+      "algorithmsProofsFigures": [],
+      "gaps": [],
+      "contentComparison": "Own intro contrasts component values and tuple variables. QBE is a historical interface example, not a missing calculus mechanism; relational formula/editor is the learner environment.",
+      "reviewBatch": "full-27-calculus"
+    },
+    {
+      "section": "27.2.1",
+      "title": "Formal Definition",
+      "owners": [
+        "AD02"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-27.txt",
+        "sha256": "7d8451938cd63e83912b5875a9282f75bc7dc272738678e0eed28bbfb7bfd795",
+        "ownBodyLines": [
+          248,
+          270
+        ],
+        "scopeLines": [
+          248,
+          270
+        ],
+        "ownBodySha256": "ad09abb719cc6133a30eae5e0fa7a452ecbe2fe295a9190111ab709b1c22cc50",
+        "scopeSha256": "ad09abb719cc6133a30eae5e0fa7a452ecbe2fe295a9190111ab709b1c22cc50"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "full-assigned-own-body-read",
+      "semanticStatus": "complete",
+      "evidence": [
+        {
+          "kind": "teaching",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Domain relational calculus",
+          "line": 86,
+          "paragraphAnchor": "Atom quan hệ, phép so sánh",
+          "paragraphExcerpt": "Nếu quan hệ Student thực tế có hai cột (id,name), cần viết `∃n Student(i,n)` chứ không tự đổi arity của Student. Atom quan hệ, phép so sánh, AND/OR/NOT và lượng từ tạo nên công thức; mỗi atom phải có đúng số đối số và kiểu so sánh hợp lệ. Một biến không được “tự có miền” chỉ vì tên của nó là id.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "teaching",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Tuple variables và lượng từ",
+          "line": 33,
+          "paragraphAnchor": "Một atom của tuple calculus có ba dạng",
+          "paragraphExcerpt": "Một atom của tuple calculus có ba dạng: membership `s∈R`, so sánh hai field `s[A] Θ u[B]`, hoặc so sánh field với hằng `s[A] Θ c`; Θ là =, ≠, <, ≤, > hoặc ≥ trên các domain so sánh được. Từ các atom, ta ghép bằng AND/OR/NOT/implication, ngoặc và lượng từ có phạm vi. Viết `s∉R` chỉ là viết tắt của `¬(s∈R)`, không phải một loại atom mới trong định nghĩa nguồn. Một biểu thức có tên field không thuộc schema hoặc so sánh ",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "worked-example",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Domain relational calculus",
+          "line": 86,
+          "paragraphAnchor": "Nếu quan hệ Student thực tế có hai cột",
+          "paragraphExcerpt": "Nếu quan hệ Student thực tế có hai cột (id,name), cần viết `∃n Student(i,n)` chứ không tự đổi arity của Student. Atom quan hệ, phép so sánh, AND/OR/NOT và lượng từ tạo nên công thức; mỗi atom phải có đúng số đối số và kiểu so sánh hợp lệ. Một biến không được “tự có miền” chỉ vì tên của nó là id.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "activity",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Luyện tập",
+          "line": 104,
+          "paragraphAnchor": "Chỉ ra một atom sai schema/kiểu",
+          "paragraphExcerpt": "5. Trên dữ liệu đầu bài, viết tuple calculus cho sinh viên qua DB **hoặc** OS, rồi qua **cả** DB và OS. Vì sao một biến p với `p[course]='DB' ∧ p[course]='OS'` không diễn đạt câu thứ hai? Chỉ ra một atom sai schema/kiểu.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "answer",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Đáp án và lập luận",
+          "line": 119,
+          "paragraphAnchor": "Atom `s[course]",
+          "paragraphExcerpt": "5. Đặt `D(s)=∃p(p∈Passed ∧ p[id]=s[id] ∧ p[course]='DB')`, `O(s)=∃q(q∈Passed ∧ q[id]=s[id] ∧ q[course]='OS')`. Hai đáp án là `{s | s∈Student ∧ (D(s)∨O(s))}` trả 1,2 và `{s | s∈Student ∧ D(s)∧O(s)}` trả 1. Hai chứng nhân có thể là hai tuple khác nhau; một field course không thể đồng thời bằng hai chuỗi DB và OS. Atom `s[course]='DB'` sai vì Student chỉ có id; `p[course]>s[id]` chưa có domain/operator so sánh hợp lệ tr",
+          "baselineActuallyRead": false
+        }
+      ],
+      "algorithmsProofsFigures": [],
+      "gaps": [],
+      "contentComparison": "Membership arity, constants/comparisons, connectives and bound scalar variables covered. Formula syntax is stable across representation; actual Student arity change demonstrated.",
+      "reviewBatch": "full-27-calculus"
+    },
+    {
+      "section": "27.2.2",
+      "title": "Example Queries",
+      "owners": [
+        "AD02"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-27.txt",
+        "sha256": "7d8451938cd63e83912b5875a9282f75bc7dc272738678e0eed28bbfb7bfd795",
+        "ownBodyLines": [
+          271,
+          307
+        ],
+        "scopeLines": [
+          271,
+          307
+        ],
+        "ownBodySha256": "2aa1be8327054de92d13d75cc117beef6c3dcb631c14fb573679bdbf31c54326",
+        "scopeSha256": "2aa1be8327054de92d13d75cc117beef6c3dcb631c14fb573679bdbf31c54326"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "full-assigned-own-body-read",
+      "semanticStatus": "complete",
+      "evidence": [
+        {
+          "kind": "worked-example",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Domain relational calculus",
+          "line": 79,
+          "paragraphAnchor": "Truy vấn hoàn thành mọi môn có thể viết",
+          "paragraphExcerpt": "Trong domain calculus, biến đại diện một giá trị thuộc tính thay vì nguyên tuple. `Passed(i,c)` nói cặp (i,c) thuộc Passed. Truy vấn hoàn thành mọi môn có thể viết:",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "worked-example",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Domain relational calculus",
+          "line": 88,
+          "paragraphAnchor": "Tuple calculus và domain calculus diễn cùng ý",
+          "paragraphExcerpt": "Tuple calculus và domain calculus diễn cùng ý bằng cách đóng gói hoặc tách các thành phần tuple. Với một quan hệ hữu hạn R(A,B), membership của tuple r tương ứng atom `R(a,b)` cùng phép đồng nhất r[A]=a,r[B]=b. Dịch như vậy giữ các lượng từ và điều kiện; khó khăn thường nằm ở schema và phạm vi, không ở việc đổi chữ ∃ thành SQL.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "activity",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Luyện tập",
+          "line": 102,
+          "paragraphAnchor": "Viết domain calculus cho sinh viên qua DB",
+          "paragraphExcerpt": "3. Tự làm: Student={(4),(5),(6)}, Required={('DB')}, Passed={(4,'OS'),(5,'DB'),(6,'DB'),(6,'OS')}. Viết domain calculus cho sinh viên qua DB nhưng chưa qua OS. Dịch sang SQL và ghi expected.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "answer",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Đáp án và lập luận",
+          "line": 117,
+          "paragraphAnchor": "`{<i> | Student(i) ∧ Passed(i,'DB')",
+          "paragraphExcerpt": "3. `{<i> | Student(i) ∧ Passed(i,'DB') ∧ ¬Passed(i,'OS')}` trả {(5)}. SQL dùng Student s, EXISTS với course='DB' và NOT EXISTS với course='OS', cùng p.id=s.id. Không dùng `course<>'OS'` trên từng hàng: sinh viên 6 có một hàng DB thỏa điều kiện đó nhưng vẫn đã qua OS.",
+          "baselineActuallyRead": false
+        }
+      ],
+      "algorithmsProofsFigures": [],
+      "gaps": [],
+      "contentComparison": "Source maps selection/projection/join/OR/forall from tuple to domain variables. New shared schema, translated forall, explicit arity and transfer query cover conversion rather than copy source data.",
+      "reviewBatch": "full-27-calculus"
+    },
+    {
+      "section": "27.2.3",
+      "title": "Safety of Expressions",
+      "owners": [
+        "AD02"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-27.txt",
+        "sha256": "7d8451938cd63e83912b5875a9282f75bc7dc272738678e0eed28bbfb7bfd795",
+        "ownBodyLines": [
+          308,
+          353
+        ],
+        "scopeLines": [
+          308,
+          353
+        ],
+        "ownBodySha256": "7ee206408fd81d097813d6349db9491c3fa14d6a729651217ba79e65278dd7d8",
+        "scopeSha256": "7ee206408fd81d097813d6349db9491c3fa14d6a729651217ba79e65278dd7d8"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "full-assigned-own-body-read",
+      "semanticStatus": "complete",
+      "evidence": [
+        {
+          "kind": "teaching",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Domain relational calculus",
+          "line": 90,
+          "paragraphAnchor": "Safety của domain calculus còn áp dụng bên trong lượng từ",
+          "paragraphExcerpt": "Safety của domain calculus còn áp dụng bên trong lượng từ. Theo §27.2.3, ngoài việc output lấy giá trị từ `dom(P)`, một mệnh đề `∃x Q(x)` phải có chứng nhân trong `dom(Q)` mỗi khi nó đúng; một mệnh đề `∀x Q(x)` phải có cùng giá trị đúng/sai khi chỉ xét `dom(Q)` thích hợp. Chặn biến output chưa đủ để đạt điều đó. Chẳng hạn R(A,B)={(2,2)} và công thức `{<a> | ∃b R(a,b) ∧ ∃c ¬R(a,c)}` chỉ trả a lấy từ R. Nhưng nếu công ",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "worked-example",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Domain relational calculus",
+          "line": 90,
+          "paragraphAnchor": "Chẳng hạn R(A,B)={(2,2)}",
+          "paragraphExcerpt": "Safety của domain calculus còn áp dụng bên trong lượng từ. Theo §27.2.3, ngoài việc output lấy giá trị từ `dom(P)`, một mệnh đề `∃x Q(x)` phải có chứng nhân trong `dom(Q)` mỗi khi nó đúng; một mệnh đề `∀x Q(x)` phải có cùng giá trị đúng/sai khi chỉ xét `dom(Q)` thích hợp. Chặn biến output chưa đủ để đạt điều đó. Chẳng hạn R(A,B)={(2,2)} và công thức `{<a> | ∃b R(a,b) ∧ ∃c ¬R(a,c)}` chỉ trả a lấy từ R. Nhưng nếu công ",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "activity",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Luyện tập",
+          "line": 101,
+          "paragraphAnchor": "Dựng hai miền id khác nhau",
+          "paragraphExcerpt": "2. Tìm lỗi trong `{<i> | ¬∃c Passed(i,c)}` nếu nghiệp vụ hỏi sinh viên chưa học môn nào. Dựng hai miền id khác nhau nhưng cùng database để chỉ ra vấn đề, rồi sửa.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "answer",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Đáp án và lập luận",
+          "line": 116,
+          "paragraphAnchor": "Sửa thành `{<i> | Student(i)",
+          "paragraphExcerpt": "2. i chưa bị chặn bởi Student. Với miền {1,2,3}, kết quả chứa 3; mở thêm 4 thì chứa 3,4 dù Student không đổi. Sửa thành `{<i> | Student(i) ∧ ¬∃c Passed(i,c)}`; trên dữ liệu đầu bài chỉ có 3.",
+          "baselineActuallyRead": false
+        }
+      ],
+      "algorithmsProofsFigures": [],
+      "gaps": [],
+      "contentComparison": "All three source safety requirements are explained, including quantified subformula domain restriction. Added inner-quantifier witness is an explicit extension beyond result-boundedness.",
+      "reviewBatch": "full-27-calculus"
+    },
+    {
+      "section": "27.3",
+      "title": "Expressive Power of Pure Relational Query Languages",
+      "owners": [
+        "AD02"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-27.txt",
+        "sha256": "7d8451938cd63e83912b5875a9282f75bc7dc272738678e0eed28bbfb7bfd795",
+        "ownBodyLines": [
+          354,
+          404
+        ],
+        "scopeLines": [
+          354,
+          404
+        ],
+        "ownBodySha256": "a9fbd783f164855fa8bd20db1955208ee16dc6a361ec8e723c7978b426bb21f5",
+        "scopeSha256": "a9fbd783f164855fa8bd20db1955208ee16dc6a361ec8e723c7978b426bb21f5"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "full-assigned-own-body-read",
+      "semanticStatus": "complete",
+      "evidence": [
+        {
+          "kind": "teaching",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Tương đương với đại số quan hệ: lập luận theo cấu trúc",
+          "line": 94,
+          "paragraphAnchor": "Trong fragment an toàn",
+          "paragraphExcerpt": "Trong fragment an toàn, không có aggregate, thứ tự hoặc recursion mở rộng, calculus và đại số quan hệ có cùng khả năng biểu đạt theo kết quả của nguồn. Một chiều có thể dựng trực tiếp: atom R là quan hệ R; điều kiện chọn trở thành selection; ẩn một thuộc tính bằng ∃ trở thành projection; kết hợp các biến có schema đổi tên trở thành product rồi selection; OR tương ứng union sau khi đồng nhất schema; phủ định có miền t",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "teaching",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Tương đương với đại số quan hệ: lập luận theo cấu trúc",
+          "line": 96,
+          "paragraphAnchor": "Vì mỗi bước giữ tập kết quả",
+          "paragraphExcerpt": "Vì mỗi bước giữ tập kết quả của biểu thức con, quy nạp theo cây biểu thức cho thấy tổ hợp các bước cũng giữ kết quả. Ở bước phủ định, miền hữu hạn là giả định thiết yếu: không có quan hệ “mọi tuple của vũ trụ vô hạn” để lấy hiệu. Đây là lý do safety không phải phụ kiện cú pháp. Chiều ngược chuyển selection thành điều kiện, projection thành ∃ và difference thành AND NOT; mỗi phép giữ schema của kết quả. Datalog có rec",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "activity",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Luyện tập",
+          "line": 105,
+          "paragraphAnchor": "Dịch truy vấn qua DB nhưng chưa qua OS sang đại số",
+          "paragraphExcerpt": "6. Dịch truy vấn qua DB nhưng chưa qua OS sang đại số quan hệ cơ bản. Ghi schema của hai vế trước phép hiệu và giải thích vì sao phép đổi giữ kết quả theo set semantics.",
+          "baselineActuallyRead": false
+        },
+        {
+          "kind": "answer",
+          "path": "output/database-advanced/lessons/AD02.md",
+          "sha256": "a814d10e99c8476e60d15c3216eaf66c21d5263a1559a443ad94b681880ffb65",
+          "heading": "## Đáp án và lập luận",
+          "line": 120,
+          "paragraphAnchor": "Đặt D=π_id",
+          "paragraphExcerpt": "6. Đặt D=π_id(σ_course='DB'(Passed)), O=π_id(σ_course='OS'(Passed)). Hai quan hệ đều có schema(id), nên `Student ∩ (D−O)` là truy vấn cần tìm; nếu chỉ dùng các operator cơ bản đã liệt kê, viết intersection thành `Student − (Student − (D−O))`. D chọn đúng các id có chứng nhân DB, O chọn đúng các id có chứng nhân OS; hiệu giữ những id có trong D và không trong O, rồi chặn ứng viên bằng Student. Trên dữ liệu đầu bài kết",
+          "baselineActuallyRead": false
+        }
+      ],
+      "algorithmsProofsFigures": [],
+      "gaps": [],
+      "contentComparison": "Actual theorem is equivalence of safe tuple/domain calculus and basic RA, excluding aggregation. Authored structural explanation plus actual RA translation/answer demonstrates mechanisms. Source extracted lines376–404 include next-section Figure27.4 before its body heading; not treated as a calculus requirement.",
+      "reviewBatch": "full-27-calculus"
+    },
+    {
+      "section": "28.1",
+      "title": "Multivalued Dependencies",
+      "owners": [
+        "AD07"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-28.txt",
+        "sha256": "602795323da3ba21e5dab4ed805ebf119fc3769fd60d5708625b7ee4a6b96960",
+        "ownBodyLines": [
+          12,
+          15
+        ],
+        "scopeLines": [
+          12,
+          226
+        ],
+        "ownBodySha256": "306abe87d75688897437cd1aa7bfc97183f1dacb60f6e8ae0fe74fe1cb07dcc6",
+        "scopeSha256": "62e5620018bbcead0a48d90e71460e8525c823c3588355523fcb38e123b1c676"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "28.1.1",
+      "title": "Theory of Multivalued Dependencies",
+      "owners": [
+        "AD07"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-28.txt",
+        "sha256": "602795323da3ba21e5dab4ed805ebf119fc3769fd60d5708625b7ee4a6b96960",
+        "ownBodyLines": [
+          16,
+          108
+        ],
+        "scopeLines": [
+          16,
+          108
+        ],
+        "ownBodySha256": "e9d72c20c5110b93c5e0a91a45027166cf5d59d9f0ab50fd715edc2168a7965a",
+        "scopeSha256": "e9d72c20c5110b93c5e0a91a45027166cf5d59d9f0ab50fd715edc2168a7965a"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "28.1.2",
+      "title": "Dependency Preservation",
+      "owners": [
+        "AD07"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-28.txt",
+        "sha256": "602795323da3ba21e5dab4ed805ebf119fc3769fd60d5708625b7ee4a6b96960",
+        "ownBodyLines": [
+          109,
+          226
+        ],
+        "scopeLines": [
+          109,
+          226
+        ],
+        "ownBodySha256": "a39d6a6f4a1aa781d5d39b814eed4c5cceacec6167d5562cc340bbae56185585",
+        "scopeSha256": "a39d6a6f4a1aa781d5d39b814eed4c5cceacec6167d5562cc340bbae56185585"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "28.2",
+      "title": "Join Dependencies",
+      "owners": [
+        "AD08"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-28.txt",
+        "sha256": "602795323da3ba21e5dab4ed805ebf119fc3769fd60d5708625b7ee4a6b96960",
+        "ownBodyLines": [
+          227,
+          239
+        ],
+        "scopeLines": [
+          227,
+          436
+        ],
+        "ownBodySha256": "555b2aae55cf9084f17daba40dfc878b8c6370ffd2d22f32c714a9dfbf9ab8bf",
+        "scopeSha256": "6ab5cc8bbea15ef16bf5b1dfbac23f154925287d3688b9c4e0e5601acb000e6e"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "28.2.1",
+      "title": "Definition of Join Dependencies",
+      "owners": [
+        "AD08"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-28.txt",
+        "sha256": "602795323da3ba21e5dab4ed805ebf119fc3769fd60d5708625b7ee4a6b96960",
+        "ownBodyLines": [
+          240,
+          405
+        ],
+        "scopeLines": [
+          240,
+          405
+        ],
+        "ownBodySha256": "a6060eef62f6bca1a454a7dcb2407b37d9d56f351af53d0d4e7cee1064b14275",
+        "scopeSha256": "a6060eef62f6bca1a454a7dcb2407b37d9d56f351af53d0d4e7cee1064b14275"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "28.2.2",
+      "title": "Project-Join Normal Form",
+      "owners": [
+        "AD08"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-28.txt",
+        "sha256": "602795323da3ba21e5dab4ed805ebf119fc3769fd60d5708625b7ee4a6b96960",
+        "ownBodyLines": [
+          406,
+          436
+        ],
+        "scopeLines": [
+          406,
+          436
+        ],
+        "ownBodySha256": "f074aaab381e45d46708b766316d6299b77daa796ecee619d834bb2f14aeec47",
+        "scopeSha256": "f074aaab381e45d46708b766316d6299b77daa796ecee619d834bb2f14aeec47"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "28.3",
+      "title": "Domain-Key Normal Form",
+      "owners": [
+        "AD08"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-28.txt",
+        "sha256": "602795323da3ba21e5dab4ed805ebf119fc3769fd60d5708625b7ee4a6b96960",
+        "ownBodyLines": [
+          437,
+          522
+        ],
+        "scopeLines": [
+          437,
+          522
+        ],
+        "ownBodySha256": "7655ec0e5e1e9d09843ba94c681aa1e0e47bbfd7d4f6f0d11e9f6da51ad92b4e",
+        "scopeSha256": "7655ec0e5e1e9d09843ba94c681aa1e0e47bbfd7d4f6f0d11e9f6da51ad92b4e"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.1",
+      "title": "Interacting with PostgreSQL",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          39,
+          44
+        ],
+        "scopeLines": [
+          39,
+          117
+        ],
+        "ownBodySha256": "4586db1388b326e6ed3ca4f6b843d33106a85233c53314d32cee3a2b97d59ac9",
+        "scopeSha256": "008af2c56bf5d736091a96cb27245fac4f38446e0e177bc813817264b6ca6aaf"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.1.1",
+      "title": "Interactive Terminal Interfaces",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          45,
+          56
+        ],
+        "scopeLines": [
+          45,
+          56
+        ],
+        "ownBodySha256": "50c5e43d87ad41602509f7dc18278a3c1b1c25a2f5014bd7773b8d92eca1d230",
+        "scopeSha256": "50c5e43d87ad41602509f7dc18278a3c1b1c25a2f5014bd7773b8d92eca1d230"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.1.2",
+      "title": "Graphical Interfaces",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          57,
+          65
+        ],
+        "scopeLines": [
+          57,
+          65
+        ],
+        "ownBodySha256": "e355db147e7ade2c04c25a33a39d773177ad3705a348149b4436943681fc3bd9",
+        "scopeSha256": "e355db147e7ade2c04c25a33a39d773177ad3705a348149b4436943681fc3bd9"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.1.3",
+      "title": "Programming Language Interfaces",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          66,
+          117
+        ],
+        "scopeLines": [
+          66,
+          117
+        ],
+        "ownBodySha256": "8ca4da42eadc2758cfb797805228c242fb6532674ff7e7a6446c9cfa5a7a9bbb",
+        "scopeSha256": "8ca4da42eadc2758cfb797805228c242fb6532674ff7e7a6446c9cfa5a7a9bbb"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.2",
+      "title": "System Architecture",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          118,
+          175
+        ],
+        "scopeLines": [
+          118,
+          175
+        ],
+        "ownBodySha256": "5330df9e9efe3067e9c54a14f32a7b3eb5a9fab061f14ee1e5c6234cf759a11b",
+        "scopeSha256": "5330df9e9efe3067e9c54a14f32a7b3eb5a9fab061f14ee1e5c6234cf759a11b"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.3",
+      "title": "Storage and Indexing",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          176,
+          204
+        ],
+        "scopeLines": [
+          176,
+          567
+        ],
+        "ownBodySha256": "71fffeff930ede4ac2a30304c97b0072a3455887d62dd373bb2f039a06a210e8",
+        "scopeSha256": "0bd59539e28960935f77319feb17fea8198115fbfae11d7be0c1ba73cf9cf8e2"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.3.1",
+      "title": "Tables",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          205,
+          255
+        ],
+        "scopeLines": [
+          205,
+          255
+        ],
+        "ownBodySha256": "3207e20b7fee29e355419e877759dcfe7f0a15039b10ceac99cf006c72fa92be",
+        "scopeSha256": "3207e20b7fee29e355419e877759dcfe7f0a15039b10ceac99cf006c72fa92be"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.3.2",
+      "title": "Indices",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          256,
+          265
+        ],
+        "scopeLines": [
+          256,
+          513
+        ],
+        "ownBodySha256": "04c7b6a7bf6bd83dd4e6140a4fffe255224df2ca230b08b93e99c8a403a689a6",
+        "scopeSha256": "24b7a3d94c77073597282be43e464cfd604b57b10908eb480e5c71b7b10821fa"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.3.2.1",
+      "title": "Index Types",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          266,
+          387
+        ],
+        "scopeLines": [
+          266,
+          387
+        ],
+        "ownBodySha256": "87e68afac6e7d83b86fe55f965e3ec5cf2cfd2ddfe156e00b6b62ce3ef2a7748",
+        "scopeSha256": "87e68afac6e7d83b86fe55f965e3ec5cf2cfd2ddfe156e00b6b62ce3ef2a7748"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.3.2.2",
+      "title": "Other Index Variations",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          388,
+          438
+        ],
+        "scopeLines": [
+          388,
+          438
+        ],
+        "ownBodySha256": "2649c79a2a34b8a167543c3f1020dac32f85a6e61ac2f3160668600f791e70da",
+        "scopeSha256": "2649c79a2a34b8a167543c3f1020dac32f85a6e61ac2f3160668600f791e70da"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.3.2.3",
+      "title": "Index Construction",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          439,
+          465
+        ],
+        "scopeLines": [
+          439,
+          465
+        ],
+        "ownBodySha256": "5a5a0385f9dcd4810d52f539fe48f99bd7e94b65dcf84c00f05d2593bac5d099",
+        "scopeSha256": "5a5a0385f9dcd4810d52f539fe48f99bd7e94b65dcf84c00f05d2593bac5d099"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.3.2.4",
+      "title": "Index-Only Scans",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          466,
+          513
+        ],
+        "scopeLines": [
+          466,
+          513
+        ],
+        "ownBodySha256": "04c8a1e78fcb98aaaad575780ab6f991e78f922e4fdcc2fe37f8a86f91cb520d",
+        "scopeSha256": "04c8a1e78fcb98aaaad575780ab6f991e78f922e4fdcc2fe37f8a86f91cb520d"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.3.3",
+      "title": "Partitioning",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          514,
+          567
+        ],
+        "scopeLines": [
+          514,
+          567
+        ],
+        "ownBodySha256": "54389b8cc2bce97ff59a5cec60ca9edbf2b487867ee610ddb33c5b8223ed7e57",
+        "scopeSha256": "54389b8cc2bce97ff59a5cec60ca9edbf2b487867ee610ddb33c5b8223ed7e57"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.4",
+      "title": "Query Processing and Optimization",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          568,
+          571
+        ],
+        "scopeLines": [
+          568,
+          783
+        ],
+        "ownBodySha256": "1876325db96c47a2a09cd02078c3029b9b4076883e8760ba17ed43166b965996",
+        "scopeSha256": "48b0593ef44f0b27ab91ef3fcf85a27d8db508141b82c7b187bd541c3cf9c74a"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.4.1",
+      "title": "Query Rewrite",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          572,
+          594
+        ],
+        "scopeLines": [
+          572,
+          594
+        ],
+        "ownBodySha256": "c8e7a11a8bddbcc4a7bcb79d3c455314b3968dafb0d286a818535e70ee9267c6",
+        "scopeSha256": "c8e7a11a8bddbcc4a7bcb79d3c455314b3968dafb0d286a818535e70ee9267c6"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.4.2",
+      "title": "Query Planning and Optimization",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          595,
+          641
+        ],
+        "scopeLines": [
+          595,
+          641
+        ],
+        "ownBodySha256": "0f8ad1eda05d36e452a6de2bd9b4eccfb440d33d632372455a9bfb220cd81950",
+        "scopeSha256": "0f8ad1eda05d36e452a6de2bd9b4eccfb440d33d632372455a9bfb220cd81950"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.4.3",
+      "title": "Query Executor",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          642,
+          695
+        ],
+        "scopeLines": [
+          642,
+          695
+        ],
+        "ownBodySha256": "7e4f0587788b06903919a97efb182cd60bfb2f7ded82c3e17ada849bf1beb92e",
+        "scopeSha256": "7e4f0587788b06903919a97efb182cd60bfb2f7ded82c3e17ada849bf1beb92e"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.4.4",
+      "title": "Parallel Query Support",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          696,
+          736
+        ],
+        "scopeLines": [
+          696,
+          736
+        ],
+        "ownBodySha256": "8dfd1ddc36e488c3b41115ffcc0138e88a33e9252120e696e41e2688117ee355",
+        "scopeSha256": "8dfd1ddc36e488c3b41115ffcc0138e88a33e9252120e696e41e2688117ee355"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.4.5",
+      "title": "Triggers and Constraints",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          737,
+          745
+        ],
+        "scopeLines": [
+          737,
+          745
+        ],
+        "ownBodySha256": "c0e5a47a4b02c4bbdd40aa47e60927c4bd7c286532fd39f3af5a6e988a994573",
+        "scopeSha256": "c0e5a47a4b02c4bbdd40aa47e60927c4bd7c286532fd39f3af5a6e988a994573"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.4.6",
+      "title": "Just-in-Time (JIT) Compilation",
+      "owners": [
+        "AD55"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          746,
+          783
+        ],
+        "scopeLines": [
+          746,
+          783
+        ],
+        "ownBodySha256": "cc866b5a22d960e5be4d3567ad2f915eb02380e64362173f1f7ec8c55b20cfd1",
+        "scopeSha256": "cc866b5a22d960e5be4d3567ad2f915eb02380e64362173f1f7ec8c55b20cfd1"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.5",
+      "title": "Transaction Management in PostgreSQL",
+      "owners": [
+        "AD56"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          784,
+          792
+        ],
+        "scopeLines": [
+          784,
+          1280
+        ],
+        "ownBodySha256": "8218fa39883702acb2fe49da4d6b35b85fd1534bf8aa90f17bfc7aba112479ac",
+        "scopeSha256": "e22b53991c6797ca240a75ff3aeb601aaf59c5b55c154554e4fb69304478f28d"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.5.1",
+      "title": "Concurrency Control",
+      "owners": [
+        "AD56"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          793,
+          799
+        ],
+        "scopeLines": [
+          793,
+          1191
+        ],
+        "ownBodySha256": "47f71644ec8c588e811d1a3f1f376e4b6df59363130eff78a51d2378d82034d7",
+        "scopeSha256": "11be73c2f3e5d345401d44311d65bff383d3550dbc7bb50a0b9c085ca0ef8890"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.5.1.1",
+      "title": "Isolation Levels",
+      "owners": [
+        "AD56"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          800,
+          835
+        ],
+        "scopeLines": [
+          800,
+          835
+        ],
+        "ownBodySha256": "14e5c0000bb4be2d3b7c9f586122d7785416707b75ca8316306e19e7c573c06e",
+        "scopeSha256": "14e5c0000bb4be2d3b7c9f586122d7785416707b75ca8316306e19e7c573c06e"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.5.1.2",
+      "title": "Concurrency Control for DML Commands",
+      "owners": [
+        "AD56"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          836,
+          866
+        ],
+        "scopeLines": [
+          836,
+          866
+        ],
+        "ownBodySha256": "80d9232c505657f5efbcc3f0b0b5f9377f767b3649296f4972ee44e03858cf6e",
+        "scopeSha256": "80d9232c505657f5efbcc3f0b0b5f9377f767b3649296f4972ee44e03858cf6e"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.5.1.3",
+      "title": "Implementation of MVCC",
+      "owners": [
+        "AD56"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          867,
+          1089
+        ],
+        "scopeLines": [
+          867,
+          1089
+        ],
+        "ownBodySha256": "6ecdbd2ff86b7ad82ebb106d2a622c4e88008eb8942343c71d13f35f5d63c8cb",
+        "scopeSha256": "6ecdbd2ff86b7ad82ebb106d2a622c4e88008eb8942343c71d13f35f5d63c8cb"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.5.1.4",
+      "title": "Implications of Using MVCC",
+      "owners": [
+        "AD56"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1090,
+          1138
+        ],
+        "scopeLines": [
+          1090,
+          1138
+        ],
+        "ownBodySha256": "e372d964536cc8027c24ddbd284d420c63abeba0edc103064b3ad38af1cb5a06",
+        "scopeSha256": "e372d964536cc8027c24ddbd284d420c63abeba0edc103064b3ad38af1cb5a06"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.5.1.5",
+      "title": "DDL Concurrency Control",
+      "owners": [
+        "AD56"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1139,
+          1182
+        ],
+        "scopeLines": [
+          1139,
+          1182
+        ],
+        "ownBodySha256": "8f4a3b942ac9015977808d341ea0f39c94391ce4bdc1fe28cedb36de2a543641",
+        "scopeSha256": "8f4a3b942ac9015977808d341ea0f39c94391ce4bdc1fe28cedb36de2a543641"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.5.1.6",
+      "title": "Locking and Indices",
+      "owners": [
+        "AD56"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1183,
+          1191
+        ],
+        "scopeLines": [
+          1183,
+          1191
+        ],
+        "ownBodySha256": "19b61b173f441edbd3267536862e377e06b3533e41841e394dbf57a1af6069f6",
+        "scopeSha256": "19b61b173f441edbd3267536862e377e06b3533e41841e394dbf57a1af6069f6"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.5.2",
+      "title": "Recovery",
+      "owners": [
+        "AD56"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1192,
+          1223
+        ],
+        "scopeLines": [
+          1192,
+          1223
+        ],
+        "ownBodySha256": "5bf0d8d1ebed62883912541f297aa60e06b9c810bc4c862a32930dbc41210b33",
+        "scopeSha256": "5bf0d8d1ebed62883912541f297aa60e06b9c810bc4c862a32930dbc41210b33"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.5.3",
+      "title": "High A vailability and Replication",
+      "owners": [
+        "AD56"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1224,
+          1280
+        ],
+        "scopeLines": [
+          1224,
+          1280
+        ],
+        "ownBodySha256": "e5af9df3fc5968e798df2c1657868137ee77af33aef9d9104a234302e6705ece",
+        "scopeSha256": "e5af9df3fc5968e798df2c1657868137ee77af33aef9d9104a234302e6705ece"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.6",
+      "title": "SQL Variations and Extensions",
+      "owners": [
+        "AD57"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1281,
+          1286
+        ],
+        "scopeLines": [
+          1281,
+          1549
+        ],
+        "ownBodySha256": "f928390e34c96153b36cfb6487873c1b03b47fc9029dfba651cad888c0203234",
+        "scopeSha256": "b6eec0189089356c0e5973599bd1f70acf49d15009169c75e95d10aad20655dd"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.6.1",
+      "title": "PostgreSQL Types",
+      "owners": [
+        "AD57"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1287,
+          1293
+        ],
+        "scopeLines": [
+          1287,
+          1380
+        ],
+        "ownBodySha256": "8aa5f6854bd487236031e2da20553fd8bbe54f1576b913579cbbdb48e6b2691b",
+        "scopeSha256": "6ae2b09ee87086005c0ac56b60a88229f8bfed8e87f9ce3287dc496bc2276023"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.6.1.1",
+      "title": "The PostgreSQL Type System",
+      "owners": [
+        "AD57"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1294,
+          1332
+        ],
+        "scopeLines": [
+          1294,
+          1332
+        ],
+        "ownBodySha256": "e735359cad0fffb2c827c4410a61b15e139efe89c614c74a81caf3f4ac80507a",
+        "scopeSha256": "e735359cad0fffb2c827c4410a61b15e139efe89c614c74a81caf3f4ac80507a"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.6.1.2",
+      "title": "Nonstandard Types",
+      "owners": [
+        "AD57"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1333,
+          1380
+        ],
+        "scopeLines": [
+          1333,
+          1380
+        ],
+        "ownBodySha256": "74c55d6b606a2cf0717927f7596f1b62571219f47e0d00a3b3d2de91069d0c71",
+        "scopeSha256": "74c55d6b606a2cf0717927f7596f1b62571219f47e0d00a3b3d2de91069d0c71"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.6.2",
+      "title": "Extensibility",
+      "owners": [
+        "AD57"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1381,
+          1403
+        ],
+        "scopeLines": [
+          1381,
+          1549
+        ],
+        "ownBodySha256": "5ef163392bb68117549089728ac6df766ad28b4800e28fff801d23c3363abcde",
+        "scopeSha256": "0b8d673de3cc2e51d43e019fe805ce1a8fff977e364daa7d03f73526ca9663ce"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.6.2.1",
+      "title": "Types",
+      "owners": [
+        "AD57"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1404,
+          1438
+        ],
+        "scopeLines": [
+          1404,
+          1438
+        ],
+        "ownBodySha256": "d50456169043c806538c86e4c7928a2f8b64eec98ac5f676c227f2858788d2d5",
+        "scopeSha256": "d50456169043c806538c86e4c7928a2f8b64eec98ac5f676c227f2858788d2d5"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.6.2.2",
+      "title": "Functions",
+      "owners": [
+        "AD57"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1439,
+          1506
+        ],
+        "scopeLines": [
+          1439,
+          1506
+        ],
+        "ownBodySha256": "5fa675c08bb87fcd1aea5c1e1241cda18394c23c564799933dc454f309d83461",
+        "scopeSha256": "5fa675c08bb87fcd1aea5c1e1241cda18394c23c564799933dc454f309d83461"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.6.2.3",
+      "title": "Index Extensions",
+      "owners": [
+        "AD57"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1507,
+          1533
+        ],
+        "scopeLines": [
+          1507,
+          1533
+        ],
+        "ownBodySha256": "9d582c97a960ece63608bed94a0336b98a9bcb591a2ecaa5fceeae20ee89cb76",
+        "scopeSha256": "9d582c97a960ece63608bed94a0336b98a9bcb591a2ecaa5fceeae20ee89cb76"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.6.2.4",
+      "title": "Procedural Languages",
+      "owners": [
+        "AD57"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1534,
+          1549
+        ],
+        "scopeLines": [
+          1534,
+          1549
+        ],
+        "ownBodySha256": "84c153f502b8cc74ad66199d49e4b8775da92f62d61dfe2d9e1b419ce9742f13",
+        "scopeSha256": "84c153f502b8cc74ad66199d49e4b8775da92f62d61dfe2d9e1b419ce9742f13"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.7",
+      "title": "Foreign Data Wrappers",
+      "owners": [
+        "AD57"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1550,
+          1601
+        ],
+        "scopeLines": [
+          1550,
+          1601
+        ],
+        "ownBodySha256": "568cc6d2824e01ce589f96dd6fe2855017de8cf3fac44c9d3833607f8a782316",
+        "scopeSha256": "568cc6d2824e01ce589f96dd6fe2855017de8cf3fac44c9d3833607f8a782316"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8",
+      "title": "PostgreSQL Internals for Developers",
+      "owners": [
+        "AD58"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1602,
+          1618
+        ],
+        "scopeLines": [
+          1602,
+          2347
+        ],
+        "ownBodySha256": "7e082f253402bfc8e7a7329e7474b2fb0b78eb246677f9017c55ff7fecedb1ef",
+        "scopeSha256": "a1b3b67a8575bcbaa40b9f343268bca0534d2c01231504def11619b19cb997dc"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.1",
+      "title": "Installation From Source Code",
+      "owners": [
+        "AD58"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1619,
+          1625
+        ],
+        "scopeLines": [
+          1619,
+          1780
+        ],
+        "ownBodySha256": "965b2888782f296b0193dcf81dac0e9b6a5556e1616101349c46e2d2aad64301",
+        "scopeSha256": "1a7bcce60d42048c9cf8ae4f11857a05fdb0fd327720e044775d43e5ac1b2d5b"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.1.1",
+      "title": "Requirements",
+      "owners": [
+        "AD58"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1626,
+          1641
+        ],
+        "scopeLines": [
+          1626,
+          1641
+        ],
+        "ownBodySha256": "81b0b631bfd627745cf22aaaed792b81376eeb5aa3edc519964d7c4f036ff3e3",
+        "scopeSha256": "81b0b631bfd627745cf22aaaed792b81376eeb5aa3edc519964d7c4f036ff3e3"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.1.2",
+      "title": "Installation Steps",
+      "owners": [
+        "AD58"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1642,
+          1691
+        ],
+        "scopeLines": [
+          1642,
+          1691
+        ],
+        "ownBodySha256": "0151923302b5993e0ba081eb631626ab090ffa2200b7b58c8252e3f41d1ac988",
+        "scopeSha256": "0151923302b5993e0ba081eb631626ab090ffa2200b7b58c8252e3f41d1ac988"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.1.3",
+      "title": "Creating a Database",
+      "owners": [
+        "AD58"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1692,
+          1780
+        ],
+        "scopeLines": [
+          1692,
+          1780
+        ],
+        "ownBodySha256": "11ce5c36a73396791f7591a692519cbef55e83d6e25ffed2c52402ef5c8aa25e",
+        "scopeSha256": "11ce5c36a73396791f7591a692519cbef55e83d6e25ffed2c52402ef5c8aa25e"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.2",
+      "title": "Code Organization",
+      "owners": [
+        "AD58"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1781,
+          1862
+        ],
+        "scopeLines": [
+          1781,
+          1862
+        ],
+        "ownBodySha256": "5b5e53d1ff816211c9034679a38817d9323d405d49d50060070d5aeba02c5392",
+        "scopeSha256": "5b5e53d1ff816211c9034679a38817d9323d405d49d50060070d5aeba02c5392"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.3",
+      "title": "System Catalogs",
+      "owners": [
+        "AD58"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1863,
+          1898
+        ],
+        "scopeLines": [
+          1863,
+          1898
+        ],
+        "ownBodySha256": "4049226cd9d3f729e4c1ecfde1c9f89e3b7aa2b580f551f0167a07cab9e41669",
+        "scopeSha256": "4049226cd9d3f729e4c1ecfde1c9f89e3b7aa2b580f551f0167a07cab9e41669"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.4",
+      "title": "The Region-Based Memory Manager",
+      "owners": [
+        "AD83"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1899,
+          1940
+        ],
+        "scopeLines": [
+          1899,
+          1940
+        ],
+        "ownBodySha256": "bdaec6a766f8d2457b5232a5318cec4c9ece575e696cdec870e0a653e03c6590",
+        "scopeSha256": "bdaec6a766f8d2457b5232a5318cec4c9ece575e696cdec870e0a653e03c6590"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.5",
+      "title": "Node Structure and Node Functions",
+      "owners": [
+        "AD84"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1941,
+          1965
+        ],
+        "scopeLines": [
+          1941,
+          2036
+        ],
+        "ownBodySha256": "33e27b30acd181709f6acffc696a113d822a9680bfdb0be01b34bc97b853a33c",
+        "scopeSha256": "f5e39504a34f4547724c1df5ec6fe7aa476ba2eb7293c425bb80de7a866dd731"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.5.1",
+      "title": "Steps For Adding a New Node Type",
+      "owners": [
+        "AD84"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          1966,
+          2008
+        ],
+        "scopeLines": [
+          1966,
+          2008
+        ],
+        "ownBodySha256": "bc843f53364ae25fc3e9315ab16a7b2c431593197720dacb2ad7fbcb0c782094",
+        "scopeSha256": "bc843f53364ae25fc3e9315ab16a7b2c431593197720dacb2ad7fbcb0c782094"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.5.2",
+      "title": "Casting Pointers to Subtypes and Supertypes",
+      "owners": [
+        "AD84"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          2009,
+          2036
+        ],
+        "scopeLines": [
+          2009,
+          2036
+        ],
+        "ownBodySha256": "e96289b75d3aa2dc17e48f2fe519da6816137aba4cbc3e466a7bf5562cbca432",
+        "scopeSha256": "e96289b75d3aa2dc17e48f2fe519da6816137aba4cbc3e466a7bf5562cbca432"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.6",
+      "title": "Datum",
+      "owners": [
+        "AD84"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          2037,
+          2050
+        ],
+        "scopeLines": [
+          2037,
+          2050
+        ],
+        "ownBodySha256": "b287869288984468d44f0d31aca157f992deb76669b1a31abe0480bd65075f89",
+        "scopeSha256": "b287869288984468d44f0d31aca157f992deb76669b1a31abe0480bd65075f89"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.7",
+      "title": "Tuple",
+      "owners": [
+        "AD84"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          2051,
+          2132
+        ],
+        "scopeLines": [
+          2051,
+          2132
+        ],
+        "ownBodySha256": "d1f724372e2e0a516d8b3d7380d6afe35b79d39f2d512c5162af130f657ab17e",
+        "scopeSha256": "d1f724372e2e0a516d8b3d7380d6afe35b79d39f2d512c5162af130f657ab17e"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.8",
+      "title": "Query Execution Stack",
+      "owners": [
+        "AD58"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          2133,
+          2181
+        ],
+        "scopeLines": [
+          2133,
+          2249
+        ],
+        "ownBodySha256": "1a59d6ae6e0f6a8e5e4cdad7448cca207ede35744aea823a0976337979f000da",
+        "scopeSha256": "2b8e665919b5239140a58c401818789ef71774eea59705363ac78a19df6cce89"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.8.1",
+      "title": "Memory Management and Contexts Switches",
+      "owners": [
+        "AD83"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          2182,
+          2249
+        ],
+        "scopeLines": [
+          2182,
+          2249
+        ],
+        "ownBodySha256": "6bbef9d68c5b68929c068fc8363c282eaeabe15f0457ebf3466cfcc64564fa6a",
+        "scopeSha256": "6bbef9d68c5b68929c068fc8363c282eaeabe15f0457ebf3466cfcc64564fa6a"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.9",
+      "title": "Error Handling",
+      "owners": [
+        "AD58"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          2250,
+          2262
+        ],
+        "scopeLines": [
+          2250,
+          2262
+        ],
+        "ownBodySha256": "03ae6e6b12284562f3f2aeaa5bc4ce3d28de45f7607c2bdb80eb6fc53edeaf07",
+        "scopeSha256": "03ae6e6b12284562f3f2aeaa5bc4ce3d28de45f7607c2bdb80eb6fc53edeaf07"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "32.8.10",
+      "title": "Tips For Adding New Functionality",
+      "owners": [
+        "AD58"
+      ],
+      "source": {
+        "path": "tmp/database-source/online-32.txt",
+        "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+        "ownBodyLines": [
+          2263,
+          2347
+        ],
+        "scopeLines": [
+          2263,
+          2347
+        ],
+        "ownBodySha256": "8b99091fce87436a182286eaa7de561a75f7c9f3e4b4f76e4ac00a26e53be97d",
+        "scopeSha256": "8b99091fce87436a182286eaa7de561a75f7c9f3e4b4f76e4ac00a26e53be97d"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "A.1",
+      "title": "Full Schema",
+      "owners": [
+        "AD59"
+      ],
+      "source": {
+        "path": "tmp/database-source/appendix-a.txt",
+        "sha256": "829dd128bd466fbc0b8e8bd5a6d76d8e31e2f274b3b2a8e36f033470f94c8b9b",
+        "ownBodyLines": [
+          12,
+          135
+        ],
+        "scopeLines": [
+          12,
+          135
+        ],
+        "ownBodySha256": "d335816b876a1d6e2413572409c3712661ba33802d539126cdb357fccde4c874",
+        "scopeSha256": "d335816b876a1d6e2413572409c3712661ba33802d539126cdb357fccde4c874"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "A.2",
+      "title": "DDL",
+      "owners": [
+        "AD59"
+      ],
+      "source": {
+        "path": "tmp/database-source/appendix-a.txt",
+        "sha256": "829dd128bd466fbc0b8e8bd5a6d76d8e31e2f274b3b2a8e36f033470f94c8b9b",
+        "ownBodyLines": [
+          136,
+          357
+        ],
+        "scopeLines": [
+          136,
+          357
+        ],
+        "ownBodySha256": "fa5e0240a511283de819538faf86ce6418705cf971d20a63ddb645a729ee7c8e",
+        "scopeSha256": "fa5e0240a511283de819538faf86ce6418705cf971d20a63ddb645a729ee7c8e"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "A.3",
+      "title": "Sample Data",
+      "owners": [
+        "AD59"
+      ],
+      "source": {
+        "path": "tmp/database-source/appendix-a.txt",
+        "sha256": "829dd128bd466fbc0b8e8bd5a6d76d8e31e2f274b3b2a8e36f033470f94c8b9b",
+        "ownBodyLines": [
+          358,
+          1303
+        ],
+        "scopeLines": [
+          358,
+          1303
+        ],
+        "ownBodySha256": "577e16f08c4d38bdd99ac890773eeb99d1759137469cf3cc231f8581578b64c8",
+        "scopeSha256": "577e16f08c4d38bdd99ac890773eeb99d1759137469cf3cc231f8581578b64c8"
+      },
+      "inventoryNote": null,
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.5.2",
+      "title": "3NF Decomposition",
+      "owners": [
+        "AD06"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1444,
+          1743
+        ],
+        "scopeLines": [
+          1444,
+          1743
+        ],
+        "ownBodySha256": "4c46cdd1a5d44a703476130166a2c6cb0b157fdeae486358b50b362ea82e75aa",
+        "scopeSha256": "4c46cdd1a5d44a703476130166a2c6cb0b157fdeae486358b50b362ea82e75aa"
+      },
+      "inventoryNote": "Recovered into canonical inventory by root after diagnostic; row retained.",
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    },
+    {
+      "section": "7.6.3",
+      "title": "4NF Decomposition",
+      "owners": [
+        "AD07"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-7.txt",
+        "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+        "ownBodyLines": [
+          1744,
+          0
+        ],
+        "scopeLines": [
+          1744,
+          0
+        ],
+        "ownBodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "scopeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "inventoryNote": "Recovered into canonical inventory by root after diagnostic; row retained.",
+      "sourceReadStatus": "pending-full-body-review",
+      "semanticStatus": "pending",
+      "evidence": [],
+      "algorithmsProofsFigures": [],
+      "gaps": []
+    }
+  ],
+  "stats": {
+    "total": 155,
+    "pending": 146,
+    "complete": 9,
+    "partial": 0,
+    "missing": 0
+  }
+}

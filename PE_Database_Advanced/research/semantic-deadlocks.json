@@ -1,0 +1,605 @@
+{
+  "date": "2026-11-05",
+  "scope": "Nine AD40 own-body units; finite model checks plus previously recorded selected engine examples.",
+  "units": [
+    {
+      "section": "18.2",
+      "title": "Deadlock Handling",
+      "owners": [
+        "AD40"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          532,
+          552
+        ],
+        "ownBodySha256": "f03b98b003152ca4ecf0401d0ca7032886515f42cb26646feb9c1e3915744176"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            532,
+            710
+          ],
+          [
+            869,
+            1039
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          881
+        ],
+        "scope": "Actual full own-body comparison and complete current AD40; no source credit outside these9 units."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Deadlock cycle definition; prevention versus detection/recovery with overhead and rollback tradeoffs.",
+      "evidence": [
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "teaching",
+          "paragraph": 4,
+          "exactOpening": "Để xử lý, hệ thống có thể ngăn một vòng chờ hình thành ngay từ đầu, hoặc cho phép chờ rồi phát hiện và phá vòng. Cả hai cách đều có thể phải rollback. Prevention không có nghĩa là không hủy transaction; detection cũng không miễn phí: phải duy trì trạng thái chờ, chạy thuật toán và trả chi phí công việc bị hủy. Cách phù hợp phụ thuộc tần suất deadlo"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 3,
+          "exactOpening": "T1 đang sửa tài khoản 1 rồi muốn sửa tài khoản 2. T2 đã làm ngược lại. Mỗi UPDATE riêng lẻ hợp lệ, nhưng mỗi transaction giữ một thứ bên kia cần. Chờ lâu hơn không tạo ra một thứ tự nhả lock: không bên nào tới được đoạn commit để nhả."
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Dựng graph cho T1 chờ T2 trên A, T2 chờ T3 trên B, T3 chờ T1 trên C. Nếu abort T2, những cạnh nào phải được cập nhật và vì sao không chỉ xóa một mũi tên?\n2. Timestamps10,20,30: T3 xin lock T2; T1 xin lock T3. Cho kết quả theo wait-die và wound-wait, rồi giải thích tính không có cycle.\n3. Một service nhận1213 rồi chạy lại chỉ UPDATE cuối. Tìm lỗi"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. T1→T2→T3→T1 là cycle. AbortT2 cần undo/nhả mọi lock của nó, xóa đỉnh/cạnh liên quan, xét lại hàng chờ: T1 có thể được cấpA rồi tiếp tục, làm những trạng thái sau đổi. Giữ lại snapshot graph cũ làm graph hiện tại là sai.\n2. Wait-die: T3 trẻ hơn T2 nên abort; T1 già hơn T3 nên chờ nếu T3 còn là holder tại thời điểm xét. Wound-wait: T3 được chờ T2;"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.2.1",
+      "title": "Deadlock Prevention",
+      "owners": [
+        "AD40"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          553,
+          617
+        ],
+        "ownBodySha256": "6c7ae199ed75771bbb07ca60a1f892483d81fbdd54632e311023e72b9e7ed6d4"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            532,
+            710
+          ],
+          [
+            869,
+            1039
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          881
+        ],
+        "scope": "Actual full own-body comparison and complete current AD40; no source credit outside these9 units."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "All-or-none lock acquisition, total resource ordering, wait-die/wound-wait roles, proofs, retained timestamps, timeout and starvation limits.",
+      "evidence": [
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "teaching",
+          "paragraph": 26,
+          "exactOpening": "Timestamp trong hai cách trên chỉ quyết định chờ hay rollback; lock vẫn là cơ chế kiểm soát đọc/ghi. Wait-die là nonpreemptive: requester tự bị hủy, không lấy lock khỏi holder. Wound-wait là preemptive: requester già có thể buộc holder trẻ rollback. Cả hai có thể hủy một transaction dù trạng thái hiện tại chưa có deadlock."
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 25,
+          "exactOpening": "Ví dụ ba: timestamps T1=10,T2=20,T3=30; T2 xin item T1 giữ. Wait-die hủy T2; wound-wait cho T2 chờ. Nếu T1 xin item T3 giữ, wait-die cho T1 chờ, wound-wait hủy T3. Đừng dùng “transaction đến trước câu UPDATE” để thay timestamp đã cấp lúc begin."
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Dựng graph cho T1 chờ T2 trên A, T2 chờ T3 trên B, T3 chờ T1 trên C. Nếu abort T2, những cạnh nào phải được cập nhật và vì sao không chỉ xóa một mũi tên?\n2. Timestamps10,20,30: T3 xin lock T2; T1 xin lock T3. Cho kết quả theo wait-die và wound-wait, rồi giải thích tính không có cycle.\n3. Một service nhận1213 rồi chạy lại chỉ UPDATE cuối. Tìm lỗi"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. T1→T2→T3→T1 là cycle. AbortT2 cần undo/nhả mọi lock của nó, xóa đỉnh/cạnh liên quan, xét lại hàng chờ: T1 có thể được cấpA rồi tiếp tục, làm những trạng thái sau đổi. Giữ lại snapshot graph cũ làm graph hiện tại là sai.\n2. Wait-die: T3 trẻ hơn T2 nên abort; T1 già hơn T3 nên chờ nếu T3 còn là holder tại thời điểm xét. Wound-wait: T3 được chờ T2;"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.2.2",
+      "title": "Deadlock Detection and Recovery",
+      "owners": [
+        "AD40"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          618,
+          630
+        ],
+        "ownBodySha256": "e06e0c1a2194d90ae253b70666a810f02f3b94f3bb893f31b9dc553af3b1a1ba"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            532,
+            710
+          ],
+          [
+            869,
+            1039
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          881
+        ],
+        "scope": "Actual full own-body comparison and complete current AD40; no source credit outside these9 units."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Maintain allocations/pending requests; detect cycle and perform recovery/queue recomputation.",
+      "evidence": [
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "teaching",
+          "paragraph": 13,
+          "exactOpening": "Manager thêm cạnh khi một request thực sự bị chặn. Khi lock được nhả, nó phải xét lại hàng chờ và các blocker hiện tại; một cặp transaction có thể còn nhiều request đang chặn nhau, nên không xóa cạnh chỉ vì một lock đã nhả. Chạy detector sau mọi request chưa cấp được giúp phát hiện sớm nhưng tăng chi phí. Chạy định kỳ giảm số lần kiểm, đổi lại lock"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 12,
+          "exactOpening": "Một snapshot lớn hơn có các cạnh `A→B`, `A→C`, `C→B`, `B→D`. Chưa có cycle. Khi thêm `D→C`, vòng là `B→D→C→B`. A bị chặn gián tiếp bởi vòng nhưng không nằm trong vòng này. Vì vậy báo “mọi transaction đang chờ đều là thành viên cycle” là sai; UI cần phân biệt thành viên vòng với những transaction bị ảnh hưởng phía sau."
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Dựng graph cho T1 chờ T2 trên A, T2 chờ T3 trên B, T3 chờ T1 trên C. Nếu abort T2, những cạnh nào phải được cập nhật và vì sao không chỉ xóa một mũi tên?\n2. Timestamps10,20,30: T3 xin lock T2; T1 xin lock T3. Cho kết quả theo wait-die và wound-wait, rồi giải thích tính không có cycle.\n3. Một service nhận1213 rồi chạy lại chỉ UPDATE cuối. Tìm lỗi"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. T1→T2→T3→T1 là cycle. AbortT2 cần undo/nhả mọi lock của nó, xóa đỉnh/cạnh liên quan, xét lại hàng chờ: T1 có thể được cấpA rồi tiếp tục, làm những trạng thái sau đổi. Giữ lại snapshot graph cũ làm graph hiện tại là sai.\n2. Wait-die: T3 trẻ hơn T2 nên abort; T1 già hơn T3 nên chờ nếu T3 còn là holder tại thời điểm xét. Wound-wait: T3 được chờ T2;"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.2.2.1",
+      "title": "Deadlock Detection",
+      "owners": [
+        "AD40"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          631,
+          676
+        ],
+        "ownBodySha256": "fe3101523403cfafba78f3c6fe0f6c2e0d03f482cd632d1bd8a9b36b602ef181"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            532,
+            710
+          ],
+          [
+            869,
+            1039
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          881
+        ],
+        "scope": "Actual full own-body comparison and complete current AD40; no source credit outside these9 units."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Directed wait-for graph versus conflict graph; exact cycle membership, detection cadence and DFS algorithm/complexity.",
+      "evidence": [
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "teaching",
+          "paragraph": 7,
+          "exactOpening": "Trong mô hình mỗi request cần một tài nguyên cụ thể và không có lựa chọn thay thế, chu trình wait-for là điều kiện deadlock. Để tìm, chạy DFS với trạng thái chưa thăm/đang trên stack/đã xong; cạnh tới đỉnh đang trên stack cho một cycle. Mỗi đỉnh/cạnh được xử lý hữu hạn, chi phí O(V+E). Giữ parent để xuất được đường chờ có tài nguyên, thay vì chỉ mộ"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 12,
+          "exactOpening": "Một snapshot lớn hơn có các cạnh `A→B`, `A→C`, `C→B`, `B→D`. Chưa có cycle. Khi thêm `D→C`, vòng là `B→D→C→B`. A bị chặn gián tiếp bởi vòng nhưng không nằm trong vòng này. Vì vậy báo “mọi transaction đang chờ đều là thành viên cycle” là sai; UI cần phân biệt thành viên vòng với những transaction bị ảnh hưởng phía sau."
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Dựng graph cho T1 chờ T2 trên A, T2 chờ T3 trên B, T3 chờ T1 trên C. Nếu abort T2, những cạnh nào phải được cập nhật và vì sao không chỉ xóa một mũi tên?\n2. Timestamps10,20,30: T3 xin lock T2; T1 xin lock T3. Cho kết quả theo wait-die và wound-wait, rồi giải thích tính không có cycle.\n3. Một service nhận1213 rồi chạy lại chỉ UPDATE cuối. Tìm lỗi"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. T1→T2→T3→T1 là cycle. AbortT2 cần undo/nhả mọi lock của nó, xóa đỉnh/cạnh liên quan, xét lại hàng chờ: T1 có thể được cấpA rồi tiếp tục, làm những trạng thái sau đổi. Giữ lại snapshot graph cũ làm graph hiện tại là sai.\n2. Wait-die: T3 trẻ hơn T2 nên abort; T1 già hơn T3 nên chờ nếu T3 còn là holder tại thời điểm xét. Wound-wait: T3 được chờ T2;"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.2.2.2",
+      "title": "Recovery from Deadlock",
+      "owners": [
+        "AD40"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          677,
+          710
+        ],
+        "ownBodySha256": "4407d465d5d7fbf2e62ed3ad175a7010748242709a6b883e769601682ac44633"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            532,
+            710
+          ],
+          [
+            869,
+            1039
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          881
+        ],
+        "scope": "Actual full own-body comparison and complete current AD40; no source credit outside these9 units."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Victim cost factors, total/partial rollback suffix and resumability requirements, starvation/rollback-count mitigation.",
+      "evidence": [
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "teaching",
+          "paragraph": 17,
+          "exactOpening": "Có hai mức rollback trong mô hình sách. Total rollback hủy toàn transaction rồi chạy lại. Partial rollback chỉ quay về trước lần nhận lock cần nhả để phá vòng, undo mọi thao tác sau điểm đó. Cách thứ hai cần lịch sử request/grant/update, cơ chế khôi phục tới điểm phù hợp và khả năng tiếp tục chương trình đúng. Không thể giữ lại một update vốn dựa v"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 16,
+          "exactOpening": "Chi phí còn gồm công việc dự kiến còn lại, các item còn phải xin và số transaction có thể bị rollback dây chuyền. “Chi phí nhỏ nhất” cần một chính sách ước lượng cụ thể. Nếu luôn chọn transaction ít tốn kém nhất mà bỏ qua lịch sử, cùng một transaction có thể bị hủy lặp lại. Đưa số lần rollback vào tiêu chí giúp tránh hiện tượng đó; một bảo đảm hoàn"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Dựng graph cho T1 chờ T2 trên A, T2 chờ T3 trên B, T3 chờ T1 trên C. Nếu abort T2, những cạnh nào phải được cập nhật và vì sao không chỉ xóa một mũi tên?\n2. Timestamps10,20,30: T3 xin lock T2; T1 xin lock T3. Cho kết quả theo wait-die và wound-wait, rồi giải thích tính không có cycle.\n3. Một service nhận1213 rồi chạy lại chỉ UPDATE cuối. Tìm lỗi"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. T1→T2→T3→T1 là cycle. AbortT2 cần undo/nhả mọi lock của nó, xóa đỉnh/cạnh liên quan, xét lại hàng chờ: T1 có thể được cấpA rồi tiếp tục, làm những trạng thái sau đổi. Giữ lại snapshot graph cũ làm graph hiện tại là sai.\n2. Wait-die: T3 trẻ hơn T2 nên abort; T1 già hơn T3 nên chờ nếu T3 còn là holder tại thời điểm xét. Wound-wait: T3 được chờ T2;"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.4",
+      "title": "Insert Operations, Delete Operations, and Predicate Reads",
+      "owners": [
+        "AD40"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          869,
+          880
+        ],
+        "ownBodySha256": "9a33156404cbe3ecac632f58f4bbe85bf063ffb4d6c2092da1666d4c0273ff5e"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            532,
+            710
+          ],
+          [
+            869,
+            1039
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          881
+        ],
+        "scope": "Actual full own-body comparison and complete current AD40; no source credit outside these9 units."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Existence semantics for abstract insert/delete, distinct from SQL zero-row statement behavior.",
+      "evidence": [
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "teaching",
+          "paragraph": 29,
+          "exactOpening": "Trước hết xét `insert(Q)` và `delete(Q)` trong mô hình item trừu tượng của sách. Q chưa tồn tại thì đọc/ghi/xóa Q không hợp lệ; Q đã tồn tại thì chèn lại cùng item Q không hợp lệ. Đây là điều kiện tồn tại của mô hình, không phải khẳng định mọi câu SQL `DELETE` không match row đều báo lỗi."
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 30,
+          "exactOpening": "`delete(Q)` xung đột với read, write, delete và insert trên cùng Q. Ví dụ Q đang có giá trị 7: đọc rồi xóa có thể hợp lệ; xóa rồi đọc làm mất item cần đọc. Q ban đầu chưa tồn tại: chèn rồi xóa hợp lệ, đảo thứ tự thì không. Đổi thứ tự các thao tác có thể đổi cả tính hợp lệ, nên không thể coi delete như một thao tác không liên quan tới reader."
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Dựng graph cho T1 chờ T2 trên A, T2 chờ T3 trên B, T3 chờ T1 trên C. Nếu abort T2, những cạnh nào phải được cập nhật và vì sao không chỉ xóa một mũi tên?\n2. Timestamps10,20,30: T3 xin lock T2; T1 xin lock T3. Cho kết quả theo wait-die và wound-wait, rồi giải thích tính không có cycle.\n3. Một service nhận1213 rồi chạy lại chỉ UPDATE cuối. Tìm lỗi"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. T1→T2→T3→T1 là cycle. AbortT2 cần undo/nhả mọi lock của nó, xóa đỉnh/cạnh liên quan, xét lại hàng chờ: T1 có thể được cấpA rồi tiếp tục, làm những trạng thái sau đổi. Giữ lại snapshot graph cũ làm graph hiện tại là sai.\n2. Wait-die: T3 trẻ hơn T2 nên abort; T1 già hơn T3 nên chờ nếu T3 còn là holder tại thời điểm xét. Wound-wait: T3 được chờ T2;"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.4.1",
+      "title": "Deletion",
+      "owners": [
+        "AD40"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          881,
+          909
+        ],
+        "ownBodySha256": "998193cea7ad469208232bdb3751234dca37e9dd5df288fd96f24e539f1d8b55"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            532,
+            710
+          ],
+          [
+            869,
+            1039
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          881
+        ],
+        "scope": "Actual full own-body comparison and complete current AD40; no source credit outside these9 units."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Delete conflicts with read/write/delete/insert; X-lock and both timestamp rejection tests.",
+      "evidence": [
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "teaching",
+          "paragraph": 30,
+          "exactOpening": "`delete(Q)` xung đột với read, write, delete và insert trên cùng Q. Ví dụ Q đang có giá trị 7: đọc rồi xóa có thể hợp lệ; xóa rồi đọc làm mất item cần đọc. Q ban đầu chưa tồn tại: chèn rồi xóa hợp lệ, đảo thứ tự thì không. Đổi thứ tự các thao tác có thể đổi cả tính hợp lệ, nên không thể coi delete như một thao tác không liên quan tới reader."
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 31,
+          "exactOpening": "Với 2PL, delete cần X lock trên Q; insert nhận X lock cho item mới. Với timestamp ordering ở AD41, delete bị từ chối và transaction phải rollback nếu `TS(T) < R_TS(Q)` hoặc `TS(T) < W_TS(Q)`; nếu không thì được xóa. Insert khởi tạo cả `R_TS(Q)` và `W_TS(Q)` bằng `TS(T)`. Ví dụ `R_TS(Q)=30`, `W_TS(Q)=12`: transaction timestamp 20 không được xóa Q vì"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Dựng graph cho T1 chờ T2 trên A, T2 chờ T3 trên B, T3 chờ T1 trên C. Nếu abort T2, những cạnh nào phải được cập nhật và vì sao không chỉ xóa một mũi tên?\n2. Timestamps10,20,30: T3 xin lock T2; T1 xin lock T3. Cho kết quả theo wait-die và wound-wait, rồi giải thích tính không có cycle.\n3. Một service nhận1213 rồi chạy lại chỉ UPDATE cuối. Tìm lỗi"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. T1→T2→T3→T1 là cycle. AbortT2 cần undo/nhả mọi lock của nó, xóa đỉnh/cạnh liên quan, xét lại hàng chờ: T1 có thể được cấpA rồi tiếp tục, làm những trạng thái sau đổi. Giữ lại snapshot graph cũ làm graph hiện tại là sai.\n2. Wait-die: T3 trẻ hơn T2 nên abort; T1 già hơn T3 nên chờ nếu T3 còn là holder tại thời điểm xét. Wound-wait: T3 được chờ T2;"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.4.2",
+      "title": "Insertion",
+      "owners": [
+        "AD40"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          910,
+          919
+        ],
+        "ownBodySha256": "f7e9a0d08f35f50426baa965d82dffb5288c36a9ff6328de6789b6a9154a9114"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            532,
+            710
+          ],
+          [
+            869,
+            1039
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          881
+        ],
+        "scope": "Actual full own-body comparison and complete current AD40; no source credit outside these9 units."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Insert conflicts/existence, new-item exclusive lock, initialize both timestamps.",
+      "evidence": [
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "teaching",
+          "paragraph": 31,
+          "exactOpening": "Với 2PL, delete cần X lock trên Q; insert nhận X lock cho item mới. Với timestamp ordering ở AD41, delete bị từ chối và transaction phải rollback nếu `TS(T) < R_TS(Q)` hoặc `TS(T) < W_TS(Q)`; nếu không thì được xóa. Insert khởi tạo cả `R_TS(Q)` và `W_TS(Q)` bằng `TS(T)`. Ví dụ `R_TS(Q)=30`, `W_TS(Q)=12`: transaction timestamp 20 không được xóa Q vì"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 30,
+          "exactOpening": "`delete(Q)` xung đột với read, write, delete và insert trên cùng Q. Ví dụ Q đang có giá trị 7: đọc rồi xóa có thể hợp lệ; xóa rồi đọc làm mất item cần đọc. Q ban đầu chưa tồn tại: chèn rồi xóa hợp lệ, đảo thứ tự thì không. Đổi thứ tự các thao tác có thể đổi cả tính hợp lệ, nên không thể coi delete như một thao tác không liên quan tới reader."
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Dựng graph cho T1 chờ T2 trên A, T2 chờ T3 trên B, T3 chờ T1 trên C. Nếu abort T2, những cạnh nào phải được cập nhật và vì sao không chỉ xóa một mũi tên?\n2. Timestamps10,20,30: T3 xin lock T2; T1 xin lock T3. Cho kết quả theo wait-die và wound-wait, rồi giải thích tính không có cycle.\n3. Một service nhận1213 rồi chạy lại chỉ UPDATE cuối. Tìm lỗi"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. T1→T2→T3→T1 là cycle. AbortT2 cần undo/nhả mọi lock của nó, xóa đỉnh/cạnh liên quan, xét lại hàng chờ: T1 có thể được cấpA rồi tiếp tục, làm những trạng thái sau đổi. Giữ lại snapshot graph cũ làm graph hiện tại là sai.\n2. Wait-die: T3 trẻ hơn T2 nên abort; T1 già hơn T3 nên chờ nếu T3 còn là holder tại thời điểm xét. Wound-wait: T3 được chờ T2;"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.4.3",
+      "title": "Predicate Reads and The Phantom Phenomenon",
+      "owners": [
+        "AD40"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          920,
+          1039
+        ],
+        "ownBodySha256": "72c0ebcad8f0efadad6d73e8e6cb1f7a84ff64625bcab66225a58bf19ab4c064"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            532,
+            710
+          ],
+          [
+            869,
+            1039
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          881
+        ],
+        "scope": "Actual full own-body comparison and complete current AD40; no source credit outside these9 units."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Predicate/membership conflicts from insert/update, metadata-item distinction, all index-leaf 2PL rules, empty range and false conflict, old/new update predicate checks; structural-index concurrency deferred explicitly.",
+      "evidence": [
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "teaching",
+          "paragraph": 37,
+          "exactOpening": "Giao thức index-leaf trong sách chia nhỏ phần thông tin đó. Các giả thiết và bước phải đi cùng nhau:"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 33,
+          "exactOpening": "Phantom cũng có thể đến từ UPDATE chuyển một row từ ngoài vào trong điều kiện. Giả sử hiện có một người trực ca tối; mỗi transaction đếm số người trực ca tối, thấy dưới 2 thì thêm một người khác. Hai transaction cùng thấy 1 rồi chèn hai ID khác nhau có thể làm tổng thành 3. Chúng không cập nhật cùng một row cũ nhưng vẫn phụ thuộc vào tập kết quả củ"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Dựng graph cho T1 chờ T2 trên A, T2 chờ T3 trên B, T3 chờ T1 trên C. Nếu abort T2, những cạnh nào phải được cập nhật và vì sao không chỉ xóa một mũi tên?\n2. Timestamps10,20,30: T3 xin lock T2; T1 xin lock T3. Cho kết quả theo wait-die và wound-wait, rồi giải thích tính không có cycle.\n3. Một service nhận1213 rồi chạy lại chỉ UPDATE cuối. Tìm lỗi"
+        },
+        {
+          "path": "lessons/AD40.md",
+          "lessonSha256": "7830c2984c82472250d56defe3183ed8bb6c8d32059ec065677a4d22dd9cc3cd",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. T1→T2→T3→T1 là cycle. AbortT2 cần undo/nhả mọi lock của nó, xóa đỉnh/cạnh liên quan, xét lại hàng chờ: T1 có thể được cấpA rồi tiếp tục, làm những trạng thái sau đổi. Giữ lại snapshot graph cũ làm graph hiện tại là sai.\n2. Wait-die: T3 trẻ hơn T2 nên abort; T1 già hơn T3 nên chờ nếu T3 còn là holder tại thời điểm xét. Wound-wait: T3 được chờ T2;"
+        }
+      ],
+      "gaps": []
+    }
+  ],
+  "counts": {
+    "assigned": 9,
+    "complete": 9
+  },
+  "checks": "qa/deadlock-full-checks.json:12 finite checks including4096 graph states; no new engine execution."
+}

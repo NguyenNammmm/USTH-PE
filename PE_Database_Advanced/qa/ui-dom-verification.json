@@ -1,0 +1,76 @@
+{
+  "mode": "jsdom DOM logic only; no real browser layout or web SQL runner",
+  "htmlSha256": "5308c0237ef52d292404b0b0b63c7c2307491fadce68377726b66911345626eb",
+  "checksPassed": 17,
+  "checks": [
+    {
+      "name": "catalog renders85 new lessons and11 modules",
+      "passed": true
+    },
+    {
+      "name": "key filter selects exactly24 lessons",
+      "passed": true
+    },
+    {
+      "name": "search and module filters narrow catalog",
+      "passed": true
+    },
+    {
+      "name": "all85 readers show complete Markdown including exercises and answers",
+      "passed": true
+    },
+    {
+      "name": "eleven USTH supplements open complete teaching and all151 answered activities",
+      "passed": true
+    },
+    {
+      "name": "source notes show both complete current content gates with scope",
+      "passed": true
+    },
+    {
+      "name": "all96 embedded lesson Markdown payloads equal current author files",
+      "passed": true
+    },
+    {
+      "name": "source table has947 rows; search and jump open correct owner",
+      "passed": true
+    },
+    {
+      "name": "all seven computed models render and reject invalid input",
+      "passed": true
+    },
+    {
+      "name": "sort, window and counter update after changed values",
+      "passed": true
+    },
+    {
+      "name": "ARIES forward/back controls stay bounded and reach final state",
+      "passed": true
+    },
+    {
+      "name": "seed18 prediction uses the query actually shown, including wrong category",
+      "passed": true
+    },
+    {
+      "name": "seed16 exact oracle rejects empty answer, accepts complete JSON array",
+      "passed": true
+    },
+    {
+      "name": "seed17 minimal counterexample requires actual witness and explanation rubric",
+      "passed": true
+    },
+    {
+      "name": "dirty seed blocks grading and support; hints/answers persist per seed",
+      "passed": true
+    },
+    {
+      "name": "storage failure degrades to session-only practice without runtime error",
+      "passed": true
+    },
+    {
+      "name": "dev handoff documents are embedded and repo status is scoped",
+      "passed": true
+    }
+  ],
+  "runtimeErrors": []
+}

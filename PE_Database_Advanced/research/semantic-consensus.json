@@ -1,0 +1,862 @@
+{
+  "date": "2026-11-05",
+  "scope": "Coordinator/election/consensus final ten own-bodies of chapter23 only.",
+  "counts": {
+    "assigned": 10,
+    "complete": 10
+  },
+  "units": [
+    {
+      "section": "23.7",
+      "title": "Coordinator Selection",
+      "owners": [
+        "AD52"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          2000,
+          2008
+        ],
+        "ownBodySha256": "b76a05bf3b3a985e12babe2ded7da17a9e0787568ed9337c41505fb2e0997ed3"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            2000,
+            2132
+          ],
+          [
+            2133,
+            2271
+          ],
+          [
+            2272,
+            2371
+          ],
+          [
+            2372,
+            2475
+          ],
+          [
+            2476,
+            2591
+          ],
+          [
+            2592,
+            2711
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1185,
+          1188
+        ],
+        "baselineCredit": false,
+        "scope": "Direct complete remaining chapter23 own-bodies and current AD52/AD62 read; source figure pages viewed at full page scale."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Backup versus election; authority and reconstructible durable state both needed after coordinator failure.",
+      "evidence": [
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "teaching",
+          "paragraph": 7,
+          "exactOpening": "Backup trong §23.7.1 nhận các message gửi coordinator, chạy cùng thuật toán và giữ bản sao state, chẳng hạn lock table. Trong lúc primary hoạt động, backup không tự phát lock grants hay quyết định ảnh hưởng node khác. Cách này tốn công xử lý đôi và đồng bộ thường xuyên để đổi lấy thời gian phục hồi ngắn. Nếu không có state dự phòng, coordinator mới"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "worked-example-or-proof",
+          "paragraph": 3,
+          "exactOpening": "Hai node cùng nghi leader cũ đã chết và tự nhận quyền ghi. Bầu một người theo ID lớn nhất trong những node đang thấy nhau không ngăn hai phía partition bầu hai người khác nhau. Điều cần bảo vệ là quyền đưa một lịch sử vào trạng thái được hệ thống chấp nhận, kể cả khi leader thay đổi."
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Năm acceptors: proposal10 được A,B,C accept. Proposal12 lấy promise C,D,E; C báo accepted(10,X), D báo(11,X), E rỗng. Proposer chọn gì? Vì sao không đơn giản lấy proposal10?\n2. Dựng ca chỉ một acceptor từng accept X nhưng proposal sau có thể chosen Y hợp lệ. Vì sao không bác định lý?\n3. Implementation lưu promised_n chỉ trong RAM. Dựng crash/res"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. Chọn X theo accepted proposal11 lớn nhất trong replies. Không bỏ quy tắc max chỉ vì đề đã nói10 chosen. Value vẫn X là hệ quả safety của các proposal trước.\n2. A accept X ở10, B,C chưa accept; proposal12 lấy quorum B,C và chọn Y. X chưa chosen nên không có hai chosen values khác nhau.\n3. Acceptor promise20 rồi crash quên promise, restart nhận AC"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.7.1",
+      "title": "Backup Coordinator",
+      "owners": [
+        "AD52"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          2009,
+          2037
+        ],
+        "ownBodySha256": "5095ab0bb857b1dc9dca76cdc9d082bc1700b64fcedfb977c380e7d3a2cbfa91"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            2000,
+            2132
+          ],
+          [
+            2133,
+            2271
+          ],
+          [
+            2272,
+            2371
+          ],
+          [
+            2372,
+            2475
+          ],
+          [
+            2476,
+            2591
+          ],
+          [
+            2592,
+            2711
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1185,
+          1188
+        ],
+        "baselineCredit": false,
+        "scope": "Direct complete remaining chapter23 own-bodies and current AD52/AD62 read; source figure pages viewed at full page scale."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Receive same ordered input, duplicate computation/state but no duplicate external grants; synchronization overhead versus fast takeover and otherwise recovering/aborting active transactions. Source architectural sketch qualified for ordering/durability/fencing.",
+      "evidence": [
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "teaching",
+          "paragraph": 7,
+          "exactOpening": "Backup trong §23.7.1 nhận các message gửi coordinator, chạy cùng thuật toán và giữ bản sao state, chẳng hạn lock table. Trong lúc primary hoạt động, backup không tự phát lock grants hay quyết định ảnh hưởng node khác. Cách này tốn công xử lý đôi và đồng bộ thường xuyên để đổi lấy thời gian phục hồi ngắn. Nếu không có state dự phòng, coordinator mới"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "worked-example-or-proof",
+          "paragraph": 8,
+          "exactOpening": "Mô tả “nhận cùng message” là ý tưởng kiến trúc, chưa đủ thành protocol chịu mọi lỗi. Hai máy nhận cùng một tập message nhưng khác thứ tự vẫn có thể tạo lock table khác. Cần giữ thứ tự và tính bền của những quyết định đã công bố, đồng thời ngăn primary cũ tiếp tục gây tác động sau takeover. Replicated log ở phần sau cung cấp cách làm rõ các điều kiệ"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Năm acceptors: proposal10 được A,B,C accept. Proposal12 lấy promise C,D,E; C báo accepted(10,X), D báo(11,X), E rỗng. Proposer chọn gì? Vì sao không đơn giản lấy proposal10?\n2. Dựng ca chỉ một acceptor từng accept X nhưng proposal sau có thể chosen Y hợp lệ. Vì sao không bác định lý?\n3. Implementation lưu promised_n chỉ trong RAM. Dựng crash/res"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. Chọn X theo accepted proposal11 lớn nhất trong replies. Không bỏ quy tắc max chỉ vì đề đã nói10 chosen. Value vẫn X là hệ quả safety của các proposal trước.\n2. A accept X ở10, B,C chưa accept; proposal12 lấy quorum B,C và chọn Y. X chưa chosen nên không có hai chosen values khác nhau.\n3. Acceptor promise20 rồi crash quên promise, restart nhận AC"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.7.2",
+      "title": "Election of Coordinator",
+      "owners": [
+        "AD52"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          2038,
+          2168
+        ],
+        "ownBodySha256": "33b2ca2da3a3514c89ce2c0c8415c27d4afa48ec9294440cb63aacaf0e3571a1"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            2000,
+            2132
+          ],
+          [
+            2133,
+            2271
+          ],
+          [
+            2272,
+            2371
+          ],
+          [
+            2372,
+            2475
+          ],
+          [
+            2476,
+            2591
+          ],
+          [
+            2592,
+            2711
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1185,
+          1188
+        ],
+        "baselineCredit": false,
+        "scope": "Direct complete remaining chapter23 own-bodies and current AD52/AD62 read; source figure pages viewed at full page scale."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Lease-service circularity, failure suspicion, numbered rounds, withdrawal/rejoin after failed high-ID candidate, randomized retry, majority membership, term stale-message handling and lease assumptions; stateful coordinator recovery not provided by election alone.",
+      "evidence": [
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "teaching",
+          "paragraph": 10,
+          "exactOpening": "§23.7.2 mô tả một election theo rounds với node IDs duy nhất. Một cách kiểu bully ưu tiên candidate ID lớn nhất đang tham gia. Nếu candidate thấy người có ID cao hơn, nó rút ở vòng tiếp theo; nếu vòng đó không chọn được coordinator, nó phải được phép đề cử lại, vì người cao hơn có thể đã crash. Mỗi proposal mang round lớn hơn mọi round node ấy đã t"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "worked-example-or-proof",
+          "paragraph": 13,
+          "exactOpening": "Ví dụ election thứ nhất: A=1,B=2,C=3 đều hoạt động. Votes phân tán ở round5 không có majority. A,B thấy C đề cử, rút round6; khi đủ liên lạc, C có thể thu majority. Đổi ca: C crash trước round6, A,B cùng rút thì vòng ấy không có candidate. Nếu rút vĩnh viễn, hệ bị kẹt dù A,B là majority còn sống; quy tắc đề cử lại sửa liveness case này."
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Năm acceptors: proposal10 được A,B,C accept. Proposal12 lấy promise C,D,E; C báo accepted(10,X), D báo(11,X), E rỗng. Proposer chọn gì? Vì sao không đơn giản lấy proposal10?\n2. Dựng ca chỉ một acceptor từng accept X nhưng proposal sau có thể chosen Y hợp lệ. Vì sao không bác định lý?\n3. Implementation lưu promised_n chỉ trong RAM. Dựng crash/res"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. Chọn X theo accepted proposal11 lớn nhất trong replies. Không bỏ quy tắc max chỉ vì đề đã nói10 chosen. Value vẫn X là hệ quả safety của các proposal trước.\n2. A accept X ở10, B,C chưa accept; proposal12 lấy quorum B,C và chọn Y. X chưa chosen nên không có hai chosen values khác nhau.\n3. Acceptor promise20 rồi crash quên promise, restart nhận AC"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.7.2.1",
+      "title": "Distributed Coordination Services",
+      "owners": [
+        "AD52"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          2169,
+          2197
+        ],
+        "ownBodySha256": "d9ffe8a620a60f7524a49d258f1315ffc633db4850939ae97e95142d78f43b01"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            2000,
+            2132
+          ],
+          [
+            2133,
+            2271
+          ],
+          [
+            2272,
+            2371
+          ],
+          [
+            2372,
+            2475
+          ],
+          [
+            2476,
+            2591
+          ],
+          [
+            2592,
+            2711
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1185,
+          1188
+        ],
+        "baselineCredit": false,
+        "scope": "Direct complete remaining chapter23 own-bodies and current AD52/AD62 read; source figure pages viewed at full page scale."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Coordination-service hierarchical small metadata/create-delete locking/watch interfaces and use cases; atomic operation/session/lease/reread contracts rather than equating a watch with authority.",
+      "evidence": [
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "teaching",
+          "paragraph": 18,
+          "exactOpening": "§23.7.2.1 giới thiệu ZooKeeper và Chubby như các dịch vụ điều phối dùng chung. API dạng cây tên lưu lượng nhỏ configuration hoặc thông tin để node mới tìm coordinator. Tạo một tên theo thao tác atomic có thể biểu diễn tranh quyền; xóa tên hoặc hết lease cho phép node khác thử. Watch thông báo thay đổi giúp client biết cần đọc lại trạng thái."
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "worked-example-or-proof",
+          "paragraph": 19,
+          "exactOpening": "Ví dụ một tablet có đường dẫn `/tablets/42/master`. Hai candidate cùng tạo tên ấy; nếu service bảo đảm chỉ một create thành công, chỉ bên thắng nhận quyền theo contract. Client còn phải xử lý mất session, kết quả create chưa rõ do timeout, watch đến muộn và state thay đổi giữa lúc nhận thông báo với lúc đọc. Watch là tín hiệu đọc lại và kiểm điều k"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Năm acceptors: proposal10 được A,B,C accept. Proposal12 lấy promise C,D,E; C báo accepted(10,X), D báo(11,X), E rỗng. Proposer chọn gì? Vì sao không đơn giản lấy proposal10?\n2. Dựng ca chỉ một acceptor từng accept X nhưng proposal sau có thể chosen Y hợp lệ. Vì sao không bác định lý?\n3. Implementation lưu promised_n chỉ trong RAM. Dựng crash/res"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. Chọn X theo accepted proposal11 lớn nhất trong replies. Không bỏ quy tắc max chỉ vì đề đã nói10 chosen. Value vẫn X là hệ quả safety của các proposal trước.\n2. A accept X ở10, B,C chưa accept; proposal12 lấy quorum B,C và chọn Y. X chưa chosen nên không có hai chosen values khác nhau.\n3. Acceptor promise20 rồi crash quên promise, restart nhận AC"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.8",
+      "title": "Consensus in Distributed Systems",
+      "owners": [
+        "AD52"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          2198,
+          2207
+        ],
+        "ownBodySha256": "bbb73308fe6ce19028eb1c83c91bb7dac9c54e4e586eaf3e47d20e57308ee23c"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            2000,
+            2132
+          ],
+          [
+            2133,
+            2271
+          ],
+          [
+            2272,
+            2371
+          ],
+          [
+            2372,
+            2475
+          ],
+          [
+            2476,
+            2591
+          ],
+          [
+            2592,
+            2711
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1185,
+          1188
+        ],
+        "baselineCredit": false,
+        "scope": "Direct complete remaining chapter23 own-bodies and current AD52/AD62 read; source figure pages viewed at full page scale."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Consensus foundation for replicated fault-tolerant log, state machines and coordinator decisions, separated from atomic commit across participant groups.",
+      "evidence": [
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "teaching",
+          "paragraph": 34,
+          "exactOpening": "State machine replication cần một chuỗi command. Có thể dùng các consensus instances cho các log slots, với rule của protocol về leader, epoch và prefix. Replicas áp cùng command theo cùng thứ tự từ trạng thái tương đương để cho cùng kết quả, nếu command deterministic hoặc mọi input không xác định đã được đưa vào log."
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "worked-example-or-proof",
+          "paragraph": 40,
+          "exactOpening": "Trong ví dụ Spanner của §23.8.4–23.8.5, mỗi data partition có một nhóm replica và group leader; log consensus bảo vệ state của storage, lock manager và prepare/decision records. Một transaction chạm hai partition P,Q vẫn cần atomic commit giữa hai nhóm: coordinator thuộc một nhóm, leader của nhóm kia làm participant. Đây là hai tầng khác nhau: majo"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Năm acceptors: proposal10 được A,B,C accept. Proposal12 lấy promise C,D,E; C báo accepted(10,X), D báo(11,X), E rỗng. Proposer chọn gì? Vì sao không đơn giản lấy proposal10?\n2. Dựng ca chỉ một acceptor từng accept X nhưng proposal sau có thể chosen Y hợp lệ. Vì sao không bác định lý?\n3. Implementation lưu promised_n chỉ trong RAM. Dựng crash/res"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. Chọn X theo accepted proposal11 lớn nhất trong replies. Không bỏ quy tắc max chỉ vì đề đã nói10 chosen. Value vẫn X là hệ quả safety của các proposal trước.\n2. A accept X ở10, B,C chưa accept; proposal12 lấy quorum B,C và chọn Y. X chưa chosen nên không có hai chosen values khác nhau.\n3. Acceptor promise20 rồi crash quên promise, restart nhận AC"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.8.1",
+      "title": "Problem Overview",
+      "owners": [
+        "AD52"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          2208,
+          2271
+        ],
+        "ownBodySha256": "2c6349502ab745aec62b434c93f58bd8b3274193c52408aa6bbe06b40b6c403b"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            2000,
+            2132
+          ],
+          [
+            2133,
+            2271
+          ],
+          [
+            2272,
+            2371
+          ],
+          [
+            2372,
+            2475
+          ],
+          [
+            2476,
+            2591
+          ],
+          [
+            2592,
+            2711
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1185,
+          1188
+        ],
+        "baselineCredit": false,
+        "scope": "Direct complete remaining chapter23 own-bodies and current AD52/AD62 read; source figure pages viewed at full page scale."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "One-decision versus committed-prefix log; majority agreement, lag/uncommitted suffixes and chosen versus learned; safety under crash/message loss, progress needs eventual communication/stability rather than unconditional asynchronous termination.",
+      "evidence": [
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "teaching",
+          "paragraph": 22,
+          "exactOpening": "Pha1: proposer gửi PREPARE(n). Acceptor chỉ promise n nếu nó lớn hơn hoặc đáp ứng rule promise hợp lệ của protocol; sau đó không nhận proposal thấp hơn n. Promise trả lại accepted proposal lớn nhất mà acceptor đã nhận, nếu có."
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "worked-example-or-proof",
+          "paragraph": 27,
+          "exactOpening": "Ví dụ 1: proposerP gửi proposal5,valueX; A,B accept nênX chosen. P mất response rồi crash; C chưa biếtX. ProposerQ dùng proposal8, lấy promise từB,C. B trả accepted(5,X), C chưa có. Q phải gửi(8,X), dù Q ban đầu muốnY. B,C accept, vẫnX. Người học không được chọn value từ acceptor có response tới sớm nhất nếu nó không phải accepted_n lớn nhất."
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Năm acceptors: proposal10 được A,B,C accept. Proposal12 lấy promise C,D,E; C báo accepted(10,X), D báo(11,X), E rỗng. Proposer chọn gì? Vì sao không đơn giản lấy proposal10?\n2. Dựng ca chỉ một acceptor từng accept X nhưng proposal sau có thể chosen Y hợp lệ. Vì sao không bác định lý?\n3. Implementation lưu promised_n chỉ trong RAM. Dựng crash/res"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. Chọn X theo accepted proposal11 lớn nhất trong replies. Không bỏ quy tắc max chỉ vì đề đã nói10 chosen. Value vẫn X là hệ quả safety của các proposal trước.\n2. A accept X ở10, B,C chưa accept; proposal12 lấy quorum B,C và chọn Y. X chưa chosen nên không có hai chosen values khác nhau.\n3. Acceptor promise20 rồi crash quên promise, restart nhận AC"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.8.2",
+      "title": "The Paxos Consensus Protocol",
+      "owners": [
+        "AD52"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          2272,
+          2370
+        ],
+        "ownBodySha256": "0370fc77d38f697458cd1dd8709e36d8afaa457c00eb3fd923036080d0d41300"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            2000,
+            2132
+          ],
+          [
+            2133,
+            2271
+          ],
+          [
+            2272,
+            2371
+          ],
+          [
+            2372,
+            2475
+          ],
+          [
+            2476,
+            2591
+          ],
+          [
+            2592,
+            2711
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1185,
+          1188
+        ],
+        "baselineCredit": false,
+        "scope": "Direct complete remaining chapter23 own-bodies and current AD52/AD62 read; source figure pages viewed at full page scale."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Full two-phase Paxos promise/highest-accepted inheritance, unique ballot and stable metadata, lost learning/competing proposers, three concrete traces, induction safety argument and Multi-Paxos/reconfiguration boundary.",
+      "evidence": [
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "teaching",
+          "paragraph": 21,
+          "exactOpening": "Xét ba acceptors A,B,C, một giá trị cần được chọn. Một proposal có số n duy nhất, so sánh được. Mỗi acceptor giữ promised_n và, nếu có, cặp accepted_n,accepted_value. Các trạng thái cần được ghi bền trước khi gửi phản hồi mà tương lai dựa vào; crash không được làm acceptor quên lời hứa."
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "worked-example-or-proof",
+          "paragraph": 31,
+          "exactOpening": "Giả sử proposal m,value X đã chosen. Xét proposal n>m có số nhỏ nhất mà proposer hợp lệ định gửi value khác X, nếu có. Prepare quorum Qn giao accept quorum Qm tại acceptor a. Acceptor a phải đã accept m trước khi promise n; nếu promise n trước, nó không được accept m thấp hơn sau đó, trái việc a thuộc Qm. Acceptor không quên accepted metadata qua c"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Năm acceptors: proposal10 được A,B,C accept. Proposal12 lấy promise C,D,E; C báo accepted(10,X), D báo(11,X), E rỗng. Proposer chọn gì? Vì sao không đơn giản lấy proposal10?\n2. Dựng ca chỉ một acceptor từng accept X nhưng proposal sau có thể chosen Y hợp lệ. Vì sao không bác định lý?\n3. Implementation lưu promised_n chỉ trong RAM. Dựng crash/res"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. Chọn X theo accepted proposal11 lớn nhất trong replies. Không bỏ quy tắc max chỉ vì đề đã nói10 chosen. Value vẫn X là hệ quả safety của các proposal trước.\n2. A accept X ở10, B,C chưa accept; proposal12 lấy quorum B,C và chọn Y. X chưa chosen nên không có hai chosen values khác nhau.\n3. Acceptor promise20 rồi crash quên promise, restart nhận AC"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.8.3",
+      "title": "The Raft Consensus Protocol",
+      "owners": [
+        "AD62"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          2371,
+          2569
+        ],
+        "ownBodySha256": "5f5ba0d6de21d5c8aad5c7791126c6ca82e1912844a27699c04da5f65fe26d6c"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            2000,
+            2132
+          ],
+          [
+            2133,
+            2271
+          ],
+          [
+            2272,
+            2371
+          ],
+          [
+            2372,
+            2475
+          ],
+          [
+            2476,
+            2591
+          ],
+          [
+            2592,
+            2711
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1185,
+          1188
+        ],
+        "baselineCredit": false,
+        "scope": "Direct complete remaining chapter23 own-bodies and current AD52/AD62 read; source figure pages viewed at full page scale."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Term/vote persistence and random election with log freshness; all AppendEntries fields, prefix match, conflict-only suffix replacement, follower matched-prefix apply bound, leader current-term majority commit rule, old-term counterexample and safety induction; membership/snapshot/read boundaries.",
+      "evidence": [
+        {
+          "path": "lessons/AD62.md",
+          "lessonSha256": "0c66ab2f57450ea475c863bb22b0fc341e5c30c8ae479bbab3ee6b5ed013ee58",
+          "kind": "teaching",
+          "paragraph": 5,
+          "exactOpening": "Mỗi node giữ currentTerm, votedFor và log bền theo protocol. Log entry có index, term và command. commitIndex cho biết prefix đã được cam kết; lastApplied cho biết state machine đã áp dụng tới đâu. Hai chỉ số sau phục vụ tiến độ, không thay log bền. Sau restart, node phục hồi state cần thiết từ storage trước khi tham gia."
+        },
+        {
+          "path": "lessons/AD62.md",
+          "lessonSha256": "0c66ab2f57450ea475c863bb22b0fc341e5c30c8ae479bbab3ee6b5ed013ee58",
+          "kind": "worked-example-or-proof",
+          "paragraph": 20,
+          "exactOpening": "Năm node S1..S5 cùng có prefix index1,term1. Theo dõi index2:"
+        },
+        {
+          "path": "lessons/AD62.md",
+          "lessonSha256": "0c66ab2f57450ea475c863bb22b0fc341e5c30c8ae479bbab3ee6b5ed013ee58",
+          "kind": "activity",
+          "paragraph": 35,
+          "exactOpening": "1. Voter có lastLogTerm6,index10. So candidates (5,100),(6,9),(6,10),(7,2). Ai đủ up-to-date, giả sử điều kiện term/vote khác đạt?\n2. Leader term8 có index12,term7 trên majority; index13,term8 chỉ ở hai node của cụm năm. Nó được suy commit12 từ số bản không? Sửa điều kiện để commit prefix.\n3. Dựng follower conflict và trace AppendEntries bị từ chối"
+        },
+        {
+          "path": "lessons/AD62.md",
+          "lessonSha256": "0c66ab2f57450ea475c863bb22b0fc341e5c30c8ae479bbab3ee6b5ed013ee58",
+          "kind": "answer",
+          "paragraph": 40,
+          "exactOpening": "1. (5,100),(6,9) chưa đủ mới; (6,10),(7,2) đạt log rule. currentTerm/votedFor vẫn có thể ngăn vote.\n2. Không suy commit12 chỉ bằng số bản trong term8. Replicate13,term8 tới majority rồi commit13 cùng prefix. Bằng chứng commit riêng từ protocol trước chỉ dùng khi được nêu rõ.\n3. Rubric giữ prevIndex/prevTerm check; truncate suffix chỉ khi có conflic"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.8.4",
+      "title": "Fault-Tolerant Services Using Replicated State Machines",
+      "owners": [
+        "AD52"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          2570,
+          2680
+        ],
+        "ownBodySha256": "329b3b88b8ce42714c8aed24db0552f801f1c1d57bb6a4af64647e88872bb11b"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            2000,
+            2132
+          ],
+          [
+            2133,
+            2271
+          ],
+          [
+            2272,
+            2371
+          ],
+          [
+            2372,
+            2475
+          ],
+          [
+            2476,
+            2591
+          ],
+          [
+            2592,
+            2711
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1185,
+          1188
+        ],
+        "baselineCredit": false,
+        "scope": "Direct complete remaining chapter23 own-bodies and current AD52/AD62 read; source figure pages viewed at full page scale."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Deterministic state transition, same ordered committed input, matching applied-prefix equality, lock-table and key-value applications, return semantics, retry identity/external effects, partition groups and safe read requirements; source Figure23.10 state-label discrepancy corrected.",
+      "evidence": [
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "teaching",
+          "paragraph": 36,
+          "exactOpening": "Lock manager cũng là state machine: input gồm acquire/release với transactionID và resourceID; state gồm lock table, hàng chờ và metadata cần cho quyết định; output là grant, wait hoặc rollback. Quy tắc chọn waiter/victim phải deterministic, chẳng hạn theo thứ tự command và một tie-break cố định. Khi command acquire đã commit, các replica cùng cập "
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "worked-example-or-proof",
+          "paragraph": 35,
+          "exactOpening": "Ví dụ một log đã commit lần lượt `put(x,2)`, `put(z,2)`, `put(x,3)`, `put(y,4)`, `put(y,7)`. Replica áp đủ năm command có state `{x:3,z:2,y:7}`; replica mới áp bốn command vẫn có `y=4` và có thể lag hợp lệ. Chỉ so state ở cùng applied prefix. Hình23.10 của sách vẽ state `z=3` dù chuỗi lệnh cho `z=2`; ví dụ tại đây tính state trực tiếp từ command để"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Năm acceptors: proposal10 được A,B,C accept. Proposal12 lấy promise C,D,E; C báo accepted(10,X), D báo(11,X), E rỗng. Proposer chọn gì? Vì sao không đơn giản lấy proposal10?\n2. Dựng ca chỉ một acceptor từng accept X nhưng proposal sau có thể chosen Y hợp lệ. Vì sao không bác định lý?\n3. Implementation lưu promised_n chỉ trong RAM. Dựng crash/res"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. Chọn X theo accepted proposal11 lớn nhất trong replies. Không bỏ quy tắc max chỉ vì đề đã nói10 chosen. Value vẫn X là hệ quả safety của các proposal trước.\n2. A accept X ở10, B,C chưa accept; proposal12 lấy quorum B,C và chọn Y. X chưa chosen nên không có hai chosen values khác nhau.\n3. Acceptor promise20 rồi crash quên promise, restart nhận AC"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "23.8.5",
+      "title": "Two-Phase Commit Using Consensus",
+      "owners": [
+        "AD52"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-23.txt",
+        "sha256": "027fbd56e71d54fce5da126c8d6fb7a8f629a50839da7e52a99408ab773aa85c",
+        "ownBodyLines": [
+          2681,
+          2711
+        ],
+        "ownBodySha256": "2346eaecbf5c59b133a663e9fac4c815e5057579c826729856b8217be9de75ac"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            2000,
+            2132
+          ],
+          [
+            2133,
+            2271
+          ],
+          [
+            2272,
+            2371
+          ],
+          [
+            2372,
+            2475
+          ],
+          [
+            2476,
+            2591
+          ],
+          [
+            2592,
+            2711
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          1185,
+          1188
+        ],
+        "baselineCredit": false,
+        "scope": "Direct complete remaining chapter23 own-bodies and current AD52/AD62 read; source figure pages viewed at full page scale."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Replicate coordinator outcome plus participants prepared/lock state in per-partition consensus groups, new leader recovery before deciding, preserve existing decision and all-participant YES; nonblocking qualified by necessary quorums and eventual progress.",
+      "evidence": [
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "teaching",
+          "paragraph": 41,
+          "exactOpening": "Đường phục hồi cần được nói đầy đủ. Coordinator mới đọc prefix decision đã cam kết trước khi quyết định lại; nếu đã có COMMIT thì phải tiếp tục COMMIT. Nếu chưa có decision được cam kết, nó dùng state và protocol khôi phục hợp lệ để chọn một outcome, không suy “node cũ không trả lời nên chưa từng quyết định”. Participant leader mới phục hồi prepare"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "worked-example-or-proof",
+          "paragraph": 40,
+          "exactOpening": "Trong ví dụ Spanner của §23.8.4–23.8.5, mỗi data partition có một nhóm replica và group leader; log consensus bảo vệ state của storage, lock manager và prepare/decision records. Một transaction chạm hai partition P,Q vẫn cần atomic commit giữa hai nhóm: coordinator thuộc một nhóm, leader của nhóm kia làm participant. Đây là hai tầng khác nhau: majo"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "activity",
+          "paragraph": 46,
+          "exactOpening": "1. Năm acceptors: proposal10 được A,B,C accept. Proposal12 lấy promise C,D,E; C báo accepted(10,X), D báo(11,X), E rỗng. Proposer chọn gì? Vì sao không đơn giản lấy proposal10?\n2. Dựng ca chỉ một acceptor từng accept X nhưng proposal sau có thể chosen Y hợp lệ. Vì sao không bác định lý?\n3. Implementation lưu promised_n chỉ trong RAM. Dựng crash/res"
+        },
+        {
+          "path": "lessons/AD52.md",
+          "lessonSha256": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+          "kind": "answer",
+          "paragraph": 51,
+          "exactOpening": "1. Chọn X theo accepted proposal11 lớn nhất trong replies. Không bỏ quy tắc max chỉ vì đề đã nói10 chosen. Value vẫn X là hệ quả safety của các proposal trước.\n2. A accept X ở10, B,C chưa accept; proposal12 lấy quorum B,C và chọn Y. X chưa chosen nên không có hai chosen values khác nhau.\n3. Acceptor promise20 rồi crash quên promise, restart nhận AC"
+        }
+      ],
+      "gaps": []
+    }
+  ],
+  "checks": "qa/consensus-full-checks.json:17 checks;8953 Paxos states/29878 transitions, bounded two-ballot model, selected Raft counterexamples and deterministic replay. No native/network consensus service execution.",
+  "primaryDocsChecked": [
+    "https://lamport.azurewebsites.net/pubs/paxos-simple.pdf",
+    "https://raft.github.io/raft.pdf"
+  ],
+  "sourceInterpretation": [
+    "Majority intersection alone is not Paxos safety: highest accepted value inheritance and durable promises are required; full induction written.",
+    "Textbook nonblocking phrasing assumes necessary replica-group quorums and progress; a lost participant YES cannot be invented by coordinator consensus.",
+    "Raft follower commit cap uses the newly matched prefix, not an unrelated conflicting local suffix; source condensed last-entry wording clarified with Figure2 of original Raft paper.",
+    "Figure23.10 draws z=3 while command history writes z=2; authored replay computes z=2.",
+    "Coordination-service API descriptions are conceptual teaching examples, not claims that a specific current product exposes precisely these session semantics."
+  ]
+}

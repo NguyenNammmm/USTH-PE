@@ -1,0 +1,212 @@
+{
+  "date": "2026-11-05",
+  "scopeLessonIds": [
+    "AD18",
+    "AD19",
+    "AD70",
+    "AD71",
+    "AD72"
+  ],
+  "ledger": "research/semantic-analytics.json",
+  "lessonSha256": {
+    "AD18": "61503f9266847765c04bb7a5998e0903c69d16d93260a633b11386007f9f4859",
+    "AD19": "1c2e16508edcc91bbd0fd7ca78f33fc6d33149df61ebcd9a2ae6224c25a6fd47",
+    "AD70": "48ae1039704d64d409dd37845d2d3e7b0596885bab283808d4db56259f7cdc15",
+    "AD71": "6d8cd53f34a48bcada02852fdb44cba1f8b2af92802da5f792f59419b198d53f",
+    "AD72": "d753763c71831a1900b9950b48c7999b239bb33225767f9fad54c1108a173d62"
+  },
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "exact29 assigned own bodies, no baseline blanket credit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory and five approved lesson hashes fresh",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "source raw/own hashes and next-heading boundaries exact",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "all116 exact explanation/example/activity/answer witnesses fresh",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "all12 source figures remain frozen and inspected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "AD18 every independent activity has numbered answer",
+      "passed": true,
+      "details": 5
+    },
+    {
+      "name": "AD19 every independent activity has numbered answer",
+      "passed": true,
+      "details": 5
+    },
+    {
+      "name": "AD70 every independent activity has numbered answer",
+      "passed": true,
+      "details": 5
+    },
+    {
+      "name": "AD71 every independent activity has numbered answer",
+      "passed": true,
+      "details": 6
+    },
+    {
+      "name": "AD72 every independent activity has numbered answer",
+      "passed": true,
+      "details": 7
+    },
+    {
+      "name": "classification confusion metrics and imbalanced baseline",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "greedy tree split gains and inference",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Bayes prior normalization, bin boundary and Laplace zero policy",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "SVM geometric distance is score-scale invariant",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "logistic gradient update and multiclass softmax arithmetic",
+      "passed": true,
+      "details": {
+        "update": [
+          0.5377540668798145,
+          0.5755081337596291,
+          -0.9622459331201855
+        ],
+        "softmax": [
+          0.25,
+          0.5,
+          0.25
+        ]
+      }
+    },
+    {
+      "name": "least squares coefficient, stationary residual and rank failure",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "support confidence lift and changed transaction population",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Apriori candidate/prune result versus exhaustive itemset oracle",
+      "passed": true,
+      "details": {
+        "finiteCases": 1536,
+        "failures": 0
+      }
+    },
+    {
+      "name": "Lloyd step and mean minimizer identity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "hierarchical single-link versus complete-link merge heights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "item-group collaborative profiles preserve missing and evidence counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cube original totals, grouping masks and real-NULL distinction",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "dense cube cells differ from grouping count and rollup products",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cube update algorithm versus independent group-by oracle",
+      "passed": true,
+      "details": {
+        "finiteFixtures": 81,
+        "failures": 0
+      }
+    },
+    {
+      "name": "row-column payload and weighted average examples",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "simultaneous join delta retains new-new term exactly once",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "signed bag join polynomial across inserts/deletes",
+      "passed": true,
+      "details": {
+        "finiteCases": 81
+      }
+    },
+    {
+      "name": "set membership deltas and original answered trace",
+      "passed": true,
+      "details": {
+        "finiteTransitions": 48
+      }
+    },
+    {
+      "name": "aggregate null/state and group disappearance trace",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projection derivation count keeps remaining witness",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "expression delta selection includes all three changed witness pairs",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "outer join first/last match removes/restores null extension",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "activityCounts": {
+    "AD18": 5,
+    "AD19": 5,
+    "AD70": 5,
+    "AD71": 6,
+    "AD72": 7
+  },
+  "sqlRuntimeUsed": false,
+  "heavyTrainingRuntimeUsed": false,
+  "semanticClaimLimit": "Finite model and arithmetic checks confirm stated fixtures/answers and exact hashes confirm freshness. Manual full own-body reading and individual content judgments, not this program, support source coverage. No learned-model quality, benchmark or transaction runtime is certified."
+}

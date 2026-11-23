@@ -1,0 +1,392 @@
+{
+  "scope": "Independent static and finite computed-model QA; no SQL/native engine was executed by this script; not a proof of all algorithms.",
+  "checks": [
+    {
+      "name": "AD38 exercise1 conflict witnesses",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Cycle T2→T1→T3→T2; read/read pairs excluded."
+    },
+    {
+      "name": "AD39 converse counterexample graph",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Acyclic serial order3,1,2; impossibility under2PL is a written lock-interval argument, not proved by this test."
+    },
+    {
+      "name": "AD38 blind-write conflict cycle",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Final writerT1 agrees with serial T2,T1 when no reads exist."
+    },
+    {
+      "name": "AD40 wait-die age cases",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "T2(ts20) aborts requesting holderT1(ts10); T1 waits for holderT3(ts30)."
+    },
+    {
+      "name": "AD41 timestamp read/write example",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "T25 read succeeds, subsequent basic write aborts at RTS check."
+    },
+    {
+      "name": "AD41 Thomas check precedence",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "At RTS5 outdated write can be ignored; at RTS25 it must abort first."
+    },
+    {
+      "name": "AD42 MVTO exercise",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "T20 raises RTS12 to20, so later T15 write aborts."
+    },
+    {
+      "name": "AD42 write-skew invariant",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Concurrent disjoint writes break guard; serial second guard would stop."
+    },
+    {
+      "name": "AD42 MV2PL publication snapshots",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Reader7 retains(100,100); reader8 sees atomically published(90,110)."
+    },
+    {
+      "name": "AD43 WAL prefix rejection",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "A page carryingLSN95 cannot flush with durableLSN80."
+    },
+    {
+      "name": "AD43 undo ordering counterexample",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Forward old-images end20; reverse restores10."
+    },
+    {
+      "name": "AD43 completed-abort redo-only record",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Replaying update10→20 then logged compensation:=10 does not resurrect aborted value."
+    },
+    {
+      "name": "AD44 repeated-crash CLR trace",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "RedoCLR70 preserves winnerA10 and restoresC0; undoNext40 continues atQ.B."
+    },
+    {
+      "name": "AD44 logical inverse preserves successor",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Physical restore700 would lose committed +50; inverse+100 gives750."
+    },
+    {
+      "name": "AD45 remote durability boundary",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Remote receive200 in lostRAM cannot establish durability beyond150."
+    },
+    {
+      "name": "AD46 Amdahl arithmetic",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Times21.25s and32s in declared ideal models."
+    },
+    {
+      "name": "AD47 half-open partitions",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Boundary keys10 and20 assigned once."
+    },
+    {
+      "name": "AD48 bag join multiplicity",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "TwoA rows each side produce four distinct identity pairs."
+    },
+    {
+      "name": "AD48 average partial state",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Count-weighted means; average of averages is invalid."
+    },
+    {
+      "name": "AD49 semijoin bag contract",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "R semijoin retains2R rows; filteredS retains3; full join6."
+    },
+    {
+      "name": "AD51 weighted quorum intersection",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Enumerated fixed-membership subsets withQr2,Qw3,total4."
+    },
+    {
+      "name": "AD51 failed-heavy-replica availability",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "LosingA leaves read weight2 but insufficient write weight."
+    },
+    {
+      "name": "AD53 greedy recomputation trace",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "J first, then updated marginalK beatsI; totalspace5."
+    },
+    {
+      "name": "AD53 greedy is not optimal",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Budget4: ratio greedyA(value5,size3) loses toB(value6,size4)."
+    },
+    {
+      "name": "AD61 independent closure oracle",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Fixpoint versus per-sourceDFS; no(1,1), two cycle selfpairs."
+    },
+    {
+      "name": "AD61 worked cycle trace",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "a,b,c each reacha,b,c,d;d reachesnone forpositive-length closure."
+    },
+    {
+      "name": "AD62 up-to-date lexicographic rule",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Last term compared before last index."
+    },
+    {
+      "name": "AD63 logical compensation commutes",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Only unconditional increments without differing observable return-values in stated model."
+    },
+    {
+      "name": "AD64 global secondary identity",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Partition keycity is not a tuplekey; Ku=userID retains bothhits."
+    },
+    {
+      "name": "AD65 commit wait and unresolved read",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Firstinterval failsguard, secondpasses; prepared207 belongs to snapshot208 and must resolve."
+    },
+    {
+      "name": "AD66 grow-only-counter duplicate merge",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Repeated delivery does not doublecount one replica contribution."
+    },
+    {
+      "name": "AD54 toy PoW arithmetic",
+      "result": "pass",
+      "evidenceKind": "computed-model",
+      "details": "Expectedtrials64 under independentuniform toyhash, no fixed success deadline."
+    }
+  ],
+  "checkCount": 32,
+  "files": [
+    {
+      "lesson": "AD38",
+      "sha256": "d2085baca4c16cdca89018e93355096475c363058a60a7bb47cc544b69f3e6f4",
+      "wordCount": 3675,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD39",
+      "sha256": "a7063b46b346b8114aa4613204d366538554211624777d399cd45c4b47c8a032",
+      "wordCount": 2137,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD40",
+      "sha256": "3b173590658021c9d0c806ddffe9a3b561a88f9cbf432ecd55f0d1d5522d1003",
+      "wordCount": 1767,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD41",
+      "sha256": "ad53eaa3d2c97f1d8ad040b5a62c284c0105789f43698146e97feedaec020af3",
+      "wordCount": 1630,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD42",
+      "sha256": "b0e7316046e0eae07b5dc6a2fbede18bb8164affac3d9dc79968b6bea6f5c883",
+      "wordCount": 2181,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD43",
+      "sha256": "47302fdd79a6acee7f899a1fb4e9020d5b83c03339a6ebb924b7561ea4cd00a4",
+      "wordCount": 2040,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD44",
+      "sha256": "1d956c78bbedecd99eb7d87a4138d07f7b0b5c6246348626a6f38ef3219983ef",
+      "wordCount": 2509,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD45",
+      "sha256": "f8069c60dbe356593c146c3493a55f196da995e9686e59f25474e25f17761a45",
+      "wordCount": 1724,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD46",
+      "sha256": "151a25bc5b8d32191cc44493843dbb055254aa15fdedd0e439894cc4c4ea3023",
+      "wordCount": 1742,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD47",
+      "sha256": "7742c6f341d427819f56850620fb2a00e08669237e4a1dc29f1a1be036cbfeb7",
+      "wordCount": 1513,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD48",
+      "sha256": "089217c971fffd44e6f6199a163b51e545e9e33639efba789c266a3fc0ebd906",
+      "wordCount": 1445,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD49",
+      "sha256": "ced015140598ac62bb97fefc146bd77269373c8a90dbb3d51d562f4f0305fa52",
+      "wordCount": 1565,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD50",
+      "sha256": "a25336bad9df901d5a557056745196277b625cfcd165d992bc2c47e4bb1178cf",
+      "wordCount": 1653,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD51",
+      "sha256": "56614d65a02fd23222fece7d06051a08e7320a277a90481cf5a201a00dca73d6",
+      "wordCount": 2212,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD52",
+      "sha256": "b729b2608a703bd9bfe1bbb30284f953fb53cebf58e2189465a1f2993960019a",
+      "wordCount": 2173,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD53",
+      "sha256": "bab41b4d1a1d05a0ca31e24402e2a026d117afae946922611badd6c524e535a9",
+      "wordCount": 2055,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD54",
+      "sha256": "d9b2c445361561910efb5d883e888016a232efae86feb59751e3959ec49abda0",
+      "wordCount": 1331,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD61",
+      "sha256": "de776439b4def34e74deef38a7faa21c8d3021a71f312382527fabaa1d2170d7",
+      "wordCount": 1658,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD62",
+      "sha256": "103619f05f3602704f7716dd3df9f60750cd8d5ca20ea1025ad55c9183af410d",
+      "wordCount": 1591,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD63",
+      "sha256": "8912f24a44a6b955e5b14fb90c99d56271e1c6a3c0032b98abc748456fbcdfd8",
+      "wordCount": 2120,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD64",
+      "sha256": "55d6b22fe8d9837798de6df17660112db8de31446c10c9537a2900348d84f2ba",
+      "wordCount": 1663,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD65",
+      "sha256": "09d2f6e26980ad247f1dc4a951ccb2a849ca7832217cb244528fee2631353f10",
+      "wordCount": 2202,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD66",
+      "sha256": "e17deb2b28c11a9703988121a718b95461b5baeb2e22504eeaa633ee2119773c",
+      "wordCount": 1744,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    },
+    {
+      "lesson": "AD67",
+      "sha256": "2f56adb193c5a6b87fbd14be54b04483088f3560126189643a5cdd5773576695",
+      "wordCount": 3151,
+      "requiredHeadings": true,
+      "balancedFences": true,
+      "numberedExercisesAndAnswers": true
+    }
+  ]
+}

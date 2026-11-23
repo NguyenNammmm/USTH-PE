@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-05",
+  "scope": "One direct source17.3body read, supplemental teaching in AD43; no change/blanketcredit to plannedAD23 or baseline.",
+  "units": [
+    {
+      "section": "17.3",
+      "title": "Storage Structure",
+      "owners": [
+        "AD43"
+      ],
+      "plannedOwner": "AD23",
+      "source": {
+        "path": "tmp/database-source/chapter-17.txt",
+        "sha256": "ebf47801df6aa64559c0339a5804f6bd723a07dbafec51f10e2a29861c46b811",
+        "ownBodyLines": [
+          207,
+          250
+        ],
+        "ownBodySha256": "828107bbc9ddad456ed1fcea96f6c6b93442a5ce306c8b6467e6418e6fab947a"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readRange": [
+          207,
+          250
+        ],
+        "baselineCredit": false
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Volatile/nonvolatile/stable distinction, loss/failure domains, controlled independent redundant writes and backup/persist contract; battery-backed storage exception and atomicity/durability dependence on actualstableimplementation. AD43existingprotocolexamplesandindependentfailureexercisesexerciseassumptions.",
+      "evidence": [
+        {
+          "path": "lessons/AD43.md",
+          "lessonSha256": "388eacb97c074e0de6b227aeb5d6a9a28f16a789d9a1fd203015a9353cfe96cb",
+          "kind": "teaching",
+          "paragraph": 9,
+          "exactOpening": "Volatile storage như RAM/cache thường mất nội dung khi system crash. Non-volatile storage như disk/flash giữ nội dung qua loại crash ấy, nhưng vẫn có thể hỏng thiết bị hoặc mất dữ liệu trong thảm họa. Stable storage là mức bảo vệ lý tưởng được xấp xỉ bằng replication và protocol ghi/khôi phục với các giả định failure cụ thể. Battery-backed memory c"
+        },
+        {
+          "path": "lessons/AD43.md",
+          "lessonSha256": "388eacb97c074e0de6b227aeb5d6a9a28f16a789d9a1fd203015a9353cfe96cb",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 10,
+          "exactOpening": "Trong mô hình hai bản của §19.2.1, output block mới viết bản1 và kiểm thành công trước khi viết bản2; chỉ báo output hoàn tất sau khi bản2 thành công. Sau failure, kiểm cả hai: nếu bằng nhau và hợp lệ thì giữ; nếu một bản có lỗi phát hiện được, chép từ bản còn đúng; nếu cả hai hợp lệ nhưng khác nhau, chọn một bản làm kết quả rồi đồng bộ bản kia the"
+        },
+        {
+          "path": "lessons/AD43.md",
+          "lessonSha256": "388eacb97c074e0de6b227aeb5d6a9a28f16a789d9a1fd203015a9353cfe96cb",
+          "kind": "activity",
+          "paragraph": 60,
+          "exactOpening": "1. DurableLSN=80,pageLSN=95. Page có được flush theo WAL không? Nêu một failure làm rõ hậu quả nếu vẫn flush.\n2. Ban đầu A=5,B=8. Log bền: T1 đổi A5→7 rồi commit; T2 đổi B8→2 nhưng chưa commit. Storage là A5,B2. Trace redo/undo và giải thích mỗi bước.\n3. Một người đề xuất undo loser theo thứ tự thuận. Dựng loser ghi X10→20 rồi20→30 để bác. Vì sao k"
+        },
+        {
+          "path": "lessons/AD43.md",
+          "lessonSha256": "388eacb97c074e0de6b227aeb5d6a9a28f16a789d9a1fd203015a9353cfe96cb",
+          "kind": "answer",
+          "paragraph": 65,
+          "exactOpening": "1. Không: durableLSN80<95. Crash làm mất record81..95 nhưng page đã mang update95 thì thiếu thông tin phục hồi theo protocol. Không dùng RAM log làm đầu vào sau crash.\n2. Redo cho A7,B2; undo T2 trả B8; cuối cùng A7,B8. A7 giữ winner chưa flush, B8 bỏ loser đã flush. Phải khai báo log chứa before/after images và strict write lock như mô hình.\n3. Un"
+        }
+      ],
+      "gaps": []
+    }
+  ]
+}

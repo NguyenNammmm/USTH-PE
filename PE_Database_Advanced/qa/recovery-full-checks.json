@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-05",
+  "lesson": "AD43",
+  "status": "passed",
+  "count": 12,
+  "cases": 18720,
+  "checks": [
+    {
+      "name": "Checkpoint+redo-only+reverse undo matches transaction-outcome oracle",
+      "passed": true,
+      "scope": "18720 finite prefix/checkpoint/page-image cases over30program-order schedules, disjoint strict-write items."
+    },
+    {
+      "name": "Mutant skipping redo-only resurrects completed abort",
+      "passed": true,
+      "scope": "Finite recovery model; no native crash or disk flush execution"
+    },
+    {
+      "name": "Mutant truncating precheckpoint undo loses active transaction old value",
+      "passed": true,
+      "scope": "Finite recovery model; no native crash or disk flush execution"
+    },
+    {
+      "name": "Mutant forward undo gives wrong value for two updates",
+      "passed": true,
+      "scope": "Finite recovery model; no native crash or disk flush execution"
+    },
+    {
+      "name": "WAL flush precondition and writer/flusher race witness",
+      "passed": true,
+      "scope": "Finite recovery model; no native crash or disk flush execution"
+    },
+    {
+      "name": "Commit durability differs from forcing data pages",
+      "passed": true,
+      "scope": "Finite recovery model; no native crash or disk flush execution"
+    },
+    {
+      "name": "Loser data already on storage is undone",
+      "passed": true,
+      "scope": "Finite recovery model; no native crash or disk flush execution"
+    },
+    {
+      "name": "Fuzzy checkpoint record alone does not update last completed pointer",
+      "passed": true,
+      "scope": "Finite recovery model; no native crash or disk flush execution"
+    },
+    {
+      "name": "Shadow publication before page durability has missing-page witness",
+      "passed": true,
+      "scope": "Finite recovery model; no native crash or disk flush execution"
+    },
+    {
+      "name": "Shadow pointer can select complete new table after flush",
+      "passed": true,
+      "scope": "Finite recovery model; no native crash or disk flush execution"
+    },
+    {
+      "name": "Group commit arithmetic counts service time separately from waiting",
+      "passed": true,
+      "scope": "Finite recovery model; no native crash or disk flush execution"
+    },
+    {
+      "name": "Media restore cannot keep an uncommitted update merely because it is logged",
+      "passed": true,
+      "scope": "Finite recovery model; no native crash or disk flush execution"
+    }
+  ],
+  "lessonSha256": "388eacb97c074e0de6b227aeb5d6a9a28f16a789d9a1fd203015a9353cfe96cb",
+  "limits": "Finite before/after-image model. No MySQL crash, fsync, torn-write detection, OS cache, repeated-crash ARIES or production backup execution."
+}

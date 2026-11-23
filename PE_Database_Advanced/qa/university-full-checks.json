@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-05",
+  "passed": 17,
+  "checks": [
+    {
+      "name": "source-tables-cardinality",
+      "passed": true,
+      "detail": "Parsed every record of source FiguresA.2–A.13 with explicit per-table arity; 11 relations plus alternative time representation, raw source not redistributed."
+    },
+    {
+      "name": "source-time-representations",
+      "passed": true,
+      "detail": "All 20 printed meeting rows correspond exactly, no duplicate new meetings from FigureA.13."
+    },
+    {
+      "name": "source-adversarial-cases",
+      "passed": true,
+      "detail": "Actual source has zero-registration, missing-advisor and NULL-grade cases; not inferred from PE synthetic data."
+    },
+    {
+      "name": "authored-fixture-load",
+      "passed": true,
+      "detail": "Actual SQLite3.53.1 executes unchanged table/data text except ENGINE removal. SQLite type/PK/locking semantics are not asserted equivalent to MySQL."
+    },
+    {
+      "name": "zero-registration-query",
+      "passed": true,
+      "detail": "Exact lesson query; NULL outer join row counted correctly."
+    },
+    {
+      "name": "prerequisite-query",
+      "passed": true,
+      "detail": "SQLite set UNION spelling adaptation only; exact lesson correlated double NOT EXISTS otherwise."
+    },
+    {
+      "name": "capacity-query",
+      "passed": true,
+      "detail": "Exact lesson aggregate-before-join detector."
+    },
+    {
+      "name": "time-overlap-query",
+      "passed": true,
+      "detail": "Exact lesson tuple comparison/half-open overlap query; GREATEST/LEAST registered locally."
+    },
+    {
+      "name": "initial-cycle-query",
+      "passed": true,
+      "detail": "No cycle in original authored fixture."
+    },
+    {
+      "name": "cycle-mutant-detected",
+      "passed": true,
+      "detail": "Inserted back-edge yields all cycle members; rolled back below."
+    },
+    {
+      "name": "referenced-prerequisite-delete-blocked",
+      "passed": true,
+      "detail": "Delete cascade on course_id does not bypass referenced prereq_id restriction."
+    },
+    {
+      "name": "invalid-meeting-check",
+      "passed": true,
+      "detail": "Additional same-day start<end constraint rejects reversed interval."
+    },
+    {
+      "name": "check-is-not-not-null",
+      "passed": true,
+      "detail": "CHECK(salary>29000) alone permits NULL in selected SQLite test, matching lesson three-valued logic explanation."
+    },
+    {
+      "name": "instructor-delete-actions",
+      "passed": true,
+      "detail": "Actual selected FK SET NULL/CASCADE paths; students retained."
+    },
+    {
+      "name": "student-delete-actions",
+      "passed": true,
+      "detail": "Actual Takes/Advisor cascade for student delete."
+    },
+    {
+      "name": "time-component-counterexample",
+      "passed": true,
+      "detail": "Wrong start_hr/end_hr check admits invalid start25; corrected range and conversion tested."
+    },
+    {
+      "name": "half-open-boundary",
+      "passed": true,
+      "detail": "09:00–10:00 and10:00–11:00 do not overlap under strict half-open comparisons."
+    }
+  ],
+  "scope": "Actual source-table parsing, selected actual SQLite translated DDL/query/constraint checks and arithmetic models. No native MySQL two-session capacity/locking run in this report; web runner requirements remain separate. No assertion that SQLite type/NULL-PK/concurrency behavior equals MySQL.",
+  "lessonSha256": "8b02003b53f7312db50270b6a699ea35759113c90ed40a9da515ce499e8b8d3e",
+  "sourceSha256": "829dd128bd466fbc0b8e8bd5a6d76d8e31e2f274b3b2a8e36f033470f94c8b9b"
+}

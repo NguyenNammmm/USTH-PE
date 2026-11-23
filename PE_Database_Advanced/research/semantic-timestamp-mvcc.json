@@ -1,0 +1,1114 @@
+{
+  "date": "2026-11-05",
+  "scope": "Five AD41 and eleven AD42 own-body units. No credit for other chapter18 sections.",
+  "counts": {
+    "assigned": 16,
+    "complete": 16
+  },
+  "units": [
+    {
+      "section": "18.5",
+      "title": "Timestamp-Based Protocols",
+      "owners": [
+        "AD41"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1040,
+          1045
+        ],
+        "ownBodySha256": "3794d7b434c6334838609e07034408e9df1abb1d3fd45e04d8335d93e68216f2"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          893,
+          894,
+          898
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Timestamp ordering selects serial order in advance, unlike runtime lock conflict ordering.",
+      "evidence": [
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "teaching",
+          "paragraph": 3,
+          "exactOpening": "Thay vì để transaction chờ lock, một hệ có thể chọn trước một thứ tự và hủy thao tác làm thứ tự ấy không thể giữ. Một hệ khác cho transaction làm trên bản sao riêng, đến gần commit mới kiểm xem các dữ liệu nó đã đọc có bị thay đổi bất hợp lệ không. Cả hai đều cần quy tắc rõ; từ “không lock” không tự chứng minh serializability."
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 11,
+          "exactOpening": "Ví dụ 1: R(Q)=20,W(Q)=10,T có TS15 xin write. Nó bị hủy vì readerTS20 đã đọc trước khi write15 được thực hiện. Nếu bỏ kiểm R, không thể đặt write15 trước read20 mà giữ giá trị reader đã quan sát."
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "activity",
+          "paragraph": 39,
+          "exactOpening": "1. Cho R(X)=30,W(X)=20. T25 xin đọc X rồi ghi X; T35 xin đọc X. Ghi quyết định và metadata sau các thao tác được nhận; không tiếp tục transaction đã abort như vẫn sống.\n2. Với R(Y)=5,W(Y)=40, so basic TO và Thomas cho write của T20. Đổi R(Y)=25 rồi xét lại. Vì sao thứ tự hai phép kiểm quan trọng?\n3. T1 start1, đọc A; T2 start2, validate3, finish4, "
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "answer",
+          "paragraph": 44,
+          "exactOpening": "1. T25 đọc được vì25≥20; R(X)=max(30,25)=30. Ghi bị abort vì25<30, W không đổi. T35 đọc được, R thành35. Nếu thao tác thuộc các attempt khác, nêu timestamp/version mỗi attempt.\n2. Basic TO abort T20 vì20<40. Thomas qua kiểm R=5 rồi bỏ write lỗi thời, giữ W=40. Khi R=25, cả hai abort vì20<25; không được bỏ write trước và quên reader trẻ đã dùng giá "
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.5.1",
+      "title": "Timestamps",
+      "owners": [
+        "AD41"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1046,
+          1072
+        ],
+        "ownBodySha256": "fbdc5bb67fb2ad3025be86e16b98a91438ed5a0217c46ab9b21710dc89c6ab79"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          893,
+          894,
+          898
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Unique fixed timestamps, clock/counter and restart distinction; per-item maximum read/write timestamps.",
+      "evidence": [
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "teaching",
+          "paragraph": 6,
+          "exactOpening": "Timestamp có thể lấy từ một logical counter tăng dần, hoặc từ clock có cơ chế bảo đảm duy nhất và thứ tự trong miền đang xét. Hai transaction không được nhận cùng timestamp chỉ vì chúng bắt đầu trong cùng một mili giây. Basic TO gán timestamp trước khi transaction làm việc; attempt restart nhận timestamp mới. Điều này khác wait-die/wound-wait ở AD4"
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 5,
+          "exactOpening": "Mỗi transaction Ti có timestamp TS(Ti) duy nhất trong miền có thứ tự toàn phần. Nó biểu diễn thứ tự serial mục tiêu, không nhất thiết là đồng hồ giờ thực của máy người dùng. Với mỗi item Q, `R(Q)` là timestamp lớn nhất của transaction đã đọc thành công; `W(Q)` là timestamp lớn nhất của write được nhận theo protocol."
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "activity",
+          "paragraph": 39,
+          "exactOpening": "1. Cho R(X)=30,W(X)=20. T25 xin đọc X rồi ghi X; T35 xin đọc X. Ghi quyết định và metadata sau các thao tác được nhận; không tiếp tục transaction đã abort như vẫn sống.\n2. Với R(Y)=5,W(Y)=40, so basic TO và Thomas cho write của T20. Đổi R(Y)=25 rồi xét lại. Vì sao thứ tự hai phép kiểm quan trọng?\n3. T1 start1, đọc A; T2 start2, validate3, finish4, "
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "answer",
+          "paragraph": 44,
+          "exactOpening": "1. T25 đọc được vì25≥20; R(X)=max(30,25)=30. Ghi bị abort vì25<30, W không đổi. T35 đọc được, R thành35. Nếu thao tác thuộc các attempt khác, nêu timestamp/version mỗi attempt.\n2. Basic TO abort T20 vì20<40. Thomas qua kiểm R=5 rồi bỏ write lỗi thời, giữ W=40. Khi R=25, cả hai abort vì20<25; không được bỏ write trước và quên reader trẻ đã dùng giá "
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.5.2",
+      "title": "The Timestamp-Ordering Protocol",
+      "owners": [
+        "AD41"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1073,
+          1162
+        ],
+        "ownBodySha256": "c6022b9bd774cf92d344ca3fc3b717d66c3960b33cc007e1b2150fde26b7e9ff"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          893,
+          894,
+          898
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Complete read/write tests and updates, TS-order proof, starvation, all three recovery extensions and metadata/index phantom coverage.",
+      "evidence": [
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "teaching",
+          "paragraph": 21,
+          "exactOpening": "Mọi xung đột được basicTO chấp nhận phải nhất quán với timestamp: một read trẻ đã xảy ra sẽ ngăn write già muộn; một write trẻ đã xảy ra sẽ ngăn read/ write già không phù hợp. Vì timestamp tăng theo mọi cạnh conflict được nhận, graph không thể có cycle. Dừng của mỗi quyết định local là hữu hạn, nhưng transaction có thể restart nhiều lần dưới conten"
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 9,
+          "exactOpening": "```text\nwrite(T,Q,value):\n    if TS(T) < R(Q): abort T\n    else if TS(T) < W(Q): abort T\n    else:\n        ghi value theo cơ chế recovery phù hợp\n        W(Q) = TS(T)\n```"
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "activity",
+          "paragraph": 39,
+          "exactOpening": "1. Cho R(X)=30,W(X)=20. T25 xin đọc X rồi ghi X; T35 xin đọc X. Ghi quyết định và metadata sau các thao tác được nhận; không tiếp tục transaction đã abort như vẫn sống.\n2. Với R(Y)=5,W(Y)=40, so basic TO và Thomas cho write của T20. Đổi R(Y)=25 rồi xét lại. Vì sao thứ tự hai phép kiểm quan trọng?\n3. T1 start1, đọc A; T2 start2, validate3, finish4, "
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "answer",
+          "paragraph": 44,
+          "exactOpening": "1. T25 đọc được vì25≥20; R(X)=max(30,25)=30. Ghi bị abort vì25<30, W không đổi. T35 đọc được, R thành35. Nếu thao tác thuộc các attempt khác, nêu timestamp/version mỗi attempt.\n2. Basic TO abort T20 vì20<40. Thomas qua kiểm R=5 rồi bỏ write lỗi thời, giữ W=40. Khi R=25, cả hai abort vì20<25; không được bỏ write trước và quên reader trẻ đã dùng giá "
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.5.3",
+      "title": "Thomas’ Write Rule",
+      "owners": [
+        "AD41"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1163,
+          1215
+        ],
+        "ownBodySha256": "fab676fc09dd7877323b6041fdcac45a84f480511405887468a5d0d47a04238a"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          893,
+          894,
+          898
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Ordered Thomas checks, obsolete request versus effective write, view equivalence all three conditions, blind write and non-conflict-serializable example.",
+      "evidence": [
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "teaching",
+          "paragraph": 13,
+          "exactOpening": "Thomas cho một số lịch view-serializable không conflict-serializable đi qua vì bỏ blind write lỗi thời. Nó không có nghĩa một transaction tùy ý bị bỏ mà vẫn đủ mọi invariant nghiệp vụ. Nếu write dựa vào giá trị đọc, các read và các item liên quan vẫn phải thỏa protocol."
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 12,
+          "exactOpening": "Ví dụ 2: R(Q)=5,W(Q)=20,T có TS10 xin write. BasicTO hủy T do write trẻ đã tới trước. Với Thomas write rule, write10 có thể bỏ qua như một write đã lỗi thời, miễn đã qua kiểm TS(T)<R(Q) ở trước. Q vẫn giữ version20. Thomas không được áp cho read hoặc tùy ý bỏ mọi UPDATE cũ trong ứng dụng; đây là quy tắc concurrency trên item của mô hình."
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "activity",
+          "paragraph": 39,
+          "exactOpening": "1. Cho R(X)=30,W(X)=20. T25 xin đọc X rồi ghi X; T35 xin đọc X. Ghi quyết định và metadata sau các thao tác được nhận; không tiếp tục transaction đã abort như vẫn sống.\n2. Với R(Y)=5,W(Y)=40, so basic TO và Thomas cho write của T20. Đổi R(Y)=25 rồi xét lại. Vì sao thứ tự hai phép kiểm quan trọng?\n3. T1 start1, đọc A; T2 start2, validate3, finish4, "
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "answer",
+          "paragraph": 44,
+          "exactOpening": "1. T25 đọc được vì25≥20; R(X)=max(30,25)=30. Ghi bị abort vì25<30, W không đổi. T35 đọc được, R thành35. Nếu thao tác thuộc các attempt khác, nêu timestamp/version mỗi attempt.\n2. Basic TO abort T20 vì20<40. Thomas qua kiểm R=5 rồi bỏ write lỗi thời, giữ W=40. Khi R=25, cả hai abort vì20<25; không được bỏ write trước và quên reader trẻ đã dùng giá "
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.6",
+      "title": "Validation-Based Protocols",
+      "owners": [
+        "AD41"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1216,
+          1349
+        ],
+        "ownBodySha256": "1ea24c920c0569a03287b1940c2861b537610b5b3440a4eb8f79c43ba1189e6e"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          893,
+          894,
+          898
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Read/private-write, validation, optional write phase; three timestamps; textbook two-condition validator/proof versus explicitly separate parallel-write extension; subset histories, StartTS alternative, cascade/starvation.",
+      "evidence": [
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "teaching",
+          "paragraph": 32,
+          "exactOpening": "Trong phiên bản hai điều kiện của sách, với mỗi Tj có validation timestamp nhỏ hơn Ti, phải thỏa một trong hai: `finish_j < start_i`; hoặc `start_i < finish_j < validation_i` cùng `WSj ∩ RSi = ∅`. Tj kết thúc trước start_i đã nằm trong trạng thái Ti được phép đọc. Với trường hợp hai, Tj không ghi dữ liệu Ti đã dùng và hai write phase không overlap,"
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 35,
+          "exactOpening": "T1 đọcA, tínhB=A+1; T2 đọcC, tínhD=C+1. Nếu T2 publish trong lúc T1 đọc mà WS2={D} không giao RS1={A}, model serial-publication cho T1 đi tiếp. Chúng không cần abort chỉ vì thời gian overlap."
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "activity",
+          "paragraph": 39,
+          "exactOpening": "1. Cho R(X)=30,W(X)=20. T25 xin đọc X rồi ghi X; T35 xin đọc X. Ghi quyết định và metadata sau các thao tác được nhận; không tiếp tục transaction đã abort như vẫn sống.\n2. Với R(Y)=5,W(Y)=40, so basic TO và Thomas cho write của T20. Đổi R(Y)=25 rồi xét lại. Vì sao thứ tự hai phép kiểm quan trọng?\n3. T1 start1, đọc A; T2 start2, validate3, finish4, "
+        },
+        {
+          "path": "lessons/AD41.md",
+          "lessonSha256": "6e9760cf2ea360c1dee089909b82b3cd900a6aa24daffcd27554bdbdd6211029",
+          "kind": "answer",
+          "paragraph": 44,
+          "exactOpening": "1. T25 đọc được vì25≥20; R(X)=max(30,25)=30. Ghi bị abort vì25<30, W không đổi. T35 đọc được, R thành35. Nếu thao tác thuộc các attempt khác, nêu timestamp/version mỗi attempt.\n2. Basic TO abort T20 vì20<40. Thomas qua kiểm R=5 rồi bỏ write lỗi thời, giữ W=40. Khi R=25, cả hai abort vì20<25; không được bỏ write trước và quên reader trẻ đã dùng giá "
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.7",
+      "title": "Multiversion Schemes",
+      "owners": [
+        "AD42"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1350,
+          1364
+        ],
+        "ownBodySha256": "11bf33c8d90c01277a77f96be1caafaba5b1990207e06d1cdf582fd1aebd974a"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          905,
+          909
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Version selection must preserve the intended order; logical metadata separated from physical undo/chain representation.",
+      "evidence": [
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "teaching",
+          "paragraph": 5,
+          "exactOpening": "Một phiên bản của item có giá trị, thông tin transaction/timestamp tạo và metadata phục vụ visibility hoặc recovery. Reader chọn một version hợp với snapshot; writer không được tùy ý sửa metadata để giấu xung đột. Engine có thể lưu old versions ở undo hoặc tuple chain; cách lưu vật lý khác quy tắc logic người học đang dùng."
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 10,
+          "exactOpening": "Ví dụ 1: Q có (WTS0,value10),(WTS20,value30). T15 đọc10; T25 đọc30. NếuT15 đã đọc version0, RTS của nó ít nhất15. T10 muốn ghi một version10 muộn bị hủy vì10<15: nếu đặt write10 vào serial order, T15 phải thấy giá trị ấy thay vì10. Phiên bản giúp reader già không bị write trẻ tự động loại, nhưng không xóa mọi xung đột."
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "activity",
+          "paragraph": 60,
+          "exactOpening": "1. Versions X: (0,5),(12,9),(30,20), RTS ban đầu bằng WTS. T20 đọc rồi T15 ghi. Chọn version và quyết định; giải thích bằng serial order.\n2. Dựng write skew cho hai phòng có tổng chỗ trống không được dưới1. Ghi read/write sets và chứng minh hai serial orders đều không tạo kết quả lỗi ấy.\n3. Dựng lịch hai session phân biệt RR consistent read với cur"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "answer",
+          "paragraph": 65,
+          "exactOpening": "1. T20 đọc9 từ version12, RTS12=20. T15 abort vì15<20. Nếu cho write15 tồn tại trước reader20 trong timestamp order, reader20 phải chọn version15, trái quan sát.\n2. Ví dụ (1,1), mỗi transaction đọc tổng2 rồi giảm một phòng nếu tổng>1. Hai write khác row cùng commit cho (0,0). Serial transaction thứ hai thấy tổng1 nên không giảm. Đáp án phải định ng"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.7.1",
+      "title": "Multiversion Timestamp Ordering",
+      "owners": [
+        "AD42"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1365,
+          1417
+        ],
+        "ownBodySha256": "e308c6e0cf6a14bcbdb1385f6faa1a80562b56be57a0532b02169367d9b8d6cc"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          905,
+          909
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Content/WTS/RTS, all read/write decisions, interval boundaries, oldest-transaction GC, read metadata costs, no-read-wait scope and recovery limits.",
+      "evidence": [
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "teaching",
+          "paragraph": 8,
+          "exactOpening": "Nếu version có WTS=t và version kế tiếp có WTS=s, khoảng hiệu lực là `[t,s)`; version mới nhất có khoảng `[t,∞)`. Đây là cách khác để tìm đúng version cho timestamp reader. Tại biên s, reader phải chọn version mới, không chọn cả hai. Với MVTO, mỗi read còn cập nhật RTS, nên read cũng có chi phí sửa metadata; trong mô hình lưu trên đĩa của sách có t"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 9,
+          "exactOpening": "```text\nread(T,Q):\n    k = argmax version.WTS với version.WTS <= TS(T)\n    version[k].RTS = max(version[k].RTS, TS(T))\n    return version[k].value\nwrite(T,Q,v):\n    k = chọn version như ở read\n    if TS(T) < version[k].RTS: abort T\n    else tạo/cập nhật version của T với value=v\n```"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "activity",
+          "paragraph": 60,
+          "exactOpening": "1. Versions X: (0,5),(12,9),(30,20), RTS ban đầu bằng WTS. T20 đọc rồi T15 ghi. Chọn version và quyết định; giải thích bằng serial order.\n2. Dựng write skew cho hai phòng có tổng chỗ trống không được dưới1. Ghi read/write sets và chứng minh hai serial orders đều không tạo kết quả lỗi ấy.\n3. Dựng lịch hai session phân biệt RR consistent read với cur"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "answer",
+          "paragraph": 65,
+          "exactOpening": "1. T20 đọc9 từ version12, RTS12=20. T15 abort vì15<20. Nếu cho write15 tồn tại trước reader20 trong timestamp order, reader20 phải chọn version15, trái quan sát.\n2. Ví dụ (1,1), mỗi transaction đọc tổng2 rồi giảm một phòng nếu tổng>1. Hai write khác row cùng commit cho (0,0). Serial transaction thứ hai thấy tổng1 nên không giảm. Đáp án phải định ng"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.7.2",
+      "title": "Multiversion Two-Phase Locking",
+      "owners": [
+        "AD42"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1418,
+          1480
+        ],
+        "ownBodySha256": "574134cf34a9fdb24d6597fde81f5a999c1daa49d79d33c90269e092442dc60e"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          905,
+          909
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Rigorous update locks, read-only ts-counter, infinity private versions, serialized atomic commit publication/proof, read-only GC and Note18.2 constraints/tombstone/index implications.",
+      "evidence": [
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "teaching",
+          "paragraph": 16,
+          "exactOpening": "Trong thuật toán §18.7.2, update transaction dùng rigorous 2PL: giữ cả S và X tới kết thúc. Read-only transaction không lấy các lock ấy; nó chụp giá trị counter hiện tại khi bắt đầu. Counter là thứ tự logic, không phải clock UTC. Update transaction tạo version tạm có timestamp∞, để snapshot hữu hạn không thấy thay đổi chưa công bố."
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 19,
+          "exactOpening": "Ví dụ MV2PL thứ nhất: counter=7; A=100,B=100 ở timestamp7. U lấy locks và tạo A=90,B=110 với timestamp∞. Reader R bắt đầu lúc này nhận TS=7 và đọc(100,100) dù U đã viết bản tạm. U commit ở8; reader mới R2 nhận8, đọc(90,110). R giữ7 vẫn thấy cặp cũ. Không reader nào thấy(90,100) từ việc công bố dở nếu protocol giữ publication đúng."
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "activity",
+          "paragraph": 60,
+          "exactOpening": "1. Versions X: (0,5),(12,9),(30,20), RTS ban đầu bằng WTS. T20 đọc rồi T15 ghi. Chọn version và quyết định; giải thích bằng serial order.\n2. Dựng write skew cho hai phòng có tổng chỗ trống không được dưới1. Ghi read/write sets và chứng minh hai serial orders đều không tạo kết quả lỗi ấy.\n3. Dựng lịch hai session phân biệt RR consistent read với cur"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "answer",
+          "paragraph": 65,
+          "exactOpening": "1. T20 đọc9 từ version12, RTS12=20. T15 abort vì15<20. Nếu cho write15 tồn tại trước reader20 trong timestamp order, reader20 phải chọn version15, trái quan sát.\n2. Ví dụ (1,1), mỗi transaction đọc tổng2 rồi giảm một phòng nếu tổng>1. Hai write khác row cùng commit cho (0,0). Serial transaction thứ hai thấy tổng1 nên không giảm. Đáp án phải định ng"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.8",
+      "title": "Snapshot Isolation",
+      "owners": [
+        "AD42"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1481,
+          1502
+        ],
+        "ownBodySha256": "c6753aed581884310901cffeb7b128d8e74e2f1eff3e037ad802f34aadb0029b"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          905,
+          909
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Committed snapshot and atomic whole-transaction publication, update validation distinct from serializability.",
+      "evidence": [
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "teaching",
+          "paragraph": 26,
+          "exactOpening": "Snapshot isolation thường cho transaction đọc từ một snapshot committed tại một mốc, cùng các write của chính nó. Hai transaction đồng thời ghi cùng item không được cùng commit theo kiểm write-conflict của protocol; first-committer-wins là một quy tắc thường dùng trong mô hình. Nhưng hai write set rời nhau có thể cùng commit dù mỗi bên đã dựa vào r"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 33,
+          "exactOpening": "Fixture on_call có (1,1),(2,1). Invariant là SUM(active)≥1. T1 và T2 đều bắt đầu khi tổng2. T1 tắt row1; T2 tắt row2. WS1={row1},WS2={row2}; write/write check không phát hiện overlap. Sau hai commit tổng0."
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "activity",
+          "paragraph": 60,
+          "exactOpening": "1. Versions X: (0,5),(12,9),(30,20), RTS ban đầu bằng WTS. T20 đọc rồi T15 ghi. Chọn version và quyết định; giải thích bằng serial order.\n2. Dựng write skew cho hai phòng có tổng chỗ trống không được dưới1. Ghi read/write sets và chứng minh hai serial orders đều không tạo kết quả lỗi ấy.\n3. Dựng lịch hai session phân biệt RR consistent read với cur"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "answer",
+          "paragraph": 65,
+          "exactOpening": "1. T20 đọc9 từ version12, RTS12=20. T15 abort vì15<20. Nếu cho write15 tồn tại trước reader20 trong timestamp order, reader20 phải chọn version15, trái quan sát.\n2. Ví dụ (1,1), mỗi transaction đọc tổng2 rồi giảm một phòng nếu tổng>1. Hai write khác row cùng commit cho (0,0). Serial transaction thứ hai thấy tổng1 nên không giảm. Đáp án phải định ng"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.8.1",
+      "title": "Multiversioning in Snapshot Isolation",
+      "owners": [
+        "AD42"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1503,
+          1529
+        ],
+        "ownBodySha256": "bcef09930c699b3e778df0887426b79d9b4510c59e3eb9d28fef9b485e968f8a"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          905,
+          909
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "StartTS/CommitTS, committed version timestamp and own-write workspace, reader visibility and atomic publication.",
+      "evidence": [
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "teaching",
+          "paragraph": 28,
+          "exactOpening": "Trong mô hình SI của sách, `StartTS(T)` xác định snapshot, `CommitTS(T)` được cấp lúc T xin validation. Version đã commit mang timestamp commit; read chọn version mới nhất có timestamp không vượt StartTS, trừ các write riêng của T được xử lý theo vùng riêng. Commit phải công bố toàn bộ write và outcome atomic về visibility. Reader không được thấy m"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 31,
+          "exactOpening": "Ví dụ: U,V cùng snapshot Q=10. U xin ghi Q=11 trước. Với first-updater-wins, V chờ U; U commit thì V abort, U abort thì V có thể kiểm lại và tiếp tục. Với first-committer-wins, cả hai có thể tính riêng trước validation; bên validate/commit thành công trước khiến bên kia abort khi kiểm version Q. Cả hai chỉ kiểm WW nên vẫn chưa giải bài hai bác sĩ g"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "activity",
+          "paragraph": 60,
+          "exactOpening": "1. Versions X: (0,5),(12,9),(30,20), RTS ban đầu bằng WTS. T20 đọc rồi T15 ghi. Chọn version và quyết định; giải thích bằng serial order.\n2. Dựng write skew cho hai phòng có tổng chỗ trống không được dưới1. Ghi read/write sets và chứng minh hai serial orders đều không tạo kết quả lỗi ấy.\n3. Dựng lịch hai session phân biệt RR consistent read với cur"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "answer",
+          "paragraph": 65,
+          "exactOpening": "1. T20 đọc9 từ version12, RTS12=20. T15 abort vì15<20. Nếu cho write15 tồn tại trước reader20 trong timestamp order, reader20 phải chọn version15, trái quan sát.\n2. Ví dụ (1,1), mỗi transaction đọc tổng2 rồi giảm một phòng nếu tổng>1. Hai write khác row cùng commit cho (0,0). Serial transaction thứ hai thấy tổng1 nên không giảm. Đáp án phải định ng"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.8.2",
+      "title": "Validation Steps for Update Transactions",
+      "owners": [
+        "AD42"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1530,
+          1585
+        ],
+        "ownBodySha256": "2978b053953e2fce7b50372b8a48906fe49eadeef7d9b06a97984566b646affa"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          905,
+          909
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Concurrency interval and FCW version test, FUW lock/wait/recheck/abort outcomes, same-item lost update protection; disjoint writes limitation.",
+      "evidence": [
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "teaching",
+          "paragraph": 30,
+          "exactOpening": "First-updater-wins xin write lock khi update. Sau khi có lock vẫn phải kiểm item có bị transaction đồng thời cập nhật không; không phải cứ hết chờ là ghi tiếp. Nếu holder đồng thời commit thay đổi đó, waiter abort. Nếu holder abort, waiter được lấy lock rồi kiểm lại trạng thái trước khi tiếp tục. Lock giữ tới commit/abort; read snapshot không lấy n"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 31,
+          "exactOpening": "Ví dụ: U,V cùng snapshot Q=10. U xin ghi Q=11 trước. Với first-updater-wins, V chờ U; U commit thì V abort, U abort thì V có thể kiểm lại và tiếp tục. Với first-committer-wins, cả hai có thể tính riêng trước validation; bên validate/commit thành công trước khiến bên kia abort khi kiểm version Q. Cả hai chỉ kiểm WW nên vẫn chưa giải bài hai bác sĩ g"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "activity",
+          "paragraph": 60,
+          "exactOpening": "1. Versions X: (0,5),(12,9),(30,20), RTS ban đầu bằng WTS. T20 đọc rồi T15 ghi. Chọn version và quyết định; giải thích bằng serial order.\n2. Dựng write skew cho hai phòng có tổng chỗ trống không được dưới1. Ghi read/write sets và chứng minh hai serial orders đều không tạo kết quả lỗi ấy.\n3. Dựng lịch hai session phân biệt RR consistent read với cur"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "answer",
+          "paragraph": 65,
+          "exactOpening": "1. T20 đọc9 từ version12, RTS12=20. T15 abort vì15<20. Nếu cho write15 tồn tại trước reader20 trong timestamp order, reader20 phải chọn version15, trái quan sát.\n2. Ví dụ (1,1), mỗi transaction đọc tổng2 rồi giảm một phòng nếu tổng>1. Hai write khác row cùng commit cho (0,0). Serial transaction thứ hai thấy tổng1 nên không giảm. Đáp án phải định ng"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.8.3",
+      "title": "Serializability Issues and Solutions",
+      "owners": [
+        "AD42"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1586,
+          1776
+        ],
+        "ownBodySha256": "f9da7a19f4e069a1fd21d51ee48730641a66516c43e7bf6a01c5b0bf1e1dbda9"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          905,
+          909
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Write skew/nonserializable serial counterexamples, current-state constraints, MAX+1 phantom, benefits/tradeoffs, SSI rw-dangerous structure not iff-cycle, alternative conflict/level strategies and fixed workload assumption.",
+      "evidence": [
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "teaching",
+          "paragraph": 39,
+          "exactOpening": "Trong kết quả mà sách dùng để giải thích SSI, một cycle gây mất serializable dưới SI phải có một transaction với cả cạnh rw đi vào và rw đi ra, tạo dạng `Tin→rw Tpivot→rw Tout`. Theo dõi dạng nguy hiểm này rẻ hơn tìm mọi cycle trên mọi loại cạnh, nhưng có thể phải abort cả trường hợp chưa hình thành cycle thật. Có hai cạnh như vậy không phải định n"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 40,
+          "exactOpening": "Trong mô hình hai bác sĩ, cả T1→rw T2 và T2→rw T1 tồn tại: mỗi bên đã đọc active cũ của row bên kia sắp tắt. Chỉ so write sets bỏ lỡ cả hai; theo dõi rw làm lộ nguy cơ và cho phép abort/retry để giữ serial order. Predicate/range reads cũng phải được theo dõi, kể cả khi không có row khớp."
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "activity",
+          "paragraph": 60,
+          "exactOpening": "1. Versions X: (0,5),(12,9),(30,20), RTS ban đầu bằng WTS. T20 đọc rồi T15 ghi. Chọn version và quyết định; giải thích bằng serial order.\n2. Dựng write skew cho hai phòng có tổng chỗ trống không được dưới1. Ghi read/write sets và chứng minh hai serial orders đều không tạo kết quả lỗi ấy.\n3. Dựng lịch hai session phân biệt RR consistent read với cur"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "answer",
+          "paragraph": 65,
+          "exactOpening": "1. T20 đọc9 từ version12, RTS12=20. T15 abort vì15<20. Nếu cho write15 tồn tại trước reader20 trong timestamp order, reader20 phải chọn version15, trái quan sát.\n2. Ví dụ (1,1), mỗi transaction đọc tổng2 rồi giảm một phòng nếu tổng>1. Hai write khác row cùng commit cho (0,0). Serial transaction thứ hai thấy tổng1 nên không giảm. Đáp án phải định ng"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.9",
+      "title": "Weak Levels of Consistency in Practice",
+      "owners": [
+        "AD42"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1777,
+          1783
+        ],
+        "ownBodySha256": "51d609b8bbd854b561697fab951381db84ec060f8e2f7d0a68bc9fe2f55626d5"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          905,
+          909
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Weak-consistency and interaction scope; none of the labels alone guarantees a serializable whole-result observation.",
+      "evidence": [
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "teaching",
+          "paragraph": 48,
+          "exactOpening": "Degree-two consistency hoặc cursor stability giảm thời gian giữ read protection theo protocol; việc giữ lock của row hiện tại trong cursor không có nghĩa toàn result set bất biến tới commit. Cần biết khi nào cursor đi tiếp, có revisit hay không và update dựa vào dữ liệu nào."
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 52,
+          "exactOpening": "Một form web cho người dùng suy nghĩ năm phút không nên giữ transaction/lock ngầm rồi giả lease luôn sống. Có thể đọc kèm version, sau đó `UPDATE ... WHERE id=? AND version=?`; nếu số row được cập nhật không đạt contract thì báo dữ liệu đã đổi và yêu cầu xác minh lại. Kiểm version phải nằm trong cùng thao tác atomic với update, không SELECT version"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "activity",
+          "paragraph": 60,
+          "exactOpening": "1. Versions X: (0,5),(12,9),(30,20), RTS ban đầu bằng WTS. T20 đọc rồi T15 ghi. Chọn version và quyết định; giải thích bằng serial order.\n2. Dựng write skew cho hai phòng có tổng chỗ trống không được dưới1. Ghi read/write sets và chứng minh hai serial orders đều không tạo kết quả lỗi ấy.\n3. Dựng lịch hai session phân biệt RR consistent read với cur"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "answer",
+          "paragraph": 65,
+          "exactOpening": "1. T20 đọc9 từ version12, RTS12=20. T15 abort vì15<20. Nếu cho write15 tồn tại trước reader20 trong timestamp order, reader20 phải chọn version15, trái quan sát.\n2. Ví dụ (1,1), mỗi transaction đọc tổng2 rồi giảm một phòng nếu tổng>1. Hai write khác row cùng commit cho (0,0). Serial transaction thứ hai thấy tổng1 nên không giảm. Đáp án phải định ng"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.9.1",
+      "title": "Degree-Two Consistency",
+      "owners": [
+        "AD42"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1784,
+          1829
+        ],
+        "ownBodySha256": "6823663e82542c3572fe88680e937748c3dea916a144efd3d69df8555397f18e"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          905,
+          909
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "S read/X write, early S unlock and new locks with X held to outcome; no dirty read but nonrepeatable and duplicate/missed moved-key scan examples.",
+      "evidence": [
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "teaching",
+          "paragraph": 49,
+          "exactOpening": "Degree-two yêu cầu S cho read và X cho write; X giữ tới commit/abort nhưng S được nhả sớm và có thể xin lock mới sau đó. Nó tránh dirty read/cascade trong mô hình này, vẫn có nonrepeatable read: T1 đọc Q=5 rồi nhả S; T2 lấy X, ghi 9, commit; T1 lấy S lần nữa và thấy 9. Không có quy tắc growing/shrinking như 2PL."
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 50,
+          "exactOpening": "Một index scan còn có thể đếm trùng hoặc bỏ sót row nếu indexed key thay đổi giữa lúc đi qua các vị trí. Ví dụ scan key tăng dần đã đọc row ID7 tại key10; writer chuyển row ấy sang key90 trước khi scan tới90, nên scan có thể gặp ID7 lần nữa. Chiều ngược lại, writer chuyển từ90 về10 sau khi scan đã qua10 nhưng trước khi tới90, nên scan có thể không "
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "activity",
+          "paragraph": 60,
+          "exactOpening": "1. Versions X: (0,5),(12,9),(30,20), RTS ban đầu bằng WTS. T20 đọc rồi T15 ghi. Chọn version và quyết định; giải thích bằng serial order.\n2. Dựng write skew cho hai phòng có tổng chỗ trống không được dưới1. Ghi read/write sets và chứng minh hai serial orders đều không tạo kết quả lỗi ấy.\n3. Dựng lịch hai session phân biệt RR consistent read với cur"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "answer",
+          "paragraph": 65,
+          "exactOpening": "1. T20 đọc9 từ version12, RTS12=20. T15 abort vì15<20. Nếu cho write15 tồn tại trước reader20 trong timestamp order, reader20 phải chọn version15, trái quan sát.\n2. Ví dụ (1,1), mỗi transaction đọc tổng2 rồi giảm một phòng nếu tổng>1. Hai write khác row cùng commit cho (0,0). Serial transaction thứ hai thấy tổng1 nên không giảm. Đáp án phải định ng"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.9.2",
+      "title": "Cursor Stability",
+      "owners": [
+        "AD42"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1830,
+          1846
+        ],
+        "ownBodySha256": "bb53602b369469563e7ab5ea989665b1bdf4d7ffe67525caa7587a3b69043ec8"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          905,
+          909
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Current tuple shared protection, modified tuple X until outcome, no2PL serializability guarantee and application consistency responsibility.",
+      "evidence": [
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "teaching",
+          "paragraph": 51,
+          "exactOpening": "Cursor stability giữ S trên row đang xử lý, có thể nhả khi cursor đi tiếp; row đã sửa giữ X tới commit. Nó giúp tăng concurrency trên relation nóng, nhưng không tự giữ bất biến toàn tập kết quả. Chương trình dùng nó phải chịu trách nhiệm cho consistency theo nghiệp vụ và lịch được phép, thay vì gọi cursor là snapshot."
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 50,
+          "exactOpening": "Một index scan còn có thể đếm trùng hoặc bỏ sót row nếu indexed key thay đổi giữa lúc đi qua các vị trí. Ví dụ scan key tăng dần đã đọc row ID7 tại key10; writer chuyển row ấy sang key90 trước khi scan tới90, nên scan có thể gặp ID7 lần nữa. Chiều ngược lại, writer chuyển từ90 về10 sau khi scan đã qua10 nhưng trước khi tới90, nên scan có thể không "
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "activity",
+          "paragraph": 60,
+          "exactOpening": "1. Versions X: (0,5),(12,9),(30,20), RTS ban đầu bằng WTS. T20 đọc rồi T15 ghi. Chọn version và quyết định; giải thích bằng serial order.\n2. Dựng write skew cho hai phòng có tổng chỗ trống không được dưới1. Ghi read/write sets và chứng minh hai serial orders đều không tạo kết quả lỗi ấy.\n3. Dựng lịch hai session phân biệt RR consistent read với cur"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "answer",
+          "paragraph": 65,
+          "exactOpening": "1. T20 đọc9 từ version12, RTS12=20. T15 abort vì15<20. Nếu cho write15 tồn tại trước reader20 trong timestamp order, reader20 phải chọn version15, trái quan sát.\n2. Ví dụ (1,1), mỗi transaction đọc tổng2 rồi giảm một phòng nếu tổng>1. Hai write khác row cùng commit cho (0,0). Serial transaction thứ hai thấy tổng1 nên không giảm. Đáp án phải định ng"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "section": "18.9.3",
+      "title": "Concurrency Control Across User Interactions",
+      "owners": [
+        "AD42"
+      ],
+      "source": {
+        "path": "tmp/database-source/chapter-18.txt",
+        "sha256": "624f1aca126efa5c5ee3d7b2bc4ef32d399346d36c59b59e5ce874077bf52553",
+        "ownBodyLines": [
+          1847,
+          1927
+        ],
+        "ownBodySha256": "d92712e71db16e3aa0e8f0011faa9381f9efe9b7c65e320a7f1c63dbb4f0ea46"
+      },
+      "sourceReadEvidence": {
+        "ownBodyRead": true,
+        "readBatches": [
+          [
+            1040,
+            1349
+          ],
+          [
+            1350,
+            1927
+          ]
+        ],
+        "figurePagesVisuallyInspected": [
+          905,
+          909
+        ],
+        "baselineCredit": false,
+        "proofScope": "Source protocol and current full lesson compared; finite models supplement explicit conditional proofs, not a formal proof assistant."
+      },
+      "semanticStatus": "complete",
+      "contentComparison": "Long user-think lock/snapshot retention, split short transactions, atomic compare/version-increment all writes, no read validation/snapshot or serializability guarantee, full read-set extension.",
+      "evidence": [
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "teaching",
+          "paragraph": 53,
+          "exactOpening": "Tách thời gian người dùng suy nghĩ thành một cuộc hội thoại ở tầng ứng dụng: transaction ngắn đầu đọc dữ liệu/version rồi kết thúc; khi submit, transaction mới kiểm và ghi. Mỗi row đã sửa chỉ được cập nhật nếu version còn bằng bản đã đọc, đồng thời tăng version. Với nhiều row, mọi kiểm/ghi thuộc cùng transaction; một kiểm fail phải rollback cả nhóm"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "worked-example-or-algorithm",
+          "paragraph": 54,
+          "exactOpening": "Đó là optimistic control **không validate read set** nếu chỉ kiểm các row sẽ ghi. Nó không bảo đảm các lần đọc tạo thành một snapshot và không bảo đảm serializable. Hai bác sĩ mỗi người chỉ validate version row mình sửa vẫn có thể cùng qua vì write sets khác nhau. Muốn tương đương OCC của AD41 phải bảo vệ/validate cả miền read đã dùng, gồm predicat"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "activity",
+          "paragraph": 60,
+          "exactOpening": "1. Versions X: (0,5),(12,9),(30,20), RTS ban đầu bằng WTS. T20 đọc rồi T15 ghi. Chọn version và quyết định; giải thích bằng serial order.\n2. Dựng write skew cho hai phòng có tổng chỗ trống không được dưới1. Ghi read/write sets và chứng minh hai serial orders đều không tạo kết quả lỗi ấy.\n3. Dựng lịch hai session phân biệt RR consistent read với cur"
+        },
+        {
+          "path": "lessons/AD42.md",
+          "lessonSha256": "a5cf73a70cde889a93622e54e68be263485f16b617b93df383662bfcc9838180",
+          "kind": "answer",
+          "paragraph": 65,
+          "exactOpening": "1. T20 đọc9 từ version12, RTS12=20. T15 abort vì15<20. Nếu cho write15 tồn tại trước reader20 trong timestamp order, reader20 phải chọn version15, trái quan sát.\n2. Ví dụ (1,1), mỗi transaction đọc tổng2 rồi giảm một phòng nếu tổng>1. Hai write khác row cùng commit cho (0,0). Serial transaction thứ hai thấy tổng1 nên không giảm. Đáp án phải định ng"
+        }
+      ],
+      "gaps": []
+    }
+  ],
+  "checks": "qa/timestamp-mvcc-full-checks.json:20 checks,90 TO shuffles,85 GC choices and actual sequential SQLite version-update scenario.",
+  "sourceInterpretation": [
+    "Figure18.20 accompanying edge prose reverses writer labels; lesson uses independently derived read-old-version to actual writer edges.",
+    "Bank example final total arithmetic prose loses minus sign:100+200-200-200=-100. Authored example uses doctors with independently checked invariant.",
+    "MVTO write: after excluding TS<RTS and same-version rewrite, TS>=RTS is sufficient for creation; do not omit equality with a reader that has the same transaction timestamp.",
+    "Current product statements checked against primary docs; historical isolation-name/version claims not generalized."
+  ],
+  "primaryDocsChecked": [
+    "https://www.postgresql.org/docs/18/transaction-iso.html",
+    "https://dev.mysql.com/doc/refman/8.4/en/innodb-multi-versioning.html"
+  ]
+}

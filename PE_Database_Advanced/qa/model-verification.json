@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-05",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "closure reaches fixed point and rejects outside schema",
+      "passed": true
+    },
+    {
+      "name": "closure agrees with intersection of all FD-closed supersets",
+      "passed": true
+    },
+    {
+      "name": "conflict graph ignores read/read and independent items",
+      "passed": true
+    },
+    {
+      "name": "external sort boundary cases and exact I/O assumptions",
+      "passed": true
+    },
+    {
+      "name": "interval DP equals exhaustive parenthesization, not greedy",
+      "passed": true
+    },
+    {
+      "name": "ROWS/RANGE distinguish peer groups and preserve input",
+      "passed": true
+    },
+    {
+      "name": "Merkle teaching oracle visits only differing subtrees",
+      "passed": true
+    },
+    {
+      "name": "gcounter merges commute, associate and ignore duplicate states",
+      "passed": true
+    },
+    {
+      "name": "ARIES model repeats CLR and follows undoNext on all supported page states",
+      "passed": true
+    }
+  ],
+  "scope": "Finite browser teaching algorithms tested as pureJS, not CSS/UI, SQLengine or formal proof of arbitrary inputs."
+}

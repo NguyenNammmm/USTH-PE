@@ -1,0 +1,511 @@
+{
+  "date": "2026-11-05",
+  "scope": {
+    "engine": "Python stdlib sqlite3 3.53.1",
+    "finiteChecks": 34,
+    "resultFile": "output/database-advanced/qa/semantic-apps-full-checks.json",
+    "scope": "Single-process in-memory fixture SQL plus finite grant/response models. Includes exact SQL blocks extracted from lesson for constraints/assertion query.",
+    "notValidated": [
+      "MySQL or another server DB",
+      "JDBC/ODBC/Python remote drivers",
+      "Django/Hibernate runtime",
+      "real interleaved transactions/network",
+      "deployed web lab",
+      "production security/SSO/TLS/cryptography"
+    ]
+  },
+  "ledgerPath": "output/database-advanced/research/semantic-apps-full.json",
+  "ledgerSha256": "a100cea3587fec6b47c2b7a2cd732be0f3636784b0d5af16402ab8d12c53a3aa",
+  "scriptSha256": "e495e761ee55d0bf392630a6d356e291a19c76e20bb467faa1f8b331c8b982a5",
+  "lessonHashes": {
+    "AD11": "e17a1bc961050ea1deec0356a93237e47e4ce21a417d077463373978d762ca29",
+    "AD12": "bda188a6797e3b30e08a781db6fa54900d5d5abc7509fc6f480172df2aeaaa7e"
+  },
+  "inventorySha256": "5d0d4501d686d1d36cf16e960f8aecfc65a047b3d70032df3d07631abab6977b",
+  "assignedOwnBodies": 85,
+  "allWitnessLineRangesHashesVerified": true,
+  "frozenAD85": "08108aff10abdac7883d5ad965dfc2d6f3a6ffdf3b9218385d73e3f28d3ea4fe",
+  "checks": [
+    {
+      "name": "I1 NOT NULL",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "I1 UNIQUE",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "I1 strict positive CHECK",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "I1 nullable CHECK and repeated NULL UNIQUE",
+      "observed": [
+        [
+          1,
+          null
+        ],
+        [
+          2,
+          20
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          null
+        ],
+        [
+          2,
+          20
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "I1 salary zero rejected",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "I2 missing FK parent",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "I2 MATCH SIMPLE partial NULL",
+      "observed": [
+        [
+          null,
+          7
+        ]
+      ],
+      "expected": [
+        [
+          null,
+          7
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "I1 composite UNIQUE pair",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "I2 RESTRICT rejection",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "I2 RESTRICT post-state",
+      "observed": [
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          11
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          11
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "I2 CASCADE rejection",
+      "observed": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "I2 CASCADE post-state",
+      "observed": [
+        [
+          2,
+          11
+        ]
+      ],
+      "expected": [
+        [
+          2,
+          11
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "I2 SET NULL rejection",
+      "observed": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "I2 SET NULL post-state",
+      "observed": [
+        [
+          1,
+          null
+        ],
+        [
+          2,
+          11
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          null
+        ],
+        [
+          2,
+          11
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "I2 deferred final valid state",
+      "observed": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "A"
+        ]
+      ],
+      "expected": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "A"
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "I2 deferred commit missing parent fails",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "I2 explicit rollback after failed commit",
+      "observed": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "name": "I3 exact lesson query initial valid",
+      "observed": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "name": "I3 changed line counterexample",
+      "observed": [
+        [
+          1
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "I3 empty sum counterexample",
+      "observed": [
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "I3 NULL sum without COALESCE misses invoice3",
+      "observed": [
+        [
+          1
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "T1 default versus explicit NULL versus negative",
+      "observed": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          null
+        ],
+        [
+          3,
+          -5
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          null
+        ],
+        [
+          3,
+          -5
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "T1 text ordering fixture",
+      "observed": [
+        [
+          "003"
+        ],
+        [
+          "11"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "expected": [
+        [
+          "003"
+        ],
+        [
+          "11"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "T1 numeric ordering fixture",
+      "observed": [
+        [
+          "2"
+        ],
+        [
+          "003"
+        ],
+        [
+          "11"
+        ]
+      ],
+      "expected": [
+        [
+          "2"
+        ],
+        [
+          "003"
+        ],
+        [
+          "11"
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "T3 CTAS snapshot",
+      "observed": [
+        [
+          1,
+          10
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          10
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "T3 view after update",
+      "observed": [
+        [
+          1,
+          20
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          20
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "A1/A3 binding literal 1",
+      "observed": [
+        [
+          1
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "A1/A3 binding literal 2",
+      "observed": [
+        [
+          2
+        ]
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "AD11 transfer rollback checkpoint",
+      "observed": [
+        [
+          100
+        ],
+        [
+          100
+        ]
+      ],
+      "expected": [
+        [
+          100
+        ],
+        [
+          100
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "AD11 transfer committed post-state",
+      "observed": [
+        [
+          70
+        ],
+        [
+          130
+        ]
+      ],
+      "expected": [
+        [
+          70
+        ],
+        [
+          130
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "D1 guarded version sequential attempts",
+      "observed": [
+        1,
+        0
+      ],
+      "expected": [
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "name": "P1 model grant multiple paths first cut",
+      "observed": [
+        "R",
+        "U2",
+        "U3",
+        "U4"
+      ],
+      "expected": [
+        "R",
+        "U2",
+        "U3",
+        "U4"
+      ],
+      "passed": true
+    },
+    {
+      "name": "P1 model grant unrooted cycle second cut",
+      "observed": [
+        "R"
+      ],
+      "expected": [
+        "R"
+      ],
+      "passed": true
+    },
+    {
+      "name": "C1 model stale response suppression",
+      "observed": [
+        "La"
+      ],
+      "expected": [
+        "La"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

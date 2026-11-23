@@ -1,0 +1,479 @@
+{
+  "date": "2026-11-05",
+  "scope": "Bounded independent depth/answer/readability review of exactly 15 new Advanced lessons continuing after the old 85 lessons.",
+  "lessonIds": [
+    "AD02",
+    "AD03",
+    "AD04",
+    "AD05",
+    "AD06",
+    "AD07",
+    "AD08",
+    "AD09",
+    "AD55",
+    "AD56",
+    "AD57",
+    "AD58",
+    "AD59",
+    "AD83",
+    "AD84"
+  ],
+  "mappingRead": {
+    "path": "research/proposed-lessons.json",
+    "sha256": "ee5eb37173b7971da9a727e39f46fed5a1249d2908f0f72e413ab3f117bdb305"
+  },
+  "sourceExcerptScope": [
+    {
+      "path": "tmp/database-source/chapter-6.txt",
+      "sha256": "4b204a69a9ab10c143decda758ac0bc567bdf6343f419f8aebca076923ad575a",
+      "reviewedLineRanges": [
+        [
+          600,
+          668
+        ],
+        [
+          790,
+          875
+        ],
+        [
+          1000,
+          1060
+        ],
+        [
+          1200,
+          1235
+        ],
+        [
+          1480,
+          1520
+        ],
+        [
+          1781,
+          1812
+        ],
+        [
+          1937,
+          1955
+        ]
+      ],
+      "scope": "Selected actual explanatory/algorithm/definition excerpts, not an exhaustive paragraph audit of this entire source."
+    },
+    {
+      "path": "tmp/database-source/chapter-7.txt",
+      "sha256": "7aaa5ced0497caa7acc3d92f0bcf9bd19ae33dc660abd881f238087f8fc70de7",
+      "reviewedLineRanges": [
+        [
+          913,
+          1071
+        ],
+        [
+          1072,
+          1294
+        ],
+        [
+          1303,
+          1443
+        ],
+        [
+          1444,
+          1552
+        ],
+        [
+          1610,
+          1803
+        ],
+        [
+          2070,
+          2245
+        ]
+      ],
+      "scope": "Selected actual explanatory/algorithm/definition excerpts, not an exhaustive paragraph audit of this entire source."
+    },
+    {
+      "path": "tmp/database-source/online-27.txt",
+      "sha256": "7d8451938cd63e83912b5875a9282f75bc7dc272738678e0eed28bbfb7bfd795",
+      "reviewedLineRanges": [
+        [
+          175,
+          239
+        ],
+        [
+          248,
+          270
+        ],
+        [
+          308,
+          375
+        ]
+      ],
+      "scope": "Selected actual explanatory/algorithm/definition excerpts, not an exhaustive paragraph audit of this entire source."
+    },
+    {
+      "path": "tmp/database-source/online-28.txt",
+      "sha256": "602795323da3ba21e5dab4ed805ebf119fc3769fd60d5708625b7ee4a6b96960",
+      "reviewedLineRanges": [
+        [
+          12,
+          81
+        ],
+        [
+          109,
+          159
+        ],
+        [
+          200,
+          226
+        ],
+        [
+          240,
+          405
+        ],
+        [
+          406,
+          498
+        ]
+      ],
+      "scope": "Selected actual explanatory/algorithm/definition excerpts, not an exhaustive paragraph audit of this entire source."
+    },
+    {
+      "path": "tmp/database-source/online-32.txt",
+      "sha256": "1bde055d11bcc9f3f7e1b818a91bfdb1c97651ba98c5b5b4882bcb22bc397b37",
+      "reviewedLineRanges": [
+        [
+          466,
+          513
+        ],
+        [
+          800,
+          922
+        ],
+        [
+          1090,
+          1138
+        ],
+        [
+          1192,
+          1252
+        ],
+        [
+          1381,
+          1571
+        ],
+        [
+          1899,
+          2132
+        ],
+        [
+          2182,
+          2250
+        ]
+      ],
+      "scope": "Selected actual explanatory/algorithm/definition excerpts, not an exhaustive paragraph audit of this entire source."
+    },
+    {
+      "path": "tmp/database-source/appendix-a.txt",
+      "sha256": "829dd128bd466fbc0b8e8bd5a6d76d8e31e2f274b3b2a8e36f033470f94c8b9b",
+      "reviewedLineRanges": [
+        [
+          1,
+          305
+        ]
+      ],
+      "scope": "Selected actual explanatory/algorithm/definition excerpts, not an exhaustive paragraph audit of this entire source."
+    }
+  ],
+  "primaryUrlsRead": [
+    "https://www.postgresql.org/docs/18/indexes-index-only-scans.html",
+    "https://www.postgresql.org/docs/18/transaction-iso.html",
+    "https://www.postgresql.org/docs/18/xfunc-volatility.html",
+    "https://www.postgresql.org/docs/18/datatype-numeric.html",
+    "https://www.postgresql.org/docs/18/xfunc-c.html",
+    "https://www.postgresql.org/docs/18/storage-page-layout.html",
+    "https://raw.githubusercontent.com/postgres/postgres/REL_18_0/src/backend/utils/mmgr/mcxt.c",
+    "https://raw.githubusercontent.com/postgres/postgres/REL_18_0/src/include/executor/tuptable.h",
+    "https://raw.githubusercontent.com/postgres/postgres/REL_18_STABLE/src/include/nodes/nodes.h",
+    "https://raw.githubusercontent.com/postgres/postgres/REL_18_STABLE/src/backend/nodes/README"
+  ],
+  "lessons": [
+    {
+      "id": "AD02",
+      "path": "lessons/AD02.md",
+      "sha256": "94ab843957a00468931ea5935280eb228f4addcd2881a557333236dd89f15fe5",
+      "wordCountWhitespaceOnly": 2352,
+      "sourceFocus": "online 27.1–27.3",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Validated tuple/domain quantifiers and set/NULL boundary. Added inner-quantifier safety counterexample whose active domain is exactly {2}; supplied full DB-but-not-OS SQL answer.",
+      "depthTargetsReviewed": [
+        "quantifiers",
+        "safety",
+        "algebra correspondence",
+        "exact SQL answer"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    },
+    {
+      "id": "AD03",
+      "path": "lessons/AD03.md",
+      "sha256": "0286b36ef9aa1e6eb0901204b4e0e9975a68f54f21064ee28b42a405c86143d8",
+      "wordCountWhitespaceOnly": 2081,
+      "sourceFocus": "7.4.1–7.4.2",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Validated Armstrong soundness, closure invariant/termination, constructive two-tuple completeness, worklist assumptions and all exercise answers; clarified prose spacing.",
+      "depthTargetsReviewed": [
+        "soundness",
+        "closure trace",
+        "countermodel completeness",
+        "worklist/cost"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    },
+    {
+      "id": "AD04",
+      "path": "lessons/AD04.md",
+      "sha256": "a8de9b0fc3932be57608c2987a7ee803de6c27fe2931bf2413cbc0b94f4983fd",
+      "wordCountWhitespaceOnly": 2073,
+      "sourceFocus": "7.4.3–7.4.4",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Validated two directions of cover equivalence and all candidate keys. Added executable preservation pseudocode, multi-pass trace and cost bound.",
+      "depthTargetsReviewed": [
+        "minimal cover",
+        "key completeness",
+        "preservation fixpoint"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    },
+    {
+      "id": "AD05",
+      "path": "lessons/AD05.md",
+      "sha256": "91a89fa051b774872da302562afff51492762a0855d21a851e63c3435b1ba4c3",
+      "wordCountWhitespaceOnly": 2158,
+      "sourceFocus": "7.1–7.3; 7.5.1",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Validated binary lossless necessity/sufficiency and BCNF lossless invariant. Added finite projected-FD violation search and explicit exponential subset bound.",
+      "depthTargetsReviewed": [
+        "lossless proof",
+        "termination",
+        "FD projection",
+        "non-preservation witness"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    },
+    {
+      "id": "AD06",
+      "path": "lessons/AD06.md",
+      "sha256": "0669bc7c228b8e70e536480bbe41a6bdc65d08948e12a708403f0d5ad9804599",
+      "wordCountWhitespaceOnly": 2281,
+      "sourceFocus": "7.5.2–7.5.3",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Validated canonical-cover use in the 3NF proof and tuple-based lossless chase. Checked every synthesis/key/removal example and answer; preserved existing substantial proof.",
+      "depthTargetsReviewed": [
+        "3NF proof",
+        "preservation proof",
+        "lossless chase",
+        "key relation"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    },
+    {
+      "id": "AD07",
+      "path": "lessons/AD07.md",
+      "sha256": "bf5250a8a30ff047a5cce9c4cb7d0125f49dba18f6716a96bc2dba0b2eccb558",
+      "wordCountWhitespaceOnly": 2072,
+      "sourceFocus": "7.6; online 28.1",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Validated tuple-swapping, inference-rule conditions/soundness, 4NF decomposition and preservation warning. Completeness is accurately attributed to research referenced by the source, not claimed from examples.",
+      "depthTargetsReviewed": [
+        "MVD inference",
+        "4NF trace",
+        "lossless proof",
+        "schema-dependent restriction"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    },
+    {
+      "id": "AD08",
+      "path": "lessons/AD08.md",
+      "sha256": "2d937ffda052e4483482e198ddc3fd644207b5a807f621ed04d8cdd3369b1ee0",
+      "wordCountWhitespaceOnly": 2006,
+      "sourceFocus": "7.7; online 28.2–28.3",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Validated four-row JD and three-row counterexample, non-reducibility argument, source PJNF superkey criterion, finite instance checker and DKNF domain/key countermodel.",
+      "depthTargetsReviewed": [
+        "JD vs MVD",
+        "PJNF",
+        "instance checker invariant",
+        "DKNF"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    },
+    {
+      "id": "AD09",
+      "path": "lessons/AD09.md",
+      "sha256": "007a83a45139ac524c5db47be4d753398a052e5733cce57b8a938a8a28fc8412",
+      "wordCountWhitespaceOnly": 3499,
+      "sourceFocus": "6 selected mapping/extended-ER excerpts; 7.8–7.10",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Added temporal FD/key/FK/join semantics, concrete specialization/aggregation schema answer, bitemporal fixture, exact as-of SQL and overlap detector. Corrected an irrelevant Enrollment example in answer 3.",
+      "depthTargetsReviewed": [
+        "mapping encode/decode",
+        "ternary witness",
+        "temporal boundaries",
+        "full worked SQL"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    },
+    {
+      "id": "AD55",
+      "path": "lessons/AD55.md",
+      "sha256": "4657ea72ecb13b1ff07073b902289108900717ce7b65f2b8503b8ad7a6f2388a",
+      "wordCountWhitespaceOnly": 2688,
+      "sourceFocus": "online 32.1–32.4; PostgreSQL 18 index-only documentation",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Validated heap/ctid/visibility/partition/planner distinctions. Added deterministic 20,000-row generator with exact 200/19,800 counts and index-method preconditions.",
+      "depthTargetsReviewed": [
+        "storage/identity",
+        "index-only requirements",
+        "planner evidence",
+        "deterministic fixture"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    },
+    {
+      "id": "AD56",
+      "path": "lessons/AD56.md",
+      "sha256": "9e95df8a4256f2c47d802ee61eeec4dbdecde260bf950fc3dfb445ab4a98ad57",
+      "wordCountWhitespaceOnly": 2496,
+      "sourceFocus": "online 32.5; PostgreSQL 18 isolation documentation",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Validated RC/RR/SSI boundaries, locks, VACUUM and WAL limitations. Added a concrete READ COMMITTED coordination-gate schedule with induction proof; no PostgreSQL execution claim.",
+      "depthTargetsReviewed": [
+        "snapshot model",
+        "write skew",
+        "lock protocol",
+        "recovery/replication boundary"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    },
+    {
+      "id": "AD57",
+      "path": "lessons/AD57.md",
+      "sha256": "62c1e029de5286817373690d3acc72812dd0e5456a59bb95a98624585ac22927",
+      "wordCountWhitespaceOnly": 2893,
+      "sourceFocus": "online 32.6–32.7; PostgreSQL 18 volatility/numeric documentation",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Added aggregate transition/final functions, NULL/empty trace and invariant, closing source-content gap. Added full validated-rate PL/pgSQL fee answer and explicit STRICT/NaN/infinity policy.",
+      "depthTargetsReviewed": [
+        "type metadata",
+        "aggregate algorithm/proof",
+        "function solution",
+        "FDW boundary"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    },
+    {
+      "id": "AD58",
+      "path": "lessons/AD58.md",
+      "sha256": "5888fd48a4bb418387735b581d6ceb10c33da4304752e3d50fbd3b36e2e84542",
+      "wordCountWhitespaceOnly": 2550,
+      "sourceFocus": "online 32.8.1–32.8.3; 32.8.8–32.8.10; PostgreSQL 18 C functions",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Validated C promotion/overflow proof, STRICT contract, module/extension naming, catalog metadata and pull-scan invariant. Source-reading/build contracts remain separate from actual execution.",
+      "depthTargetsReviewed": [
+        "C arithmetic proof",
+        "NULL convention",
+        "source path",
+        "executor state"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    },
+    {
+      "id": "AD59",
+      "path": "lessons/AD59.md",
+      "sha256": "a63f1072441af00b61c5b731610417b5873993b2f061634af403c3961b29d242",
+      "wordCountWhitespaceOnly": 2806,
+      "sourceFocus": "Appendix A.1–A.2 actual schema/DDL excerpts; A.3 as stated source scope",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Validated 11 logical relations/12 physical PE tables, complete Section key and slot-group adaptation. Added full capacity/conflict/cycle detector SQL with exact outputs and missing-data boundaries.",
+      "depthTargetsReviewed": [
+        "schema fidelity",
+        "adversarial SQL",
+        "recursion proof",
+        "capacity concurrency contract"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    },
+    {
+      "id": "AD83",
+      "path": "lessons/AD83.md",
+      "sha256": "2e03a3ad2de19c6bfb4100740e782544ecb890be906f4ff6cf149d374dbbc77c",
+      "wordCountWhitespaceOnly": 2855,
+      "sourceFocus": "online 32.8.4; 32.8.8.1; REL_18_0 mcxt.c",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Validated ownership, reset/delete semantics against actual PG18 implementation, bounded-memory longest/top-two label algorithms and all answers. Retained explicit no-build/no-ABI claim.",
+      "depthTargetsReviewed": [
+        "memory lifetime",
+        "reset descendants",
+        "algorithm invariant/cost",
+        "rescan"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    },
+    {
+      "id": "AD84",
+      "path": "lessons/AD84.md",
+      "sha256": "450ec1cce36c23218c7b183d67728e1d7dac950907f66068a2355dabe12e5c20",
+      "wordCountWhitespaceOnly": 3084,
+      "sourceFocus": "online 32.8.5–32.8.7; PG18 nodes/tuple sources",
+      "review": "bounded-manual-source-aware-review-complete",
+      "resolvedFindings": "Validated cast assertions, generated Node support, tree deep-copy induction, Datum/null separation, layout arithmetic and borrowed-slot ownership. Retained model/source-reading-only status.",
+      "depthTargetsReviewed": [
+        "Node dispatch/copy",
+        "Datum/type/null",
+        "slot lifetime",
+        "layout model"
+      ],
+      "requiredSectionsPresent": true,
+      "balancedCodeFences": true
+    }
+  ],
+  "verification": {
+    "contentChecksArtifact": "qa/design-pg-content-checks.json",
+    "contentChecksPassed": true,
+    "contentChecksCount": 26,
+    "contentChecksKinds": "10 finite reference/model checks plus 16 actual MySQL 8.4.13 checks. The 256-instance BCNF enumeration is finite evidence, not the proof.",
+    "postCheckProseOnlyEdits": [
+      "AD05 projected-FD violation search explanation",
+      "AD55 index-only index-method preconditions"
+    ],
+    "sqlChangedAfterFinalEngineCheck": false,
+    "packagedInputArtifact": "qa/packaged-chinook-verification.json",
+    "packagedInputChecks": 13,
+    "packagedInputPassed": true,
+    "packagedInputSha256": "69b2dc90624250f3820c99cef4c8ae3ae7e3a35fd0b59413304328ea9a2def2b",
+    "spacingArtifact": "qa/design-pg-manual-spacing-changes.json",
+    "literalSpacingChanges": 250,
+    "serverLifecycle": "Started hidden task-local mysqld PID 34252. At shutdown guard PID was already absent; final Get-Process mysqld showed none. No other process was stopped."
+  },
+  "limits": [
+    "Not a 945-section semantic certification; section mappings/headings/word counts are not proof of completeness.",
+    "Selected source excerpts and complete assigned lessons were reviewed; this is not a paragraph-by-paragraph audit of all cited textbook chapters.",
+    "No PostgreSQL server, FDW endpoint, C compiler/ABI, extension build/load, memory instrumentation or crash/recovery experiment was run.",
+    "AD83/AD84 are source-reading/model lessons with reasoned expected results; branch source links are not fixed line assertions.",
+    "MySQL checks cover only named SQL/fixtures; AD56 gate/AD59 capacity concurrency were reasoned here, not newly executed concurrently.",
+    "No HTML/PDF/build/manifest files or old85 lessons were changed by this agent. Root must rebuild packaged outputs from final lesson files."
+  ]
+}

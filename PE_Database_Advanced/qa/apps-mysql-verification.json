@@ -1,0 +1,711 @@
+{
+  "date_utc": "2026-11-04T23:18:41.921322+00:00",
+  "scope": "Task-local MySQL 8.4.13; only pe_advanced_appsqa, pe_advanced_company and pe_advanced_northwind. No old85 schema modified; no blockchain engine or learner web runner executed.",
+  "observations": {
+    "engine": [
+      [
+        "8.4.13",
+        "ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION",
+        "REPEATABLE-READ"
+      ]
+    ],
+    "company_fk_edges": [
+      [
+        "department",
+        "mgr_ssn",
+        "employee",
+        "ssn"
+      ],
+      [
+        "dependent",
+        "essn",
+        "employee",
+        "ssn"
+      ],
+      [
+        "dept_locations",
+        "dnumber",
+        "department",
+        "dnumber"
+      ],
+      [
+        "employee",
+        "dno",
+        "department",
+        "dnumber"
+      ],
+      [
+        "employee",
+        "partner_ssn",
+        "employee",
+        "ssn"
+      ],
+      [
+        "employee",
+        "super_ssn",
+        "employee",
+        "ssn"
+      ],
+      [
+        "project",
+        "dnum",
+        "department",
+        "dnumber"
+      ],
+      [
+        "works_on",
+        "essn",
+        "employee",
+        "ssn"
+      ],
+      [
+        "works_on",
+        "pno",
+        "project",
+        "pnumber"
+      ]
+    ],
+    "ad60_report": [
+      [
+        21,
+        "PE School",
+        2,
+        "1040.0000",
+        "1040.00",
+        "1",
+        "520.00000000"
+      ],
+      [
+        22,
+        "Hanoi Lab",
+        1,
+        "1200.0000",
+        "400.00",
+        "0",
+        "1200.00000000"
+      ],
+      [
+        23,
+        "Hue Studio",
+        0,
+        "0.0000",
+        "0.00",
+        "0",
+        null
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "name": "transfer 30 pending",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          70
+        ],
+        [
+          2,
+          130
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          70
+        ],
+        [
+          2,
+          130
+        ]
+      ]
+    },
+    {
+      "name": "insufficient",
+      "passed": true,
+      "actual": 1644,
+      "expected": 1644
+    },
+    {
+      "name": "insufficient rollback balances",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          100
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          100
+        ]
+      ]
+    },
+    {
+      "name": "zero",
+      "passed": true,
+      "actual": 1644,
+      "expected": 1644
+    },
+    {
+      "name": "zero rollback balances",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          100
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          100
+        ]
+      ]
+    },
+    {
+      "name": "NULL amount",
+      "passed": true,
+      "actual": 1644,
+      "expected": 1644
+    },
+    {
+      "name": "NULL amount rollback balances",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          100
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          100
+        ]
+      ]
+    },
+    {
+      "name": "self",
+      "passed": true,
+      "actual": 1644,
+      "expected": 1644
+    },
+    {
+      "name": "self rollback balances",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          100
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          100
+        ]
+      ]
+    },
+    {
+      "name": "missing target",
+      "passed": true,
+      "actual": 1644,
+      "expected": 1644
+    },
+    {
+      "name": "missing target rollback balances",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          100
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          100
+        ]
+      ]
+    },
+    {
+      "name": "credit overflow propagated",
+      "passed": true,
+      "actual": 1264,
+      "expected": 1264
+    },
+    {
+      "name": "debit remains pending after credit error",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          95
+        ],
+        [
+          2,
+          2147483647
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          95
+        ],
+        [
+          2,
+          2147483647
+        ]
+      ]
+    },
+    {
+      "name": "caller rollback restores debit",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          2147483647
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          2147483647
+        ]
+      ]
+    },
+    {
+      "name": "cursor sum two accounts",
+      "passed": true,
+      "actual": [
+        [
+          200
+        ]
+      ],
+      "expected": [
+        [
+          200
+        ]
+      ]
+    },
+    {
+      "name": "cursor empty gives zero",
+      "passed": true,
+      "actual": [
+        [
+          0
+        ]
+      ],
+      "expected": [
+        [
+          0
+        ]
+      ]
+    },
+    {
+      "name": "cursor 0 7 13 sum",
+      "passed": true,
+      "actual": [
+        [
+          20
+        ]
+      ],
+      "expected": [
+        [
+          20
+        ]
+      ]
+    },
+    {
+      "name": "two-row threshold stocks",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          11
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          11
+        ]
+      ]
+    },
+    {
+      "name": "one threshold request",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          12
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          12
+        ]
+      ]
+    },
+    {
+      "name": "already below no new request",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          12
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          12
+        ]
+      ]
+    },
+    {
+      "name": "multirow CHECK failure",
+      "passed": true,
+      "actual": 3819,
+      "expected": 3819
+    },
+    {
+      "name": "failed statement restores rows preserves earlier statement",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          3,
+          30
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          3,
+          30
+        ]
+      ]
+    },
+    {
+      "name": "failed statement rolls back trigger inserts",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "full rollback removes earlier item3",
+      "passed": true,
+      "actual": [
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          15
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          15
+        ]
+      ]
+    },
+    {
+      "name": "DDL commits preceding DML",
+      "passed": true,
+      "actual": [
+        [
+          99
+        ]
+      ],
+      "expected": [
+        [
+          99
+        ]
+      ]
+    },
+    {
+      "name": "DELIMITER rejected by server API",
+      "passed": true,
+      "actual": 1064,
+      "expected": 1064
+    },
+    {
+      "name": "overlay explicitly single run",
+      "passed": true,
+      "actual": 1060,
+      "expected": 1060
+    },
+    {
+      "name": "Minit round-trip",
+      "passed": true,
+      "actual": [
+        [
+          "000000001",
+          "T"
+        ],
+        [
+          "000000002",
+          null
+        ]
+      ],
+      "expected": [
+        [
+          "000000001",
+          "T"
+        ],
+        [
+          "000000002",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "all six original PKs",
+      "passed": true,
+      "actual": {
+        "department": [
+          "dnumber"
+        ],
+        "employee": [
+          "ssn"
+        ],
+        "dept_locations": [
+          "dnumber",
+          "dlocation"
+        ],
+        "project": [
+          "pnumber"
+        ],
+        "works_on": [
+          "essn",
+          "pno"
+        ],
+        "dependent": [
+          "essn",
+          "dependent_name"
+        ]
+      },
+      "expected": {
+        "department": [
+          "dnumber"
+        ],
+        "employee": [
+          "ssn"
+        ],
+        "dept_locations": [
+          "dnumber",
+          "dlocation"
+        ],
+        "project": [
+          "pnumber"
+        ],
+        "works_on": [
+          "essn",
+          "pno"
+        ],
+        "dependent": [
+          "essn",
+          "dependent_name"
+        ]
+      }
+    },
+    {
+      "name": "eight source FK plus partner FK",
+      "passed": true,
+      "actual": 9,
+      "expected": 9
+    },
+    {
+      "name": "FK permits two-node supervisor cycle",
+      "passed": true,
+      "actual": [
+        [
+          "000000001",
+          "000000002"
+        ],
+        [
+          "000000002",
+          "000000001"
+        ]
+      ],
+      "expected": [
+        [
+          "000000001",
+          "000000002"
+        ],
+        [
+          "000000002",
+          "000000001"
+        ]
+      ]
+    },
+    {
+      "name": "Northwind customer report",
+      "passed": true,
+      "actual": [
+        [
+          21,
+          "PE School",
+          2,
+          "1040.0000",
+          "1040.00",
+          "1",
+          "520.00000000"
+        ],
+        [
+          22,
+          "Hanoi Lab",
+          1,
+          "1200.0000",
+          "400.00",
+          "0",
+          "1200.00000000"
+        ],
+        [
+          23,
+          "Hue Studio",
+          0,
+          "0.0000",
+          "0.00",
+          "0",
+          null
+        ]
+      ],
+      "expected": [
+        [
+          21,
+          "PE School",
+          2,
+          1040,
+          1040,
+          1,
+          520
+        ],
+        [
+          22,
+          "Hanoi Lab",
+          1,
+          1200,
+          400,
+          0,
+          1200
+        ],
+        [
+          23,
+          "Hue Studio",
+          0,
+          0,
+          0,
+          0,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "fanout counterexample order31",
+      "passed": true,
+      "actual": [
+        [
+          "2080.0000",
+          "2080.00"
+        ]
+      ],
+      "expected": [
+        [
+          2080,
+          2080
+        ]
+      ]
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "sha256": {
+    "lessons/AD60.md": "37d33390130d0f8dae1c435c0cee24c6c5ef22f84f4aa159106b3920b0883712",
+    "lessons/AD81.md": "8db8ac74a06f099a510c4edc496b7dac6c69757327154ef7750666775d1e55d4",
+    "lessons/AD82.md": "027b97916cf291a84cc3017519f96d9a1aa2aabcff44f8743bb47b43fd0c4761",
+    "lessons/AD85.md": "4cf9387a02beb1e3c1cffcc91eca1a13056e5760c375118f29f0f8f7c765f7c2",
+    "fixtures/company_advanced_overlay.sql": "4f04952d3e4aaefb98fe981d5179ed96727b5af44cf78df1454a866aa180df8f"
+  }
+}

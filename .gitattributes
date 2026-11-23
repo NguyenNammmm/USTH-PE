@@ -5,3 +5,5 @@ downloads/** -text
 # PE_Python_DA is mirrored byte-for-byte to the platform repo (tools/dong_bo.py);
 # do not let autocrlf rewrite line endings or the comparison reports false diffs.
 PE_Python_DA/** -text
+# PE_Database_Advanced keeps the release bytes so release-files.json SHA-256 checks hold on every OS.
+PE_Database_Advanced/** -text

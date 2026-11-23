@@ -1,0 +1,117 @@
+{
+  "date": "2026-11-05",
+  "passed": 21,
+  "checks": [
+    {
+      "name": "or-expression-branches",
+      "passed": true,
+      "scope": "Actual finite set evaluation; no RA parser execution."
+    },
+    {
+      "name": "west-screen-tree-answer",
+      "passed": true,
+      "scope": "Leaf/selection/projection/union tree reference result."
+    },
+    {
+      "name": "natural-selfjoin-mutant",
+      "passed": true,
+      "scope": "Leaving cost as an unintended natural-join equality loses the correct pair."
+    },
+    {
+      "name": "anti-semijoin-answer",
+      "passed": true,
+      "scope": "Universe is Room, not arbitrary strings."
+    },
+    {
+      "name": "semijoin-bag-contract",
+      "passed": true,
+      "scope": "Bag left duplicates versus right witness multiplication versus DISTINCT."
+    },
+    {
+      "name": "projection-schema-values",
+      "passed": true,
+      "scope": "Authored extended projection exercise; type/rounding assumptions separate."
+    },
+    {
+      "name": "primitive-intersection-derivation",
+      "passed": true,
+      "scope": "64 exhaustive subset pairs agree with derived intersection."
+    },
+    {
+      "name": "precedence-counterexample",
+      "passed": true,
+      "scope": "Parentheses change results under mixed union/intersection."
+    },
+    {
+      "name": "key-and-versus-or",
+      "passed": true,
+      "scope": "Source slide60 faulty AND misses pair differing in only one nonkey."
+    },
+    {
+      "name": "key-violation-oracle",
+      "passed": true,
+      "scope": "256 finite set instances compared against independent grouped-key oracle, no NULL/bags."
+    },
+    {
+      "name": "foreign-key-difference",
+      "passed": true,
+      "scope": "Missing-parent and empty-child inclusion cases."
+    },
+    {
+      "name": "implication-boundary-answers",
+      "passed": true,
+      "scope": "Strict/equality boundary cases for independently graded constraints."
+    },
+    {
+      "name": "conditional-disjunction",
+      "passed": true,
+      "scope": "Complete Boolean truth table, no SQL UNKNOWN."
+    },
+    {
+      "name": "cross-table-constraint",
+      "passed": true,
+      "scope": "Product/selection includes price-equality violation; empty input separately vacuous."
+    },
+    {
+      "name": "indirect-disjointness",
+      "passed": true,
+      "scope": "Explicit model membership join prevents makerN false positive."
+    },
+    {
+      "name": "insert-select-actual-sql",
+      "passed": true,
+      "scope": "Actual SQLite3.53.1 exact authored SQL fixture/INSERT SELECT; not native MySQL claim."
+    },
+    {
+      "name": "insert-select-duplicate",
+      "passed": true,
+      "scope": "Actual selected SQLite PK error on second insertion; no idempotence assumed."
+    },
+    {
+      "name": "four-dml-branches",
+      "passed": true,
+      "scope": "Four actual SQL branch executions restored to same original fixture via savepoints."
+    },
+    {
+      "name": "top-percent-window-query",
+      "passed": true,
+      "scope": "Exact authored window query executed on SQLite; ceil30% of filtered7, deterministic id tie-breaker, no SQL Server TOP execution."
+    },
+    {
+      "name": "top-percent-after-filter",
+      "passed": true,
+      "scope": "Recomputed COUNT OVER after eligibility filter leaves6 and ceil1.8=2."
+    },
+    {
+      "name": "all-supplement-activities-have-answers",
+      "passed": true,
+      "scope": "8+15+12 =35 authored questions/answers, numbering and fenced code balance checked separately from semantic review."
+    }
+  ],
+  "scope": "Finite original RA set/bag/arithmetic models and selected actual SQLite queries. No general RA parser, MySQL identifier/collation/DDL/FK/locking validation or web backend execution in this report. Historical/manual claims were source-reviewed separately.",
+  "lessons": {
+    "USTH01": "021afb504d0b0244494e5a77962bd4778668914e4a27384e70b1e5fea736af3a",
+    "USTH02": "7ba388a230dd2866d67971cbc0cf2452b24c44eb9cec5aa7dd477babaa53d12a",
+    "USTH03": "a26c1ba4a21c514513bee654a8eb1670a96f298458a47916c7db9a30032e717c"
+  }
+}

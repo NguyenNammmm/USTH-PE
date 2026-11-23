@@ -1,0 +1,869 @@
+{
+  "scope": "All lesson/source line witnesses after removing the four verified running header/footer text lines on every page; independent of layout/render review.",
+  "checks": [
+    {
+      "lesson": "AD01",
+      "pageStart": 13,
+      "pageEnd": 24,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 149,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD02",
+      "pageStart": 25,
+      "pageEnd": 31,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 81,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD03",
+      "pageStart": 56,
+      "pageEnd": 61,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 83,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD04",
+      "pageStart": 62,
+      "pageEnd": 66,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 66,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD05",
+      "pageStart": 67,
+      "pageEnd": 73,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 81,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD06",
+      "pageStart": 74,
+      "pageEnd": 79,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 66,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD07",
+      "pageStart": 80,
+      "pageEnd": 85,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 77,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD08",
+      "pageStart": 86,
+      "pageEnd": 90,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 61,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD09",
+      "pageStart": 91,
+      "pageEnd": 108,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 214,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD10",
+      "pageStart": 32,
+      "pageEnd": 42,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 159,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD11",
+      "pageStart": 110,
+      "pageEnd": 121,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 156,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD12",
+      "pageStart": 122,
+      "pageEnd": 134,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 141,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD13",
+      "pageStart": 135,
+      "pageEnd": 142,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 128,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD14",
+      "pageStart": 143,
+      "pageEnd": 152,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 122,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD15",
+      "pageStart": 153,
+      "pageEnd": 158,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 77,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD16",
+      "pageStart": 159,
+      "pageEnd": 170,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 154,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD17",
+      "pageStart": 171,
+      "pageEnd": 177,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 75,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD18",
+      "pageStart": 204,
+      "pageEnd": 208,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 60,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD19",
+      "pageStart": 209,
+      "pageEnd": 212,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 51,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD20",
+      "pageStart": 213,
+      "pageEnd": 218,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 91,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD21",
+      "pageStart": 219,
+      "pageEnd": 224,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 67,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD22",
+      "pageStart": 225,
+      "pageEnd": 229,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 67,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD23",
+      "pageStart": 255,
+      "pageEnd": 263,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 90,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD24",
+      "pageStart": 264,
+      "pageEnd": 270,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 88,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD25",
+      "pageStart": 271,
+      "pageEnd": 276,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 84,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD26",
+      "pageStart": 277,
+      "pageEnd": 282,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 64,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD27",
+      "pageStart": 283,
+      "pageEnd": 288,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 81,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD28",
+      "pageStart": 289,
+      "pageEnd": 296,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 97,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD29",
+      "pageStart": 297,
+      "pageEnd": 302,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 74,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD30",
+      "pageStart": 303,
+      "pageEnd": 309,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 79,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD31",
+      "pageStart": 310,
+      "pageEnd": 314,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 64,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD32",
+      "pageStart": 325,
+      "pageEnd": 328,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 49,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD33",
+      "pageStart": 329,
+      "pageEnd": 335,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 80,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD34",
+      "pageStart": 336,
+      "pageEnd": 342,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 71,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD35",
+      "pageStart": 343,
+      "pageEnd": 350,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 111,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD36",
+      "pageStart": 351,
+      "pageEnd": 356,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 98,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD37",
+      "pageStart": 357,
+      "pageEnd": 363,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 79,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD38",
+      "pageStart": 379,
+      "pageEnd": 385,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 110,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD39",
+      "pageStart": 386,
+      "pageEnd": 391,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 76,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD40",
+      "pageStart": 392,
+      "pageEnd": 397,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 75,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD41",
+      "pageStart": 398,
+      "pageEnd": 402,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 69,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD42",
+      "pageStart": 403,
+      "pageEnd": 410,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 103,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD43",
+      "pageStart": 411,
+      "pageEnd": 418,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 101,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD44",
+      "pageStart": 419,
+      "pageEnd": 425,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 101,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD45",
+      "pageStart": 426,
+      "pageEnd": 430,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 58,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD46",
+      "pageStart": 438,
+      "pageEnd": 445,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 91,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD47",
+      "pageStart": 446,
+      "pageEnd": 451,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 67,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD48",
+      "pageStart": 452,
+      "pageEnd": 458,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 85,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD49",
+      "pageStart": 459,
+      "pageEnd": 465,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 80,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD50",
+      "pageStart": 466,
+      "pageEnd": 472,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 101,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD51",
+      "pageStart": 473,
+      "pageEnd": 479,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 79,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD52",
+      "pageStart": 480,
+      "pageEnd": 486,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 83,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD53",
+      "pageStart": 525,
+      "pageEnd": 537,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 152,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD54",
+      "pageStart": 538,
+      "pageEnd": 541,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 45,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD55",
+      "pageStart": 554,
+      "pageEnd": 563,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 132,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD56",
+      "pageStart": 564,
+      "pageEnd": 571,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 97,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD57",
+      "pageStart": 572,
+      "pageEnd": 580,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 137,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD58",
+      "pageStart": 581,
+      "pageEnd": 590,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 137,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD59",
+      "pageStart": 606,
+      "pageEnd": 614,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 208,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD60",
+      "pageStart": 615,
+      "pageEnd": 621,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 141,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD61",
+      "pageStart": 43,
+      "pageEnd": 48,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 78,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD62",
+      "pageStart": 487,
+      "pageEnd": 491,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 57,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD63",
+      "pageStart": 431,
+      "pageEnd": 436,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 64,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD64",
+      "pageStart": 492,
+      "pageEnd": 498,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 87,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD65",
+      "pageStart": 499,
+      "pageEnd": 505,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 82,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD66",
+      "pageStart": 506,
+      "pageEnd": 511,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 70,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD67",
+      "pageStart": 49,
+      "pageEnd": 54,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 99,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD68",
+      "pageStart": 178,
+      "pageEnd": 185,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 137,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD69",
+      "pageStart": 186,
+      "pageEnd": 192,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 84,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD70",
+      "pageStart": 230,
+      "pageEnd": 233,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 43,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD71",
+      "pageStart": 234,
+      "pageEnd": 238,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 55,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD72",
+      "pageStart": 239,
+      "pageEnd": 246,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 80,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD73",
+      "pageStart": 247,
+      "pageEnd": 253,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 73,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD74",
+      "pageStart": 315,
+      "pageEnd": 319,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 54,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD75",
+      "pageStart": 320,
+      "pageEnd": 323,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 57,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD76",
+      "pageStart": 364,
+      "pageEnd": 368,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 59,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD77",
+      "pageStart": 369,
+      "pageEnd": 373,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 62,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD78",
+      "pageStart": 374,
+      "pageEnd": 377,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 59,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD79",
+      "pageStart": 512,
+      "pageEnd": 516,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 62,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD80",
+      "pageStart": 517,
+      "pageEnd": 523,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 89,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD81",
+      "pageStart": 542,
+      "pageEnd": 546,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 55,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD82",
+      "pageStart": 547,
+      "pageEnd": 552,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 83,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD83",
+      "pageStart": 591,
+      "pageEnd": 597,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 103,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD84",
+      "pageStart": 598,
+      "pageEnd": 604,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 100,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "AD85",
+      "pageStart": 193,
+      "pageEnd": 202,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 140,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "USTH01",
+      "pageStart": 623,
+      "pageEnd": 627,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 68,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "USTH02",
+      "pageStart": 628,
+      "pageEnd": 634,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 93,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "USTH03",
+      "pageStart": 635,
+      "pageEnd": 642,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 160,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "USTH04",
+      "pageStart": 643,
+      "pageEnd": 648,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 85,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "USTH05",
+      "pageStart": 649,
+      "pageEnd": 654,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 86,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "USTH06",
+      "pageStart": 655,
+      "pageEnd": 661,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 98,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "USTH07",
+      "pageStart": 662,
+      "pageEnd": 669,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 156,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "USTH08",
+      "pageStart": 670,
+      "pageEnd": 674,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 76,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "USTH09",
+      "pageStart": 675,
+      "pageEnd": 680,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 86,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "USTH10",
+      "pageStart": 681,
+      "pageEnd": 689,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 229,
+      "missingLineWitnesses": []
+    },
+    {
+      "lesson": "USTH11",
+      "pageStart": 690,
+      "pageEnd": 697,
+      "allHeadingsPresent": true,
+      "openingClosingWitnessesPresent": true,
+      "lineWitnessesChecked": 230,
+      "missingLineWitnesses": []
+    }
+  ]
+}

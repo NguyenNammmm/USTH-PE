@@ -1,0 +1,638 @@
+{
+  "date": "2026-11-05",
+  "scope": [
+    "AD01",
+    "AD10",
+    "AD11",
+    "AD12",
+    "AD13",
+    "AD14",
+    "AD15",
+    "AD16",
+    "AD17",
+    "AD18",
+    "AD19",
+    "AD20",
+    "AD21",
+    "AD22",
+    "AD68",
+    "AD69",
+    "AD70",
+    "AD71",
+    "AD72",
+    "AD73"
+  ],
+  "kind": "bounded-source-and-model-review",
+  "finiteChecks": [
+    {
+      "name": "AD22 BFS independent queue reference",
+      "actual": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 2,
+        "E": 3
+      },
+      "expected": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 2,
+        "E": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "AD22 BFS self-loop unchanged",
+      "actual": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 2,
+        "E": 3
+      },
+      "expected": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 2,
+        "E": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "AD22 transfer graph",
+      "actual": {
+        "S": 0,
+        "T": 1,
+        "U": 1,
+        "V": 2,
+        "W": 3
+      },
+      "expected": {
+        "S": 0,
+        "T": 1,
+        "U": 1,
+        "V": 2,
+        "W": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "AD22 synchronous round 1",
+      "actual": {
+        "A": 0,
+        "B": 10,
+        "C": 1
+      },
+      "expected": {
+        "A": 0,
+        "B": 10,
+        "C": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "AD22 synchronous round 2",
+      "actual": {
+        "A": 0,
+        "B": 2,
+        "C": 1
+      },
+      "expected": {
+        "A": 0,
+        "B": 2,
+        "C": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "AD15 quadratic split seed pair",
+      "actual": [
+        "A",
+        "B"
+      ],
+      "expected": [
+        "A",
+        "B"
+      ],
+      "passed": true
+    },
+    {
+      "name": "AD15 seed wasted area",
+      "actual": 98,
+      "expected": 98,
+      "passed": true
+    },
+    {
+      "name": "AD15 C enlargement",
+      "actual": [
+        1,
+        89
+      ],
+      "expected": [
+        1,
+        89
+      ],
+      "passed": true
+    },
+    {
+      "name": "AD15 final page areas",
+      "actual": [
+        2,
+        2
+      ],
+      "expected": [
+        2,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "name": "AD18 simultaneous join insert delta",
+      "actual": 7,
+      "expected": 7,
+      "passed": true
+    },
+    {
+      "name": "AD18 projection witness survives first deletion",
+      "actual": [
+        "A",
+        "B"
+      ],
+      "expected": [
+        "A",
+        "B"
+      ],
+      "passed": true
+    },
+    {
+      "name": "AD18 outer first match deletes null row",
+      "actual": [
+        [
+          "r1",
+          "s1"
+        ]
+      ],
+      "expected": [
+        [
+          "r1",
+          "s1"
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "AD69 TF-IDF ranking",
+      "actual": [
+        "d1",
+        "d3",
+        "d2"
+      ],
+      "expected": [
+        "d1",
+        "d3",
+        "d2"
+      ],
+      "passed": true
+    },
+    {
+      "name": "AD69 d1 score",
+      "actual": 0.39925384810888576,
+      "expected": 0.399253848,
+      "passed": true
+    },
+    {
+      "name": "AD69 cosine",
+      "actual": 0.7071067811865475,
+      "expected": 0.7071067811865475,
+      "passed": true
+    },
+    {
+      "name": "AD69 PageRank mass",
+      "actual": 1.0,
+      "expected": 1.0,
+      "passed": true
+    },
+    {
+      "name": "AD69 PageRank second round A",
+      "actual": 0.3758333333333333,
+      "expected": 0.3758333333333333,
+      "passed": true
+    },
+    {
+      "name": "AD69 HITS hub ratio",
+      "actual": 1.5,
+      "expected": 1.5,
+      "passed": true
+    },
+    {
+      "name": "AD17 AP denominator four",
+      "actual": 0.41666666666666663,
+      "expected": 0.4166666666666667,
+      "passed": true
+    },
+    {
+      "name": "AD21 hopping totals",
+      "actual": [
+        10,
+        8,
+        5
+      ],
+      "expected": [
+        10,
+        8,
+        5
+      ],
+      "passed": true
+    },
+    {
+      "name": "AD21 sliding at12 with open left endpoint",
+      "actual": 6,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "name": "AD21 watermark trace",
+      "actual": [
+        -1,
+        4,
+        4,
+        9,
+        11
+      ],
+      "expected": [
+        -1,
+        4,
+        4,
+        9,
+        11
+      ],
+      "passed": true
+    },
+    {
+      "name": "AD21 CEP two fails inside60 seconds at success40",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "AD21 CEP expired prefix at success80",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "AD19 F1 from counts",
+      "actual": 0.8181818181818182,
+      "expected": 0.8181818181818182,
+      "passed": true
+    },
+    {
+      "name": "AD70 split1.5 Gini gain",
+      "actual": 0.16666666666666669,
+      "expected": 0.16666666666666666,
+      "passed": true
+    },
+    {
+      "name": "AD71 association lift",
+      "actual": 0.8888888888888888,
+      "expected": 0.8888888888888888,
+      "passed": true
+    },
+    {
+      "name": "AD71 kmeans SSE",
+      "actual": 4,
+      "expected": 4,
+      "passed": true
+    },
+    {
+      "name": "AD71 single-link final distance",
+      "actual": 6,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "name": "AD71 complete-link final distance",
+      "actual": 10,
+      "expected": 10,
+      "passed": true
+    },
+    {
+      "name": "AD72 missing cube grouping",
+      "actual": [
+        15,
+        20
+      ],
+      "expected": [
+        15,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "name": "AD16 DFS descendant test",
+      "actual": [
+        true,
+        true,
+        false
+      ],
+      "expected": [
+        true,
+        true,
+        false
+      ],
+      "passed": true
+    }
+  ],
+  "passed": 32,
+  "total": 32,
+  "lessons": [
+    {
+      "id": "AD01",
+      "sha256": "b722370a79dad863c60bcf514cbd729167c1ebe2bfa232a0a18c22d0764d58e0",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD10",
+      "sha256": "8d20e0bd47fb393645064e1655863b48235ecab8e05837e8ced8ceb4f519a6e0",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD11",
+      "sha256": "95cacd889a71af5a914f7692f77c46ae8c6a76513afe646906172fdcba909855",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD12",
+      "sha256": "4f335a39f5caf421487a95bb835d7493e14d6da1ca0887ed2c6a50f713a4be74",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD13",
+      "sha256": "2a6152f74f9f225102c2b63241f437a6252a4687dbf1f6bfe7a5b3c8e1dfc082",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD14",
+      "sha256": "ef4b0222ec4e7d7620b1e88ee4dce51c1bc4bf2200f5c11df39c41383de609e9",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD15",
+      "sha256": "8c778befe5b4d79ecb5ea703252a16944b9b1da835fbc8e7c9687173081934c7",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD16",
+      "sha256": "c5831347ca3af3e85730b4567085b099d089facc18f5b39b4ed3a382fcebde78",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD17",
+      "sha256": "606410e0f22f5ab761fe1700bd2c9d07f4880a9cc043ed81c5803f508bb2dd3e",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD18",
+      "sha256": "599da32b0136955a0c2e14c8343e62aa9f7d43fbfed1a5d920a105890cb044a9",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD19",
+      "sha256": "ae5b95ead41b43cc88e9345ea08ea141bbaf9841bcc19cc14d4be9f594d9d9c1",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD20",
+      "sha256": "dd63e8e419635a716e3b9272fa5b8b3d555e0ede6fcfc6edaf000ce909f2d0c1",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD21",
+      "sha256": "3614aae667d09d5e4f5b36be9fb8bc3492f922cf962cba74740ef822f3297291",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD22",
+      "sha256": "53a10c87411ee4d175b64b0b486a38b15e4da9805b07bfad7c0bac307e25a4c6",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD68",
+      "sha256": "59652f9da821f9ed9acc13219044c93bc2d35ff7972c04d0439583c08675a51c",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD69",
+      "sha256": "3c8a2ec761a013fbdd3319a793e58271e1094e59fe4c3f8f477776258b37b4e7",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD70",
+      "sha256": "f50272ec501b53dcbc8494ec17b4f6e24888d8e89cf9c9410bd5ad06e024c593",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD71",
+      "sha256": "47931fe33b9967f494be8f048b630795515863c87d8ed2d3dbb76cdee6e0af88",
+      "questionCount": 5,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD72",
+      "sha256": "872f1bae2c3e1e379aecac05e0a103dd7b240c02f196b42e4098023b1b99edea",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    },
+    {
+      "id": "AD73",
+      "sha256": "2aca3672bd83fb4da7ed686351a7b24f23318feac0a35838dcac9cb03faad1b6",
+      "questionCount": 4,
+      "sections": {
+        "Luyện tập": true,
+        "Gợi ý": true,
+        "Đáp án và lập luận": true,
+        "Biến thể và cách kiểm": true,
+        "Học trên web": true,
+        "Nguồn và đối chiếu": true
+      },
+      "balancedFences": true
+    }
+  ],
+  "limits": [
+    "No native SQL/XML/RDF/graph/cluster execution in this pass.",
+    "Finite calculations are not general correctness proofs.",
+    "Not a semantic certification of all 945 source inventory entries.",
+    "HTML/PDF rendering is owned by the root packaging task."
+  ]
+}

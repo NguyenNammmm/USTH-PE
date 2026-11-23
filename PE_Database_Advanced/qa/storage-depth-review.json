@@ -1,0 +1,1434 @@
+{
+  "date": "2026-11-05",
+  "reviewType": "Bounded independent source-aware depth and readability audit, continuation after prior stopped pass",
+  "scope": {
+    "lessonIds": [
+      "AD23",
+      "AD24",
+      "AD25",
+      "AD26",
+      "AD27",
+      "AD28",
+      "AD29",
+      "AD30",
+      "AD31",
+      "AD32",
+      "AD33",
+      "AD34",
+      "AD35",
+      "AD36",
+      "AD37",
+      "AD74",
+      "AD75",
+      "AD76",
+      "AD77",
+      "AD78",
+      "AD79",
+      "AD80"
+    ],
+    "lessonCount": 22,
+    "lessonBodiesReadInFull": [
+      "AD23",
+      "AD24",
+      "AD25",
+      "AD26",
+      "AD27",
+      "AD28",
+      "AD29",
+      "AD30",
+      "AD31",
+      "AD32",
+      "AD33",
+      "AD34",
+      "AD35",
+      "AD36",
+      "AD37",
+      "AD74",
+      "AD75",
+      "AD76",
+      "AD77",
+      "AD78",
+      "AD79",
+      "AD80"
+    ],
+    "lessonBodiesModifiedInContinuation": [
+      "AD24",
+      "AD25",
+      "AD26",
+      "AD27",
+      "AD29",
+      "AD30",
+      "AD31",
+      "AD32",
+      "AD33",
+      "AD34",
+      "AD35",
+      "AD36",
+      "AD37",
+      "AD74",
+      "AD75",
+      "AD76",
+      "AD77",
+      "AD78",
+      "AD79",
+      "AD80"
+    ],
+    "modifiedLessonCount": 20,
+    "sourceReading": "Targeted local extracted-text excerpts listed below; not a line-by-line audit of every mapped source section",
+    "mappingRead": "output/database-advanced/research/proposed-lessons.json; unchanged"
+  },
+  "sourceExcerpts": {
+    "chapter-12.txt": {
+      "ranges": [
+        [
+          518,
+          573
+        ],
+        [
+          799,
+          863
+        ]
+      ],
+      "focus": "RAID parity/update equation and levels; elevator scheduling, extents, nonvolatile write buffer",
+      "path": "C:\\Users\\HOME\\Documents\\ChatGPT\\PE USTH\\tmp\\database-source\\chapter-12.txt",
+      "lineNumbering": "1-based raw extracted-text lines; ranges are selected displayed excerpts, not full-section coverage",
+      "sha256": "bf4d14d054e40d7388693aff92467890a90a3650f23e30790a6073bc2d26356c"
+    },
+    "chapter-13.txt": {
+      "ranges": [
+        [
+          296,
+          374
+        ],
+        [
+          444,
+          500
+        ],
+        [
+          914,
+          1021
+        ],
+        [
+          1119,
+          1168
+        ],
+        [
+          1169,
+          1223
+        ],
+        [
+          1397,
+          1453
+        ]
+      ],
+      "focus": "Variable records/slotted pages; hierarchical max free-space map; pin/shared-exclusive/output/force; write reordering; column layout and chunked main-memory arrays",
+      "path": "C:\\Users\\HOME\\Documents\\ChatGPT\\PE USTH\\tmp\\database-source\\chapter-13.txt",
+      "lineNumbering": "1-based raw extracted-text lines; ranges are selected displayed excerpts, not full-section coverage",
+      "sha256": "cc97f95f498e1d458c3bd7d22ff8561bab1960bb2b6e06a2316a4314a39e52a5"
+    },
+    "chapter-14.txt": {
+      "ranges": [
+        [
+          138,
+          166
+        ],
+        [
+          338,
+          356
+        ],
+        [
+          409,
+          478
+        ],
+        [
+          901,
+          949
+        ],
+        [
+          1055,
+          1150
+        ],
+        [
+          1311,
+          1396
+        ],
+        [
+          1715,
+          1756
+        ],
+        [
+          1811,
+          1825
+        ],
+        [
+          1991,
+          2036
+        ],
+        [
+          2328,
+          2375
+        ]
+      ],
+      "focus": "Dense/sparse/multilevel/update; B+ insertion/deletion/redistribution/relocation/strings; multiple-key and covering; buffer trees; current/history temporal index",
+      "path": "C:\\Users\\HOME\\Documents\\ChatGPT\\PE USTH\\tmp\\database-source\\chapter-14.txt",
+      "lineNumbering": "1-based raw extracted-text lines; ranges are selected displayed excerpts, not full-section coverage",
+      "sha256": "dbc1dc462579cd46e4eadd7cc6078dea8a157232acec59a666dbb6f12b4e94ba"
+    },
+    "chapter-15.txt": {
+      "ranges": [
+        [
+          588,
+          686
+        ],
+        [
+          700,
+          719
+        ],
+        [
+          755,
+          796
+        ],
+        [
+          816,
+          853
+        ],
+        [
+          1134,
+          1170
+        ],
+        [
+          1185,
+          1227
+        ],
+        [
+          1248,
+          1255
+        ],
+        [
+          1363,
+          1407
+        ],
+        [
+          1486,
+          1521
+        ],
+        [
+          1608,
+          1635
+        ]
+      ],
+      "focus": "External-sort transfer/seek formulas; tuple/block/index loops; hash recursive/overflow/cost; hybrid setup; projection/set/aggregation; demand/producer-driven pipeline",
+      "path": "C:\\Users\\HOME\\Documents\\ChatGPT\\PE USTH\\tmp\\database-source\\chapter-15.txt",
+      "lineNumbering": "1-based raw extracted-text lines; ranges are selected displayed excerpts, not full-section coverage",
+      "sha256": "5cd4c1bcb2f080c17bbcc53a804b494cd5c8d6ff847bd9157bb17fbd16e28072"
+    },
+    "chapter-16.txt": {
+      "ranges": [
+        [
+          182,
+          397
+        ],
+        [
+          561,
+          622
+        ],
+        [
+          644,
+          685
+        ],
+        [
+          725,
+          763
+        ],
+        [
+          845,
+          981
+        ],
+        [
+          1003,
+          1126
+        ],
+        [
+          1322,
+          1431
+        ],
+        [
+          1538,
+          1564
+        ],
+        [
+          1591,
+          1645
+        ],
+        [
+          1699,
+          1761
+        ],
+        [
+          1786,
+          1826
+        ]
+      ],
+      "focus": "Equivalence guards/worklist enumeration; catalog/histogram/selection/join/distinct estimates; DP/indexed-loop exception; semijoin; aggregate maintenance; top-K/Halloween/parametric/adaptive",
+      "path": "C:\\Users\\HOME\\Documents\\ChatGPT\\PE USTH\\tmp\\database-source\\chapter-16.txt",
+      "lineNumbering": "1-based raw extracted-text lines; ranges are selected displayed excerpts, not full-section coverage",
+      "sha256": "a48cd81a337c5cfec269230f835bcce0d7a0850a42f994caf239e4d8ac47a47b"
+    },
+    "chapter-20.txt": {
+      "ranges": [
+        [
+          1054,
+          1098
+        ],
+        [
+          1158,
+          1201
+        ],
+        [
+          1235,
+          1261
+        ],
+        [
+          1396,
+          1438
+        ]
+      ],
+      "focus": "Distributed/local/global boundaries; 2PC overview; cloud service models/elasticity and benefits/limitations",
+      "path": "C:\\Users\\HOME\\Documents\\ChatGPT\\PE USTH\\tmp\\database-source\\chapter-20.txt",
+      "lineNumbering": "1-based raw extracted-text lines; ranges are selected displayed excerpts, not full-section coverage",
+      "sha256": "0b0e109743ee922106ea3f12bda108e2e61b4811727c7f14cf22872ad18a5085"
+    },
+    "chapter-22.txt": {
+      "ranges": [
+        [
+          703,
+          744
+        ],
+        [
+          811,
+          920
+        ],
+        [
+          920,
+          967
+        ],
+        [
+          1125,
+          1159
+        ],
+        [
+          1208,
+          1257
+        ],
+        [
+          1303,
+          1379
+        ]
+      ],
+      "focus": "Exchange model; join→group plan and partial aggregation; task replay; parallel plan properties; optimization heuristics; parallel view-maintenance routing",
+      "path": "C:\\Users\\HOME\\Documents\\ChatGPT\\PE USTH\\tmp\\database-source\\chapter-22.txt",
+      "lineNumbering": "1-based raw extracted-text lines; ranges are selected displayed excerpts, not full-section coverage",
+      "sha256": "dc371313cff53b8ca26f1b3170face0631cd29b7b90007e77f6b47f658418698"
+    },
+    "chapter-24.txt": {
+      "ranges": [
+        [
+          13,
+          40
+        ],
+        [
+          68,
+          144
+        ],
+        [
+          182,
+          281
+        ],
+        [
+          466,
+          489
+        ],
+        [
+          1028,
+          1038
+        ],
+        [
+          1137,
+          1269
+        ]
+      ],
+      "focus": "Bloom build/test; basic/rolling/stepped merge and amortized cost; bitmap/RID crossover; extendible deletion/coalescing exercise, overflow and linear-hashing bibliographic boundary",
+      "path": "C:\\Users\\HOME\\Documents\\ChatGPT\\PE USTH\\tmp\\database-source\\chapter-24.txt",
+      "lineNumbering": "1-based raw extracted-text lines; ranges are selected displayed excerpts, not full-section coverage",
+      "sha256": "0c44004baee3dcf85372b000cb9df1c0057ac7e2b572d4fe812833a02669fcca"
+    }
+  },
+  "flags": [
+    {
+      "id": "SD01",
+      "lessonId": "AD24",
+      "kind": "source-depth-gap",
+      "sourceSections": [
+        "13.3.1"
+      ],
+      "gap": "Free-space map only chose between individual pages; no hierarchical maximum search or prune invariant.",
+      "fix": "Added max-map algorithm, eight-page trace, recheck/quantization boundary, termination/proof, independent exercise 5 and worked answer.",
+      "status": "fixed"
+    },
+    {
+      "id": "SD02",
+      "lessonId": "AD26",
+      "kind": "source-depth-gap",
+      "sourceSections": [
+        "13.7"
+      ],
+      "gap": "Main-memory column discussion omitted chunk indirection/address calculation for append.",
+      "fix": "Added divmod address calculation, append example, bounds/publication condition, and exercise/answer 5.",
+      "status": "fixed"
+    },
+    {
+      "id": "SD03",
+      "lessonId": "AD29",
+      "kind": "algorithm-gap-and-attribution",
+      "sourceSections": [
+        "24.5.2.2",
+        "24.5.2.3"
+      ],
+      "gap": "Extendible delete merge/shrink was only a sentence; linear algorithm could be mistaken for supplied source exposition.",
+      "fix": "Added buddy guards, full alias redirection, shrink loop, exact trace/proof and exercise/answer 5. Labeled coalesce as a PE solution to source exercise and linear hashing as extension to the source bibliographic mention.",
+      "status": "fixed"
+    },
+    {
+      "id": "SD04",
+      "lessonId": "AD35",
+      "kind": "source-depth-gap",
+      "sourceSections": [
+        "16.2.1",
+        "16.2.4",
+        "16.3.5"
+      ],
+      "gap": "Assigned equivalence/enumeration and downstream distinct estimation had only brief warnings.",
+      "fix": "Added guarded bag-preserving filter proof, join/projection/group/outer-join examples, fixed-point worklist with finite-space/closure proof, distinct propagation bounds and empty-result boundary; independent exercises/answers 5–6.",
+      "status": "fixed"
+    },
+    {
+      "id": "SD05",
+      "lessonId": "AD36",
+      "kind": "algorithm-cost-inconsistency",
+      "sourceSections": [
+        "16.4.1"
+      ],
+      "gap": "Recurrence unconditionally summed both child costs although nearby prose excluded an inner scan for indexed nested-loop.",
+      "fix": "Added explicit singleton-index inner branch to both base and physical-property recurrences; inner residual filters retained and inner scan excluded. Existing property-aware proof and counterexample retained.",
+      "status": "fixed"
+    },
+    {
+      "id": "SD06",
+      "lessonId": "AD37",
+      "kind": "source-depth-gap-and-readability",
+      "sourceSections": [
+        "16.5.2.3",
+        "16.6.1",
+        "16.6.3"
+      ],
+      "gap": "SUM/COUNT delete discussion did not distinguish a zero sum, an all-NULL group, and a disappeared group; several joined/fragmented words obscured Halloween/top-K and tasks.",
+      "fix": "Added row_count/nonnull_count/sum invariant, signed insert/delete rules, zero/all-NULL/empty trace, grouped-versus-scalar boundary, exercise/answer 5; manually repaired prose.",
+      "status": "fixed"
+    },
+    {
+      "id": "SD07",
+      "lessonId": "AD75",
+      "kind": "worked-state-gap-and-readability",
+      "sourceSections": [
+        "24.1"
+      ],
+      "gap": "Key lesson lacked explicit state illustration; literal MAYBE/FOUND/hash parameters had damaged spacing.",
+      "fix": "Added six actual bit/query states using positions 0..7, prepared-model label and independent-transfer boundary; repaired MAYBE/FOUND, m/k/hash notation and prose.",
+      "status": "fixed"
+    },
+    {
+      "id": "SD08",
+      "lessonId": "AD77",
+      "kind": "worked-state-gap-and-readability",
+      "sourceSections": [
+        "15.5.1",
+        "15.5.2",
+        "15.5.3"
+      ],
+      "gap": "Key lesson lacked explicit cursor/emit states; several joined tokens obscured cost, candidate completeness and runner instructions.",
+      "fix": "Added six actual nested-loop cursor/check/emit states for four matches and six checks, prepared-model/cost label; repaired prose and pseudocode predicate.",
+      "status": "fixed"
+    },
+    {
+      "id": "SD09",
+      "lessonId": "AD78",
+      "kind": "readability",
+      "sourceSections": [
+        "16.4.4"
+      ],
+      "gap": "Joined/fragmented NOT IN, scalar aggregate, parameterized-index and proof/rubric prose were hard to read.",
+      "fix": "Manually restored words and expression labels, preserved existing semijoin proof, NULL counterexample and scalar-count repair.",
+      "status": "fixed"
+    },
+    {
+      "id": "SD10",
+      "lessonId": "AD79",
+      "kind": "cross-reference-error",
+      "sourceSections": [
+        "20.6"
+      ],
+      "gap": "Distributed commit/concurrency pointer incorrectly referred to AD44–45 (ARIES/backup).",
+      "fix": "Pointed 2PC to authored AD50; repaired IaaS and capacity prose spacing.",
+      "status": "fixed"
+    },
+    {
+      "id": "SD11",
+      "lessonId": "AD80",
+      "kind": "source-depth-gap",
+      "sourceSections": [
+        "22.5.3",
+        "22.7.5"
+      ],
+      "gap": "Exchange and parallel maintenance were described without the source join→group repartition chain or concrete delta path.",
+      "fix": "Added E1/E2 join-key repartition, E3 group-key repartition, partial/final aggregation and blocking boundary; signed insert/delete/group-key-update routes with local materialized input/output invariant; exercise/answer 5.",
+      "status": "fixed"
+    },
+    {
+      "id": "SD12",
+      "lessonIds": [
+        "AD23",
+        "AD24",
+        "AD25",
+        "AD26",
+        "AD27",
+        "AD28",
+        "AD29",
+        "AD30",
+        "AD31",
+        "AD32",
+        "AD33",
+        "AD34",
+        "AD35",
+        "AD36",
+        "AD37",
+        "AD74",
+        "AD75",
+        "AD76",
+        "AD77",
+        "AD78",
+        "AD79",
+        "AD80"
+      ],
+      "kind": "bounded-readability-pass",
+      "sourceSections": [],
+      "gap": "Accidentally joined VI/EN tokens and fragmented English/identifiers in scoped prose.",
+      "fix": "340 explicitly curated replacement occurrences across 19 lessons in the initial pass, followed by contextual correction and numbered-list spacing repairs. Fenced code was excluded from bulk replacements; pseudocode wording fixes were made explicitly.",
+      "status": "fixed"
+    }
+  ],
+  "lessonResults": [
+    {
+      "lessonId": "AD23",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Confirmed existing XOR parity proof/update formula, elevator batch trace, stable-storage/failure assumptions and numeric answers; no content change in this continuation."
+    },
+    {
+      "lessonId": "AD24",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Fixed hierarchical map depth; retained slot/RID/generation, compaction and allocation invariants."
+    },
+    {
+      "lessonId": "AD25",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Confirmed existing loading/resident/error state and force/pin distinction; repaired prose."
+    },
+    {
+      "lessonId": "AD26",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Fixed chunk addressing; retained position/null/version preservation proof."
+    },
+    {
+      "lessonId": "AD27",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Confirmed existing search/insert/internal split/occupancy and utilization examples; repaired prose/pseudocode words."
+    },
+    {
+      "lessonId": "AD28",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Confirmed prior internal pointer/separator repair and root contraction; no content change in this continuation."
+    },
+    {
+      "lessonId": "AD29",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Fixed merge/shrink and source attribution; retained low-bit split and linear routing proofs."
+    },
+    {
+      "lessonId": "AD30",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Confirmed existing bitmap validity/RID crossover and current/history temporal examples; repaired prose."
+    },
+    {
+      "lessonId": "AD31",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Confirmed prior stepped/basic cost, rolling progress, tombstone/snapshot retention and buffer-tree coverage; repaired notation."
+    },
+    {
+      "lessonId": "AD32",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Confirmed prior multi-page merge buffers, seeks/pass boundaries and empty/fit cases; repaired prose."
+    },
+    {
+      "lessonId": "AD33",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Confirmed prior multiplicity/partition proof, hybrid cost and heavy-key fallback; repaired prose."
+    },
+    {
+      "lessonId": "AD34",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Confirmed iterator cleanup, bag/set counts, partial AVG and blocking boundaries; repaired prose."
+    },
+    {
+      "lessonId": "AD35",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Fixed guarded rewrite/worklist and distinct-propagation depth."
+    },
+    {
+      "lessonId": "AD36",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Confirmed property-state recurrence/proof; corrected indexed-inner scan accounting in actual recurrences."
+    },
+    {
+      "lessonId": "AD37",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Fixed grouped delta state and repaired top-K/Halloween/adaptive prose."
+    },
+    {
+      "lessonId": "AD74",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Confirmed duplicate-spanning-block counterexample, lookup cost and index update boundaries; repaired prose."
+    },
+    {
+      "lessonId": "AD75",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Added concrete Bloom states and repaired notation; retained existing probability assumptions/derivation."
+    },
+    {
+      "lessonId": "AD76",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Confirmed candidate completeness for AND/OR and residual filtering; repaired prose."
+    },
+    {
+      "lessonId": "AD77",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Added concrete nested-loop states and repaired readable cost/algorithm wording."
+    },
+    {
+      "lessonId": "AD78",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Confirmed semijoin multiplicity proof, NULL anti-join trap and scalar COUNT restoration; repaired prose."
+    },
+    {
+      "lessonId": "AD79",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Confirmed source locations for distributed/cloud service content; corrected AD50 cross-reference."
+    },
+    {
+      "lessonId": "AD80",
+      "status": "reviewed-with-scoped-evidence",
+      "note": "Fixed multi-exchange composition and signed maintenance routing, retained task/attempt commit and scheduling model."
+    }
+  ],
+  "verification": {
+    "modelChecksPassed": 42,
+    "modelChecks": [
+      {
+        "id": "AD23-random-ms",
+        "passed": true,
+        "actual": 403.90625,
+        "expected": 403.90625
+      },
+      {
+        "id": "AD23-sequential-ms",
+        "passed": true,
+        "actual": 11.90625,
+        "expected": 11.90625
+      },
+      {
+        "id": "AD23-xor-reconstruct",
+        "passed": true,
+        "actual": 5,
+        "expected": 5
+      },
+      {
+        "id": "AD24-slot-free",
+        "passed": true,
+        "actual": 118,
+        "expected": 118
+      },
+      {
+        "id": "AD24-max-map",
+        "passed": true,
+        "actual": [
+          4,
+          6
+        ],
+        "expected": [
+          4,
+          6
+        ]
+      },
+      {
+        "id": "AD24-page-candidate",
+        "passed": true,
+        "actual": [
+          6
+        ],
+        "expected": [
+          6
+        ]
+      },
+      {
+        "id": "AD24-max-update",
+        "passed": true,
+        "actual": [
+          4,
+          3
+        ],
+        "expected": [
+          4,
+          3
+        ]
+      },
+      {
+        "id": "AD26-chunk-position",
+        "passed": true,
+        "actual": [
+          2,
+          1
+        ],
+        "expected": [
+          2,
+          1
+        ]
+      },
+      {
+        "id": "AD26-length-bound",
+        "passed": true,
+        "actual": [
+          false,
+          true
+        ],
+        "expected": [
+          false,
+          true
+        ]
+      },
+      {
+        "id": "AD27-final-entry-set",
+        "passed": true,
+        "actual": [
+          1,
+          2,
+          4,
+          5,
+          7,
+          9
+        ],
+        "expected": [
+          1,
+          2,
+          4,
+          5,
+          7,
+          9
+        ]
+      },
+      {
+        "id": "AD28-borrow-entry-set",
+        "passed": true,
+        "actual": [
+          2,
+          5,
+          15,
+          20,
+          25,
+          30
+        ],
+        "expected": [
+          2,
+          5,
+          15,
+          20,
+          25,
+          30
+        ]
+      },
+      {
+        "id": "AD29-merge-shrink-lookup",
+        "passed": true,
+        "actual": true,
+        "expected": true
+      },
+      {
+        "id": "AD29-linear-routing",
+        "passed": true,
+        "actual": [
+          1,
+          5,
+          2,
+          0
+        ],
+        "expected": [
+          1,
+          5,
+          2,
+          0
+        ]
+      },
+      {
+        "id": "AD30-null-validity-mask",
+        "passed": true,
+        "actual": 4,
+        "expected": 4
+      },
+      {
+        "id": "AD31-tombstone-visible",
+        "passed": true,
+        "actual": null,
+        "expected": null
+      },
+      {
+        "id": "AD31-basic-io",
+        "passed": true,
+        "actual": 0.07500000000000001,
+        "expected": 0.075
+      },
+      {
+        "id": "AD31-stepped-io",
+        "passed": true,
+        "actual": 0.03,
+        "expected": 0.03
+      },
+      {
+        "id": "AD32-run-sequence",
+        "passed": true,
+        "actual": [
+          8,
+          2,
+          1
+        ],
+        "expected": [
+          8,
+          2,
+          1
+        ]
+      },
+      {
+        "id": "AD32-stream-transfer",
+        "passed": true,
+        "actual": 225,
+        "expected": 225
+      },
+      {
+        "id": "AD33-hybrid-cost",
+        "passed": true,
+        "actual": 350,
+        "expected": 350
+      },
+      {
+        "id": "AD34-weighted-avg",
+        "passed": true,
+        "actual": 43.333333333333336,
+        "expected": 43.333333333333336
+      },
+      {
+        "id": "AD34-bag-counts",
+        "passed": true,
+        "actual": [
+          5,
+          2,
+          1,
+          0
+        ],
+        "expected": [
+          5,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "id": "AD35-frequency-oracle",
+        "passed": true,
+        "actual": 6,
+        "expected": 6
+      },
+      {
+        "id": "AD35-filter-pushdown-nine-null-flag-fixtures",
+        "passed": true,
+        "actual": true,
+        "expected": true
+      },
+      {
+        "id": "AD35-three-leaf-join-closure",
+        "passed": true,
+        "actual": 12,
+        "expected": 12
+      },
+      {
+        "id": "AD36-greedy-counterexample",
+        "passed": true,
+        "actual": [
+          67,
+          30
+        ],
+        "expected": [
+          67,
+          30
+        ]
+      },
+      {
+        "id": "AD36-interesting-order",
+        "passed": true,
+        "actual": [
+          36,
+          32
+        ],
+        "expected": [
+          36,
+          32
+        ]
+      },
+      {
+        "id": "AD36-index-loop-no-inner-scan",
+        "passed": true,
+        "actual": 82,
+        "expected": 82
+      },
+      {
+        "id": "AD37-batch-join-cross-term",
+        "passed": true,
+        "actual": [
+          5,
+          5
+        ],
+        "expected": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "AD37-null-empty-group",
+        "passed": true,
+        "actual": [
+          [
+            2,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            null
+          ],
+          null
+        ],
+        "expected": [
+          [
+            2,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            null
+          ],
+          null
+        ]
+      },
+      {
+        "id": "AD75-state-bitmap",
+        "passed": true,
+        "actual": "01101001",
+        "expected": "01101001"
+      },
+      {
+        "id": "AD75-negative-and-false-positive",
+        "passed": true,
+        "actual": [
+          false,
+          true
+        ],
+        "expected": [
+          false,
+          true
+        ]
+      },
+      {
+        "id": "AD75-b8-k6-fpr",
+        "passed": true,
+        "actual": 0.021577141463219263,
+        "expected": 0.021577141463219263
+      },
+      {
+        "id": "AD76-rid-sets",
+        "passed": true,
+        "actual": [
+          [
+            4
+          ],
+          [
+            1,
+            4,
+            5,
+            6
+          ]
+        ],
+        "expected": [
+          [
+            4
+          ],
+          [
+            1,
+            4,
+            5,
+            6
+          ]
+        ]
+      },
+      {
+        "id": "AD77-cursor-pairs",
+        "passed": true,
+        "actual": [
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            2,
+            12
+          ]
+        ],
+        "expected": [
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            2,
+            12
+          ]
+        ]
+      },
+      {
+        "id": "AD77-block-directions",
+        "passed": true,
+        "actual": [
+          270,
+          320
+        ],
+        "expected": [
+          270,
+          320
+        ]
+      },
+      {
+        "id": "AD78-count-amount",
+        "passed": true,
+        "actual": [
+          2,
+          0,
+          0
+        ],
+        "expected": [
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "AD79-capacity-bound",
+        "passed": true,
+        "actual": [
+          5,
+          4
+        ],
+        "expected": [
+          5,
+          4
+        ]
+      },
+      {
+        "id": "AD80-critical-path",
+        "passed": true,
+        "actual": 14,
+        "expected": 14
+      },
+      {
+        "id": "AD80-full-view-base",
+        "passed": true,
+        "actual": [
+          [
+            "X",
+            "Y",
+            12
+          ]
+        ],
+        "expected": [
+          [
+            "X",
+            "Y",
+            12
+          ]
+        ]
+      },
+      {
+        "id": "AD80-full-view-insert",
+        "passed": true,
+        "actual": [
+          [
+            "X",
+            "Y",
+            16
+          ]
+        ],
+        "expected": [
+          [
+            "X",
+            "Y",
+            16
+          ]
+        ]
+      },
+      {
+        "id": "AD80-full-view-group-update",
+        "passed": true,
+        "actual": [
+          [
+            "X",
+            "Y",
+            12
+          ],
+          [
+            "X",
+            "Z",
+            4
+          ]
+        ],
+        "expected": [
+          [
+            "X",
+            "Y",
+            12
+          ],
+          [
+            "X",
+            "Z",
+            4
+          ]
+        ]
+      }
+    ],
+    "lessonStructuresPassed": 22,
+    "lessonStructures": [
+      {
+        "lessonId": "AD23",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD24",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD25",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD26",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD27",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD28",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD29",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD30",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD31",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD32",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD33",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD34",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD35",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD36",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD37",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD74",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD75",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD76",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD77",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD78",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD79",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "balancedFences": true
+      },
+      {
+        "lessonId": "AD80",
+        "passed": true,
+        "exerciseAnswerIds": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "balancedFences": true
+      }
+    ],
+    "keyStateBoards": [
+      {
+        "lessonId": "AD75",
+        "stateCount": 6,
+        "preparedModel": true
+      },
+      {
+        "lessonId": "AD77",
+        "stateCount": 6,
+        "preparedModel": true
+      }
+    ],
+    "nativeSqlExecutedByReviewer": false,
+    "webRunnerExecutedByReviewer": false,
+    "newBackendProvenanceClaimed": false,
+    "spacingInitialPass": {
+      "files": 19,
+      "curatedOccurrences": 340,
+      "contextualFollowup": true
+    }
+  },
+  "limitations": [
+    "No semantic certification of 945 or any other whole-course question set.",
+    "No new SQL execution, engine-plan measurement, production concurrency proof or web-runner execution in this audit.",
+    "Source excerpts are targeted. Adjacent references §17.3, §18.11 and §3.8 were not independently reread here; neither were all pages/figures of chapters 12–16,20,22,24.",
+    "Finite model examples and structure checks supplement manual reasoning; they do not prove every possible learner input or implementation.",
+    "Research proposal titles/allocations were not rewritten; authored title/content may differ from old proposal names (notably AD79)."
+  ],
+  "outcome": "All concrete findings raised in this bounded pass were repaired. Existing strong prior fixes were checked and retained. Broader certification is outside scope."
+}

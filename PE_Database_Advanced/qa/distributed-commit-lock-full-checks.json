@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-05",
+  "status": "passed",
+  "count": 18,
+  "stateCount": 2448,
+  "checks": [
+    {
+      "name": "Three-participant2PC finite state agreement/validity across8vote fixtures",
+      "passed": true,
+      "scope": "2448 reachable states, arbitrary modeled action order and coordinator crash/recover. Durable PREPARED/decision and no participant heuristic abort are assumed."
+    },
+    {
+      "name": "Prepared participant observation matches two reachable worlds with opposite durable outcomes",
+      "passed": true,
+      "scope": "Reachable finite-model witness with coordinator unavailable and decision undelivered toP1; general argument remains in lesson."
+    },
+    {
+      "name": "Recovery can isolate only conflicts with prepared write locks",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Sender debit/outbox rollback atomically on actual SQLite",
+      "passed": true,
+      "scope": "SQLite3.53.1; sequential local transaction fixture, not MySQL/distributed execution."
+    },
+    {
+      "name": "Five duplicate deliveries create exactly one durable inbox record",
+      "passed": true,
+      "scope": "Actual SQLite UNIQUE/INSERTORIGNORE fixture; network is a modeled duplicate sequence."
+    },
+    {
+      "name": "Receiver failed processing rolls back credit and processed flag together",
+      "passed": true,
+      "scope": "Actual SQLite rollback; crash/durability not measured."
+    },
+    {
+      "name": "Repeated sequential processing commits one credit",
+      "passed": true,
+      "scope": "Actual SQLite sequential worker; simultaneous-worker locks/claims are a separate backend requirement."
+    },
+    {
+      "name": "Sender deletes only after durable receiver acceptance ACK in modeled order",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Deleting dedup history allows an old duplicate to look new",
+      "passed": true,
+      "scope": "Counterexample fixture; not an endorsed retention policy."
+    },
+    {
+      "name": "Local wait graphs acyclic while union has deadlock cycle",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Stale edge union creates cycle absent in both real successive states",
+      "passed": true,
+      "scope": "Non-global2PL release-then-acquire schedule, as qualified in lesson."
+    },
+    {
+      "name": "Lease action bound must fit through operation+delivery",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Timestamp tuple has unique tie breakers in finite identity domain",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Receive advances beyond remote timestamp rather than repeatedly restarting old",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Late smaller validation timestamp is rejected in model",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Commit wait checks interval lower bound",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Global snapshot must not return mixed committed transfer branches",
+      "passed": true,
+      "scope": "Finite model only"
+    },
+    {
+      "name": "Local-serializable federation histories can form global cycle",
+      "passed": true,
+      "scope": "Logical schedule assuming local serializability only, not an engine strict2PL trace."
+    }
+  ],
+  "lessonSha256": {
+    "AD50": "6799521755b062596b845753ba2808f169405d99b60c76563542763e29bdaea1",
+    "AD65": "a87320dfe1e2f6356ca5d657a3943aa564b2bb63827176f2478aea92b36640d1"
+  },
+  "limits": "Finite protocol/graph/arithmetic models plus actual sequential SQLite inbox/outbox transactions. No XA, distributed database, real clock, network or concurrent-worker execution."
+}

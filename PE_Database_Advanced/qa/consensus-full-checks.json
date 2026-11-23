@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-05",
+  "checks": [
+    {
+      "name": "quorum-intersection",
+      "passed": true,
+      "detail": "All 16 pairs of majorities for three fixed acceptors."
+    },
+    {
+      "name": "paxos-message-interleavings",
+      "passed": true,
+      "detail": "8953 reachable states and 29878 transitions; two ballots/three acceptors/fixed membership, crash-stop or durable restart. Not an unbounded proof."
+    },
+    {
+      "name": "chosen-is-not-learned",
+      "passed": true,
+      "detail": "Acceptance quorum can exist before a later proposer/learner acts; no client ACK is needed for chosen."
+    },
+    {
+      "name": "value-inheritance-mutant-killed",
+      "passed": true,
+      "detail": "A,B chose X at5. A proposer using B,C at8 must retain X; choosing wanted Y would create a second chosen value."
+    },
+    {
+      "name": "forget-promise-mutant-killed",
+      "passed": true,
+      "detail": "A durable promise20 rejects ACCEPT10. Resetting it to0 admits the delayed message and violates the persistence invariant; this alone is not claimed to be a full conflicting-decision execution."
+    },
+    {
+      "name": "vote-freshness",
+      "passed": true,
+      "detail": "AD62 exercise1, term before length."
+    },
+    {
+      "name": "old-term-trace-election3",
+      "passed": true,
+      "detail": "S5 has term1 prefix, wins term3 from S3,S4,S5, appends Y locally."
+    },
+    {
+      "name": "old-term-trace-election4",
+      "passed": true,
+      "detail": "S1 with X term2 wins term4 from S1,S2,S3."
+    },
+    {
+      "name": "old-term-majority-is-insufficient",
+      "passed": true,
+      "detail": "Even with X on three nodes, S5 with last term3 can win term5 and replace X. Mutant majority-only commit guard is rejected."
+    },
+    {
+      "name": "current-term-prefix-protected",
+      "passed": true,
+      "detail": "Committing a term4 no-op on S1,S2,S3 protects prefix X; S3 will reject candidate last term3."
+    },
+    {
+      "name": "append-prefix-reject",
+      "passed": true,
+      "detail": "Wrong prevTerm rejected, follower unchanged."
+    },
+    {
+      "name": "append-conflict-and-idempotence",
+      "passed": true,
+      "detail": "Conflict replaces suffix; a duplicated shorter matching request does not truncate a later matching entry."
+    },
+    {
+      "name": "heartbeat-bounds-commit",
+      "passed": true,
+      "detail": "Last matched index5, not arbitrary local end9; mutant local-end guard would apply an unmatched suffix."
+    },
+    {
+      "name": "stale-term-rejected",
+      "passed": true,
+      "detail": "Old leader AppendEntries rejected even with a matching prev entry."
+    },
+    {
+      "name": "deterministic-replay",
+      "passed": true,
+      "detail": "Independent replay of authored command sequence; corrects source Figure23.10 z label, no native service execution."
+    },
+    {
+      "name": "backup-input-order",
+      "passed": true,
+      "detail": "Replicating a set of messages without its agreed order does not replicate state."
+    },
+    {
+      "name": "two-level-commit",
+      "passed": true,
+      "detail": "Coordinator consensus cannot replace a missing durable YES from a data participant. Two participant groups differ from replicas within each group."
+    }
+  ],
+  "passed": 17,
+  "scope": "Finite educational state models, one fixed Paxos instance with two ballots and three acceptors; selected Raft rules and a five-node trace. No network, ZooKeeper, Spanner or native consensus cluster executed. Liveness and arbitrary histories are explained by arguments, not established by these finite tests.",
+  "lessons": {
+    "AD52": "0c88f8dbfc85be6d0add4ca108d233e0f3064e3f7b8ece3956aea7154ff66512",
+    "AD62": "0c66ab2f57450ea475c863bb22b0fc341e5c30c8ae479bbab3ee6b5ed013ee58"
+  }
+}

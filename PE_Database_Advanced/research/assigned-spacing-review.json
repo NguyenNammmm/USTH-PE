@@ -1,0 +1,2803 @@
+{
+  "changes": [
+    {
+      "lesson": "AD24",
+      "old": "thứi",
+      "new": "thứ i"
+    },
+    {
+      "lesson": "AD25",
+      "old": "pageP",
+      "new": "page P"
+    },
+    {
+      "lesson": "AD25",
+      "old": "pageQ",
+      "new": "page Q"
+    },
+    {
+      "lesson": "AD25",
+      "old": "pinP",
+      "new": "pin P"
+    },
+    {
+      "lesson": "AD25",
+      "old": "pinP",
+      "new": "pin P"
+    },
+    {
+      "lesson": "AD25",
+      "old": "RequestD",
+      "new": "Request D"
+    },
+    {
+      "lesson": "AD25",
+      "old": "gặpA",
+      "new": "gặp A"
+    },
+    {
+      "lesson": "AD25",
+      "old": "gặpB",
+      "new": "gặp B"
+    },
+    {
+      "lesson": "AD25",
+      "old": "gặpC",
+      "new": "gặp C"
+    },
+    {
+      "lesson": "AD25",
+      "old": "quayA",
+      "new": "quay A"
+    },
+    {
+      "lesson": "AD25",
+      "old": "chọnA",
+      "new": "chọn A"
+    },
+    {
+      "lesson": "AD25",
+      "old": "nạpD",
+      "new": "nạp D"
+    },
+    {
+      "lesson": "AD25",
+      "old": "bitD",
+      "new": "bit D"
+    },
+    {
+      "lesson": "AD25",
+      "old": "tiếnB",
+      "new": "tiến B"
+    },
+    {
+      "lesson": "AD25",
+      "old": "quaB",
+      "new": "qua B"
+    },
+    {
+      "lesson": "AD25",
+      "old": "pagesH",
+      "new": "pages H"
+    },
+    {
+      "lesson": "AD25",
+      "old": "đọcS",
+      "new": "đọc S"
+    },
+    {
+      "lesson": "AD25",
+      "old": "choB",
+      "new": "cho B"
+    },
+    {
+      "lesson": "AD25",
+      "old": "thayB",
+      "new": "thay B"
+    },
+    {
+      "lesson": "AD25",
+      "old": "MappingB",
+      "new": "Mapping B"
+    },
+    {
+      "lesson": "AD25",
+      "old": "chọnD",
+      "new": "chọn D"
+    },
+    {
+      "lesson": "AD25",
+      "old": "giữP",
+      "new": "giữ P"
+    },
+    {
+      "lesson": "AD25",
+      "old": "requestQ",
+      "new": "request Q"
+    },
+    {
+      "lesson": "AD25",
+      "old": "frameP",
+      "new": "frame P"
+    },
+    {
+      "lesson": "AD25",
+      "old": "bảnv",
+      "new": "bản v"
+    },
+    {
+      "lesson": "AD25",
+      "old": "bảnv",
+      "new": "bản v"
+    },
+    {
+      "lesson": "AD25",
+      "old": "ThayP",
+      "new": "Thay P"
+    },
+    {
+      "lesson": "AD25",
+      "old": "nhầmQ",
+      "new": "nhầm Q"
+    },
+    {
+      "lesson": "AD25",
+      "old": "requestQ",
+      "new": "request Q"
+    },
+    {
+      "lesson": "AD25",
+      "old": "tớiC",
+      "new": "tới C"
+    },
+    {
+      "lesson": "AD25",
+      "old": "chọnC",
+      "new": "chọn C"
+    },
+    {
+      "lesson": "AD25",
+      "old": "tiếnA",
+      "new": "tiến A"
+    },
+    {
+      "lesson": "AD25",
+      "old": "chọnA",
+      "new": "chọn A"
+    },
+    {
+      "lesson": "AD25",
+      "old": "Bảnv",
+      "new": "Bản v"
+    },
+    {
+      "lesson": "AD26",
+      "old": "rowNULL",
+      "new": "row NULL"
+    },
+    {
+      "lesson": "AD26",
+      "old": "bitmapN",
+      "new": "bitmap N"
+    },
+    {
+      "lesson": "AD26",
+      "old": "bitmapS",
+      "new": "bitmap S"
+    },
+    {
+      "lesson": "AD26",
+      "old": "bitmapN",
+      "new": "bitmap N"
+    },
+    {
+      "lesson": "AD27",
+      "old": "entryN",
+      "new": "entry N"
+    },
+    {
+      "lesson": "AD27",
+      "old": "càiB",
+      "new": "cài B"
+    },
+    {
+      "lesson": "AD29",
+      "old": "modN",
+      "new": "mod N"
+    },
+    {
+      "lesson": "AD30",
+      "old": "colorNULL",
+      "new": "color NULL"
+    },
+    {
+      "lesson": "AD31",
+      "old": "mứcT",
+      "new": "mức T"
+    },
+    {
+      "lesson": "AD31",
+      "old": "indexI",
+      "new": "index I"
+    },
+    {
+      "lesson": "AD31",
+      "old": "memtableM",
+      "new": "memtable M"
+    },
+    {
+      "lesson": "AD31",
+      "old": "ởroot",
+      "new": "ở root"
+    },
+    {
+      "lesson": "AD31",
+      "old": "trảC",
+      "new": "trả C"
+    },
+    {
+      "lesson": "AD31",
+      "old": "nhậnk",
+      "new": "nhận k"
+    },
+    {
+      "lesson": "AD31",
+      "old": "trảD",
+      "new": "trả D"
+    },
+    {
+      "lesson": "AD31",
+      "old": "ởleaf",
+      "new": "ở leaf"
+    },
+    {
+      "lesson": "AD32",
+      "old": "cầnB",
+      "new": "cần B"
+    },
+    {
+      "lesson": "AD32",
+      "old": "NếuB",
+      "new": "Nếu B"
+    },
+    {
+      "lesson": "AD32",
+      "old": "đếnR",
+      "new": "đến R"
+    },
+    {
+      "lesson": "AD32",
+      "old": "luônN",
+      "new": "luôn N"
+    },
+    {
+      "lesson": "AD32",
+      "old": "NếuN",
+      "new": "Nếu N"
+    },
+    {
+      "lesson": "AD32",
+      "old": "NếuN",
+      "new": "Nếu N"
+    },
+    {
+      "lesson": "AD32",
+      "old": "logF",
+      "new": "log F"
+    },
+    {
+      "lesson": "AD32",
+      "old": "vớiF",
+      "new": "với F"
+    },
+    {
+      "lesson": "AD32",
+      "old": "topK",
+      "new": "top K"
+    },
+    {
+      "lesson": "AD32",
+      "old": "heapK",
+      "new": "heap K"
+    },
+    {
+      "lesson": "AD32",
+      "old": "topK",
+      "new": "top K"
+    },
+    {
+      "lesson": "AD32",
+      "old": "vàoN",
+      "new": "và oN"
+    },
+    {
+      "lesson": "AD32",
+      "old": "sinhN",
+      "new": "sinh N"
+    },
+    {
+      "lesson": "AD33",
+      "old": "headR",
+      "new": "head R"
+    },
+    {
+      "lesson": "AD33",
+      "old": "headS",
+      "new": "head S"
+    },
+    {
+      "lesson": "AD33",
+      "old": "rowR",
+      "new": "row R"
+    },
+    {
+      "lesson": "AD33",
+      "old": "tiếnR",
+      "new": "tiến R"
+    },
+    {
+      "lesson": "AD33",
+      "old": "tiếnS",
+      "new": "tiến S"
+    },
+    {
+      "lesson": "AD33",
+      "old": "NhómA",
+      "new": "Nhóm A"
+    },
+    {
+      "lesson": "AD33",
+      "old": "nhómC",
+      "new": "nhóm C"
+    },
+    {
+      "lesson": "AD33",
+      "old": "trongRAM",
+      "new": "trong RAM"
+    },
+    {
+      "lesson": "AD33",
+      "old": "partitionR",
+      "new": "partition R"
+    },
+    {
+      "lesson": "AD33",
+      "old": "bBuild",
+      "new": "b Build"
+    },
+    {
+      "lesson": "AD33",
+      "old": "bBuild",
+      "new": "b Build"
+    },
+    {
+      "lesson": "AD33",
+      "old": "pageR",
+      "new": "page R"
+    },
+    {
+      "lesson": "AD33",
+      "old": "keyK",
+      "new": "key K"
+    },
+    {
+      "lesson": "AD33",
+      "old": "rowK",
+      "new": "row K"
+    },
+    {
+      "lesson": "AD33",
+      "old": "bảnK",
+      "new": "bản K"
+    },
+    {
+      "lesson": "AD33",
+      "old": "NếuS",
+      "new": "Nếu S"
+    },
+    {
+      "lesson": "AD33",
+      "old": "nhiềuK",
+      "new": "nhiều K"
+    },
+    {
+      "lesson": "AD33",
+      "old": "trongRAM",
+      "new": "trong RAM"
+    },
+    {
+      "lesson": "AD33",
+      "old": "trongRAM",
+      "new": "trong RAM"
+    },
+    {
+      "lesson": "AD33",
+      "old": "nhómR",
+      "new": "nhóm R"
+    },
+    {
+      "lesson": "AD33",
+      "old": "nhómA",
+      "new": "nhóm A"
+    },
+    {
+      "lesson": "AD33",
+      "old": "hơnC",
+      "new": "hơn C"
+    },
+    {
+      "lesson": "AD33",
+      "old": "tiếnS",
+      "new": "tiến S"
+    },
+    {
+      "lesson": "AD33",
+      "old": "hoặcS",
+      "new": "hoặc S"
+    },
+    {
+      "lesson": "AD33",
+      "old": "rowK",
+      "new": "row K"
+    },
+    {
+      "lesson": "AD33",
+      "old": "rowK",
+      "new": "row K"
+    },
+    {
+      "lesson": "AD33",
+      "old": "rowL",
+      "new": "row L"
+    },
+    {
+      "lesson": "AD33",
+      "old": "nhómK",
+      "new": "nhóm K"
+    },
+    {
+      "lesson": "AD33",
+      "old": "cặpK",
+      "new": "cặp K"
+    },
+    {
+      "lesson": "AD33",
+      "old": "cặpL",
+      "new": "cặp L"
+    },
+    {
+      "lesson": "AD33",
+      "old": "cặpK",
+      "new": "cặp K"
+    },
+    {
+      "lesson": "AD33",
+      "old": "trêncanvas",
+      "new": "trên ca n v as"
+    },
+    {
+      "lesson": "AD34",
+      "old": "rowFALSE",
+      "new": "row FALSE"
+    },
+    {
+      "lesson": "AD34",
+      "old": "scanR",
+      "new": "scan R"
+    },
+    {
+      "lesson": "AD34",
+      "old": "choA",
+      "new": "cho A"
+    },
+    {
+      "lesson": "AD34",
+      "old": "gặpB",
+      "new": "gặp B"
+    },
+    {
+      "lesson": "AD34",
+      "old": "sauđóB",
+      "new": "sau đó B"
+    },
+    {
+      "lesson": "AD34",
+      "old": "chốtA",
+      "new": "chốt A"
+    },
+    {
+      "lesson": "AD34",
+      "old": "tạiB",
+      "new": "tại B"
+    },
+    {
+      "lesson": "AD34",
+      "old": "gomNULL",
+      "new": "gom NULL"
+    },
+    {
+      "lesson": "AD34",
+      "old": "xuốngx",
+      "new": "xuống x"
+    },
+    {
+      "lesson": "AD34",
+      "old": "nonNULL",
+      "new": "non NULL"
+    },
+    {
+      "lesson": "AD34",
+      "old": "mấtduplicateA",
+      "new": "mất duplicate A"
+    },
+    {
+      "lesson": "AD34",
+      "old": "coiB",
+      "new": "coi B"
+    },
+    {
+      "lesson": "AD34",
+      "old": "TrongRAM",
+      "new": "Trong RAM"
+    },
+    {
+      "lesson": "AD34",
+      "old": "BagR",
+      "new": "Bag R"
+    },
+    {
+      "lesson": "AD34",
+      "old": "tupleK",
+      "new": "tuple K"
+    },
+    {
+      "lesson": "AD34",
+      "old": "bagS",
+      "new": "bag S"
+    },
+    {
+      "lesson": "AD34",
+      "old": "caNULL",
+      "new": "ca NULL"
+    },
+    {
+      "lesson": "AD34",
+      "old": "khônggiữK",
+      "new": "không giữ K"
+    },
+    {
+      "lesson": "AD34",
+      "old": "ởmọi",
+      "new": "ở mọi"
+    },
+    {
+      "lesson": "AD34",
+      "old": "mấtvàresourcesđượcclosekhidừngsớm",
+      "new": "mất và resource s được close khi dừng sớm"
+    },
+    {
+      "lesson": "AD35",
+      "old": "củaR",
+      "new": "của R"
+    },
+    {
+      "lesson": "AD35",
+      "old": "cộtA",
+      "new": "cột A"
+    },
+    {
+      "lesson": "AD35",
+      "old": "Nhómk",
+      "new": "Nhóm k"
+    },
+    {
+      "lesson": "AD35",
+      "old": "countR",
+      "new": "count R"
+    },
+    {
+      "lesson": "AD35",
+      "old": "rowR",
+      "new": "row R"
+    },
+    {
+      "lesson": "AD35",
+      "old": "bênS",
+      "new": "bên S"
+    },
+    {
+      "lesson": "AD35",
+      "old": "bênR",
+      "new": "bên R"
+    },
+    {
+      "lesson": "AD35",
+      "old": "đổiS",
+      "new": "đổi S"
+    },
+    {
+      "lesson": "AD35",
+      "old": "rộngQ",
+      "new": "rộng Q"
+    },
+    {
+      "lesson": "AD36",
+      "old": "quaST",
+      "new": "qua ST"
+    },
+    {
+      "lesson": "AD36",
+      "old": "quaRT",
+      "new": "qua RT"
+    },
+    {
+      "lesson": "AD36",
+      "old": "quaST",
+      "new": "qua ST"
+    },
+    {
+      "lesson": "AD37",
+      "old": "hạngR",
+      "new": "hạng R"
+    },
+    {
+      "lesson": "AD37",
+      "old": "phíaR",
+      "new": "phía R"
+    },
+    {
+      "lesson": "AD37",
+      "old": "chứaK",
+      "new": "chứa K"
+    },
+    {
+      "lesson": "AD37",
+      "old": "hơnK",
+      "new": "hơn K"
+    },
+    {
+      "lesson": "AD37",
+      "old": "topK",
+      "new": "top K"
+    },
+    {
+      "lesson": "AD37",
+      "old": "đúngK",
+      "new": "đúng K"
+    },
+    {
+      "lesson": "AD37",
+      "old": "phíO",
+      "new": "phí O"
+    },
+    {
+      "lesson": "AD37",
+      "old": "memoryO",
+      "new": "memory O"
+    },
+    {
+      "lesson": "AD37",
+      "old": "phíxuấtsắpKcuối",
+      "new": "phí xuất sắp K cuối"
+    },
+    {
+      "lesson": "AD37",
+      "old": "đọcK",
+      "new": "đọc K"
+    },
+    {
+      "lesson": "AD37",
+      "old": "cóthểhơnK",
+      "new": "có thể hơn K"
+    },
+    {
+      "lesson": "AD37",
+      "old": "xửlý",
+      "new": "xử lý"
+    },
+    {
+      "lesson": "AD37",
+      "old": "cóNULL",
+      "new": "có NULL"
+    },
+    {
+      "lesson": "AD37",
+      "old": "cũmỗibênhairowK",
+      "new": "cũ mỗi bên hai row K"
+    },
+    {
+      "lesson": "AD37",
+      "old": "bêninsertthêmmộtrowK",
+      "new": "bên insert thêm một row K"
+    },
+    {
+      "lesson": "AD37",
+      "old": "vàba",
+      "new": "và ba"
+    },
+    {
+      "lesson": "AD37",
+      "old": "phápngây",
+      "new": "pháp n gây"
+    },
+    {
+      "lesson": "AD37",
+      "old": "TopK",
+      "new": "Top K"
+    },
+    {
+      "lesson": "AD37",
+      "old": "MultiplicityphảigiữđủdùmọikeybằngK",
+      "new": "Multiplicity phải giữ đủ dù mọi key bằng K"
+    },
+    {
+      "lesson": "AD37",
+      "old": "ởvịtrí",
+      "new": "ở vị trí"
+    },
+    {
+      "lesson": "AD37",
+      "old": "ởvịtrí",
+      "new": "ở vị trí"
+    },
+    {
+      "lesson": "AD37",
+      "old": "BàiSQLkhônghỗtrợnativeMVphảighiđúngsummary",
+      "new": "Bài SQL không hỗ trợ native M V phải ghi đúng summary"
+    },
+    {
+      "lesson": "AD37",
+      "old": "Vnewvàđối",
+      "new": "V new và đối"
+    },
+    {
+      "lesson": "AD37",
+      "old": "mởrộngQ",
+      "new": "mở rộng Q"
+    },
+    {
+      "lesson": "AD74",
+      "old": "sáchRID",
+      "new": "sách RID"
+    },
+    {
+      "lesson": "AD74",
+      "old": "đọcP",
+      "new": "đọc P"
+    },
+    {
+      "lesson": "AD74",
+      "old": "đầuP",
+      "new": "đầu P"
+    },
+    {
+      "lesson": "AD74",
+      "old": "sangP",
+      "new": "sang P"
+    },
+    {
+      "lesson": "AD74",
+      "old": "choRAM",
+      "new": "cho RAM"
+    },
+    {
+      "lesson": "AD74",
+      "old": "cỡlog",
+      "new": "cỡ log"
+    },
+    {
+      "lesson": "AD74",
+      "old": "cóRAM",
+      "new": "có RAM"
+    },
+    {
+      "lesson": "AD74",
+      "old": "tràn",
+      "new": "t rà n"
+    },
+    {
+      "lesson": "AD74",
+      "old": "mộtRID",
+      "new": "một RID"
+    },
+    {
+      "lesson": "AD74",
+      "old": "cácRID",
+      "new": "các RID"
+    },
+    {
+      "lesson": "AD74",
+      "old": "nhiềuRID",
+      "new": "nhiều RID"
+    },
+    {
+      "lesson": "AD74",
+      "old": "mọiRID",
+      "new": "mọi RID"
+    },
+    {
+      "lesson": "AD74",
+      "old": "mộtRID",
+      "new": "một RID"
+    },
+    {
+      "lesson": "AD74",
+      "old": "chọnP",
+      "new": "chọn P"
+    },
+    {
+      "lesson": "AD74",
+      "old": "chọnP",
+      "new": "chọn P"
+    },
+    {
+      "lesson": "AD74",
+      "old": "đầuP",
+      "new": "đầu P"
+    },
+    {
+      "lesson": "AD74",
+      "old": "đọcP",
+      "new": "đọc P"
+    },
+    {
+      "lesson": "AD74",
+      "old": "blockP",
+      "new": "block P"
+    },
+    {
+      "lesson": "AD74",
+      "old": "ChọnP",
+      "new": "Chọn P"
+    },
+    {
+      "lesson": "AD74",
+      "old": "lấyDISTINCT",
+      "new": "lấy DISTINCT"
+    },
+    {
+      "lesson": "AD74",
+      "old": "multisetRID",
+      "new": "multiset RID"
+    },
+    {
+      "lesson": "AD75",
+      "old": "lookupLSM",
+      "new": "lookup LSM"
+    },
+    {
+      "lesson": "AD75",
+      "old": "trảABSENT",
+      "new": "trả ABSENT"
+    },
+    {
+      "lesson": "AD75",
+      "old": "trảMAYBE",
+      "new": "trả M A Y B E"
+    },
+    {
+      "lesson": "AD75",
+      "old": "trảFOUND",
+      "new": "trả F OU N D"
+    },
+    {
+      "lesson": "AD75",
+      "old": "dùngm",
+      "new": "dùng m"
+    },
+    {
+      "lesson": "AD75",
+      "old": "thấybit",
+      "new": "thấy bit"
+    },
+    {
+      "lesson": "AD75",
+      "old": "nênABSENT",
+      "new": "nên ABSENT"
+    },
+    {
+      "lesson": "AD75",
+      "old": "nênMAYBE",
+      "new": "nên M A Y B E"
+    },
+    {
+      "lesson": "AD75",
+      "old": "thànhFOUND",
+      "new": "thành F OU N D"
+    },
+    {
+      "lesson": "AD75",
+      "old": "trênm",
+      "new": "trên m"
+    },
+    {
+      "lesson": "AD75",
+      "old": "chènn",
+      "new": "chèn n"
+    },
+    {
+      "lesson": "AD75",
+      "old": "tổngkn",
+      "new": "tổng kn"
+    },
+    {
+      "lesson": "AD75",
+      "old": "thêmkn",
+      "new": "thêm kn"
+    },
+    {
+      "lesson": "AD75",
+      "old": "giữm",
+      "new": "giữ m"
+    },
+    {
+      "lesson": "AD75",
+      "old": "thànhint",
+      "new": "thành int"
+    },
+    {
+      "lesson": "AD75",
+      "old": "TrongLSM",
+      "new": "Trong LSM"
+    },
+    {
+      "lesson": "AD75",
+      "old": "nóiABSENT",
+      "new": "nói ABSENT"
+    },
+    {
+      "lesson": "AD75",
+      "old": "chạyhash",
+      "new": "chạy hash"
+    },
+    {
+      "lesson": "AD75",
+      "old": "ChỉMAYBE",
+      "new": "Chỉ M A Y B E"
+    },
+    {
+      "lesson": "AD75",
+      "old": "hayABSENT",
+      "new": "hay ABSENT"
+    },
+    {
+      "lesson": "AD75",
+      "old": "đổihash",
+      "new": "đổi hash"
+    },
+    {
+      "lesson": "AD75",
+      "old": "tậpinsert",
+      "new": "tập insert"
+    },
+    {
+      "lesson": "AD75",
+      "old": "tậpquery",
+      "new": "tập query"
+    },
+    {
+      "lesson": "AD75",
+      "old": "dựđoán",
+      "new": "dự đoán"
+    },
+    {
+      "lesson": "AD75",
+      "old": "dùngfilter",
+      "new": "dùng filter"
+    },
+    {
+      "lesson": "AD75",
+      "old": "thấybit",
+      "new": "thấy bit"
+    },
+    {
+      "lesson": "AD75",
+      "old": "nênABSENT",
+      "new": "nên ABSENT"
+    },
+    {
+      "lesson": "AD75",
+      "old": "nênMAYBE",
+      "new": "nên M A Y B E"
+    },
+    {
+      "lesson": "AD75",
+      "old": "Đổihash",
+      "new": "Đổi hash"
+    },
+    {
+      "lesson": "AD75",
+      "old": "cósharedbit",
+      "new": "có shared bit"
+    },
+    {
+      "lesson": "AD75",
+      "old": "Chọnk",
+      "new": "Chọn k"
+    },
+    {
+      "lesson": "AD75",
+      "old": "tửsố",
+      "new": "tử số"
+    },
+    {
+      "lesson": "AD75",
+      "old": "mẫusố",
+      "new": "mẫu số"
+    },
+    {
+      "lesson": "AD75",
+      "old": "vớiMAYBE",
+      "new": "với M A Y B E"
+    },
+    {
+      "lesson": "AD75",
+      "old": "dữliệucốýtrùngmàgọiMAYBElàfalsepositive",
+      "new": "dữ liệu cố ý trùng mà gọi M A Y B E là false positive"
+    },
+    {
+      "lesson": "AD75",
+      "old": "vàdataset",
+      "new": "và dataset"
+    },
+    {
+      "lesson": "AD75",
+      "old": "cóca",
+      "new": "có ca"
+    },
+    {
+      "lesson": "AD75",
+      "old": "collisionvà",
+      "new": "collision và"
+    },
+    {
+      "lesson": "AD75",
+      "old": "tỷlệđo",
+      "new": "tỷ lệ đo"
+    },
+    {
+      "lesson": "AD75",
+      "old": "bằngcôngthức",
+      "new": "bằng công thức"
+    },
+    {
+      "lesson": "AD75",
+      "old": "họakhôngđộclập",
+      "new": "họa không độc lập"
+    },
+    {
+      "lesson": "AD75",
+      "old": "giảđịnh",
+      "new": "giả định"
+    },
+    {
+      "lesson": "AD75",
+      "old": "đangkhác",
+      "new": "đang khác"
+    },
+    {
+      "lesson": "AD75",
+      "old": "đểthấybit",
+      "new": "để thấy bit"
+    },
+    {
+      "lesson": "AD75",
+      "old": "đượcđặt",
+      "new": "được đặt"
+    },
+    {
+      "lesson": "AD75",
+      "old": "biểuđồtỷlệcósốqueryvàgiảđịnh",
+      "new": "biểu đồ tỷ lệ có số query và giả định"
+    },
+    {
+      "lesson": "AD75",
+      "old": "tựlập",
+      "new": "tự lập"
+    },
+    {
+      "lesson": "AD75",
+      "old": "thửnghiệm",
+      "new": "thử nghiệm"
+    },
+    {
+      "lesson": "AD75",
+      "old": "modeltrênweb",
+      "new": "model trên web"
+    },
+    {
+      "lesson": "AD75",
+      "old": "khôngyêucầutạodịchvụLSM",
+      "new": "không yêu cầu tạo dịch vụ LSM"
+    },
+    {
+      "lesson": "AD75",
+      "old": "ởmáycánhân",
+      "new": "ở máy cá nhân"
+    },
+    {
+      "lesson": "AD75",
+      "old": "giảngLSM",
+      "new": "giảng LSM"
+    },
+    {
+      "lesson": "AD75",
+      "old": "táchproofvàxácsuấtBloomđểkhôngnénthànhmộtmẹolookup",
+      "new": "tách proof và xác suất Bloom để không nén thành một mẹo lookup"
+    },
+    {
+      "lesson": "AD76",
+      "old": "bTransfer",
+      "new": "b Transfer"
+    },
+    {
+      "lesson": "AD76",
+      "old": "tTransfer",
+      "new": "t Transfer"
+    },
+    {
+      "lesson": "AD76",
+      "old": "bSeek",
+      "new": "b Seek"
+    },
+    {
+      "lesson": "AD76",
+      "old": "tSeek",
+      "new": "t Seek"
+    },
+    {
+      "lesson": "AD76",
+      "old": "khoảngceil",
+      "new": "khoảng ceil"
+    },
+    {
+      "lesson": "AD76",
+      "old": "kiệnA",
+      "new": "kiện A"
+    },
+    {
+      "lesson": "AD76",
+      "old": "sáchRID",
+      "new": "sách RID"
+    },
+    {
+      "lesson": "AD76",
+      "old": "toànAND",
+      "new": "toàn AND"
+    },
+    {
+      "lesson": "AD76",
+      "old": "toàncandidate",
+      "new": "toàn candidate"
+    },
+    {
+      "lesson": "AD76",
+      "old": "IndexA",
+      "new": "Index A"
+    },
+    {
+      "lesson": "AD76",
+      "old": "trảRID",
+      "new": "trả RID"
+    },
+    {
+      "lesson": "AD76",
+      "old": "indexB",
+      "new": "index B"
+    },
+    {
+      "lesson": "AD76",
+      "old": "TínhAND",
+      "new": "Tính AND"
+    },
+    {
+      "lesson": "AD76",
+      "old": "thỏaB",
+      "new": "thỏa B"
+    },
+    {
+      "lesson": "AD76",
+      "old": "riêngA",
+      "new": "riêng A"
+    },
+    {
+      "lesson": "AD76",
+      "old": "choOR",
+      "new": "cho OR"
+    },
+    {
+      "lesson": "AD76",
+      "old": "thỏaB",
+      "new": "thỏa B"
+    },
+    {
+      "lesson": "AD76",
+      "old": "nằmA",
+      "new": "nằm A"
+    },
+    {
+      "lesson": "AD76",
+      "old": "dùngA",
+      "new": "dùng A"
+    },
+    {
+      "lesson": "AD76",
+      "old": "theoRID",
+      "new": "theo RID"
+    },
+    {
+      "lesson": "AD76",
+      "old": "nhầmOR",
+      "new": "nhầm OR"
+    },
+    {
+      "lesson": "AD77",
+      "old": "cặpRID",
+      "new": "cặp RID"
+    },
+    {
+      "lesson": "AD77",
+      "old": "predicateTRUE",
+      "new": "predicate TRUE"
+    },
+    {
+      "lesson": "AD77",
+      "old": "khácRID",
+      "new": "khác RID"
+    },
+    {
+      "lesson": "AD77",
+      "old": "duplicateA",
+      "new": "duplicate A"
+    },
+    {
+      "lesson": "AD77",
+      "old": "rowR",
+      "new": "row R"
+    },
+    {
+      "lesson": "AD77",
+      "old": "toànS",
+      "new": "toàn S"
+    },
+    {
+      "lesson": "AD77",
+      "old": "giữS",
+      "new": "giữ S"
+    },
+    {
+      "lesson": "AD77",
+      "old": "NếuS",
+      "new": "Nếu S"
+    },
+    {
+      "lesson": "AD77",
+      "old": "vừaRAM",
+      "new": "vừa RAM"
+    },
+    {
+      "lesson": "AD77",
+      "old": "VớiB",
+      "new": "Với B"
+    },
+    {
+      "lesson": "AD77",
+      "old": "dànhB",
+      "new": "dành B"
+    },
+    {
+      "lesson": "AD77",
+      "old": "quétS",
+      "new": "quét S"
+    },
+    {
+      "lesson": "AD77",
+      "old": "vớiS",
+      "new": "với S"
+    },
+    {
+      "lesson": "AD77",
+      "old": "NếuB",
+      "new": "Nếu B"
+    },
+    {
+      "lesson": "AD77",
+      "old": "toànR",
+      "new": "toàn R"
+    },
+    {
+      "lesson": "AD77",
+      "old": "bOuter",
+      "new": "b Outer"
+    },
+    {
+      "lesson": "AD77",
+      "old": "nOuter",
+      "new": "n Outer"
+    },
+    {
+      "lesson": "AD77",
+      "old": "mộtpage",
+      "new": "một page"
+    },
+    {
+      "lesson": "AD77",
+      "old": "sốmatch",
+      "new": "số match"
+    },
+    {
+      "lesson": "AD77",
+      "old": "hếtinner",
+      "new": "hết inner"
+    },
+    {
+      "lesson": "AD77",
+      "old": "kiểmbudget",
+      "new": "kiểm budget"
+    },
+    {
+      "lesson": "AD77",
+      "old": "HếtRAM",
+      "new": "Hết RAM"
+    },
+    {
+      "lesson": "AD77",
+      "old": "cầnspill",
+      "new": "cần spill"
+    },
+    {
+      "lesson": "AD77",
+      "old": "rowK",
+      "new": "row K"
+    },
+    {
+      "lesson": "AD77",
+      "old": "rowK",
+      "new": "row K"
+    },
+    {
+      "lesson": "AD77",
+      "old": "rowL",
+      "new": "row L"
+    },
+    {
+      "lesson": "AD77",
+      "old": "equalityK",
+      "new": "equality K"
+    },
+    {
+      "lesson": "AD77",
+      "old": "thêmNULL",
+      "new": "thêm NULL"
+    },
+    {
+      "lesson": "AD77",
+      "old": "thôngthường",
+      "new": "thông thường"
+    },
+    {
+      "lesson": "AD77",
+      "old": "NếuB",
+      "new": "Nếu B"
+    },
+    {
+      "lesson": "AD77",
+      "old": "tăngđủgiữtoànR",
+      "new": "tăng đủ giữ toàn R"
+    },
+    {
+      "lesson": "AD77",
+      "old": "cóthểgiảmcònbao",
+      "new": "có thể giảm còn bao"
+    },
+    {
+      "lesson": "AD77",
+      "old": "rowđọc",
+      "new": "row đọc"
+    },
+    {
+      "lesson": "AD77",
+      "old": "sauđổiqueryouter",
+      "new": "sau đổi query outer"
+    },
+    {
+      "lesson": "AD77",
+      "old": "rowđọc",
+      "new": "row đọc"
+    },
+    {
+      "lesson": "AD77",
+      "old": "Tínhhai",
+      "new": "Tính hai"
+    },
+    {
+      "lesson": "AD77",
+      "old": "vànêumộtthôngtin",
+      "new": "và nêu một thông tin"
+    },
+    {
+      "lesson": "AD77",
+      "old": "cầntrướckhichọn",
+      "new": "cần trước khi chọn"
+    },
+    {
+      "lesson": "AD77",
+      "old": "nóthayhashjoin",
+      "new": "nó thay hash join"
+    },
+    {
+      "lesson": "AD77",
+      "old": "Tựtạodatasetcóduplicate",
+      "new": "Tự tạo dataset có duplicate"
+    },
+    {
+      "lesson": "AD77",
+      "old": "vàviếtindexedloopkhôngmấtcặp",
+      "new": "và viết indexed loop không mất cặp"
+    },
+    {
+      "lesson": "AD77",
+      "old": "vàmộtcaindexlookupchỉtrảmatchđầutiên",
+      "new": "và một ca index lookup chỉ trả match đầu tiên"
+    },
+    {
+      "lesson": "AD77",
+      "old": "saikếtquả",
+      "new": "sai kết quả"
+    },
+    {
+      "lesson": "AD77",
+      "old": "làsốpagechunk",
+      "new": "là số page chu n k"
+    },
+    {
+      "lesson": "AD77",
+      "old": "khôngphảisốrow",
+      "new": "không phải số row"
+    },
+    {
+      "lesson": "AD77",
+      "old": "phảiđượcđịnhnghĩachứkhôngtựcho",
+      "new": "phải được định nghĩa chứ không tự cho"
+    },
+    {
+      "lesson": "AD77",
+      "old": "cóthểdùnghaibêncùngkeynhưngpayloadkhácnhau",
+      "new": "có thể dùng hai bên cùng key nhưng payload khác nhau"
+    },
+    {
+      "lesson": "AD77",
+      "old": "đểbắtviệctrảcặpđầutiên",
+      "new": "để bắt việc trả cặp đầu tiên"
+    },
+    {
+      "lesson": "AD77",
+      "old": "cặpK",
+      "new": "cặp K"
+    },
+    {
+      "lesson": "AD77",
+      "old": "NULLkhôngmatchtheo",
+      "new": "NULL không match theo"
+    },
+    {
+      "lesson": "AD77",
+      "old": "thôngthường",
+      "new": "thông thường"
+    },
+    {
+      "lesson": "AD77",
+      "old": "vìkhôngđạtTRUE",
+      "new": "vì không đạt TRUE"
+    },
+    {
+      "lesson": "AD77",
+      "old": "safethìbài",
+      "new": "safe thì bài"
+    },
+    {
+      "lesson": "AD77",
+      "old": "phạmviđổi",
+      "new": "phạm vi đổi"
+    },
+    {
+      "lesson": "AD77",
+      "old": "NếuRgiữRAMđủvàscanSmộtlần",
+      "new": "Nếu R giữ RAM đủ và scanS một lần"
+    },
+    {
+      "lesson": "AD77",
+      "old": "bỏoutputvàCPU",
+      "new": "bỏ output và CPU"
+    },
+    {
+      "lesson": "AD77",
+      "old": "Khôngnhận",
+      "new": "Không nhận"
+    },
+    {
+      "lesson": "AD77",
+      "old": "nếuRkhôngthậtvừabudget",
+      "new": "nếu R không thật vừa budget"
+    },
+    {
+      "lesson": "AD77",
+      "old": "Cầnkíchthước",
+      "new": "Cần kích thước"
+    },
+    {
+      "lesson": "AD77",
+      "old": "cacheđểsophươngán",
+      "new": "cache để so phương án"
+    },
+    {
+      "lesson": "AD77",
+      "old": "sốkhôngtựquyếtmọiworkload",
+      "new": "số không tự quyết mọi workload"
+    },
+    {
+      "lesson": "AD77",
+      "old": "Rubricđòimọi",
+      "new": "Rubric đòi mọi"
+    },
+    {
+      "lesson": "AD77",
+      "old": "candidatephảichứamọi",
+      "new": "candidate phải chứa mọi"
+    },
+    {
+      "lesson": "AD77",
+      "old": "fullpredicateloạirowdư",
+      "new": "full predicate loại row dư"
+    },
+    {
+      "lesson": "AD77",
+      "old": "duplicateRIDkhôngmấtvàbudgetđúng",
+      "new": "duplicate RID không mất và budget đúng"
+    },
+    {
+      "lesson": "AD77",
+      "old": "Loopđúngtrênkhóa",
+      "new": "Loop đúng trên khóa"
+    },
+    {
+      "lesson": "AD77",
+      "old": "khôngthửđượclỗilookupđầutiên",
+      "new": "không thử được lỗi lookup đầu tiên"
+    },
+    {
+      "lesson": "AD77",
+      "old": "khiinnercónhiềumatch",
+      "new": "khi inner có nhiều match"
+    },
+    {
+      "lesson": "AD77",
+      "old": "Modelđổiouterorientation",
+      "new": "Model đổi outer orientation"
+    },
+    {
+      "lesson": "AD77",
+      "old": "vàkeymultiplicity",
+      "new": "và key multiplicity"
+    },
+    {
+      "lesson": "AD77",
+      "old": "Costchỉchấmmodelđãcho",
+      "new": "Cost chỉ chấm model đã cho"
+    },
+    {
+      "lesson": "AD77",
+      "old": "hồirow",
+      "new": "hồi row"
+    },
+    {
+      "lesson": "AD77",
+      "old": "pagemixtrỏphéptínhsaiđơnvị",
+      "new": "page m ix trỏ phép tính sai đơn vị"
+    },
+    {
+      "lesson": "AD77",
+      "old": "queryđúngnhưngcostkhácngữcảnhkhôngđượcchấmsaisemantics",
+      "new": "query đúng nhưng cost khác ngữ cảnh không được chấm sai semantics"
+    },
+    {
+      "lesson": "AD77",
+      "old": "Canvaschochọnouter",
+      "new": "C an v as cho chọn outer"
+    },
+    {
+      "lesson": "AD77",
+      "old": "bướcscaninnerhoặclookup",
+      "new": "bước scan inner hoặc lookup"
+    },
+    {
+      "lesson": "AD77",
+      "old": "vàđếmcặp",
+      "new": "và đếm cặp"
+    },
+    {
+      "lesson": "AD77",
+      "old": "Bàiquery",
+      "new": "Bài query"
+    },
+    {
+      "lesson": "AD77",
+      "old": "khôngcầnlearnercàiserverlocal",
+      "new": "không cần learner cài server local"
+    },
+    {
+      "lesson": "AD77",
+      "old": "Proofvàbáocáođượcnộpởcùngtrang",
+      "new": "Proof và báo cáo được nộp ở cùng trang"
+    },
+    {
+      "lesson": "AD77",
+      "old": "giữmerge",
+      "new": "giữ merge"
+    },
+    {
+      "lesson": "AD77",
+      "old": "hashjoinvàskewriêng",
+      "new": "hash join và skew riêng"
+    },
+    {
+      "lesson": "AD77",
+      "old": "vàlịchPEđượcviếtmới",
+      "new": "và lịch PE được viết mới"
+    },
+    {
+      "lesson": "AD77",
+      "old": "assumptionsđãcôngkhai",
+      "new": "assumptions đã công khai"
+    },
+    {
+      "lesson": "AD78",
+      "old": "nonNULL",
+      "new": "non NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "làTRUE",
+      "new": "là TRUE"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cóNULL",
+      "new": "có NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "phépNULL",
+      "new": "phép NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "đạtTRUE",
+      "new": "đạt TRUE"
+    },
+    {
+      "lesson": "AD78",
+      "old": "làwitness",
+      "new": "là witness"
+    },
+    {
+      "lesson": "AD78",
+      "old": "tậpcustomer",
+      "new": "tập customer"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cóNULL",
+      "new": "có NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cácid",
+      "new": "các id"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngmatch",
+      "new": "không match"
+    },
+    {
+      "lesson": "AD78",
+      "old": "nênWHERE",
+      "new": "nên WHERE"
+    },
+    {
+      "lesson": "AD78",
+      "old": "nonNULL",
+      "new": "non NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "nonNULL",
+      "new": "non NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "amountNULL",
+      "new": "amount NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "kiệnNULL",
+      "new": "kiện NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cảUNKNOWN",
+      "new": "cả UNKNOWN"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngmatch",
+      "new": "không match"
+    },
+    {
+      "lesson": "AD78",
+      "old": "ởcustomer",
+      "new": "ở customer"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cầnCOALESCE",
+      "new": "cần COALESCE"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khớpCOUNT",
+      "new": "khớp COUNT"
+    },
+    {
+      "lesson": "AD78",
+      "old": "toànNULL",
+      "new": "toàn NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "đềuMAXNULL",
+      "new": "đều MAXNULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cùngCOALESCE",
+      "new": "cùng COALESCE"
+    },
+    {
+      "lesson": "AD78",
+      "old": "mộtrow",
+      "new": "một row"
+    },
+    {
+      "lesson": "AD78",
+      "old": "sốorder",
+      "new": "số order"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngmatch",
+      "new": "không match"
+    },
+    {
+      "lesson": "AD78",
+      "old": "VớiCOUNT",
+      "new": "Với COUNT"
+    },
+    {
+      "lesson": "AD78",
+      "old": "giátrị",
+      "new": "giá trị"
+    },
+    {
+      "lesson": "AD78",
+      "old": "querygốc",
+      "new": "query gốc"
+    },
+    {
+      "lesson": "AD78",
+      "old": "dùngCOUNT",
+      "new": "dùng COUNT"
+    },
+    {
+      "lesson": "AD78",
+      "old": "chỉđếmnonNULL",
+      "new": "chỉ đếm non NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "phảilà",
+      "new": "phải là"
+    },
+    {
+      "lesson": "AD78",
+      "old": "dùngđúngexpression",
+      "new": "dùng đúng expression"
+    },
+    {
+      "lesson": "AD78",
+      "old": "bảnCOUNT",
+      "new": "bản COUNT"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cóidk",
+      "new": "có id k"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cácorderkhớp",
+      "new": "các order khớp"
+    },
+    {
+      "lesson": "AD78",
+      "old": "đúngcountcủanhóm",
+      "new": "đúng count của nhóm"
+    },
+    {
+      "lesson": "AD78",
+      "old": "vàjoinmatchduynhất",
+      "new": "và join match duy nhất"
+    },
+    {
+      "lesson": "AD78",
+      "old": "tạoNULL",
+      "new": "tạo NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "vàCOALESCEđưa",
+      "new": "và COALESCE đưa"
+    },
+    {
+      "lesson": "AD78",
+      "old": "phủmọirowngoài",
+      "new": "phủ mọi row ngoài"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cóNULL",
+      "new": "có NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngmatch",
+      "new": "không match"
+    },
+    {
+      "lesson": "AD78",
+      "old": "vàCOUNTscalar",
+      "new": "và COUNTscalar"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cùnglogic",
+      "new": "cùng logic"
+    },
+    {
+      "lesson": "AD78",
+      "old": "modelnày",
+      "new": "model này"
+    },
+    {
+      "lesson": "AD78",
+      "old": "mộtgroupjoin",
+      "new": "một group join"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngaggregate",
+      "new": "không aggregate"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cóthểtrảhơnmộtrow",
+      "new": "có thể trả hơn một row"
+    },
+    {
+      "lesson": "AD78",
+      "old": "enginephảibáolỗi",
+      "new": "engine phải báo lỗi"
+    },
+    {
+      "lesson": "AD78",
+      "old": "bằngMAX",
+      "new": "bằng MAX"
+    },
+    {
+      "lesson": "AD78",
+      "old": "hoặcjoinchọnmộtrowbấtkỳ",
+      "new": "hoặc join chọn một row bất kỳ"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cóthểxóa",
+      "new": "có thể xóa"
+    },
+    {
+      "lesson": "AD78",
+      "old": "vàđổi",
+      "new": "và đổi"
+    },
+    {
+      "lesson": "AD78",
+      "old": "kếtquả",
+      "new": "kết quả"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngphải",
+      "new": "không phải"
+    },
+    {
+      "lesson": "AD78",
+      "old": "rewriteđúngchỉvì",
+      "new": "rewrite đúng chỉ vì"
+    },
+    {
+      "lesson": "AD78",
+      "old": "samplecó",
+      "new": "sample có"
+    },
+    {
+      "lesson": "AD78",
+      "old": "mộtmatch",
+      "new": "một match"
+    },
+    {
+      "lesson": "AD78",
+      "old": "Nếuuniqueconstraintđảm",
+      "new": "Nếu unique constraint đảm"
+    },
+    {
+      "lesson": "AD78",
+      "old": "proofphảinêuràngbuộcấy",
+      "new": "proof phải nêu ràng buộc ấy"
+    },
+    {
+      "lesson": "AD78",
+      "old": "Correlationcóinequality",
+      "new": "Correlation có inequality"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cũngđổiđiều",
+      "new": "cũng đổi điều"
+    },
+    {
+      "lesson": "AD78",
+      "old": "Giảsử",
+      "new": "Giả sử"
+    },
+    {
+      "lesson": "AD78",
+      "old": "queryđếmorder",
+      "new": "query đếm order"
+    },
+    {
+      "lesson": "AD78",
+      "old": "códate",
+      "new": "có date"
+    },
+    {
+      "lesson": "AD78",
+      "old": "rowngoài",
+      "new": "row ngoài"
+    },
+    {
+      "lesson": "AD78",
+      "old": "vàhairowngoài",
+      "new": "và hai row ngoài"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cùngcustomer",
+      "new": "cùng customer"
+    },
+    {
+      "lesson": "AD78",
+      "old": "Groupcounttoànbộtheocustomer",
+      "new": "Group count toàn bộ theo customer"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngđủtrảhai",
+      "new": "không đủ trả hai"
+    },
+    {
+      "lesson": "AD78",
+      "old": "sốkhácnhau",
+      "new": "số khác nhau"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cầngiữ",
+      "new": "cần giữ"
+    },
+    {
+      "lesson": "AD78",
+      "old": "biếnđổiđượcchứngminh",
+      "new": "biến đổi được chứng minh"
+    },
+    {
+      "lesson": "AD78",
+      "old": "phạmviNULL",
+      "new": "phạm vi NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cóthểkhiến",
+      "new": "có thể khiến"
+    },
+    {
+      "lesson": "AD78",
+      "old": "việcđẩypredicate",
+      "new": "việc đẩy predicate"
+    },
+    {
+      "lesson": "AD78",
+      "old": "đổisốlầnđánhgiákhônghợplệ",
+      "new": "đổi số lần đánh giá không hợp lệ"
+    },
+    {
+      "lesson": "AD78",
+      "old": "Táchlogicalrewritevàphysicalimplementation",
+      "new": "Tách logical rewrite và physical implementation"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cóthểcache",
+      "new": "có thể cache"
+    },
+    {
+      "lesson": "AD78",
+      "old": "màkhôngbiếnmọithứthànhmộtjoinphẳng",
+      "new": "mà không biến mọi thứ thành một join phẳng"
+    },
+    {
+      "lesson": "AD78",
+      "old": "lượngplan",
+      "new": "lượng plan"
+    },
+    {
+      "lesson": "AD78",
+      "old": "trongkhônggianhợplệ",
+      "new": "trong không gian hợp lệ"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngđượcthêmplanrẻnhưngsainghĩa",
+      "new": "không được thêm plan rẻ nhưng sai nghĩa"
+    },
+    {
+      "lesson": "AD78",
+      "old": "củaEXISTS",
+      "new": "của EXISTS"
+    },
+    {
+      "lesson": "AD78",
+      "old": "saoDISTINCT",
+      "new": "sao DISTINCT"
+    },
+    {
+      "lesson": "AD78",
+      "old": "làsửa",
+      "new": "là sửa"
+    },
+    {
+      "lesson": "AD78",
+      "old": "tổngquát",
+      "new": "tổng quát"
+    },
+    {
+      "lesson": "AD78",
+      "old": "ThêmOrders",
+      "new": "Thêm Orders"
+    },
+    {
+      "lesson": "AD78",
+      "old": "vàNOTIN",
+      "new": "và NO TIN"
+    },
+    {
+      "lesson": "AD78",
+      "old": "rađiềukiện",
+      "new": "ra điều kiện"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cầntrướckhinhậnchúngtươngđương",
+      "new": "cần trước khi nhận chúng tương đương"
+    },
+    {
+      "lesson": "AD78",
+      "old": "choCOUNT",
+      "new": "cho COUNT"
+    },
+    {
+      "lesson": "AD78",
+      "old": "nêuoutput",
+      "new": "nêu output"
+    },
+    {
+      "lesson": "AD78",
+      "old": "từngcustomer",
+      "new": "từng customer"
+    },
+    {
+      "lesson": "AD78",
+      "old": "vàcách",
+      "new": "và cách"
+    },
+    {
+      "lesson": "AD78",
+      "old": "xửlýnhómkhôngmatch",
+      "new": "xử lý nhóm không match"
+    },
+    {
+      "lesson": "AD78",
+      "old": "saoCOALESCE",
+      "new": "sao COALESCE"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngđúngmọitrườnghợp",
+      "new": "không đúng mọi trường hợp"
+    },
+    {
+      "lesson": "AD78",
+      "old": "Tựtạomột",
+      "new": "Tự tạo một"
+    },
+    {
+      "lesson": "AD78",
+      "old": "trảhairow",
+      "new": "trả hai row"
+    },
+    {
+      "lesson": "AD78",
+      "old": "Nộpquerygốc",
+      "new": "Nộp query gốc"
+    },
+    {
+      "lesson": "AD78",
+      "old": "rewriteứngviên",
+      "new": "rewrite ứng viên"
+    },
+    {
+      "lesson": "AD78",
+      "old": "phảnvídụvàbản",
+      "new": "phản ví dụ và bản"
+    },
+    {
+      "lesson": "AD78",
+      "old": "giảđịnh",
+      "new": "giả định"
+    },
+    {
+      "lesson": "AD78",
+      "old": "hỏiEXISTS",
+      "new": "hỏi EXISTS"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cầnmộtwitness",
+      "new": "cần một witness"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngđếmwitness",
+      "new": "không đếm witness"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cóquytắcriêng",
+      "new": "có quy tắc riêng"
+    },
+    {
+      "lesson": "AD78",
+      "old": "bỏNULLởorder",
+      "new": "bỏ NULL ở order"
+    },
+    {
+      "lesson": "AD78",
+      "old": "MAXởnhómkhôngmatchvẫnNULL",
+      "new": "MAX ở nhóm không match vẫn NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "cầninputlàmhaiquerykhácnhau",
+      "new": "cần input làm hai query khác nhau"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngchỉnóicóthểsai",
+      "new": "không chỉ nói có thể sai"
+    },
+    {
+      "lesson": "AD78",
+      "old": "Outerbagcóhaibảnparentgiốngnhau",
+      "new": "Outer bag có hai bản parent giống nhau"
+    },
+    {
+      "lesson": "AD78",
+      "old": "thìsemijoingiữcảhai",
+      "new": "thì semijoin giữ cả hai"
+    },
+    {
+      "lesson": "AD78",
+      "old": "DISTINCTcóthểchỉgiữmột",
+      "new": "DISTINCT có thể chỉ giữ một"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngphảisửatổngquát",
+      "new": "không phải sửa tổng quát"
+    },
+    {
+      "lesson": "AD78",
+      "old": "NOTEXISTSgiữ",
+      "new": "NOT EXISTS giữ"
+    },
+    {
+      "lesson": "AD78",
+      "old": "NOTINvớikeyinnerNULLkhônggiữ",
+      "new": "NO TIN với key inner NULL không giữ"
+    },
+    {
+      "lesson": "AD78",
+      "old": "theoWHERE",
+      "new": "theo WHERE"
+    },
+    {
+      "lesson": "AD78",
+      "old": "CầnnêuNULLconstraints",
+      "new": "Cần nêu NULL constraints"
+    },
+    {
+      "lesson": "AD78",
+      "old": "trướcproof",
+      "new": "trước proof"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngthểsuychỉtừmộtinstancekhôngcóNULL",
+      "new": "không thể suy chỉ từ một instance không có NULL"
+    },
+    {
+      "lesson": "AD78",
+      "old": "LEFTJOINvàCOALESCEchỉchoCOUNTkhicần",
+      "new": "LEFT JOIN và COALESCE chỉ cho COUNT khi cần"
+    },
+    {
+      "lesson": "AD78",
+      "old": "MAXNULLkhôngđồngnghĩasố",
+      "new": "MAXNULL không đồng nghĩa số"
+    },
+    {
+      "lesson": "AD78",
+      "old": "nhấtlàkhigiátrịhợplệcóthểâm",
+      "new": "nhất là khi giá trị hợp lệ có thể âm"
+    },
+    {
+      "lesson": "AD78",
+      "old": "Rubriccầncounterexamplecụthể",
+      "new": "Rubric cần counterexample cụ thể"
+    },
+    {
+      "lesson": "AD78",
+      "old": "đúngoutputhoặclỗi",
+      "new": "đúng output hoặc lỗi"
+    },
+    {
+      "lesson": "AD78",
+      "old": "Chấpnhậngiữcorrelationnếuchưađủđiềukiệnrewrite",
+      "new": "Chấp nhận giữ correlation nếu chưa đủ điều kiện rewrite"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngépflattenmọiquery",
+      "new": "không ép flatten mọi query"
+    },
+    {
+      "lesson": "AD78",
+      "old": "thêmduplicateparent",
+      "new": "thêm duplicate parent"
+    },
+    {
+      "lesson": "AD78",
+      "old": "Oracleđánhgiáhaiquerytheomultiset",
+      "new": "Oracle đánh giá hai query theo multiset"
+    },
+    {
+      "lesson": "AD78",
+      "old": "lỗitheocontract",
+      "new": "lỗi theo contract"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngchỉđếmsốrow",
+      "new": "không chỉ đếm số row"
+    },
+    {
+      "lesson": "AD78",
+      "old": "chỉrowmất",
+      "new": "chỉ row mất"
+    },
+    {
+      "lesson": "AD78",
+      "old": "dưhoặclỗivừa",
+      "new": "dư hoặc lỗi vừa"
+    },
+    {
+      "lesson": "AD78",
+      "old": "bịrewriteche",
+      "new": "bị rewrite che"
+    },
+    {
+      "lesson": "AD78",
+      "old": "Ngườihọcchọnrowngoàiđểxemwitness",
+      "new": "Người học chọn row ngoài để xem witness"
+    },
+    {
+      "lesson": "AD78",
+      "old": "tươngứng",
+      "new": "tương ứng"
+    },
+    {
+      "lesson": "AD78",
+      "old": "sửaquery",
+      "new": "sửa query"
+    },
+    {
+      "lesson": "AD78",
+      "old": "counterexampleđượcnộptrực",
+      "new": "counterexample được nộp trực"
+    },
+    {
+      "lesson": "AD78",
+      "old": "tiếptrênweb",
+      "new": "tiếp trên web"
+    },
+    {
+      "lesson": "AD78",
+      "old": "khôngcầnlearnerchạyserverriêng",
+      "new": "không cần learner chạy server riêng"
+    },
+    {
+      "lesson": "AD78",
+      "old": "táchdecorrelationkhỏiAD",
+      "new": "tách decorrelation khỏi AD"
+    },
+    {
+      "lesson": "AD78",
+      "old": "đểgiữđủsemijoin",
+      "new": "để giữ đủ semijoin"
+    },
+    {
+      "lesson": "AD78",
+      "old": "scalaraggregatevàfailureconditions",
+      "new": "scalar aggregate và failure con di ti on s"
+    },
+    {
+      "lesson": "AD78",
+      "old": "dụPEđượcviếtmới",
+      "new": "dụ PE được viết mới"
+    },
+    {
+      "lesson": "AD79",
+      "old": "trênIaaS",
+      "new": "trên I a aS"
+    },
+    {
+      "lesson": "AD79",
+      "old": "thêmCPU",
+      "new": "thêm CPU"
+    },
+    {
+      "lesson": "AD79",
+      "old": "ởIaaS",
+      "new": "ở I a aS"
+    },
+    {
+      "lesson": "AD79",
+      "old": "vượtmax",
+      "new": "vượt max"
+    },
+    {
+      "lesson": "AD79",
+      "old": "nhãnIaaS",
+      "new": "nhãn I a aS"
+    },
+    {
+      "lesson": "AD79",
+      "old": "thiếucapacity",
+      "new": "thiếu capacity"
+    },
+    {
+      "lesson": "AD79",
+      "old": "tổngcapacity",
+      "new": "tổng capacity"
+    },
+    {
+      "lesson": "AD79",
+      "old": "mấtstate",
+      "new": "mất state"
+    },
+    {
+      "lesson": "AD79",
+      "old": "hoặcfault",
+      "new": "hoặc fault"
+    },
+    {
+      "lesson": "AD79",
+      "old": "dụPE",
+      "new": "dụ PE"
+    },
+    {
+      "lesson": "AD80",
+      "old": "scanA",
+      "new": "scan A"
+    },
+    {
+      "lesson": "AD80",
+      "old": "scanB",
+      "new": "scan B"
+    },
+    {
+      "lesson": "AD80",
+      "old": "khoảngmax",
+      "new": "khoảng max"
+    },
+    {
+      "lesson": "AD80",
+      "old": "choW",
+      "new": "cho W"
+    },
+    {
+      "lesson": "AD80",
+      "old": "choW",
+      "new": "cho W"
+    },
+    {
+      "lesson": "AD80",
+      "old": "tổngwork",
+      "new": "tổng work"
+    },
+    {
+      "lesson": "AD80",
+      "old": "vàoW",
+      "new": "vào W"
+    },
+    {
+      "lesson": "AD80",
+      "old": "cònW",
+      "new": "còn W"
+    },
+    {
+      "lesson": "AD80",
+      "old": "rảnh",
+      "new": "r ảnh"
+    },
+    {
+      "lesson": "AD80",
+      "old": "Tổngwork",
+      "new": "Tổng work"
+    },
+    {
+      "lesson": "AD80",
+      "old": "nhưAD",
+      "new": "như AD"
+    },
+    {
+      "lesson": "AD80",
+      "old": "ítwork",
+      "new": "ít work"
+    },
+    {
+      "lesson": "AD80",
+      "old": "PlanP",
+      "new": "Plan P"
+    },
+    {
+      "lesson": "AD80",
+      "old": "vịwork",
+      "new": "vị work"
+    },
+    {
+      "lesson": "AD80",
+      "old": "planQ",
+      "new": "plan Q"
+    },
+    {
+      "lesson": "AD80",
+      "old": "vàtakes",
+      "new": "và takes"
+    },
+    {
+      "lesson": "AD80",
+      "old": "studentID",
+      "new": "student ID"
+    },
+    {
+      "lesson": "AD80",
+      "old": "đượcreplicate",
+      "new": "được replicate"
+    },
+    {
+      "lesson": "AD80",
+      "old": "sốrow",
+      "new": "số row"
+    },
+    {
+      "lesson": "AD80",
+      "old": "scanB",
+      "new": "scan B"
+    },
+    {
+      "lesson": "AD80",
+      "old": "làbao",
+      "new": "là bao"
+    },
+    {
+      "lesson": "AD80",
+      "old": "tổngwork",
+      "new": "tổng work"
+    },
+    {
+      "lesson": "AD80",
+      "old": "trướcack",
+      "new": "trước ack"
+    },
+    {
+      "lesson": "AD80",
+      "old": "tổngwork",
+      "new": "tổng work"
+    },
+    {
+      "lesson": "AD80",
+      "old": "lịchscanA",
+      "new": "lịch scan A"
+    },
+    {
+      "lesson": "AD80",
+      "old": "rồijoin",
+      "new": "rồi join"
+    },
+    {
+      "lesson": "AD80",
+      "old": "vàaggregate",
+      "new": "và aggregate"
+    },
+    {
+      "lesson": "AD80",
+      "old": "cùngcomparator",
+      "new": "cùng comparator"
+    },
+    {
+      "lesson": "AD80",
+      "old": "vàmọiinputsorted",
+      "new": "và mọi input sorted"
+    },
+    {
+      "lesson": "AD80",
+      "old": "mọiinstance",
+      "new": "mọi instance"
+    },
+    {
+      "lesson": "AD80",
+      "old": "attemptID",
+      "new": "attempt ID"
+    },
+    {
+      "lesson": "AD80",
+      "old": "lýacklost",
+      "new": "lý ack lost"
+    },
+    {
+      "lesson": "AD80",
+      "old": "vàfaultpoint",
+      "new": "và fault point"
+    },
+    {
+      "lesson": "AD80",
+      "old": "chọnworker",
+      "new": "chọn worker"
+    },
+    {
+      "lesson": "AD80",
+      "old": "bằngnút",
+      "new": "bằng nút"
+    },
+    {
+      "lesson": "AD80",
+      "old": "vàqueues",
+      "new": "và queue s"
+    },
+    {
+      "lesson": "AD80",
+      "old": "Cófault",
+      "new": "Có fault"
+    },
+    {
+      "lesson": "AD80",
+      "old": "theoactionđượcduyệt",
+      "new": "theo ac ti on được duyệt"
+    },
+    {
+      "lesson": "AD80",
+      "old": "khôngyêucầutựmởcluster",
+      "new": "không yêu cầu tự mở cluster"
+    },
+    {
+      "lesson": "AD80",
+      "old": "nộpstate",
+      "new": "nộp state"
+    },
+    {
+      "lesson": "AD80",
+      "old": "protocolvàcounterexample",
+      "new": "protocol và counterexample"
+    },
+    {
+      "lesson": "AD80",
+      "old": "ngaytrênweb",
+      "new": "ngay trên web"
+    },
+    {
+      "lesson": "AD80",
+      "old": "vàparallelviewmaintenance",
+      "new": "và parallel view maintenance"
+    },
+    {
+      "lesson": "AD80",
+      "old": "vàcostPE",
+      "new": "và cost PE"
+    },
+    {
+      "lesson": "AD80",
+      "old": "giảđịnh",
+      "new": "giả định"
+    },
+    {
+      "lesson": "AD80",
+      "old": "hiệnhành",
+      "new": "hiện hành"
+    }
+  ],
+  "unresolved": [
+    {
+      "lesson": "AD26",
+      "token": "giữApple"
+    },
+    {
+      "lesson": "AD26",
+      "token": "củaZebra"
+    },
+    {
+      "lesson": "AD27",
+      "token": "chọnchild"
+    },
+    {
+      "lesson": "AD27",
+      "token": "tạochild"
+    },
+    {
+      "lesson": "AD27",
+      "token": "miềnchild"
+    },
+    {
+      "lesson": "AD27",
+      "token": "nămchild"
+    },
+    {
+      "lesson": "AD31",
+      "token": "lấymaxseq"
+    },
+    {
+      "lesson": "AD34",
+      "token": "tiếnchild"
+    },
+    {
+      "lesson": "AD34",
+      "token": "lầnchild"
+    },
+    {
+      "lesson": "AD34",
+      "token": "từchild"
+    },
+    {
+      "lesson": "AD34",
+      "token": "táchcancel"
+    },
+    {
+      "lesson": "AD34",
+      "token": "cầnclosecácchild"
+    },
+    {
+      "lesson": "AD34",
+      "token": "nộptracevàpseudocode"
+    },
+    {
+      "lesson": "AD37",
+      "token": "dụlương"
+    },
+    {
+      "lesson": "AD37",
+      "token": "MaterializeRIDđủđiềukiện"
+    },
+    {
+      "lesson": "AD37",
+      "token": "ΔRjoinSold"
+    },
+    {
+      "lesson": "AD37",
+      "token": "RoldjoinΔS"
+    },
+    {
+      "lesson": "AD37",
+      "token": "Khôngchấpnhậnclaimfreshmọilúcnếuchỉrefreshđịnhkỳ"
+    },
+    {
+      "lesson": "AD37",
+      "token": "khôngcoidemoheap"
+    },
+    {
+      "lesson": "AD75",
+      "token": "dùngeditor"
+    },
+    {
+      "lesson": "AD77",
+      "token": "Nộpproofcandidatecompleteness"
+    },
+    {
+      "lesson": "AD77",
+      "token": "sooutputmultisetRIDvớibruteforceđộc"
+    },
+    {
+      "lesson": "AD77",
+      "token": "dùngbackendSQLkhicócapability"
+    },
+    {
+      "lesson": "AD78",
+      "token": "cutoffcủa"
+    },
+    {
+      "lesson": "AD78",
+      "token": "nhưngcutoffkhác"
+    },
+    {
+      "lesson": "AD78",
+      "token": "materializesubqueryhoặcdùngparameterizedindexloop"
+    },
+    {
+      "lesson": "AD78",
+      "token": "Viếtpreaggregate"
+    },
+    {
+      "lesson": "AD78",
+      "token": "mộtcorrelationcutoffkhácnhautrongcùngcustomer"
+    },
+    {
+      "lesson": "AD78",
+      "token": "AntijoincầncộtchildkhôngNULLđểnhậnbảnNULLextended"
+    },
+    {
+      "lesson": "AD78",
+      "token": "Preaggregateđúngexpression"
+    },
+    {
+      "lesson": "AD78",
+      "token": "repairgiữngữnghĩavàassumptions"
+    },
+    {
+      "lesson": "AD78",
+      "token": "vàcutoffbiên"
+    },
+    {
+      "lesson": "AD78",
+      "token": "backendSQLnếucócapability"
+    }
+  ]
+}

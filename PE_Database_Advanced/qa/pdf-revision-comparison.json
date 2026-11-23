@@ -1,0 +1,8 @@
+{
+  "scope": "Every page raster compared at scale 0.5 to the prior visually reviewed export. Each changed page rendered separately at scale 1.25 for visual review.",
+  "pages": 785,
+  "unchangedPages": 785,
+  "changedPages": [],
+  "previousPdfSha256": "9575020e585f746a63ed37af61d79bb1973883f15c4ae5db2131ac306648db33",
+  "currentPdfSha256": "d6e97e425f25120b3781b057c56f5156f177ef1852d0762af53c27e85d900732"
+}

@@ -1,0 +1,752 @@
+{
+  "date": "2026-11-05",
+  "reviewType": "Independent source-aware depth/readability repair, not all-course certification",
+  "fullLessonReviewCount": 24,
+  "computedModelChecksPassed": 32,
+  "lessonStructuresPassed": 24,
+  "nativeSqlExecutedByReviewer": false,
+  "flags": [
+    {
+      "id": "IQ01",
+      "lessonId": "AD39",
+      "sourceSection": "18.1.3",
+      "status": "fixed",
+      "priority": "P1",
+      "kind": "error",
+      "gap": "Acyclic fixed lock placement was incorrectly too weak to establish converse for read/write schedules.",
+      "error": "Acyclic fixed lock placement was incorrectly too weak to establish converse for read/write schedules.",
+      "readability": null,
+      "resolutionOrNextAction": "Added r1(X),w2(X),r3(Y),w1(Y), acyclic graph3→1→2, and lock-interval contradiction for all2PL placements."
+    },
+    {
+      "id": "IQ02",
+      "lessonId": "AD41",
+      "sourceSection": "18.6",
+      "status": "fixed",
+      "priority": "P2",
+      "kind": "source-attribution",
+      "gap": "Third parallel-write validation case was attributed to supplied section, whose text gives two serialized-write cases.",
+      "error": null,
+      "readability": null,
+      "resolutionOrNextAction": "Labeled source cases versus pedagogical extension; made abort mutex cleanup explicit."
+    },
+    {
+      "id": "IQ03",
+      "lessonId": "AD42",
+      "sourceSection": "18.7.2",
+      "status": "fixed",
+      "priority": "P1",
+      "kind": "depth-gap",
+      "gap": "MV2PL was a paragraph without counter,∞ versions or commit-publication procedure.",
+      "error": null,
+      "readability": null,
+      "resolutionOrNextAction": "Added algorithm, reader-before/after trace, conflicting updater and GC boundary, serial-order argument, fifth exercise/answer."
+    },
+    {
+      "id": "IQ04",
+      "lessonId": "AD43",
+      "sourceSection": "19.4.1–19.4.2",
+      "status": "fixed",
+      "priority": "P1",
+      "kind": "error",
+      "gap": "Redo every ordinary update could resurrect a transaction that already finished rollback before crash.",
+      "error": "Redo every ordinary update could resurrect a transaction that already finished rollback before crash.",
+      "readability": null,
+      "resolutionOrNextAction": "Scoped toy history and added completed-abort counterexample plus source redo-only rollback records/undo-list handling."
+    },
+    {
+      "id": "IQ05",
+      "lessonId": "AD44",
+      "sourceSection": "19.9.2",
+      "status": "fixed",
+      "priority": "P2",
+      "kind": "trace-precondition",
+      "gap": "Second crash stated storage pageLSN60 without a flush between redo and crash.",
+      "error": "Second crash stated storage pageLSN60 without a flush between redo and crash.",
+      "readability": null,
+      "resolutionOrNextAction": "Added explicit WAL-valid P flush at60 while log60 durable."
+    },
+    {
+      "id": "IQ06",
+      "lessonId": "AD44",
+      "sourceSection": "19.8.2–19.8.3",
+      "status": "fixed",
+      "priority": "P1",
+      "kind": "depth-gap",
+      "gap": "Logical undo discussion omitted begin/end/abort/skip protocol and risked conflating ordinary physical logging with ARIES CLR.",
+      "error": null,
+      "readability": null,
+      "resolutionOrNextAction": "Added separate algorithm, incomplete-operation and interrupted-inverse behavior, numeric successor-preserving compensation and solved task."
+    },
+    {
+      "id": "IQ07",
+      "lessonId": "AD51",
+      "sourceSection": "23.4.2.2–23.4.2.4,23.4.3.2",
+      "status": "fixed",
+      "priority": "P1",
+      "kind": "depth-gap",
+      "gap": "Quorum intersection/register explanation did not teach source majority locks, biased/weighted quorum or chain replication.",
+      "error": null,
+      "readability": null,
+      "resolutionOrNextAction": "Added all protocol rules, weight example, single-item deadlock and chain read-tail/failure cases; preserved distinction from register."
+    },
+    {
+      "id": "IQ08",
+      "lessonId": "AD52",
+      "sourceSection": "23.7.2,23.8.2",
+      "status": "fixed",
+      "priority": "P1",
+      "kind": "proof-gap",
+      "gap": "Election mechanisms were omitted and Paxos proof could be read as induction over real-time acceptance after chosen event.",
+      "error": "Election mechanisms were omitted and Paxos proof could be read as induction over real-time acceptance after chosen event.",
+      "readability": null,
+      "resolutionOrNextAction": "Added source election cases and induction on smallest higher-numbered proposal sending another value."
+    },
+    {
+      "id": "IQ09",
+      "lessonId": "AD53",
+      "sourceSection": "25.1.4.4",
+      "status": "fixed",
+      "priority": "P1",
+      "kind": "depth-gap",
+      "gap": "Tuning narrative omitted workload compression and greedy index/view search with recomputation.",
+      "error": null,
+      "readability": null,
+      "resolutionOrNextAction": "Added weighted cost, pseudocode, finite termination/cost, interaction trace, greedy counterexample, maintenance case and exercise."
+    },
+    {
+      "id": "IQ10",
+      "lessonId": "AD63",
+      "sourceSection": "18.10.1",
+      "status": "fixed",
+      "priority": "P1",
+      "kind": "depth-gap",
+      "gap": "Online build was named without final catch-up/publication barrier.",
+      "error": null,
+      "readability": null,
+      "resolutionOrNextAction": "Added snapshot/log/build/replay/final shared-lock/catalog algorithm, insertion/deletion/boundary cases and solved task."
+    },
+    {
+      "id": "IQ11",
+      "lessonId": "AD64",
+      "sourceSection": "21.5",
+      "status": "fixed",
+      "priority": "P1",
+      "kind": "depth-gap",
+      "gap": "Global index narrative lacked concrete partitioned secondary-index construction and duplicate partition-key identity.",
+      "error": null,
+      "readability": null,
+      "resolutionOrNextAction": "Added(Ki,Kp,Ku),two-hop routing, exact two-hit trace and update atomicity/freshness choice."
+    },
+    {
+      "id": "IQ12",
+      "lessonId": "AD65",
+      "sourceSection": "23.3.7,23.5.1",
+      "status": "fixed",
+      "priority": "P1",
+      "kind": "depth-gap",
+      "gap": "Distributed validation and global clock snapshot lacked source rejection/commit-wait/read-wait mechanisms.",
+      "error": null,
+      "readability": null,
+      "resolutionOrNextAction": "Added late-old timestamp abort, StartTS≤TS≤FinishTS, interval model, numeric trace, pending≤r/safe-time guard and ticket model."
+    },
+    {
+      "id": "IQ13",
+      "lessonId": "AD61",
+      "sourceSection": "27.4.3–27.4.7",
+      "status": "fixed",
+      "priority": "P2",
+      "kind": "depth-gap",
+      "gap": "Nonrecursive operation semantics and stratification direction were too compressed; broad negative-rules rubric could be vague.",
+      "error": null,
+      "readability": null,
+      "resolutionOrNextAction": "Added join/projection/union/difference mapping, explicit stratum inequalities and a guarded eligiblepath solution."
+    },
+    {
+      "id": "IQ14",
+      "lessonId": "AD43",
+      "sourceSection": "19.2.1",
+      "status": "fixed",
+      "priority": "P2",
+      "kind": "depth-gap",
+      "gap": "Two-copy storage was mentioned without controlled write/recovery cases.",
+      "error": null,
+      "readability": null,
+      "resolutionOrNextAction": "Added write1/check/write2/ACK plus equal/invalid/differing-copy recovery and three failure cases."
+    },
+    {
+      "id": "IQ15",
+      "lessonId": "AD46",
+      "sourceSection": "20.4.5.2",
+      "status": "fixed",
+      "priority": "P2",
+      "kind": "depth-gap",
+      "gap": "Shared-memory discussion named coherence without illustrating cache-line ownership and ordering.",
+      "error": null,
+      "readability": null,
+      "resolutionOrNextAction": "Added MESI model, data/flag visibility countercase and false sharing; avoided claiming universal assembly recipe."
+    },
+    {
+      "id": "IQ16",
+      "lessonId": "AD38–AD54,AD61–AD67",
+      "sourceSection": "prose",
+      "status": "fixed",
+      "priority": "P1",
+      "kind": "readability",
+      "gap": "Many Vietnamese tails were concatenated and unreadable even though headings existed.",
+      "error": null,
+      "readability": "Many Vietnamese tails were concatenated and unreadable even though headings existed.",
+      "resolutionOrNextAction": "Manual paragraph rewrites and explicit reviewed phrase replacements; fenced/inline code excluded from phrase substitutions; no generic numeric splitting."
+    },
+    {
+      "id": "IQ17",
+      "lessonId": "AD22",
+      "sourceSection": "10.6,22.8",
+      "status": "in-progress-other-owner",
+      "priority": "P1",
+      "kind": "readability",
+      "gap": "Spot-read found substantive algorithms but extensive joined Vietnamese prose in middle/tails.",
+      "error": null,
+      "readability": "Spot-read found substantive algorithms but extensive joined Vietnamese prose in middle/tails.",
+      "resolutionOrNextAction": "Reported to root and advanced_finish_apps, who owns that cleanup. Recheck lesson hash after their edit; this report does not certify its final readability."
+    },
+    {
+      "id": "IQ18",
+      "lessonId": "all85",
+      "sourceSection": "all source sections",
+      "status": "scope-limit",
+      "priority": "P2",
+      "kind": "coverage",
+      "gap": "This review cannot certify all945 inventory sections or every supplied lecture/lab page.",
+      "error": null,
+      "readability": null,
+      "resolutionOrNextAction": "24 full lesson reads plus listed original-source excerpts and limited spot reads; inventory assignment alone is not semantic completion evidence."
+    },
+    {
+      "id": "IQ19",
+      "lessonId": "all engine labs",
+      "sourceSection": "execution",
+      "status": "scope-limit",
+      "priority": "P2",
+      "kind": "verification",
+      "gap": "Independent checks here do not execute SQL, crash recovery, native distributed clusters or PostgreSQL C ABI.",
+      "error": null,
+      "readability": null,
+      "resolutionOrNextAction": "32 finite computed-model checks and24 structural checks; preserve native evidence in separate root verification artifacts."
+    }
+  ],
+  "lessonReviews": [
+    {
+      "lessonId": "AD38",
+      "sourceSections": "17.1–17.10",
+      "originalSource": "tmp/database-source/chapter-17.txt",
+      "sourceLineRangesRead": "549–860",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Conflict graph, acyclicity theorem, view equivalence and recoverability separated; three counterexamples and witnessed edges.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1691,
+      "sha256": "f20a0b2df93036e8e69d722eca4ef78ff92222307003de8fff950b73173c64ed",
+      "headingLines": {
+        "Luyện tập": 85,
+        "Gợi ý": 92,
+        "Đáp án và lập luận": 98,
+        "Biến thể và cách kiểm": 105,
+        "Học trên web": 109,
+        "Nguồn và đối chiếu": 113
+      }
+    },
+    {
+      "lessonId": "AD39",
+      "sourceSections": "18.1,18.3",
+      "originalSource": "tmp/database-source/chapter-18.txt",
+      "sourceLineRangesRead": "238–361;422–531;711–868",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Lock-point proof, explicit 2PL converse counterexample, tree auxiliary lock-order graph, intention compatibility.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 2137,
+      "sha256": "a7063b46b346b8114aa4613204d366538554211624777d399cd45c4b47c8a032",
+      "headingLines": {
+        "Luyện tập": 69,
+        "Gợi ý": 76,
+        "Đáp án và lập luận": 82,
+        "Biến thể và cách kiểm": 89,
+        "Học trên web": 93,
+        "Nguồn và đối chiếu": 97
+      }
+    },
+    {
+      "lessonId": "AD40",
+      "sourceSections": "18.2,18.4",
+      "originalSource": "tmp/database-source/chapter-18.txt",
+      "sourceLineRangesRead": "532–710;869–1039",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Wait graph differs from conflict graph; wait-die/wound-wait age proof, timeout/deadlock distinction and web barriers.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1767,
+      "sha256": "3b173590658021c9d0c806ddffe9a3b561a88f9cbf432ecd55f0d1d5522d1003",
+      "headingLines": {
+        "Luyện tập": 61,
+        "Gợi ý": 68,
+        "Đáp án và lập luận": 74,
+        "Biến thể và cách kiểm": 81,
+        "Học trên web": 85,
+        "Nguồn và đối chiếu": 89
+      }
+    },
+    {
+      "lessonId": "AD41",
+      "sourceSections": "18.5–18.6",
+      "originalSource": "tmp/database-source/chapter-18.txt",
+      "sourceLineRangesRead": "1040–1349",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "TO and Thomas guard precedence; source two validation cases separated from parallel-phase extension; abort releases publication mutex.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1630,
+      "sha256": "ad53eaa3d2c97f1d8ad040b5a62c284c0105789f43698146e97feedaec020af3",
+      "headingLines": {
+        "Luyện tập": 68,
+        "Gợi ý": 75,
+        "Đáp án và lập luận": 81,
+        "Biến thể và cách kiểm": 88,
+        "Học trên web": 92,
+        "Nguồn và đối chiếu": 96
+      }
+    },
+    {
+      "lessonId": "AD42",
+      "sourceSections": "18.7–18.9",
+      "originalSource": "tmp/database-source/chapter-18.txt",
+      "sourceLineRangesRead": "1365–1480;1503–1585",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "MVTO plus actual MV2PL counter/infinity-version/rigorous2PL algorithm, three cases and solved exercise; SI/write skew kept distinct.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 2181,
+      "sha256": "b0e7316046e0eae07b5dc6a2fbede18bb8164affac3d9dc79968b6bea6f5c883",
+      "headingLines": {
+        "Luyện tập": 95,
+        "Gợi ý": 103,
+        "Đáp án và lập luận": 109,
+        "Biến thể và cách kiểm": 117,
+        "Học trên web": 121,
+        "Nguồn và đối chiếu": 125
+      }
+    },
+    {
+      "lessonId": "AD43",
+      "sourceSections": "19.1–19.6",
+      "originalSource": "tmp/database-source/chapter-19.txt",
+      "sourceLineRangesRead": "68–128;584–715",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Stable-storage two-copy transfer/recovery; WAL proof and undo ordering; toy restart scope excludes earlier rollbacks and shows redo-only compensation fix.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 2040,
+      "sha256": "47302fdd79a6acee7f899a1fb4e9020d5b83c03339a6ebb924b7561ea4cd00a4",
+      "headingLines": {
+        "Luyện tập": 72,
+        "Gợi ý": 79,
+        "Đáp án và lập luận": 85,
+        "Biến thể và cách kiểm": 92,
+        "Học trên web": 96,
+        "Nguồn và đối chiếu": 100
+      }
+    },
+    {
+      "lessonId": "AD44",
+      "sourceSections": "19.8–19.9",
+      "originalSource": "tmp/database-source/chapter-19.txt",
+      "sourceLineRangesRead": "1173–1255;1434–1638",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "ARIES redo/undo/CLR trace and repeated crash; operation-begin/end/abort logical rollback explicitly separate from ARIES CLRs.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 2509,
+      "sha256": "1d956c78bbedecd99eb7d87a4138d07f7b0b5c6246348626a6f38ef3219983ef",
+      "headingLines": {
+        "Luyện tập": 123,
+        "Gợi ý": 131,
+        "Đáp án và lập luận": 137,
+        "Biến thể và cách kiểm": 145,
+        "Học trên web": 149,
+        "Nguồn và đối chiếu": 153
+      }
+    },
+    {
+      "lessonId": "AD45",
+      "sourceSections": "19.7,19.10",
+      "originalSource": "tmp/database-source/chapter-19.txt",
+      "sourceLineRangesRead": "983–1123;1674–1721",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Remote receive/durable/apply distinction, fencing, backup/PITR and deterministic command recovery; no native restore claim.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1724,
+      "sha256": "f8069c60dbe356593c146c3493a55f196da995e9686e59f25474e25f17761a45",
+      "headingLines": {
+        "Luyện tập": 49,
+        "Gợi ý": 56,
+        "Đáp án và lập luận": 62,
+        "Biến thể và cách kiểm": 69,
+        "Học trên web": 73,
+        "Nguồn và đối chiếu": 77
+      }
+    },
+    {
+      "lessonId": "AD46",
+      "sourceSections": "20.1–20.4",
+      "originalSource": "tmp/database-source/chapter-20.txt",
+      "sourceLineRangesRead": "438–575;795–975",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Architecture, Amdahl and traffic bounds; cache coherence/ordering and false-sharing cases added with hardware-model scope.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1742,
+      "sha256": "151a25bc5b8d32191cc44493843dbb055254aa15fdedd0e439894cc4c4ea3023",
+      "headingLines": {
+        "Luyện tập": 62,
+        "Gợi ý": 69,
+        "Đáp án và lập luận": 75,
+        "Biến thể và cách kiểm": 82,
+        "Học trên web": 86,
+        "Nguồn và đối chiếu": 90
+      }
+    },
+    {
+      "lessonId": "AD47",
+      "sourceSections": "21.1–21.4",
+      "originalSource": "tmp/database-source/chapter-21.txt",
+      "sourceLineRangesRead": "67–454;511–616",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Half-open routing, key skew/salting correctness, ownership epochs and snapshot/delta cutover invariant.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1513,
+      "sha256": "7742c6f341d427819f56850620fb2a00e08669237e4a1dc29f1a1be036cbfeb7",
+      "headingLines": {
+        "Luyện tập": 56,
+        "Gợi ý": 63,
+        "Đáp án và lập luận": 69,
+        "Biến thể và cách kiểm": 76,
+        "Học trên web": 80,
+        "Nguồn và đối chiếu": 84
+      }
+    },
+    {
+      "lessonId": "AD48",
+      "sourceSections": "22.1–22.4",
+      "originalSource": "tmp/database-source/chapter-22.txt",
+      "sourceLineRangesRead": "99–431;440–492",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Bag-correct repartition/broadcast/grid join proofs, range sort and aggregate partial states; explicit cost-model labels.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1445,
+      "sha256": "089217c971fffd44e6f6199a163b51e545e9e33639efba789c266a3fc0ebd906",
+      "headingLines": {
+        "Luyện tập": 61,
+        "Gợi ý": 68,
+        "Đáp án và lập luận": 74,
+        "Biến thể và cách kiểm": 81,
+        "Học trên web": 85,
+        "Nguồn và đối chiếu": 89
+      }
+    },
+    {
+      "lessonId": "AD49",
+      "sourceSections": "22.8–22.9",
+      "originalSource": "tmp/database-source/chapter-22.txt",
+      "sourceLineRangesRead": "1566–1637;1875–2013",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Semijoin shipping algorithm keeps duplicate identities; proof/termination/cost and counterexample; integration/stream checkpoint contracts readable.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1565,
+      "sha256": "ced015140598ac62bb97fefc146bd77269373c8a90dbb3d51d562f4f0305fa52",
+      "headingLines": {
+        "Luyện tập": 55,
+        "Gợi ý": 62,
+        "Đáp án và lập luận": 68,
+        "Biến thể và cách kiểm": 75,
+        "Học trên web": 79,
+        "Nguồn và đối chiếu": 83
+      }
+    },
+    {
+      "lessonId": "AD50",
+      "sourceSections": "23.1–23.2",
+      "originalSource": "tmp/database-source/chapter-23.txt",
+      "sourceLineRangesRead": "148–419",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Durable prepared/decision ordering, indistinguishability in-doubt example, blocking and retry identity; not presented as native XA.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1653,
+      "sha256": "a25336bad9df901d5a557056745196277b625cfcd165d992bc2c47e4bb1178cf",
+      "headingLines": {
+        "Luyện tập": 70,
+        "Gợi ý": 77,
+        "Đáp án và lập luận": 83,
+        "Biến thể và cách kiểm": 90,
+        "Học trên web": 94,
+        "Nguồn và đối chiếu": 98
+      }
+    },
+    {
+      "lessonId": "AD51",
+      "sourceSections": "23.4",
+      "originalSource": "tmp/database-source/chapter-23.txt",
+      "sourceLineRangesRead": "1039–1100;1175–1219",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Source majority/biased/weighted lock protocols and chain added; register/tag/write-back model clearly separate.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 2212,
+      "sha256": "56614d65a02fd23222fece7d06051a08e7320a277a90481cf5a201a00dca73d6",
+      "headingLines": {
+        "Luyện tập": 71,
+        "Gợi ý": 79,
+        "Đáp án và lập luận": 85,
+        "Biến thể và cách kiểm": 93,
+        "Học trên web": 97,
+        "Nguồn và đối chiếu": 101
+      }
+    },
+    {
+      "lessonId": "AD52",
+      "sourceSections": "23.7–23.8 except Raft",
+      "originalSource": "tmp/database-source/chapter-23.txt",
+      "sourceLineRangesRead": "2038–2168;2272–2370",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Election withdrawal/re-entry/partition cases separated from Paxos; Paxos proof now induction over proposal numbers rather than chronology.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 2173,
+      "sha256": "b729b2608a703bd9bfe1bbb30284f953fb53cebf58e2189465a1f2993960019a",
+      "headingLines": {
+        "Luyện tập": 89,
+        "Gợi ý": 97,
+        "Đáp án và lập luận": 103,
+        "Biến thể và cách kiểm": 111,
+        "Học trên web": 115,
+        "Nguồn và đối chiếu": 119
+      }
+    },
+    {
+      "lessonId": "AD53",
+      "sourceSections": "25.1–25.5",
+      "originalSource": "tmp/database-source/chapter-25.txt",
+      "sourceLineRangesRead": "339–415;961–1112;1407–1505",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Compressed weighted workload, what-if cost and greedy recomputation algorithm with optimality counterexample; LDAP identity/scope readable.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 2055,
+      "sha256": "bab41b4d1a1d05a0ca31e24402e2a026d117afae946922611badd6c524e535a9",
+      "headingLines": {
+        "Luyện tập": 77,
+        "Gợi ý": 85,
+        "Đáp án và lập luận": 91,
+        "Biến thể và cách kiểm": 99,
+        "Học trên web": 103,
+        "Nguồn và đối chiếu": 107
+      }
+    },
+    {
+      "lessonId": "AD54",
+      "sourceSections": "26.4",
+      "originalSource": "tmp/database-source/chapter-26.txt",
+      "sourceLineRangesRead": "503–682",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Toy PoW probability, honest quorum intersection, honest locking assumptions and double-spend validity distinct from consensus.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1331,
+      "sha256": "d9b2c445361561910efb5d883e888016a232efae86feb59751e3959ec49abda0",
+      "headingLines": {
+        "Luyện tập": 45,
+        "Gợi ý": 52,
+        "Đáp án và lập luận": 58,
+        "Biến thể và cách kiểm": 65,
+        "Học trên web": 69,
+        "Nguồn và đối chiếu": 73
+      }
+    },
+    {
+      "lessonId": "AD61",
+      "sourceSections": "27.4",
+      "originalSource": "tmp/database-source/online-27.txt",
+      "sourceLineRangesRead": "562–758;759–990",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Set fixpoint proof, nonrecursive operations, linear semi-naive versus two-IDB counterexample, explicit stratum inequalities and guarded negation.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1658,
+      "sha256": "de776439b4def34e74deef38a7faa21c8d3021a71f312382527fabaa1d2170d7",
+      "headingLines": {
+        "Luyện tập": 87,
+        "Gợi ý": 94,
+        "Đáp án và lập luận": 100,
+        "Biến thể và cách kiểm": 107,
+        "Học trên web": 111,
+        "Nguồn và đối chiếu": 115
+      }
+    },
+    {
+      "lessonId": "AD62",
+      "sourceSections": "23.8.3–23.8.5",
+      "originalSource": "tmp/database-source/chapter-23.txt",
+      "sourceLineRangesRead": "2371–2569",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Old-term majority counterexample, current-term commit rule, up-to-date voting, matching-prefix and membership/read limitations.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1591,
+      "sha256": "103619f05f3602704f7716dd3df9f60750cd8d5ca20ea1025ad55c9183af410d",
+      "headingLines": {
+        "Luyện tập": 66,
+        "Gợi ý": 73,
+        "Đáp án và lập luận": 79,
+        "Biến thể và cách kiểm": 86,
+        "Học trên web": 90,
+        "Nguồn và đối chiếu": 94
+      }
+    },
+    {
+      "lessonId": "AD63",
+      "sourceSections": "18.10",
+      "originalSource": "tmp/database-source/chapter-18.txt",
+      "sourceLineRangesRead": "1941–1993;2088–2414",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Online index snapshot/delta/final barrier algorithm and boundary cases added; CAS/ABA, operation semantics and deadline models readable.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 2120,
+      "sha256": "8912f24a44a6b955e5b14fb90c99d56271e1c6a3c0032b98abc748456fbcdfd8",
+      "headingLines": {
+        "Luyện tập": 72,
+        "Gợi ý": 80,
+        "Đáp án và lập luận": 86,
+        "Biến thể và cách kiểm": 94,
+        "Học trên web": 98,
+        "Nguồn và đối chiếu": 102
+      }
+    },
+    {
+      "lessonId": "AD64",
+      "sourceSections": "21.5–21.7",
+      "originalSource": "tmp/database-source/chapter-21.txt",
+      "sourceLineRangesRead": "617–792;793–909;1120–1219",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Global secondary relation(Ki,Kp,Ku), two-hop lookup, duplicate-key identity trace; DFS snapshot/API/CAS scope explicit.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1663,
+      "sha256": "55d6b22fe8d9837798de6df17660112db8de31446c10c9537a2900348d84f2ba",
+      "headingLines": {
+        "Luyện tập": 57,
+        "Gợi ý": 64,
+        "Đáp án và lập luận": 70,
+        "Biến thể và cách kiểm": 77,
+        "Học trên web": 81,
+        "Nguồn và đối chiếu": 85
+      }
+    },
+    {
+      "lessonId": "AD65",
+      "sourceSections": "23.3,23.5",
+      "originalSource": "tmp/database-source/chapter-23.txt",
+      "sourceLineRangesRead": "859–936;1267–1453",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Late-old validation timestamp abort, local timestamp inequalities, interval commit-wait and safe-time read rule, ticket capability scope.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 2065,
+      "sha256": "12794f0b0c53d24ae4f38dd8687c3695ec10cf3e4a41e7ba437547728cab768f",
+      "headingLines": {
+        "Luyện tập": 71,
+        "Gợi ý": 78,
+        "Đáp án và lập luận": 84,
+        "Biến thể và cách kiểm": 91,
+        "Học trên web": 95,
+        "Nguồn và đối chiếu": 99
+      }
+    },
+    {
+      "lessonId": "AD66",
+      "sourceSections": "23.6",
+      "originalSource": "tmp/database-source/chapter-23.txt",
+      "sourceLineRangesRead": "1465–1999",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "CAP indistinguishability, version concurrency, proved grow-only counter and Merkle canonical/range assumptions; merge metadata not business resolution.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1744,
+      "sha256": "e17deb2b28c11a9703988121a718b95461b5baeb2e22504eeaa633ee2119773c",
+      "headingLines": {
+        "Luyện tập": 58,
+        "Gợi ý": 65,
+        "Đáp án và lập luận": 71,
+        "Biến thể và cách kiểm": 78,
+        "Học trên web": 82,
+        "Nguồn và đối chiếu": 86
+      }
+    },
+    {
+      "lessonId": "AD67",
+      "sourceSections": "1.1–1.9",
+      "originalSource": "tmp/database-source/chapter-1.txt",
+      "sourceLineRangesRead": "167–286;287–549;760–1193",
+      "status": "reviewed-and-repaired",
+      "depthEvidence": "Continuation framing, abstraction/data-independence semantics and historical architectural tradeoffs; concrete contracts rather than product rankings.",
+      "readability": "manual prose review completed; ordinary identifiers retained",
+      "errorsRemainingObserved": [],
+      "wordCount": 1264,
+      "sha256": "287ee898de1ca7bd1cf9749ce0fed7edf0ebbaffd83904c895ef6b3f760a8b10",
+      "headingLines": {
+        "Luyện tập": 45,
+        "Gợi ý": 52,
+        "Đáp án và lập luận": 58,
+        "Biến thể và cách kiểm": 65,
+        "Học trên web": 69,
+        "Nguồn và đối chiếu": 73
+      }
+    }
+  ],
+  "spotReviews": [
+    {
+      "lessonId": "AD03",
+      "scope": "Full lesson prose spot read; source §7.4.1–7.4.2 mapping inspected, not a new source completeness audit.",
+      "finding": "Sound Armstrong rules, finite closure invariant, two-tuple completeness argument with domain assumption and aliasing counterexample; no issue observed."
+    },
+    {
+      "lessonId": "AD31",
+      "scope": "Full lesson prose spot read, cross-reference to source §14.8/24.2 inspected.",
+      "finding": "Tombstone/retention, compaction invariant and buffer-tree pending operations substantive; no substantive error observed."
+    },
+    {
+      "lessonId": "AD22",
+      "scope": "Full lesson prose spot read during another author cleanup.",
+      "finding": "BFS and Bellman–Ford-style invariant/cost and graph-identity cases substantive; unreadable joining flagged for owner."
+    },
+    {
+      "lessonId": "AD83",
+      "scope": "Opening through executor lifetime section only; no native build or current API re-verification.",
+      "finding": "Explicit Reset/Delete lifetime, owned copy before reset and distinction from allocator RSS are present."
+    },
+    {
+      "lessonId": "AD84",
+      "scope": "Opening through slot lifetime section only; no native build or ABI check.",
+      "finding": "Assertion-only castNode, Datum external type/null metadata, heap versus Datum[] and borrowed-slot ownership explicit."
+    }
+  ],
+  "peerReview": {
+    "reviewer": "advanced_finish_pg",
+    "scope": "AD42 MV2PL,AD44 operation-record rollback,AD65 distributed validation/clock versus original source excerpts",
+    "finding": "No definite technical error observed; local timestamp bounds and safe-time wording strengthened afterwards. Tree-protocol extension not peer-certified."
+  }
+}

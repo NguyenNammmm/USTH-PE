@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "units": 78,
+  "exactWitnesses": 312,
+  "sourceFiles": 5,
+  "sourceBounds": "next numbered heading minus one; source scopeLineEnd only for last numbered unit",
+  "ledgerSha256": "55ff72fec658ed954c65ccbfafe22c65cf76417d042ceb4a8632f51dc386c9a7",
+  "lessonSha256": {
+    "AD15": "841e809bf6e0a50eb56bfb739cdf5cd8ded93761aa0b7ec28c3cadc526ed9e63",
+    "AD20": "d5fa878c2eb57aa71db65ad81e5d686480b0b80bb781d82f7f069aef52328bc7",
+    "AD21": "bf4262eb6af77eb442eae9d01dcee705684501bac7eddb1a47752f0518577de9",
+    "AD22": "32cb5b8fda2a24bacc60c04922eb7ecc5ea600fc37cecabd288157be747aee66",
+    "AD35": "1ad19447a372a986a06ccfdf189f09bde05a6f93b70330479e5f62aeb009a6f0",
+    "AD36": "657410797f840102b367179dc0a7f923d03d78d2d47b249a5c2323cc6752eb0c",
+    "AD37": "03308e95e2f98ac1b6b8d020e742595ab1133cbe5b6bbe589a06e92fcbc67135",
+    "AD61": "0fa552d885fab671c76bf2013ab2d9ec31c52c0c1af22d7afa5b779d65c8afca",
+    "AD73": "13c86010a8aa3028902a22822110e7310f43090fa82d03fd0f55a3708915b43a"
+  }
+}

@@ -1,0 +1,629 @@
+{
+  "policy": "Explicit hand-reviewed phrase substitutions outside fenced and inline code; no generic word segmentation or numeric splitting. Whole-paragraph rewrites documented in independent-depth-review.md.",
+  "changes": [
+    {
+      "lesson": "AD39",
+      "from": "B+tree",
+      "to": "B+ tree",
+      "count": 1
+    },
+    {
+      "lesson": "AD40",
+      "from": "hủyT",
+      "to": "hủy T",
+      "count": 1
+    },
+    {
+      "lesson": "AD40",
+      "from": "trênA",
+      "to": "trên A",
+      "count": 1
+    },
+    {
+      "lesson": "AD40",
+      "from": "trênB",
+      "to": "trên B",
+      "count": 1
+    },
+    {
+      "lesson": "AD40",
+      "from": "trênC",
+      "to": "trên C",
+      "count": 1
+    },
+    {
+      "lesson": "AD40",
+      "from": "chờT1",
+      "to": "chờ T1",
+      "count": 1
+    },
+    {
+      "lesson": "AD40",
+      "from": "chờT2",
+      "to": "chờ T2",
+      "count": 1
+    },
+    {
+      "lesson": "AD40",
+      "from": "chờT3",
+      "to": "chờ T3",
+      "count": 1
+    },
+    {
+      "lesson": "AD40",
+      "from": "abortT2",
+      "to": "abort T2",
+      "count": 1
+    },
+    {
+      "lesson": "AD40",
+      "from": "ngoàiDB",
+      "to": "ngoài DB",
+      "count": 2
+    },
+    {
+      "lesson": "AD41",
+      "from": "itemQ",
+      "to": "item Q",
+      "count": 1
+    },
+    {
+      "lesson": "AD41",
+      "from": "đọcQ",
+      "to": "đọc Q",
+      "count": 1
+    },
+    {
+      "lesson": "AD41",
+      "from": "ghiQ",
+      "to": "ghi Q",
+      "count": 1
+    },
+    {
+      "lesson": "AD41",
+      "from": "sauT",
+      "to": "sau T",
+      "count": 1
+    },
+    {
+      "lesson": "AD41",
+      "from": "kiểmR",
+      "to": "kiểm R",
+      "count": 1
+    },
+    {
+      "lesson": "AD41",
+      "from": "hủyT",
+      "to": "hủy T",
+      "count": 1
+    },
+    {
+      "lesson": "AD41",
+      "from": "xinwrite",
+      "to": "xin write",
+      "count": 2
+    },
+    {
+      "lesson": "AD41",
+      "from": "cóTS",
+      "to": "có TS",
+      "count": 2
+    },
+    {
+      "lesson": "AD41",
+      "from": "xétWSj∩WSi",
+      "to": "xét WSj∩WSi",
+      "count": 1
+    },
+    {
+      "lesson": "AD41",
+      "from": "cảRSi",
+      "to": "cả RSi",
+      "count": 1
+    },
+    {
+      "lesson": "AD41",
+      "from": "lẫnWSi",
+      "to": "lẫn WSi",
+      "count": 1
+    },
+    {
+      "lesson": "AD41",
+      "from": "vàT1",
+      "to": "và T1",
+      "count": 1
+    },
+    {
+      "lesson": "AD41",
+      "from": "choT1",
+      "to": "cho T1",
+      "count": 1
+    },
+    {
+      "lesson": "AD41",
+      "from": "ĐổiT2",
+      "to": "Đổi T2",
+      "count": 1
+    },
+    {
+      "lesson": "AD41",
+      "from": "lúcT1",
+      "to": "lúc T1",
+      "count": 1
+    },
+    {
+      "lesson": "AD41",
+      "from": "sauT",
+      "to": "sau T",
+      "count": 1
+    },
+    {
+      "lesson": "AD41",
+      "from": "kiểmW",
+      "to": "kiểm W",
+      "count": 1
+    },
+    {
+      "lesson": "AD42",
+      "from": "versionQk",
+      "to": "version Qk",
+      "count": 1
+    },
+    {
+      "lesson": "AD42",
+      "from": "WTSTS(Ti)",
+      "to": "WTS=TS(Ti)",
+      "count": 1
+    },
+    {
+      "lesson": "AD42",
+      "from": "vàTS",
+      "to": "và TS",
+      "count": 1
+    },
+    {
+      "lesson": "AD42",
+      "from": "vàcommit",
+      "to": "và commit",
+      "count": 1
+    },
+    {
+      "lesson": "AD42",
+      "from": "mộtCHECK",
+      "to": "một CHECK",
+      "count": 1
+    },
+    {
+      "lesson": "AD42",
+      "from": "vàT2",
+      "to": "và T2",
+      "count": 1
+    },
+    {
+      "lesson": "AD42",
+      "from": "tắtrow",
+      "to": "tắt row",
+      "count": 2
+    },
+    {
+      "lesson": "AD42",
+      "from": "thànhREAD",
+      "to": "thành READ",
+      "count": 1
+    },
+    {
+      "lesson": "AD42",
+      "from": "thứhai",
+      "to": "thứ hai",
+      "count": 1
+    },
+    {
+      "lesson": "AD42",
+      "from": "cảhai",
+      "to": "cả hai",
+      "count": 1
+    },
+    {
+      "lesson": "AD42",
+      "from": "cảT1",
+      "to": "cả T1",
+      "count": 1
+    },
+    {
+      "lesson": "AD44",
+      "from": "khóaK",
+      "to": "khóa K",
+      "count": 1
+    },
+    {
+      "lesson": "AD44",
+      "from": "tìmK",
+      "to": "tìm K",
+      "count": 1
+    },
+    {
+      "lesson": "AD45",
+      "from": "chuỗiSQL",
+      "to": "chuỗi SQL",
+      "count": 1
+    },
+    {
+      "lesson": "AD45",
+      "from": "nghĩaRTO",
+      "to": "nghĩa RTO",
+      "count": 1
+    },
+    {
+      "lesson": "AD46",
+      "from": "hoặcOLTP",
+      "to": "hoặc OLTP",
+      "count": 1
+    },
+    {
+      "lesson": "AD46",
+      "from": "vàrecovery",
+      "to": "và recovery",
+      "count": 1
+    },
+    {
+      "lesson": "AD46",
+      "from": "trênshared",
+      "to": "trên shared",
+      "count": 1
+    },
+    {
+      "lesson": "AD46",
+      "from": "cònstartup",
+      "to": "còn startup",
+      "count": 1
+    },
+    {
+      "lesson": "AD46",
+      "from": "lộtradeoff",
+      "to": "lộ tradeoff",
+      "count": 1
+    },
+    {
+      "lesson": "AD46",
+      "from": "vànetwork",
+      "to": "và network",
+      "count": 1
+    },
+    {
+      "lesson": "AD46",
+      "from": "vàworkload",
+      "to": "và workload",
+      "count": 1
+    },
+    {
+      "lesson": "AD46",
+      "from": "cóthể",
+      "to": "có thể",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "hoặchotkey",
+      "to": "hoặc hot key",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "vàcapacity",
+      "to": "và capacity",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "củaplacement",
+      "to": "của placement",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "thứhai",
+      "to": "thứ hai",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "thứba",
+      "to": "thứ ba",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "lúccopy",
+      "to": "lúc copy",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "snapshotcopy",
+      "to": "snapshot copy",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "vànode",
+      "to": "và node",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "nhậnwrite",
+      "to": "nhận write",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "củaprimary",
+      "to": "của primary",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "mộtprefix",
+      "to": "một prefix",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "vàreconfiguration",
+      "to": "và reconfiguration",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "filecopy",
+      "to": "file copy",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "cóthể",
+      "to": "có thể",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "cảhai",
+      "to": "cả hai",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "cảA",
+      "to": "cả A",
+      "count": 1
+    },
+    {
+      "lesson": "AD47",
+      "from": "vàB",
+      "to": "và B",
+      "count": 1
+    },
+    {
+      "lesson": "AD48",
+      "from": "ởpartitioni",
+      "to": "ở partition i",
+      "count": 2
+    },
+    {
+      "lesson": "AD48",
+      "from": "chỉmean",
+      "to": "chỉ mean",
+      "count": 1
+    },
+    {
+      "lesson": "AD48",
+      "from": "mộtreplica",
+      "to": "một replica",
+      "count": 1
+    },
+    {
+      "lesson": "AD48",
+      "from": "thànhmatch",
+      "to": "thành match",
+      "count": 1
+    },
+    {
+      "lesson": "AD48",
+      "from": "vàmemory",
+      "to": "và memory",
+      "count": 1
+    },
+    {
+      "lesson": "AD48",
+      "from": "cặpoutput",
+      "to": "cặp output",
+      "count": 1
+    },
+    {
+      "lesson": "AD48",
+      "from": "vàpartialstate",
+      "to": "và partial state",
+      "count": 1
+    },
+    {
+      "lesson": "AD48",
+      "from": "phầnR",
+      "to": "phần R",
+      "count": 1
+    },
+    {
+      "lesson": "AD48",
+      "from": "cảhai",
+      "to": "cả hai",
+      "count": 2
+    },
+    {
+      "lesson": "AD48",
+      "from": "mỗirow",
+      "to": "mỗi row",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "chuỗiCOMMIT",
+      "to": "chuỗi COMMIT",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "chọnABORT",
+      "to": "chọn ABORT",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "địnhCOMMIT",
+      "to": "định COMMIT",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "lạiCOMMIT",
+      "to": "lại COMMIT",
+      "count": 2
+    },
+    {
+      "lesson": "AD50",
+      "from": "tấtABORT",
+      "to": "tất ABORT",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "códecision",
+      "to": "có decision",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "giữin-doubt",
+      "to": "giữ in-doubt",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "nhậnCOMMIT",
+      "to": "nhận COMMIT",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "trướcdecision",
+      "to": "trước decision",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "đãprepared",
+      "to": "đã prepared",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "nhậndecision",
+      "to": "nhận decision",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "mấtresponse",
+      "to": "mất response",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "biệtattempt",
+      "to": "biệt attempt",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "điểmcrash",
+      "to": "điểm crash",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "cácmessage",
+      "to": "các message",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "trườnghợp",
+      "to": "trường hợp",
+      "count": 1
+    },
+    {
+      "lesson": "AD50",
+      "from": "thứhai",
+      "to": "thứ hai",
+      "count": 1
+    },
+    {
+      "lesson": "AD52",
+      "from": "ởproposal",
+      "to": "ở proposal",
+      "count": 1
+    },
+    {
+      "lesson": "AD52",
+      "from": "gửiACCEPT",
+      "to": "gửi ACCEPT",
+      "count": 1
+    },
+    {
+      "lesson": "AD53",
+      "from": "vàstatus",
+      "to": "và status",
+      "count": 1
+    },
+    {
+      "lesson": "AD53",
+      "from": "khôngANALYZE",
+      "to": "không ANALYZE",
+      "count": 1
+    },
+    {
+      "lesson": "AD53",
+      "from": "vàANALYZE",
+      "to": "và ANALYZE",
+      "count": 1
+    },
+    {
+      "lesson": "AD53",
+      "from": "vàcovering",
+      "to": "và covering",
+      "count": 1
+    },
+    {
+      "lesson": "AD62",
+      "from": "sauT",
+      "to": "sau T",
+      "count": 1
+    },
+    {
+      "lesson": "AD63",
+      "from": "B+tree",
+      "to": "B+ tree",
+      "count": 1
+    },
+    {
+      "lesson": "AD66",
+      "from": "đãACKwrite",
+      "to": "đã ACK write",
+      "count": 1
+    },
+    {
+      "lesson": "AD66",
+      "from": "cóprogress",
+      "to": "có progress",
+      "count": 1
+    }
+  ]
+}

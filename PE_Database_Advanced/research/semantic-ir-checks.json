@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-05",
+  "scope": [
+    "AD17",
+    "AD69"
+  ],
+  "kind": "finite-Python-algorithm-and-math-oracle-checks",
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "threshold-original-fixture",
+      "passed": true,
+      "detail": "Distinct query-term count, not token frequency."
+    },
+    {
+      "name": "threshold-exhaustive-oracle",
+      "passed": true,
+      "detail": "20480 finite inputs checked against independent document-membership oracle, including empty lists/k0/k>n."
+    },
+    {
+      "name": "NOT-bounded-universe",
+      "passed": true,
+      "detail": "Difference versus snapshot complement."
+    },
+    {
+      "name": "popularity-early-stop-counterexample",
+      "passed": true,
+      "detail": "First popularity hit1 loses to document3 under changed score."
+    },
+    {
+      "name": "unseen-upper-bound-example",
+      "passed": true,
+      "detail": "Valid only if metadata covers every unseen candidate and weights are nonnegative; ties require a separate rule."
+    },
+    {
+      "name": "precision-recall-cutoffs",
+      "passed": true,
+      "detail": "[(0.25, 1.0), (0.25, 0.5), (0.5, 0.6666666666666666), (0.75, 0.75)]"
+    },
+    {
+      "name": "average-precision-and-macro",
+      "passed": true,
+      "detail": "AP denominator4 for truncated three-result example; macro P@3 over two queries."
+    },
+    {
+      "name": "approximate-index-errors",
+      "passed": true,
+      "detail": "Post-filter removes false positives but cannot recover a dropped3."
+    },
+    {
+      "name": "normalized-log-TFIDF",
+      "passed": true,
+      "detail": "Source variant with chosen natural log, IDF1/df; all OR candidates."
+    },
+    {
+      "name": "weighted-query-rank-change",
+      "passed": true,
+      "detail": "[0.6546666599918811, 0.4054651081081644, 0.34657359027997264]"
+    },
+    {
+      "name": "raw-TF-is-different",
+      "passed": true,
+      "detail": "Raw frequency and normalized log yield different score units."
+    },
+    {
+      "name": "cosine-original-and-zero",
+      "passed": true,
+      "detail": "Zero vector has no direction; no0/0 claim."
+    },
+    {
+      "name": "query-by-example-cosines",
+      "passed": true,
+      "detail": "Dot B7>C6 and cosB≈.836660>cosC≈.801784; query-only cosine has norm sqrt13 instead of sqrt14."
+    },
+    {
+      "name": "PageRank-two-iterations",
+      "passed": true,
+      "detail": "Direct matrix oracle for the sparse graph A->B,B->A,C->A."
+    },
+    {
+      "name": "PageRank-stationary-linear-solve",
+      "passed": true,
+      "detail": "Independent linear-system solve, not visual convergence guess."
+    },
+    {
+      "name": "PageRank-mass-and-residual-bound",
+      "passed": true,
+      "detail": "200 finite synchronous iterations checked for nonnegative unit mass and conservative residual/(1-alpha) error bound; does not replace the contraction proof."
+    },
+    {
+      "name": "PageRank-dangling-column",
+      "passed": true,
+      "detail": "Dangling C column replaced by v every iteration."
+    },
+    {
+      "name": "PageRank-streamed-contributions",
+      "passed": true,
+      "detail": "One sorted edge-contribution/group-sum pass matches synchronous dense oracle. No disk benchmark claimed."
+    },
+    {
+      "name": "SQLite-actual-authored-PageRank-SELECT",
+      "passed": true,
+      "detail": "Exact lesson SQL block executed on SQLite 3.45.1, in-memory one-pass fixture; C preserved by outer join."
+    },
+    {
+      "name": "query-specific-teleport-linear-mix",
+      "passed": true,
+      "detail": "Linearity checked with fixed shared P and no dangling-dependent transition changes."
+    },
+    {
+      "name": "HITS-one-alternating-step",
+      "passed": true,
+      "detail": "Finite one-step authority/hub example only; no uniqueness claim."
+    },
+    {
+      "name": "score-mixture-examples",
+      "passed": true,
+      "detail": "Weight change reverses X/Y ranking."
+    },
+    {
+      "name": "classification-DAG-two-paths",
+      "passed": true,
+      "detail": "Single graphs category reachable through math and computing/algorithms; document ID is not duplicated."
+    },
+    {
+      "name": "classification-cycle-detected",
+      "passed": true,
+      "detail": "Adding graphs->science violates DAG even though visited can make traversal terminate."
+    }
+  ],
+  "lessonHashes": {
+    "AD17": "c71a345f36c7af00597d24d1761f553a9b9096cb12ca13efe75bddbbd93914b6",
+    "AD69": "c851d2d743d098347b12123fabffba55eb1fd12df981a95e152b855b2f6c41bb"
+  },
+  "thresholdOracleCases": 20480,
+  "sqlExecuted": true,
+  "sqlEngine": "SQLite 3.45.1",
+  "sqlScope": "Exact authored one-step PageRank SELECT, in-memory three-node fixture only.",
+  "mysqlExecuted": false,
+  "searchEngineExecuted": false,
+  "webCrawlExecuted": false,
+  "limitation": "Finite arithmetic, independent-oracle checks and one SQLite SELECT; no commercial-search ranking reproduction, MySQL execution, ontology linker, IE/QA model, actual crawler, full SQL PageRank iteration runtime, or general theorem proof is claimed."
+}

@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-05",
+  "lesson": "AD09",
+  "ledger": "research/semantic-er.json",
+  "lessonSha256": "bae8df7915a6f756a56a15af3dc4a03825e48c5821b993e933cf1f308b7a7b07",
+  "checks": [
+    {
+      "name": "frozen inventory and lesson hashes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "exactly 48 assigned own bodies, no baseline or pending credit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "source raw hashes and nonoverlapping own-body boundaries",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "all exact paragraph/line witnesses fresh",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "inspected figure render artifacts unchanged",
+      "passed": true,
+      "details": {
+        "sheets": 9,
+        "figures": 29
+      }
+    },
+    {
+      "name": "17 original activities have corresponding numbered answers",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ternary pairwise projection counterexample",
+      "passed": true,
+      "details": [
+        [
+          "S1",
+          "P1",
+          "J2"
+        ]
+      ]
+    },
+    {
+      "name": "intermediary entity encode/decode preserves triples",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "three endpoint FKs and triple uniqueness do not enforce PP-to-S",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "multiple-arrow interpretations differ",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "candidate keys for both arrow interpretations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "weak discriminator reuse and natural-key identity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "multivalue zero-owner and FK target tradeoff",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "aggregation requires a composite relationship reference",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "specialization constraints are independent",
+      "passed": true,
+      "details": {
+        "partial-overlap": 4,
+        "partial-disjoint": 3,
+        "total-overlap": 3,
+        "total-disjoint": 2
+      }
+    },
+    {
+      "name": "Advisor meaning is constant across four notations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "bitemporal salary snapshots and boundary detector",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "closing old system interval repairs the intended conflict",
+      "passed": true,
+      "details": [
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "name": "temporal join discards touching intervals",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "temporal FK union coverage, gap and endpoint false positive",
+      "passed": true,
+      "details": {
+        "coveredTrace": [
+          15,
+          31,
+          90
+        ],
+        "gapTrace": [
+          15,
+          31
+        ]
+      }
+    },
+    {
+      "name": "coverage scan versus independent point-cell oracle",
+      "passed": true,
+      "details": {
+        "finiteCases": 10240,
+        "failures": 0,
+        "scope": "All interval subsets/targets on endpoints 0..4; the lesson invariant supplies the general proof."
+      }
+    }
+  ],
+  "allPassed": true,
+  "sqlRuntimeUsed": false,
+  "semanticClaimLimit": "Hashes confirm freshness and finite model checks confirm stated examples/answers. Full reading and manual content judgments in semantic-er.json, not these checks, support source coverage."
+}

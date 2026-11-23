@@ -1,0 +1,24 @@
+{
+  "scope": "All-page text rectangle bounds plus selected contact sheets, not a replacement for visual inspection.",
+  "pages": 785,
+  "textRectanglesChecked": 49688,
+  "outOfBounds": [],
+  "sparseTextPages": [],
+  "contactSheets": [
+    "qa/pdf-render/contact-1.png",
+    "qa/pdf-render/contact-2.png",
+    "qa/pdf-render/contact-3.png",
+    "qa/pdf-render/contact-4.png",
+    "qa/pdf-render/contact-5.png",
+    "qa/pdf-render/contact-6.png",
+    "qa/pdf-render/contact-7.png",
+    "qa/pdf-render/contact-8.png",
+    "qa/pdf-render/contact-9.png",
+    "qa/pdf-render/contact-10.png",
+    "qa/pdf-render/contact-11.png",
+    "qa/pdf-render/contact-12.png",
+    "qa/pdf-render/contact-13.png",
+    "qa/pdf-render/contact-14.png",
+    "qa/pdf-render/contact-15.png"
+  ]
+}

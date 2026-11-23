@@ -1,0 +1,5 @@
+{
+  "mutation": "All three query helper functions return [] unconditionally; SQL constants remain unchanged.",
+  "upstreamSuiteExitCode": 0,
+  "meaning": "A zero exit code means the upstream tests did not detect these broken helper functions. This motivates the PE independent oracle, not accepting all upstream tests as adequate."
+}
