@@ -1,0 +1,679 @@
+{
+  "course_id": "python_advanced",
+  "version": 1,
+  "params": {
+    "items_per_module": 2,
+    "mastery_threshold": 0.67,
+    "self_assess_weight": 0.2,
+    "skip_policy": "wrong",
+    "max_duration_min": 8
+  },
+  "self_assess": [
+    {
+      "id": "sa-m1",
+      "module_code": "M1",
+      "question": "Bạn đã dùng subprocess, os.fork() hoặc multiprocessing tới mức nào?",
+      "options": [
+        {
+          "text": "Chưa nghe tới",
+          "value": 0
+        },
+        {
+          "text": "Đã đọc qua",
+          "value": 0.33
+        },
+        {
+          "text": "Đã dùng vài lần",
+          "value": 0.67
+        },
+        {
+          "text": "Dùng thường xuyên",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "sa-m2",
+      "module_code": "M2",
+      "question": "Bạn đã dùng threading (Thread, Lock, Queue) tới mức nào?",
+      "options": [
+        {
+          "text": "Chưa nghe tới",
+          "value": 0
+        },
+        {
+          "text": "Đã đọc qua",
+          "value": 0.33
+        },
+        {
+          "text": "Đã dùng vài lần",
+          "value": 0.67
+        },
+        {
+          "text": "Dùng thường xuyên",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "sa-m3",
+      "module_code": "M3",
+      "question": "Bạn đã làm GUI bằng Tkinter hoặc framework desktop nào chưa?",
+      "options": [
+        {
+          "text": "Chưa nghe tới",
+          "value": 0
+        },
+        {
+          "text": "Đã đọc qua",
+          "value": 0.33
+        },
+        {
+          "text": "Đã dùng vài lần",
+          "value": 0.67
+        },
+        {
+          "text": "Dùng thường xuyên",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "sa-m4",
+      "module_code": "M4",
+      "question": "Bạn đã đọc dữ liệu từ CSV, Excel hoặc SQL bằng Python tới mức nào?",
+      "options": [
+        {
+          "text": "Chưa nghe tới",
+          "value": 0
+        },
+        {
+          "text": "Đã đọc qua",
+          "value": 0.33
+        },
+        {
+          "text": "Đã dùng vài lần",
+          "value": 0.67
+        },
+        {
+          "text": "Dùng thường xuyên",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "sa-m5",
+      "module_code": "M5",
+      "question": "Bạn đã dùng NumPy (array, shape, broadcasting) tới mức nào?",
+      "options": [
+        {
+          "text": "Chưa nghe tới",
+          "value": 0
+        },
+        {
+          "text": "Đã đọc qua",
+          "value": 0.33
+        },
+        {
+          "text": "Đã dùng vài lần",
+          "value": 0.67
+        },
+        {
+          "text": "Dùng thường xuyên",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "sa-m6",
+      "module_code": "M6",
+      "question": "Bạn đã dùng pandas (DataFrame, groupby, merge) tới mức nào?",
+      "options": [
+        {
+          "text": "Chưa nghe tới",
+          "value": 0
+        },
+        {
+          "text": "Đã đọc qua",
+          "value": 0.33
+        },
+        {
+          "text": "Đã dùng vài lần",
+          "value": 0.67
+        },
+        {
+          "text": "Dùng thường xuyên",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "sa-m7",
+      "module_code": "M7",
+      "question": "Bạn đã dùng Matplotlib (Figure, Axes, bar, line) tới mức nào?",
+      "options": [
+        {
+          "text": "Chưa nghe tới",
+          "value": 0
+        },
+        {
+          "text": "Đã đọc qua",
+          "value": 0.33
+        },
+        {
+          "text": "Đã dùng vài lần",
+          "value": 0.67
+        },
+        {
+          "text": "Dùng thường xuyên",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "sa-m8",
+      "module_code": "M8",
+      "question": "Bạn đã từng xây dựng hoàn chỉnh đường ống xử lý dữ liệu từ file thô đến báo cáo và biểu đồ chưa?",
+      "options": [
+        {
+          "text": "Chưa nghe tới",
+          "value": 0
+        },
+        {
+          "text": "Đã đọc qua",
+          "value": 0.33
+        },
+        {
+          "text": "Đã làm vài lần",
+          "value": 0.67
+        },
+        {
+          "text": "Làm thường xuyên",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "q-m1-1",
+      "module_code": "M1",
+      "level": "basic",
+      "question": "Lệnh os.getppid() trong Python trả về giá trị gì?",
+      "code": null,
+      "options": [
+        {
+          "text": "Mã định danh PID của tiến trình cha tạo ra tiến trình hiện tại"
+        },
+        {
+          "text": "Mã định danh PID của chính tiến trình đang thực thi"
+        },
+        {
+          "text": "Số lượng tiến trình con hiện đang hoạt động"
+        }
+      ],
+      "correct": 0,
+      "explanation": "ppid = parent PID. os.getpid() trả về PID của chính tiến trình hiện tại."
+    },
+    {
+      "id": "q-m1-2",
+      "module_code": "M1",
+      "level": "intermediate",
+      "question": "Lệnh subprocess.run([sys.executable, \"-c\", \"raise SystemExit(3)\"]) (không truyền check=True) sẽ xử lý thế nào?",
+      "code": null,
+      "options": [
+        {
+          "text": "Ném ngoại lệ SystemExit ngay trong tiến trình cha"
+        },
+        {
+          "text": "Trả về đối tượng CompletedProcess với returncode = 3 mà không ném lỗi"
+        },
+        {
+          "text": "Ném ngoại lệ CalledProcessError ngay khi tiến trình con kết thúc"
+        }
+      ],
+      "correct": 1,
+      "explanation": "Mặc định không có check=True, subprocess.run thu thập kết quả và exit code mà không ném ngoại lệ."
+    },
+    {
+      "id": "q-m1-3",
+      "module_code": "M1",
+      "level": "advanced",
+      "question": "Tiến trình cha tạo tiến trình con bằng os.fork(). Tiến trình con đã kết thúc nhưng tiến trình cha không bao giờ gọi os.wait() hay os.waitpid(). Tiến trình con rơi vào trạng thái nào?",
+      "code": null,
+      "options": [
+        {
+          "text": "Tiến trình mồ côi Orphan process và được init thu nhận ngay"
+        },
+        {
+          "text": "Hệ điều hành giải phóng hoàn toàn vùng nhớ và bảng tiến trình lập tức"
+        },
+        {
+          "text": "Tiến trình thây ma Zombie process chiếm slot trong bảng tiến trình hệ điều hành"
+        }
+      ],
+      "correct": 2,
+      "explanation": "Khi tiến trình con exit mà cha chưa đọc exit status, con trở thành zombie (defunct), chiếm PID và slot trong bảng tiến trình."
+    },
+    {
+      "id": "q-m2-1",
+      "module_code": "M2",
+      "level": "basic",
+      "question": "Các luồng (threads) chạy trong cùng một tiến trình chia sẻ và phân tách tài nguyên thế nào?",
+      "code": null,
+      "options": [
+        {
+          "text": "Dùng chung bộ nhớ heap của tiến trình nhưng mỗi luồng có stack riêng"
+        },
+        {
+          "text": "Mỗi luồng sở hữu một bản sao bộ nhớ heap hoàn toàn độc lập"
+        },
+        {
+          "text": "Các luồng dùng chung cả ngăn xếp stack và biến cục bộ"
+        }
+      ],
+      "correct": 0,
+      "explanation": "Thread chia sẻ không gian địa chỉ heap, biến toàn cục, file descriptor nhưng có stack và thanh ghi riêng."
+    },
+    {
+      "id": "q-m2-2",
+      "module_code": "M2",
+      "level": "intermediate",
+      "question": "Trong CPython, cơ chế GIL (Global Interpreter Lock) có tự động ngăn chặn race condition trong ứng dụng không?",
+      "code": null,
+      "options": [
+        {
+          "text": "Có — vì tại một thời điểm chỉ có duy nhất một luồng được thực thi"
+        },
+        {
+          "text": "Không — GIL bảo vệ cấu trúc nội bộ CPython, không bảo vệ chuỗi đọc sửa ghi của ứng dụng"
+        },
+        {
+          "text": "Chỉ biến mất khi tất cả biến chia sẻ thuộc kiểu danh sách list"
+        }
+      ],
+      "correct": 1,
+      "explanation": "GIL chỉ bảo vệ interpreter, bộ điều phối vẫn có thể chuyển ngữ cảnh giữa các bước đọc-sửa-ghi, gây race condition."
+    },
+    {
+      "id": "q-m2-3",
+      "module_code": "M2",
+      "level": "advanced",
+      "question": "Hai luồng T1 và T2 cùng sử dụng Lock A và Lock B. Kịch bản nào sau đây CHẮC CHẮN dẫn tới nguy cơ bế tắc (deadlock)?",
+      "code": null,
+      "options": [
+        {
+          "text": "Cả hai luồng T1 và T2 luôn tuân thủ thứ tự chiếm giữ Lock A trước rồi mới xin Lock B"
+        },
+        {
+          "text": "Cả hai luồng đều sử dụng threading.RLock thay thế cho threading.Lock thông thường"
+        },
+        {
+          "text": "T1 chiếm giữ Lock A rồi đợi Lock B, trong khi T2 chiếm giữ Lock B rồi đợi Lock A"
+        }
+      ],
+      "correct": 2,
+      "explanation": "Thứ tự chiếm giữ lock không nhất quán sinh ra chờ đợi vòng tròn (circular wait) dẫn tới deadlock."
+    },
+    {
+      "id": "q-m3-1",
+      "module_code": "M3",
+      "level": "basic",
+      "question": "Trong thư viện Tkinter, phương thức mainloop() đảm nhận vai trò gì?",
+      "code": null,
+      "options": [
+        {
+          "text": "Vòng lặp sự kiện vô hạn lắng nghe tương tác người dùng và điều phối hàm phản hồi"
+        },
+        {
+          "text": "Vẽ toàn bộ giao diện đúng một lần duy nhất rồi tự động kết thúc chương trình"
+        },
+        {
+          "text": "Khởi tạo một tiến trình mới cho từng thành phần giao diện widget"
+        }
+      ],
+      "correct": 0,
+      "explanation": "mainloop() là event loop chặn ở luồng chính để tiếp nhận sự kiện (chuột, phím) và gọi callback tương ứng."
+    },
+    {
+      "id": "q-m3-2",
+      "module_code": "M3",
+      "level": "intermediate",
+      "question": "Thực hiện lệnh time.sleep(5) trực tiếp bên trong một hàm callback xử lý sự kiện bấm nút của Tkinter sẽ gây ra hiện tượng gì?",
+      "code": null,
+      "options": [
+        {
+          "text": "Tkinter tự động chuyển lệnh sleep sang luồng ngầm nên giao diện vẫn phản hồi bình thường"
+        },
+        {
+          "text": "Giao diện bị đóng băng trong 5 giây do luồng sự kiện mainloop bị chặn"
+        },
+        {
+          "text": "Lệnh sleep bị bỏ qua và không có tác dụng trong môi trường giao diện đồ họa"
+        }
+      ],
+      "correct": 1,
+      "explanation": "Callback chạy trên luồng chính; time.sleep chặn luồng chính làm mainloop ngừng xử lý vẽ lại cửa sổ."
+    },
+    {
+      "id": "q-m3-3",
+      "module_code": "M3",
+      "level": "advanced",
+      "question": "Một luồng công nhân chạy nền tải dữ liệu xong và cần cập nhật văn bản của Label trong Tkinter. Cách làm an toàn luồng là gì?",
+      "code": null,
+      "options": [
+        {
+          "text": "Luồng công nhân trực tiếp gọi phương thức label.config từ luồng của chính mình"
+        },
+        {
+          "text": "Gọi time.sleep trên luồng chính để nhường quyền thao tác widget cho luồng công nhân"
+        },
+        {
+          "text": "Dùng phương thức root.after để ủy thác tác vụ cập nhật giao diện cho luồng chính"
+        }
+      ],
+      "correct": 2,
+      "explanation": "Tkinter không an toàn luồng (not thread-safe). Thao tác cập nhật giao diện phải do main thread thực hiện qua after()."
+    },
+    {
+      "id": "q-m4-1",
+      "module_code": "M4",
+      "level": "basic",
+      "question": "Trong thư viện sqlite3 của Python, phương thức cursor.fetchmany(size=5) thực hiện tác vụ nào?",
+      "code": null,
+      "options": [
+        {
+          "text": "Trích xuất tối đa 5 bản ghi tiếp theo từ con trỏ kết quả hiện tại"
+        },
+        {
+          "text": "Lặp lại việc thực thi câu lệnh truy vấn đúng 5 lần liên tiếp"
+        },
+        {
+          "text": "Bắt buộc trả về đủ 5 dòng, nếu kết quả ít hơn 5 dòng thì ném ngoại lệ"
+        }
+      ],
+      "correct": 0,
+      "explanation": "fetchmany lấy tối đa size bản ghi từ con trỏ hiện tại mà không tải toàn bộ bảng vào bộ nhớ như fetchall."
+    },
+    {
+      "id": "q-m4-2",
+      "module_code": "M4",
+      "level": "intermediate",
+      "question": "Đoạn mã cursor.execute(\"SELECT * FROM t WHERE name = ?\", params=(name)) với name = \"Mai\" phát sinh lỗi gì?",
+      "code": null,
+      "options": [
+        {
+          "text": "Chạy bình thường và trả về bản ghi có tên chính xác là 'Mai'"
+        },
+        {
+          "text": "Lỗi tham số do (name) là kiểu chuỗi 3 ký tự nên sqlite3 coi là truyền 3 đối số"
+        },
+        {
+          "text": "Tìm kiếm tuần tự từng ký tự đơn lẻ 'M', 'a', 'i' trên các cột"
+        }
+      ],
+      "correct": 1,
+      "explanation": "(name) trong Python chỉ là biểu thức ngoặc đơn kiểu str; tuple một phần tử bắt buộc phải có dấu phẩy: (name,)."
+    },
+    {
+      "id": "q-m4-3",
+      "module_code": "M4",
+      "level": "advanced",
+      "question": "Trong sqlite3, nếu thực hiện nhiều lệnh sửa đổi mà không sử dụng ngữ cảnh giao dịch (with conn:), khi gặp lỗi giữa chừng sẽ dẫn tới hậu quả gì?",
+      "code": null,
+      "options": [
+        {
+          "text": "Cơ sở dữ liệu tự động hoàn tác về trạng thái ban đầu mà không cần cấu hình"
+        },
+        {
+          "text": "Toàn bộ tệp cơ sở dữ liệu SQLite bị xóa sạch khỏi ổ đĩa"
+        },
+        {
+          "text": "Dữ liệu rơi vào trạng thái dở dang và kết nối có thể giữ khóa cơ sở dữ liệu"
+        }
+      ],
+      "correct": 2,
+      "explanation": "with conn đảm bảo commit khi khối lệnh kết thúc bình thường và tự động rollback khi gặp exception."
+    },
+    {
+      "id": "q-m5-1",
+      "module_code": "M5",
+      "level": "basic",
+      "question": "Cho mảng NumPy a có a.shape là (5, 3). Giá trị của len(a) và a.size lần lượt là bao nhiêu?",
+      "code": null,
+      "options": [
+        {
+          "text": "len(a) = 5 và a.size = 15"
+        },
+        {
+          "text": "len(a) = 15 và a.size = 15"
+        },
+        {
+          "text": "len(a) = 3 và a.size = 8"
+        }
+      ],
+      "correct": 0,
+      "explanation": "len(a) trả về kích thước trục đầu tiên (số hàng = 5). a.size trả về tổng số phần tử (5 * 3 = 15)."
+    },
+    {
+      "id": "q-m5-2",
+      "module_code": "M5",
+      "level": "intermediate",
+      "question": "Mảng có kích thước shape nào dưới đây thực hiện lan truyền broadcasting hợp lệ với mảng shape (4, 3)?",
+      "code": null,
+      "options": [
+        {
+          "text": "Mảng có kích thước shape (3, 4) do có cùng tổng số phần tử"
+        },
+        {
+          "text": "Mảng có kích thước shape (1, 3) với chiều 1 được kéo dãn thành 4"
+        },
+        {
+          "text": "Mảng có kích thước shape (4,) do tự động khớp theo chiều đầu"
+        }
+      ],
+      "correct": 1,
+      "explanation": "Broadcasting so khớp từ trục cuối cùng sang trái: (4, 3) khớp với (1, 3) vì trục cuối bằng nhau và trục trước kéo dãn từ 1."
+    },
+    {
+      "id": "q-m5-3",
+      "module_code": "M5",
+      "level": "advanced",
+      "question": "Cho mảng a = np.arange(12).reshape(3, 4). Khi gọi b = a.T (chuyển vị) rồi thực hiện b.reshape(12), NumPy xử lý bộ nhớ thế nào?",
+      "code": null,
+      "options": [
+        {
+          "text": "Trả về bản nhìn view lập tức mà không cấp phát thêm bộ nhớ"
+        },
+        {
+          "text": "Ném ngoại lệ ValueError do mảng chuyển vị bị cấm đổi hình dạng"
+        },
+        {
+          "text": "Tạo bản sao copy dữ liệu mới do mảng chuyển vị không còn bộ nhớ liên tục"
+        }
+      ],
+      "correct": 2,
+      "explanation": "Chuyển vị .T làm đảo bước nhảy strides khiến mảng mất tính liên tục C-contiguous. Khi ép reshape(12) phẳng, NumPy buộc phải copy."
+    },
+    {
+      "id": "q-m6-1",
+      "module_code": "M6",
+      "level": "basic",
+      "question": "Trong pandas DataFrame df, cú pháp df[\"score\"] và df[[\"score\"]] khác nhau thế nào?",
+      "code": null,
+      "options": [
+        {
+          "text": "df[\"score\"] trả về một Series còn df[[\"score\"]] trả về một DataFrame một cột"
+        },
+        {
+          "text": "Cả hai cú pháp hoàn toàn đồng nhất về kiểu dữ liệu và thuộc tính"
+        },
+        {
+          "text": "df[[\"score\"]] là lỗi cú pháp không hợp lệ trong pandas"
+        }
+      ],
+      "correct": 0,
+      "explanation": "Truyền nhãn chuỗi trả về Series 1 chiều; truyền danh sách chứa nhãn trả về DataFrame 2 chiều một cột."
+    },
+    {
+      "id": "q-m6-2",
+      "module_code": "M6",
+      "level": "intermediate",
+      "question": "Một nhóm trong groupby có 3 dòng, trong đó có 1 dòng chứa giá trị khuyết NaN ở cột điểm. Hàm size() và count() trả về lần lượt là:",
+      "code": null,
+      "options": [
+        {
+          "text": "size() = 3 và count() = 3"
+        },
+        {
+          "text": "size() = 3 và count() = 2"
+        },
+        {
+          "text": "size() = 2 và count() = 3"
+        }
+      ],
+      "correct": 1,
+      "explanation": "size() đếm tổng số dòng trong nhóm kể cả NaN (= 3); count() chỉ đếm các giá trị hợp lệ không khuyết (= 2)."
+    },
+    {
+      "id": "q-m6-3",
+      "module_code": "M6",
+      "level": "advanced",
+      "question": "Để cập nhật giá trị cột lương cho nhân viên có tuổi lớn hơn 30 trong DataFrame mà không gặp cảnh báo SettingWithCopyWarning, cú pháp chuẩn là gì?",
+      "code": null,
+      "options": [
+        {
+          "text": "df[df['age'] > 30]['salary'] = 5000"
+        },
+        {
+          "text": "df.iloc[df['age'] > 30]['salary'] = 5000"
+        },
+        {
+          "text": "df.loc[df['age'] > 30, 'salary'] = 5000"
+        }
+      ],
+      "correct": 2,
+      "explanation": "Truy cập chuỗi df[...][...] tạo bản trung gian gây cảnh báo SettingWithCopyWarning; .loc gán trực tiếp an toàn vào DataFrame gốc."
+    },
+    {
+      "id": "q-m7-1",
+      "module_code": "M7",
+      "level": "basic",
+      "question": "Để thể hiện xu hướng biến thiên doanh thu liên tục qua 7 ngày trong tuần, loại biểu đồ nào trực quan và phù hợp nhất?",
+      "code": null,
+      "options": [
+        {
+          "text": "Biểu đồ đường line chart có đánh dấu điểm dữ liệu"
+        },
+        {
+          "text": "Biểu đồ tròn pie chart chia tỷ lệ phần trăm"
+        },
+        {
+          "text": "Biểu đồ phân bố tần suất histogram"
+        }
+      ],
+      "correct": 0,
+      "explanation": "Dữ liệu chuỗi thời gian có thứ tự liên tục tự nhiên nên biểu đồ đường (line chart) phản ánh xu hướng trực quan nhất."
+    },
+    {
+      "id": "q-m7-2",
+      "module_code": "M7",
+      "level": "intermediate",
+      "question": "Lệnh ax.boxplot(data, showfliers=False) trong Matplotlib thực hiện tác vụ nào?",
+      "code": null,
+      "options": [
+        {
+          "text": "Xóa vĩnh viễn các giá trị ngoại lai ra khỏi tập dữ liệu phân tích"
+        },
+        {
+          "text": "Ẩn các điểm ngoại lai khỏi hiển thị đồ thị nhưng bảo toàn dữ liệu gốc"
+        },
+        {
+          "text": "Gán các điểm ngoại lai bằng giá trị ranh giới ria whisker"
+        }
+      ],
+      "correct": 1,
+      "explanation": "showfliers=False chỉ tắt hiển thị các điểm chấm ngoại lai ngoài ria boxplot; mảng dữ liệu gốc và chỉ số phân vị không bị sửa đổi."
+    },
+    {
+      "id": "q-m7-3",
+      "module_code": "M7",
+      "level": "advanced",
+      "question": "Khi lặp vẽ và lưu 1000 biểu đồ ra tệp bằng Matplotlib trong vòng lặp for, bộ nhớ RAM tăng liên tục đến cạn kiệt. Nguyên nhân cốt lõi và giải pháp là gì?",
+      "code": null,
+      "options": [
+        {
+          "text": "Định dạng hình ảnh PNG bị rò rỉ bộ nhớ; cần chuyển sang lưu tệp SVG"
+        },
+        {
+          "text": "Biến đối tượng figure không tự hủy; chỉ cần gọi lệnh del fig ở cuối vòng lặp"
+        },
+        {
+          "text": "pyplot duy trì tham chiếu toàn cục tới mọi Figure; cần gọi plt.close sau mỗi lần lưu"
+        }
+      ],
+      "correct": 2,
+      "explanation": "pyplot quản lý state machine toàn cục giữ tham chiếu tới tất cả Figure mở; phải gọi plt.close(fig) để giải phóng vùng nhớ."
+    },
+    {
+      "id": "q-m8-1",
+      "module_code": "M8",
+      "level": "basic",
+      "question": "Trong đường ống làm sạch dữ liệu bảng (data cleaning pipeline), nguyên tắc đối soát số lượng dòng (data reconciliation) là gì?",
+      "code": null,
+      "options": [
+        {
+          "text": "Tổng số dòng đầu vào bằng số dòng đầu ra cộng tổng số dòng bị loại có lý do"
+        },
+        {
+          "text": "Số dòng đầu ra luôn luôn bằng đúng một nửa số lượng dòng đầu vào"
+        },
+        {
+          "text": "Không cần đối soát số lượng dòng, chỉ cần kiểm tra dòng đầu tiên"
+        }
+      ],
+      "correct": 0,
+      "explanation": "Nguyên tắc đối soát dòng: rows_in = rows_out + sum(reasons_rejected), đảm bảo mọi dòng bị loại đều được giải trình lý do."
+    },
+    {
+      "id": "q-m8-2",
+      "module_code": "M8",
+      "level": "intermediate",
+      "question": "Khi chuẩn hóa bảng điểm sinh viên, giá trị điểm bị thiếu (ô trống, ký hiệu 'abs' vắng thi) khác điểm số 0 như thế nào?",
+      "code": null,
+      "options": [
+        {
+          "text": "Hai giá trị này hoàn toàn đồng nhất và luôn được tính là 0 trong mọi công thức"
+        },
+        {
+          "text": "Giá trị thiếu nghĩa là chưa có điểm; điền 0 sẽ kéo tụt sai lệch điểm trung bình GPA"
+        },
+        {
+          "text": "Giá trị thiếu tự động được hệ thống làm tròn thành điểm số trung bình của lớp"
+        }
+      ],
+      "correct": 1,
+      "explanation": "Thiếu điểm khác điểm 0. Điền 0 làm méo mó phân phối điểm và GPA. Cần tách biệt ô khuyết (NaN) với điểm 0 thực tế."
+    },
+    {
+      "id": "q-m8-3",
+      "module_code": "M8",
+      "level": "advanced",
+      "question": "Khi đọc tệp dữ liệu bán hàng thô có chứa mã đơn hàng như \"0101\" hay mã vùng \"09\", tại sao nên đọc với chỉ định dtype=str?",
+      "code": null,
+      "options": [
+        {
+          "text": "Đọc kiểu chuỗi giúp giảm một nửa dung lượng RAM so với kiểu số nguyên"
+        },
+        {
+          "text": "pandas bắt buộc cột mã định danh phải có kiểu dữ liệu là chuỗi văn bản"
+        },
+        {
+          "text": "Ngăn ngừa việc mất chữ số 0 ở đầu do chuyển đổi tự động thành số nguyên"
+        }
+      ],
+      "correct": 2,
+      "explanation": "Nếu để tự suy luận số, mã \"0101\" sẽ thành số nguyên 101, làm mất thông tin định danh và sai lệch định dạng khóa."
+    }
+  ]
+}
