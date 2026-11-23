@@ -2,3 +2,6 @@
 PE_Python_v2/** -text
 curriculum_v3/** -text
 downloads/** -text
+# PE_Python_DA is mirrored byte-for-byte to the platform repo (tools/dong_bo.py);
+# do not let autocrlf rewrite line endings or the comparison reports false diffs.
+PE_Python_DA/** -text
