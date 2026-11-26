@@ -1,26 +1,41 @@
-# Machine Learning PE · Phiếu thực hành PRIMM
+# Machine Learning PE · Bộ học liệu PRIMM
 
-36 bài · 324 hoạt động PRIMM · 603 câu ôn · 151 ca kiểm Make 1
+Bộ học liệu có 28 bài chính và 8 bài bổ sung. Các phiếu dùng số, ma trận, nhãn và đoạn mã ngắn. Bạn có thể đưa từng câu vào một hoạt động tương tác trong PE.
 
 | Tệp | Cách dùng |
 |---|---|
-| [Giáo trình HTML](Machine-Learning-PE-PRIMM.html) | Mở trong trình duyệt. Chọn ô A–F và các liên kết trên phiếu để xem kết quả, tải tệp Python hoặc mở đáp án. |
-| [Giáo trình Markdown](Machine-Learning-PE-PRIMM.md) | Đọc hoặc biên tập toàn bộ giáo trình trong một tệp. Các mục A–F đi theo thứ tự của phiếu. |
-| [Giáo trình PDF](Machine-Learning-PE-PRIMM.pdf) | Đọc hoặc in. Phiếu PRIMM dùng A4 ngang. Kết quả, mã và câu ôn nằm ở các trang tiếp theo. |
+| [Bản HTML](Machine-Learning-PE-PRIMM.html) | Chọn phiếu, dự đoán, sửa và chạy mã Python, nộp kết quả, xem phản hồi. |
+| [Bản PDF](Machine-Learning-PE-PRIMM.pdf) | In trang đề trước. Bộ S dành cho buổi sau có phụ lục đề riêng. Hai phần đáp án nằm sau phụ lục ấy. |
+| [Bản Markdown](Machine-Learning-PE-PRIMM.md) | Chỉnh nội dung, tìm theo mã câu và tra đáp án trong phụ lục. |
 
-## Format LƯU Ý
+## Trình độ đầu vào ước tính
 
-Hiện tại đang ở dạng các bài tập thô, là chưa đặt các bài tập đó vào tình huống cụ thể hay ví dụ trực quan như cái này 
+Khóa này phù hợp với người đã học một học phần lập trình nhập môn, thường vào cuối năm nhất hoặc năm hai các ngành máy tính, dữ liệu và kỹ thuật. Đây là ước tính từ các thao tác trong bài. Để vào ML01, bạn nên tự viết được một hàm Python nhỏ, dùng danh sách, vòng lặp, điều kiện và đọc một thông báo lỗi. Với NumPy, hãy biết tạo mảng và lấy một hàng hay cột. Bạn sẽ học các thuật toán học máy (machine learning) qua từng phiếu.
 
-## Cách học
+Trước ML05, hãy ôn đạo hàm của hàm bậc hai. Trước ML10–ML11 và ML22, cần đọc được phép nhân ma trận, đạo hàm sigmoid và quy tắc chuỗi. Trước ML25, ôn vectơ riêng và trị riêng. Các kỹ năng này có thể học dần theo lộ trình.
 
-Mỗi bài có năm bước. Đọc mã mẫu và ghi đầu ra dự đoán. Chạy mã rồi so kết quả. Lần theo phép tính ở chỗ còn vướng. Thay từng yếu tố trong mã và chạy lại. Cuối cùng, tự viết hàm và dùng ca kiểm trong đề để đối chiếu.
+## Một lượt học
 
-## Chạy Make 1
+Ghi dự đoán ở A, chạy và sửa mã ở B, giải thích một phép tính ở C. Ba lượt D dùng lại cùng phương pháp. Đóng mẫu trước bốn đề E và nộp riêng từng kết quả. Bạn cũng tự viết một hàm để chạy các ca kiểm. Mở F khi đạt ít nhất 3/4 vị trí E, trong đó E2 bắt buộc đúng. Nếu đã xem đáp án, dùng bộ R cùng số để chứng minh lại. Đầu buổi sau, làm S từ đầu và ghi kết quả riêng.
 
-1. Cài NumPy bằng `python -m pip install numpy`.
-2. Tải mã khởi đầu từ HTML hoặc sao chép mã từ Markdown/PDF.
-3. Điền hàm. Chạy `python ML01.py` cho bài đầu.
-4. Đọc kết quả từng ca. Sửa phần chưa đạt rồi chạy lại.
+- **A–C** · Ghi dự đoán, chạy đoạn mã mẫu và giải thích một giá trị bằng phép tính.
+- **D** · Làm ba lần với đề cố định. Nút đưa D vào ô chạy thay các đối số bằng bộ số của lượt đang chọn.
+- **E** · Mỗi đề E1–E4 nhận một kết quả riêng. Viết thêm hàm Python và chạy các ca kiểm. Việc viết hàm có thể thực hiện trong trình duyệt hoặc bằng tệp tải xuống.
+- **Làm lại** · Sau khi mở đáp án, thử Ri ở cùng vị trí với Ei. Mỗi vị trí được tính một lần. Phản hồi chỉ ra phép tính, trục hoặc quy ước cần kiểm.
+- **F và S** · Khi đủ ba vị trí và đạt vị trí 2, phần vận dụng mở ra. Dành bộ S cho buổi sau và ghi kết quả riêng với E.
 
-Bài chuyển giao SVM dùng thêm scikit-learn. Báo cáo đối chiếu với Drive nằm cuối giáo trình.
+Khi nhập kết quả, dùng dấu chấm thập phân, ngoặc vuông cho vectơ, ma trận và các kết quả ghép. Dùng dấu ngoặc kép cho chuỗi và null cho giá trị không xác định. Với số thập phân dài, giữ ít nhất 7 chữ số sau dấu chấm. Riêng ML05, giữ đến 10 chữ số nếu cần.
+
+## Ngân hàng ôn tập
+
+603 câu được gắn mã theo 28 bài chính, gồm 269 câu trắc nghiệm và 334 câu tự luận hoặc viết mã. Tám bài bổ sung có các lượt D, E, R, S, phần viết hàm và bài vận dụng riêng. HTML hiện phản hồi sau lần nộp. Câu tự luận dùng lời giải để người học tự đối chiếu.
+
+## Chạy Python
+
+Thiết kế tham chiếu thao tác ghi dự đoán, xem kết quả và thử mã trong [bài Python của PE](https://www.programmingedu.io.vn/lesson/python_advanced?lesson=1).
+
+Trình duyệt tải Pyodide 0.27.7 và NumPy ở lần chạy đầu. Trình duyệt lưu tiến độ và mã đã sửa trên thiết bị qua localStorage. Khi mở PDF hoặc Markdown, hãy ghi đáp án từng lượt vào phiếu riêng trước khi tra phụ lục. Có thể cài NumPy trên máy và tải tệp Python từ ô viết mã để làm việc ngoại tuyến.
+
+## Quy mô và quy ước
+
+Có 108 lượt D, 144 đề E, 144 đề làm lại R, 36 đề S và 151 ca kiểm hàm. Emulate AI đã trả về 92 đoạn gợi ý cho lời dẫn của 36 phiếu và phần đề của toàn bộ 603 câu. Bản cuối đã được biên tập tiếng Việt, đối chiếu công thức, dữ liệu và quy ước trả lời. Đáp án số trên mỗi phiếu được tính lại bằng NumPy. Các thống kê này mô tả thiết kế học liệu. Điểm E và kết quả S sau một khoảng nghỉ là hai số đo nên thu riêng khi thử nghiệm với người học.
