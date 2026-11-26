@@ -8,6 +8,10 @@
 | [Giáo trình Markdown](Machine-Learning-PE-PRIMM.md) | Đọc hoặc biên tập toàn bộ giáo trình trong một tệp. Các mục A–F đi theo thứ tự của phiếu. |
 | [Giáo trình PDF](Machine-Learning-PE-PRIMM.pdf) | Đọc hoặc in. Phiếu PRIMM dùng A4 ngang. Kết quả, mã và câu ôn nằm ở các trang tiếp theo. |
 
+## Format LƯU Ý
+
+Hiện tại đang ở dạng các bài tập thô, là chưa đặt các bài tập đó vào tình huống cụ thể hay ví dụ trực quan như cái này 
+
 ## Cách học
 
 Mỗi bài có năm bước. Đọc mã mẫu và ghi đầu ra dự đoán. Chạy mã rồi so kết quả. Lần theo phép tính ở chỗ còn vướng. Thay từng yếu tố trong mã và chạy lại. Cuối cùng, tự viết hàm và dùng ca kiểm trong đề để đối chiếu.
