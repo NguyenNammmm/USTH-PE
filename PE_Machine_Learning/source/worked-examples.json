@@ -1,0 +1,2153 @@
+{
+  "ML01": [
+    {
+      "inputs": [
+        [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        [
+          2,
+          1
+        ],
+        -2
+      ],
+      "steps": "Hai tích vô hướng là 4 và 6. Cộng −2 vào từng điểm."
+    },
+    {
+      "inputs": [
+        [
+          [
+            2
+          ],
+          [
+            -1
+          ],
+          [
+            4
+          ]
+        ],
+        [
+          -3
+        ],
+        1
+      ],
+      "steps": "Nhân từng hàng với −3, rồi cộng 1."
+    },
+    {
+      "inputs": [
+        [
+          [
+            1,
+            -2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          0,
+          2
+        ],
+        4
+      ],
+      "steps": "Chỉ cột hai đóng góp −4 và 6. Cộng 4 vào từng hàng."
+    }
+  ],
+  "ML02": [
+    {
+      "inputs": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "steps": "Hai hàng sau trừ tâm là [−1,−1] và [1,1]. Chia tổng tích cho 1."
+    },
+    {
+      "inputs": [
+        [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      ],
+      "steps": "Hai cột lệch theo hướng ngược nhau. Tổng tích độ lệch là −4."
+    },
+    {
+      "inputs": [
+        [
+          [
+            2,
+            8
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      ],
+      "steps": "Cột đầu có độ lệch 0. Phương sai cột sau là (16+0+16)/2."
+    }
+  ],
+  "ML03": [
+    {
+      "inputs": [
+        [
+          [
+            0
+          ],
+          [
+            6
+          ]
+        ],
+        [
+          [
+            -3
+          ],
+          [
+            9
+          ]
+        ]
+      ],
+      "steps": "Lấy min 0 và khoảng 6. Chia −3 và 9 cho 6."
+    },
+    {
+      "inputs": [
+        [
+          [
+            2,
+            1
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        [
+          [
+            4,
+            2
+          ]
+        ]
+      ],
+      "steps": "Hai ô lần lượt là (4−2)/4 và (2−1)/2."
+    },
+    {
+      "inputs": [
+        [
+          [
+            -1,
+            0
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        [
+          [
+            3,
+            -2
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "steps": "Hai khoảng huấn luyện dài 4 và 8. Giá trị −2 ở cột hai thành −2/8."
+    }
+  ],
+  "ML04": [
+    {
+      "inputs": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        1,
+        0
+      ],
+      "steps": "Phần dư [1,−1] cho tổng bình phương 2. Chia cho 4."
+    },
+    {
+      "inputs": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        1,
+        1
+      ],
+      "steps": "Mọi phần dư bằng −1. Chia tổng bình phương 3 cho 6."
+    },
+    {
+      "inputs": [
+        [
+          3
+        ],
+        [
+          1
+        ],
+        -1,
+        2
+      ],
+      "steps": "Dự đoán −1 nên phần dư −2. Bình phương rồi chia 2."
+    }
+  ],
+  "ML05": [
+    {
+      "inputs": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        0,
+        0,
+        0.2
+      ],
+      "steps": "Phần dư [−1,−3] cho gradient w = −3,5 và b = −2. Trừ 0,2 lần từng gradient."
+    },
+    {
+      "inputs": [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        1,
+        0,
+        0.5
+      ],
+      "steps": "Phần dư [−1,−3] cho gradient w = −1 và b = −2. Cả hai dùng cùng tham số cũ."
+    },
+    {
+      "inputs": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        1,
+        1,
+        0.25
+      ],
+      "steps": "Phần dư [1,1] cho hai gradient bằng 1. Hai tham số cùng giảm 0,25."
+    }
+  ],
+  "ML06": [
+    {
+      "inputs": [
+        [
+          4,
+          1,
+          0,
+          2,
+          3
+        ],
+        2
+      ],
+      "steps": "Cắt sau vị trí thứ hai và thứ tư. Giữ chỉ số 3 ở lô cuối."
+    },
+    {
+      "inputs": [
+        [
+          2,
+          1,
+          0
+        ],
+        4
+      ],
+      "steps": "Dãy có ba phần tử, tất cả nằm trong một lô."
+    },
+    {
+      "inputs": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        3
+      ],
+      "steps": "Chia sáu vị trí thành hai đoạn liên tiếp, mỗi đoạn dài 3."
+    }
+  ],
+  "ML07": [
+    {
+      "inputs": [
+        [
+          [
+            0
+          ],
+          [
+            2
+          ],
+          [
+            4
+          ]
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "steps": "Cột toàn 1 khớp cả ba nhãn với hệ số tự do 1. Trọng số bằng 0."
+    },
+    {
+      "inputs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        [
+          2,
+          6,
+          14
+        ]
+      ],
+      "steps": "Hệ số tự do bằng 2. Tổng hai trọng số bằng 4. Nghiệm chuẩn nhỏ nhất chia đều."
+    },
+    {
+      "inputs": [
+        [
+          [
+            -1
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "steps": "Dữ liệu đối xứng cho hệ số góc 0. Hệ số tự do bằng trung bình 2/3."
+    }
+  ],
+  "ML08": [
+    {
+      "inputs": [
+        [
+          -3,
+          2,
+          4
+        ],
+        2
+      ],
+      "steps": "Lập từng hàng theo [1,x,x²]. Bình phương của −3 bằng 9."
+    },
+    {
+      "inputs": [
+        [
+          0,
+          1,
+          -1
+        ],
+        4
+      ],
+      "steps": "Mỗi hàng có 5 cột. Tại −1, dấu luân phiên theo số mũ."
+    },
+    {
+      "inputs": [
+        [
+          3,
+          -2,
+          6,
+          0
+        ],
+        1
+      ],
+      "steps": "Giữ cột toàn 1 trước, rồi đưa x vào cột thứ hai."
+    }
+  ],
+  "ML09": [
+    {
+      "inputs": [
+        [
+          -3,
+          0,
+          3
+        ],
+        0.4
+      ],
+      "steps": "Xác suất xấp xỉ 0,0474, 0,5 và 0,9526. So từng số với 0,4."
+    },
+    {
+      "inputs": [
+        [
+          1,
+          2,
+          -1
+        ],
+        0.9
+      ],
+      "steps": "Logit 2 là lớn nhất nhưng chỉ cho xác suất khoảng 0,881. Cả ba dưới ngưỡng."
+    },
+    {
+      "inputs": [
+        [
+          0,
+          -5,
+          5
+        ],
+        0.5
+      ],
+      "steps": "Logit 0 cho đúng ngưỡng. Hai giá trị sau lần lượt nằm dưới và trên ngưỡng."
+    }
+  ],
+  "ML10": [
+    {
+      "inputs": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "steps": "Hai p bằng 0,5. Phần dư −0,5 và 0,5 cho gradient [0,0.25]."
+    },
+    {
+      "inputs": [
+        [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "steps": "Cả hai tổn thất bằng ln(2). Gradient là (0,5−1)/2."
+    },
+    {
+      "inputs": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "steps": "Mỗi p−y bằng −0,5. Tổng đóng góp vào cột thứ hai là −1, rồi chia cho 2."
+    }
+  ],
+  "ML11": [
+    {
+      "inputs": [
+        [
+          [
+            1,
+            -1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        0
+      ],
+      "steps": "H có đường chéo 0,25. Gradient [0,−0.5] cho bước hiệu chỉnh [0,−2]."
+    },
+    {
+      "inputs": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        0
+      ],
+      "steps": "Gradient [0,0.25]. Giải hệ cho bước hiệu chỉnh [−2,4] rồi lấy w trừ bước đó."
+    },
+    {
+      "inputs": [
+        [
+          [
+            1,
+            -2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        0
+      ],
+      "steps": "Đường chéo H là 0,25 và 1. Gradient [0,1] cho bước hiệu chỉnh [0,1]."
+    }
+  ],
+  "ML12": [
+    {
+      "inputs": [
+        [
+          [
+            0
+          ],
+          [
+            4
+          ],
+          [
+            7
+          ]
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          5
+        ],
+        1
+      ],
+      "steps": "Khoảng cách [5,1,2]. Chọn hàng chỉ số 1."
+    },
+    {
+      "inputs": [
+        [
+          [
+            -2
+          ],
+          [
+            2
+          ],
+          [
+            6
+          ]
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0
+        ],
+        1
+      ],
+      "steps": "Hai điểm đầu cách đều 2. Chọn hàng chỉ số 0."
+    },
+    {
+      "inputs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        2
+      ],
+      "steps": "Hai hàng đầu gần nhất và chia đều phiếu. Quy tắc hòa lấy 0."
+    }
+  ],
+  "ML13": [
+    {
+      "inputs": [
+        [
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        2
+      ],
+      "steps": "Tập xác thực dài 3 rồi 2. Mỗi lượt lấy đoạn còn lại làm huấn luyện."
+    },
+    {
+      "inputs": [
+        [
+          0,
+          2,
+          1,
+          3
+        ],
+        4
+      ],
+      "steps": "Mỗi lượt xác thực đúng một chỉ số. Ghép ba chỉ số còn lại theo thứ tự cũ."
+    },
+    {
+      "inputs": [
+        [
+          5,
+          1,
+          4,
+          0,
+          2,
+          3
+        ],
+        3
+      ],
+      "steps": "Mỗi đoạn có hai chỉ số. Đoạn thứ hai [4,0] đi với huấn luyện [5,1,2,3]."
+    }
+  ],
+  "ML14": [
+    {
+      "inputs": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "steps": "Phần dư [0,−2] cho MAE 1 và MSE 2. SST = 8 nên R² = 1−4/8."
+    },
+    {
+      "inputs": [
+        [
+          5,
+          5,
+          5
+        ],
+        [
+          5,
+          5,
+          8
+        ]
+      ],
+      "steps": "Phần dư cuối là 3. MSE bằng 9/3. R² dùng null vì SST = 0."
+    },
+    {
+      "inputs": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "steps": "Hai phần dư có độ lớn 1. SSE và SST đều bằng 2."
+    }
+  ],
+  "ML15": [
+    {
+      "inputs": [
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "steps": "TP = 2, FP = 1, FN = 0, TN = 1. Tính bốn chỉ số từ các số đếm này."
+    },
+    {
+      "inputs": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "steps": "Không có dự đoán dương nên precision bằng 0 theo quy ước. Hai dự đoán đúng."
+    },
+    {
+      "inputs": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "steps": "Mỗi ô của ma trận nhầm lẫn đếm một mẫu. Bốn chỉ số cùng bằng 1/2."
+    }
+  ],
+  "ML16": [
+    {
+      "inputs": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0.9,
+          0.7,
+          0.1
+        ]
+      ],
+      "steps": "Hạ ngưỡng nhận lần lượt một âm, dương duy nhất rồi âm còn lại."
+    },
+    {
+      "inputs": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "steps": "Hai mẫu điểm 2 cùng qua ngưỡng. FPR thành 1 và TPR thành 1/2 ở cùng bước."
+    },
+    {
+      "inputs": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          2,
+          3,
+          1
+        ]
+      ],
+      "steps": "Thứ tự nhận là dương, âm, âm, dương. Mỗi bước tăng một tọa độ thêm 1/2."
+    }
+  ],
+  "ML17": [
+    {
+      "inputs": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          8
+        ]
+      ],
+      "steps": "Bậc 4 có sai số xác thực thấp nhất là 3. Trừ sai số huấn luyện 1."
+    },
+    {
+      "inputs": [
+        [
+          5,
+          1,
+          3
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          4,
+          4,
+          8
+        ]
+      ],
+      "steps": "Hai điểm xác thực 4 hòa nhau. Chọn bậc 1 rồi tính 4−2."
+    },
+    {
+      "inputs": [
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "steps": "Chọn bậc 2. Độ chênh 3−5 âm vì sai số xác thực thấp hơn."
+    }
+  ],
+  "ML18": [
+    {
+      "inputs": [
+        [
+          [
+            -1
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        6
+      ],
+      "steps": "X có trung bình 0 nên b = 3. Trọng số là 4/(2+6)."
+    },
+    {
+      "inputs": [
+        [
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        [
+          0,
+          8
+        ],
+        4
+      ],
+      "steps": "Đặc trưng luôn bằng 0. Hệ số tự do bằng trung bình 4. Trọng số bị phạt về 0."
+    },
+    {
+      "inputs": [
+        [
+          [
+            -2
+          ],
+          [
+            0
+          ],
+          [
+            2
+          ]
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        0
+      ],
+      "steps": "Khi lam bằng 0, đường khớp cả ba điểm có hệ số góc 1 và hệ số tự do 4."
+    }
+  ],
+  "ML19": [
+    {
+      "inputs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          1,
+          1
+        ],
+        -1.5
+      ],
+      "steps": "Điểm lần lượt là −1,5, −0,5, −0,5 và 0,5. Chỉ hàng cuối đạt ngưỡng."
+    },
+    {
+      "inputs": [
+        [
+          [
+            -2
+          ],
+          [
+            0
+          ],
+          [
+            2
+          ]
+        ],
+        [
+          1
+        ],
+        1
+      ],
+      "steps": "Các điểm −1, 1 và 3 cho một nhãn 0 rồi hai nhãn 1."
+    },
+    {
+      "inputs": [
+        [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        [
+          1,
+          -1
+        ],
+        2
+      ],
+      "steps": "Điểm đầu là 0, điểm sau là 3. Cả hai đạt z ≥ 0."
+    }
+  ],
+  "ML20": [
+    {
+      "inputs": [
+        [
+          -4,
+          0,
+          1
+        ],
+        "relu"
+      ],
+      "steps": "Chặn −4 về 0. Tại 0 dùng độ dốc quy ước 0, tại 1 dùng độ dốc 1."
+    },
+    {
+      "inputs": [
+        [
+          [
+            2,
+            -1
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "relu"
+      ],
+      "steps": "Áp dụng theo từng ô. Cả giá trị và đạo hàm đều giữ hai chiều."
+    },
+    {
+      "inputs": [
+        [
+          -8,
+          7,
+          -6,
+          5
+        ],
+        "relu"
+      ],
+      "steps": "Chỉ các vị trí 7 và 5 giữ giá trị cũ và nhận đạo hàm 1."
+    }
+  ],
+  "ML21": [
+    {
+      "inputs": [
+        [
+          [
+            -2
+          ],
+          [
+            1
+          ]
+        ],
+        [
+          [
+            1
+          ]
+        ],
+        [
+          1
+        ],
+        [
+          [
+            2
+          ]
+        ],
+        [
+          3
+        ]
+      ],
+      "steps": "Tầng ẩn trước ReLU là [−1,2], sau ReLU là [0,2]. Áp dụng 2H+3."
+    },
+    {
+      "inputs": [
+        [
+          [
+            1
+          ],
+          [
+            -1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ],
+        [
+          0
+        ],
+        [
+          [
+            -3
+          ]
+        ],
+        [
+          2
+        ]
+      ],
+      "steps": "Sau ReLU có [2,0]. Tầng ra tuyến tính cho phép kết quả âm."
+    },
+    {
+      "inputs": [
+        [
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        [
+          -1
+        ]
+      ],
+      "steps": "Điểm ẩn [2,−1] thành [2,0]. Cộng hai kích hoạt rồi trừ 1."
+    }
+  ],
+  "ML22": [
+    {
+      "inputs": [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          -1
+        ]
+      ],
+      "steps": "h và p đều bằng 0,5. Delta tầng ra mỗi mẫu −0,5. Delta tầng ẩn mỗi mẫu −0,25."
+    },
+    {
+      "inputs": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -2,
+          1
+        ]
+      ],
+      "steps": "p − y đều 0,5. Nhân w₂ và h(1−h) để có delta ẩn −0,25 trên mỗi mẫu."
+    },
+    {
+      "inputs": [
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "steps": "w₂ bằng 0 nên cả hai gradient tầng ẩn bằng 0. Hai delta tầng ra trái dấu và cùng h."
+    }
+  ],
+  "ML23": [
+    {
+      "inputs": [
+        [
+          [
+            0
+          ],
+          [
+            4
+          ],
+          [
+            10
+          ]
+        ],
+        [
+          [
+            0
+          ],
+          [
+            10
+          ]
+        ]
+      ],
+      "steps": "Điểm 4 vào cụm 0. Tâm mới là 2 và 10. Hai thành viên cụm đầu góp 4 mỗi điểm."
+    },
+    {
+      "inputs": [
+        [
+          [
+            0
+          ],
+          [
+            2
+          ],
+          [
+            4
+          ]
+        ],
+        [
+          [
+            0
+          ],
+          [
+            4
+          ]
+        ]
+      ],
+      "steps": "Điểm 2 hòa nên vào cụm 0. Tâm đầu thành 1. SSE bằng 1+1."
+    },
+    {
+      "inputs": [
+        [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            9
+          ]
+        ],
+        [
+          [
+            0
+          ],
+          [
+            9
+          ],
+          [
+            20
+          ]
+        ]
+      ],
+      "steps": "Cụm 2 rỗng giữ tâm 20. Cụm đầu nhận 1 và 3, cụm giữa giữ 9."
+    }
+  ],
+  "ML24": [
+    {
+      "inputs": [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "steps": "Chỉ cặp hai vị trí đầu cùng cụm ở cả hai cách chia. Hợp gồm cả ba cặp."
+    },
+    {
+      "inputs": [
+        [
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5,
+          5
+        ]
+      ],
+      "steps": "Hai cặp cùng cụm nằm ở hai vị trí khác nhau. Bốn cặp còn lại đồng thuận tách."
+    },
+    {
+      "inputs": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          6,
+          5,
+          4,
+          3
+        ]
+      ],
+      "steps": "Cả hai tách mọi cặp. Rand bằng 1, Jaccard dùng quy ước 1 khi hợp rỗng."
+    }
+  ],
+  "ML25": [
+    {
+      "inputs": [
+        [
+          [
+            -4,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            -2
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        1
+      ],
+      "steps": "Trung bình [0,0]. Hai tổng bình phương 32 và 8 cho tỷ lệ trục ngang 32/40."
+    },
+    {
+      "inputs": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        1
+      ],
+      "steps": "Trung bình [2,2]. Trục theo hướng [1,1] sau chuẩn hóa giữ toàn bộ phương sai."
+    },
+    {
+      "inputs": [
+        [
+          [
+            1,
+            -3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            -1,
+            0
+          ],
+          [
+            -1,
+            0
+          ]
+        ],
+        1
+      ],
+      "steps": "Hai cột trung bình 0 và tích chéo 0. Tổng bình phương theo trục dọc 18, trục ngang 4."
+    }
+  ],
+  "ML26": [
+    {
+      "inputs": [
+        [
+          1,
+          3,
+          5,
+          9
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "steps": "Ba trung điểm là 2, 4 và 7. Ngưỡng 4 tạo hai nhánh thuần."
+    },
+    {
+      "inputs": [
+        [
+          0,
+          4,
+          8
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "steps": "Ngưỡng 2 và 6 cùng cho mức giảm 4/9−1/3. Chọn ngưỡng nhỏ hơn."
+    },
+    {
+      "inputs": [
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "steps": "Nút cha thuần lớp. Mọi cách chia đều có mức giảm 0."
+    }
+  ],
+  "ML27": [
+    {
+      "inputs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        2
+      ],
+      "steps": "Hàng 0 chỉ lấy phiếu cây 1, hàng 1 chỉ lấy phiếu cây 0. Cả hai phiếu hợp lệ bằng 0."
+    },
+    {
+      "inputs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        2
+      ],
+      "steps": "Hàng 0 xuất hiện trong cả hai cây. Hàng 1 nhận hai phiếu hòa."
+    },
+    {
+      "inputs": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        3
+      ],
+      "steps": "Hàng 0 không có phiếu OOB. Hàng 1 lấy cây 0 và 2. Hàng 2 lấy cây 0 và 1."
+    }
+  ],
+  "ML28": [
+    {
+      "inputs": [
+        [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        [
+          2,
+          5,
+          8
+        ],
+        [
+          [
+            3
+          ],
+          [
+            4
+          ]
+        ],
+        [
+          10,
+          15
+        ]
+      ],
+      "steps": "Đường y = 3x+2 cho [11,14]. Hai sai số tuyệt đối đều bằng 1."
+    },
+    {
+      "inputs": [
+        [
+          [
+            5
+          ],
+          [
+            5
+          ]
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          [
+            0
+          ],
+          [
+            10
+          ]
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "steps": "Cột hằng dùng mẫu số 1. Mô hình dự đoán trung bình y bằng 3 cho cả hai mẫu."
+    },
+    {
+      "inputs": [
+        [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          -3,
+          9
+        ]
+      ],
+      "steps": "Cột thứ hai hằng. Quan hệ y = 2x−2 cho hai sai số có dấu +1 và −1."
+    }
+  ],
+  "MLP01": [
+    {
+      "inputs": [
+        [
+          "b",
+          "a",
+          "a"
+        ],
+        [
+          "b",
+          "c",
+          "a"
+        ]
+      ],
+      "steps": "Hai cột lần lượt a và b. Mức c chưa gặp nhận hàng [0,0]."
+    },
+    {
+      "inputs": [
+        [
+          "m",
+          "z",
+          "k"
+        ],
+        [
+          "z",
+          "k"
+        ]
+      ],
+      "steps": "Xếp các mức thành k, m, z trước khi mã hóa hai hàng."
+    },
+    {
+      "inputs": [
+        [
+          "p",
+          "p"
+        ],
+        [
+          "q",
+          "p",
+          "p"
+        ]
+      ],
+      "steps": "Chỉ có cột p. Mức q nhận 0, hai mức p nhận 1."
+    }
+  ],
+  "MLP02": [
+    {
+      "inputs": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        [
+          [
+            9,
+            8
+          ]
+        ],
+        2
+      ],
+      "steps": "Phương sai cột đầu bằng 9, cột sau bằng 0. Chỉ giữ cột đầu."
+    },
+    {
+      "inputs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        [
+          [
+            4,
+            1
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        1
+      ],
+      "steps": "Cột đầu bằng ngưỡng nên bị bỏ, cột sau có phương sai 9."
+    },
+    {
+      "inputs": [
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            4,
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            9,
+            8,
+            7
+          ]
+        ],
+        2
+      ],
+      "steps": "Phương sai [4,1,4]. Giữ cột 0 và 2 theo thứ tự ban đầu."
+    }
+  ],
+  "MLP03": [
+    {
+      "inputs": [
+        [
+          0,
+          1,
+          5
+        ],
+        "single"
+      ],
+      "steps": "Gộp 0 và 1 tại độ cao 1. Cụm đó cách điểm 5 gần nhất một đoạn 5−1."
+    },
+    {
+      "inputs": [
+        [
+          4,
+          2,
+          0
+        ],
+        "single"
+      ],
+      "steps": "Hai cặp hòa ở độ cao 2. Chọn vị trí 0,1 trước rồi gộp điểm cuối."
+    },
+    {
+      "inputs": [
+        [
+          1,
+          2,
+          8,
+          10
+        ],
+        "single"
+      ],
+      "steps": "Gộp hai điểm đầu ở độ cao 1, hai điểm sau ở 2. Hai cụm gặp tại 8−2."
+    }
+  ],
+  "MLP04": [
+    {
+      "inputs": [
+        [
+          0,
+          1,
+          2,
+          7
+        ],
+        1,
+        3
+      ],
+      "steps": "Chỉ tọa độ 1 là lõi. Nó nhận hai điểm biên 0 và 2. Điểm 7 là nhiễu."
+    },
+    {
+      "inputs": [
+        [
+          0,
+          2,
+          4,
+          6,
+          20
+        ],
+        2,
+        3
+      ],
+      "steps": "Các lõi 2 và 4 nối nhau. Hai đầu mút 0 và 6 nhận cùng cụm."
+    },
+    {
+      "inputs": [
+        [
+          4,
+          0,
+          4,
+          0,
+          8
+        ],
+        0,
+        2
+      ],
+      "steps": "Chỉ các điểm trùng nhau nối được. Nhóm tọa độ 4 nhận nhãn 0 do duyệt chỉ số tăng."
+    }
+  ],
+  "MLP05": [
+    {
+      "inputs": [
+        [
+          [
+            -1
+          ],
+          [
+            2
+          ]
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0
+        ],
+        0,
+        2
+      ],
+      "steps": "Hai điểm số bằng 0 nên mỗi tổn thất bằng 1. Phần phạt bằng 0."
+    },
+    {
+      "inputs": [
+        [
+          [
+            -2
+          ],
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1
+        ],
+        1,
+        3
+      ],
+      "steps": "Hai biên là 1 và 2. Tổn thất bản lề bằng 0 nên mục tiêu chỉ còn 0,5."
+    },
+    {
+      "inputs": [
+        [
+          [
+            0
+          ],
+          [
+            2
+          ]
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1
+        ],
+        0,
+        1
+      ],
+      "steps": "Biên [0,−2] cho tổn thất [1,3]. Cộng phần phạt 0,5 vào tổng."
+    }
+  ],
+  "MLP06": [
+    {
+      "inputs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        1
+      ],
+      "steps": "Tâm [2,0]. Giữ trục ngang, bỏ hai tung độ ±1 nên SSE bằng 2."
+    },
+    {
+      "inputs": [
+        [
+          [
+            2,
+            4
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        0
+      ],
+      "steps": "Hai hàng cùng trả trung bình [4,6]. Mỗi hàng góp 8 vào SSE."
+    },
+    {
+      "inputs": [
+        [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        1
+      ],
+      "steps": "Mọi điểm sau trừ trung bình nằm trên trục ngang. Một thành phần giữ toàn bộ dữ liệu."
+    }
+  ],
+  "MLP07": [
+    {
+      "inputs": [
+        [
+          [
+            0
+          ],
+          [
+            3
+          ],
+          [
+            7
+          ]
+        ],
+        [
+          4
+        ],
+        0.5,
+        1
+      ],
+      "steps": "Nút 1 thắng. Cả ba nút trong bán kính 1, dịch nửa quãng đường về 4."
+    },
+    {
+      "inputs": [
+        [
+          [
+            0
+          ],
+          [
+            4
+          ],
+          [
+            8
+          ]
+        ],
+        [
+          2
+        ],
+        1,
+        0
+      ],
+      "steps": "Hai nút đầu cách đều, chọn nút 0. Chỉ nút đó cập nhật tới 2."
+    },
+    {
+      "inputs": [
+        [
+          [
+            1
+          ],
+          [
+            5
+          ],
+          [
+            10
+          ],
+          [
+            20
+          ]
+        ],
+        [
+          9
+        ],
+        0.25,
+        1
+      ],
+      "steps": "Nút 2 thắng. Chỉ các nút 1, 2, 3 dịch một phần tư quãng đường về 9."
+    }
+  ],
+  "MLP08": [
+    {
+      "inputs": [
+        [
+          0,
+          2,
+          5,
+          7
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "steps": "Hai tâm cách 5. Mỗi độ phân tán bằng 1 nên tỷ số là 2/5."
+    },
+    {
+      "inputs": [
+        [
+          0,
+          2,
+          4,
+          6,
+          12,
+          14
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2
+        ]
+      ],
+      "steps": "Ba tâm 1, 5 và 13. Hai cụm đầu chọn nhau cho 1/2, cụm cuối chọn tâm 5 cho 1/4."
+    },
+    {
+      "inputs": [
+        [
+          3,
+          3,
+          9,
+          11
+        ],
+        [
+          1,
+          1,
+          2,
+          2
+        ]
+      ],
+      "steps": "Hai tâm 3 và 10, độ phân tán 0 và 1. Cả hai cụm dùng tỷ số 1/7."
+    }
+  ]
+}

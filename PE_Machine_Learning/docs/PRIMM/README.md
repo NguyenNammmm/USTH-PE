@@ -8,6 +8,8 @@ Bộ học liệu có 28 bài chính và 8 bài bổ sung. Các phiếu dùng s�
 | [Bản PDF](Machine-Learning-PE-PRIMM.pdf) | In trang đề trước. Bộ S dành cho buổi sau có phụ lục đề riêng. Hai phần đáp án nằm sau phụ lục ấy. |
 | [Bản Markdown](Machine-Learning-PE-PRIMM.md) | Chỉnh nội dung, tìm theo mã câu và tra đáp án trong phụ lục. |
 
+[Sơ đồ lộ trình học](Lo-trinh-hoc.md) cho thấy thứ tự theo tuyến và bài tiên quyết của từng chủ đề.
+
 ## Trình độ đầu vào ước tính
 
 Khóa này phù hợp với người đã học một học phần lập trình nhập môn, thường vào cuối năm nhất hoặc năm hai các ngành máy tính, dữ liệu và kỹ thuật. Đây là ước tính từ các thao tác trong bài. Để vào ML01, bạn nên tự viết được một hàm Python nhỏ, dùng danh sách, vòng lặp, điều kiện và đọc một thông báo lỗi. Với NumPy, hãy biết tạo mảng và lấy một hàng hay cột. Bạn sẽ học các thuật toán học máy (machine learning) qua từng phiếu.
@@ -20,6 +22,7 @@ Ghi dự đoán ở A, chạy và sửa mã ở B, giải thích một phép tí
 
 - **A–C** · Ghi dự đoán, chạy đoạn mã mẫu và giải thích một giá trị bằng phép tính.
 - **D** · Làm ba lần với đề cố định. Nút đưa D vào ô chạy thay các đối số bằng bộ số của lượt đang chọn.
+- **Ví dụ có lời giải** · Mỗi chủ đề có thêm ba bộ dữ liệu với cách tính và kết quả để đối chiếu trước khi làm E.
 - **E** · Mỗi đề E1–E4 nhận một kết quả riêng. Viết thêm hàm Python và chạy các ca kiểm. Việc viết hàm có thể thực hiện trong trình duyệt hoặc bằng tệp tải xuống.
 - **Làm lại** · Sau khi mở đáp án, thử Ri ở cùng vị trí với Ei. Mỗi vị trí được tính một lần. Phản hồi chỉ ra phép tính, trục hoặc quy ước cần kiểm.
 - **F và S** · Khi đủ ba vị trí và đạt vị trí 2, phần vận dụng mở ra. Dành bộ S cho buổi sau và ghi kết quả riêng với E.
@@ -38,4 +41,4 @@ Trình duyệt tải Pyodide 0.27.7 và NumPy ở lần chạy đầu. Trình du
 
 ## Quy mô và quy ước
 
-Có 108 lượt D, 144 đề E, 144 đề làm lại R, 36 đề S và 151 ca kiểm hàm. Emulate AI đã trả về 92 đoạn gợi ý cho lời dẫn của 36 phiếu và phần đề của toàn bộ 603 câu. Bản cuối đã được biên tập tiếng Việt, đối chiếu công thức, dữ liệu và quy ước trả lời. Đáp án số trên mỗi phiếu được tính lại bằng NumPy. Các thống kê này mô tả thiết kế học liệu. Điểm E và kết quả S sau một khoảng nghỉ là hai số đo nên thu riêng khi thử nghiệm với người học.
+Có 108 ví dụ có lời giải, 108 lượt D, 144 đề E, 144 đề làm lại R, 36 đề S và 151 ca kiểm hàm. Emulate AI đã trả về 92 đoạn gợi ý cho lời dẫn của 36 phiếu và phần đề của toàn bộ 603 câu. Bản cuối đã được biên tập tiếng Việt, đối chiếu công thức, dữ liệu và quy ước trả lời. Đáp án số trên mỗi phiếu được tính lại bằng NumPy. Các thống kê này mô tả thiết kế học liệu. Điểm E và kết quả S sau một khoảng nghỉ là hai số đo nên thu riêng khi thử nghiệm với người học.

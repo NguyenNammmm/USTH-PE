@@ -56,6 +56,34 @@ Thay X rồi giải lại đề lõi.
 Thay X rồi giải lại đề lõi.  
 **D3** · `X = [4,0,3,9]  linkage = "single"`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [0,1,5]  linkage = "single"`
+
+Gộp 0 và 1 tại độ cao 1. Cụm đó cách điểm 5 gần nhất một đoạn 5−1.
+
+**Kết quả** · `[[1,[0,1]],[4,[0,1,2]]]`
+
+#### Ví dụ 2
+
+`X = [4,2,0]  linkage = "single"`
+
+Hai cặp hòa ở độ cao 2. Chọn vị trí 0,1 trước rồi gộp điểm cuối.
+
+**Kết quả** · `[[2,[0,1]],[2,[0,1,2]]]`
+
+#### Ví dụ 3
+
+`X = [1,2,8,10]  linkage = "single"`
+
+Gộp hai điểm đầu ở độ cao 1, hai điểm sau ở 2. Hai cụm gặp tại 8−2.
+
+**Kết quả** · `[[1,[0,1]],[2,[2,3]],[6,[0,1,2,3]]]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.

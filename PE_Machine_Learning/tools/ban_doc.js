@@ -139,7 +139,7 @@
   document.getElementById('print').addEventListener('click',()=>window.print());
   addEventListener('hashchange',route);
   let printDetails=[];
-  function printOpen(){printDetails=[];document.querySelectorAll('.repairs,.terms').forEach(el=>{if(!el.open){el.open=true;printDetails.push(el)}})}
+  function printOpen(){printDetails=[];document.querySelectorAll('.repairs,.terms,.worked-example details').forEach(el=>{if(!el.open){el.open=true;printDetails.push(el)}})}
   addEventListener('beforeprint',printOpen);addEventListener('afterprint',()=>{printDetails.forEach(el=>el.open=false);printDetails=[]});
   document.addEventListener('submit',e=>{
     e.preventDefault();

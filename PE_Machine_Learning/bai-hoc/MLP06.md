@@ -50,6 +50,34 @@ Thay X rồi giải lại đề lõi.
 Thay k rồi giải lại đề lõi.  
 **D3** · `X = [[1,2],[5,2],[3,1],[3,3]]  k = 2`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [[0,0],[4,0],[2,-1],[2,1]]  k = 1`
+
+Tâm [2,0]. Giữ trục ngang, bỏ hai tung độ ±1 nên SSE bằng 2.
+
+**Kết quả** · `[[[0,0],[4,0],[2,0],[2,0]],2]`
+
+#### Ví dụ 2
+
+`X = [[2,4],[6,8]]  k = 0`
+
+Hai hàng cùng trả trung bình [4,6]. Mỗi hàng góp 8 vào SSE.
+
+**Kết quả** · `[[[4,6],[4,6]],16]`
+
+#### Ví dụ 3
+
+`X = [[1,2],[3,2],[5,2]]  k = 1`
+
+Mọi điểm sau trừ trung bình nằm trên trục ngang. Một thành phần giữ toàn bộ dữ liệu.
+
+**Kết quả** · `[[[1,2],[3,2],[5,2]],0]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.

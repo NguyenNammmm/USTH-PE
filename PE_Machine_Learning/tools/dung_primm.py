@@ -9,6 +9,7 @@ from pathlib import Path
 from collections import defaultdict
 
 import ban_doc as book
+from lo_trinh import roadmap_md
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -123,6 +124,8 @@ def main():
             assert q["answer"].strip()
         bank[q["lesson_id"]].append(q)
     assert list(bank)==CORE_IDS
+    examples=read_json("source/worked-examples.json")
+    assert set(examples)=={r["id"] for r in rows}
     keys={}; starters={}; artifacts={}; index=0
     for module,count in book.MODULES:
         for r in rows[index:index+count]:
@@ -133,7 +136,9 @@ def main():
         c=row["id"];m=row["make"]
         row["beforeText"]=", ".join(core[c]["before"]) if c in core else row["after"]
         if not row["beforeText"]:row["beforeText"]="Tự kiểm đầu vào"
+        row["prerequisites"]=core[c]["before"] if c in core else [row["after"]]
         keys[c]=book.key_for(row)
+        row["workedExamples"]=book.worked_examples(row, examples[c])
         starters[c]=starter_script(m)
         verify_solution(row,starters[c])
         assert capture(row["code"],c)
@@ -147,6 +152,7 @@ def main():
     stem=directory+book.STEM
     artifacts[stem+".md"]=book.combined_md(rows,bank,keys)
     artifacts[stem+".html"]=book.page_html(rows,bank,keys,starters)
+    artifacts[directory+"Lo-trinh-hoc.md"]="\n\n".join(roadmap_md(rows, standalone=True))+"\n"
     artifacts[directory+"README.md"]=book.reader_readme(rows)
     for path,contents in artifacts.items():
         dest=ROOT/path
@@ -156,6 +162,6 @@ def main():
             dest.parent.mkdir(exist_ok=True,parents=True)
             dest.write_text(contents,encoding="utf-8",newline="\n")
     total_checks=sum(len(r["make"]["checks"]) for r in rows)
-    print(f"PRIMM_PASS · {len(rows)} phiếu · {len(questions)} câu ôn · {len(rows)*len(book.PANELS)} bộ dữ liệu · {total_checks} ca hàm")
+    print(f"PRIMM_PASS · {len(rows)} phiếu · {len(questions)} câu ôn · {len(rows)*len(book.PANELS)} bộ dữ liệu · {sum(len(r['workedExamples']) for r in rows)} ví dụ mới · {total_checks} ca hàm")
 if __name__=="__main__":
     main()

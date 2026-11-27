@@ -6,6 +6,7 @@ import re
 from pathlib import Path
 
 import numpy as np
+from lo_trinh import roadmap_html, roadmap_md
 from markdown_it import MarkdownIt
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -127,6 +128,45 @@ def links_md(row, local):
     if not row.get("reviewIds"): return ""
     return "Ôn cùng thao tác · " + " · ".join(f'[{x}]('+("../on-tap/"+row["id"]+".md" if local else "")+"#"+x.lower()+")" for x in row["reviewIds"])
 
+def worked_examples(row, examples):
+    env = {"np": np}
+    sample = {"np": np}
+    exec(row["make"]["solution"], env)
+    exec(row["exampleFunction"], sample)
+    name = row["make"]["signature"].split("(")[0]
+    seen = {fmt(args) for args in row["sets"].values()}
+    assert len(examples) == 3
+    finished = []
+    for example in examples:
+        args = example["inputs"]
+        assert len(args) == len(row["parameters"]) and fmt(args) not in seen, row["id"]
+        assert example["steps"].strip(), row["id"]
+        seen.add(fmt(args))
+        expected = json_value(env[name](*args))
+        assert check_equal(json_value(sample[name](*args)), expected), (row["id"], args)
+        inputs = "  ".join(f"{k} = {fmt(v)}" for k, v in zip(row["parameters"], args))
+        finished.append({"input": inputs, "steps": example["steps"], "output": fmt(expected)})
+    return finished
+
+
+def examples_md(row):
+    parts = ["### Ba ví dụ có lời giải", "Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ."]
+    for i, example in enumerate(row["workedExamples"], 1):
+        parts.extend([f"#### Ví dụ {i}", f'`{example["input"]}`', example["steps"],
+                      f'**Kết quả** · `{example["output"]}`'])
+    return parts
+
+
+def examples_html(row):
+    parts = [f'<section class="worked-examples" id="{row["id"]}-examples">', f'<p class="paper prereq">{row["id"]} · {esc(row["title"])}</p>',
+             '<h3>Ba ví dụ có lời giải</h3><p>Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.</p>']
+    for i, example in enumerate(row["workedExamples"], 1):
+        parts.append(f'<div class="worked-example"><h4>Ví dụ {i}</h4><div class="args">{esc(example["input"])}</div>'
+                     f'<details><summary>Xem cách tính</summary><p>{esc(example["steps"])}</p>'
+                     f'<p><b>Kết quả</b> · <code>{esc(example["output"])}</code></p></details></div>')
+    return "".join(parts) + "</section>"
+
+
 def lesson_md(r, keys, local=False):
     c = r["id"]; m=r["make"]; lower=c.lower()
     keylink=("#doi-chieu" if local else "#dap-an-"+lower)
@@ -138,6 +178,7 @@ def lesson_md(r, keys, local=False):
                 "### C · Lần theo mã","\n".join(f'{i}. {v}' for i,v in enumerate(r["investigate"],1)),
                 "### D · Thử ba thay đổi","Mỗi lần bắt đầu lại từ B. Thay dữ liệu như dưới đây, dự đoán kết quả, rồi chạy để so.",
                 *[r["modify"][i]+"  \n"+prompt_md(r,f'D{i+1}') for i in range(3)],
+                *examples_md(r),
                 "### E · Tự giải và viết hàm",GROUP_TEXT+" Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối "+tol(r)+".",
                 *[prompt_md(r,'E'+str(i)) for i in range(1,5)],
                 f'**Viết mã.** Viết hàm `{m["signature"]}`. {m["task"]} [Tệp điền mã]({starter_relative}thuc-hanh/{c}.py).',
@@ -170,7 +211,7 @@ def intro_md():
             *[f'- **{t}** · {d}' for t,d in GLOSS]]
 
 def combined_md(rows, bank, keys):
-    out=intro_md()+["## Mục lục"]
+    out=intro_md()+roadmap_md(rows)+["## Mục lục"]
     out+= [f'- [{r["id"]} · {r["title"]}](#{r["id"].lower()})'+(f' · [Câu ôn](#on-{r["id"].lower()})' if r["id"] in bank else '') for r in rows]
     out.append('[Đề kiểm lại ở buổi sau](#kiem-lai) · [Đối chiếu bài và tài liệu USTH](#doi-chieu)')
     out+=["Ghi câu trả lời trước khi mở [đáp án phiếu](#dap-an-phieu) hoặc [đáp án ngân hàng](#loi-giai-ngan-hang)."]
@@ -222,6 +263,7 @@ def sheet_html(r, keys):
         stage('D','D','Thử ba thay đổi'),'<p>Bắt đầu lại từ B cho mỗi lượt. Ghi dự đoán rồi thay dữ liệu, chạy và kiểm lại.</p>']
     for i in range(1,4):
         label=f'D{i}';s.append(f'<div class="exercise guided" data-d="{label}"><h4>{label} <span>{esc(r["modify"][i-1])}</span></h4><div class="args">{esc(call_args(r,label))}</div><label class="web note">Dự đoán cho {label}<input data-note="{label}" autocomplete="off"></label><button class="web secondary" type="button" data-load="{label}">Đưa {label} vào ô chạy</button></div>')
+    s.append(examples_html(r))
     s += [stage('E','E','Tự giải và viết hàm'),f'<p>{GROUP_TEXT} Đóng mẫu trước khi tính. Dung sai tuyệt đối {tol(r)}. <a href="#format" class="web">Cách nhập kết quả</a></p>',
           '<div class="decks">'+''.join(submission(r,'E'+str(i)) for i in range(1,5))+'</div>',
           '<p class="gate" aria-live="polite">Mốc mở F · Đạt ít nhất 3/4 vị trí, gồm vị trí 2. Ei hoặc Ri có thể xác nhận vị trí i.</p>',
@@ -274,7 +316,8 @@ def page_html(rows, bank, keys, starters):
           '<h3>Cách học một phiếu</h3><p>'+WORKFLOW+'</p><p class="web">Trình duyệt lưu bài làm trên thiết bị này. Phần nộp kết quả dùng được khi mở tệp cục bộ. Lần đầu chạy Python cần Internet để tải Python và NumPy. Bạn cũng có thể tải mã và chạy trên máy.</p>',
           '<h3 id="format">Cách nhập kết quả</h3><p>'+formats+' Ví dụ một cặp số viết [1.25,0.65].</p>',
           '<details class="terms"><summary>Thuật ngữ dùng trong phiếu</summary><dl>'+''.join('<dt>'+esc(t)+'</dt><dd>'+esc(d)+'</dd>' for t,d in GLOSS)+'</dl></details>',
-          '<section class="toc" id="toc"><h2>Lộ trình 36 phiếu</h2><div>'+contents(rows)+'</div></section></article>']
+          '<section class="toc" id="toc"><h2>Lộ trình 36 phiếu</h2><p><a href="#lo-trinh">Mở sơ đồ tuyến học và bài tiên quyết</a></p><div>'+contents(rows)+'</div></section></article>']
+    main.append(roadmap_html(rows))
     for r in rows:main.append(sheet_html(r,keys[r["id"]]))
     byid={r['id']:r for r in rows}
     for c,qs in bank.items():main.append(bank_html(c,qs,byid[c]['title']))
@@ -300,7 +343,7 @@ def page_html(rows, bank, keys, starters):
             entry={"type":q["type"],"answer":rich(answer_md(q))}
             if q["type"]=="mcq":entry.update(correct=q["correctOption"],notes={o["id"]:o["feedback"] for o in q["options"]})
             data["questions"][q["question_id"]]=entry
-    nav='<option value="start">Bắt đầu và lộ trình</option><option value="doi-chieu">Đối chiếu tài liệu USTH</option>'+''.join('<option value="'+r['id']+'">'+r['id']+' · '+esc(r['title'])+'</option>' for r in rows)+'<optgroup label="Ngân hàng câu hỏi">'+''.join(f'<option value="on-{c}">Ôn tập {c}</option>' for c in bank)+'</optgroup>'
+    nav='<option value="start">Bắt đầu và lộ trình</option><option value="lo-trinh">Sơ đồ lộ trình học</option><option value="doi-chieu">Đối chiếu tài liệu USTH</option>'+''.join('<option value="'+r['id']+'">'+r['id']+' · '+esc(r['title'])+'</option>' for r in rows)+'<optgroup label="Ngân hàng câu hỏi">'+''.join(f'<option value="on-{c}">Ôn tập {c}</option>' for c in bank)+'</optgroup>'
     return '<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Machine Learning PE · Thực hành PRIMM</title><style>'+css+'</style></head><body><header class="toolbar web"><a href="#start">Machine Learning PE</a><label><span class="sr">Chọn bài</span><select id="route">'+nav+'</select></label><button type="button" class="secondary" id="print">In giáo trình</button></header><main>'+''.join(main)+'</main><script type="application/json" id="course-data">'+safe_json(data)+'</script><script>'+js+'</script></body></html>\n'
 
 
@@ -315,6 +358,8 @@ Bộ học liệu có 28 bài chính và 8 bài bổ sung. Các phiếu dùng s�
 | [Bản PDF]({STEM}.pdf) | In trang đề trước. Bộ S dành cho buổi sau có phụ lục đề riêng. Hai phần đáp án nằm sau phụ lục ấy. |
 | [Bản Markdown]({STEM}.md) | Chỉnh nội dung, tìm theo mã câu và tra đáp án trong phụ lục. |
 
+[Sơ đồ lộ trình học](Lo-trinh-hoc.md) cho thấy thứ tự theo tuyến và bài tiên quyết của từng chủ đề.
+
 ## Trình độ đầu vào ước tính
 
 {PROFILE}
@@ -327,6 +372,7 @@ Bộ học liệu có 28 bài chính và 8 bài bổ sung. Các phiếu dùng s�
 
 - **A–C** · Ghi dự đoán, chạy đoạn mã mẫu và giải thích một giá trị bằng phép tính.
 - **D** · Làm ba lần với đề cố định. Nút đưa D vào ô chạy thay các đối số bằng bộ số của lượt đang chọn.
+- **Ví dụ có lời giải** · Mỗi chủ đề có thêm ba bộ dữ liệu với cách tính và kết quả để đối chiếu trước khi làm E.
 - **E** · Mỗi đề E1–E4 nhận một kết quả riêng. Viết thêm hàm Python và chạy các ca kiểm. Việc viết hàm có thể thực hiện trong trình duyệt hoặc bằng tệp tải xuống.
 - **Làm lại** · Sau khi mở đáp án, thử Ri ở cùng vị trí với Ei. Mỗi vị trí được tính một lần. Phản hồi chỉ ra phép tính, trục hoặc quy ước cần kiểm.
 - **F và S** · Khi đủ ba vị trí và đạt vị trí 2, phần vận dụng mở ra. Dành bộ S cho buổi sau và ghi kết quả riêng với E.
@@ -345,5 +391,5 @@ Trình duyệt tải Pyodide 0.27.7 và NumPy ở lần chạy đầu. Trình du
 
 ## Quy mô và quy ước
 
-Có 108 lượt D, 144 đề E, 144 đề làm lại R, 36 đề S và {sum(len(r['make']['checks']) for r in rows)} ca kiểm hàm. Emulate AI đã trả về 92 đoạn gợi ý cho lời dẫn của 36 phiếu và phần đề của toàn bộ 603 câu. Bản cuối đã được biên tập tiếng Việt, đối chiếu công thức, dữ liệu và quy ước trả lời. Đáp án số trên mỗi phiếu được tính lại bằng NumPy. Các thống kê này mô tả thiết kế học liệu. Điểm E và kết quả S sau một khoảng nghỉ là hai số đo nên thu riêng khi thử nghiệm với người học.
+Có 108 ví dụ có lời giải, 108 lượt D, 144 đề E, 144 đề làm lại R, 36 đề S và {sum(len(r['make']['checks']) for r in rows)} ca kiểm hàm. Emulate AI đã trả về 92 đoạn gợi ý cho lời dẫn của 36 phiếu và phần đề của toàn bộ 603 câu. Bản cuối đã được biên tập tiếng Việt, đối chiếu công thức, dữ liệu và quy ước trả lời. Đáp án số trên mỗi phiếu được tính lại bằng NumPy. Các thống kê này mô tả thiết kế học liệu. Điểm E và kết quả S sau một khoảng nghỉ là hai số đo nên thu riêng khi thử nghiệm với người học.
 """

@@ -64,6 +64,34 @@ Thay min_samples rồi giải lại đề lõi.
 Thay x rồi giải lại đề lõi.  
 **D3** · `x = [0,1,2,3,7]  eps = 0.5  min_samples = 3`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`x = [0,1,2,7]  eps = 1  min_samples = 3`
+
+Chỉ tọa độ 1 là lõi. Nó nhận hai điểm biên 0 và 2. Điểm 7 là nhiễu.
+
+**Kết quả** · `[0,0,0,-1]`
+
+#### Ví dụ 2
+
+`x = [0,2,4,6,20]  eps = 2  min_samples = 3`
+
+Các lõi 2 và 4 nối nhau. Hai đầu mút 0 và 6 nhận cùng cụm.
+
+**Kết quả** · `[0,0,0,0,-1]`
+
+#### Ví dụ 3
+
+`x = [4,0,4,0,8]  eps = 0  min_samples = 2`
+
+Chỉ các điểm trùng nhau nối được. Nhóm tọa độ 4 nhận nhãn 0 do duyệt chỉ số tăng.
+
+**Kết quả** · `[0,1,0,1,-1]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.

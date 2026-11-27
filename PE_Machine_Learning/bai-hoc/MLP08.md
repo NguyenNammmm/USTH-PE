@@ -53,6 +53,34 @@ Thay labels rồi giải lại đề lõi.
 Thay x rồi giải lại đề lõi.  
 **D3** · `x = [-1,1,5,7,10,14]  labels = [0,0,1,1,2,2]`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`x = [0,2,5,7]  labels = [0,0,1,1]`
+
+Hai tâm cách 5. Mỗi độ phân tán bằng 1 nên tỷ số là 2/5.
+
+**Kết quả** · `0.4`
+
+#### Ví dụ 2
+
+`x = [0,2,4,6,12,14]  labels = [0,0,1,1,2,2]`
+
+Ba tâm 1, 5 và 13. Hai cụm đầu chọn nhau cho 1/2, cụm cuối chọn tâm 5 cho 1/4.
+
+**Kết quả** · `0.4166666666667`
+
+#### Ví dụ 3
+
+`x = [3,3,9,11]  labels = [1,1,2,2]`
+
+Hai tâm 3 và 10, độ phân tán 0 và 1. Cả hai cụm dùng tỷ số 1/7.
+
+**Kết quả** · `0.1428571428571`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.

@@ -51,6 +51,34 @@ Thay w rồi giải lại đề lõi.
 Thay b rồi giải lại đề lõi.  
 **D3** · `X = [[-2],[0],[2]]  y = [-1,1,1]  w = [1]  b = 1  C = 1`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [[-1],[2]]  y = [-1,1]  w = [0]  b = 0  C = 2`
+
+Hai điểm số bằng 0 nên mỗi tổn thất bằng 1. Phần phạt bằng 0.
+
+**Kết quả** · `[[1,1],4]`
+
+#### Ví dụ 2
+
+`X = [[-2],[1]]  y = [-1,1]  w = [1]  b = 1  C = 3`
+
+Hai biên là 1 và 2. Tổn thất bản lề bằng 0 nên mục tiêu chỉ còn 0,5.
+
+**Kết quả** · `[[0,0],0.5]`
+
+#### Ví dụ 3
+
+`X = [[0],[2]]  y = [1,-1]  w = [1]  b = 0  C = 1`
+
+Biên [0,−2] cho tổn thất [1,3]. Cộng phần phạt 0,5 vào tổng.
+
+**Kết quả** · `[[1,3],4.5]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.

@@ -10,7 +10,7 @@ không tự động nhập vào website.
 
 ## Học liệu PRIMM
 
-[Mở hướng dẫn và các bản HTML, PDF, Markdown](docs/PRIMM/README.md). Bộ này gồm 36 phiếu PRIMM và 603 câu ôn tập. [Nguồn phiếu](source/primm.json) và [ghi chú thiết kế](docs/HANDOVER-THIET-KE-BAI-HOC.md) dành cho người biên soạn.
+[Mở hướng dẫn và các bản HTML, PDF, Markdown](docs/PRIMM/README.md). Bộ này gồm 36 phiếu PRIMM, 108 ví dụ có lời giải và 603 câu ôn tập. [Sơ đồ lộ trình](docs/PRIMM/Lo-trinh-hoc.md) ghi thứ tự theo tuyến và bài tiên quyết. [Nguồn phiếu](source/primm.json) và [ghi chú thiết kế](docs/HANDOVER-THIET-KE-BAI-HOC.md) dành cho người biên soạn.
 
 Từ thư mục `PE_Machine_Learning`, dùng Python 3.10 trở lên để dựng và kiểm lại học liệu.
 

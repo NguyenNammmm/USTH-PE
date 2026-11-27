@@ -49,6 +49,34 @@ Thay X rồi giải lại đề lõi.
 Thay train rồi giải lại đề lõi.  
 **D3** · `train = [[2,0,1],[2,4,3]]  X = [[8,4,2]]  cutoff = 0.5`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`train = [[0,2],[6,2]]  X = [[9,8]]  cutoff = 2`
+
+Phương sai cột đầu bằng 9, cột sau bằng 0. Chỉ giữ cột đầu.
+
+**Kết quả** · `[[0],[[9]]]`
+
+#### Ví dụ 2
+
+`train = [[0,0],[2,6]]  X = [[4,1],[2,5]]  cutoff = 1`
+
+Cột đầu bằng ngưỡng nên bị bỏ, cột sau có phương sai 9.
+
+**Kết quả** · `[[1],[[1],[5]]]`
+
+#### Ví dụ 3
+
+`train = [[0,0,1],[4,2,5]]  X = [[9,8,7]]  cutoff = 2`
+
+Phương sai [4,1,4]. Giữ cột 0 và 2 theo thứ tự ban đầu.
+
+**Kết quả** · `[[0,2],[[9,7]]]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.

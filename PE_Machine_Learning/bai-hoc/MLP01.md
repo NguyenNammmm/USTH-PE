@@ -48,6 +48,34 @@ Thay train rồi giải lại đề lõi.
 Thay values rồi giải lại đề lõi.  
 **D3** · `train = ["b","a","b"]  values = ["a","a","b"]`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`train = ["b","a","a"]  values = ["b","c","a"]`
+
+Hai cột lần lượt a và b. Mức c chưa gặp nhận hàng [0,0].
+
+**Kết quả** · `[["a","b"],[[0,1],[0,0],[1,0]]]`
+
+#### Ví dụ 2
+
+`train = ["m","z","k"]  values = ["z","k"]`
+
+Xếp các mức thành k, m, z trước khi mã hóa hai hàng.
+
+**Kết quả** · `[["k","m","z"],[[0,0,1],[1,0,0]]]`
+
+#### Ví dụ 3
+
+`train = ["p","p"]  values = ["q","p","p"]`
+
+Chỉ có cột p. Mức q nhận 0, hai mức p nhận 1.
+
+**Kết quả** · `[["p"],[[0],[1],[1]]]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.

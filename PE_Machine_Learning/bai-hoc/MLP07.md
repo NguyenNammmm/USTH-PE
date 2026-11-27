@@ -53,6 +53,34 @@ Thay lr rồi giải lại đề lõi.
 Thay radius rồi giải lại đề lõi.  
 **D3** · `weights = [[0],[4],[8],[12]]  x = [5]  lr = 0.5  radius = 0`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`weights = [[0],[3],[7]]  x = [4]  lr = 0.5  radius = 1`
+
+Nút 1 thắng. Cả ba nút trong bán kính 1, dịch nửa quãng đường về 4.
+
+**Kết quả** · `[1,[[2],[3.5],[5.5]]]`
+
+#### Ví dụ 2
+
+`weights = [[0],[4],[8]]  x = [2]  lr = 1  radius = 0`
+
+Hai nút đầu cách đều, chọn nút 0. Chỉ nút đó cập nhật tới 2.
+
+**Kết quả** · `[0,[[2],[4],[8]]]`
+
+#### Ví dụ 3
+
+`weights = [[1],[5],[10],[20]]  x = [9]  lr = 0.25  radius = 1`
+
+Nút 2 thắng. Chỉ các nút 1, 2, 3 dịch một phần tư quãng đường về 9.
+
+**Kết quả** · `[2,[[1],[6],[9.75],[17.25]]]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.

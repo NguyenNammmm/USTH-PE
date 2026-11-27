@@ -11,7 +11,7 @@ async function main() {
     const page = await browser.newPage();
     await page.goto(pathToFileURL(target+'.html').href,{waitUntil:'load'});
     await page.emulateMedia({media:'print'});
-    await page.locator('.terms,.repairs').evaluateAll(items=>items.forEach(item=>item.open=true));
+    await page.locator('.terms,.repairs,.worked-example details').evaluateAll(items=>items.forEach(item=>item.open=true));
     await page.evaluate(()=>document.fonts.ready);
     await page.pdf({path:target+'.pdf',format:'A4',preferCSSPageSize:true,printBackground:true,
       displayHeaderFooter:true,headerTemplate:'<span></span>',

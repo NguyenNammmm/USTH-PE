@@ -52,6 +52,133 @@ Khi nhập kết quả, dùng dấu chấm thập phân, ngoặc vuông cho vect
 
 - **Siêu tham số (hyperparameter)** · Cấu hình như tốc độ học, số láng giềng hoặc mức phạt.
 
+## Sơ đồ lộ trình học
+
+Mỗi mũi tên trong sơ đồ nối một bài tiên quyết với bài sử dụng kiến thức đó. Các ô màu vàng là bài bổ sung.
+
+```mermaid
+flowchart LR
+    START["Tự kiểm đầu vào"]
+    ML01["ML01 · Dữ liệu theo hàng"]
+    ML02["ML02 · Hiệp phương sai"]
+    ML03["ML03 · Chuẩn hóa"]
+    ML04["ML04 · Tổn thất hồi quy"]
+    ML05["ML05 · Hạ gradient"]
+    ML06["ML06 · Chia lô"]
+    ML07["ML07 · Hồi quy đa biến"]
+    ML08["ML08 · Đặc trưng đa thức"]
+    ML09["ML09 · Sigmoid và nhãn"]
+    ML10["ML10 · BCE và gradient"]
+    ML11["ML11 · Bước Newton"]
+    ML12["ML12 · k láng giềng"]
+    ML13["ML13 · Kiểm định K phần"]
+    ML14["ML14 · Chỉ số hồi quy"]
+    ML15["ML15 · Chỉ số phân loại"]
+    ML16["ML16 · Đường ROC"]
+    ML17["ML17 · Chọn bậc"]
+    ML18["ML18 · Ridge"]
+    ML19["ML19 · Perceptron"]
+    ML20["ML20 · ReLU"]
+    ML21["ML21 · Lan truyền tiến"]
+    ML22["ML22 · Lan truyền ngược"]
+    ML23["ML23 · K-means"]
+    ML24["ML24 · Rand và Jaccard"]
+    ML25["ML25 · PCA"]
+    ML26["ML26 · Chia theo Gini"]
+    ML27["ML27 · Bỏ phiếu OOB"]
+    ML28["ML28 · Chuỗi hồi quy"]
+    MLP01["MLP01 · Mã hóa một-nóng"]
+    MLP02["MLP02 · Lọc phương sai"]
+    MLP03["MLP03 · Phân cụm phân cấp"]
+    MLP04["MLP04 · DBSCAN"]
+    MLP05["MLP05 · SVM"]
+    MLP06["MLP06 · SVD"]
+    MLP07["MLP07 · SOM"]
+    MLP08["MLP08 · Davies–Bouldin"]
+    START --> ML01
+    ML01 --> ML02
+    ML01 --> ML03
+    ML02 --> ML03
+    ML01 --> ML04
+    ML04 --> ML05
+    ML05 --> ML06
+    ML04 --> ML07
+    ML05 --> ML07
+    ML07 --> ML08
+    ML04 --> ML09
+    ML09 --> ML10
+    ML10 --> ML11
+    ML01 --> ML12
+    ML04 --> ML13
+    ML04 --> ML14
+    ML09 --> ML15
+    ML15 --> ML16
+    ML08 --> ML17
+    ML13 --> ML17
+    ML17 --> ML18
+    ML05 --> ML18
+    ML09 --> ML19
+    ML19 --> ML20
+    ML20 --> ML21
+    ML21 --> ML22
+    ML01 --> ML23
+    ML23 --> ML24
+    ML02 --> ML25
+    ML01 --> ML26
+    ML26 --> ML27
+    ML03 --> ML28
+    ML07 --> ML28
+    ML09 --> ML28
+    ML13 --> ML28
+    ML15 --> ML28
+    ML03 --> MLP01
+    ML17 --> MLP02
+    ML23 --> MLP03
+    ML23 --> MLP04
+    ML19 --> MLP05
+    ML25 --> MLP06
+    ML23 --> MLP07
+    ML24 --> MLP08
+    classDef elective fill:#f4ead4,stroke:#9d783a,color:#392a13
+    class MLP01,MLP02,MLP03,MLP04,MLP05,MLP06,MLP07,MLP08 elective
+```
+
+### Các tuyến học
+
+- **Nền tảng dữ liệu** · [ML01 Dữ liệu theo hàng](#ml01) → [ML02 Hiệp phương sai](#ml02) → [ML03 Chuẩn hóa](#ml03) → [MLP01 Mã hóa một-nóng](#mlp01)
+
+- **Hồi quy và tối ưu** · [ML01 Dữ liệu theo hàng](#ml01) → [ML04 Tổn thất hồi quy](#ml04) → [ML05 Hạ gradient](#ml05) → [ML06 Chia lô](#ml06)
+
+- **Hồi quy đa biến** · [ML04 Tổn thất hồi quy](#ml04) → [ML05 Hạ gradient](#ml05) → [ML07 Hồi quy đa biến](#ml07) → [ML08 Đặc trưng đa thức](#ml08)
+
+- **Logistic và Newton** · [ML04 Tổn thất hồi quy](#ml04) → [ML09 Sigmoid và nhãn](#ml09) → [ML10 BCE và gradient](#ml10) → [ML11 Bước Newton](#ml11)
+
+- **Phân loại theo khoảng cách** · [ML01 Dữ liệu theo hàng](#ml01) → [ML12 k láng giềng](#ml12)
+
+- **Đánh giá hồi quy** · [ML04 Tổn thất hồi quy](#ml04) → [ML14 Chỉ số hồi quy](#ml14)
+
+- **Đánh giá phân loại** · [ML09 Sigmoid và nhãn](#ml09) → [ML15 Chỉ số phân loại](#ml15) → [ML16 Đường ROC](#ml16)
+
+- **Chọn và điều chuẩn mô hình** · [ML13 Kiểm định K phần](#ml13) → [ML17 Chọn bậc](#ml17) → [ML18 Ridge](#ml18)
+
+- **Lọc đặc trưng** · [ML17 Chọn bậc](#ml17) → [MLP02 Lọc phương sai](#mlp02)
+
+- **Mạng nơron** · [ML09 Sigmoid và nhãn](#ml09) → [ML19 Perceptron](#ml19) → [ML20 ReLU](#ml20) → [ML21 Lan truyền tiến](#ml21) → [ML22 Lan truyền ngược](#ml22)
+
+- **Biên phân loại** · [ML19 Perceptron](#ml19) → [MLP05 SVM](#mlp05)
+
+- **Phân cụm và đánh giá** · [ML01 Dữ liệu theo hàng](#ml01) → [ML23 K-means](#ml23) → [ML24 Rand và Jaccard](#ml24) → [MLP08 Davies–Bouldin](#mlp08)
+
+- **Phân cụm mở rộng** · [ML23 K-means](#ml23) → [MLP03 Phân cụm phân cấp](#mlp03) / [ML23 K-means](#ml23) → [MLP04 DBSCAN](#mlp04) / [ML23 K-means](#ml23) → [MLP07 SOM](#mlp07)
+
+- **Giảm chiều** · [ML02 Hiệp phương sai](#ml02) → [ML25 PCA](#ml25) → [MLP06 SVD](#mlp06)
+
+- **Cây và tổ hợp** · [ML01 Dữ liệu theo hàng](#ml01) → [ML26 Chia theo Gini](#ml26) → [ML27 Bỏ phiếu OOB](#ml27)
+
+- **Bài tổng hợp** · [ML28 Chuỗi hồi quy](#ml28)
+
+Để vào ML28, hoàn thành ML03, ML07, ML09, ML13 và ML15.
+
 ## Mục lục
 
 - [ML01 · Chấm điểm từng hàng](#ml01) · [Câu ôn](#on-ml01)
@@ -178,6 +305,34 @@ Thay w rồi giải lại đề lõi.
 Thay X rồi giải lại đề lõi.  
 **D3** · `X = [[0,2],[-1,4]]  w = [2,-1]  b = 1`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [[1,2],[3,0]]  w = [2,1]  b = -2`
+
+Hai tích vô hướng là 4 và 6. Cộng −2 vào từng điểm.
+
+**Kết quả** · `[2,4]`
+
+#### Ví dụ 2
+
+`X = [[2],[-1],[4]]  w = [-3]  b = 1`
+
+Nhân từng hàng với −3, rồi cộng 1.
+
+**Kết quả** · `[-5,4,-11]`
+
+#### Ví dụ 3
+
+`X = [[1,-2],[2,3]]  w = [0,2]  b = 4`
+
+Chỉ cột hai đóng góp −4 và 6. Cộng 4 vào từng hàng.
+
+**Kết quả** · `[0,10]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -271,6 +426,34 @@ Thay X rồi giải lại đề lõi.
 
 Thay X rồi giải lại đề lõi.  
 **D3** · `X = [[1],[4],[7]]`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [[1,0],[3,2]]`
+
+Hai hàng sau trừ tâm là [−1,−1] và [1,1]. Chia tổng tích cho 1.
+
+**Kết quả** · `[[2,2],[2,2]]`
+
+#### Ví dụ 2
+
+`X = [[1,5],[3,1]]`
+
+Hai cột lệch theo hướng ngược nhau. Tổng tích độ lệch là −4.
+
+**Kết quả** · `[[2,-4],[-4,8]]`
+
+#### Ví dụ 3
+
+`X = [[2,8],[2,4],[2,0]]`
+
+Cột đầu có độ lệch 0. Phương sai cột sau là (16+0+16)/2.
+
+**Kết quả** · `[[0,0],[0,16]]`
 
 ### E · Tự giải và viết hàm
 
@@ -367,6 +550,34 @@ Thay train rồi giải lại đề lõi.
 
 Thay X rồi giải lại đề lõi.  
 **D3** · `train = [[0,2],[4,6]]  X = [[-2,10]]`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`train = [[0],[6]]  X = [[-3],[9]]`
+
+Lấy min 0 và khoảng 6. Chia −3 và 9 cho 6.
+
+**Kết quả** · `[[-0.5],[1.5]]`
+
+#### Ví dụ 2
+
+`train = [[2,1],[6,3]]  X = [[4,2]]`
+
+Hai ô lần lượt là (4−2)/4 và (2−1)/2.
+
+**Kết quả** · `[[0.5,0.5]]`
+
+#### Ví dụ 3
+
+`train = [[-1,0],[3,8]]  X = [[3,-2],[1,4]]`
+
+Hai khoảng huấn luyện dài 4 và 8. Giá trị −2 ở cột hai thành −2/8.
+
+**Kết quả** · `[[1,-0.25],[0.5,0.5]]`
 
 ### E · Tự giải và viết hàm
 
@@ -465,6 +676,34 @@ Thay b rồi giải lại đề lõi.
 
 Thay y rồi giải lại đề lõi.  
 **D3** · `x = [0,2]  y = [-1,3]  w = 0  b = 0`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`x = [1,2]  y = [0,3]  w = 1  b = 0`
+
+Phần dư [1,−1] cho tổng bình phương 2. Chia cho 4.
+
+**Kết quả** · `0.5`
+
+#### Ví dụ 2
+
+`x = [0,1,2]  y = [2,3,4]  w = 1  b = 1`
+
+Mọi phần dư bằng −1. Chia tổng bình phương 3 cho 6.
+
+**Kết quả** · `0.5`
+
+#### Ví dụ 3
+
+`x = [3]  y = [1]  w = -1  b = 2`
+
+Dự đoán −1 nên phần dư −2. Bình phương rồi chia 2.
+
+**Kết quả** · `2`
 
 ### E · Tự giải và viết hàm
 
@@ -571,6 +810,34 @@ Bắt đầu với w = 1 và b = 0,5. Tính lại cả hai gradient từ bộ th
 Thay hai giá trị đích bằng −1 và 3. Giữ tốc độ học cùng bộ tham số ban đầu.  
 **D3** · `x = [0,2]  y = [-1,3]  w = 0  b = 0  lr = 0.1`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`x = [1,2]  y = [1,3]  w = 0  b = 0  lr = 0.2`
+
+Phần dư [−1,−3] cho gradient w = −3,5 và b = −2. Trừ 0,2 lần từng gradient.
+
+**Kết quả** · `[0.7,0.4]`
+
+#### Ví dụ 2
+
+`x = [-1,1]  y = [0,4]  w = 1  b = 0  lr = 0.5`
+
+Phần dư [−1,−3] cho gradient w = −1 và b = −2. Cả hai dùng cùng tham số cũ.
+
+**Kết quả** · `[1.5,1]`
+
+#### Ví dụ 3
+
+`x = [0,2]  y = [0,2]  w = 1  b = 1  lr = 0.25`
+
+Phần dư [1,1] cho hai gradient bằng 1. Hai tham số cùng giảm 0,25.
+
+**Kết quả** · `[0.75,0.75]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁹.
@@ -663,6 +930,34 @@ Thay order rồi giải lại đề lõi.
 
 Thay size rồi giải lại đề lõi.  
 **D3** · `order = [3,0,4,1,2]  size = 1`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`order = [4,1,0,2,3]  size = 2`
+
+Cắt sau vị trí thứ hai và thứ tư. Giữ chỉ số 3 ở lô cuối.
+
+**Kết quả** · `[[4,1],[0,2],[3]]`
+
+#### Ví dụ 2
+
+`order = [2,1,0]  size = 4`
+
+Dãy có ba phần tử, tất cả nằm trong một lô.
+
+**Kết quả** · `[[2,1,0]]`
+
+#### Ví dụ 3
+
+`order = [0,1,2,3,4,5]  size = 3`
+
+Chia sáu vị trí thành hai đoạn liên tiếp, mỗi đoạn dài 3.
+
+**Kết quả** · `[[0,1,2],[3,4,5]]`
 
 ### E · Tự giải và viết hàm
 
@@ -759,6 +1054,34 @@ Thay X rồi giải lại đề lõi.
 Thay X rồi giải lại đề lõi.  
 **D3** · `X = [[1,0],[1,1],[0,1]]  y = [2,5,1]`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [[0],[2],[4]]  y = [1,1,1]`
+
+Cột toàn 1 khớp cả ba nhãn với hệ số tự do 1. Trọng số bằng 0.
+
+**Kết quả** · `[1,0]`
+
+#### Ví dụ 2
+
+`X = [[0,0],[1,1],[3,3]]  y = [2,6,14]`
+
+Hệ số tự do bằng 2. Tổng hai trọng số bằng 4. Nghiệm chuẩn nhỏ nhất chia đều.
+
+**Kết quả** · `[2,2,2]`
+
+#### Ví dụ 3
+
+`X = [[-1],[0],[1]]  y = [1,0,1]`
+
+Dữ liệu đối xứng cho hệ số góc 0. Hệ số tự do bằng trung bình 2/3.
+
+**Kết quả** · `[0.6666666666667,0]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -852,6 +1175,34 @@ Thay x rồi giải lại đề lõi.
 
 Thay degree rồi giải lại đề lõi.  
 **D3** · `x = [-2,0,2]  degree = 0`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`x = [-3,2,4]  degree = 2`
+
+Lập từng hàng theo [1,x,x²]. Bình phương của −3 bằng 9.
+
+**Kết quả** · `[[1,-3,9],[1,2,4],[1,4,16]]`
+
+#### Ví dụ 2
+
+`x = [0,1,-1]  degree = 4`
+
+Mỗi hàng có 5 cột. Tại −1, dấu luân phiên theo số mũ.
+
+**Kết quả** · `[[1,0,0,0,0],[1,1,1,1,1],[1,-1,1,-1,1]]`
+
+#### Ví dụ 3
+
+`x = [3,-2,6,0]  degree = 1`
+
+Giữ cột toàn 1 trước, rồi đưa x vào cột thứ hai.
+
+**Kết quả** · `[[1,3],[1,-2],[1,6],[1,0]]`
 
 ### E · Tự giải và viết hàm
 
@@ -949,6 +1300,34 @@ Thay logits rồi giải lại đề lõi.
 
 Thay threshold rồi giải lại đề lõi.  
 **D3** · `logits = [-1,0,2]  threshold = 0.25`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`logits = [-3,0,3]  threshold = 0.4`
+
+Xác suất xấp xỉ 0,0474, 0,5 và 0,9526. So từng số với 0,4.
+
+**Kết quả** · `[0,1,1]`
+
+#### Ví dụ 2
+
+`logits = [1,2,-1]  threshold = 0.9`
+
+Logit 2 là lớn nhất nhưng chỉ cho xác suất khoảng 0,881. Cả ba dưới ngưỡng.
+
+**Kết quả** · `[0,0,0]`
+
+#### Ví dụ 3
+
+`logits = [0,-5,5]  threshold = 0.5`
+
+Logit 0 cho đúng ngưỡng. Hai giá trị sau lần lượt nằm dưới và trên ngưỡng.
+
+**Kết quả** · `[1,0,1]`
 
 ### E · Tự giải và viết hàm
 
@@ -1049,6 +1428,34 @@ Thay w rồi giải lại đề lõi.
 
 Thay A rồi giải lại đề lõi.  
 **D3** · `A = [[1,-2],[1,1],[1,3]]  y = [0,1,1]  w = [0,1]`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`A = [[1,0],[1,1]]  y = [1,0]  w = [0,0]`
+
+Hai p bằng 0,5. Phần dư −0,5 và 0,5 cho gradient [0,0.25].
+
+**Kết quả** · `[0.6931471805599,[0,0.25]]`
+
+#### Ví dụ 2
+
+`A = [[1],[2]]  y = [0,1]  w = [0]`
+
+Cả hai tổn thất bằng ln(2). Gradient là (0,5−1)/2.
+
+**Kết quả** · `[0.6931471805599,[-0.25]]`
+
+#### Ví dụ 3
+
+`A = [[1,0],[1,2]]  y = [1,1]  w = [0,0]`
+
+Mỗi p−y bằng −0,5. Tổng đóng góp vào cột thứ hai là −1, rồi chia cho 2.
+
+**Kết quả** · `[0.6931471805599,[-0.5,-0.5]]`
 
 ### E · Tự giải và viết hàm
 
@@ -1151,6 +1558,34 @@ Thay w rồi giải lại đề lõi.
 Thay A rồi giải lại đề lõi.  
 **D3** · `A = [[1,-2],[1,0],[1,3]]  y = [0,1,1]  w = [0,1]  damping = 0`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`A = [[1,-1],[1,1]]  y = [0,1]  w = [0,0]  damping = 0`
+
+H có đường chéo 0,25. Gradient [0,−0.5] cho bước hiệu chỉnh [0,−2].
+
+**Kết quả** · `[0,2]`
+
+#### Ví dụ 2
+
+`A = [[1,0],[1,1]]  y = [1,0]  w = [0,0]  damping = 0`
+
+Gradient [0,0.25]. Giải hệ cho bước hiệu chỉnh [−2,4] rồi lấy w trừ bước đó.
+
+**Kết quả** · `[2,-4]`
+
+#### Ví dụ 3
+
+`A = [[1,-2],[1,2]]  y = [1,0]  w = [0,0]  damping = 0`
+
+Đường chéo H là 0,25 và 1. Gradient [0,1] cho bước hiệu chỉnh [0,1].
+
+**Kết quả** · `[0,-1]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -1248,6 +1683,34 @@ Thay q rồi giải lại đề lõi.
 
 Thay y rồi giải lại đề lõi.  
 **D3** · `X = [[0],[2],[5],[8]]  y = [0,1,0,1]  q = [3]  k = 3`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [[0],[4],[7]]  y = [1,0,1]  q = [5]  k = 1`
+
+Khoảng cách [5,1,2]. Chọn hàng chỉ số 1.
+
+**Kết quả** · `0`
+
+#### Ví dụ 2
+
+`X = [[-2],[2],[6]]  y = [0,1,1]  q = [0]  k = 1`
+
+Hai điểm đầu cách đều 2. Chọn hàng chỉ số 0.
+
+**Kết quả** · `0`
+
+#### Ví dụ 3
+
+`X = [[0,0],[2,0],[4,0]]  y = [0,1,1]  q = [1,0]  k = 2`
+
+Hai hàng đầu gần nhất và chia đều phiếu. Quy tắc hòa lấy 0.
+
+**Kết quả** · `0`
 
 ### E · Tự giải và viết hàm
 
@@ -1347,6 +1810,34 @@ Thay order rồi giải lại đề lõi.
 Thay k rồi giải lại đề lõi.  
 **D3** · `order = [3,0,4,1,2]  k = 5`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`order = [4,3,2,1,0]  k = 2`
+
+Tập xác thực dài 3 rồi 2. Mỗi lượt lấy đoạn còn lại làm huấn luyện.
+
+**Kết quả** · `[[[1,0],[4,3,2]],[[4,3,2],[1,0]]]`
+
+#### Ví dụ 2
+
+`order = [0,2,1,3]  k = 4`
+
+Mỗi lượt xác thực đúng một chỉ số. Ghép ba chỉ số còn lại theo thứ tự cũ.
+
+**Kết quả** · `[[[2,1,3],[0]],[[0,1,3],[2]],[[0,2,3],[1]],[[0,2,1],[3]]]`
+
+#### Ví dụ 3
+
+`order = [5,1,4,0,2,3]  k = 3`
+
+Mỗi đoạn có hai chỉ số. Đoạn thứ hai [4,0] đi với huấn luyện [5,1,2,3].
+
+**Kết quả** · `[[[4,0,2,3],[5,1]],[[5,1,2,3],[4,0]],[[5,1,4,0],[2,3]]]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -1444,6 +1935,34 @@ Thay y rồi giải lại đề lõi.
 
 Thay yhat rồi giải lại đề lõi.  
 **D3** · `y = [1,3,5]  yhat = [1,3,5]`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`y = [0,4]  yhat = [0,2]`
+
+Phần dư [0,−2] cho MAE 1 và MSE 2. SST = 8 nên R² = 1−4/8.
+
+**Kết quả** · `[1,2,1.414213562373,0.5]`
+
+#### Ví dụ 2
+
+`y = [5,5,5]  yhat = [5,5,8]`
+
+Phần dư cuối là 3. MSE bằng 9/3. R² dùng null vì SST = 0.
+
+**Kết quả** · `[1,3,1.732050807569,null]`
+
+#### Ví dụ 3
+
+`y = [1,3]  yhat = [2,2]`
+
+Hai phần dư có độ lớn 1. SSE và SST đều bằng 2.
+
+**Kết quả** · `[1,1,1,0]`
 
 ### E · Tự giải và viết hàm
 
@@ -1544,6 +2063,34 @@ Thay y rồi giải lại đề lõi.
 Thay p rồi giải lại đề lõi.  
 **D3** · `y = [1,1,0,0,0]  p = [0,0,0,0,0]`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`y = [1,1,0,0]  p = [1,1,0,1]`
+
+TP = 2, FP = 1, FN = 0, TN = 1. Tính bốn chỉ số từ các số đếm này.
+
+**Kết quả** · `[0.75,0.6666666666667,1,0.8]`
+
+#### Ví dụ 2
+
+`y = [1,0,0]  p = [0,0,0]`
+
+Không có dự đoán dương nên precision bằng 0 theo quy ước. Hai dự đoán đúng.
+
+**Kết quả** · `[0.6666666666667,0,0,0]`
+
+#### Ví dụ 3
+
+`y = [0,0,1,1]  p = [1,0,0,1]`
+
+Mỗi ô của ma trận nhầm lẫn đếm một mẫu. Bốn chỉ số cùng bằng 1/2.
+
+**Kết quả** · `[0.5,0.5,0.5,0.5]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -1642,6 +2189,34 @@ Thay y rồi giải lại đề lõi.
 Thay score rồi giải lại đề lõi.  
 **D3** · `y = [1,0,1,0]  score = [0.4,0.7,0.9,0.2]`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`y = [0,1,0]  score = [0.9,0.7,0.1]`
+
+Hạ ngưỡng nhận lần lượt một âm, dương duy nhất rồi âm còn lại.
+
+**Kết quả** · `[[0,0],[0.5,0],[0.5,1],[1,1]]`
+
+#### Ví dụ 2
+
+`y = [1,0,1]  score = [2,2,1]`
+
+Hai mẫu điểm 2 cùng qua ngưỡng. FPR thành 1 và TPR thành 1/2 ở cùng bước.
+
+**Kết quả** · `[[0,0],[1,0.5],[1,1]]`
+
+#### Ví dụ 3
+
+`y = [1,0,0,1]  score = [4,2,3,1]`
+
+Thứ tự nhận là dương, âm, âm, dương. Mỗi bước tăng một tọa độ thêm 1/2.
+
+**Kết quả** · `[[0,0],[0,0.5],[0.5,0.5],[1,0.5],[1,1]]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -1738,6 +2313,34 @@ Thay train_loss rồi giải lại đề lõi.
 
 Thay degrees rồi giải lại đề lõi.  
 **D3** · `degrees = [2,1,4]  train_loss = [4,2,0]  val_loss = [5,3,6]`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`degrees = [2,4,6]  train_loss = [2,1,0]  val_loss = [5,3,8]`
+
+Bậc 4 có sai số xác thực thấp nhất là 3. Trừ sai số huấn luyện 1.
+
+**Kết quả** · `[4,2]`
+
+#### Ví dụ 2
+
+`degrees = [5,1,3]  train_loss = [1,2,2]  val_loss = [4,4,8]`
+
+Hai điểm xác thực 4 hòa nhau. Chọn bậc 1 rồi tính 4−2.
+
+**Kết quả** · `[1,2]`
+
+#### Ví dụ 3
+
+`degrees = [0,2]  train_loss = [4,5]  val_loss = [6,3]`
+
+Chọn bậc 2. Độ chênh 3−5 âm vì sai số xác thực thấp hơn.
+
+**Kết quả** · `[2,-2]`
 
 ### E · Tự giải và viết hàm
 
@@ -1839,6 +2442,34 @@ Thay y rồi giải lại đề lõi.
 Thay X rồi giải lại đề lõi.  
 **D3** · `X = [[-2],[0],[2]]  y = [0,2,4]  lam = 2`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [[-1],[0],[1]]  y = [1,3,5]  lam = 6`
+
+X có trung bình 0 nên b = 3. Trọng số là 4/(2+6).
+
+**Kết quả** · `[3,0.5]`
+
+#### Ví dụ 2
+
+`X = [[0],[0]]  y = [0,8]  lam = 4`
+
+Đặc trưng luôn bằng 0. Hệ số tự do bằng trung bình 4. Trọng số bị phạt về 0.
+
+**Kết quả** · `[4,0]`
+
+#### Ví dụ 3
+
+`X = [[-2],[0],[2]]  y = [2,4,6]  lam = 0`
+
+Khi lam bằng 0, đường khớp cả ba điểm có hệ số góc 1 và hệ số tự do 4.
+
+**Kết quả** · `[4,1]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -1934,6 +2565,34 @@ Thay w rồi giải lại đề lõi.
 Thay X rồi giải lại đề lõi.  
 **D3** · `X = [[-1,2],[1,1],[2,1]]  w = [1,-1]  b = 0`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [[0,0],[0,1],[1,0],[1,1]]  w = [1,1]  b = -1.5`
+
+Điểm lần lượt là −1,5, −0,5, −0,5 và 0,5. Chỉ hàng cuối đạt ngưỡng.
+
+**Kết quả** · `[0,0,0,1]`
+
+#### Ví dụ 2
+
+`X = [[-2],[0],[2]]  w = [1]  b = 1`
+
+Các điểm −1, 1 và 3 cho một nhãn 0 rồi hai nhãn 1.
+
+**Kết quả** · `[0,1,1]`
+
+#### Ví dụ 3
+
+`X = [[2,4],[3,2]]  w = [1,-1]  b = 2`
+
+Điểm đầu là 0, điểm sau là 3. Cả hai đạt z ≥ 0.
+
+**Kết quả** · `[1,1]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -2027,6 +2686,34 @@ Thay z rồi giải lại đề lõi.
 
 Thay z rồi giải lại đề lõi.  
 **D3** · `z = [1,2,-1,0]  kind = "relu"`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`z = [-4,0,1]  kind = "relu"`
+
+Chặn −4 về 0. Tại 0 dùng độ dốc quy ước 0, tại 1 dùng độ dốc 1.
+
+**Kết quả** · `[[0,0,1],[0,0,1]]`
+
+#### Ví dụ 2
+
+`z = [[2,-1],[0,3]]  kind = "relu"`
+
+Áp dụng theo từng ô. Cả giá trị và đạo hàm đều giữ hai chiều.
+
+**Kết quả** · `[[[2,0],[0,3]],[[1,0],[0,1]]]`
+
+#### Ví dụ 3
+
+`z = [-8,7,-6,5]  kind = "relu"`
+
+Chỉ các vị trí 7 và 5 giữ giá trị cũ và nhận đạo hàm 1.
+
+**Kết quả** · `[[0,7,0,5],[0,1,0,1]]`
 
 ### E · Tự giải và viết hàm
 
@@ -2126,6 +2813,34 @@ Thay b2 rồi giải lại đề lõi.
 
 Thay X rồi giải lại đề lõi.  
 **D3** · `X = [[-2],[0],[3]]  W1 = [[2]]  b1 = [0]  W2 = [[3]]  b2 = [1]`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [[-2],[1]]  W1 = [[1]]  b1 = [1]  W2 = [[2]]  b2 = [3]`
+
+Tầng ẩn trước ReLU là [−1,2], sau ReLU là [0,2]. Áp dụng 2H+3.
+
+**Kết quả** · `[[3],[7]]`
+
+#### Ví dụ 2
+
+`X = [[1],[-1]]  W1 = [[2]]  b1 = [0]  W2 = [[-3]]  b2 = [2]`
+
+Sau ReLU có [2,0]. Tầng ra tuyến tính cho phép kết quả âm.
+
+**Kết quả** · `[[-4],[2]]`
+
+#### Ví dụ 3
+
+`X = [[2,1]]  W1 = [[1,-1],[0,1]]  b1 = [0,0]  W2 = [[1],[1]]  b2 = [-1]`
+
+Điểm ẩn [2,−1] thành [2,0]. Cộng hai kích hoạt rồi trừ 1.
+
+**Kết quả** · `[[1]]`
 
 ### E · Tự giải và viết hàm
 
@@ -2228,6 +2943,34 @@ Thay y rồi giải lại đề lõi.
 
 Thay params rồi giải lại đề lõi.  
 **D3** · `x = [0,2]  y = [0,1]  params = [0,0,-2,1]`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`x = [-1,1]  y = [1,1]  params = [0,0,2,-1]`
+
+h và p đều bằng 0,5. Delta tầng ra mỗi mẫu −0,5. Delta tầng ẩn mỗi mẫu −0,25.
+
+**Kết quả** · `[0,-0.25,-0.25,-0.5]`
+
+#### Ví dụ 2
+
+`x = [1,3]  y = [0,0]  params = [0,0,-2,1]`
+
+p − y đều 0,5. Nhân w₂ và h(1−h) để có delta ẩn −0,25 trên mỗi mẫu.
+
+**Kết quả** · `[-0.5,-0.25,0.25,0.5]`
+
+#### Ví dụ 3
+
+`x = [2,4]  y = [1,0]  params = [0,0,0,0]`
+
+w₂ bằng 0 nên cả hai gradient tầng ẩn bằng 0. Hai delta tầng ra trái dấu và cùng h.
+
+**Kết quả** · `[0,0,0,0]`
 
 ### E · Tự giải và viết hàm
 
@@ -2332,6 +3075,34 @@ Thay X rồi giải lại đề lõi.
 Thay centers rồi giải lại đề lõi.  
 **D3** · `X = [[0],[2],[7],[9]]  centers = [[2],[5]]`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [[0],[4],[10]]  centers = [[0],[10]]`
+
+Điểm 4 vào cụm 0. Tâm mới là 2 và 10. Hai thành viên cụm đầu góp 4 mỗi điểm.
+
+**Kết quả** · `[[0,0,1],[[2],[10]],8]`
+
+#### Ví dụ 2
+
+`X = [[0],[2],[4]]  centers = [[0],[4]]`
+
+Điểm 2 hòa nên vào cụm 0. Tâm đầu thành 1. SSE bằng 1+1.
+
+**Kết quả** · `[[0,0,1],[[1],[4]],2]`
+
+#### Ví dụ 3
+
+`X = [[1],[3],[9]]  centers = [[0],[9],[20]]`
+
+Cụm 2 rỗng giữ tâm 20. Cụm đầu nhận 1 và 3, cụm giữa giữ 9.
+
+**Kết quả** · `[[0,0,1],[[2],[9],[20]],2]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -2432,6 +3203,34 @@ Thay a rồi giải lại đề lõi.
 Thay b rồi giải lại đề lõi.  
 **D3** · `a = [0,0,1,1]  b = [0,1,0,1]`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`a = [1,1,2]  b = [0,0,0]`
+
+Chỉ cặp hai vị trí đầu cùng cụm ở cả hai cách chia. Hợp gồm cả ba cặp.
+
+**Kết quả** · `[0.3333333333333,0.3333333333333]`
+
+#### Ví dụ 2
+
+`a = [0,0,1,2]  b = [3,4,5,5]`
+
+Hai cặp cùng cụm nằm ở hai vị trí khác nhau. Bốn cặp còn lại đồng thuận tách.
+
+**Kết quả** · `[0.6666666666667,0]`
+
+#### Ví dụ 3
+
+`a = [0,1,2,3]  b = [6,5,4,3]`
+
+Cả hai tách mọi cặp. Rand bằng 1, Jaccard dùng quy ước 1 khi hợp rỗng.
+
+**Kết quả** · `[1,1]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -2530,6 +3329,34 @@ Thay X rồi giải lại đề lõi.
 
 Thay k rồi giải lại đề lõi.  
 **D3** · `X = [[-2,0],[2,0],[0,-1],[0,1]]  k = 2`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [[-4,0],[4,0],[0,-2],[0,2]]  k = 1`
+
+Trung bình [0,0]. Hai tổng bình phương 32 và 8 cho tỷ lệ trục ngang 32/40.
+
+**Kết quả** · `[[0,0],[[1],[0]],[0.8]]`
+
+#### Ví dụ 2
+
+`X = [[1,1],[2,2],[3,3]]  k = 1`
+
+Trung bình [2,2]. Trục theo hướng [1,1] sau chuẩn hóa giữ toàn bộ phương sai.
+
+**Kết quả** · `[[2,2],[[0.7071067811865],[0.7071067811865]],[1]]`
+
+#### Ví dụ 3
+
+`X = [[1,-3],[1,3],[-1,0],[-1,0]]  k = 1`
+
+Hai cột trung bình 0 và tích chéo 0. Tổng bình phương theo trục dọc 18, trục ngang 4.
+
+**Kết quả** · `[[0,0],[[0],[1]],[0.8181818181818]]`
 
 ### E · Tự giải và viết hàm
 
@@ -2640,6 +3467,34 @@ Thay y rồi giải lại đề lõi.
 Thay y rồi giải lại đề lõi.  
 **D3** · `x = [0,1,2,3]  y = [0,1,1,1]`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`x = [1,3,5,9]  y = [0,0,1,1]`
+
+Ba trung điểm là 2, 4 và 7. Ngưỡng 4 tạo hai nhánh thuần.
+
+**Kết quả** · `[4,0.5]`
+
+#### Ví dụ 2
+
+`x = [0,4,8]  y = [0,1,0]`
+
+Ngưỡng 2 và 6 cùng cho mức giảm 4/9−1/3. Chọn ngưỡng nhỏ hơn.
+
+**Kết quả** · `[2,0.1111111111111]`
+
+#### Ví dụ 3
+
+`x = [0,2,5]  y = [0,0,0]`
+
+Nút cha thuần lớp. Mọi cách chia đều có mức giảm 0.
+
+**Kết quả** · `null`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -2738,6 +3593,34 @@ Thay votes rồi giải lại đề lõi.
 
 Thay votes rồi giải lại đề lõi.  
 **D3** · `bags = [[0,0,2],[1,1,2],[0,1,2]]  votes = [[1,1,0],[0,0,1],[1,0,1]]  n = 3`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`bags = [[0,0],[1,1]]  votes = [[0,0],[0,1]]  n = 2`
+
+Hàng 0 chỉ lấy phiếu cây 1, hàng 1 chỉ lấy phiếu cây 0. Cả hai phiếu hợp lệ bằng 0.
+
+**Kết quả** · `[0,0]`
+
+#### Ví dụ 2
+
+`bags = [[0,0],[0,0]]  votes = [[1,1],[0,0]]  n = 2`
+
+Hàng 0 xuất hiện trong cả hai cây. Hàng 1 nhận hai phiếu hòa.
+
+**Kết quả** · `[-1,0]`
+
+#### Ví dụ 3
+
+`bags = [[0,0,0],[0,1,1],[0,2,2]]  votes = [[1,1,1],[0,1,0],[0,1,1]]  n = 3`
+
+Hàng 0 không có phiếu OOB. Hàng 1 lấy cây 0 và 2. Hàng 2 lấy cây 0 và 1.
+
+**Kết quả** · `[-1,1,0]`
 
 ### E · Tự giải và viết hàm
 
@@ -2841,6 +3724,34 @@ Thay y_test rồi giải lại đề lõi.
 Thay X_test rồi giải lại đề lõi.  
 **D3** · `X_train = [[0],[2],[4]]  y_train = [1,5,9]  X_test = [[5],[9]]  y_test = [13,16]`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X_train = [[0],[1],[2]]  y_train = [2,5,8]  X_test = [[3],[4]]  y_test = [10,15]`
+
+Đường y = 3x+2 cho [11,14]. Hai sai số tuyệt đối đều bằng 1.
+
+**Kết quả** · `[[11,14],1]`
+
+#### Ví dụ 2
+
+`X_train = [[5],[5]]  y_train = [2,4]  X_test = [[0],[10]]  y_test = [2,5]`
+
+Cột hằng dùng mẫu số 1. Mô hình dự đoán trung bình y bằng 3 cho cả hai mẫu.
+
+**Kết quả** · `[[3,3],1.5]`
+
+#### Ví dụ 3
+
+`X_train = [[1,7],[2,7],[3,7]]  y_train = [0,2,4]  X_test = [[0,7],[5,7]]  y_test = [-3,9]`
+
+Cột thứ hai hằng. Quan hệ y = 2x−2 cho hai sai số có dấu +1 và −1.
+
+**Kết quả** · `[[-2,8],1]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -2936,6 +3847,34 @@ Thay train rồi giải lại đề lõi.
 Thay values rồi giải lại đề lõi.  
 **D3** · `train = ["b","a","b"]  values = ["a","a","b"]`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`train = ["b","a","a"]  values = ["b","c","a"]`
+
+Hai cột lần lượt a và b. Mức c chưa gặp nhận hàng [0,0].
+
+**Kết quả** · `[["a","b"],[[0,1],[0,0],[1,0]]]`
+
+#### Ví dụ 2
+
+`train = ["m","z","k"]  values = ["z","k"]`
+
+Xếp các mức thành k, m, z trước khi mã hóa hai hàng.
+
+**Kết quả** · `[["k","m","z"],[[0,0,1],[1,0,0]]]`
+
+#### Ví dụ 3
+
+`train = ["p","p"]  values = ["q","p","p"]`
+
+Chỉ có cột p. Mức q nhận 0, hai mức p nhận 1.
+
+**Kết quả** · `[["p"],[[0],[1],[1]]]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -3029,6 +3968,34 @@ Thay X rồi giải lại đề lõi.
 
 Thay train rồi giải lại đề lõi.  
 **D3** · `train = [[2,0,1],[2,4,3]]  X = [[8,4,2]]  cutoff = 0.5`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`train = [[0,2],[6,2]]  X = [[9,8]]  cutoff = 2`
+
+Phương sai cột đầu bằng 9, cột sau bằng 0. Chỉ giữ cột đầu.
+
+**Kết quả** · `[[0],[[9]]]`
+
+#### Ví dụ 2
+
+`train = [[0,0],[2,6]]  X = [[4,1],[2,5]]  cutoff = 1`
+
+Cột đầu bằng ngưỡng nên bị bỏ, cột sau có phương sai 9.
+
+**Kết quả** · `[[1],[[1],[5]]]`
+
+#### Ví dụ 3
+
+`train = [[0,0,1],[4,2,5]]  X = [[9,8,7]]  cutoff = 2`
+
+Phương sai [4,1,4]. Giữ cột 0 và 2 theo thứ tự ban đầu.
+
+**Kết quả** · `[[0,2],[[9,7]]]`
 
 ### E · Tự giải và viết hàm
 
@@ -3130,6 +4097,34 @@ Thay X rồi giải lại đề lõi.
 
 Thay X rồi giải lại đề lõi.  
 **D3** · `X = [4,0,3,9]  linkage = "single"`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [0,1,5]  linkage = "single"`
+
+Gộp 0 và 1 tại độ cao 1. Cụm đó cách điểm 5 gần nhất một đoạn 5−1.
+
+**Kết quả** · `[[1,[0,1]],[4,[0,1,2]]]`
+
+#### Ví dụ 2
+
+`X = [4,2,0]  linkage = "single"`
+
+Hai cặp hòa ở độ cao 2. Chọn vị trí 0,1 trước rồi gộp điểm cuối.
+
+**Kết quả** · `[[2,[0,1]],[2,[0,1,2]]]`
+
+#### Ví dụ 3
+
+`X = [1,2,8,10]  linkage = "single"`
+
+Gộp hai điểm đầu ở độ cao 1, hai điểm sau ở 2. Hai cụm gặp tại 8−2.
+
+**Kết quả** · `[[1,[0,1]],[2,[2,3]],[6,[0,1,2,3]]]`
 
 ### E · Tự giải và viết hàm
 
@@ -3240,6 +4235,34 @@ Thay min_samples rồi giải lại đề lõi.
 Thay x rồi giải lại đề lõi.  
 **D3** · `x = [0,1,2,3,7]  eps = 0.5  min_samples = 3`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`x = [0,1,2,7]  eps = 1  min_samples = 3`
+
+Chỉ tọa độ 1 là lõi. Nó nhận hai điểm biên 0 và 2. Điểm 7 là nhiễu.
+
+**Kết quả** · `[0,0,0,-1]`
+
+#### Ví dụ 2
+
+`x = [0,2,4,6,20]  eps = 2  min_samples = 3`
+
+Các lõi 2 và 4 nối nhau. Hai đầu mút 0 và 6 nhận cùng cụm.
+
+**Kết quả** · `[0,0,0,0,-1]`
+
+#### Ví dụ 3
+
+`x = [4,0,4,0,8]  eps = 0  min_samples = 2`
+
+Chỉ các điểm trùng nhau nối được. Nhóm tọa độ 4 nhận nhãn 0 do duyệt chỉ số tăng.
+
+**Kết quả** · `[0,1,0,1,-1]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -3336,6 +4359,34 @@ Thay w rồi giải lại đề lõi.
 Thay b rồi giải lại đề lõi.  
 **D3** · `X = [[-2],[0],[2]]  y = [-1,1,1]  w = [1]  b = 1  C = 1`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [[-1],[2]]  y = [-1,1]  w = [0]  b = 0  C = 2`
+
+Hai điểm số bằng 0 nên mỗi tổn thất bằng 1. Phần phạt bằng 0.
+
+**Kết quả** · `[[1,1],4]`
+
+#### Ví dụ 2
+
+`X = [[-2],[1]]  y = [-1,1]  w = [1]  b = 1  C = 3`
+
+Hai biên là 1 và 2. Tổn thất bản lề bằng 0 nên mục tiêu chỉ còn 0,5.
+
+**Kết quả** · `[[0,0],0.5]`
+
+#### Ví dụ 3
+
+`X = [[0],[2]]  y = [1,-1]  w = [1]  b = 0  C = 1`
+
+Biên [0,−2] cho tổn thất [1,3]. Cộng phần phạt 0,5 vào tổng.
+
+**Kết quả** · `[[1,3],4.5]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -3430,6 +4481,34 @@ Thay X rồi giải lại đề lõi.
 
 Thay k rồi giải lại đề lõi.  
 **D3** · `X = [[1,2],[5,2],[3,1],[3,3]]  k = 2`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`X = [[0,0],[4,0],[2,-1],[2,1]]  k = 1`
+
+Tâm [2,0]. Giữ trục ngang, bỏ hai tung độ ±1 nên SSE bằng 2.
+
+**Kết quả** · `[[[0,0],[4,0],[2,0],[2,0]],2]`
+
+#### Ví dụ 2
+
+`X = [[2,4],[6,8]]  k = 0`
+
+Hai hàng cùng trả trung bình [4,6]. Mỗi hàng góp 8 vào SSE.
+
+**Kết quả** · `[[[4,6],[4,6]],16]`
+
+#### Ví dụ 3
+
+`X = [[1,2],[3,2],[5,2]]  k = 1`
+
+Mọi điểm sau trừ trung bình nằm trên trục ngang. Một thành phần giữ toàn bộ dữ liệu.
+
+**Kết quả** · `[[[1,2],[3,2],[5,2]],0]`
 
 ### E · Tự giải và viết hàm
 
@@ -3529,6 +4608,34 @@ Thay lr rồi giải lại đề lõi.
 Thay radius rồi giải lại đề lõi.  
 **D3** · `weights = [[0],[4],[8],[12]]  x = [5]  lr = 0.5  radius = 0`
 
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`weights = [[0],[3],[7]]  x = [4]  lr = 0.5  radius = 1`
+
+Nút 1 thắng. Cả ba nút trong bán kính 1, dịch nửa quãng đường về 4.
+
+**Kết quả** · `[1,[[2],[3.5],[5.5]]]`
+
+#### Ví dụ 2
+
+`weights = [[0],[4],[8]]  x = [2]  lr = 1  radius = 0`
+
+Hai nút đầu cách đều, chọn nút 0. Chỉ nút đó cập nhật tới 2.
+
+**Kết quả** · `[0,[[2],[4],[8]]]`
+
+#### Ví dụ 3
+
+`weights = [[1],[5],[10],[20]]  x = [9]  lr = 0.25  radius = 1`
+
+Nút 2 thắng. Chỉ các nút 1, 2, 3 dịch một phần tư quãng đường về 9.
+
+**Kết quả** · `[2,[[1],[6],[9.75],[17.25]]]`
+
 ### E · Tự giải và viết hàm
 
 Dữ liệu mới nằm ngay trong mỗi đề. Nếu đề trả nhiều đại lượng, hãy nhập chúng theo đúng thứ tự trong yêu cầu. Đóng mã B. Ghi một kết quả cho từng đề trước khi xem đáp án. Dung sai tuyệt đối 10⁻⁶.
@@ -3626,6 +4733,34 @@ Thay labels rồi giải lại đề lõi.
 
 Thay x rồi giải lại đề lõi.  
 **D3** · `x = [-1,1,5,7,10,14]  labels = [0,0,1,1,2,2]`
+
+### Ba ví dụ có lời giải
+
+Dùng cùng đề lõi. Hãy thử tính trước rồi đối chiếu từng ví dụ.
+
+#### Ví dụ 1
+
+`x = [0,2,5,7]  labels = [0,0,1,1]`
+
+Hai tâm cách 5. Mỗi độ phân tán bằng 1 nên tỷ số là 2/5.
+
+**Kết quả** · `0.4`
+
+#### Ví dụ 2
+
+`x = [0,2,4,6,12,14]  labels = [0,0,1,1,2,2]`
+
+Ba tâm 1, 5 và 13. Hai cụm đầu chọn nhau cho 1/2, cụm cuối chọn tâm 5 cho 1/4.
+
+**Kết quả** · `0.4166666666667`
+
+#### Ví dụ 3
+
+`x = [3,3,9,11]  labels = [1,1,2,2]`
+
+Hai tâm 3 và 10, độ phân tán 0 và 1. Cả hai cụm dùng tỷ số 1/7.
+
+**Kết quả** · `0.1428571428571`
 
 ### E · Tự giải và viết hàm
 
